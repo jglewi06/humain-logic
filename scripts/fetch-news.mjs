@@ -2,6 +2,7 @@
 // Trust rules (ux/spec.md §1.2): keep source + link + time; only headline + short excerpt (legal brief: no full text).
 import Parser from 'rss-parser';
 import fs from 'node:fs';
+import { topicFor, feedImageUrl } from '../src/lib/news-images.mjs';
 
 const FEEDS = JSON.parse(fs.readFileSync('src/data/feeds.json', 'utf8'));
 const OUT = 'src/data/news.json';
@@ -20,7 +21,7 @@ const strip = s => decode((s || '').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' 
 const clip = (s, n) => s.length > n ? s.slice(0, n).replace(/\s+\S*$/, '') + '…' : s;
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 70);
 
-const parser = new Parser({ timeout: 15000, headers: { 'User-Agent': 'HumAInLogicBot/1.0 (+https://humainlogic.com/about)' } });
+const parser = new Parser({ customFields: { item: [['media:content', 'mediaContent', { keepArray: true }], ['media:thumbnail', 'mediaThumbnail', { keepArray: true }]] }, timeout: 15000, headers: { 'User-Agent': 'HumAInLogicBot/1.0 (+https://humainlogic.com/about)' } });
 const cutoff = Date.now() - MAX_AGE_DAYS * 864e5;
 const items = []; const failed = [];
 for (const f of FEEDS) {
@@ -37,7 +38,9 @@ for (const f of FEEDS) {
       const text = title + ' ' + summary;
       const category = f.group === 'good-news' ? 'good-news' : (CATS.find(([, re]) => re.test(text))?.[0] ?? GROUP_DEFAULT[f.group] ?? 'research');
       items.push({ id: slug(title), title, link: i.link, source: f.name, date: date.toISOString(), summary, category,
-        ai_summary: false, editor_reviewed: false });
+        ai_summary: false, editor_reviewed: false, topic: topicFor({ title, summary, category }),
+        // recorded for later licensing review only; never displayed unless the source is on IMAGE_ALLOWLIST
+        image_url_source: feedImageUrl(i) });
       n++;
     }
   } catch (e) { failed.push(f.name); console.warn('feed failed:', f.name, '-', e.message); }

@@ -1,82 +1,606 @@
 {
   "_note": "Hand-curated search keywords per tool (what people type, not marketing claims). Only uses that follow from the tool's own description in tools.json / tool-details.json. Not overwritten by import-research.",
-  "chatgpt": ["homework", "essay", "resume", "cover letter", "email", "letter", "recipe", "cooking", "meal plan", "trip", "advice", "questions", "math", "brainstorm", "school", "students", "job"],
-  "claude": ["essay", "resume", "cover letter", "email", "letter", "report", "long documents", "homework", "recipe", "questions", "advice", "students", "job"],
-  "gemini": ["homework", "essay", "resume", "email", "gmail", "docs", "recipe", "trip", "questions", "students", "school", "job"],
-  "microsoft-copilot": ["resume", "cover letter", "email", "word", "excel", "powerpoint", "presentation", "recipe", "questions", "job"],
-  "le-chat": ["questions", "recipe", "students", "email"],
-  "grok": ["questions", "news"],
-  "pi": ["talk", "support", "advice"],
-  "perplexity": ["research", "questions", "sources", "homework", "facts"],
-  "grammarly": ["grammar", "spelling", "essay", "resume", "cover letter", "email", "proofread", "writing", "students", "school", "job"],
-  "quillbot": ["paraphrase", "rewrite", "essay", "grammar", "students", "school", "summarize", "citation"],
-  "wordtune": ["rewrite", "essay", "email", "resume", "cover letter", "grammar"],
-  "sudowrite": ["novel", "book", "story", "fiction", "author"],
-  "deepl": ["translate", "translation", "language", "spanish", "french", "german", "foreign language"],
-  "duolingo": ["language", "spanish", "french", "german", "learn a language", "kids", "school"],
-  "quizlet": ["school", "study", "studying", "exam", "test", "flashcards", "flash cards", "homework", "students", "teachers", "kids", "quiz", "learning"],
-  "khanmigo": ["school", "homework", "math", "tutor", "kids", "students", "teachers", "lesson plan", "study", "learning", "essay"],
-  "notebooklm": ["study", "notes", "school", "students", "research", "podcast", "sources", "teachers", "homework"],
-  "elicit": ["research", "papers", "studies", "science"],
-  "consensus": ["research", "papers", "studies", "science", "evidence", "health"],
-  "scite": ["research", "citations", "papers"],
-  "gamma": ["presentation", "slides", "slideshow", "powerpoint", "deck", "teachers"],
-  "beautiful-ai": ["presentation", "slides", "slideshow", "powerpoint", "deck"],
-  "canva": ["design", "logo", "flyer", "poster", "social media", "presentation", "slides", "resume", "photo", "instagram", "business", "teachers", "invitation"],
-  "looka": ["logo", "brand", "business", "branding", "business cards"],
-  "figma": ["design", "app design", "ui", "website design"],
-  "framer": ["website", "web site", "landing page", "no code", "portfolio"],
-  "lovable": ["app", "website", "no code", "build an app"],
-  "bolt": ["app", "website", "no code", "build an app"],
-  "v0": ["website", "ui", "app"],
-  "replit": ["coding", "code", "programming", "app", "website", "students"],
-  "github-copilot": ["coding", "code", "programming", "developer"],
-  "cursor": ["coding", "code", "programming", "developer"],
-  "midjourney": ["art", "pictures", "images", "illustration"],
-  "adobe-firefly": ["pictures", "images", "photo", "photo editing", "art", "logo", "design"],
-  "leonardo-ai": ["art", "pictures", "images", "game art"],
-  "ideogram": ["logo", "poster", "text in images", "pictures", "graphics"],
-  "stability-ai": ["images", "art", "pictures"],
-  "krea": ["art", "images", "pictures", "photo"],
-  "remove-bg": ["remove background", "background", "photo", "cutout", "transparent"],
-  "photoroom": ["photo", "photo editing", "product photos", "remove background", "background", "online store"],
-  "clipdrop": ["photo", "photo editing", "remove background", "remove objects", "upscale"],
-  "runway": ["video", "video editing", "film", "movie"],
-  "pika": ["video", "animation", "short video"],
-  "luma-dream-machine": ["video"],
-  "synthesia": ["video", "training video", "avatar", "presenter"],
-  "heygen": ["video", "avatar", "translate video", "dubbing"],
-  "descript": ["video editing", "podcast", "youtube", "audio editing", "transcribe"],
-  "capcut": ["video editing", "video editor", "tiktok", "reels", "youtube", "shorts", "social media", "captions", "free video editor"],
-  "opusclip": ["clips", "shorts", "youtube", "social media", "podcast"],
-  "elevenlabs": ["voice", "voiceover", "text to speech", "audiobook", "dubbing", "read aloud"],
-  "speechify": ["read aloud", "read out loud", "text to speech", "pdf", "listen", "dyslexia", "audiobook"],
-  "adobe-podcast": ["podcast", "audio", "voice", "microphone", "recording"],
-  "suno": ["music", "song", "songs", "lyrics"],
-  "udio": ["music", "song", "songs"],
-  "otter-ai": ["meeting", "meeting notes", "transcribe", "lecture", "notes", "zoom", "students"],
-  "fireflies-ai": ["meeting", "meeting notes", "transcribe", "zoom", "calls"],
-  "fathom": ["meeting", "meeting notes", "zoom", "calls"],
-  "reclaim-ai": ["calendar", "schedule", "meeting", "time"],
-  "motion": ["calendar", "schedule", "tasks", "to do", "planner", "meeting"],
-  "notion-ai": ["notes", "wiki", "docs", "projects", "to do"],
-  "mem": ["notes", "note taking"],
-  "zapier": ["automation", "automate", "connect apps", "business", "workflow"],
-  "superhuman": ["email", "inbox", "gmail", "outlook"],
-  "character-ai": ["chat", "characters", "role play", "stories"],
-  "poe": ["chatbots", "compare"],
-  "jasper": ["marketing", "copywriting", "blog", "ads", "social media"],
-  "copy-ai": ["marketing", "copywriting", "sales emails", "social media"],
-  "writesonic": ["seo", "blog", "marketing", "articles"],
-  "hubspot-breeze": ["crm", "marketing", "sales", "business", "customer service"],
-  "adcreative-ai": ["ads", "advertising", "facebook ads", "marketing"],
-  "surfer": ["seo", "google ranking", "blog", "marketing"],
-  "buffer": ["social media", "instagram", "facebook", "schedule posts", "marketing", "business"],
-  "lately": ["social media", "posts", "marketing"],
-  "intercom-fin": ["customer service", "support", "chatbot", "customer emails", "business"],
-  "tidio": ["customer service", "live chat", "chatbot", "website chat", "online store", "business"],
-  "zendesk-ai": ["customer service", "support", "help desk", "tickets", "customer emails"],
-  "cleo": ["budget", "money", "save money", "spending", "finance"],
-  "rocket-money": ["budget", "money", "save money", "subscriptions", "bills", "spending", "finance"],
-  "docyt": ["bookkeeping", "accounting", "taxes", "business", "finance", "invoices"]
+  "chatgpt": [
+    "homework",
+    "essay",
+    "resume",
+    "cover letter",
+    "email",
+    "letter",
+    "recipe",
+    "cooking",
+    "meal plan",
+    "trip",
+    "advice",
+    "questions",
+    "math",
+    "brainstorm",
+    "school",
+    "students",
+    "job",
+    "story",
+    "book",
+    "novel"
+  ],
+  "claude": [
+    "essay",
+    "resume",
+    "cover letter",
+    "email",
+    "letter",
+    "report",
+    "long documents",
+    "homework",
+    "recipe",
+    "questions",
+    "advice",
+    "students",
+    "job",
+    "story",
+    "book",
+    "novel"
+  ],
+  "gemini": [
+    "homework",
+    "essay",
+    "resume",
+    "email",
+    "gmail",
+    "docs",
+    "recipe",
+    "trip",
+    "questions",
+    "students",
+    "school",
+    "job"
+  ],
+  "microsoft-copilot": [
+    "resume",
+    "cover letter",
+    "email",
+    "word",
+    "excel",
+    "powerpoint",
+    "presentation",
+    "recipe",
+    "questions",
+    "job"
+  ],
+  "le-chat": [
+    "questions",
+    "recipe",
+    "students",
+    "email"
+  ],
+  "grok": [
+    "questions",
+    "news"
+  ],
+  "pi": [
+    "talk",
+    "support",
+    "advice"
+  ],
+  "perplexity": [
+    "research",
+    "questions",
+    "sources",
+    "homework",
+    "facts"
+  ],
+  "grammarly": [
+    "grammar",
+    "spelling",
+    "essay",
+    "resume",
+    "cover letter",
+    "email",
+    "proofread",
+    "writing",
+    "students",
+    "school",
+    "job"
+  ],
+  "quillbot": [
+    "paraphrase",
+    "rewrite",
+    "essay",
+    "grammar",
+    "students",
+    "school",
+    "summarize",
+    "citation"
+  ],
+  "wordtune": [
+    "rewrite",
+    "essay",
+    "email",
+    "resume",
+    "cover letter",
+    "grammar"
+  ],
+  "sudowrite": [
+    "novel",
+    "book",
+    "story",
+    "fiction",
+    "author"
+  ],
+  "deepl": [
+    "translate",
+    "translation",
+    "language",
+    "spanish",
+    "french",
+    "german",
+    "foreign language"
+  ],
+  "duolingo": [
+    "language",
+    "spanish",
+    "french",
+    "german",
+    "learn a language",
+    "kids",
+    "school"
+  ],
+  "quizlet": [
+    "school",
+    "study",
+    "studying",
+    "exam",
+    "test",
+    "flashcards",
+    "flash cards",
+    "homework",
+    "students",
+    "teachers",
+    "kids",
+    "quiz",
+    "learning"
+  ],
+  "khanmigo": [
+    "school",
+    "homework",
+    "math",
+    "tutor",
+    "kids",
+    "students",
+    "teachers",
+    "lesson plan",
+    "study",
+    "learning",
+    "essay"
+  ],
+  "notebooklm": [
+    "study",
+    "notes",
+    "school",
+    "students",
+    "research",
+    "podcast",
+    "sources",
+    "teachers",
+    "homework"
+  ],
+  "elicit": [
+    "research",
+    "papers",
+    "studies",
+    "science"
+  ],
+  "consensus": [
+    "research",
+    "papers",
+    "studies",
+    "science",
+    "evidence",
+    "health"
+  ],
+  "scite": [
+    "research",
+    "citations",
+    "papers"
+  ],
+  "gamma": [
+    "presentation",
+    "slides",
+    "slideshow",
+    "powerpoint",
+    "deck",
+    "teachers"
+  ],
+  "beautiful-ai": [
+    "presentation",
+    "slides",
+    "slideshow",
+    "powerpoint",
+    "deck"
+  ],
+  "canva": [
+    "design",
+    "logo",
+    "flyer",
+    "poster",
+    "social media",
+    "presentation",
+    "slides",
+    "resume",
+    "photo",
+    "instagram",
+    "business",
+    "teachers",
+    "invitation"
+  ],
+  "looka": [
+    "logo",
+    "brand",
+    "business",
+    "branding",
+    "business cards"
+  ],
+  "figma": [
+    "design",
+    "app design",
+    "ui",
+    "website design"
+  ],
+  "framer": [
+    "website",
+    "web site",
+    "landing page",
+    "no code",
+    "portfolio"
+  ],
+  "lovable": [
+    "app",
+    "website",
+    "no code",
+    "build an app"
+  ],
+  "bolt": [
+    "app",
+    "website",
+    "no code",
+    "build an app"
+  ],
+  "v0": [
+    "website",
+    "ui",
+    "app"
+  ],
+  "replit": [
+    "coding",
+    "code",
+    "programming",
+    "app",
+    "website",
+    "students"
+  ],
+  "github-copilot": [
+    "coding",
+    "code",
+    "programming",
+    "developer"
+  ],
+  "cursor": [
+    "coding",
+    "code",
+    "programming",
+    "developer"
+  ],
+  "midjourney": [
+    "art",
+    "pictures",
+    "images",
+    "illustration"
+  ],
+  "adobe-firefly": [
+    "pictures",
+    "images",
+    "photo",
+    "photo editing",
+    "art",
+    "logo",
+    "design"
+  ],
+  "leonardo-ai": [
+    "art",
+    "pictures",
+    "images",
+    "game art"
+  ],
+  "ideogram": [
+    "logo",
+    "poster",
+    "text in images",
+    "pictures",
+    "graphics"
+  ],
+  "stability-ai": [
+    "images",
+    "art",
+    "pictures"
+  ],
+  "krea": [
+    "art",
+    "images",
+    "pictures",
+    "photo"
+  ],
+  "remove-bg": [
+    "remove background",
+    "background",
+    "photo",
+    "cutout",
+    "transparent"
+  ],
+  "photoroom": [
+    "photo",
+    "photo editing",
+    "product photos",
+    "remove background",
+    "background",
+    "online store"
+  ],
+  "clipdrop": [
+    "photo",
+    "photo editing",
+    "remove background",
+    "remove objects",
+    "upscale"
+  ],
+  "runway": [
+    "video",
+    "video editing",
+    "film",
+    "movie"
+  ],
+  "pika": [
+    "video",
+    "animation",
+    "short video"
+  ],
+  "luma-dream-machine": [
+    "video"
+  ],
+  "synthesia": [
+    "video",
+    "training video",
+    "avatar",
+    "presenter"
+  ],
+  "heygen": [
+    "video",
+    "avatar",
+    "translate video",
+    "dubbing"
+  ],
+  "descript": [
+    "video editing",
+    "podcast",
+    "youtube",
+    "audio editing",
+    "transcribe"
+  ],
+  "capcut": [
+    "video editing",
+    "video editor",
+    "tiktok",
+    "reels",
+    "youtube",
+    "shorts",
+    "social media",
+    "captions",
+    "free video editor"
+  ],
+  "opusclip": [
+    "clips",
+    "shorts",
+    "youtube",
+    "social media",
+    "podcast"
+  ],
+  "elevenlabs": [
+    "voice",
+    "voiceover",
+    "text to speech",
+    "audiobook",
+    "dubbing",
+    "read aloud"
+  ],
+  "speechify": [
+    "read aloud",
+    "read out loud",
+    "text to speech",
+    "pdf",
+    "listen",
+    "dyslexia",
+    "audiobook"
+  ],
+  "adobe-podcast": [
+    "podcast",
+    "audio",
+    "voice",
+    "microphone",
+    "recording"
+  ],
+  "suno": [
+    "music",
+    "song",
+    "songs",
+    "lyrics"
+  ],
+  "udio": [
+    "music",
+    "song",
+    "songs"
+  ],
+  "otter-ai": [
+    "meeting",
+    "meeting notes",
+    "transcribe",
+    "lecture",
+    "notes",
+    "zoom",
+    "students"
+  ],
+  "fireflies-ai": [
+    "meeting",
+    "meeting notes",
+    "transcribe",
+    "zoom",
+    "calls"
+  ],
+  "fathom": [
+    "meeting",
+    "meeting notes",
+    "zoom",
+    "calls"
+  ],
+  "reclaim-ai": [
+    "calendar",
+    "schedule",
+    "meeting",
+    "time"
+  ],
+  "motion": [
+    "calendar",
+    "schedule",
+    "tasks",
+    "to do",
+    "planner",
+    "meeting"
+  ],
+  "notion-ai": [
+    "notes",
+    "wiki",
+    "docs",
+    "projects",
+    "to do"
+  ],
+  "mem": [
+    "notes",
+    "note taking"
+  ],
+  "zapier": [
+    "automation",
+    "automate",
+    "connect apps",
+    "business",
+    "workflow"
+  ],
+  "superhuman": [
+    "email",
+    "inbox",
+    "gmail",
+    "outlook"
+  ],
+  "character-ai": [
+    "chat",
+    "characters",
+    "role play",
+    "stories"
+  ],
+  "poe": [
+    "chatbots",
+    "compare"
+  ],
+  "jasper": [
+    "marketing",
+    "copywriting",
+    "blog",
+    "ads",
+    "social media"
+  ],
+  "copy-ai": [
+    "marketing",
+    "copywriting",
+    "sales emails",
+    "social media"
+  ],
+  "writesonic": [
+    "seo",
+    "blog",
+    "marketing",
+    "articles"
+  ],
+  "hubspot-breeze": [
+    "crm",
+    "marketing",
+    "sales",
+    "business",
+    "customer service"
+  ],
+  "adcreative-ai": [
+    "ads",
+    "advertising",
+    "facebook ads",
+    "marketing"
+  ],
+  "surfer": [
+    "seo",
+    "google ranking",
+    "blog",
+    "marketing"
+  ],
+  "buffer": [
+    "social media",
+    "instagram",
+    "facebook",
+    "schedule posts",
+    "marketing",
+    "business"
+  ],
+  "lately": [
+    "social media",
+    "posts",
+    "marketing"
+  ],
+  "intercom-fin": [
+    "customer service",
+    "support",
+    "chatbot",
+    "customer emails",
+    "business"
+  ],
+  "tidio": [
+    "customer service",
+    "live chat",
+    "chatbot",
+    "website chat",
+    "online store",
+    "business"
+  ],
+  "zendesk-ai": [
+    "customer service",
+    "support",
+    "help desk",
+    "tickets",
+    "customer emails"
+  ],
+  "cleo": [
+    "budget",
+    "money",
+    "save money",
+    "spending",
+    "finance"
+  ],
+  "rocket-money": [
+    "budget",
+    "money",
+    "save money",
+    "subscriptions",
+    "bills",
+    "spending",
+    "finance"
+  ],
+  "docyt": [
+    "bookkeeping",
+    "accounting",
+    "taxes",
+    "business",
+    "finance",
+    "invoices"
+  ]
 }

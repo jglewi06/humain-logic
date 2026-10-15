@@ -10,7 +10,14 @@ export const STOP = new Set('a an the and or of for to in on at by with from my 
 
 // research "studies" (papers) must not merge with "study" (school)
 const KEEP = new Set(['studies', 'news', 'series', 'canvas', 'analytics', 'slides']);
+// -ing/-ed forms whose base ends in "e" (writing -> write, not "writ")
+const E_BASE = { writing: 'write', written: 'write', wrote: 'write', making: 'make', made: 'make', taking: 'take', coding: 'code', coded: 'code',
+  sharing: 'share', saving: 'save', saved: 'save', creating: 'create', created: 'create', scheduling: 'schedule', scheduled: 'schedule',
+  managing: 'manage', using: 'use', used: 'use', translating: 'translate', translated: 'translate', organizing: 'organize', practicing: 'practice',
+  summarizing: 'summarize', summarized: 'summarize', automating: 'automate', automated: 'automate', generating: 'generate', generated: 'generate',
+  improving: 'improve', removing: 'remove', designing: 'design', writer: 'write', writers: 'write' };
 export function stem(w) {
+  if (E_BASE[w]) return E_BASE[w];
   if (w.length <= 3 || KEEP.has(w)) return w;
   if (w.endsWith('ies') && w.length > 4) return w.slice(0, -3) + 'y';
   if (w.endsWith('ing') && w.length > 5) { w = w.slice(0, -3); if (/(.)\1$/.test(w)) w = w.slice(0, -1); return w; }
@@ -45,16 +52,17 @@ export const SYNONYMS = {
   cv: ['resume'],
   interview: ['job', 'practice conversation'],
   essay: ['writing', 'grammar', 'paraphrase', 'students'],
-  write: ['writing', 'draft'],
-  writing: ['grammar', 'rewrite', 'draft'],
+  write: ['draft', 'rewrite', 'grammar'],
   book: ['novel', 'story', 'fiction', 'author'],
   story: ['fiction', 'novel', 'stories'],
   email: ['inbox', 'emails', 'mail', 'gmail'],
+  reply: ['answer', 'respond'],
+  respond: ['answer', 'reply'],
   mail: ['email'],
   letter: ['email', 'writing'],
   logo: ['brand', 'branding'],
   brand: ['logo'],
-  video: ['videos', 'clips', 'film', 'editing'],
+  video: ['videos', 'clips', 'film'],
   movie: ['video', 'film'],
   youtube: ['video', 'clips', 'shorts'],
   tiktok: ['video', 'short video', 'social media'],
@@ -206,9 +214,9 @@ function scoreDoc(P, doc, groups) {
 const CAT_WORDS = {
   education: 'school study homework learning students kids teacher tutor exam flashcards language',
   productivity: 'questions advice email recipe trip resume job letter everyday notes meeting calendar',
-  writing: 'writing essay grammar book story rewrite translate',
+  writing: 'write writing essay grammar book story novel rewrite paraphrase',
   image: 'photo picture image art drawing',
-  video: 'video movie youtube tiktok film',
+  video: 'video videos movie youtube tiktok film clip',
   audio: 'music song voice podcast audio speech',
   design: 'logo design presentation slides flyer poster website',
   marketing: 'marketing ads social seo business sales',
@@ -237,22 +245,26 @@ export function search(P, q, { chosenTask = null } = {}) {
     const tt = P.taskTerms.get(t.s); if (!tt.length) continue;
     const hitO = tt.filter(w => orig.has(w)).length; if (!hitO) continue;
     const cov = tt.filter(w => qset.has(w)).length / tt.length;
-    if (cov === 1 || (cov >= 0.66 && hitO >= 2)) cand.push({ item: t, hitO, cov, score: 1 - (hitO + cov) / 10 });
+    const hitS = tt.filter(w => !orig.has(w) && qset.has(w)).length;
+    if (cov === 1 || (cov >= 0.66 && hitO >= 2)) cand.push({ item: t, hitO, cov, rank: hitO + 0.5 * hitS, score: 1 - (hitO + cov) / 10 });
   }
-  cand.sort((x, y) => y.hitO - x.hitO || y.cov - x.cov || P.taskTerms.get(x.item.s).length - P.taskTerms.get(y.item.s).length || y.item.k.length - x.item.k.length);
+  cand.sort((x, y) => y.rank - x.rank || y.hitO - x.hitO || y.cov - x.cov || P.taskTerms.get(x.item.s).length - P.taskTerms.get(y.item.s).length || y.item.k.length - x.item.k.length);
   const task = chosenTask ? P.index.tasks.find(t => t.s === chosenTask) : cand[0]?.item;
-  const ambiguous = !chosenTask && cand.length > 1 && cand[1].hitO === cand[0].hitO && cand[1].cov === cand[0].cov && cand[0].hitO === 1 && groups.length === 1;
+  const ambiguous = !chosenTask && cand.length > 1 && cand[1].rank === cand[0].rank && cand[1].cov === cand[0].cov && cand[0].hitO === 1 && groups.length === 1;
   const taskOptions = cand.slice(0, 4);
   const taskHits = taskOptions;
   const taskTools = new Set(task ? task.k : []);
+  // Tools whose own category matches the query's plain words get a modest boost ("video" -> Video tools first)
+  const qcats = new Set(Object.entries(CATS).filter(([, set]) => groups.some(g => set.has(g.w))).map(([c]) => c));
   const results = [];
   let top = 0;
   const scored = P.docs.map(doc => ({ doc, ...scoreDoc(P, doc, groups) }));
   for (const s of scored) top = Math.max(top, s.score);
   for (const s of scored) {
-    let score = s.score, why = s.hits.length ? `matches “${[...new Set(s.hits)].slice(0, 3).join('”, “')}”` : '';
+    let score = s.score * (qcats.has(s.doc.t.c) ? 1.3 : 1), why = s.hits.length ? `matches “${[...new Set(s.hits)].slice(0, 3).join('”, “')}”` : '';
     const tagged = taskTools.has(s.doc.t.s);
-    if (tagged) { score += Math.max(top * 0.3, 2); why = `listed for “${task.n.toLowerCase()}”`; }
+    // task bonus scales with how well the tool matched the words themselves, so a loosely tagged tool can't jump ahead
+    if (tagged) { score += Math.max(top * 0.3, 2) * Math.min(1, s.score / (0.5 * top || 1)); why = `listed for “${task.n.toLowerCase()}”`; }
     if (score > 0) results.push({ tool: s.doc.t, score, base: s.score, tagged, why });
   }
   results.sort((a, b) => b.score - a.score || a.tool.n.localeCompare(b.tool.n));

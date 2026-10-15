@@ -1,7 +1,77 @@
 {
- "updated": "2026-10-15T14:47:35.632Z",
+ "updated": "2026-10-15T16:31:19.430Z",
  "failed_feeds": [],
  "items": [
+  {
+   "id": "friends-don-t-let-friends-feed-their-data-to-ai-agents",
+   "title": "Friends don’t let friends feed their data to AI agents",
+   "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
+   "source": "The Verge – AI",
+   "date": "2026-10-15T16:21:45.000Z",
+   "summary": "There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the advent of \"AI personal assistants\" like…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-15T16:08:03.000Z",
+   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
+   "id": "trust-in-depth-giving-agents-more-autonomy-without-losing-control",
+   "title": "Trust in Depth: Giving agents more autonomy without losing control",
+   "link": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+   "source": "AWS Machine Learning Blog",
+   "date": "2026-10-15T15:05:35.000Z",
+   "summary": "Enterprise leaders want AI agents to take on more work but don't fully trust them to act correctly every time. Trust in Depth is AWS's layered approach-scope, know, bound, observe, and prove-that lets agents act on their own when their…",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-agents-are-coming-to-rivian-s-cars",
+   "title": "AI agents are coming to Rivian’s cars",
+   "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-15T15:02:36.000Z",
+   "summary": "We'll likely learn more about how this will work at the company's upcoming \"AI & Autonomy Day\" event in December.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "open-from-data-center-to-desktop-nvidia-expands-nemotron-family-with-h",
+   "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+   "link": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+   "source": "NVIDIA Blog",
+   "date": "2026-10-15T15:00:24.000Z",
+   "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B…",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/FIRST-agentic-ai-nemotron-3.5-super-vl-blog-1920x1080-5783765.jpeg",
+   "also": []
+  },
   {
    "id": "how-windows-is-being-optimized-for-nvidia-s-rtx-spark-laptops",
    "title": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
@@ -12,6 +82,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -24,6 +96,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -36,6 +110,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -48,6 +124,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -60,6 +138,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -72,6 +152,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -84,6 +166,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/GFN_Thursday_October_15_2026.jpg",
    "also": []
   },
   {
@@ -96,6 +180,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -108,6 +194,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -120,6 +208,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -132,6 +222,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -144,6 +236,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -156,6 +250,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -168,6 +264,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-in-science-enablers-1920x1080-1.jpg",
    "also": []
   },
   {
@@ -180,6 +278,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -192,6 +292,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -204,6 +306,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nordics-embrace-social-1920x1080-5822300.jpeg",
    "also": []
   },
   {
@@ -216,6 +320,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -228,6 +334,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -240,6 +348,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -252,6 +362,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -264,6 +376,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -276,6 +390,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -288,6 +404,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -300,6 +418,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-3Q-Collision-01-press_1.jpg?itok=BLOydoCM",
    "also": []
   },
   {
@@ -312,6 +432,22 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "welcome-flux-3-image-klein-in-diffusers",
+   "title": "Welcome FLUX.3 Image Klein in Diffusers",
+   "link": "https://huggingface.co/blog/flux-3",
+   "source": "Hugging Face Blog",
+   "date": "2026-10-15T00:00:00.000Z",
+   "summary": "",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -324,6 +460,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -336,6 +474,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -348,30 +488,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
-   "also": []
-  },
-  {
-   "id": "eight-states-sue-openai-saying-chatgpt-isn-t-safe-for-kids",
-   "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-   "source": "The Verge – AI",
-   "date": "2026-10-14T21:11:28.000Z",
-   "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas,…",
-   "category": "rules-safety",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "also": []
-  },
-  {
-   "id": "youtube-music-launches-new-labels-as-ai-generated-music-floods-streami",
-   "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-   "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-14T18:23:46.000Z",
-   "summary": "The label will appear on the player page and include songs entirely generated by AI or partially, such as AI involved in composition and vocals.",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -384,6 +502,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6ace87bed95d506835d511b4/master/pass/AI-Lab-AI-Coming-for-Other-Areas-of-Science-Businesspsd.jpg",
    "also": []
   },
   {
@@ -396,6 +516,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -408,6 +530,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/USS0291-Google_Research_Anthem_Film_Thumbnail4_1.jpg",
    "also": []
   },
   {
@@ -420,6 +544,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/EarthAITechReport1_Overview.gif",
    "also": []
   },
   {
@@ -432,6 +558,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/DeepReview2.jpg",
    "also": []
   },
   {
@@ -444,6 +572,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -456,6 +586,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-Weather-Forecasting-01.gif?itok=n6-zCHF4",
    "also": []
   },
   {
@@ -468,6 +600,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -480,6 +614,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -492,6 +628,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -504,6 +642,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -516,6 +656,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "also": []
   },
   {
@@ -528,6 +670,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -540,6 +684,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -552,6 +698,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -564,6 +712,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6acdf17fe71041f109e915b0/master/pass/E4.jpg",
    "also": []
   },
   {
@@ -576,6 +726,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -588,6 +740,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6ace9af8b7c3e684c0712364/master/pass/Men-Cant-Stop-Lying-About-AI-Business938329806.jpg",
    "also": []
   },
   {
@@ -600,6 +754,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6aceaa51eba493f958015701/master/pass/politics_ai_guardrails_removed_terrorist.jpg",
    "also": []
   },
   {
@@ -612,6 +768,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -624,6 +782,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -636,6 +796,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/uk-ecosystem-industries.png",
    "also": []
   },
   {
@@ -648,6 +810,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gtc-berlin-smart-cities-blog.jpg",
    "also": []
   },
   {
@@ -660,6 +824,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": "https://lh3.googleusercontent.com/5PC4h7MzjC0ojOxiK-nPcRz0b6kUybKnCBjLL3nsb9T9qt7-2ciORJPnrObeFaYbAMqPxIhH4Wq9HD-U73lCivpFBcK8gABvhXXDo2lzUUSk9olsZQ=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -672,6 +838,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -684,6 +852,8 @@
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": "https://media.wired.com/photos/6acf68394246ebd08155f6c2/master/pass/2026-10-13T224936Z_547248141_RC2F2OAXO3WE_RTRMADP_3_OPENAI-SPYING-FBI.jpg",
    "also": []
   },
   {
@@ -696,6 +866,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-mcgovern-self-supervisedlearning.jpg?itok=_zXjMM26",
    "also": []
   },
   {
@@ -708,6 +880,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-lincolnlab-biosecurity.jpg?itok=XhKBx43q",
    "also": []
   },
   {
@@ -720,6 +894,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -732,6 +908,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -744,6 +922,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": "https://media.wired.com/photos/6ace48fd005dc85af95e36ae/master/pass/101326-Big%20Four%20UK%20parliment.jpg",
    "also": []
   },
   {
@@ -756,6 +936,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -768,6 +950,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -780,6 +964,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -792,6 +978,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -804,24 +992,14 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": [
     {
      "source": "Google – AI blog",
      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
     }
    ]
-  },
-  {
-   "id": "how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agen",
-   "title": "How ShipStation Global built an AI IT help desk on Amazon Bedrock AgentCore",
-   "link": "https://aws.amazon.com/blogs/machine-learning/how-shipstation-global-built-an-ai-it-help-desk-on-amazon-bedrock-agentcore/",
-   "source": "AWS Machine Learning Blog",
-   "date": "2026-10-13T15:54:49.000Z",
-   "summary": "ShipStation Global's engineering team built Deckhand, an AI IT help desk agent for Slack on Amazon Bedrock AgentCore. It answers routine IT questions from a curated knowledge base, reads error-message screenshots, and files Jira tickets.…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "also": []
   },
   {
    "id": "all-systems-go-global-pc-app-ecosystem-ready-for-nvidia-rtx-spark",
@@ -833,6 +1011,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nv-raig-weekly-kit-10132026-nv-blog-1280x680-1.jpg",
    "also": []
   },
   {
@@ -845,6 +1025,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -857,6 +1039,8 @@
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6acd26155e2bb341ef93eb39/master/pass/10122026_BE_Wikepidia_v2.jpg",
    "also": []
   },
   {
@@ -869,6 +1053,8 @@
    "category": "rules-safety",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -881,6 +1067,8 @@
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -893,6 +1081,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://media.wired.com/photos/6ac83144109df86817f42ae5/master/pass/Politics_TheBiggestPro-AISuperPacHasBeenFunneling.gif",
    "also": []
   },
   {
@@ -905,6 +1095,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -917,6 +1109,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -929,42 +1123,8 @@
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
-   "also": []
-  },
-  {
-   "id": "q-a-building-accountability-behind-our-words-and-ai-s-in-civic-convers",
-   "title": "Q&A: Building accountability behind our words — and AI’s — in civic conversations",
-   "link": "https://news.mit.edu/2026/qa-building-accountability-behind-our-words-and-ai-civic-conversations-1013",
-   "source": "MIT News – AI",
-   "date": "2026-10-13T04:00:00.000Z",
-   "summary": "Professor Deb Roy contends there should be someone who is “answerable” for every piece of text in public life, no matter its origins.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "also": []
-  },
-  {
-   "id": "ocp-global-summit-amid-ecosystem-adoption-nvidia-opens-vera-rubin-arch",
-   "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
-   "link": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
-   "source": "NVIDIA Blog",
-   "date": "2026-10-12T15:00:25.000Z",
-   "summary": "As AI factories grow from megawatts to gigawatts, building them takes more than advanced computing. Open standards are helping the industry scale AI infrastructure faster, more efficiently and more reliably. At the Open Compute Project…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "also": []
-  },
-  {
-   "id": "we-re-putting-too-much-faith-in-ai-s-ability-to-say-no",
-   "title": "We’re putting too much faith in AI’s ability to say no",
-   "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-09T09:00:00.000Z",
-   "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience.…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/france-ai-ecosystem-gtc-berlin-updated.jpeg",
    "also": []
   }
  ]

@@ -357,7 +357,6 @@ footer a:focus-visible,footer .brand:focus-visible{outline:2px solid var(--hl-fo
 /* News */
 .news{display:grid;grid-template-columns:1.25fr 1fr;gap:var(--gutter)}
 .news-feature{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column}
-.news-art{height:200px;background:var(--color-lavender);position:relative;overflow:hidden}
 .news-feature .body{padding:var(--space-5);display:flex;flex-direction:column;gap:var(--space-3)}
 .tag{display:inline-block;font:600 12px/1 var(--font-body);letter-spacing:.03em;padding:6px 10px;border-radius:var(--radius-pill);background:var(--color-lavender);color:var(--color-ink)}
 .news h3{font-size:var(--fs-h3)}
@@ -365,10 +364,6 @@ footer a:focus-visible,footer .brand:focus-visible{outline:2px solid var(--hl-fo
 .why b{font-weight:600}
 .meta{font-size:var(--fs-caption);color:var(--color-slate)}
 .news-list{display:flex;flex-direction:column;gap:0;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-2) var(--space-5)}
-.news-item{padding:var(--space-4) 0;border-bottom:1px solid var(--color-border);display:flex;flex-direction:column;gap:6px}
-.news-item:last-child{border-bottom:0}
-.news-item h4{font-size:var(--fs-h4);line-height:var(--lh-snug)}
-.news-item p{font-size:var(--fs-small);color:var(--color-slate)}
 
 /* How */
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gutter);margin-top:var(--space-2)}
@@ -601,3 +596,31 @@ html,body{overflow-x:clip}
 .hi-groups{display:grid;gap:var(--space-4);grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:var(--space-4)}
 .hi-groups ol{margin:var(--space-3) 0 0;padding-left:20px} .hi-groups li{margin:4px 0}
 .hiring p{font-size:var(--fs-body)} .hiring p.confidence{font-size:var(--fs-small)}
+
+/* News images (homepage-spec §5.1; ported from design/homepage-mockup.html) */
+.news-item{padding:var(--space-4) 0;border-bottom:1px solid var(--color-border);display:grid;grid-template-columns:minmax(0,1fr) 128px;gap:var(--space-4);align-items:start;flex:1}
+.news-item:last-child{border-bottom:0}
+.news-item .txt{display:flex;flex-direction:column;gap:6px;min-width:0}
+.news-item h4{font-size:var(--fs-h4);line-height:var(--lh-snug)}
+.news-item p{font-size:var(--fs-small);color:var(--color-slate)}
+/* News images (homepage-spec §5.1). Fixed aspect ratios reserve space before load (no layout shift);
+   the warm skeleton colour shows until the lazy image arrives. Images are never links of their own. */
+.news-media{position:relative;margin:0;overflow:hidden;background:#EFEAE2;border-radius:var(--radius-md);isolation:isolate}
+.news-media img{display:block;width:100%;height:100%;object-fit:cover}
+/* Soft overlay: a hairline inner edge plus a faint Ink fade at the bottom; publisher photos are also gently desaturated */
+.news-media::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(31,42,55,.07);background:linear-gradient(180deg,rgba(31,42,55,0) 55%,rgba(31,42,55,.12) 100%)}
+.news-media.is-photo img{filter:saturate(.9) contrast(.97)}
+.news-media.is-tile::after{background:none}
+.news-media .credit{position:absolute;right:var(--space-3);bottom:var(--space-3);z-index:1;font:500 var(--fs-caption)/1 var(--font-body);color:var(--color-ink);background:rgba(255,255,255,.92);padding:6px 10px;border-radius:var(--radius-pill)}
+.news-feature .news-media{aspect-ratio:16/9;margin:var(--space-3) var(--space-3) 0}
+.news-item .news-media{width:128px;aspect-ratio:4/3;margin-top:4px}
+.news-item .meta .img-credit::before{content:"·";margin:0 6px}
+@media (max-width: 767px) {
+  .news-item{grid-template-columns:minmax(0,1fr) 96px;gap:6px var(--space-3)}
+  .news-item .txt{display:contents}
+  .news-item .tag{grid-column:1;justify-self:start}
+  .news-item h4{grid-column:1}
+  .news-item .news-media{width:96px;grid-column:2;grid-row:1 / span 2;margin-top:0}
+  .news-item p,.news-item .meta{grid-column:1 / -1}
+  .news-media .credit{right:var(--space-2);bottom:var(--space-2);padding:5px 8px}
+}
