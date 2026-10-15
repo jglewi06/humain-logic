@@ -53,3 +53,5 @@ for (const it of items.sort((a, b) => b.date.localeCompare(a.date))) {
 const out = [...byKey.values()].slice(0, MAX_ITEMS);
 fs.writeFileSync(OUT, JSON.stringify({ updated: new Date().toISOString(), failed_feeds: failed, items: out }, null, 1) + '\n');
 console.log(`wrote ${out.length} items from ${FEEDS.length - failed.length}/${FEEDS.length} feeds`);
+// rss-parser can leave sockets open (a feed that hangs mid-stream); don't let that stall CI.
+process.exit(0);

@@ -588,3 +588,4 @@ a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .nl-success h3{font-size:var(--fs-h3);margin-bottom:var(--space-2)}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .btn[disabled]{opacity:.4;cursor:not-allowed}
+html,body{overflow-x:clip}
