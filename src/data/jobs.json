@@ -33,7 +33,7 @@
    "url": "https://www.apprenticeship.gov/"
   }
  ],
- "employment_pressure_note": "Two clocks: automation_year_range (with confidence, rationale, sources) = near-full TASK automation estimate. employment_pressure_by_2030 (high|medium|low|growth, with employment_pressure_summary and employment_pressure_sources) = expected hiring freeze / headcount decline by ~2030 from employer surveys (WEF Future of Jobs 2025) and early labor data (Stanford Canaries Aug 2026, Metaculus Labor Hub), NOT full automation. Overall forecasts remain modest (Forrester ~6% of US jobs lost by 2030; BCG: more jobs reshaped than replaced).",
+ "employment_pressure_note": "Each job shows two different estimates. The automation timeline is our rough guess at when technology could handle most of this job's tasks without a person; it is based on published research and is uncertain. Hiring impact by 2030 is about something sooner: how much hiring and headcount for this job may shrink over the next few years, based on employer surveys and early job-market data. A high hiring impact doesn't mean the job disappears, only that competition for openings may get tougher.",
  "jobs": [
   {
    "slug": "data-entry-keyer",
