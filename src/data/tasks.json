@@ -81,6 +81,36 @@
   ]
  },
  {
+  "slug": "legal-advice",
+  "name": "Legal advice",
+  "tools": [
+   "donotpay",
+   "legalzoom",
+   "rocket-lawyer",
+   "genie-ai",
+   "trust-and-will",
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "legal-question",
+  "name": "Legal question",
+  "tools": [
+   "donotpay",
+   "legalzoom",
+   "rocket-lawyer",
+   "genie-ai",
+   "trust-and-will",
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
   "slug": "track-job-applications",
   "name": "Track job applications",
   "tools": [
@@ -316,6 +346,18 @@
   ]
  },
  {
+  "slug": "communicate-with-my-partner",
+  "name": "Communicate with my partner",
+  "tools": [
+   "lasting",
+   "paired",
+   "flamme"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "create-an-image",
   "name": "Create an image",
   "tools": [
@@ -391,6 +433,18 @@
   ]
  },
  {
+  "slug": "improve-my-relationship",
+  "name": "Improve my relationship",
+  "tools": [
+   "lasting",
+   "paired",
+   "flamme"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "make-a-collage",
   "name": "Make a collage",
   "tools": [
@@ -400,6 +454,18 @@
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "make-a-travel-itinerary",
+  "name": "Make a travel itinerary",
+  "tools": [
+   "mindtrip",
+   "layla",
+   "wonderplan"
+  ],
+  "categories": [
+   "travel"
   ]
  },
  {
@@ -424,6 +490,18 @@
   ],
   "categories": [
    "website-builders"
+  ]
+ },
+ {
+  "slug": "plan-a-vacation",
+  "name": "Plan a vacation",
+  "tools": [
+   "mindtrip",
+   "layla",
+   "wonderplan"
+  ],
+  "categories": [
+   "travel"
   ]
  },
  {
@@ -479,6 +557,18 @@
   ]
  },
  {
+  "slug": "resolve-an-argument",
+  "name": "Resolve an argument",
+  "tools": [
+   "lasting",
+   "paired",
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "small-business-accounting",
   "name": "Small business accounting",
   "tools": [
@@ -514,6 +604,30 @@
   "categories": [
    "video",
    "voice"
+  ]
+ },
+ {
+  "slug": "translate-text",
+  "name": "Translate text",
+  "tools": [
+   "deepl",
+   "reverso",
+   "google-translate"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "travel-itinerary",
+  "name": "Travel itinerary",
+  "tools": [
+   "mindtrip",
+   "layla",
+   "wonderplan"
+  ],
+  "categories": [
+   "travel"
   ]
  },
  {
@@ -685,6 +799,17 @@
   ]
  },
  {
+  "slug": "co-parenting",
+  "name": "Co-parenting",
+  "tools": [
+   "lasting",
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "conversation-practice",
   "name": "Conversation practice",
   "tools": [
@@ -704,6 +829,17 @@
   ],
   "categories": [
    "design"
+  ]
+ },
+ {
+  "slug": "date-night-ideas",
+  "name": "Date night ideas",
+  "tools": [
+   "paired",
+   "flamme"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -760,6 +896,17 @@
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "find-a-lawyer",
+  "name": "Find a lawyer",
+  "tools": [
+   "legalzoom",
+   "rocket-lawyer"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -870,17 +1017,6 @@
   ],
   "categories": [
    "education"
-  ]
- },
- {
-  "slug": "legal-question",
-  "name": "Legal question",
-  "tools": [
-   "donotpay",
-   "rocket-lawyer"
-  ],
-  "categories": [
-   "legal"
   ]
  },
  {
@@ -996,17 +1132,6 @@
   ]
  },
  {
-  "slug": "make-a-travel-itinerary",
-  "name": "Make a travel itinerary",
-  "tools": [
-   "mindtrip",
-   "wonderplan"
-  ],
-  "categories": [
-   "travel"
-  ]
- },
- {
   "slug": "make-a-voiceover",
   "name": "Make a voiceover",
   "tools": [
@@ -1093,6 +1218,29 @@
   ],
   "categories": [
    "productivity"
+  ]
+ },
+ {
+  "slug": "practice-conversation",
+  "name": "Practice conversation",
+  "tools": [
+   "duolingo",
+   "replika"
+  ],
+  "categories": [
+   "education",
+   "relationships"
+  ]
+ },
+ {
+  "slug": "questions-for-couples",
+  "name": "Questions for couples",
+  "tools": [
+   "paired",
+   "flamme"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -1252,6 +1400,17 @@
   ]
  },
  {
+  "slug": "talk-to-a-lawyer",
+  "name": "Talk to a lawyer",
+  "tools": [
+   "legalzoom",
+   "rocket-lawyer"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
   "slug": "track-spending",
   "name": "Track spending",
   "tools": [
@@ -1298,11 +1457,11 @@
   ]
  },
  {
-  "slug": "translate-text",
-  "name": "Translate text",
+  "slug": "translate-a-document",
+  "name": "Translate a document",
   "tools": [
    "deepl",
-   "reverso"
+   "google-translate"
   ],
   "categories": [
    "translation"
@@ -1521,6 +1680,16 @@
   ],
   "categories": [
    "customer-service"
+  ]
+ },
+ {
+  "slug": "ai-companion",
+  "name": "AI companion",
+  "tools": [
+   "replika"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -2174,6 +2343,16 @@
   ]
  },
  {
+  "slug": "chat-with-an-ai-friend",
+  "name": "Chat with an AI friend",
+  "tools": [
+   "replika"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "chatbot-for-whatsapp",
   "name": "Chatbot for WhatsApp",
   "tools": [
@@ -2284,6 +2463,16 @@
   ]
  },
  {
+  "slug": "check-the-tone-of-my-message",
+  "name": "Check the tone of my message",
+  "tools": [
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "check-writing-in-another-language",
   "name": "Check writing in another language",
   "tools": [
@@ -2344,6 +2533,16 @@
   ]
  },
  {
+  "slug": "co-parenting-app",
+  "name": "Co-parenting app",
+  "tools": [
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "cold-email-outreach",
   "name": "Cold email outreach",
   "tools": [
@@ -2361,6 +2560,16 @@
   ],
   "categories": [
    "customer-service"
+  ]
+ },
+ {
+  "slug": "communicate-with-my-ex",
+  "name": "Communicate with my ex",
+  "tools": [
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -2481,6 +2690,26 @@
   ],
   "categories": [
    "health"
+  ]
+ },
+ {
+  "slug": "couple-games",
+  "name": "Couple games",
+  "tools": [
+   "flamme"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
+  "slug": "couples-counseling-app",
+  "name": "Couples counseling app",
+  "tools": [
+   "lasting"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -2821,6 +3050,26 @@
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "dating-app-messages",
+  "name": "Dating app messages",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
+  "slug": "dating-profile",
+  "name": "Dating profile",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -3351,6 +3600,16 @@
   ],
   "categories": [
    "health"
+  ]
+ },
+ {
+  "slug": "feel-less-lonely",
+  "name": "Feel less lonely",
+  "tools": [
+   "replika"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -4011,6 +4270,16 @@
   ],
   "categories": [
    "sales"
+  ]
+ },
+ {
+  "slug": "improve-my-dating-profile",
+  "name": "Improve my dating profile",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -5194,6 +5463,16 @@
   ]
  },
  {
+  "slug": "marriage-help",
+  "name": "Marriage help",
+  "tools": [
+   "lasting"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "mass-apply-to-jobs",
   "name": "Mass apply to jobs",
   "tools": [
@@ -5424,6 +5703,16 @@
   ]
  },
  {
+  "slug": "pick-dating-photos",
+  "name": "Pick dating photos",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "plain-language-writing",
   "name": "Plain language writing",
   "tools": [
@@ -5461,16 +5750,6 @@
   ],
   "categories": [
    "productivity"
-  ]
- },
- {
-  "slug": "plan-a-vacation",
-  "name": "Plan a vacation",
-  "tools": [
-   "mindtrip"
-  ],
-  "categories": [
-   "travel"
   ]
  },
  {
@@ -5541,16 +5820,6 @@
   ],
   "categories": [
    "jobs-and-careers"
-  ]
- },
- {
-  "slug": "practice-conversation",
-  "name": "Practice conversation",
-  "tools": [
-   "duolingo"
-  ],
-  "categories": [
-   "education"
   ]
  },
  {
@@ -5794,6 +6063,26 @@
   ]
  },
  {
+  "slug": "relationship-advice",
+  "name": "Relationship advice",
+  "tools": [
+   "flamme"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
+  "slug": "relationship-check-in",
+  "name": "Relationship check-in",
+  "tools": [
+   "paired"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "relight-a-photo",
   "name": "Relight a photo",
   "tools": [
@@ -5931,6 +6220,16 @@
   ],
   "categories": [
    "productivity"
+  ]
+ },
+ {
+  "slug": "reply-to-a-match",
+  "name": "Reply to a match",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -6454,6 +6753,16 @@
   ]
  },
  {
+  "slug": "shared-custody-calendar",
+  "name": "Shared custody calendar",
+  "tools": [
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "shared-inbox",
   "name": "Shared inbox",
   "tools": [
@@ -6614,6 +6923,26 @@
   ]
  },
  {
+  "slug": "someone-to-talk-to",
+  "name": "Someone to talk to",
+  "tools": [
+   "replika"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
+  "slug": "split-child-expenses",
+  "name": "Split child expenses",
+  "tools": [
+   "ourfamilywizard"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "spreadsheet-formulas",
   "name": "Spreadsheet formulas",
   "tools": [
@@ -6721,6 +7050,16 @@
   ],
   "categories": [
    "health"
+  ]
+ },
+ {
+  "slug": "strengthen-my-marriage",
+  "name": "Strengthen my marriage",
+  "tools": [
+   "lasting"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {
@@ -7084,10 +7423,20 @@
   ]
  },
  {
-  "slug": "translate-a-document",
-  "name": "Translate a document",
+  "slug": "translate-a-conversation",
+  "name": "Translate a conversation",
   "tools": [
-   "deepl"
+   "google-translate"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "translate-a-photo",
+  "name": "Translate a photo",
+  "tools": [
+   "google-translate"
   ],
   "categories": [
    "translation"
@@ -7098,6 +7447,26 @@
   "name": "Translate a sentence",
   "tools": [
    "reverso"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "translate-a-website",
+  "name": "Translate a website",
+  "tools": [
+   "google-translate"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "translate-from-spanish",
+  "name": "Translate from Spanish",
+  "tools": [
+   "google-translate"
   ],
   "categories": [
    "translation"
@@ -7354,6 +7723,26 @@
   ]
  },
  {
+  "slug": "what-does-this-mean-in-english",
+  "name": "What does this mean in English",
+  "tools": [
+   "google-translate"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "what-to-text",
+  "name": "What to text",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
+  ]
+ },
+ {
   "slug": "whatsapp-chatbot",
   "name": "WhatsApp chatbot",
   "tools": [
@@ -7571,6 +7960,16 @@
   ],
   "categories": [
    "audio"
+  ]
+ },
+ {
+  "slug": "write-my-dating-bio",
+  "name": "Write my dating bio",
+  "tools": [
+   "yourmove-ai"
+  ],
+  "categories": [
+   "relationships"
   ]
  },
  {

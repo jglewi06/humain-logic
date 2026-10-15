@@ -158,6 +158,13 @@ export const SYNONYMS = {
   lead: ['leads', 'sales', 'prospects'],
   deal: ['compare prices', 'cheaper price', 'shopping'],
   price: ['compare prices', 'cheaper'],
+  partner: ['relationship', 'couple', 'relationships'],
+  couple: ['relationship', 'couples', 'marriage', 'relationships'],
+  marriage: ['relationship', 'couple', 'married', 'relationships'],
+  dating: ['date', 'dating app', 'texting', 'relationships'],
+  date: ['dating', 'texting'],
+  texting: ['text', 'message', 'dating', 'relationships'],
+  coparenting: ['co parenting', 'custody', 'parenting schedule', 'relationships'],
 };
 
 const editDist = (a, b, max) => {
@@ -276,6 +283,7 @@ const CAT_WORDS = {
   accessibility: 'blind low vision adhd accessibility dyslexia neurodivergent',
   'small-business': 'small business invoice invoices taxes bookkeeping clients booking appointments quotes',
   translation: 'translate translation language dub subtitles',
+  relationships: 'partner couple marriage dating texting coparenting relationship date',
 };
 const CATS = Object.fromEntries(Object.entries(CAT_WORDS).map(([c, s]) => [c, new Set(terms(s))]));
 

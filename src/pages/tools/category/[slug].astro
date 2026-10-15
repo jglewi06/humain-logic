@@ -7,7 +7,9 @@ import { SITE } from '../../../lib/site';
 export function getStaticPaths() { return categories.map(c => ({ params: { slug: c.slug }, props: { cat: c } })); }
 const { cat } = Astro.props;
 const list = tools.filter(t => t.category === cat.slug);
-const disclaimer = list.find(t => t.disclaimer)?.disclaimer;
+// Most common per-tool disclaimer in the group (from research tool-details); each tool page shows its own.
+const dc = list.filter(t => t.disclaimer).reduce((m, t) => m.set(t.disclaimer, (m.get(t.disclaimer) ?? 0) + 1), new Map());
+const disclaimer = [...dc].sort((a, b) => b[1] - a[1])[0]?.[0];
 const url = `${SITE.url}/tools/category/${cat.slug}`;
 const ld = [
   { '@type': 'ItemList', name: `${cat.label}: AI tools`, url, numberOfItems: list.length, itemListElement: list.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) },

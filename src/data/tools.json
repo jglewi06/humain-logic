@@ -7,6 +7,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "General-purpose AI chat assistant.",
   "tasks": [
    "answer-questions",
@@ -62,6 +63,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI assistant for writing, analysis and coding.",
   "tasks": [
    "summarize-a-long-document",
@@ -117,6 +119,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Google's AI assistant.",
   "tasks": [
    "answer-questions",
@@ -170,6 +173,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Microsoft's AI chat assistant.",
   "tasks": [
    "answer-questions",
@@ -223,6 +227,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI answer engine with cited sources.",
   "tasks": [
    "search-the-web-with-sources",
@@ -277,6 +282,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "xAI's conversational AI assistant.",
   "tasks": [
    "answer-questions",
@@ -329,6 +335,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Mistral's AI chat assistant.",
   "tasks": [
    "answer-questions",
@@ -380,6 +387,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Personal conversational AI.",
   "tasks": [
    "talk-through-a-problem",
@@ -431,6 +439,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI writing assistant for grammar and tone.",
   "tasks": [
    "fix-grammar",
@@ -485,6 +494,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Paraphrasing and writing tool.",
   "tasks": [
    "paraphrase-text",
@@ -538,6 +548,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI content platform for marketing teams.",
   "tasks": [
    "write-marketing-copy",
@@ -589,6 +600,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI platform for sales and marketing content.",
   "tasks": [
    "write-product-descriptions",
@@ -639,6 +651,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI writer for SEO and marketing content.",
   "tasks": [
    "write-a-blog-post",
@@ -687,6 +700,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI writing partner for fiction.",
   "tasks": [
    "write-a-story",
@@ -737,6 +751,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI rewriting and reading assistant.",
   "tasks": [
    "rewrite-a-sentence",
@@ -788,6 +803,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI built into the Notion workspace.",
   "tasks": [
    "take-meeting-notes",
@@ -841,6 +857,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI meeting transcription and notes.",
   "tasks": [
    "transcribe-a-meeting",
@@ -893,6 +910,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI notetaker for meetings.",
   "tasks": [
    "record-meeting-notes",
@@ -946,6 +964,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free AI meeting recorder and summarizer.",
   "tasks": [
    "summarize-a-zoom-call",
@@ -997,6 +1016,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI calendar scheduling assistant.",
   "tasks": [
    "schedule-my-tasks",
@@ -1046,6 +1066,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI calendar and task planner.",
   "tasks": [
    "plan-my-day",
@@ -1099,6 +1120,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Automation platform with AI features.",
   "tasks": [
    "automate-repetitive-tasks",
@@ -1148,6 +1170,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI presentation and document generator.",
   "tasks": [
    "make-a-presentation",
@@ -1198,6 +1221,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI-assisted slide design.",
   "tasks": [
    "make-a-presentation",
@@ -1246,6 +1270,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Design platform with Magic Studio AI tools.",
   "tasks": [
    "design-a-social-media-post",
@@ -1299,6 +1324,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Adobe's generative AI for images.",
   "tasks": [
    "create-an-image-from-text",
@@ -1351,6 +1377,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI image generation service.",
   "tasks": [
    "create-an-image-from-text",
@@ -1400,6 +1427,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI image and asset generator.",
   "tasks": [
    "create-game-art",
@@ -1452,6 +1480,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI image generator good at text in images.",
   "tasks": [
    "create-a-poster-with-text",
@@ -1503,6 +1532,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Developer of Stable Diffusion models.",
   "tasks": [
    "generate-an-image",
@@ -1551,6 +1581,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Automatic background removal.",
   "tasks": [
    "remove-background-from-photo",
@@ -1603,6 +1634,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI photo editor for product images.",
   "tasks": [
    "remove-background-from-photo",
@@ -1654,6 +1686,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Suite of AI image editing tools.",
   "tasks": [
    "remove-objects-from-photo",
@@ -1704,6 +1737,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Real-time AI image and video creation.",
   "tasks": [
    "generate-images-in-real-time",
@@ -1754,6 +1788,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI video generation and editing.",
   "tasks": [
    "make-a-video-from-text",
@@ -1805,6 +1840,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI video generator.",
   "tasks": [
    "make-a-short-video",
@@ -1854,6 +1890,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI video generation.",
   "tasks": [
    "make-a-video-from-text",
@@ -1904,6 +1941,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI avatar video platform.",
   "tasks": [
    "make-a-training-video",
@@ -1954,6 +1992,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI video avatars and translation.",
   "tasks": [
    "create-an-avatar-video",
@@ -2005,6 +2044,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Text-based audio and video editor.",
   "tasks": [
    "edit-a-podcast",
@@ -2056,6 +2096,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Video editor with AI features.",
   "tasks": [
    "edit-a-video",
@@ -2109,6 +2150,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI short-form clip generator.",
   "tasks": [
    "turn-long-video-into-short-clips",
@@ -2158,6 +2200,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI voice generation and dubbing.",
   "tasks": [
    "turn-text-into-speech",
@@ -2210,6 +2253,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI music generator.",
   "tasks": [
    "make-a-song",
@@ -2260,6 +2304,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI music creation.",
   "tasks": [
    "make-a-song",
@@ -2309,6 +2354,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "Text-to-speech reader.",
   "tasks": [
    "read-text-aloud",
@@ -2361,6 +2407,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI audio enhancement for voice.",
   "tasks": [
    "clean-up-audio",
@@ -2409,6 +2456,7 @@
   "category": "coding",
   "category_label": "Coding",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI pair programmer.",
   "tasks": [
    "write-code",
@@ -2463,6 +2511,7 @@
   "category": "coding",
   "category_label": "Coding",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI code editor.",
   "tasks": [
    "write-code",
@@ -2516,6 +2565,7 @@
   "category": "coding",
   "category_label": "Coding",
   "disclaimer": null,
+  "companion": false,
   "summary": "Browser IDE with AI agent.",
   "tasks": [
    "build-an-app-from-a-description",
@@ -2568,6 +2618,7 @@
   "category": "coding",
   "category_label": "Coding",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI app builder from prompts.",
   "tasks": [
    "build-a-website-without-coding",
@@ -2617,6 +2668,7 @@
   "category": "coding",
   "category_label": "Coding",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI full-stack web app builder.",
   "tasks": [
    "build-a-web-app-from-a-prompt",
@@ -2665,6 +2717,7 @@
   "category": "coding",
   "category_label": "Coding",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI UI and app generator.",
   "tasks": [
    "design-a-web-page",
@@ -2715,6 +2768,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI customer service agent.",
   "tasks": [
    "answer-customer-questions-automatically",
@@ -2764,6 +2818,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "Live chat and AI chatbot for small businesses.",
   "tasks": [
    "add-a-chatbot-to-my-website",
@@ -2814,6 +2869,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI for customer support.",
   "tasks": [
    "automate-support-tickets",
@@ -2865,6 +2921,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI tools inside HubSpot CRM.",
   "tasks": [
    "write-marketing-emails",
@@ -2917,6 +2974,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI ad creative generator.",
   "tasks": [
    "make-ad-images",
@@ -2966,6 +3024,7 @@
   "category": "seo",
   "category_label": "SEO and search visibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI SEO content optimization.",
   "tasks": [
    "optimize-a-blog-post-for-seo",
@@ -3015,6 +3074,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Social media scheduler with AI assistant.",
   "tasks": [
    "schedule-social-media-posts",
@@ -3066,6 +3126,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI social media content repurposing.",
   "tasks": [
    "turn-a-blog-into-social-posts",
@@ -3114,6 +3175,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI money and budgeting assistant.",
   "tasks": [
    "budget-my-money",
@@ -3164,6 +3226,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Personal finance and subscription manager.",
   "tasks": [
    "cancel-subscriptions",
@@ -3215,6 +3278,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI bookkeeping for small businesses.",
   "tasks": [
    "automate-bookkeeping",
@@ -3264,6 +3328,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI tutor and teaching assistant.",
   "tasks": [
    "get-homework-help",
@@ -3313,6 +3378,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Language learning app with AI features.",
   "tasks": [
    "learn-a-language",
@@ -3363,6 +3429,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Study tools with AI-generated flashcards.",
   "tasks": [
    "make-flashcards",
@@ -3413,6 +3480,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI research notebook grounded in your sources.",
   "tasks": [
    "summarize-my-documents",
@@ -3464,6 +3532,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI research assistant for papers.",
   "tasks": [
    "find-research-papers",
@@ -3513,6 +3582,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI search engine for research papers.",
   "tasks": [
    "find-scientific-evidence",
@@ -3561,6 +3631,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Smart citation search.",
   "tasks": [
    "check-how-a-paper-is-cited",
@@ -3610,6 +3681,7 @@
   "category": "translation",
   "category_label": "Translation",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI translation and writing tool.",
   "tasks": [
    "translate-a-document",
@@ -3665,6 +3737,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Website builder with AI.",
   "tasks": [
    "build-a-website",
@@ -3715,6 +3788,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI logo and brand design.",
   "tasks": [
    "make-a-logo",
@@ -3762,6 +3836,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Design tool with Figma AI features.",
   "tasks": [
    "design-an-app-screen",
@@ -3815,6 +3890,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Chat with AI characters.",
   "tasks": [
    "chat-with-a-character",
@@ -3865,6 +3941,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Access to many AI models in one app.",
   "tasks": [
    "try-different-ai-chatbots",
@@ -3918,6 +3995,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI note-taking app.",
   "tasks": [
    "organize-my-notes",
@@ -3967,6 +4045,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI-powered email client.",
   "tasks": [
    "write-an-email",
@@ -4020,6 +4099,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Low-cost AI writer for short copy, emails and posts.",
   "tasks": [
    "write-a-blog-post",
@@ -4074,6 +4154,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Grammar checker and style editor built for long-form and fiction writers.",
   "tasks": [
    "check-my-grammar",
@@ -4130,6 +4211,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Multilingual grammar, spelling and style checker.",
   "tasks": [
    "check-my-grammar",
@@ -4188,6 +4270,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Makes writing bold and clear by highlighting hard-to-read sentences.",
   "tasks": [
    "make-my-writing-clearer",
@@ -4243,6 +4326,7 @@
   "category": "writing",
   "category_label": "Writing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI writing assistant for essays, research papers and citations.",
   "tasks": [
    "write-an-essay",
@@ -4296,6 +4380,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI art generator with many models and a big community.",
   "tasks": [
    "make-ai-art",
@@ -4350,6 +4435,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI image generator for vectors, icons, logos and brand-consistent graphics.",
   "tasks": [
    "make-a-logo",
@@ -4404,6 +4490,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "All-in-one photo and video editor with AI tools.",
   "tasks": [
    "edit-a-photo",
@@ -4460,6 +4547,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Online photo editor and design tool with AI enhancement and generation.",
   "tasks": [
    "edit-a-photo",
@@ -4517,6 +4605,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free browser-based photo editor with AI tools.",
   "tasks": [
    "edit-a-photo-online",
@@ -4572,6 +4661,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI photo upscaler and enhancer.",
   "tasks": [
    "upscale-an-image",
@@ -4625,6 +4715,7 @@
   "category": "image",
   "category_label": "Images and photos",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI product-photo editor for online sellers.",
   "tasks": [
    "make-product-photos",
@@ -4679,6 +4770,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI video generator that turns text or images into short clips.",
   "tasks": [
    "make-a-video-from-text",
@@ -4733,6 +4825,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Online video editor with auto subtitles and AI tools.",
   "tasks": [
    "add-subtitles-to-a-video",
@@ -4787,6 +4880,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Turns a text prompt into a full video with script, footage and voiceover.",
   "tasks": [
    "make-a-video-from-text",
@@ -4840,6 +4934,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Turns scripts, blog posts and long videos into short branded videos.",
   "tasks": [
    "turn-a-blog-post-into-a-video",
@@ -4890,6 +4985,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Collaborative online video editor with AI tools.",
   "tasks": [
    "edit-a-video-online",
@@ -4943,6 +5039,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Text-to-video and text-to-speech with lifelike AI voices.",
   "tasks": [
    "make-a-video-from-text",
@@ -4993,6 +5090,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI video app for talking videos: captions, edits and AI avatars.",
   "tasks": [
    "add-captions-to-my-video",
@@ -5045,6 +5143,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Adds viral-style captions, b-roll and effects to short videos.",
   "tasks": [
    "add-captions-to-a-reel",
@@ -5095,6 +5194,7 @@
   "category": "video",
   "category_label": "Video",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free beginner-friendly video editor from Microsoft.",
   "tasks": [
    "edit-a-video",
@@ -5148,6 +5248,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI music generator for royalty-free background tracks.",
   "tasks": [
    "make-background-music",
@@ -5198,6 +5299,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI composer for soundtracks and instrumental music.",
   "tasks": [
    "compose-music",
@@ -5251,6 +5353,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "Splits songs into vocals and instruments; removes noise.",
   "tasks": [
    "remove-vocals-from-a-song",
@@ -5306,6 +5409,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "Removes background noise on calls and takes AI meeting notes.",
   "tasks": [
    "remove-background-noise-on-calls",
@@ -5360,6 +5464,7 @@
   "category": "audio",
   "category_label": "Audio and voice",
   "disclaimer": null,
+  "companion": false,
   "summary": "Automatic audio leveling and cleanup for podcasts.",
   "tasks": [
    "improve-podcast-audio",
@@ -5411,6 +5516,7 @@
   "category": "voice",
   "category_label": "Voice and speech",
   "disclaimer": null,
+  "companion": false,
   "summary": "Studio-quality AI voiceovers in many languages.",
   "tasks": [
    "make-a-voiceover",
@@ -5463,6 +5569,7 @@
   "category": "voice",
   "category_label": "Voice and speech",
   "disclaimer": null,
+  "companion": false,
   "summary": "Reads text, PDFs and web pages aloud.",
   "tasks": [
    "read-text-aloud",
@@ -5516,6 +5623,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI meeting recorder and note-taker for Zoom, Meet and Teams.",
   "tasks": [
    "record-a-meeting",
@@ -5567,6 +5675,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Meeting summaries, transcripts and search across meetings, email and chat.",
   "tasks": [
    "summarize-my-meetings",
@@ -5622,6 +5731,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI notepad that turns your rough meeting notes into clean notes, no bot needed.",
   "tasks": [
    "take-meeting-notes",
@@ -5673,6 +5783,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI to-do lists, notes, mind maps and AI agents in one workspace.",
   "tasks": [
    "make-a-to-do-list",
@@ -5729,6 +5840,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI built into the ClickUp project management app.",
   "tasks": [
    "manage-projects",
@@ -5783,6 +5895,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Popular to-do list app with AI task help.",
   "tasks": [
    "make-a-to-do-list",
@@ -5839,6 +5952,7 @@
   "category": "productivity",
   "category_label": "Everyday helpers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Build AI assistants that handle email, meetings and admin tasks.",
   "tasks": [
    "automate-my-email",
@@ -5889,6 +6003,7 @@
   "category": "email",
   "category_label": "Email",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI-powered email app for Gmail with an assistant that searches and drafts.",
   "tasks": [
    "clean-up-my-inbox",
@@ -5941,6 +6056,7 @@
   "category": "email",
   "category_label": "Email",
   "disclaimer": null,
+  "companion": false,
   "summary": "Automatically sorts unimportant email out of your inbox.",
   "tasks": [
    "clean-up-my-inbox",
@@ -5991,6 +6107,7 @@
   "category": "email",
   "category_label": "Email",
   "disclaimer": null,
+  "companion": false,
   "summary": "Smart email app with AI writing and team features.",
   "tasks": [
    "write-an-email",
@@ -6045,6 +6162,7 @@
   "category": "email",
   "category_label": "Email",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI assistant that drafts email replies in your tone and takes meeting notes.",
   "tasks": [
    "write-email-replies-for-me",
@@ -6095,6 +6213,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI presentation maker inside Google Slides and PowerPoint.",
   "tasks": [
    "make-a-presentation",
@@ -6145,6 +6264,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Turns text into Google Slides or PowerPoint presentations.",
   "tasks": [
    "make-a-presentation",
@@ -6195,6 +6315,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Creates designed presentations from a prompt.",
   "tasks": [
    "make-a-presentation",
@@ -6244,6 +6365,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Design tool for logos, t-shirts and merch with AI.",
   "tasks": [
    "design-a-t-shirt",
@@ -6294,6 +6416,7 @@
   "category": "design",
   "category_label": "Design",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free AI graphic design app for social posts, invitations and images.",
   "tasks": [
    "make-an-invitation",
@@ -6347,6 +6470,7 @@
   "category": "data",
   "category_label": "Data and spreadsheets",
   "disclaimer": null,
+  "companion": false,
   "summary": "Spreadsheet with a built-in AI data analyst.",
   "tasks": [
    "analyze-a-spreadsheet",
@@ -6397,6 +6521,7 @@
   "category": "data",
   "category_label": "Data and spreadsheets",
   "disclaimer": null,
+  "companion": false,
   "summary": "Chat with your data: upload spreadsheets and get charts and analysis.",
   "tasks": [
    "analyze-a-spreadsheet",
@@ -6448,6 +6573,7 @@
   "category": "website-builders",
   "category_label": "Website builders",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI website builder for small businesses, live in under a minute.",
   "tasks": [
    "make-a-website",
@@ -6498,6 +6624,7 @@
   "category": "website-builders",
   "category_label": "Website builders",
   "disclaimer": null,
+  "companion": false,
   "summary": "Popular website builder with an AI site creator.",
   "tasks": [
    "make-a-website",
@@ -6550,6 +6677,7 @@
   "category": "website-builders",
   "category_label": "Website builders",
   "disclaimer": null,
+  "companion": false,
   "summary": "Design-focused website builder with AI site and text tools.",
   "tasks": [
    "make-a-website",
@@ -6602,6 +6730,7 @@
   "category": "website-builders",
   "category_label": "Website builders",
   "disclaimer": null,
+  "companion": false,
   "summary": "Budget AI website builder with hosting included.",
   "tasks": [
    "make-a-cheap-website",
@@ -6651,6 +6780,7 @@
   "category": "website-builders",
   "category_label": "Website builders",
   "disclaimer": null,
+  "companion": false,
   "summary": "Build business apps from spreadsheets without code.",
   "tasks": [
    "make-an-app-without-coding",
@@ -6700,6 +6830,7 @@
   "category": "website-builders",
   "category_label": "Website builders",
   "disclaimer": null,
+  "companion": false,
   "summary": "No-code platform to build full web and mobile apps with AI.",
   "tasks": [
    "build-an-app-without-coding",
@@ -6750,6 +6881,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Generates social media posts, ads and videos and schedules them.",
   "tasks": [
    "make-social-media-posts",
@@ -6802,6 +6934,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Social media scheduling and management with AI writing.",
   "tasks": [
    "schedule-social-media-posts",
@@ -6854,6 +6987,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Visual social media planner for Instagram, TikTok and more.",
   "tasks": [
    "schedule-instagram-posts",
@@ -6905,6 +7039,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI tool to write, schedule and grow on LinkedIn.",
   "tasks": [
    "write-linkedin-posts",
@@ -6955,6 +7090,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Email marketing with AI-written campaigns.",
   "tasks": [
    "send-a-newsletter",
@@ -7007,6 +7143,7 @@
   "category": "marketing",
   "category_label": "Marketing",
   "disclaimer": null,
+  "companion": false,
   "summary": "Email and SMS marketing for online stores, with AI.",
   "tasks": [
    "email-marketing-for-my-store",
@@ -7058,6 +7195,7 @@
   "category": "seo",
   "category_label": "SEO and search visibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "SEO and AI-search visibility toolkit.",
   "tasks": [
    "improve-my-seo",
@@ -7109,6 +7247,7 @@
   "category": "seo",
   "category_label": "SEO and search visibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "SEO toolkit for backlinks, keywords and site audits.",
   "tasks": [
    "check-my-backlinks",
@@ -7159,6 +7298,7 @@
   "category": "seo",
   "category_label": "SEO and search visibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI SEO content writer and optimizer.",
   "tasks": [
    "write-an-seo-blog-post",
@@ -7208,6 +7348,7 @@
   "category": "seo",
   "category_label": "SEO and search visibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "Affordable content optimization for SEO.",
   "tasks": [
    "optimize-a-blog-post-for-seo",
@@ -7257,6 +7398,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "Build a customer-support chatbot trained on your own website and docs.",
   "tasks": [
    "add-a-chatbot-to-my-website",
@@ -7307,6 +7449,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "Live chat and shared inbox with an AI support agent.",
   "tasks": [
    "add-live-chat-to-my-website",
@@ -7360,6 +7503,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "Help desk with Freddy AI agent for support tickets.",
   "tasks": [
    "customer-support-ticketing",
@@ -7411,6 +7555,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "Platform to build AI chat agents for websites and messaging apps.",
   "tasks": [
    "build-a-chatbot",
@@ -7461,6 +7606,7 @@
   "category": "customer-service",
   "category_label": "Customer service",
   "disclaimer": null,
+  "companion": false,
   "summary": "No-code chatbot builder for websites and WhatsApp.",
   "tasks": [
    "build-a-chatbot-without-code",
@@ -7510,6 +7656,7 @@
   "category": "sales",
   "category_label": "Sales",
   "disclaimer": null,
+  "companion": false,
   "summary": "Find sales leads and contact info, and send outreach with AI.",
   "tasks": [
    "find-leads",
@@ -7561,6 +7708,7 @@
   "category": "sales",
   "category_label": "Sales",
   "disclaimer": null,
+  "companion": false,
   "summary": "Simple sales CRM with calling, email and an AI sales agent.",
   "tasks": [
    "sales-crm",
@@ -7614,6 +7762,7 @@
   "category": "sales",
   "category_label": "Sales",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI email coach that helps write better sales emails.",
   "tasks": [
    "write-a-sales-email",
@@ -7663,6 +7812,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Small-business accounting with Intuit's AI assistant.",
   "tasks": [
    "do-my-bookkeeping",
@@ -7716,6 +7866,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Cloud accounting for small businesses with AI features.",
   "tasks": [
    "small-business-accounting",
@@ -7767,6 +7918,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free invoicing and accounting for small businesses.",
   "tasks": [
    "send-free-invoices",
@@ -7818,6 +7970,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Invoicing and accounting built for freelancers and service businesses.",
   "tasks": [
    "send-an-invoice",
@@ -7869,6 +8022,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Personal budgeting and net-worth tracker with AI insights.",
   "tasks": [
    "make-a-budget",
@@ -7921,6 +8075,7 @@
   "category": "finance",
   "category_label": "Admin and finance",
   "disclaimer": null,
+  "companion": false,
   "summary": "Online tax filing with Intuit Assist AI help.",
   "tasks": [
    "do-my-taxes",
@@ -7971,7 +8126,8 @@
   "developer": "DoNotPay",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Consumer app for disputes, cancellations and paperwork. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "fight-a-parking-ticket",
@@ -7980,7 +8136,8 @@
    "get-a-refund",
    "small-claims",
    "stop-robocalls",
-   "legal-question"
+   "legal-question",
+   "legal-advice"
   ],
   "pricing": {
    "band": "paid",
@@ -8022,7 +8179,8 @@
   "developer": "LegalZoom",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Online legal documents and business filings with attorney help available. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "make-a-will",
@@ -8031,7 +8189,11 @@
    "make-a-contract",
    "make-an-nda",
    "write-a-will",
-   "get-legal-advice"
+   "get-legal-advice",
+   "legal-advice",
+   "legal-question",
+   "talk-to-a-lawyer",
+   "find-a-lawyer"
   ],
   "pricing": {
    "band": "paid",
@@ -8073,7 +8235,8 @@
   "developer": "Rocket Lawyer",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Legal documents, e-signing and on-call attorney help, with AI assistance. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "make-a-contract",
@@ -8082,7 +8245,10 @@
    "make-a-will",
    "understand-a-lease",
    "legal-question",
-   "review-a-contract"
+   "review-a-contract",
+   "legal-advice",
+   "talk-to-a-lawyer",
+   "find-a-lawyer"
   ],
   "pricing": {
    "band": "paid",
@@ -8126,7 +8292,8 @@
   "developer": "Spellbook",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "AI contract drafting and review inside Microsoft Word, for lawyers. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "review-a-contract",
@@ -8176,7 +8343,8 @@
   "developer": "Genie AI",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "AI legal assistant that drafts and reviews contracts for small businesses. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "make-an-nda",
@@ -8184,7 +8352,9 @@
    "draft-a-contract",
    "employment-contract",
    "understand-a-contract",
-   "legal-templates"
+   "legal-templates",
+   "legal-advice",
+   "legal-question"
   ],
   "pricing": {
    "band": "free-plan",
@@ -8226,7 +8396,8 @@
   "developer": "Harvey",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Enterprise AI platform for law firms and legal teams. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "legal-research",
@@ -8273,7 +8444,8 @@
   "developer": "Thomson Reuters",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "AI legal assistant for lawyers (formerly Casetext). It does not replace advice from a licensed lawyer.",
   "tasks": [
    "legal-research",
@@ -8320,7 +8492,8 @@
   "developer": "LawGeex",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Automated contract review for business legal teams. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "review-a-contract",
@@ -8365,7 +8538,8 @@
   "developer": "Clio",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "AI assistant inside Clio's law-practice software. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "manage-a-law-practice",
@@ -8414,7 +8588,8 @@
   "developer": "Luminance",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Enterprise AI for contract negotiation and review. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "review-contracts",
@@ -8459,7 +8634,8 @@
   "developer": "Docusign",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "E-signatures plus AI agreement tools (Docusign IAM). It does not replace advice from a licensed lawyer.",
   "tasks": [
    "sign-a-document-online",
@@ -8510,14 +8686,17 @@
   "developer": "Trust & Will",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Online wills and trusts made with guided questions. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "make-a-will",
    "write-a-will",
    "create-a-trust",
    "estate-planning",
-   "name-a-guardian-for-my-kids"
+   "name-a-guardian-for-my-kids",
+   "legal-advice",
+   "legal-question"
   ],
   "pricing": {
    "band": "paid",
@@ -8558,7 +8737,8 @@
   "developer": "LawDepot",
   "category": "legal",
   "category_label": "Legal help",
-  "disclaimer": "This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.",
+  "disclaimer": "General information only, not legal advice. This tool doesn't replace a licensed lawyer; for important matters, talk to an attorney in your state.",
+  "companion": false,
   "summary": "Fill-in legal forms: leases, wills, NDAs and more. It does not replace advice from a licensed lawyer.",
   "tasks": [
    "write-a-lease",
@@ -8567,7 +8747,9 @@
    "make-a-bill-of-sale",
    "make-a-power-of-attorney",
    "small-claims-forms",
-   "make-a-will"
+   "make-a-will",
+   "legal-advice",
+   "legal-question"
   ],
   "pricing": {
    "band": "paid",
@@ -8608,7 +8790,8 @@
   "developer": "Teal",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Free job tracker and AI resume builder.",
   "tasks": [
    "write-a-resume",
@@ -8662,7 +8845,8 @@
   "developer": "Rezi",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "AI resume builder focused on passing applicant tracking systems.",
   "tasks": [
    "write-a-resume",
@@ -8714,7 +8898,8 @@
   "developer": "Kickresume",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Resume and cover letter builder with AI writer.",
   "tasks": [
    "write-a-resume",
@@ -8767,7 +8952,8 @@
   "developer": "Jobscan",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Compares your resume to a job post to beat applicant tracking systems.",
   "tasks": [
    "check-my-resume-against-a-job",
@@ -8818,7 +9004,8 @@
   "developer": "Enhancv",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Modern resume builder with content suggestions and ATS check.",
   "tasks": [
    "write-a-resume",
@@ -8868,7 +9055,8 @@
   "developer": "Resume Worded",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Instant AI feedback on your resume and LinkedIn profile.",
   "tasks": [
    "fix-my-resume",
@@ -8915,7 +9103,8 @@
   "developer": "Final Round AI",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "AI interview practice and live interview assistant.",
   "tasks": [
    "practice-interview",
@@ -8964,7 +9153,8 @@
   "developer": "Yoodli",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "AI speaking coach for interview and presentation practice.",
   "tasks": [
    "practice-interview",
@@ -9011,7 +9201,8 @@
   "developer": "Huntr",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Job application tracker with AI resume tailoring.",
   "tasks": [
    "track-job-applications",
@@ -9059,7 +9250,8 @@
   "developer": "Simplify",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Job matching, resume tailoring and autofill for applications.",
   "tasks": [
    "find-a-job",
@@ -9108,7 +9300,8 @@
   "developer": "Careerflow",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "AI career toolkit: LinkedIn optimizer, resume builder, job tracker.",
   "tasks": [
    "improve-linkedin-profile",
@@ -9156,7 +9349,8 @@
   "developer": "LazyApply",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "Auto-applies to jobs on major job boards.",
   "tasks": [
    "apply-to-jobs-automatically",
@@ -9202,7 +9396,8 @@
   "developer": "Wonsulting",
   "category": "jobs-and-careers",
   "category_label": "Jobs and careers",
-  "disclaimer": "AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer's rules on AI use, and never share sensitive personal data you would not put on a public CV.",
+  "disclaimer": "AI suggestions can be wrong. Check everything before you submit it, keep it truthful, and follow each employer's rules on using AI in interviews.",
+  "companion": false,
   "summary": "AI resume, cover letter and networking tools for job seekers.",
   "tasks": [
    "write-a-resume",
@@ -9250,6 +9445,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Learn to speak a new language by talking with an AI tutor.",
   "tasks": [
    "learn-a-language",
@@ -9298,6 +9494,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Practice English with AI avatar tutors.",
   "tasks": [
    "learn-english",
@@ -9344,6 +9541,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Homework help with community and AI answers.",
   "tasks": [
    "help-with-homework",
@@ -9393,6 +9591,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Snap a photo of a math problem for step-by-step help.",
   "tasks": [
    "solve-a-math-problem",
@@ -9441,6 +9640,7 @@
   "category": "education",
   "category_label": "Learning",
   "disclaimer": null,
+  "companion": false,
   "summary": "Turns notes, PDFs and lectures into flashcards and quizzes.",
   "tasks": [
    "make-flashcards",
@@ -9489,7 +9689,8 @@
   "developer": "Fitbod",
   "category": "health",
   "category_label": "Health and fitness",
-  "disclaimer": "This tool is not a doctor and does not diagnose or treat. For symptoms, medication or mental-health concerns, talk to a qualified health professional. In an emergency or crisis, call your local emergency number (in the US, 911 or the 988 Suicide & Crisis Lifeline).",
+  "disclaimer": "Not medical advice. For an emergency, call 911. In a mental health crisis in the US, call or text 988.",
+  "companion": false,
   "summary": "AI workout planner that adapts to your progress.",
   "tasks": [
    "make-a-workout-plan",
@@ -9535,7 +9736,8 @@
   "developer": "Ada Health",
   "category": "health",
   "category_label": "Health and fitness",
-  "disclaimer": "This tool is not a doctor and does not diagnose or treat. For symptoms, medication or mental-health concerns, talk to a qualified health professional. In an emergency or crisis, call your local emergency number (in the US, 911 or the 988 Suicide & Crisis Lifeline).",
+  "disclaimer": "Not medical advice. For an emergency, call 911. In a mental health crisis in the US, call or text 988.",
+  "companion": false,
   "summary": "Symptom checker app. Not a substitute for a doctor.",
   "tasks": [
    "check-my-symptoms",
@@ -9583,7 +9785,8 @@
   "developer": "Wysa",
   "category": "health",
   "category_label": "Health and fitness",
-  "disclaimer": "This tool is not a doctor and does not diagnose or treat. For symptoms, medication or mental-health concerns, talk to a qualified health professional. In an emergency or crisis, call your local emergency number (in the US, 911 or the 988 Suicide & Crisis Lifeline).",
+  "disclaimer": "Not medical advice. For an emergency, call 911. In a mental health crisis in the US, call or text 988.",
+  "companion": false,
   "summary": "AI wellbeing chat for stress and anxiety. Not a crisis service.",
   "tasks": [
    "manage-stress",
@@ -9632,7 +9835,8 @@
   "developer": "Cal AI",
   "category": "health",
   "category_label": "Health and fitness",
-  "disclaimer": "This tool is not a doctor and does not diagnose or treat. For symptoms, medication or mental-health concerns, talk to a qualified health professional. In an emergency or crisis, call your local emergency number (in the US, 911 or the 988 Suicide & Crisis Lifeline).",
+  "disclaimer": "Not medical advice. For an emergency, call 911. In a mental health crisis in the US, call or text 988.",
+  "companion": false,
   "summary": "Count calories by snapping a photo of your food.",
   "tasks": [
    "count-calories",
@@ -9682,13 +9886,15 @@
   "category": "travel",
   "category_label": "Travel",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI travel planner that builds itineraries and watches prices.",
   "tasks": [
    "plan-a-trip",
    "make-a-travel-itinerary",
    "find-hotels",
    "plan-a-vacation",
-   "weekend-getaway-ideas"
+   "weekend-getaway-ideas",
+   "travel-itinerary"
   ],
   "pricing": {
    "band": "free",
@@ -9730,13 +9936,17 @@
   "category": "travel",
   "category_label": "Travel",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI trip planner with bookable hotels and experiences.",
   "tasks": [
    "plan-a-trip",
    "make-an-itinerary",
    "honeymoon-planning",
    "find-things-to-do",
-   "travel-ideas"
+   "travel-ideas",
+   "travel-itinerary",
+   "make-a-travel-itinerary",
+   "plan-a-vacation"
   ],
   "pricing": {
    "band": "free",
@@ -9776,11 +9986,14 @@
   "category": "travel",
   "category_label": "Travel",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free AI itinerary generator.",
   "tasks": [
    "plan-a-trip",
    "make-a-travel-itinerary",
-   "day-by-day-travel-plan"
+   "day-by-day-travel-plan",
+   "travel-itinerary",
+   "plan-a-vacation"
   ],
   "pricing": {
    "band": "free",
@@ -9821,6 +10034,7 @@
   "category": "shopping",
   "category_label": "Shopping",
   "disclaimer": null,
+  "companion": false,
   "summary": "Shopping assistant that compares prices including secondhand.",
   "tasks": [
    "find-a-cheaper-price",
@@ -9868,6 +10082,7 @@
   "category": "home-and-real-estate",
   "category_label": "Home and real estate",
   "disclaimer": null,
+  "companion": false,
   "summary": "Redesigns a photo of your room in different styles.",
   "tasks": [
    "redesign-my-room",
@@ -9915,6 +10130,7 @@
   "category": "home-and-real-estate",
   "category_label": "Home and real estate",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI virtual staging and home redesign.",
   "tasks": [
    "virtual-staging",
@@ -9961,6 +10177,7 @@
   "category": "home-and-real-estate",
   "category_label": "Home and real estate",
   "disclaimer": null,
+  "companion": false,
   "summary": "Design floor plans and 3D home layouts.",
   "tasks": [
    "design-a-floor-plan",
@@ -10011,6 +10228,7 @@
   "category": "home-and-real-estate",
   "category_label": "Home and real estate",
   "disclaimer": null,
+  "companion": false,
   "summary": "Virtually furnishes empty listing photos in seconds.",
   "tasks": [
    "virtual-staging",
@@ -10055,6 +10273,7 @@
   "category": "translation",
   "category_label": "Translation",
   "disclaimer": null,
+  "companion": false,
   "summary": "Translates and dubs videos into other languages with voice cloning.",
   "tasks": [
    "translate-a-video",
@@ -10102,6 +10321,7 @@
   "category": "translation",
   "category_label": "Translation",
   "disclaimer": null,
+  "companion": false,
   "summary": "Translation with real example sentences and grammar help.",
   "tasks": [
    "translate-a-sentence",
@@ -10152,6 +10372,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Ad-free private search engine with AI assistant.",
   "tasks": [
    "search-without-ads",
@@ -10198,6 +10419,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI research assistant for finding and understanding papers.",
   "tasks": [
    "find-research-papers",
@@ -10244,6 +10466,7 @@
   "category": "research",
   "category_label": "Research and answers",
   "disclaimer": null,
+  "companion": false,
   "summary": "Discovers related research papers visually.",
   "tasks": [
    "find-related-papers",
@@ -10288,6 +10511,7 @@
   "category": "accessibility",
   "category_label": "Accessibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "Visual help for blind and low-vision people from volunteers and AI.",
   "tasks": [
    "describe-what-my-camera-sees",
@@ -10335,6 +10559,7 @@
   "category": "accessibility",
   "category_label": "Accessibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "Free Microsoft app that narrates the world for blind users.",
   "tasks": [
    "read-text-aloud-from-camera",
@@ -10381,6 +10606,7 @@
   "category": "accessibility",
   "category_label": "Accessibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "AI app and smart glasses that read and describe for blind users.",
   "tasks": [
    "read-text-aloud",
@@ -10427,6 +10653,7 @@
   "category": "accessibility",
   "category_label": "Accessibility",
   "disclaimer": null,
+  "companion": false,
   "summary": "Small tools for neurodivergent people: break down tasks, adjust tone.",
   "tasks": [
    "break-a-task-into-steps",
@@ -10476,6 +10703,7 @@
   "category": "small-business",
   "category_label": "Small business",
   "disclaimer": null,
+  "companion": false,
   "summary": "Online appointment scheduling with AI notetaker.",
   "tasks": [
    "schedule-meetings",
@@ -10525,6 +10753,7 @@
   "category": "small-business",
   "category_label": "Small business",
   "disclaimer": null,
+  "companion": false,
   "summary": "Scheduling, quoting and invoicing for home service businesses.",
   "tasks": [
    "schedule-jobs",
@@ -10574,6 +10803,7 @@
   "category": "small-business",
   "category_label": "Small business",
   "disclaimer": null,
+  "companion": false,
   "summary": "Client management, proposals and invoicing for freelancers.",
   "tasks": [
    "send-a-proposal",
@@ -10622,6 +10852,7 @@
   "category": "small-business",
   "category_label": "Small business",
   "disclaimer": null,
+  "companion": false,
   "summary": "Quick mobile invoicing and estimates.",
   "tasks": [
    "make-an-invoice",
@@ -10657,6 +10888,377 @@
    "web",
    "ios",
    "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "lasting",
+  "name": "Lasting",
+  "website": "https://getlasting.com",
+  "developer": "Lasting",
+  "category": "relationships",
+  "category_label": "Relationships",
+  "disclaimer": "Not a substitute for a licensed therapist or counselor. If you are in danger, call 911. In a mental health crisis in the US, call or text 988, and for domestic violence call 1-800-799-7233.",
+  "companion": false,
+  "summary": "Science-based couples program for a healthier relationship. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+  "tasks": [
+   "improve-my-relationship",
+   "communicate-with-my-partner",
+   "resolve-an-argument",
+   "marriage-help",
+   "couples-counseling-app",
+   "strengthen-my-marriage",
+   "co-parenting"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "Subscription.",
+   "starting_paid_price": null,
+   "pricing_url": "https://getlasting.com",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "No prices on the official site on 2026-10-15. Not verified.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Lasting is a guided relationship program with short sessions on communication, conflict and intimacy, based on relationship research. It also runs live group workshops led by licensed therapists. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+   "who_its_for": "Couples who want structured self-help for their relationship.",
+   "pros": [
+    "Research-based content",
+    "Partners can do it together",
+    "Optional therapist-led workshops"
+   ],
+   "cons": [
+    "Pricing not shown on the site",
+    "Self-help, not therapy"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "ios",
+   "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "paired",
+  "name": "Paired",
+  "website": "https://www.paired.com",
+  "developer": "Paired",
+  "category": "relationships",
+  "category_label": "Relationships",
+  "disclaimer": "Not a substitute for a licensed therapist or counselor. If you are in danger, call 911. In a mental health crisis in the US, call or text 988, and for domestic violence call 1-800-799-7233.",
+  "companion": false,
+  "summary": "Daily questions and quizzes that couples answer together. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+  "tasks": [
+   "improve-my-relationship",
+   "communicate-with-my-partner",
+   "questions-for-couples",
+   "relationship-check-in",
+   "date-night-ideas",
+   "resolve-an-argument"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free to try; Premium subscription.",
+   "starting_paid_price": null,
+   "pricing_url": "https://www.paired.com",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "/pricing returned 404 on 2026-10-15; homepage says 'Try for free'. Premium prices not verified.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Paired gives couples short daily questions, quizzes and expert-backed exercises to answer together, covering communication, conflict, intimacy and money. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+   "who_its_for": "Couples who want quick daily check-ins.",
+   "pros": [
+    "Free to try",
+    "Quick, fun daily prompts",
+    "Expert-written content"
+   ],
+   "cons": [
+    "Most content needs Premium",
+    "Prices not verified"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "ios",
+   "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "flamme",
+  "name": "Flamme",
+  "website": "https://flamme.app",
+  "developer": "Flamme",
+  "category": "relationships",
+  "category_label": "Relationships",
+  "disclaimer": "Not a substitute for a licensed therapist or counselor. If you are in danger, call 911. In a mental health crisis in the US, call or text 988, and for domestic violence call 1-800-799-7233.",
+  "companion": false,
+  "summary": "Couples app with daily questions, games and an AI love coach. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+  "tasks": [
+   "improve-my-relationship",
+   "questions-for-couples",
+   "couple-games",
+   "communicate-with-my-partner",
+   "relationship-advice",
+   "date-night-ideas"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free to start; premium features in the app.",
+   "starting_paid_price": null,
+   "pricing_url": "https://flamme.app",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "The site says 'Free to start'. Paid prices weren't shown and weren't verified.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Flamme is a couples app with daily questions, milestone widgets, couple games and an AI 'love coach' for relationship questions. Some games and questions also work on the website. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+   "who_its_for": "Couples, including long-distance ones.",
+   "pros": [
+    "Free to start",
+    "Games playable on the web",
+    "AI coach for questions"
+   ],
+   "cons": [
+    "Premium prices not verified",
+    "The AI coach is not a counselor"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "yourmove-ai",
+  "name": "YourMove AI",
+  "website": "https://www.yourmove.ai",
+  "developer": "YourMove AI",
+  "category": "relationships",
+  "category_label": "Relationships",
+  "disclaimer": "Not a substitute for a licensed therapist or counselor. If you are in danger, call 911. In a mental health crisis in the US, call or text 988, and for domestic violence call 1-800-799-7233.",
+  "companion": false,
+  "summary": "Dating profile and texting help for dating apps. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+  "tasks": [
+   "dating-profile",
+   "write-my-dating-bio",
+   "what-to-text",
+   "reply-to-a-match",
+   "improve-my-dating-profile",
+   "dating-app-messages",
+   "pick-dating-photos"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "Paid plans.",
+   "starting_paid_price": null,
+   "pricing_url": "https://www.yourmove.ai",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "/pricing returned 404 and no prices were on the homepage on 2026-10-15. Not verified.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "YourMove AI helps with dating apps: it reviews and writes your profile, suggests openers and replies to matches, and offers AI-enhanced photos. Be honest in your profile and messages, and don't upload screenshots of other people's chats without thinking about their privacy. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+   "who_its_for": "Single people using dating apps.",
+   "pros": [
+    "Profile and message help in one place",
+    "Works with any dating app"
+   ],
+   "cons": [
+    "Pricing not verified",
+    "AI-written messages can feel less genuine"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "web"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "ourfamilywizard",
+  "name": "OurFamilyWizard",
+  "website": "https://www.ourfamilywizard.com",
+  "developer": "OurFamilyWizard",
+  "category": "relationships",
+  "category_label": "Relationships",
+  "disclaimer": "Not a substitute for a licensed therapist or counselor. If you are in danger, call 911. In a mental health crisis in the US, call or text 988, and for domestic violence call 1-800-799-7233.",
+  "companion": false,
+  "summary": "Co-parenting app with messaging, calendar, expenses and ToneMeter tone check. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+  "tasks": [
+   "co-parenting",
+   "communicate-with-my-ex",
+   "co-parenting-app",
+   "shared-custody-calendar",
+   "split-child-expenses",
+   "check-the-tone-of-my-message",
+   "resolve-an-argument"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "Annual plans: Basic $110/year ($9.17+/month), Essentials $149.99/year, Premium $216/year, Max $299.88/year.",
+   "starting_paid_price": "$110/year (Basic)",
+   "pricing_url": "https://www.ourfamilywizard.com/plans-and-pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null,
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "OurFamilyWizard is a co-parenting app for separated parents. It has a shared calendar, expense tracking and payments (OFWpay), and secure messages with records that are often used in family court. Its ToneMeter writing assistant flags emotionally charged wording before you send. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others. Messages are kept as records, so write knowing they may be reviewed.",
+   "who_its_for": "Separated or divorced parents, often recommended by courts and family professionals.",
+   "pros": [
+    "Built for co-parenting with court-ready records",
+    "ToneMeter helps keep messages calm",
+    "Fee waivers for some families"
+   ],
+   "cons": [
+    "Each parent usually needs their own subscription",
+    "No free plan"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "replika",
+  "name": "Replika",
+  "website": "https://replika.com",
+  "developer": "Luka",
+  "category": "relationships",
+  "category_label": "Relationships",
+  "disclaimer": "Not a substitute for a licensed therapist or counselor. If you are in danger, call 911. In a mental health crisis in the US, call or text 988, and for domestic violence call 1-800-799-7233.",
+  "companion": true,
+  "summary": "AI companion chatbot. Not a coaching or therapy tool. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+  "tasks": [
+   "ai-companion",
+   "someone-to-talk-to",
+   "practice-conversation",
+   "chat-with-an-ai-friend",
+   "feel-less-lonely"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free to use; paid upgrade.",
+   "starting_paid_price": null,
+   "pricing_url": "https://replika.com",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "No prices on the official site on 2026-10-15. Not verified.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Replika is an AI companion: a chatbot that plays the role of a friend or partner you can talk to at any time. It is NOT relationship coaching or therapy, and it is not a real person. Companion apps can encourage emotional dependence and collect very personal conversations, so review the privacy settings and use it with care. Not suitable for minors. It doesn't replace a licensed therapist. Think carefully before sharing private details about yourself or others.",
+   "who_its_for": "Adults who want casual AI conversation, used with caution.",
+   "pros": [
+    "Always available to chat",
+    "Mobile apps"
+   ],
+   "cons": [
+    "AI companion, not coaching or therapy",
+    "Very personal data is collected",
+    "Risk of emotional dependence"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "google-translate",
+  "name": "Google Translate",
+  "website": "https://translate.google.com",
+  "developer": "Google",
+  "category": "translation",
+  "category_label": "Translation",
+  "disclaimer": null,
+  "companion": false,
+  "summary": "Free translator for text, documents, websites, photos and speech in many languages.",
+  "tasks": [
+   "translate-text",
+   "translate-a-document",
+   "translate-a-website",
+   "translate-a-photo",
+   "translate-a-conversation",
+   "what-does-this-mean-in-english",
+   "translate-from-spanish"
+  ],
+  "pricing": {
+   "band": "free",
+   "label": "Free",
+   "free_tier": true,
+   "summary": "Free for consumers.",
+   "starting_paid_price": null,
+   "pricing_url": null,
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "No consumer pricing page (it is a free Google service). Free status not confirmed on an official pricing page on 2026-10-15.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Google Translate translates text, documents and websites in the browser, and on phones it can translate photos, speech and live conversations in many languages.",
+   "who_its_for": "Anyone who needs a quick free translation.",
+   "pros": [
+    "Free",
+    "Huge language coverage",
+    "Camera and conversation modes in the mobile apps"
+   ],
+   "cons": [
+    "Can miss nuance and idioms",
+    "Don't paste sensitive information"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "browser-extension",
+   "api"
   ],
   "privacy": null,
   "last_verified": null,

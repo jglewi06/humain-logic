@@ -196,7 +196,8 @@
         "elevenlabs",
         "praktika",
         "speak",
-        "reverso"
+        "reverso",
+        "google-translate"
       ]
     },
     {
@@ -373,7 +374,8 @@
         "elevenlabs",
         "chatgpt",
         "rask-ai",
-        "reverso"
+        "reverso",
+        "google-translate"
       ]
     },
     {
@@ -1034,6 +1036,7 @@
     {
       "q": "translate a document",
       "expect": [
+        "google-translate",
         "deepl",
         "reverso"
       ]
@@ -1047,6 +1050,45 @@
         "slidesai",
         "presentations-ai",
         "canva"
+      ]
+    },
+    {
+      "q": "legal advice",
+      "expect": [
+        "lawdepot",
+        "rocket-lawyer",
+        "legalzoom",
+        "donotpay",
+        "genie-ai",
+        "trust-and-will"
+      ]
+    },
+    {
+      "q": "travel itinerary",
+      "expect": [
+        "mindtrip",
+        "layla",
+        "wonderplan"
+      ]
+    },
+    {
+      "q": "help my marriage",
+      "expect": [
+        "lasting",
+        "paired"
+      ]
+    },
+    {
+      "q": "co-parenting schedule",
+      "expect": [
+        "ourfamilywizard"
+      ]
+    },
+    {
+      "q": "what to text my date",
+      "expect": [
+        "yourmove-ai",
+        "flamme"
       ]
     }
   ]

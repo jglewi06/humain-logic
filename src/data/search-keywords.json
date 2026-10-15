@@ -807,20 +807,26 @@
     "travel",
     "vacation",
     "itinerary",
-    "holiday"
+    "holiday",
+    "plan a trip",
+    "trip planner"
   ],
   "wonderplan": [
     "trip",
     "travel",
     "vacation",
-    "itinerary"
+    "itinerary",
+    "plan a trip",
+    "trip planner"
   ],
   "layla": [
     "trip",
     "travel",
     "vacation",
     "itinerary",
-    "honeymoon"
+    "honeymoon",
+    "plan a trip",
+    "trip planner"
   ],
   "reverso": [
     "translate",
@@ -1041,5 +1047,46 @@
   "rask-ai": [
     "translate video",
     "dubbing"
+  ],
+  "yourmove-ai": [
+    "what to text",
+    "texting",
+    "date",
+    "dating",
+    "match",
+    "flirt"
+  ],
+  "flamme": [
+    "date night",
+    "couple",
+    "partner"
+  ],
+  "lasting": [
+    "marriage",
+    "couple",
+    "partner"
+  ],
+  "paired": [
+    "couple",
+    "partner",
+    "marriage"
+  ],
+  "ourfamilywizard": [
+    "co-parenting",
+    "custody",
+    "schedule",
+    "ex"
+  ],
+  "replika": [
+    "ai companion",
+    "lonely",
+    "chat"
+  ],
+  "google-translate": [
+    "translate",
+    "translation",
+    "document",
+    "language",
+    "camera translate"
   ]
 }

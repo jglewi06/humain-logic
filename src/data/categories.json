@@ -132,6 +132,11 @@
  {
   "slug": "translation",
   "label": "Translation",
-  "count": 3
+  "count": 4
+ },
+ {
+  "slug": "relationships",
+  "label": "Relationships",
+  "count": 6
  }
 ]

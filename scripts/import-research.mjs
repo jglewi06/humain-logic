@@ -17,15 +17,7 @@ const CATEGORY_LABELS = {
   'legal': 'Legal help', 'jobs & careers': 'Jobs and careers', 'website builders': 'Website builders', 'email': 'Email',
   'seo': 'SEO and search visibility', 'sales': 'Sales', 'data': 'Data and spreadsheets', 'voice': 'Voice and speech',
   'health': 'Health and fitness', 'travel': 'Travel', 'shopping': 'Shopping', 'home & real estate': 'Home and real estate',
-  'accessibility': 'Accessibility', 'small business': 'Small business', 'translation': 'Translation',
-};
-// Editorial re-filing (2026-10-15, approved): research category -> site category
-const RECATEGORY = { 'Surfer': 'seo', 'DeepL': 'translation' };
-// Always-visible disclaimers for advice-adjacent categories (shown on tool pages, kept in the data)
-const DISCLAIMERS = {
-  'legal': 'This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.',
-  'health': 'This tool is not a doctor and does not diagnose or treat. For symptoms, medication or mental-health concerns, talk to a qualified health professional. In an emergency or crisis, call your local emergency number (in the US, 911 or the 988 Suicide & Crisis Lifeline).',
-  'jobs & careers': 'AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer\'s rules on AI use, and never share sensitive personal data you would not put on a public CV.',
+  'accessibility': 'Accessibility', 'small business': 'Small business', 'translation': 'Translation', 'relationships': 'Relationships',
 };
 const PRICE = { free: { band: 'free', label: 'Free' }, freemium: { band: 'free-plan', label: 'Free plan available' }, paid: { band: 'paid', label: 'Paid' } };
 
@@ -34,7 +26,8 @@ const C = path.join(R, 'content');
 const readC = f => fs.existsSync(path.join(C, f)) ? JSON.parse(fs.readFileSync(path.join(C, f), 'utf8')) : null;
 const DETAILS = readC('tool-details.json') ?? {};
 // Some tools' detail keys are cleaner than the generated slug (e.g. "Microsoft Clipchamp" -> clipchamp); use the key, matched by name.
-const DETAIL_SLUG_BY_NAME = Object.fromEntries(Object.entries(DETAILS).map(([k, v]) => [v?.name, k]));
+const normName = n => String(n ?? '').replace(/[\u2018\u2019\u02BC]/g, "'").trim();
+const DETAIL_SLUG_BY_NAME = Object.fromEntries(Object.entries(DETAILS).map(([k, v]) => [normName(v?.name), k]));
 const JOBHELP = readC('job-help.json');
 const mismatch = [];
 // free_tier from tool-details wins over the older pricing_tier; null = unknown (never guessed)
@@ -52,12 +45,13 @@ if (fs.existsSync(path.join(R, 'tools.json'))) {
   const raw = JSON.parse(fs.readFileSync(path.join(R, 'tools.json'), 'utf8'));
   const seen = new Set();
   const tools = raw.map(t => {
-    let s = DETAIL_SLUG_BY_NAME[t.name] ?? slug(t.name); while (seen.has(s)) s += '-2'; seen.add(s);
-    const rawCat = RECATEGORY[t.name] ?? t.category;
+    let s = DETAIL_SLUG_BY_NAME[normName(t.name)] ?? slug(t.name); while (seen.has(s)) s += '-2'; seen.add(s);
+    const rawCat = t.category;
     return {
       slug: s, name: t.name, website: t.url, developer: t.developer ?? null,
       category: slug(rawCat), category_label: CATEGORY_LABELS[rawCat] ?? rawCat,
-      disclaimer: DISCLAIMERS[rawCat] ?? null,
+      disclaimer: DETAILS[s]?.disclaimer ?? null,
+      companion: (t.tasks || []).some(x => /ai companion/i.test(x)),
       summary: t.description,
       tasks: (t.tasks || []).map(x => slug(x)),
       pricing: pricingFor(s, t),
@@ -76,6 +70,7 @@ if (fs.existsSync(path.join(R, 'tools.json'))) {
   const taskList = Object.values(tasks).map(t => ({ ...t, categories: [...t.categories] })).sort((a, b) => b.tools.length - a.tools.length || a.name.localeCompare(b.name));
   for (const t of raw) if (!(t.category in CATEGORY_LABELS)) mismatch.push(`unlabelled category: ${t.category}`);
   const cats = Object.entries(CATEGORY_LABELS).map(([k, label]) => ({ slug: slug(k), label, count: tools.filter(t => t.category === slug(k)).length })).filter(c => c.count);
+  for (const t of tools) if (['legal', 'health', 'jobs-and-careers', 'relationships'].includes(t.category) && !t.disclaimer) mismatch.push(`no disclaimer: ${t.slug}`);
   for (const k of Object.keys(DETAILS)) if (!tools.some(t => t.slug === k)) mismatch.push(`details without tool: ${k}`);
   write('tools.json', tools); write('tasks.json', taskList); write('categories.json', cats);
 }
