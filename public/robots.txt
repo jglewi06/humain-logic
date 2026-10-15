@@ -1,5 +1,4 @@
 # HumAIn Logic — https://humainlogic.com (ux/spec.md §4.6)
-# AI crawlers: default allow (agent-friendliness goal; final policy pending owner/legal sign-off)
 User-agent: *
 Allow: /
 Disallow: /search
@@ -9,5 +8,27 @@ Disallow: /newsletter/unsubscribe
 Allow: /api/
 Allow: /llms.txt
 Allow: /llms-full.txt
+
+# AI crawlers and assistants are explicitly welcome
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Meta-ExternalAgent
+User-agent: Amazonbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+Allow: /
+Disallow: /search
+Disallow: /newsletter/confirm
+Disallow: /newsletter/confirmed
+Disallow: /newsletter/unsubscribe
 
 Sitemap: https://humainlogic.com/sitemap-index.xml
