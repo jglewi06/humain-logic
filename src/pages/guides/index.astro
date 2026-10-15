@@ -8,15 +8,37 @@ const guides = meta.map(m => ({ ...m, entry: entries.find(e => e.id === m.slug) 
 const ld = [{ '@type': 'ItemList', name: 'HumAIn Logic guides', itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/guides/${g.slug}`, name: g.title })) }];
 ---
 <Base title="Guides" description="Short, plain-language guides to using AI safely at home, at work and in a small business." jsonld={ld}>
-<section class="page-head"><div class="container"><span class="eyebrow">Guides</span><h1>Plain-language AI guides</h1><p class="lede">Short reads you can finish with a coffee. New to AI? Start with <a href="/learn">AI, explained simply</a>.</p></div></section>
+<section class="page-head"><div class="container guides-head"><div class="guides-head-text"><span class="eyebrow">Guides</span><h1>Plain-language AI guides</h1><p class="lede">Short reads you can finish with a coffee. New to AI? Start with <a href="/learn">AI, explained simply</a>.</p></div>
+  <figure class="news-media is-photo guides-photo">
+    <picture>
+      <source type="image/webp" srcset="/img/guides/guides-hero-640.webp 640w, /img/guides/guides-hero-1024.webp 1024w" sizes="(min-width:900px) 50vw, calc(100vw - 40px)" />
+      <img src="/img/guides/guides-hero-1024.jpg" width="1024" height="576" loading="eager" fetchpriority="high" decoding="async" alt="An older woman and her daughter smile while looking at a tablet together on a cozy sofa." />
+    </picture>
+    <figcaption class="credit">Image: HumAIn Logic</figcaption>
+  </figure></div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <ol class="grid-2" style="list-style:none;padding:0;margin:0">
-    {guides.map(g => (
+    {guides.map(g => (<>
+      {g.slug === 'ai-for-small-business' && (<li class="guides-banner"><figure class="news-media is-photo guides-photo">
+        <picture>
+          <source type="image/webp" srcset="/img/guides/guides-small-business-640.webp 640w, /img/guides/guides-small-business-1024.webp 1024w" sizes="(min-width:1296px) 1216px, calc(100vw - 40px)" />
+          <img src="/img/guides/guides-small-business-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A smiling bakery owner works on a laptop at her sunny shop counter." />
+        </picture>
+        <figcaption class="credit">Image: HumAIn Logic</figcaption>
+      </figure></li>)}
       <li id={g.slug === 'ai-for-small-business' ? 'small-business' : undefined}><article class="news-card" style="height:100%">
         <h2><a href={`/guides/${g.slug}`}>{g.title}</a></h2>
         <p>{g.summary}</p>
         <span class="meta">{g.reading_time} · Updated <time datetime={g.updated}>{g.updated}</time></span>
-      </article></li>))}
+      </article></li></>))}
   </ol>
 </div>
+<style>
+  .guides-head{display:grid;gap:var(--space-6);align-items:center;min-width:0}
+  .guides-head-text{min-width:0}
+  @media (min-width:900px){.guides-head{grid-template-columns:1fr 1fr}}
+  .guides-photo{position:relative;margin:0;max-width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+  .guides-photo img{display:block;width:100%;height:100%;aspect-ratio:16/9;object-fit:cover}
+  .guides-banner{grid-column:1/-1;min-width:0}
+</style>
 </Base>
