@@ -3,10 +3,13 @@ export const SITE = {
   url: 'https://humainlogic.com',
   tagline: 'AI, explained calmly.',
   description: 'Find the right AI tool for your task in plain English, read calm AI news, and see how AI is changing your job.',
+  email: 'hello@humainlogic.com',
   newsletterName: 'The Sunday Brief',
   newsletterDay: 'Sunday',
   buttondownUser: import.meta.env.PUBLIC_BUTTONDOWN_USER || 'jglewi06',
 };
+/** mailto link with a prefilled subject (and optional body) */
+export const mailto = (subject: string, body = '') => `mailto:hello@humainlogic.com?subject=${encodeURIComponent(subject)}${body ? `&body=${encodeURIComponent(body)}` : ''}`;
 export const NAV = [
   { href: '/tools', label: 'Find a tool', match: ['/tools', '/search', '/tasks'] },
   { href: '/news', label: 'AI news', match: ['/news'] },

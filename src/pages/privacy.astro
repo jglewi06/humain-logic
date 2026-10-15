@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-const gh = 'https://github.com/jglewi06/humain-logic/issues';
+import { mailto } from '../lib/site';
 ---
 <Base title="Privacy notice" description="What HumAIn Logic collects (very little), why, and your choices.">
 <section class="page-head"><div class="container"><span class="eyebrow">Legal</span><h1>Privacy notice</h1><p class="confidence">Effective October 15, 2026</p></div></section>
@@ -28,11 +28,11 @@ const gh = 'https://github.com/jglewi06/humain-logic/issues';
 <p>To count visits, we use or may use <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a>. It does not use cookies, does not fingerprint you, and does not track you across other websites. It gives us totals such as page views and countries, not profiles of individual people.</p>
 <h3>Things we don't collect</h3>
 <p>We don't use cookies for tracking or ads. Fonts are served from our own site, not from Google. Your one setting, “Reduce motion”, is saved only in your browser.</p>
-<h3>Contacting us on GitHub</h3>
-<p>Reports and suggestions go through our public GitHub page. Anything you post there is public and handled under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>.</p>
+<h3>When you email us</h3>
+<p>If you write to hello@humainlogic.com, we get your email address and whatever you include in the message. We use it only to reply and to fix or improve the site, and we delete messages we no longer need.</p>
 
 <h2>3. Who we share data with</h2>
-<p>Only the service providers above (Buttondown for email, Cloudflare for hosting and analytics, GitHub if you choose to post there), and only so they can provide their service to us. We don't sell your personal data, and we don't share it for cross-site advertising. We may disclose data if the law requires it.</p>
+<p>Only the service providers above (Buttondown for email, Cloudflare for hosting and analytics), and only so they can provide their service to us. We don't sell your personal data, and we don't share it for cross-site advertising. We may disclose data if the law requires it.</p>
 
 <h2>4. Links to other sites</h2>
 <p>We link to AI tools, news sites and other resources. When you leave HumAIn Logic, the other site's privacy policy applies. Today the site has no affiliate links; if we add any, they will be labeled where you see them.</p>
@@ -61,6 +61,6 @@ const gh = 'https://github.com/jglewi06/humain-logic/issues';
 <p>If we change this notice, we will update the date at the top. If a change matters to subscribers, we will mention it in The Sunday Brief.</p>
 
 <h2 id="contact">How to reach us</h2>
-<p>Reply to any issue of The Sunday Brief, or <a href={`${gh}/new?title=${encodeURIComponent('Privacy question')}`} rel="noopener">open a request on GitHub</a> (posts there are public, so don't include private details; we will move the conversation to email).</p>
+<p>Email <a href={mailto('Privacy question')}>hello@humainlogic.com</a>, or reply to any issue of The Sunday Brief.</p>
 </div></div>
 </Base>

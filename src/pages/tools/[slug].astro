@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import tools from '../../data/tools.json';
 import tasks from '../../data/tasks.json';
-import { SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
+import { mailto, SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
 export function getStaticPaths() { return tools.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
 const { tool } = Astro.props;
 const [bg, fg] = tint(tool.slug);
@@ -26,7 +26,7 @@ const ld = [
     <div><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
   </div>
   <div class="badges" style="margin-top:var(--space-4)"><span class="b b-price">{tool.pricing.label}</span>{p.verified ? <span class="b b-verified">Price verified {fmtMonthDay(p.verified_on)}</span> : <span class="b b-unverified">Pricing unconfirmed</span>}{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
-  <p class="confidence" style="margin-top:var(--space-3)"><a href={`https://github.com/jglewi06/humain-logic/issues/new?labels=report&title=${encodeURIComponent(`Outdated info: ${tool.name} (/tools/${tool.slug})`)}`} rel="noopener">Report outdated info</a></p>
+  <p class="confidence" style="margin-top:var(--space-3)"><a href={mailto(`Outdated info: ${SITE.url}/tools/${tool.slug}`, `Page: ${SITE.url}/tools/${tool.slug}\nWhat looks wrong:\nCorrect source (if you have one):\n`)}>Report outdated info</a></p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div class="detail">

@@ -12,7 +12,7 @@ const canonical = abs(path);
 const fullTitle = title ? `${title} | HumAIn Logic` : 'HumAIn Logic: AI tools, news & job insights in plain English';
 const isCurrent = (m: string[]) => m.some(p => path === p || path.startsWith(p + '/'));
 const graph = { '@context': 'https://schema.org', '@graph': [
-  { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg` },
+  { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg`, email: SITE.email, contactPoint: { '@type': 'ContactPoint', email: SITE.email, contactType: 'customer support' } },
   { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: 'en-US', publisher: { '@id': `${SITE.url}/#org` },
     potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/search?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
   ...jsonld ] };
@@ -71,7 +71,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [
         <p class="promise">Helping people get things done with AI, and feel calmer about it. Independent. No company pays to be listed.</p>
       </div>
       <div><h2 class="h6">Explore</h2><ul>{NAV.map(n => <li><a href={n.href}>{n.label}</a></li>)}</ul></div>
-      <div><h2 class="h6">About</h2><ul><li><a href="/methodology">How we test</a></li><li><a href="/about#promise">Our promise</a></li><li><a href="/about">About us</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/contact">Contact / report a problem</a></li></ul></div>
+      <div><h2 class="h6">About</h2><ul><li><a href="/methodology">How we test</a></li><li><a href="/about#promise">Our promise</a></li><li><a href="/about">About us</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/contact">Contact / report a problem</a></li><li><a href="mailto:hello@humainlogic.com">hello@humainlogic.com</a></li></ul></div>
       <div><h2 class="h6">Stay in touch</h2><ul><li><a href="/newsletter">Newsletter</a></li><li><a href="/contact#suggest">Suggest a tool</a></li><li><a href="/guides#small-business">For small businesses</a></li><li><a href="/llms.txt">For AI agents (llms.txt)</a></li></ul></div>
     </div>
     <div class="legal"><span>© {new Date().getFullYear()} HumAIn Logic · humainlogic.com</span><span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/accessibility">Accessibility</a> · <button type="button" class="motion-toggle" data-motion-toggle>Reduce motion</button></span></div>

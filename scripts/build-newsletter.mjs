@@ -40,6 +40,7 @@ Our outlook: **${outlook}**. ${job.rationale}
 
 You're getting this because you signed up at [humainlogic.com](${SITE}) and confirmed your email.
 [Unsubscribe in one click]({{ unsubscribe_url }}) · [Privacy notice](${SITE}/privacy) · [Read online](${SITE}/newsletter)
+Questions or corrections? Reply to this email or write to [hello@humainlogic.com](mailto:hello@humainlogic.com).
 
 HumAIn Logic · ${POSTAL}
 `;

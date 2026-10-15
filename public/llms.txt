@@ -32,6 +32,7 @@ Data is rebuilt automatically (news every few hours). Proposed license: CC BY 4.
 - [About and editorial promise](https://humainlogic.com/about)
 - [Learn about AI](https://humainlogic.com/learn): beginner guide
 - [Glossary](https://humainlogic.com/glossary)
+- [Contact](https://humainlogic.com/contact): hello@humainlogic.com
 
 ## Optional
 - [Full content for LLMs](https://humainlogic.com/llms-full.txt)
