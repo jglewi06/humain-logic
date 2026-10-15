@@ -1,119 +1,47 @@
 ---
 import news from '../data/news.json';
-import feeds from '../data/feeds.json';
 import { NEWS_CATS, fmtDate } from '../lib/site';
 import { imageFor } from '../lib/news-images.mjs';
-import NewsletterForm from './NewsletterForm.astro';
-import '../styles/news-page.css';
 const { category } = Astro.props;
 const items = news.items.filter(i => !category || i.category === category);
 const cats = Object.keys(NEWS_CATS).filter(c => news.items.some(i => i.category === c));
-// All-news page gets the photo layout (design/news-page). Category pages keep the plain head + one list.
-const photo = !category;
-const segs = photo ? [items.slice(0, 6), items.slice(6, 12), items.slice(12)] : [items];
-const topicCounts = cats.map(c => [c, news.items.filter(i => i.category === c).length]).sort((a, b) => b[1] - a[1]);
-const IMG = '/img/news-page';
-const pic = (slot, ratio) => ({
-  srcset: [640, 1024, 1600].map(w => `${IMG}/${slot}-${w}.webp ${w}w`).join(', '),
-  jpg: `${IMG}/${slot}-1024.jpg`, w: 1024, h: ratio === '3:4' ? 1365 : 576,
-});
-const P = { hero: pic('news-hero'), team: pic('news-interlude-team'), desk: pic('news-interlude-desk', '3:4'), cta: pic('news-cta-break') };
-const SIZES = { hero: '(min-width:768px) 54vw, 100vw', team: '(min-width:768px) 57vw, 100vw', desk: '(min-width:768px) 44vw, 100vw', cta: '(min-width:768px) 48vw, 100vw' };
 ---
-{photo ? (
-<section class="news-hero" aria-labelledby="news-h1">
-  <figure class="fade-photo news-hero-photo" aria-hidden="true"><picture><source type="image/webp" srcset={P.hero.srcset} sizes={SIZES.hero} /><img src={P.hero.jpg} width={P.hero.w} height={P.hero.h} loading="eager" fetchpriority="high" decoding="async" alt="" /></picture><span class="photo-credit">Image: HumAIn Logic</span></figure>
-  <div class="container"><div class="copy">
-    <span class="eyebrow">AI news</span>
-    <h1 id="news-h1">News — calm, sourced, explained</h1>
-    <p class="lede">Headlines from trusted sources, gathered automatically every few hours. Last updated <time datetime={news.updated}>{fmtDate(news.updated)}</time>.</p>
-    <ul class="hero-facts">
-      <li><svg aria-hidden="true"><use href="#i-check"/></svg>{feeds.length} trusted sources</li>
-      <li><svg aria-hidden="true"><use href="#i-check"/></svg>Short excerpts, always linked</li>
-      <li><svg aria-hidden="true"><use href="#i-check"/></svg>No hype, no ads in the feed</li>
-    </ul>
-  </div></div>
-</section>
-) : (
 <section class="page-head lav"><div class="container">
-  <span class="eyebrow">AI news</span><h1>{NEWS_CATS[category]}</h1>
+  <span class="eyebrow">AI news</span><h1>{category ? NEWS_CATS[category] : 'News — calm, sourced, explained'}</h1>
   <p class="lede">Headlines from trusted sources, gathered automatically every few hours. Last updated <time datetime={news.updated}>{fmtDate(news.updated)}</time>.</p>
 </div></section>
-)}
-{segs.map((seg, s) => (<>
-<div class={`container feed-seg${photo ? '' : ' section'}`} style={s === 0 ? 'padding-top:var(--space-6)' : undefined}>
-  {s === 0 && <nav class="tabs" aria-label="News categories">
+<div class="container section" style="padding-top:var(--space-6)">
+  <nav class="tabs" aria-label="News categories">
     <a class="chip" href="/news" aria-current={!category ? 'page' : undefined}>All</a>
     {cats.map(c => <a class="chip" href={`/news/category/${c}`} aria-current={category === c ? 'page' : undefined}>{NEWS_CATS[c]}</a>)}
-  </nav>}
+  </nav>
   <div class="news-layout">
     <div>
-      {s === 0 && items.length === 0 && <p class="placeholder">No news in this category this week. <a href="/news">See all news</a></p>}
-      {seg.length > 0 && <ol class="news-feed" style="list-style:none;padding:0;margin:0" data-feed start={photo && s > 0 ? s * 6 + 1 : undefined}>
-        {seg.map((n, j) => { const i = (photo ? s * 6 : 0) + j; return (
-          <li hidden={i >= 20} class={photo ? 'reveal' : undefined}><article class="news-card has-media">
+      {items.length === 0 && <p class="placeholder">No news in this category this week. <a href="/news">See all news</a></p>}
+      <ol class="news-feed" style="list-style:none;padding:0;margin:0" data-feed>
+        {items.map((n, i) => (
+          <li hidden={i >= 20}><article class="news-card has-media">
             {(() => { const im = imageFor(n); return <figure class={`news-media is-${im.kind}`}><img src={im.src} width="128" height="96" loading="lazy" decoding="async" alt={im.alt} /></figure>; })()}
             <span class={`tag ${n.category}`} style="align-self:flex-start">{NEWS_CATS[n.category]}</span>
             <h2><a href={n.link} rel="noopener">{n.title}</a></h2>
             {n.summary && <p>{n.summary}</p>}
             <span class="meta">{n.source}{n.also?.length ? ` + ${n.also.length} more source${n.also.length > 1 ? 's' : ''}` : ''} · <time datetime={n.date}>{fmtDate(n.date)}</time> · Image: HumAIn Logic</span>
             <span class="ai-note">Short excerpt from the publisher's feed.</span>
-          </article></li>); })}
-      </ol>}
-      {s === segs.length - 1 && items.length > 20 && <p style="text-align:center;margin-top:var(--space-5)"><button class="btn btn-secondary" type="button" data-more>Load more news</button></p>}
-      {s === 0 && <noscript><style>.news-feed li[hidden]{display:block!important}.js-reveal .reveal{opacity:1!important;transform:none!important}</style></noscript>}
+          </article></li>))}
+      </ol>
+      {items.length > 20 && <p style="text-align:center;margin-top:var(--space-5)"><button class="btn btn-secondary" type="button" data-more>Load more news</button></p>}
+      <noscript><style>.news-feed li[hidden]{display:block!important}</style></noscript>
     </div>
     <aside>
-      {s === 0 && <>
-        <div class="panel"><h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)">How we make news</h2><p style="font-size:var(--fs-small);color:var(--color-slate)">We collect headlines from public feeds and always link to the original. We show only a short excerpt. Headlines are grouped by topic so you can skip what you don't need.</p></div>
-        <p style="margin-top:var(--space-4)"><a href="/news/feed.xml">RSS feed</a> · <a href="/api/news.json">JSON</a></p>
-      </>}
-      {s === 1 && <div class="panel sticky-aside reveal"><h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-1)">In the feed, by topic</h2>
-        <p style="font-size:var(--fs-small);color:var(--color-slate)">Stories in this week's feed.</p>
-        <ul class="topics">{topicCounts.map(([c, n]) => <li><a href={`/news/category/${c}`}><span>{NEWS_CATS[c]}</span><span class="n">{n}</span></a></li>)}</ul></div>}
-      {s === 2 && <div class="panel reveal"><h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)">Words in the news</h2>
-        <p style="font-size:var(--fs-small);color:var(--color-slate)">Seeing “open-weight model” or “AI agent” and not sure what it means? Our glossary explains each term in one or two sentences.</p>
-        <p style="margin-top:var(--space-3)"><a class="link-arrow" href="/glossary">Open the glossary <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p></div>}
+      <div class="panel"><h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)">How we make news</h2><p style="font-size:var(--fs-small);color:var(--color-slate)">We collect headlines from public feeds and always link to the original. We show only a short excerpt. Headlines are grouped by topic so you can skip what you don't need.</p></div>
+      <p style="margin-top:var(--space-4)"><a href="/news/feed.xml">RSS feed</a> · <a href="/api/news.json">JSON</a></p>
     </aside>
   </div>
 </div>
-{photo && s === 0 && segs[1].length > 0 && (
-<section class="interlude sage photo-left" aria-label="Our news promise">
-  <figure class="fade-photo reveal" aria-hidden="true"><picture><source type="image/webp" srcset={P.team.srcset} sizes={SIZES.team} /><img src={P.team.jpg} width={P.team.w} height={P.team.h} loading="lazy" decoding="async" alt="" /></picture><span class="photo-credit">Image: HumAIn Logic</span></figure>
-  <div class="container"><div class="copy reveal">
-    <span class="eyebrow">Our news promise</span>
-    <blockquote><p>Calm news isn’t slow news. It’s the same facts, with the shouting taken out.</p></blockquote>
-    <p>We group headlines by topic, show only a short excerpt, and always send you to the original story.</p>
-    <div class="links"><a class="link-arrow" href="/methodology">How we choose sources <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-  </div></div>
-</section>)}
-{photo && s === 1 && segs[2].length > 0 && (
-<section class="interlude lav photo-right" aria-labelledby="int2-h">
-  <figure class="fade-photo reveal" aria-hidden="true"><picture><source type="image/webp" srcset={P.desk.srcset} sizes={SIZES.desk} /><img src={P.desk.jpg} width={P.desk.w} height={P.desk.h} loading="lazy" decoding="async" alt="" /></picture><span class="photo-credit">Image: HumAIn Logic</span></figure>
-  <div class="container"><div class="copy reveal">
-    <span class="eyebrow">Before you scroll on</span>
-    <h2 id="int2-h">Not every headline is about you</h2>
-    <p>Most AI news won’t change your Monday. When a story might touch your work, we tag it <strong>Jobs &amp; work</strong>, and the Job tracker shows what is likely to change in your role.</p>
-    <div class="links"><a class="link-arrow" href="/news/category/jobs-work">See Jobs &amp; work news <svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="link-arrow" href="/tracker">Open the Job tracker <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
-  </div></div>
-</section>)}
-</>))}
-{photo && (
-<div class="container news-cta">
-  <NewsletterForm id="nl-news" class="reveal">
-    <figure slot="media" class="fade-photo reveal" aria-hidden="true"><picture><source type="image/webp" srcset={P.cta.srcset} sizes={SIZES.cta} /><img src={P.cta.jpg} width={P.cta.w} height={P.cta.h} loading="lazy" decoding="async" alt="" /></picture><span class="photo-credit">Image: HumAIn Logic</span></figure>
-  </NewsletterForm>
-</div>
-)}
 <script>
 document.querySelector('[data-more]')?.addEventListener('click', (e) => {
   const hidden = [...document.querySelectorAll<HTMLElement>('[data-feed] li[hidden]')].slice(0, 20);
   hidden.forEach(li => li.hidden = false); hidden[0]?.querySelector('a')?.focus();
   if (!document.querySelector('[data-feed] li[hidden]')) (e.target as HTMLElement).remove();
 });
-// Scroll fade-in: only when <head> set html.js-reveal (IO available, motion allowed). Reveal once at 10% visible.
-if (document.documentElement.classList.contains('js-reveal')) {
-  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-}
 </script>

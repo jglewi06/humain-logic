@@ -292,7 +292,7 @@ footer a:focus-visible,footer .brand:focus-visible{outline:2px solid var(--hl-fo
 
 /* Section patterns: design/homepage-mockup.html */
 .mobile-only{display:none}
-.section{padding-top:var(--section-gap)} /* top only: keeps .container side padding on "container section" */
+.section{padding:var(--section-gap) 0 0}
 .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--space-5);margin-bottom:var(--space-6)}
 .section-head h2{font-size:var(--fs-h2);margin-top:var(--space-2)}
 .section-head p.lede{color:var(--color-slate);margin-top:var(--space-3);max-width:620px}
@@ -638,5 +638,3 @@ html,body{overflow-x:clip}
 }
 #count:focus{outline:none}
 #count:focus-visible{outline:2px solid var(--color-teal);outline-offset:4px;border-radius:6px}
-/* Footer email link was 2px wider than a 390px screen */
-footer a[href^="mailto"]{overflow-wrap:anywhere}
