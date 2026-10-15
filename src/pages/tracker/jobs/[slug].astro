@@ -1,9 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import jobsData from '../../../data/jobs.json';
-import { OUTLOOK, SITE, fmtDate } from '../../../lib/site';
+import { OUTLOOK, SITE, fmtDate, HIRING_INTRO } from '../../../lib/site';
 import JobTimeline from '../../../components/JobTimeline.astro';
 import JobHelp from '../../../components/JobHelp.astro';
+import HiringImpact from '../../../components/HiringImpact.astro';
 export function getStaticPaths() { return jobsData.jobs.map(j => ({ params: { slug: j.slug }, props: { job: j } })); }
 const { job } = Astro.props;
 const o = OUTLOOK[job.outlook];
@@ -34,6 +35,7 @@ const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.
       <h2>Sources for the estimate</h2>
       <ol class="sources">{job.sources.map(s => <li><a href={s.url} rel="noopener">{s.title}</a> — {s.publisher}{s.year ? `, ${s.year}` : ''}</li>)}</ol>
       <p class="confidence">{jobsData.note}</p>
+      <HiringImpact level={job.employment_pressure_by_2030} summary={job.employment_pressure_summary} sources={job.employment_pressure_sources} note={jobsData.employment_pressure_note} intro={HIRING_INTRO} />
     </div>
     <aside class="panel">
       <h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-3)">Similar outlook</h2>

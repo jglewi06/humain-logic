@@ -1,9 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import jobsData from '../../data/jobs.json';
-import { OUTLOOK, SITE, fmtDate } from '../../lib/site';
+import { OUTLOOK, SITE, fmtDate, HIRING, HIRING_ORDER, HIRING_INTRO } from '../../lib/site';
 import JobTimeline from '../../components/JobTimeline.astro';
 const groups = (['shift', 'watch', 'steady'] as const).map(k => ({ k, ...OUTLOOK[k], jobs: jobsData.jobs.filter(j => j.outlook === k) }));
+const hgroups = HIRING_ORDER.map(k => ({ k, ...HIRING[k], jobs: jobsData.jobs.filter(j => j.employment_pressure_by_2030 === k) })).filter(g => g.jobs.length);
 const ld = [{ '@type': 'Dataset', name: 'HumAIn Logic AI Job Safety Tracker', description: 'Editorial outlook estimates for how AI may change specific jobs, with sources.', url: `${SITE.url}/tracker`, creator: { '@id': `${SITE.url}/#org` }, dateModified: jobsData.updated, measurementTechnique: `${SITE.url}/methodology`, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${SITE.url}/api/jobs.json` }] }];
 ---
 <Base title="Job safety tracker" description="How is AI changing your job? Calm, sourced outlooks for 31 jobs." jsonld={ld} json="/api/jobs.json">
@@ -24,6 +25,16 @@ const ld = [{ '@type': 'Dataset', name: 'HumAIn Logic AI Job Safety Tracker', de
       </section>))}
   </div>
   <JobTimeline jobs={jobsData.jobs} id="tl" showSources title="Timeline: when could AI do most of each job's tasks?" />
+
+  <section class="hiring panel" aria-labelledby="hi-h">
+    <span class="eyebrow">A separate estimate</span>
+    <h2 id="hi-h" style="font-size:var(--fs-h3);margin:var(--space-2) 0">Hiring impact by 2030</h2>
+    <p class="confidence"><strong>HumAIn Logic estimate.</strong>{' '}{HIRING_INTRO} Open a job to read the reasons and sources.</p>
+    <div class="hi-groups">{hgroups.map(g => <div>
+      <h3 style="font-size:var(--fs-body)"><span class={`hi-tag ${g.cls}`}><span aria-hidden="true">{g.icon}</span> {g.label}</span> <span class="confidence">{g.jobs.length} jobs</span></h3>
+      <ol>{g.jobs.map(j => <li><a href={`/tracker/jobs/${j.slug}#hiring-h`}>{j.name}</a></li>)}</ol></div>)}</div>
+    {jobsData.employment_pressure_note && <details class="hi-src"><summary>About this estimate</summary><p class="confidence">Researcher's note: {jobsData.employment_pressure_note}</p></details>}
+  </section>
 
   <section style="margin-top:var(--space-7)" aria-labelledby="gr-h"><h2 id="gr-h" style="font-size:var(--fs-h3);margin-bottom:var(--space-3)">Helpful for any job</h2>
     <ul class="panel" style="padding-left:40px">{jobsData.general_resources.map(r => <li><a href={r.url} rel="noopener">{r.label}</a></li>)}</ul>

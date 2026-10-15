@@ -1,0 +1,15 @@
+---
+import { HIRING } from '../lib/site';
+const { level, summary, sources = [], note, intro, id = 'hiring' } = Astro.props;
+const h = HIRING[level];
+---
+{h && <section class="hiring panel" aria-labelledby={`${id}-h`}>
+  <span class="eyebrow">Hiring impact by 2030</span>
+  <h2 id={`${id}-h`} class="hiring-h"><span class={`hi-tag ${h.cls}`}><span aria-hidden="true">{h.icon}</span> {h.label}</span></h2>
+  {summary && <p>{summary}</p>}
+  <p class="confidence"><strong>HumAIn Logic estimate.</strong>{' '}{intro}</p>
+  {sources.length > 0 && <details class="hi-src"><summary>Sources for the hiring estimate ({sources.length})</summary>
+    <ol class="sources">{sources.map((s: any) => <li><a href={s.url} rel="noopener">{s.title}</a>{s.publisher ? ` — ${s.publisher}` : ''}{s.year ? `, ${s.year}` : ''}</li>)}</ol>
+    {note && <p class="confidence">Researcher's note: {note}</p>}
+  </details>}
+</section>}

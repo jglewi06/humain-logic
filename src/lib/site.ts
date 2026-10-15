@@ -33,3 +33,13 @@ export const fmtMonthDay = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDat
 /** Pricing status line: "Last verified Oct 15, 2026" or "Pricing unconfirmed" */
 export const priceStatus = (p: any) => p?.verified ? `Last verified ${fmtMonthDay(p.verified_on)}` : p?.verification_note !== undefined ? 'Pricing unconfirmed' : 'Pricing unconfirmed';
 export const freeText = (p: any) => p?.free_tier === true ? 'Free plan: yes' : p?.free_tier === false ? 'Free plan: no' : 'Free plan: unclear';
+
+// Hiring impact by 2030: a second, separate HumAIn Logic estimate (not the automation timeline)
+export const HIRING = {
+  high:   { label: 'Fewer openings likely',  icon: '↓', cls: 'hi-high' },
+  medium: { label: 'Some pressure',          icon: '↘', cls: 'hi-medium' },
+  low:    { label: 'Little change expected', icon: '→', cls: 'hi-low' },
+  growth: { label: 'More openings likely',   icon: '↑', cls: 'hi-growth' },
+} as Record<string, { label: string; icon: string; cls: string }>;
+export const HIRING_ORDER = ['high', 'medium', 'low', 'growth'];
+export const HIRING_INTRO = 'Hiring impact by 2030 is a separate HumAIn Logic estimate of whether employers are likely to hire fewer or more people for a job by about 2030, based on employer surveys and early labor-market data. It is not the automation timeline: the year ranges estimate when technology could do most of a job’s tasks, which is a different question.';

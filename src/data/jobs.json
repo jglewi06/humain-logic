@@ -1,5 +1,5 @@
 {
- "note": "Year ranges are HumAIn Logic editorial estimates, NOT figures published by the cited sources. None of the cited sources gives per-occupation 'full automation' dates. Method: (1) relative automation susceptibility per occupation from Frey & Osborne (2013) probabilities and task-exposure scores in Eloundou et al. (2023) and ILO (2023); (2) anchored to McKinsey (2023) 'Economic potential of generative AI', which estimates half of today's work activities could be automated between 2030 and 2060 (midpoint ~2045); (3) adjusted for physical/manual tasks (slower robotics adoption), regulation/licensing, and BLS/WEF employment outlooks. 'Near-full automation' means most of the occupation's current tasks can be done by technology at scale; it does not imply all jobs disappear, and several sources (OECD, IMF, WEF) stress augmentation and job transformation over replacement. Confidence reflects agreement among sources and technical maturity, and is low for most ranges. Source URLs were checked on 2026-10-14; IMF, WEF, OECD and BLS pages block automated fetches (HTTP 403) but are the official landing pages confirmed via web search.",
+ "note": "Year ranges are HumAIn Logic editorial estimates, NOT figures published by the cited sources. None of the cited sources gives per-occupation 'full automation' dates. Method: (1) relative automation susceptibility per occupation from Frey & Osborne (2013) probabilities and task-exposure scores in Eloundou et al. (2023) and ILO (2023); (2) anchored to McKinsey (2023) 'Economic potential of generative AI', which estimates half of today's work activities could be automated between 2030 and 2060 (midpoint ~2045); (3) adjusted for physical/manual tasks (slower robotics adoption), regulation/licensing, and BLS/WEF employment outlooks. 'Near-full automation' means most of the occupation's current tasks can be done by technology at scale; it does not imply all jobs disappear, and several sources (OECD, IMF, WEF) stress augmentation and job transformation over replacement. Confidence reflects agreement among sources and technical maturity, and is low for most ranges. Source URLs were checked on 2026-10-14; IMF, WEF, OECD and BLS pages block automated fetches (HTTP 403) but are the official landing pages confirmed via web search. | Two clocks: automation_year_range (with confidence, rationale, sources) = near-full TASK automation estimate. employment_pressure_by_2030 (high|medium|low|growth, with employment_pressure_summary and employment_pressure_sources) = expected hiring freeze / headcount decline by ~2030 from employer surveys (WEF Future of Jobs 2025) and early labor data (Stanford Canaries Aug 2026, Metaculus Labor Hub), NOT full automation. Overall forecasts remain modest (Forrester ~6% of US jobs lost by 2030; BCG: more jobs reshaped than replaced).",
  "updated": "2026-10-15",
  "help_note": "Practical, encouraging next steps per profession. Links point to real training and career resources checked on 2026-10-15. Automation year ranges live in jobs.json and are HumAIn Logic estimates.",
  "help_updated": "2026-10-15",
@@ -33,6 +33,7 @@
    "url": "https://www.apprenticeship.gov/"
   }
  ],
+ "employment_pressure_note": "Two clocks: automation_year_range (with confidence, rationale, sources) = near-full TASK automation estimate. employment_pressure_by_2030 (high|medium|low|growth, with employment_pressure_summary and employment_pressure_sources) = expected hiring freeze / headcount decline by ~2030 from employer surveys (WEF Future of Jobs 2025) and early labor data (Stanford Canaries Aug 2026, Metaculus Labor Hub), NOT full automation. Overall forecasts remain modest (Forrester ~6% of US jobs lost by 2030; BCG: more jobs reshaped than replaced).",
  "jobs": [
   {
    "slug": "data-entry-keyer",
@@ -58,6 +59,22 @@
      "title": "Occupational Outlook Handbook",
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect data entry clerk jobs to shrink about 34% between 2025 and 2030, mostly through fewer hires.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
      "year": 2025
     }
    ],
@@ -139,6 +156,22 @@
      "year": 2013
     }
    ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "WEF expects clerical and secretarial roles to see the largest job declines by 2030, with administrative assistants down about 28%.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Organized people who keep an office running are still needed; AI can take the dull parts so you can focus on people and problems.",
     "actions": [
@@ -217,6 +250,22 @@
      "year": 2023
     }
    ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect accounting, bookkeeping and payroll clerk jobs to shrink about 24% between 2025 and 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Software is doing more data entry, which makes people who can review, explain and advise on numbers more valuable.",
     "actions": [
@@ -281,6 +330,22 @@
      "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
      "publisher": "McKinsey Global Institute",
      "year": 2023
+    }
+   ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect telemarketer jobs to shrink about 16% between 2025 and 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
     }
    ],
    "help": {
@@ -358,6 +423,28 @@
      "year": 2013
     }
    ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Big employers are already shrinking support teams with AI agents, such as Salesforce cutting support staff from about 9,000 to 5,000.",
+   "employment_pressure_sources": [
+    {
+     "title": "Klarna AI assistant handles two-thirds of customer service chats in its first month",
+     "url": "https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/",
+     "publisher": "Klarna",
+     "year": 2024
+    },
+    {
+     "title": "Salesforce CEO Marc Benioff says AI cut 4,000 customer service jobs",
+     "url": "https://fortune.com/2025/09/02/salesforce-ceo-billionaire-marc-benioff-ai-agents-jobs-layoffs-customer-service-sales/",
+     "publisher": "Fortune",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "AI is taking on simple questions, and people who handle complex, emotional or high-value conversations are becoming more important.",
     "actions": [
@@ -430,6 +517,16 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect bank teller jobs to shrink about 35% between 2025 and 2030, one of the fastest declines in the survey.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Branches are changing, but people who can guide customers through financial decisions remain valued.",
     "actions": [
@@ -499,6 +596,16 @@
      "title": "Occupational Outlook Handbook",
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect cashier and ticket clerk jobs to shrink about 30% between 2025 and 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
      "year": 2025
     }
    ],
@@ -577,6 +684,22 @@
      "year": 2023
     }
    ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "Front-desk admin work is among the office tasks AI handles well, so expect slower hiring rather than sudden cuts by 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "The warm first impression you give is hard to automate; adding scheduling and admin tech skills keeps you in demand.",
     "actions": [
@@ -652,6 +775,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect accounting, bookkeeping and payroll clerk jobs to shrink about 24% between 2025 and 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Payroll software automates calculations, but people who understand the rules, catch errors and help employees are still needed.",
     "actions": [
@@ -722,6 +861,22 @@
      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
      "publisher": "McKinsey & Company",
      "year": 2023
+    }
+   ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "Employers surveyed by WEF expect claims adjuster, examiner and investigator jobs to shrink about 19% between 2025 and 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
     }
    ],
    "help": {
@@ -796,6 +951,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "Translation is one of the jobs where AI tools apply most, so expect fewer new openings even as human checking stays in demand.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (August 2026)",
+     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+     "publisher": "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)",
+     "year": 2026
+    }
+   ],
    "help": {
     "summary": "Machine translation is everywhere, and skilled linguists who ensure accuracy, nuance and cultural fit are still trusted for work that matters.",
     "actions": [
@@ -866,6 +1037,28 @@
      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
      "publisher": "Oxford Martin School (Frey & Osborne)",
      "year": 2013
+    }
+   ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "AI is good at the research and document work paralegals do, so entry-level hiring is likely to slow by 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (August 2026)",
+     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+     "publisher": "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)",
+     "year": 2026
+    },
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
     }
    ],
    "help": {
@@ -943,6 +1136,22 @@
      "year": 2023
     }
    ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "WEF lists accountants and auditors among declining roles, with pressure mainly on routine clerical work rather than senior judgement.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "AI handles more number-crunching, which shifts accountants toward judgment, advice and trust, work that remains human.",
     "actions": [
@@ -1018,6 +1227,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "Driving jobs are not expected to shrink much by 2030; WEF actually lists delivery drivers among the biggest-growing jobs.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Forecast: AI And Automation Will Take 6% Of US Jobs By 2030",
+     "url": "https://www.forrester.com/blogs/ai-and-automation-will-take-6-of-us-jobs-by-2030/",
+     "publisher": "Forrester",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Self-driving trucks are being tested, but widespread change will take years; drivers can prepare at their own pace.",
     "actions": [
@@ -1087,6 +1312,16 @@
      "title": "Occupational Outlook Handbook",
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "WEF lists light truck and delivery drivers among the fastest-growing jobs by 2030, so hiring pressure from AI is low.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
      "year": 2025
     }
    ],
@@ -1165,6 +1400,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "Hands-on food work has little AI exposure, and overall forecasts expect only modest job losses by 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "Forecast: AI And Automation Will Take 6% Of US Jobs By 2030",
+     "url": "https://www.forrester.com/blogs/ai-and-automation-will-take-6-of-us-jobs-by-2030/",
+     "publisher": "Forrester",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Kiosks and kitchen robots are appearing, but restaurants still rely on people for service, quality and teamwork.",
     "actions": [
@@ -1237,6 +1488,22 @@
      "title": "The Future of Jobs Report 2025",
      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
      "publisher": "World Economic Forum",
+     "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "Physical warehouse work has low AI exposure; forecasters expect robots to matter more after 2030 than before.",
+   "employment_pressure_sources": [
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
      "year": 2025
     }
    ],
@@ -1315,6 +1582,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "Cleaning work is physical and has little AI exposure, so hiring is not expected to drop much by 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Cleaning robots handle simple floors, but varied spaces and safety still need skilled people.",
     "actions": [
@@ -1390,6 +1673,22 @@
      "year": 2013
     }
    ],
+   "employment_pressure_by_2030": "high",
+   "employment_pressure_summary": "For the first time, employers surveyed by WEF expect graphic designer jobs to shrink, by about 20% between 2025 and 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "AI makes fast images easy, which puts a premium on designers with strong ideas, taste and brand thinking.",
     "actions": [
@@ -1460,6 +1759,22 @@
      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and",
      "publisher": "International Labour Organization",
      "year": 2023
+    }
+   ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "Writing is one of the tasks AI does most, and young workers in exposed jobs like this are already being hired less.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (August 2026)",
+     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+     "publisher": "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)",
+     "year": 2026
     }
    ],
    "help": {
@@ -1537,6 +1852,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "Gathering and summarising information is a top AI use, so expect slower hiring for junior analyst roles.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (August 2026)",
+     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+     "publisher": "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)",
+     "year": 2026
+    }
+   ],
    "help": {
     "summary": "AI speeds up data crunching, so analysts who ask the right questions and tell clear stories become more valuable.",
     "actions": [
@@ -1606,6 +1937,28 @@
      "title": "Occupational Outlook Handbook",
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "medium",
+   "employment_pressure_summary": "Hiring of young developers has dropped, but forecasters expect only a modest overall decline by 2030 and WEF still sees growth.",
+   "employment_pressure_sources": [
+    {
+     "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (August 2026)",
+     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+     "publisher": "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)",
+     "year": 2026
+    },
+    {
+     "title": "Software Developers: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/software-developers/",
+     "publisher": "Metaculus",
+     "year": 2026
+    },
+    {
+     "title": "Future of Jobs Report 2025",
+     "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+     "publisher": "World Economic Forum",
      "year": 2025
     }
    ],
@@ -1684,6 +2037,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "Client relationships and trust keep demand steady; AI mainly helps advisers do research faster.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "AI Will Reshape More Jobs Than It Replaces",
+     "url": "https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces",
+     "publisher": "Boston Consulting Group",
+     "year": 2026
+    }
+   ],
    "help": {
     "summary": "Clients still want a trusted person for big money decisions; AI can handle paperwork so you have more time for them.",
     "actions": [
@@ -1756,6 +2125,22 @@
      "year": 2013
     }
    ],
+   "employment_pressure_by_2030": "low",
+   "employment_pressure_summary": "Experienced lawyers show little job loss so far; pressure falls mostly on junior research and document work.",
+   "employment_pressure_sources": [
+    {
+     "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence (August 2026)",
+     "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+     "publisher": "Stanford Digital Economy Lab (Brynjolfsson, Chandar, Chen)",
+     "year": 2026
+    },
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
+    }
+   ],
    "help": {
     "summary": "AI speeds research and drafting, while judgment, advocacy and client trust remain the heart of legal work.",
     "actions": [
@@ -1823,6 +2208,22 @@
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "WEF expects education jobs to grow by 2030, and forecasters expect classrooms to keep human teachers.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
     }
    ],
    "help": {
@@ -1900,6 +2301,16 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "WEF expects care jobs to be among the biggest growers by 2030, and hands-on patient care is hard to automate.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Nursing's hands-on care, judgment and compassion are far from automation; AI can help with documentation so you spend more time with patients.",
     "actions": [
@@ -1972,6 +2383,22 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "Skilled trades are physical and in demand, with little AI exposure, so hiring is expected to hold or grow.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Skilled trades are among the safest from automation, and new technology like solar, EV chargers and smart buildings is creating more work.",
     "actions": [
@@ -2038,6 +2465,22 @@
      "title": "Occupational Outlook Handbook",
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "Skilled trades are physical and in demand, with little AI exposure, so hiring is expected to hold or grow.",
+   "employment_pressure_sources": [
+    {
+     "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+     "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+     "publisher": "Microsoft Research",
+     "year": 2025
+    },
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
      "year": 2025
     }
    ],
@@ -2111,6 +2554,22 @@
      "url": "https://www.bls.gov/ooh/",
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
+    }
+   ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "WEF lists construction workers among the jobs adding the most positions by 2030.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
     }
    ],
    "help": {
@@ -2188,6 +2647,16 @@
      "year": 2025
     }
    ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "WEF expects care work to be among the biggest job growers by 2030 as populations age.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    }
+   ],
    "help": {
     "summary": "Caring for people at home relies on trust, compassion and physical help, and demand is growing as populations age.",
     "actions": [
@@ -2258,6 +2727,22 @@
      "url": "https://arxiv.org/abs/2303.10130",
      "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
      "year": 2023
+    }
+   ],
+   "employment_pressure_by_2030": "growth",
+   "employment_pressure_summary": "Doctors are expected to stay in demand by 2030; AI mainly helps with notes and research.",
+   "employment_pressure_sources": [
+    {
+     "title": "The Future of Jobs Report 2025: 2. Jobs outlook",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/2-jobs-outlook/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/",
+     "publisher": "Metaculus",
+     "year": 2026
     }
    ],
    "help": {

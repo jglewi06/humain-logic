@@ -45,7 +45,7 @@ if (fs.existsSync(path.join(R, 'tools.json'))) {
       summary: t.description,
       tasks: (t.tasks || []).map(x => slug(x)),
       pricing: pricingFor(s, t),
-      details: DETAILS[s] ? { what_it_does: DETAILS[s].what_it_does, who_its_for: DETAILS[s].who_its_for, pros: DETAILS[s].pros, cons: DETAILS[s].cons } : null,
+      details: DETAILS[s] ? { what_it_does: DETAILS[s].what_it_does, who_its_for: DETAILS[s].who_its_for, pros: DETAILS[s].pros, cons: DETAILS[s].cons.filter(c => !/trademark/i.test(c)) /* owner: no trademark items for now */ } : null,
       // Fields the UX spec wants but research does not provide yet (left null on purpose):
       skill_level: null, platforms: null, privacy: null, last_verified: null, affiliate: false,
     };
@@ -70,12 +70,16 @@ if (fs.existsSync(path.join(R, 'jobs.json'))) {
   const outlook = start => start <= 2035 ? 'shift' : start <= 2045 ? 'watch' : 'steady';
   const jobs = raw.jobs.map(j => {
     const start = parseInt(j.automation_year_range, 10);
-    return { slug: slug(j.profession), name: j.profession, outlook: outlook(start),
-      estimate_range: j.automation_year_range, confidence: j.confidence, rationale: j.rationale, sources: j.sources };
+    const job = { slug: slug(j.profession), name: j.profession, outlook: outlook(start),
+      estimate_range: j.automation_year_range, confidence: j.confidence, rationale: j.rationale, sources: j.sources,
+      // Second, separate estimate: hiring pressure by ~2030 (not the automation timeline)
+      employment_pressure_by_2030: j.employment_pressure_by_2030 ?? null, employment_pressure_summary: j.employment_pressure_summary ?? null, employment_pressure_sources: j.employment_pressure_sources ?? [] };
+      if (j.employment_pressure_by_2030 && !['high', 'medium', 'low', 'growth'].includes(j.employment_pressure_by_2030)) mismatch.push(`unknown employment_pressure_by_2030 for ${j.profession}: ${j.employment_pressure_by_2030}`);
+    return job;
   });
   for (const j of jobs) { j.help = JOBHELP?.jobs?.[j.slug] ? { summary: JOBHELP.jobs[j.slug].summary, actions: JOBHELP.jobs[j.slug].actions } : null; if (JOBHELP && !j.help) mismatch.push(`job without help: ${j.slug}`); }
   for (const k of Object.keys(JOBHELP?.jobs ?? {})) if (!jobs.some(j => j.slug === k)) mismatch.push(`help without job: ${k}`);
-  write('jobs.json', { note: raw.note, updated: new Date().toISOString().slice(0, 10), help_note: JOBHELP?.note ?? null, help_updated: JOBHELP?.updated ?? null, general_resources: JOBHELP?.general_resources ?? [], jobs });
+  write('jobs.json', { note: raw.note, updated: new Date().toISOString().slice(0, 10), help_note: JOBHELP?.note ?? null, help_updated: JOBHELP?.updated ?? null, general_resources: JOBHELP?.general_resources ?? [], employment_pressure_note: raw.employment_pressure_note ?? null, jobs });
 }
 
 // ---- Guides: copy Markdown into the site (the repo only contains site/) ----
