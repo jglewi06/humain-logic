@@ -1,0 +1,1784 @@
+[
+ {
+  "slug": "answer-questions",
+  "name": "Answer questions",
+  "tools": [
+   "chatgpt",
+   "claude",
+   "gemini",
+   "microsoft-copilot",
+   "grok",
+   "le-chat",
+   "poe"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "generate-an-image",
+  "name": "Generate an image",
+  "tools": [
+   "leonardo-ai",
+   "ideogram",
+   "stability-ai"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "remove-background-from-photo",
+  "name": "Remove background from photo",
+  "tools": [
+   "canva",
+   "remove-bg",
+   "photoroom"
+  ],
+  "categories": [
+   "design",
+   "image"
+  ]
+ },
+ {
+  "slug": "summarize-a-document",
+  "name": "Summarize a document",
+  "tools": [
+   "chatgpt",
+   "le-chat",
+   "wordtune"
+  ],
+  "categories": [
+   "productivity",
+   "writing"
+  ]
+ },
+ {
+  "slug": "take-meeting-notes",
+  "name": "Take meeting notes",
+  "tools": [
+   "notion-ai",
+   "otter-ai",
+   "fathom"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "create-an-image",
+  "name": "Create an image",
+  "tools": [
+   "microsoft-copilot",
+   "grok"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "create-an-image-from-text",
+  "name": "Create an image from text",
+  "tools": [
+   "adobe-firefly",
+   "midjourney"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "edit-a-video",
+  "name": "Edit a video",
+  "tools": [
+   "runway",
+   "capcut"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "fix-a-bug",
+  "name": "Fix a bug",
+  "tools": [
+   "github-copilot",
+   "cursor"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "make-a-logo",
+  "name": "Make a logo",
+  "tools": [
+   "ideogram",
+   "looka"
+  ],
+  "categories": [
+   "image",
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-presentation",
+  "name": "Make a presentation",
+  "tools": [
+   "gamma",
+   "beautiful-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-song",
+  "name": "Make a song",
+  "tools": [
+   "suno",
+   "udio"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-a-video-from-text",
+  "name": "Make a video from text",
+  "tools": [
+   "runway",
+   "luma-dream-machine"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "summarize-a-web-page",
+  "name": "Summarize a web page",
+  "tools": [
+   "gemini",
+   "microsoft-copilot"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "track-spending",
+  "name": "Track spending",
+  "tools": [
+   "cleo",
+   "rocket-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "translate-a-video",
+  "name": "Translate a video",
+  "tools": [
+   "synthesia",
+   "heygen"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "upscale-an-image",
+  "name": "Upscale an image",
+  "tools": [
+   "clipdrop",
+   "krea"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "write-an-email",
+  "name": "Write an email",
+  "tools": [
+   "chatgpt",
+   "superhuman"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "write-code",
+  "name": "Write code",
+  "tools": [
+   "github-copilot",
+   "cursor"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "write-social-posts",
+  "name": "Write social posts",
+  "tools": [
+   "buffer",
+   "lately"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "add-a-chatbot-to-my-website",
+  "name": "Add a chatbot to my website",
+  "tools": [
+   "tidio"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "add-auto-captions",
+  "name": "Add auto captions",
+  "tools": [
+   "capcut"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-captions",
+  "name": "Add captions",
+  "tools": [
+   "opusclip"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "analyze-a-file",
+  "name": "Analyze a file",
+  "tools": [
+   "claude"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "animate-a-photo",
+  "name": "Animate a photo",
+  "tools": [
+   "luma-dream-machine"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "animate-an-image",
+  "name": "Animate an image",
+  "tools": [
+   "pika"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "answer-a-research-question",
+  "name": "Answer a research question",
+  "tools": [
+   "consensus"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "answer-customer-emails",
+  "name": "Answer customer emails",
+  "tools": [
+   "zendesk-ai"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "answer-customer-questions",
+  "name": "Answer customer questions",
+  "tools": [
+   "tidio"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "answer-customer-questions-automatically",
+  "name": "Answer customer questions automatically",
+  "tools": [
+   "intercom-fin"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "automate-bookkeeping",
+  "name": "Automate bookkeeping",
+  "tools": [
+   "docyt"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "automate-marketing-workflows",
+  "name": "Automate marketing workflows",
+  "tools": [
+   "copy-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "automate-repetitive-tasks",
+  "name": "Automate repetitive tasks",
+  "tools": [
+   "zapier"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "automate-support-tickets",
+  "name": "Automate support tickets",
+  "tools": [
+   "zendesk-ai"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "brainstorm-ideas",
+  "name": "Brainstorm ideas",
+  "tools": [
+   "chatgpt"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "brainstorm-plot-ideas",
+  "name": "Brainstorm plot ideas",
+  "tools": [
+   "sudowrite"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "budget-my-money",
+  "name": "Budget my money",
+  "tools": [
+   "cleo"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "build-a-simple-website",
+  "name": "Build a simple website",
+  "tools": [
+   "gamma"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "build-a-web-app-from-a-prompt",
+  "name": "Build a web app from a prompt",
+  "tools": [
+   "bolt"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "build-a-website",
+  "name": "Build a website",
+  "tools": [
+   "framer"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "build-a-website-without-coding",
+  "name": "Build a website without coding",
+  "tools": [
+   "lovable"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "build-an-ai-agent",
+  "name": "Build an AI agent",
+  "tools": [
+   "zapier"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "build-an-app-from-a-description",
+  "name": "Build an app from a description",
+  "tools": [
+   "replit"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "cancel-subscriptions",
+  "name": "Cancel subscriptions",
+  "tools": [
+   "rocket-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "change-tone-of-email",
+  "name": "Change tone of email",
+  "tools": [
+   "grammarly"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "chat-with-a-character",
+  "name": "Chat with a character",
+  "tools": [
+   "character-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "check-grammar",
+  "name": "Check grammar",
+  "tools": [
+   "quillbot"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "check-how-a-paper-is-cited",
+  "name": "Check how a paper is cited",
+  "tools": [
+   "scite"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "clean-up-audio",
+  "name": "Clean up audio",
+  "tools": [
+   "adobe-podcast"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "clone-a-voice",
+  "name": "Clone a voice",
+  "tools": [
+   "elevenlabs"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "compare-products",
+  "name": "Compare products",
+  "tools": [
+   "perplexity"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "connect-apps",
+  "name": "Connect apps",
+  "tools": [
+   "zapier"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "create-3d-assets",
+  "name": "Create 3D assets",
+  "tools": [
+   "stability-ai"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "create-a-brand-kit",
+  "name": "Create a brand kit",
+  "tools": [
+   "looka"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "create-a-poster-with-text",
+  "name": "Create a poster with text",
+  "tools": [
+   "ideogram"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "create-ad-banners",
+  "name": "Create ad banners",
+  "tools": [
+   "adcreative-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "create-an-ai-avatar-presenter",
+  "name": "Create an AI avatar presenter",
+  "tools": [
+   "synthesia"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "create-an-avatar-video",
+  "name": "Create an avatar video",
+  "tools": [
+   "heygen"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "create-blog-posts",
+  "name": "Create blog posts",
+  "tools": [
+   "jasper"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "create-game-art",
+  "name": "Create game art",
+  "tools": [
+   "leonardo-ai"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "create-slides",
+  "name": "Create slides",
+  "tools": [
+   "gamma"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "describe-a-scene",
+  "name": "Describe a scene",
+  "tools": [
+   "sudowrite"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "design-a-landing-page",
+  "name": "Design a landing page",
+  "tools": [
+   "framer"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "design-a-logo-concept",
+  "name": "Design a logo concept",
+  "tools": [
+   "midjourney"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "design-a-social-media-post",
+  "name": "Design a social media post",
+  "tools": [
+   "canva"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "design-a-web-page",
+  "name": "Design a web page",
+  "tools": [
+   "v0"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "design-an-app-screen",
+  "name": "Design an app screen",
+  "tools": [
+   "figma"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "design-slides",
+  "name": "Design slides",
+  "tools": [
+   "beautiful-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "draft-a-message",
+  "name": "Draft a message",
+  "tools": [
+   "gemini"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "dub-a-video",
+  "name": "Dub a video",
+  "tools": [
+   "elevenlabs"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "edit-a-codebase",
+  "name": "Edit a codebase",
+  "tools": [
+   "cursor"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "edit-a-photo",
+  "name": "Edit a photo",
+  "tools": [
+   "adobe-firefly"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "edit-a-podcast",
+  "name": "Edit a podcast",
+  "tools": [
+   "descript"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "edit-video-by-editing-text",
+  "name": "Edit video by editing text",
+  "tools": [
+   "descript"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "explain-code",
+  "name": "Explain code",
+  "tools": [
+   "github-copilot"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "extract-data-from-papers",
+  "name": "Extract data from papers",
+  "tools": [
+   "elicit"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "find-old-notes",
+  "name": "Find old notes",
+  "tools": [
+   "mem"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "find-research-papers",
+  "name": "Find research papers",
+  "tools": [
+   "elicit"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "find-sales-leads",
+  "name": "Find sales leads",
+  "tools": [
+   "hubspot-breeze"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "find-scientific-evidence",
+  "name": "Find scientific evidence",
+  "tools": [
+   "consensus"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "find-supporting-evidence",
+  "name": "Find supporting evidence",
+  "tools": [
+   "scite"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "find-time-for-meetings",
+  "name": "Find time for meetings",
+  "tools": [
+   "reclaim-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "fix-grammar",
+  "name": "Fix grammar",
+  "tools": [
+   "grammarly"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "generate-a-pattern",
+  "name": "Generate a pattern",
+  "tools": [
+   "adobe-firefly"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "generate-images-in-real-time",
+  "name": "Generate images in real time",
+  "tools": [
+   "krea"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "generate-music",
+  "name": "Generate music",
+  "tools": [
+   "udio"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "generate-ui-code",
+  "name": "Generate UI code",
+  "tools": [
+   "v0"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "get-advice",
+  "name": "Get advice",
+  "tools": [
+   "pi"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "get-homework-help",
+  "name": "Get homework help",
+  "tools": [
+   "khanmigo"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "get-latest-news",
+  "name": "Get latest news",
+  "tools": [
+   "grok"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "have-a-conversation",
+  "name": "Have a conversation",
+  "tools": [
+   "pi"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "host-a-website",
+  "name": "Host a website",
+  "tools": [
+   "replit"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "improve-my-writing",
+  "name": "Improve my writing",
+  "tools": [
+   "grammarly"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "improve-writing",
+  "name": "Improve writing",
+  "tools": [
+   "deepl"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "learn-a-language",
+  "name": "Learn a language",
+  "tools": [
+   "duolingo"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "listen-to-a-pdf",
+  "name": "Listen to a PDF",
+  "tools": [
+   "speechify"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "lower-my-bills",
+  "name": "Lower my bills",
+  "tools": [
+   "rocket-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "make-a-flyer",
+  "name": "Make a flyer",
+  "tools": [
+   "canva"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-podcast-from-notes",
+  "name": "Make a podcast from notes",
+  "tools": [
+   "notebooklm"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "make-a-prototype",
+  "name": "Make a prototype",
+  "tools": [
+   "figma"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-short-video",
+  "name": "Make a short video",
+  "tools": [
+   "pika"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-talking-head-video",
+  "name": "Make a talking head video",
+  "tools": [
+   "heygen"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-tiktok",
+  "name": "Make a TikTok",
+  "tools": [
+   "capcut"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-training-video",
+  "name": "Make a training video",
+  "tools": [
+   "synthesia"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-video",
+  "name": "Make a video",
+  "tools": [
+   "krea"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-ad-images",
+  "name": "Make ad images",
+  "tools": [
+   "adcreative-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "make-an-app",
+  "name": "Make an app",
+  "tools": [
+   "lovable"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "make-art",
+  "name": "Make art",
+  "tools": [
+   "midjourney"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-concept-art",
+  "name": "Make concept art",
+  "tools": [
+   "leonardo-ai"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-flashcards",
+  "name": "Make flashcards",
+  "tools": [
+   "quizlet"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "make-product-photos",
+  "name": "Make product photos",
+  "tools": [
+   "photoroom"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-transparent-image",
+  "name": "Make transparent image",
+  "tools": [
+   "remove-bg"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "manage-projects",
+  "name": "Manage projects",
+  "tools": [
+   "motion"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "optimize-a-blog-post-for-seo",
+  "name": "Optimize a blog post for SEO",
+  "tools": [
+   "surfer"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "organize-my-notes",
+  "name": "Organize my notes",
+  "tools": [
+   "mem"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "paraphrase-text",
+  "name": "Paraphrase text",
+  "tools": [
+   "quillbot"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "plan-a-lesson",
+  "name": "Plan a lesson",
+  "tools": [
+   "khanmigo"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "plan-a-trip",
+  "name": "Plan a trip",
+  "tools": [
+   "gemini"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "plan-my-day",
+  "name": "Plan my day",
+  "tools": [
+   "motion"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "plan-my-week",
+  "name": "Plan my week",
+  "tools": [
+   "reclaim-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "practice-a-conversation",
+  "name": "Practice a conversation",
+  "tools": [
+   "character-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "practice-conversation",
+  "name": "Practice conversation",
+  "tools": [
+   "duolingo"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "prototype-a-website",
+  "name": "Prototype a website",
+  "tools": [
+   "bolt"
+  ],
+  "categories": [
+   "coding"
+  ]
+ },
+ {
+  "slug": "read-text-aloud",
+  "name": "Read text aloud",
+  "tools": [
+   "speechify"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "reconcile-accounts",
+  "name": "Reconcile accounts",
+  "tools": [
+   "docyt"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "record-meeting-notes",
+  "name": "Record meeting notes",
+  "tools": [
+   "fireflies-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "relight-a-photo",
+  "name": "Relight a photo",
+  "tools": [
+   "clipdrop"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "remove-background-from-video",
+  "name": "Remove background from video",
+  "tools": [
+   "runway"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "remove-background-noise-from-recording",
+  "name": "Remove background noise from recording",
+  "tools": [
+   "adobe-podcast"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "remove-filler-words",
+  "name": "Remove filler words",
+  "tools": [
+   "descript"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "remove-objects-from-photo",
+  "name": "Remove objects from photo",
+  "tools": [
+   "clipdrop"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "reply-faster",
+  "name": "Reply faster",
+  "tools": [
+   "superhuman"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "research-a-topic",
+  "name": "Research a topic",
+  "tools": [
+   "perplexity"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "rewrite-a-sentence",
+  "name": "Rewrite a sentence",
+  "tools": [
+   "wordtune"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "schedule-my-tasks",
+  "name": "Schedule my tasks",
+  "tools": [
+   "reclaim-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "schedule-social-media-posts",
+  "name": "Schedule social media posts",
+  "tools": [
+   "buffer"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "schedule-tasks-automatically",
+  "name": "Schedule tasks automatically",
+  "tools": [
+   "motion"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "search-past-meetings",
+  "name": "Search past meetings",
+  "tools": [
+   "fireflies-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "search-the-web-with-sources",
+  "name": "Search the web with sources",
+  "tools": [
+   "perplexity"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "set-up-a-support-chatbot",
+  "name": "Set up a support chatbot",
+  "tools": [
+   "intercom-fin"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "shorten-text",
+  "name": "Shorten text",
+  "tools": [
+   "wordtune"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "sort-my-inbox",
+  "name": "Sort my inbox",
+  "tools": [
+   "superhuman"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "study-for-a-test",
+  "name": "Study for a test",
+  "tools": [
+   "quizlet"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "study-from-sources",
+  "name": "Study from sources",
+  "tools": [
+   "notebooklm"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "summarize-a-call",
+  "name": "Summarize a call",
+  "tools": [
+   "otter-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "summarize-a-long-document",
+  "name": "Summarize a long document",
+  "tools": [
+   "claude"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "summarize-a-zoom-call",
+  "name": "Summarize a Zoom call",
+  "tools": [
+   "fathom"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "summarize-an-article",
+  "name": "Summarize an article",
+  "tools": [
+   "quillbot"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "summarize-crm-records",
+  "name": "Summarize CRM records",
+  "tools": [
+   "hubspot-breeze"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "summarize-my-documents",
+  "name": "Summarize my documents",
+  "tools": [
+   "notebooklm"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "summarize-notes",
+  "name": "Summarize notes",
+  "tools": [
+   "notion-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "summarize-studies",
+  "name": "Summarize studies",
+  "tools": [
+   "elicit"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "talk-through-a-problem",
+  "name": "Talk through a problem",
+  "tools": [
+   "pi"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "transcribe-a-call",
+  "name": "Transcribe a call",
+  "tools": [
+   "fireflies-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "transcribe-a-meeting",
+  "name": "Transcribe a meeting",
+  "tools": [
+   "otter-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "translate-a-document",
+  "name": "Translate a document",
+  "tools": [
+   "deepl"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "translate-text",
+  "name": "Translate text",
+  "tools": [
+   "deepl"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "try-different-ai-chatbots",
+  "name": "Try different AI chatbots",
+  "tools": [
+   "poe"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "turn-a-blog-into-social-posts",
+  "name": "Turn a blog into social posts",
+  "tools": [
+   "lately"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "turn-long-video-into-short-clips",
+  "name": "Turn long video into short clips",
+  "tools": [
+   "opusclip"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "turn-text-into-speech",
+  "name": "Turn text into speech",
+  "tools": [
+   "elevenlabs"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "tutor-me-in-math",
+  "name": "Tutor me in math",
+  "tools": [
+   "khanmigo"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "write-a-blog-post",
+  "name": "Write a blog post",
+  "tools": [
+   "writesonic"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-a-document",
+  "name": "Write a document",
+  "tools": [
+   "notion-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "write-a-report",
+  "name": "Write a report",
+  "tools": [
+   "claude"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "write-a-story",
+  "name": "Write a story",
+  "tools": [
+   "sudowrite"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-ad-text",
+  "name": "Write ad text",
+  "tools": [
+   "jasper"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-marketing-copy",
+  "name": "Write marketing copy",
+  "tools": [
+   "jasper"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-marketing-emails",
+  "name": "Write marketing emails",
+  "tools": [
+   "hubspot-breeze"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-music-with-lyrics",
+  "name": "Write music with lyrics",
+  "tools": [
+   "suno"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "write-product-descriptions",
+  "name": "Write product descriptions",
+  "tools": [
+   "copy-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-sales-emails",
+  "name": "Write sales emails",
+  "tools": [
+   "copy-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-seo-articles",
+  "name": "Write SEO articles",
+  "tools": [
+   "writesonic"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-seo-content",
+  "name": "Write SEO content",
+  "tools": [
+   "surfer"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-text",
+  "name": "Write text",
+  "tools": [
+   "le-chat"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ }
+]

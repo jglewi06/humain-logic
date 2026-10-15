@@ -1,0 +1,8 @@
+---
+import Base from '../../../layouts/Base.astro';
+import NewsFeed from '../../../components/NewsFeed.astro';
+import { NEWS_CATS } from '../../../lib/site';
+export function getStaticPaths() { return Object.keys(NEWS_CATS).map(slug => ({ params: { slug } })); }
+const { slug } = Astro.params;
+---
+<Base title={`AI news: ${NEWS_CATS[slug]}`}><NewsFeed category={slug} /></Base>

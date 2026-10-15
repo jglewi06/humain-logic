@@ -1,0 +1,1786 @@
+[
+ {
+  "slug": "chatgpt",
+  "name": "ChatGPT",
+  "website": "https://chatgpt.com",
+  "developer": "OpenAI",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "General-purpose AI chat assistant.",
+  "tasks": [
+   "answer-questions",
+   "write-an-email",
+   "summarize-a-document",
+   "brainstorm-ideas"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "claude",
+  "name": "Claude",
+  "website": "https://claude.ai",
+  "developer": "Anthropic",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI assistant for writing, analysis and coding.",
+  "tasks": [
+   "summarize-a-long-document",
+   "write-a-report",
+   "analyze-a-file",
+   "answer-questions"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "gemini",
+  "name": "Gemini",
+  "website": "https://gemini.google.com",
+  "developer": "Google",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Google's AI assistant.",
+  "tasks": [
+   "answer-questions",
+   "plan-a-trip",
+   "draft-a-message",
+   "summarize-a-web-page"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "microsoft-copilot",
+  "name": "Microsoft Copilot",
+  "website": "https://copilot.microsoft.com",
+  "developer": "Microsoft",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Microsoft's AI chat assistant.",
+  "tasks": [
+   "answer-questions",
+   "create-an-image",
+   "summarize-a-web-page"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "perplexity",
+  "name": "Perplexity",
+  "website": "https://www.perplexity.ai",
+  "developer": "Perplexity AI",
+  "category": "research",
+  "category_label": "Research and answers",
+  "summary": "AI answer engine with cited sources.",
+  "tasks": [
+   "search-the-web-with-sources",
+   "research-a-topic",
+   "compare-products"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "grok",
+  "name": "Grok",
+  "website": "https://grok.com",
+  "developer": "xAI",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "xAI's conversational AI assistant.",
+  "tasks": [
+   "answer-questions",
+   "get-latest-news",
+   "create-an-image"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "le-chat",
+  "name": "Le Chat",
+  "website": "https://chat.mistral.ai",
+  "developer": "Mistral AI",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Mistral's AI chat assistant.",
+  "tasks": [
+   "answer-questions",
+   "write-text",
+   "summarize-a-document"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "pi",
+  "name": "Pi",
+  "website": "https://pi.ai",
+  "developer": "Inflection AI",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Personal conversational AI.",
+  "tasks": [
+   "talk-through-a-problem",
+   "get-advice",
+   "have-a-conversation"
+  ],
+  "pricing": {
+   "band": "free",
+   "label": "Free"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "grammarly",
+  "name": "Grammarly",
+  "website": "https://www.grammarly.com",
+  "developer": "Grammarly",
+  "category": "writing",
+  "category_label": "Writing",
+  "summary": "AI writing assistant for grammar and tone.",
+  "tasks": [
+   "fix-grammar",
+   "improve-my-writing",
+   "change-tone-of-email"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "quillbot",
+  "name": "QuillBot",
+  "website": "https://quillbot.com",
+  "developer": "QuillBot (Learneo)",
+  "category": "writing",
+  "category_label": "Writing",
+  "summary": "Paraphrasing and writing tool.",
+  "tasks": [
+   "paraphrase-text",
+   "check-grammar",
+   "summarize-an-article"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "jasper",
+  "name": "Jasper",
+  "website": "https://www.jasper.ai",
+  "developer": "Jasper AI",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "AI content platform for marketing teams.",
+  "tasks": [
+   "write-marketing-copy",
+   "create-blog-posts",
+   "write-ad-text"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "copy-ai",
+  "name": "Copy.ai",
+  "website": "https://www.copy.ai",
+  "developer": "Copy.ai",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "AI platform for sales and marketing content.",
+  "tasks": [
+   "write-product-descriptions",
+   "write-sales-emails",
+   "automate-marketing-workflows"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "writesonic",
+  "name": "Writesonic",
+  "website": "https://writesonic.com",
+  "developer": "Writesonic",
+  "category": "writing",
+  "category_label": "Writing",
+  "summary": "AI writer for SEO and marketing content.",
+  "tasks": [
+   "write-a-blog-post",
+   "write-seo-articles"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "sudowrite",
+  "name": "Sudowrite",
+  "website": "https://www.sudowrite.com",
+  "developer": "Sudowrite",
+  "category": "writing",
+  "category_label": "Writing",
+  "summary": "AI writing partner for fiction.",
+  "tasks": [
+   "write-a-story",
+   "brainstorm-plot-ideas",
+   "describe-a-scene"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "wordtune",
+  "name": "Wordtune",
+  "website": "https://www.wordtune.com",
+  "developer": "AI21 Labs",
+  "category": "writing",
+  "category_label": "Writing",
+  "summary": "AI rewriting and reading assistant.",
+  "tasks": [
+   "rewrite-a-sentence",
+   "shorten-text",
+   "summarize-a-document"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "notion-ai",
+  "name": "Notion AI",
+  "website": "https://www.notion.com/product/ai",
+  "developer": "Notion Labs",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI built into the Notion workspace.",
+  "tasks": [
+   "take-meeting-notes",
+   "summarize-notes",
+   "write-a-document"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "otter-ai",
+  "name": "Otter.ai",
+  "website": "https://otter.ai",
+  "developer": "Otter.ai",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI meeting transcription and notes.",
+  "tasks": [
+   "transcribe-a-meeting",
+   "take-meeting-notes",
+   "summarize-a-call"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "fireflies-ai",
+  "name": "Fireflies.ai",
+  "website": "https://fireflies.ai",
+  "developer": "Fireflies.ai",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI notetaker for meetings.",
+  "tasks": [
+   "record-meeting-notes",
+   "transcribe-a-call",
+   "search-past-meetings"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "fathom",
+  "name": "Fathom",
+  "website": "https://www.fathom.ai",
+  "developer": "Fathom",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Free AI meeting recorder and summarizer.",
+  "tasks": [
+   "summarize-a-zoom-call",
+   "take-meeting-notes"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "reclaim-ai",
+  "name": "Reclaim.ai",
+  "website": "https://reclaim.ai",
+  "developer": "Reclaim.ai",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI calendar scheduling assistant.",
+  "tasks": [
+   "schedule-my-tasks",
+   "find-time-for-meetings",
+   "plan-my-week"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "motion",
+  "name": "Motion",
+  "website": "https://www.usemotion.com",
+  "developer": "Motion",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI calendar and task planner.",
+  "tasks": [
+   "plan-my-day",
+   "schedule-tasks-automatically",
+   "manage-projects"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "zapier",
+  "name": "Zapier",
+  "website": "https://zapier.com",
+  "developer": "Zapier",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Automation platform with AI features.",
+  "tasks": [
+   "automate-repetitive-tasks",
+   "connect-apps",
+   "build-an-ai-agent"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "gamma",
+  "name": "Gamma",
+  "website": "https://gamma.app",
+  "developer": "Gamma",
+  "category": "design",
+  "category_label": "Design",
+  "summary": "AI presentation and document generator.",
+  "tasks": [
+   "make-a-presentation",
+   "create-slides",
+   "build-a-simple-website"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "beautiful-ai",
+  "name": "Beautiful.ai",
+  "website": "https://www.beautiful.ai",
+  "developer": "Beautiful.ai",
+  "category": "design",
+  "category_label": "Design",
+  "summary": "AI-assisted slide design.",
+  "tasks": [
+   "make-a-presentation",
+   "design-slides"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "canva",
+  "name": "Canva",
+  "website": "https://www.canva.com",
+  "developer": "Canva",
+  "category": "design",
+  "category_label": "Design",
+  "summary": "Design platform with Magic Studio AI tools.",
+  "tasks": [
+   "design-a-social-media-post",
+   "make-a-flyer",
+   "remove-background-from-photo"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "adobe-firefly",
+  "name": "Adobe Firefly",
+  "website": "https://firefly.adobe.com",
+  "developer": "Adobe",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "Adobe's generative AI for images.",
+  "tasks": [
+   "create-an-image-from-text",
+   "edit-a-photo",
+   "generate-a-pattern"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "midjourney",
+  "name": "Midjourney",
+  "website": "https://www.midjourney.com",
+  "developer": "Midjourney",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "AI image generation service.",
+  "tasks": [
+   "create-an-image-from-text",
+   "make-art",
+   "design-a-logo-concept"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "leonardo-ai",
+  "name": "Leonardo.Ai",
+  "website": "https://leonardo.ai",
+  "developer": "Leonardo.Ai (Canva)",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "AI image and asset generator.",
+  "tasks": [
+   "create-game-art",
+   "generate-an-image",
+   "make-concept-art"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "ideogram",
+  "name": "Ideogram",
+  "website": "https://ideogram.ai",
+  "developer": "Ideogram",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "AI image generator good at text in images.",
+  "tasks": [
+   "create-a-poster-with-text",
+   "make-a-logo",
+   "generate-an-image"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "stability-ai",
+  "name": "Stability AI",
+  "website": "https://stability.ai",
+  "developer": "Stability AI",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "Developer of Stable Diffusion models.",
+  "tasks": [
+   "generate-an-image",
+   "create-3d-assets"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "remove-bg",
+  "name": "Remove.bg",
+  "website": "https://www.remove.bg",
+  "developer": "Canva (Kaleido)",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "Automatic background removal.",
+  "tasks": [
+   "remove-background-from-photo",
+   "make-transparent-image"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "photoroom",
+  "name": "Photoroom",
+  "website": "https://www.photoroom.com",
+  "developer": "Photoroom",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "AI photo editor for product images.",
+  "tasks": [
+   "remove-background-from-photo",
+   "make-product-photos"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "clipdrop",
+  "name": "Clipdrop",
+  "website": "https://clipdrop.co",
+  "developer": "Jasper",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "Suite of AI image editing tools.",
+  "tasks": [
+   "remove-objects-from-photo",
+   "upscale-an-image",
+   "relight-a-photo"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "krea",
+  "name": "Krea",
+  "website": "https://www.krea.ai",
+  "developer": "Krea",
+  "category": "image",
+  "category_label": "Images and photos",
+  "summary": "Real-time AI image and video creation.",
+  "tasks": [
+   "generate-images-in-real-time",
+   "upscale-an-image",
+   "make-a-video"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "runway",
+  "name": "Runway",
+  "website": "https://runwayml.com",
+  "developer": "Runway",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "AI video generation and editing.",
+  "tasks": [
+   "make-a-video-from-text",
+   "edit-a-video",
+   "remove-background-from-video"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "pika",
+  "name": "Pika",
+  "website": "https://pika.art",
+  "developer": "Pika Labs",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "AI video generator.",
+  "tasks": [
+   "make-a-short-video",
+   "animate-an-image"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "luma-dream-machine",
+  "name": "Luma Dream Machine",
+  "website": "https://lumalabs.ai",
+  "developer": "Luma AI",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "AI video generation.",
+  "tasks": [
+   "make-a-video-from-text",
+   "animate-a-photo"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "synthesia",
+  "name": "Synthesia",
+  "website": "https://www.synthesia.io",
+  "developer": "Synthesia",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "AI avatar video platform.",
+  "tasks": [
+   "make-a-training-video",
+   "create-an-ai-avatar-presenter",
+   "translate-a-video"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "heygen",
+  "name": "HeyGen",
+  "website": "https://www.heygen.com",
+  "developer": "HeyGen",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "AI video avatars and translation.",
+  "tasks": [
+   "create-an-avatar-video",
+   "translate-a-video",
+   "make-a-talking-head-video"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "descript",
+  "name": "Descript",
+  "website": "https://www.descript.com",
+  "developer": "Descript",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "Text-based audio and video editor.",
+  "tasks": [
+   "edit-a-podcast",
+   "edit-video-by-editing-text",
+   "remove-filler-words"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "capcut",
+  "name": "CapCut",
+  "website": "https://www.capcut.com",
+  "developer": "ByteDance",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "Video editor with AI features.",
+  "tasks": [
+   "edit-a-video",
+   "add-auto-captions",
+   "make-a-tiktok"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "opusclip",
+  "name": "OpusClip",
+  "website": "https://www.opus.pro",
+  "developer": "OpusClip",
+  "category": "video",
+  "category_label": "Video",
+  "summary": "AI short-form clip generator.",
+  "tasks": [
+   "turn-long-video-into-short-clips",
+   "add-captions"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "website": "https://elevenlabs.io",
+  "developer": "ElevenLabs",
+  "category": "audio",
+  "category_label": "Audio and voice",
+  "summary": "AI voice generation and dubbing.",
+  "tasks": [
+   "turn-text-into-speech",
+   "clone-a-voice",
+   "dub-a-video"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "suno",
+  "name": "Suno",
+  "website": "https://suno.com",
+  "developer": "Suno",
+  "category": "audio",
+  "category_label": "Audio and voice",
+  "summary": "AI music generator.",
+  "tasks": [
+   "make-a-song",
+   "write-music-with-lyrics"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "udio",
+  "name": "Udio",
+  "website": "https://www.udio.com",
+  "developer": "Udio",
+  "category": "audio",
+  "category_label": "Audio and voice",
+  "summary": "AI music creation.",
+  "tasks": [
+   "make-a-song",
+   "generate-music"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "speechify",
+  "name": "Speechify",
+  "website": "https://speechify.com",
+  "developer": "Speechify",
+  "category": "audio",
+  "category_label": "Audio and voice",
+  "summary": "Text-to-speech reader.",
+  "tasks": [
+   "read-text-aloud",
+   "listen-to-a-pdf"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "adobe-podcast",
+  "name": "Adobe Podcast",
+  "website": "https://podcast.adobe.com",
+  "developer": "Adobe",
+  "category": "audio",
+  "category_label": "Audio and voice",
+  "summary": "AI audio enhancement for voice.",
+  "tasks": [
+   "clean-up-audio",
+   "remove-background-noise-from-recording"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "github-copilot",
+  "name": "GitHub Copilot",
+  "website": "https://github.com/features/copilot",
+  "developer": "GitHub (Microsoft)",
+  "category": "coding",
+  "category_label": "Coding",
+  "summary": "AI pair programmer.",
+  "tasks": [
+   "write-code",
+   "explain-code",
+   "fix-a-bug"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "cursor",
+  "name": "Cursor",
+  "website": "https://cursor.com",
+  "developer": "Anysphere",
+  "category": "coding",
+  "category_label": "Coding",
+  "summary": "AI code editor.",
+  "tasks": [
+   "write-code",
+   "edit-a-codebase",
+   "fix-a-bug"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "replit",
+  "name": "Replit",
+  "website": "https://replit.com",
+  "developer": "Replit",
+  "category": "coding",
+  "category_label": "Coding",
+  "summary": "Browser IDE with AI agent.",
+  "tasks": [
+   "build-an-app-from-a-description",
+   "host-a-website"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "lovable",
+  "name": "Lovable",
+  "website": "https://lovable.dev",
+  "developer": "Lovable",
+  "category": "coding",
+  "category_label": "Coding",
+  "summary": "AI app builder from prompts.",
+  "tasks": [
+   "build-a-website-without-coding",
+   "make-an-app"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "bolt",
+  "name": "Bolt",
+  "website": "https://bolt.new",
+  "developer": "StackBlitz",
+  "category": "coding",
+  "category_label": "Coding",
+  "summary": "AI full-stack web app builder.",
+  "tasks": [
+   "build-a-web-app-from-a-prompt",
+   "prototype-a-website"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "v0",
+  "name": "v0",
+  "website": "https://v0.app",
+  "developer": "Vercel",
+  "category": "coding",
+  "category_label": "Coding",
+  "summary": "AI UI and app generator.",
+  "tasks": [
+   "design-a-web-page",
+   "generate-ui-code"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "intercom-fin",
+  "name": "Intercom Fin",
+  "website": "https://fin.ai",
+  "developer": "Intercom",
+  "category": "customer-service",
+  "category_label": "Customer service",
+  "summary": "AI customer service agent.",
+  "tasks": [
+   "answer-customer-questions-automatically",
+   "set-up-a-support-chatbot"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "tidio",
+  "name": "Tidio",
+  "website": "https://www.tidio.com",
+  "developer": "Tidio",
+  "category": "customer-service",
+  "category_label": "Customer service",
+  "summary": "Live chat and AI chatbot for small businesses.",
+  "tasks": [
+   "add-a-chatbot-to-my-website",
+   "answer-customer-questions"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "zendesk-ai",
+  "name": "Zendesk AI",
+  "website": "https://www.zendesk.com/service/ai/",
+  "developer": "Zendesk",
+  "category": "customer-service",
+  "category_label": "Customer service",
+  "summary": "AI for customer support.",
+  "tasks": [
+   "automate-support-tickets",
+   "answer-customer-emails"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "hubspot-breeze",
+  "name": "HubSpot Breeze",
+  "website": "https://www.hubspot.com/products/artificial-intelligence",
+  "developer": "HubSpot",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "AI tools inside HubSpot CRM.",
+  "tasks": [
+   "write-marketing-emails",
+   "find-sales-leads",
+   "summarize-crm-records"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "adcreative-ai",
+  "name": "AdCreative.ai",
+  "website": "https://www.adcreative.ai",
+  "developer": "AdCreative.ai",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "AI ad creative generator.",
+  "tasks": [
+   "make-ad-images",
+   "create-ad-banners"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "surfer",
+  "name": "Surfer",
+  "website": "https://surferseo.com",
+  "developer": "Surfer",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "AI SEO content optimization.",
+  "tasks": [
+   "optimize-a-blog-post-for-seo",
+   "write-seo-content"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "buffer",
+  "name": "Buffer",
+  "website": "https://buffer.com",
+  "developer": "Buffer",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "Social media scheduler with AI assistant.",
+  "tasks": [
+   "schedule-social-media-posts",
+   "write-social-posts"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "lately",
+  "name": "Lately",
+  "website": "https://www.lately.ai",
+  "developer": "Lately",
+  "category": "marketing",
+  "category_label": "Marketing",
+  "summary": "AI social media content repurposing.",
+  "tasks": [
+   "turn-a-blog-into-social-posts",
+   "write-social-posts"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "cleo",
+  "name": "Cleo",
+  "website": "https://web.meetcleo.com",
+  "developer": "Cleo AI",
+  "category": "finance",
+  "category_label": "Admin and finance",
+  "summary": "AI money and budgeting assistant.",
+  "tasks": [
+   "budget-my-money",
+   "track-spending"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "rocket-money",
+  "name": "Rocket Money",
+  "website": "https://www.rocketmoney.com",
+  "developer": "Rocket Money",
+  "category": "finance",
+  "category_label": "Admin and finance",
+  "summary": "Personal finance and subscription manager.",
+  "tasks": [
+   "cancel-subscriptions",
+   "track-spending",
+   "lower-my-bills"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "docyt",
+  "name": "Docyt",
+  "website": "https://docyt.com",
+  "developer": "Docyt",
+  "category": "finance",
+  "category_label": "Admin and finance",
+  "summary": "AI bookkeeping for small businesses.",
+  "tasks": [
+   "automate-bookkeeping",
+   "reconcile-accounts"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "khanmigo",
+  "name": "Khanmigo",
+  "website": "https://www.khanmigo.ai",
+  "developer": "Khan Academy",
+  "category": "education",
+  "category_label": "Learning",
+  "summary": "AI tutor and teaching assistant.",
+  "tasks": [
+   "get-homework-help",
+   "tutor-me-in-math",
+   "plan-a-lesson"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "duolingo",
+  "name": "Duolingo",
+  "website": "https://www.duolingo.com",
+  "developer": "Duolingo",
+  "category": "education",
+  "category_label": "Learning",
+  "summary": "Language learning app with AI features.",
+  "tasks": [
+   "learn-a-language",
+   "practice-conversation"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "quizlet",
+  "name": "Quizlet",
+  "website": "https://quizlet.com",
+  "developer": "Quizlet",
+  "category": "education",
+  "category_label": "Learning",
+  "summary": "Study tools with AI-generated flashcards.",
+  "tasks": [
+   "make-flashcards",
+   "study-for-a-test"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "notebooklm",
+  "name": "NotebookLM",
+  "website": "https://notebooklm.google",
+  "developer": "Google",
+  "category": "research",
+  "category_label": "Research and answers",
+  "summary": "AI research notebook grounded in your sources.",
+  "tasks": [
+   "summarize-my-documents",
+   "make-a-podcast-from-notes",
+   "study-from-sources"
+  ],
+  "pricing": {
+   "band": "free",
+   "label": "Free"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "elicit",
+  "name": "Elicit",
+  "website": "https://elicit.com",
+  "developer": "Elicit",
+  "category": "research",
+  "category_label": "Research and answers",
+  "summary": "AI research assistant for papers.",
+  "tasks": [
+   "find-research-papers",
+   "summarize-studies",
+   "extract-data-from-papers"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "consensus",
+  "name": "Consensus",
+  "website": "https://consensus.app",
+  "developer": "Consensus",
+  "category": "research",
+  "category_label": "Research and answers",
+  "summary": "AI search engine for research papers.",
+  "tasks": [
+   "find-scientific-evidence",
+   "answer-a-research-question"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "scite",
+  "name": "Scite",
+  "website": "https://scite.ai",
+  "developer": "Scite (Research Solutions)",
+  "category": "research",
+  "category_label": "Research and answers",
+  "summary": "Smart citation search.",
+  "tasks": [
+   "check-how-a-paper-is-cited",
+   "find-supporting-evidence"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "deepl",
+  "name": "DeepL",
+  "website": "https://www.deepl.com",
+  "developer": "DeepL",
+  "category": "writing",
+  "category_label": "Writing",
+  "summary": "AI translation and writing tool.",
+  "tasks": [
+   "translate-a-document",
+   "translate-text",
+   "improve-writing"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "framer",
+  "name": "Framer",
+  "website": "https://www.framer.com",
+  "developer": "Framer",
+  "category": "design",
+  "category_label": "Design",
+  "summary": "Website builder with AI.",
+  "tasks": [
+   "build-a-website",
+   "design-a-landing-page"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "looka",
+  "name": "Looka",
+  "website": "https://looka.com",
+  "developer": "Looka",
+  "category": "design",
+  "category_label": "Design",
+  "summary": "AI logo and brand design.",
+  "tasks": [
+   "make-a-logo",
+   "create-a-brand-kit"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "figma",
+  "name": "Figma",
+  "website": "https://www.figma.com",
+  "developer": "Figma",
+  "category": "design",
+  "category_label": "Design",
+  "summary": "Design tool with Figma AI features.",
+  "tasks": [
+   "design-an-app-screen",
+   "make-a-prototype"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "character-ai",
+  "name": "Character.AI",
+  "website": "https://character.ai",
+  "developer": "Character Technologies",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Chat with AI characters.",
+  "tasks": [
+   "chat-with-a-character",
+   "practice-a-conversation"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "poe",
+  "name": "Poe",
+  "website": "https://poe.com",
+  "developer": "Quora",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "Access to many AI models in one app.",
+  "tasks": [
+   "try-different-ai-chatbots",
+   "answer-questions"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "mem",
+  "name": "Mem",
+  "website": "https://get.mem.ai",
+  "developer": "Mem Labs",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI note-taking app.",
+  "tasks": [
+   "organize-my-notes",
+   "find-old-notes"
+  ],
+  "pricing": {
+   "band": "free-plan",
+   "label": "Free plan available"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
+  "slug": "superhuman",
+  "name": "Superhuman",
+  "website": "https://superhuman.com",
+  "developer": "Superhuman",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "summary": "AI-powered email client.",
+  "tasks": [
+   "write-an-email",
+   "sort-my-inbox",
+   "reply-faster"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid"
+  },
+  "skill_level": null,
+  "platforms": null,
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ }
+]

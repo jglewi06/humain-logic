@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+import ToolCard from '../components/ToolCard.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import tools from '../data/tools.json';
+import tasks from '../data/tasks.json';
+import categories from '../data/categories.json';
+import news from '../data/news.json';
+import jobsData from '../data/jobs.json';
+import { OUTLOOK, NEWS_CATS, fmtDate } from '../lib/site';
+
+// Homepage preview (homepage-spec §3): sample task "reply to an upset customer"
+const sampleTasks = ['answer-customer-emails', 'change-tone-of-email', 'reply-faster', 'answer-customer-questions', 'write-an-email'];
+const preview = tools.filter(t => t.tasks.some(s => sampleTasks.includes(s)))
+  .sort((a, b) => sampleTasks.findIndex(s => a.tasks.includes(s)) - sampleTasks.findIndex(s => b.tasks.includes(s))).slice(0, 3);
+const matchCount = tools.filter(t => t.tasks.some(s => sampleTasks.includes(s))).length;
+const chips = ['Make a flyer', 'Summarize a long document', 'Take meeting notes', 'Automate bookkeeping', 'Translate a document'];
+const items = news.items ?? [];
+const featured = items.find(i => i.category !== 'research') ?? items[0];
+const list = items.filter(i => i !== featured).slice(0, 3);
+const popular = ['registered-nurse', 'graphic-designer', 'data-entry-keyer'].map(s => jobsData.jobs.find(j => j.slug === s)).filter(Boolean);
+const example = jobsData.jobs.find(j => j.slug === 'bookkeeping-accounting-clerk') ?? jobsData.jobs[0];
+const meterPos = { steady: 15, watch: 50, shift: 85 };
+---
+<Base path="/">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero-art" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow">AI Simplified</span>
+      <h1 id="hero-h">What do you want to <em>get done</em>&nbsp;today?</h1>
+      <p class="sub">Describe your task in everyday words. We’ll point you to AI tools that can help, explained in plain English.</p>
+      <form class="search" role="search" action="/search" method="get">
+        <div class="row" style="display:flex;gap:14px;align-items:center;flex:1;min-width:0">
+          <svg width="26" height="26" aria-hidden="true"><use href="#i-search"/></svg>
+          <div class="field">
+            <label for="q">Describe your task</label>
+            <input id="q" name="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="e.g. reply to an upset customer" aria-describedby="examples" data-rotate>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Find tools <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </form>
+      <div class="chips" id="examples">
+        <span class="lab">Try:</span>
+        {chips.map(c => <a class="chip" href={`/search?q=${encodeURIComponent(c)}`}>{c}</a>)}
+      </div>
+      <div class="trust">
+        <span><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>Free to use</span>
+        <span><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>No sign-up needed</span>
+        <span><svg width="18" height="18" aria-hidden="true"><use href="#i-check"/></svg>No company pays to be listed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:var(--space-8)" aria-labelledby="results-h">
+  <div class="container">
+    <div class="interp"><span>We think you want to: <strong>Reply to an upset customer</strong></span><a class="btn btn-ghost btn-sm" href="/search?q=reply+to+an+upset+customer">✎ Change</a></div>
+    <div class="section-head">
+      <div><span class="eyebrow">Example matches</span><h2 id="results-h">Tools that can help you reply kindly</h2></div>
+      <a class="link-arrow" href="/search?q=answer+customer+emails">See all {matchCount} matches <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="grid-3">{preview.map((t, i) => <ToolCard tool={t} best={i === 0} />)}</div>
+    <p class="note">We’re independent. No company pays to be listed or ranked higher.</p>
+    <h3 class="sr-only">Browse by category</h3>
+    <div class="chips" style="margin-top:var(--space-5)">{categories.map(c => <a class="chip" href={`/tools#${c.slug}`}>{c.label}</a>)}</div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="how-h">
+  <div class="container">
+    <h2 id="how-h" class="sr-only">How it works</h2>
+    <div class="how">
+      <div class="step"><div class="n" aria-hidden="true">1</div><div><h3 class="h4">Say it your way</h3><p>No tech words needed. “Help me answer reviews” works fine.</p></div></div>
+      <div class="step"><div class="n" aria-hidden="true">2</div><div><h3 class="h4">Compare honestly</h3><p>Real prices, how hard it is to learn, and what happens to your data.</p></div></div>
+      <div class="step"><div class="n" aria-hidden="true">3</div><div><h3 class="h4">Try with confidence</h3><p>Short starter guides show you the first five minutes.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="news-h">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">This week in AI</span><h2 id="news-h">The news, minus the hype</h2>
+        <p class="lede">Updated every few hours from {news.items?.length ? 'trusted sources' : 'our sources'}. Last update {news.updated ? fmtDate(news.updated) : '—'}.</p></div>
+      <a class="link-arrow" href="/news">All news <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+    {featured ? (
+    <div class="news">
+      <article class="news-feature">
+        <div class="news-art" aria-hidden="true">
+          <svg viewBox="0 0 600 200" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><rect width="600" height="200" fill="#E9E7F6"/><circle cx="470" cy="40" r="110" fill="#DDEDE4"/><circle cx="120" cy="210" r="120" fill="#FDEBD6"/><rect x="210" y="46" width="200" height="120" rx="18" fill="#fff"/><rect x="232" y="70" width="110" height="10" rx="5" fill="#1F6F6B"/><rect x="232" y="92" width="150" height="8" rx="4" fill="#DCD5CA"/><rect x="232" y="110" width="130" height="8" rx="4" fill="#DCD5CA"/><circle cx="380" cy="140" r="14" fill="#F4B26B"/><path d="M373 140l5 5 9-9" stroke="#1F2A37" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="body">
+          <span class={`tag ${featured.category}`} style="align-self:flex-start">{NEWS_CATS[featured.category]}</span>
+          <h3><a href={featured.link} rel="noopener" style="color:inherit;text-decoration:none">{featured.title}</a></h3>
+          {featured.summary && <p class="why"><b>From the source:</b> {featured.summary}</p>}
+          <span class="meta">{featured.source} · <time datetime={featured.date}>{fmtDate(featured.date)}</time></span>
+        </div>
+      </article>
+      <div class="news-list">
+        {list.map(n => <article class="news-item"><span class={`tag ${n.category}`} style="align-self:flex-start">{NEWS_CATS[n.category]}</span><h4><a href={n.link} rel="noopener">{n.title}</a></h4><p>{n.source} · <time datetime={n.date}>{fmtDate(n.date)}</time></p></article>)}
+      </div>
+    </div>) : <p class="placeholder">Today's stories are on their way. Check back after 8 AM.</p>}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="jobs-h">
+  <div class="container">
+    <div class="tracker">
+      <div>
+        <span class="eyebrow">Job safety tracker</span>
+        <h2 id="jobs-h">How is AI changing your job?</h2>
+        <p class="lede">Most jobs aren’t disappearing. They’re changing. Look up yours to see our current outlook, why, and where the research comes from.</p>
+        <form class="job-search" action="/tracker" method="get"><label class="sr-only" for="job">Your job title</label><input class="input" id="job" name="job" list="job-list" placeholder="Your job title" autocomplete="off"><button class="btn btn-primary" type="submit">Check</button></form>
+        <datalist id="job-list">{jobsData.jobs.map(j => <option value={j.name} />)}</datalist>
+        <div class="roles" aria-label="Popular lookups">
+          {popular.map(j => <a class="role" href={`/tracker/jobs/${j.slug}`} style="color:inherit;text-decoration:none">{j.name} <span class={`pill ${OUTLOOK[j.outlook].cls}`}><span aria-hidden="true">{OUTLOOK[j.outlook].icon}</span> {OUTLOOK[j.outlook].label}</span></a>)}
+        </div>
+      </div>
+      <div class="report" aria-label={`Example result: ${example.name}`}>
+        <div class="rh"><div><span class="meta">Example result</span><h3>{example.name}</h3></div><span class={`pill ${OUTLOOK[example.outlook].cls}`}><span aria-hidden="true">{OUTLOOK[example.outlook].icon}</span> {OUTLOOK[example.outlook].label}</span></div>
+        <div class="meter" role="img" aria-label={`Outlook: ${OUTLOOK[example.outlook].label}, on a scale from mostly steady to big shift ahead`}>
+          <div class="track"><span class="dot" style={`left:${meterPos[example.outlook]}%;border-color:var(--hl-outlook-${example.outlook})`}></span></div>
+          <div class="scale" aria-hidden="true"><span>Mostly steady</span><span>Changing</span><span>Big shift ahead</span></div>
+        </div>
+        <p style="font-size:var(--fs-small)">{example.rationale}</p>
+        <div class="placeholder" style="margin:var(--space-4) 0;font-size:var(--fs-caption)"><strong>Coming soon:</strong> “AI can help with” and “Stays with people” task lists. The research data doesn't include task breakdowns yet.</div>
+        <p class="next"><b>A good next step:</b> learn one AI tool for your work. <a href="/learn#get-started">Start with our beginner guide</a></p>
+        <p class="source">Editorial estimate based on public labor research ({example.confidence} confidence). Last update {fmtDate(jobsData.updated)}. <a href="/methodology">How we decide</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="newsletter" aria-labelledby="nl-h">
+  <div class="container"><NewsletterForm id="nl" /></div>
+</section>
+</Base>
+<style is:global>.h4{font-size:var(--fs-h4);margin-bottom:4px}</style>
+<script>
+/* Placeholder rotation (homepage-spec §2): every 4s, pauses on focus/hover, off with reduced motion */
+const input = document.querySelector<HTMLInputElement>('input[data-rotate]');
+const ex = ['e.g. reply to an upset customer', 'e.g. make a flyer for my bakery', 'e.g. summarize a long document', 'e.g. take notes in my meetings'];
+const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.dataset.motion === 'reduce';
+if (input) { let i = 0, paused = false;
+  ['focus', 'mouseenter'].forEach(e => input.addEventListener(e, () => paused = true));
+  ['blur', 'mouseleave'].forEach(e => input.addEventListener(e, () => paused = document.activeElement === input));
+  setInterval(() => { if (!paused && !reduced() && !input.value) input.placeholder = ex[i = (i + 1) % ex.length]; }, 4000); }
+</script>

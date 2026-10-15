@@ -1,0 +1,343 @@
+---
+// Ported from design/learn-about-ai.html (copy: design/learn-about-ai.md, spec: design/learn-page-spec.md).
+// Edit copy there first, then re-port; keep FK grade <= 6 (design/readability.py).
+import Base from '../layouts/Base.astro';
+import '../styles/learn.css';
+---
+<Base title="Learn about AI" description="AI, explained simply. A calm 10-minute guide for anyone new to AI.">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".15"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V4h10v5M7 17H5a2 2 0 01-2-2v-4a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2h-2M7 14h10v6H7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".14"/><path d="M12 7v.01M12 11v6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-q" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#DDEDE4"/><path d="M12.4 12.6a3.8 3.8 0 117 2c-.9 1.2-2.4 1.6-2.9 3v.9" fill="none" stroke="#17575A" stroke-width="2.4" stroke-linecap="round"/><circle cx="16.5" cy="22.6" r="1.5" fill="#17575A"/></symbol>
+  <symbol id="i-type" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 21s-6-5.3-6-11a6 6 0 0112 0c0 5.7-6 11-6 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M10.5 9v4l3.5-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 7l3 3" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2h-7l-5 4v-4H6a2 2 0 01-2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.8" fill="currentColor"/><path d="M4 17l5-4 4 3 3-2 4 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shop" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9M4 9h16M4 9v11h16V9M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-steth" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 008 0V3M10 13v2a5 5 0 0010 0v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7.5v5.5M12 16.5v.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.5 18h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 10.5V8a3.5 3.5 0 017 0v2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 8h14M5 8l-3 6a3 3 0 006 0zM19 8l-3 6a3 3 0 006 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+<div class="learn">
+<section class="l-hero" aria-labelledby="top">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Start here</span>
+      <h1 id="top" tabindex="-1">AI, explained <em>simply</em></h1>
+      <p class="sub">A calm guide for anyone who is new to AI. No tech words. You can read it in about 10 minutes.</p>
+      <div class="meta-row">
+        <span class="meta"><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Last checked October 2026</span>
+        <span class="meta"><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Written and checked by real people</span>
+      </div>
+    </div>
+    <div class="l-hero-art" aria-hidden="true">
+      <!-- Decorative: an older reader at a table with tea and a tablet; a helper checklist card floats beside. No robots. -->
+      <svg viewBox="0 0 460 380" focusable="false">
+        <circle cx="356" cy="76" r="44" fill="#F4B26B" opacity=".9"/>
+        <rect x="236" y="44" width="110" height="30" rx="15" fill="#fff" opacity=".85"/>
+        <rect x="262" y="30" width="62" height="30" rx="15" fill="#fff" opacity=".85"/>
+        <ellipse cx="236" cy="352" rx="214" ry="18" fill="#C9DFD3"/>
+        <rect x="24" y="280" width="56" height="62" rx="14" fill="#F4B26B"/>
+        <path d="M52 282c-4-30-26-44-36-70 22 6 36 26 36 50M52 282c2-34 18-56 40-70-2 28-16 50-40 70M52 282c0-22-2-50 4-84 10 26 8 58-4 84" fill="#1F6F6B"/>
+        <rect x="120" y="262" width="310" height="16" rx="8" fill="#17575A"/>
+        <rect x="150" y="276" width="12" height="70" rx="6" fill="#17575A"/>
+        <rect x="390" y="276" width="12" height="70" rx="6" fill="#17575A"/>
+        <path d="M248 262c0-62 18-104 62-104s62 42 62 104z" fill="#9A4A1E" opacity=".88"/>
+        <path d="M284 166h52v14c0 10-12 18-26 18s-26-8-26-18z" fill="#FDEBD6"/>
+        <rect x="298" y="138" width="24" height="30" rx="10" fill="#E0B48E"/>
+        <circle cx="310" cy="116" r="32" fill="#E0B48E"/>
+        <path d="M278 114c0-22 14-36 32-36s32 14 32 34c-8-10-20-14-32-14s-24 6-32 16z" fill="#DCD5CA"/>
+        <circle cx="280" cy="120" r="9" fill="#DCD5CA"/>
+        <path d="M262 214c-8 20-10 36 -2 46" fill="none" stroke="#B5683D" stroke-width="22" stroke-linecap="round"/>
+        <g transform="rotate(-10 236 236)">
+          <rect x="196" y="206" width="88" height="60" rx="10" fill="#1F2A37"/>
+          <rect x="203" y="213" width="74" height="46" rx="6" fill="#fff"/>
+          <rect x="212" y="224" width="40" height="6" rx="3" fill="#1F6F6B"/>
+          <rect x="212" y="236" width="52" height="5" rx="2.5" fill="#DCD5CA"/>
+          <rect x="212" y="246" width="34" height="5" rx="2.5" fill="#DCD5CA"/>
+        </g>
+        <circle cx="262" cy="258" r="11" fill="#E0B48E"/>
+        <rect x="368" y="228" width="34" height="36" rx="8" fill="#fff"/>
+        <path d="M402 238h6a8 8 0 010 16h-6" fill="none" stroke="#fff" stroke-width="5"/>
+        <path d="M378 220c-4-8 4-10 0-18M390 220c-4-8 4-10 0-18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        <g transform="rotate(-4 120 160)">
+          <rect x="54" y="110" width="140" height="104" rx="18" fill="#fff"/>
+          <circle cx="80" cy="140" r="10" fill="#DDEDE4"/><path d="M75.5 140l3 3 5.5-6" fill="none" stroke="#17575A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="98" y="136" width="74" height="8" rx="4" fill="#DCD5CA"/>
+          <circle cx="80" cy="166" r="10" fill="#DDEDE4"/><path d="M75.5 166l3 3 5.5-6" fill="none" stroke="#17575A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="98" y="162" width="58" height="8" rx="4" fill="#DCD5CA"/>
+          <circle cx="80" cy="192" r="10" fill="#FDEBD6"/>
+          <rect x="98" y="188" width="66" height="8" rx="4" fill="#DCD5CA"/>
+        </g>
+        <circle cx="196" cy="110" r="12" fill="#F4B26B"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+<div class="l-body">
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">On this page</h2>
+    <ol>
+      <li><a href="#what-is-ai">What is AI?</a></li>
+      <li><a href="#how-people-use-it">How people use AI</a></li>
+      <li><a href="#how-it-works">How AI works</a></li>
+      <li><a href="#benefits">The good parts</a></li>
+      <li><a href="#risks">Risks, and how to stay safe</a></li>
+      <li><a href="#get-started">Get started in 3 easy steps</a></li>
+      <li><a href="#glossary">Words to know</a></li>
+      <li><a href="#faq">Common questions</a></li>
+    </ol>
+    <button class="btn btn-secondary print-btn" type="button" onclick="window.print()"><svg width="18" height="18" aria-hidden="true"><use href="#i-print"/></svg>Print this guide</button>
+  </nav>
+
+  <div class="content">
+
+  <section class="part" id="what-is-ai" aria-labelledby="what-is-ai-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 1 of 8</span><h2 id="what-is-ai-h">What is AI?</h2></div>
+      <div class="spot" aria-hidden="true"><svg viewBox="0 0 120 96" focusable="false"><circle cx="78" cy="50" r="40" fill="#DDEDE4"/><rect x="40" y="10" width="44" height="78" rx="10" fill="#1F6F6B"/><rect x="45" y="18" width="34" height="58" rx="5" fill="#fff"/><rect x="50" y="26" width="20" height="6" rx="3" fill="#DCD5CA"/><rect x="56" y="38" width="20" height="10" rx="5" fill="#F4B26B"/><rect x="50" y="54" width="24" height="6" rx="3" fill="#DCD5CA"/><circle cx="98" cy="24" r="7" fill="#F4B26B"/></svg></div>
+    </div>
+    <div class="prose">
+      <p class="lead">AI stands for <strong>artificial intelligence</strong>. It is a kind of computer program.</p>
+      <p>Most programs follow exact steps that a person wrote. AI is different. It learns from lots of examples. Then it uses what it learned to guess a good answer.</p>
+      <p>You may already use AI without knowing it.</p>
+      <h3 class="sub-h">AI you may already use</h3>
+      <ul class="cards">
+        <li class="card"><span class="ic sage" aria-hidden="true"><svg><use href="#i-type"/></svg></span><div><h4>Autocorrect</h4><p>Your phone fixes typos and guesses your next word.</p></div></li>
+        <li class="card"><span class="ic apricot" aria-hidden="true"><svg><use href="#i-map"/></svg></span><div><h4>Map directions</h4><p>Your map app picks a faster way around traffic.</p></div></li>
+        <li class="card"><span class="ic lav" aria-hidden="true"><svg><use href="#i-tv"/></svg></span><div><h4>Movie and TV picks</h4><p>Netflix suggests shows based on what you watched before.</p></div></li>
+        <li class="card"><span class="ic sage" aria-hidden="true"><svg><use href="#i-mic"/></svg></span><div><h4>Voice assistants</h4><p>You ask Siri or Alexa about the weather, and they answer.</p></div></li>
+        <li class="card wide"><span class="ic apricot" aria-hidden="true"><svg><use href="#i-mail"/></svg></span><div><h4>Spam filters</h4><p>Your email moves junk mail out of the way.</p></div></li>
+      </ul>
+      <aside class="key" aria-label="Key point"><svg aria-hidden="true"><use href="#i-key"/></svg><div><span class="lab">Key point</span><p>AI is a computer program that learns from examples. You likely use it every day already.</p></div></aside>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="how-people-use-it" aria-labelledby="how-people-use-it-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 2 of 8</span><h2 id="how-people-use-it-h">How people use AI</h2></div>
+      <div class="spot" aria-hidden="true"><svg viewBox="0 0 120 96" focusable="false"><circle cx="60" cy="52" r="40" fill="#FDEBD6"/><rect x="14" y="20" width="62" height="40" rx="12" fill="#fff"/><rect x="24" y="32" width="34" height="6" rx="3" fill="#1F6F6B"/><rect x="24" y="44" width="42" height="5" rx="2.5" fill="#DCD5CA"/><path d="M30 58l-6 14 18-14z" fill="#fff"/><rect x="52" y="52" width="56" height="32" rx="12" fill="#1F6F6B"/><rect x="62" y="63" width="32" height="5" rx="2.5" fill="#fff" opacity=".8"/><circle cx="104" cy="22" r="7" fill="#F4B26B"/></svg></div>
+    </div>
+    <div class="prose">
+      <p class="lead">Today, many people use <strong>chatbots</strong>. A chatbot is an AI tool you can talk to by typing or speaking. You ask, and it writes back in plain words.</p>
+      <p>Here are common ways people use them.</p>
+      <ul class="cards">
+        <li class="card wide"><span class="ic sage" aria-hidden="true"><svg><use href="#i-pen"/></svg></span><div><h3>Writing emails and letters</h3><p><span class="quote">“Help me write a kind note to my landlord about a leak.”</span> You read it, fix it, and send it yourself.</p></div></li>
+        <li class="card wide"><span class="ic lav" aria-hidden="true"><svg><use href="#i-chat"/></svg></span><div><h3>Answering questions</h3><p><span class="quote">“What is the difference between a debit card and a credit card?”</span> It explains in simple words.</p></div></li>
+        <li class="card"><span class="ic apricot" aria-hidden="true"><svg><use href="#i-photo"/></svg></span><div><h3>Photos</h3><p>Some phone apps can find your beach photos, brighten a dark picture, or remove a stranger from the back.</p></div></li>
+        <li class="card"><span class="ic sage" aria-hidden="true"><svg><use href="#i-shop"/></svg></span><div><h3>Small business tasks</h3><p>A bakery owner might ask for a flyer, a reply to a review, or a price list.</p></div></li>
+        <li class="card wide"><span class="ic lav" aria-hidden="true"><svg><use href="#i-steth"/></svg></span><div><h3>Looking up health information</h3><p><span class="quote">“What does ‘high cholesterol’ mean?”</span> AI can explain words your doctor used.</p></div></li>
+      </ul>
+      <aside class="tip" aria-label="Health tip"><svg aria-hidden="true"><use href="#i-heart"/></svg><div><span class="lab">Health tip</span><p>AI can be wrong about health. Use it to learn words and plan questions. Then talk to your doctor or pharmacist before you change anything. In an emergency, call 911.</p></div></aside>
+      <aside class="key" aria-label="Key point"><svg aria-hidden="true"><use href="#i-key"/></svg><div><span class="lab">Key point</span><p>People use AI to write, ask questions, fix photos, and save time at work. You stay in charge and check the result.</p></div></aside>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="how-it-works" aria-labelledby="how-it-works-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 3 of 8</span><h2 id="how-it-works-h">How AI works</h2></div>
+    </div>
+    <div class="prose">
+      <p class="lead">Here is the simple version.</p>
+      <div class="diagram" aria-hidden="true">
+        <svg viewBox="0 0 640 170" focusable="false">
+          <rect x="26" y="40" width="92" height="112" rx="12" fill="#fff" opacity=".6"/><rect x="40" y="28" width="92" height="112" rx="12" fill="#fff" opacity=".8"/><rect x="54" y="16" width="92" height="112" rx="12" fill="#fff"/>
+          <rect x="68" y="34" width="58" height="7" rx="3.5" fill="#1F6F6B"/><rect x="68" y="50" width="64" height="6" rx="3" fill="#DCD5CA"/><rect x="68" y="64" width="50" height="6" rx="3" fill="#DCD5CA"/><rect x="68" y="78" width="60" height="6" rx="3" fill="#DCD5CA"/><rect x="68" y="92" width="40" height="6" rx="3" fill="#DCD5CA"/>
+          <path d="M170 86h56" stroke="#17575A" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 12"/><path d="M224 76l12 10-12 10" fill="none" stroke="#17575A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="320" cy="86" r="62" fill="#DDEDE4"/>
+          <path d="M292 66L330 58L348 94L306 108L292 66M318 84L330 58M318 84L306 108" fill="none" stroke="#17575A" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
+          <circle cx="292" cy="66" r="9" fill="#1F6F6B"/><circle cx="330" cy="58" r="9" fill="#F4B26B"/><circle cx="348" cy="94" r="9" fill="#1F6F6B"/><circle cx="306" cy="108" r="9" fill="#F4B26B"/><circle cx="318" cy="84" r="6" fill="#17575A"/>
+          <path d="M404 86h56" stroke="#17575A" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 12"/><path d="M458 76l12 10-12 10" fill="none" stroke="#17575A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="490" y="40" width="130" height="78" rx="18" fill="#fff"/><path d="M512 116l-6 22 26-22z" fill="#fff"/>
+          <rect x="508" y="60" width="72" height="8" rx="4" fill="#1F6F6B"/><rect x="508" y="78" width="94" height="7" rx="3.5" fill="#DCD5CA"/><rect x="508" y="94" width="60" height="7" rx="3.5" fill="#DCD5CA"/><circle cx="612" cy="44" r="12" fill="#F4B26B"/>
+        </svg>
+      </div>
+      <ol class="beats">
+        <li><span class="n" aria-hidden="true">1</span><div><h3>It learns from lots of examples</h3><p>Chatbots are trained on a huge amount of text, like books, websites, and articles.</p></div></li>
+        <li><span class="n" aria-hidden="true">2</span><div><h3>It spots patterns</h3><p>From all those examples, it learns which words tend to go together.</p></div></li>
+        <li><span class="n" aria-hidden="true">3</span><div><h3>It predicts a likely answer</h3><p>When you ask a question, it guesses the words most likely to come next. It does this one small piece at a time, very fast.</p></div></li>
+      </ol>
+      <p>That is why the answers sound so natural. But AI does not think or know things like a person does. It does not understand the way you do. It has no feelings, and it can’t tell on its own if something is true.</p>
+      <p>So it can sound sure and still be wrong.</p>
+      <aside class="key" aria-label="Key point"><svg aria-hidden="true"><use href="#i-key"/></svg><div><span class="lab">Key point</span><p>AI makes good guesses based on patterns. It does not think or know things like a person.</p></div></aside>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="benefits" aria-labelledby="benefits-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 4 of 8</span><h2 id="benefits-h">The good parts</h2></div>
+      <div class="spot" aria-hidden="true"><svg viewBox="0 0 120 96" focusable="false"><circle cx="60" cy="50" r="40" fill="#DDEDE4"/><rect x="42" y="56" width="36" height="30" rx="9" fill="#F4B26B"/><path d="M60 58c-2-16-14-24-22-34 14 2 22 14 22 28M60 58c2-18 10-28 22-36 0 16-8 28-22 36" fill="#1F6F6B"/><circle cx="96" cy="22" r="10" fill="#F4B26B"/></svg></div>
+    </div>
+    <div class="prose">
+      <p class="lead">Used with care, AI can help in real ways.</p>
+      <ul class="ticks">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><p><strong>It saves time.</strong> It can write a first draft in seconds. You fix it up.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><p><strong>It is patient.</strong> You can ask the same question five times. It won’t mind.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><p><strong>It explains things.</strong> It can turn hard words into plain ones.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><p><strong>It can help with access.</strong> It can read text out loud and add captions to videos. It can also describe a photo for people who have trouble seeing.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><p><strong>It helps small businesses.</strong> One person can get help with tasks that once took a whole team.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><p><strong>It is there any time.</strong> Many tools work day and night.</p></li>
+      </ul>
+      <aside class="key" aria-label="Key point"><svg aria-hidden="true"><use href="#i-key"/></svg><div><span class="lab">Key point</span><p>AI can save you time and explain things. It works best as a helper, not a boss.</p></div></aside>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="risks" aria-labelledby="risks-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 5 of 8</span><h2 id="risks-h">Risks, and how to stay safe</h2></div>
+      <div class="spot" aria-hidden="true"><svg viewBox="0 0 120 96" focusable="false"><circle cx="64" cy="50" r="40" fill="#E9E7F6"/><path d="M60 10l30 12v22c0 20-13 34-30 42-17-8-30-22-30-42V22z" fill="#1F6F6B"/><rect x="47" y="44" width="26" height="22" rx="5" fill="#fff"/><path d="M52 44v-6a8 8 0 0116 0v6" fill="none" stroke="#fff" stroke-width="4"/><circle cx="60" cy="54" r="3.5" fill="#1F6F6B"/><circle cx="100" cy="20" r="7" fill="#F4B26B"/></svg></div>
+    </div>
+    <div class="prose">
+      <p class="lead">AI is useful, but it has real limits. Here is what to watch for. Each one comes with simple steps.</p>
+
+      <article class="risk" aria-labelledby="r1">
+        <div class="rh"><span class="ic sage" aria-hidden="true"><svg><use href="#i-alert"/></svg></span><h3 id="r1">Mistakes and made-up answers</h3></div>
+        <p>AI can get facts wrong. Sometimes it makes up facts, quotes, or links that don’t exist. It can sound very sure while it does this.</p>
+        <div class="safe"><span class="lab"><svg width="20" height="20" aria-hidden="true"><use href="#i-shield"/></svg>Stay safe</span><ul>
+          <li>Check important facts with a trusted source.</li>
+          <li>Ask a real expert about money, health, or legal matters.</li>
+        </ul></div>
+      </article>
+
+      <article class="risk" aria-labelledby="r2">
+        <div class="rh"><span class="ic apricot" aria-hidden="true"><svg><use href="#i-phone"/></svg></span><h3 id="r2">Scams, fake videos, and copied voices</h3></div>
+        <p>Scammers use AI too. A <strong>deepfake</strong> is a fake video or photo made with AI. It can look real.</p>
+        <p>AI can also copy a person’s voice from a short recording. A scammer might call and sound just like your grandchild asking for money.</p>
+        <div class="safe"><span class="lab"><svg width="20" height="20" aria-hidden="true"><use href="#i-shield"/></svg>Stay safe</span><ul>
+          <li>If a call feels urgent or strange, hang up. Call the person back on a number you already know.</li>
+          <li>Pick a family “safe word” that only you know.</li>
+          <li>Never send money, gift cards, or codes because of one call, text, or video.</li>
+        </ul></div>
+      </article>
+
+      <article class="risk" aria-labelledby="r3">
+        <div class="rh"><span class="ic lav" aria-hidden="true"><svg><use href="#i-lock"/></svg></span><h3 id="r3">Your privacy</h3></div>
+        <p>Some AI tools save what you type. A person at the company may read it, or it may be used to train the tool.</p>
+        <div class="safe"><span class="lab"><svg width="20" height="20" aria-hidden="true"><use href="#i-shield"/></svg>Stay safe</span><ul>
+          <li>Never share passwords or bank details.</li>
+          <li>Never share your Social Security number.</li>
+          <li>Keep medical details private. You can ask about a health topic without using your name.</li>
+          <li>Look in the tool’s settings for a choice to turn off chat history.</li>
+        </ul></div>
+      </article>
+
+      <article class="risk" aria-labelledby="r4">
+        <div class="rh"><span class="ic sage" aria-hidden="true"><svg><use href="#i-scale"/></svg></span><h3 id="r4">Unfair answers (bias)</h3></div>
+        <p>AI learns from things people wrote. People are not always fair. So AI can repeat unfair ideas about groups of people.</p>
+        <div class="safe"><span class="lab"><svg width="20" height="20" aria-hidden="true"><use href="#i-shield"/></svg>Stay safe</span><ul>
+          <li>Don’t let AI make big choices about people, like who gets a job.</li>
+          <li>If an answer seems unfair, question it.</li>
+        </ul></div>
+      </article>
+
+      <article class="risk" aria-labelledby="r5">
+        <div class="rh"><span class="ic apricot" aria-hidden="true"><svg><use href="#i-brief"/></svg></span><h3 id="r5">Jobs</h3></div>
+        <p>AI is changing many jobs. Some tasks will be done by AI. New tasks and jobs are also appearing. Experts don’t agree on how fast this will happen.</p>
+        <div class="safe"><span class="lab"><svg width="20" height="20" aria-hidden="true"><use href="#i-shield"/></svg>A good next step</span><ul>
+          <li>Look up your job in our <a href="/tracker">Job safety tracker</a>. It shows which tasks AI helps with and which stay with people.</li>
+          <li>Learning one simple AI tool can help you at work.</li>
+        </ul></div>
+      </article>
+
+      <aside class="key" aria-label="Key point"><svg aria-hidden="true"><use href="#i-key"/></svg><div><span class="lab">Key point</span><p>Check important facts. Be careful with calls about money. Keep private details out of AI tools.</p></div></aside>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="get-started" aria-labelledby="get-started-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 6 of 8</span><h2 id="get-started-h">Get started in 3 easy steps</h2></div>
+    </div>
+    <div class="prose">
+      <ol class="steps">
+        <li><span class="n" aria-hidden="true">1</span><div><h3><span class="sr-only">Step 1: </span>Pick one well-known tool</h3><p>Choose a free AI chatbot from a company you have heard of. Our <a href="/tools">Find a tool</a> page shows options and what each one does with your data.</p></div></li>
+        <li><span class="n" aria-hidden="true">2</span><div><h3><span class="sr-only">Step 2: </span>Ask something simple</h3><p>Start with a low-stakes question.</p><span class="try"><b>Try:</b> “Give me three easy dinner ideas with chicken and rice.”</span></div></li>
+        <li><span class="n" aria-hidden="true">3</span><div><h3><span class="sr-only">Step 3: </span>Read, check, and keep it private</h3><p>Read the answer. Check anything important. Don’t type in private details.</p></div></li>
+      </ol>
+      <p>That’s it. You can’t break it. If you don’t like an answer, just ask again in a new way.</p>
+      <aside class="key" aria-label="Key point"><svg aria-hidden="true"><use href="#i-key"/></svg><div><span class="lab">Key point</span><p>Start small, with an easy question. You are in charge.</p></div></aside>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="glossary" aria-labelledby="glossary-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 7 of 8</span><h2 id="glossary-h">Words to know</h2></div>
+    </div>
+    <dl class="glossary">
+      <div><dt>AI (artificial intelligence)</dt><dd>A computer program that learns from examples and makes good guesses.</dd></div>
+      <div><dt>Chatbot</dt><dd>An AI tool you can talk to by typing or speaking. It writes back in plain words.</dd></div>
+      <div><dt>Prompt</dt><dd>The question or request you type into an AI tool.</dd></div>
+      <div><dt>Voice assistant</dt><dd>AI you talk to out loud, like Siri, Alexa, or Google Assistant.</dd></div>
+      <div><dt>Made-up answer</dt><dd>When AI states something false as if it were true. Experts call this a “hallucination.”</dd></div>
+      <div><dt>Deepfake</dt><dd>A fake video, photo, or voice made with AI to look or sound real.</dd></div>
+      <div><dt>Voice clone</dt><dd>A copy of a real person’s voice, made with AI.</dd></div>
+      <div><dt>Bias</dt><dd>When AI treats some people or groups unfairly, because it learned from unfair examples.</dd></div>
+    </dl>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="part" id="faq" aria-labelledby="faq-h">
+    <div class="part-head">
+      <div><span class="eyebrow">Part 8 of 8</span><h2 id="faq-h">Common questions</h2></div>
+    </div>
+    <div class="faq">
+      <article aria-labelledby="q1"><h3 id="q1"><svg aria-hidden="true"><use href="#i-q"/></svg>Is AI dangerous?</h3>
+        <p>AI is a tool. Like a car, it can help or cause harm. It depends on how people use it.</p>
+        <p>For most people, the everyday risks are mistakes, scams, and privacy. The <a href="#risks">safety steps on this page</a> help with all three. Experts also debate bigger risks for the future. Governments are working on rules.</p></article>
+      <article aria-labelledby="q2"><h3 id="q2"><svg aria-hidden="true"><use href="#i-q"/></svg>Will AI take my job?</h3>
+        <p>AI will change many jobs. For most people, that means some tasks change. The whole job does not go away. Some jobs will change more than others.</p>
+        <p>Look up your job in our <a href="/tracker">Job safety tracker</a>. It shows what is changing and what stays with people.</p></article>
+      <article aria-labelledby="q3"><h3 id="q3"><svg aria-hidden="true"><use href="#i-q"/></svg>Is AI free?</h3>
+        <p>Many AI tools have a free version. That is often enough to get started. Paid plans add more features. They often cost about $20 a month. You never need to pay to try AI.</p></article>
+      <article aria-labelledby="q4"><h3 id="q4"><svg aria-hidden="true"><use href="#i-q"/></svg>Is AI listening to me?</h3>
+        <p>Chatbots only see what you type or say to them.</p>
+        <p>Smart speakers listen for a wake word, like “Alexa.” Most only start recording after they hear it. Sometimes they wake up by mistake. You can mute the microphone. You can also delete old recordings in the app’s settings.</p></article>
+    </div>
+    <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section class="closing" aria-labelledby="close-h">
+    <div>
+      <h2 id="close-h">Take it one step at a time</h2>
+      <p>You don’t need to learn everything at once. Try one small thing this week. We’re here when you have questions.</p>
+      <div class="acts"><a class="btn btn-primary" href="/tools">Find a tool <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-secondary" href="/newsletter">Get our weekly email</a></div>
+    </div>
+    <svg viewBox="0 0 180 160" aria-hidden="true" focusable="false"><circle cx="120" cy="52" r="34" fill="#F4B26B"/><path d="M10 150c20-40 50-60 80-60s60 20 80 60z" fill="#DDEDE4"/><path d="M40 150c14-24 34-36 54-36s40 12 54 36z" fill="#1F6F6B" opacity=".9"/><rect x="24" y="44" width="62" height="20" rx="10" fill="#fff" opacity=".9"/><rect x="40" y="32" width="34" height="20" rx="10" fill="#fff" opacity=".9"/></svg>
+  </section>
+
+  </div>
+</div>
+</div>
+</div>
+</Base>
+<script>
+/* "On this page": highlight the part being read (no animation) */
+if ('IntersectionObserver' in window) {
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('.toc a')]; const map: Record<string, HTMLAnchorElement> = {};
+  links.forEach(a => map[a.hash.slice(1)] = a);
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { links.forEach(a => a.removeAttribute('aria-current')); map[e.target.id].setAttribute('aria-current', 'true'); } }), { rootMargin: '-20% 0px -70% 0px' });
+  Object.keys(map).forEach(id => { const s = document.getElementById(id); if (s) io.observe(s); });
+}
+document.querySelectorAll('[data-print]').forEach(b => b.addEventListener('click', () => window.print()));
+</script>

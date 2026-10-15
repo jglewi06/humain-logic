@@ -1,0 +1,106 @@
+---
+// Horizontal, left-to-right timeline of HumAIn Logic year-range estimates (research/jobs.json).
+// Semantic ordered list (works without JS / for screen readers); bars are decorative positioning.
+// Scrolls sideways inside its own region on narrow screens; Earlier/Later buttons = no drag needed (WCAG 2.5.7).
+import { OUTLOOK } from '../lib/site';
+interface Job { slug: string; name: string; outlook: 'steady' | 'watch' | 'shift'; estimate_range: string; confidence: string; sources: { title: string; url: string; publisher: string; year?: number }[] }
+const { jobs, highlight, id = 'tl', showSources = false, title = 'Timeline of estimates' } = Astro.props as { jobs: Job[]; highlight?: string; id?: string; showSources?: boolean; title?: string };
+const START = 2025, END = 2075;
+const parse = (r: string) => { const [a, b] = r.split('-'); const s = parseInt(a, 10); const open = r.trim().endsWith('+'); return { s, e: open ? END : parseInt(b, 10), open }; };
+const rows = jobs.map(j => ({ ...j, ...parse(j.estimate_range) })).sort((a, b) => a.s - b.s || a.e - b.e || a.name.localeCompare(b.name));
+const pct = (y: number) => ((y - START) / (END - START)) * 100;
+const ticks = Array.from({ length: (END - START) / 5 + 1 }, (_, i) => START + i * 5);
+const now = new Date().getFullYear();
+const rangeText = (r: { s: number; e: number; open: boolean }) => r.open ? `${r.s} or later` : `${r.s} to ${r.e}`;
+---
+<section class="tl" aria-labelledby={`${id}-h`} id={id}>
+  <h2 id={`${id}-h`} class="tl-title">{title}</h2>
+  <p class="tl-intro" id={`${id}-help`}>Each bar is a <strong>HumAIn Logic estimate</strong> of when technology could do most of a job's <em>current tasks</em> at scale. Earlier years are on the left, later years on the right. This is not a prediction that the job disappears. <a href="/methodology">How we estimate</a>.</p>
+  <a class="skip-tl" href={`#${id}-after`}>Skip timeline</a>
+  <div class="tl-controls">
+    <button type="button" class="btn btn-ghost btn-sm" data-tl-prev aria-controls={`${id}-scroll`}>◀ Earlier</button>
+    <span class="tl-legend" aria-hidden="true">{(['shift','watch','steady'] as const).map(k => <span class={`pill ${OUTLOOK[k].cls}`}>{OUTLOOK[k].icon} {OUTLOOK[k].label}</span>)}</span>
+    <button type="button" class="btn btn-ghost btn-sm" data-tl-next aria-controls={`${id}-scroll`}>Later ▶</button>
+  </div>
+  <div class="tl-scroll" id={`${id}-scroll`} role="region" aria-label={`${title}, scrolls sideways`} aria-describedby={`${id}-help`} tabindex="0">
+    <div class="tl-inner">
+      <div class="tl-axis" aria-hidden="true">
+        {ticks.map(y => <span class="tl-tick" style={`left:${pct(y)}%`}>{y}</span>)}
+        {now >= START && <span class="tl-now" style={`left:${pct(now)}%`}>Today</span>}
+      </div>
+      <ol class="tl-rows">
+        {rows.map((r, i) => (
+          <li class={`tl-row${r.slug === highlight ? ' is-current' : ''}`} aria-posinset={i + 1} aria-setsize={rows.length}>
+            <span class="tl-label"><a href={`/tracker/jobs/${r.slug}`} aria-current={r.slug === highlight ? 'page' : undefined}>{r.name}</a></span>
+            <span class="tl-track">
+              <span class={`tl-bar ${OUTLOOK[r.outlook].cls}${r.open ? ' open' : ''}`} style={`left:${pct(r.s)}%;width:${pct(r.e) - pct(r.s)}%`}>
+                <span class="tl-bar-text"><span aria-hidden="true">{OUTLOOK[r.outlook].icon}</span> {r.estimate_range}</span>
+              </span>
+            </span>
+            <span class="sr-only">: HumAIn Logic estimate {rangeText(r)}. Outlook: {OUTLOOK[r.outlook].label}. Confidence: {r.confidence}.</span>
+          </li>))}
+      </ol>
+    </div>
+  </div>
+  <p class="tl-note">All ranges are <strong>HumAIn Logic estimates</strong>, not figures from the cited sources. “2055+” means 2055 or later. Confidence is low for most jobs.</p>
+  {showSources && (
+    <details class="tl-sources" open={rows.length === 1}>
+      <summary>Sources for {rows.length === 1 ? 'this estimate' : 'these estimates'}</summary>
+      <ul>{rows.map(r => <li><strong>{r.name}</strong> (HumAIn Logic estimate {r.estimate_range}, {r.confidence} confidence): {r.sources.map((s, k) => <>{k > 0 && '; '}<a href={s.url} rel="noopener">{s.publisher}{s.year ? ` (${s.year})` : ''}</a></>)}</li>)}</ul>
+    </details>)}
+  <span id={`${id}-after`}></span>
+</section>
+<style is:global>
+.tl{margin-top:var(--space-6)}
+.tl-title{font-size:var(--fs-h3);margin-bottom:var(--space-2)}
+.tl-intro,.tl-note{font-size:var(--fs-small);color:var(--color-slate);max-width:760px}
+.tl-note{margin-top:var(--space-3)}
+.skip-tl{position:absolute;left:-10000px}
+.skip-tl:focus{position:static;display:inline-block;margin:var(--space-2) 0}
+.tl-controls{display:flex;align-items:center;justify-content:space-between;gap:var(--space-3);margin:var(--space-4) 0 var(--space-3);flex-wrap:wrap}
+.tl-controls .btn{min-height:44px;min-width:44px}
+.tl-legend{display:flex;gap:var(--space-2);flex-wrap:wrap}
+.tl-scroll{overflow-x:auto;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-4) var(--space-4) var(--space-5);scroll-behavior:var(--hl-scroll-behavior);touch-action:pan-x pan-y;scroll-snap-type:x proximity}
+.tl-scroll:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+.tl-inner{min-width:980px;position:relative;--tl-label:220px}
+.tl-axis{position:relative;height:28px;margin-top:26px;margin-left:var(--tl-label);border-bottom:2px solid var(--hl-timeline-axis)}
+.tl-tick{position:absolute;bottom:4px;transform:translateX(-50%);font-size:var(--fs-caption);color:var(--color-slate);scroll-snap-align:center}
+.tl-tick::after{content:"";position:absolute;left:50%;top:100%;height:6px;border-left:2px solid var(--hl-timeline-axis)}
+.tl-now{position:absolute;top:-26px;transform:translateX(-50%);font:600 var(--fs-caption)/1 var(--font-body);color:var(--color-teal);background:var(--color-sage);padding:3px 6px;border-radius:var(--radius-pill)}
+.tl-rows{list-style:none;margin:0;padding:0}
+.tl-row{display:grid;grid-template-columns:var(--tl-label) 1fr;align-items:center;min-height:44px;border-bottom:1px solid var(--color-border)}
+.tl-row:last-child{border-bottom:0}
+.tl-row.is-current{background:var(--color-apricot-tint);border-radius:var(--radius-sm)}
+.tl-label{font-size:var(--fs-small);padding-right:var(--space-3);line-height:1.3}
+.tl-label a{color:var(--color-ink);text-decoration:none;display:inline-flex;min-height:44px;align-items:center}
+.tl-label a:hover{color:var(--color-teal);text-decoration:underline}
+.tl-label a[aria-current]{font-weight:600}
+.tl-track{position:relative;height:30px;background:repeating-linear-gradient(90deg,transparent 0 calc(10% - 1px),var(--color-border) calc(10% - 1px) 10%)}
+.tl-bar{position:absolute;top:2px;bottom:2px;border-radius:var(--radius-pill);display:flex;align-items:center;padding:0 10px;border:1.5px solid currentColor;min-width:64px;white-space:nowrap}
+.tl-bar.safe{background:var(--color-safe-tint);color:var(--color-safe)}
+.tl-bar.watch{background:var(--color-watch-tint);color:var(--color-watch)}
+.tl-bar.shift{background:var(--color-shift-tint);color:var(--color-shift)}
+.tl-bar.open{border-right-style:dashed;border-top-right-radius:0;border-bottom-right-radius:0}
+.tl-bar-text{font:600 var(--fs-caption)/1 var(--font-body)}
+.tl-sources{margin-top:var(--space-4);font-size:var(--fs-small)}
+.tl-sources summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600;color:var(--color-teal)}
+.tl-sources li{margin-bottom:var(--space-2)}
+@media (max-width:767px){.tl-inner{--tl-label:150px;min-width:760px}.tl-label{font-size:var(--fs-caption)}}
+/* Very narrow screens / 200% zoom: fall back to a vertical list (ux/spec: list view default under 360px) */
+@media (max-width:359px){
+  .tl-scroll{overflow:visible}.tl-inner{min-width:0}.tl-axis,.tl-controls .btn{display:none}
+  .tl-row{grid-template-columns:1fr;padding:var(--space-2) 0}.tl-track{background:none;height:auto}
+  .tl-bar{position:static;width:auto!important;display:inline-flex;margin-top:4px}
+}
+@media print{.tl-scroll{overflow:visible}.tl-controls{display:none}}
+</style>
+<script>
+document.querySelectorAll<HTMLElement>('.tl').forEach(tl => {
+  const sc = tl.querySelector<HTMLElement>('.tl-scroll')!;
+  const by = (d: number) => sc.scrollBy({ left: d * sc.clientWidth * 0.8 });
+  tl.querySelector('[data-tl-prev]')!.addEventListener('click', () => by(-1));
+  tl.querySelector('[data-tl-next]')!.addEventListener('click', () => by(1));
+  const cur = tl.querySelector<HTMLElement>('.tl-row.is-current .tl-bar');
+  if (cur) sc.scrollLeft = Math.max(0, cur.offsetLeft + 220 - sc.clientWidth / 3);
+});
+</script>

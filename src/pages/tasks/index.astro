@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import tasks from '../../data/tasks.json';
+import categories from '../../data/categories.json';
+---
+<Base title="Browse by task" description="Every task our AI tools can help with, in plain words." json="/api/tasks.json">
+<section class="page-head"><div class="container"><span class="eyebrow">Find a tool</span><h1>Browse by task</h1><p class="lede">{tasks.length} everyday tasks. Pick one to see tools that can help.</p></div></section>
+<div class="container">
+  {categories.map(c => { const ts = tasks.filter(t => t.categories.includes(c.slug)); return ts.length > 0 && (
+    <section class="dir-section" aria-labelledby={`t-${c.slug}`}><h2 id={`t-${c.slug}`}>{c.label}</h2>
+      <div class="chips" style="justify-content:flex-start">{ts.map(t => <a class="chip" href={`/tasks/${t.slug}`}>{t.name}</a>)}</div></section>); })}
+</div>
+</Base>

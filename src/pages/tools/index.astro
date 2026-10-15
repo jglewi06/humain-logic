@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import tools from '../../data/tools.json';
+import categories from '../../data/categories.json';
+import { SITE } from '../../lib/site';
+const ld = [{ '@type': 'ItemList', name: 'AI tools directory', numberOfItems: tools.length, itemListElement: tools.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) }];
+---
+<Base title="Find a tool" description={`${tools.length} AI tools for everyday tasks, explained in plain English.`} jsonld={ld} json="/api/tools.json">
+<section class="page-head"><div class="container">
+  <span class="eyebrow">Find a tool</span><h1>AI tools, sorted by what they help you do</h1>
+  <p class="lede">{tools.length} tools in {categories.length} groups. Not sure what to pick? <a href="/search">Describe your task</a> or <a href="/tasks">browse by task</a>.</p>
+  <form class="search compact" role="search" action="/search" method="get">
+    <div class="row" style="display:flex;gap:14px;align-items:center;flex:1;min-width:0"><svg width="24" height="24" aria-hidden="true"><use href="#i-search"/></svg>
+    <div class="field"><label for="q">Describe your task</label><input id="q" name="q" type="search" enterkeyhint="search" placeholder="e.g. make a flyer for my bakery"></div></div>
+    <button class="btn btn-primary" type="submit">Find tools</button>
+  </form>
+</div></section>
+<div class="container">
+  <nav aria-label="Categories" style="margin-top:var(--space-6)"><div class="cat-grid">{categories.map(c => <a class="cat" href={`#${c.slug}`}>{c.label} <span>{c.count}</span></a>)}</div></nav>
+  {categories.map(c => (
+    <section class="dir-section" id={c.slug} aria-labelledby={`${c.slug}-h`}>
+      <h2 id={`${c.slug}-h`}>{c.label}</h2>
+      <div class="grid-3">{tools.filter(t => t.category === c.slug).map(t => <ToolCard tool={t} />)}</div>
+    </section>))}
+  <p class="note">We’re independent. No company pays to be listed or ranked higher. Tools are listed alphabetically within groups until editors finish testing.</p>
+</div>
+</Base>

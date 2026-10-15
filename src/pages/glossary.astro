@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+// Terms from design/learn-about-ai.md "Words to know"
+const terms = [
+  ['AI (artificial intelligence)', 'A computer program that learns from examples and makes good guesses.'],
+  ['Chatbot', 'An AI tool you can talk to by typing or speaking. It writes back in plain words.'],
+  ['Prompt', 'The question or request you type into an AI tool.'],
+  ['Voice assistant', 'AI you talk to out loud, like Siri, Alexa, or Google Assistant.'],
+  ['Made-up answer', 'When AI states something false as if it were true. Experts call this a "hallucination."'],
+  ['Deepfake', 'A fake video, photo, or voice made with AI to look or sound real.'],
+  ['Voice clone', "A copy of a real person's voice, made with AI."],
+  ['Bias', 'When AI treats some people or groups unfairly, because it learned from unfair examples.'],
+];
+const ld = [{ '@type': 'DefinedTermSet', name: 'HumAIn Logic glossary', hasDefinedTerm: terms.map(([n, d]) => ({ '@type': 'DefinedTerm', name: n, description: d })) }];
+---
+<Base title="Words to know" description="Plain-language AI glossary." jsonld={ld}>
+<section class="page-head"><div class="container"><span class="eyebrow">Glossary</span><h1>Words to know</h1></div></section>
+<div class="container section" style="padding-top:var(--space-6)"><dl class="panel prose">{terms.map(([n, d]) => <><dt style="font-family:var(--font-heading);font-size:var(--fs-h4);margin-top:var(--space-4)">{n}</dt><dd style="margin:var(--space-1) 0 0">{d}</dd></>)}</dl>
+<p style="margin-top:var(--space-4)">Learn more in <a href="/learn">AI, explained simply</a>.</p></div>
+</Base>

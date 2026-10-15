@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import tools from '../../data/tools.json';
+import tasks from '../../data/tasks.json';
+import { SITE, tint, initials } from '../../lib/site';
+export function getStaticPaths() { return tools.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
+const { tool } = Astro.props;
+const [bg, fg] = tint(tool.slug);
+const myTasks = tool.tasks.map(s => tasks.find(t => t.slug === s)).filter(Boolean);
+const alts = tools.filter(t => t.slug !== tool.slug && t.category === tool.category).slice(0, 3);
+const ld = [
+  { '@type': 'SoftwareApplication', name: tool.name, url: tool.website, mainEntityOfPage: `${SITE.url}/tools/${tool.slug}`, applicationCategory: 'BusinessApplication', description: tool.summary, ...(tool.developer ? { author: { '@type': 'Organization', name: tool.developer } } : {}) },
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
+];
+const nc = 'Not checked yet';
+---
+<Base title={`${tool.name}: what it does, price and privacy`} description={`${tool.name}: ${tool.summary}`} jsonld={ld}>
+<section class="page-head"><div class="container">
+  <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › <a href={`/tools#${tool.category}`}>{tool.category_label}</a> › {tool.name}</p>
+  <div class="tool-head">
+    <div style="display:flex;gap:var(--space-4);align-items:center">
+      <div class="tile" style={`background:${bg};color:${fg}`} aria-hidden="true">{initials(tool.name)}</div>
+      <div><h1 style="margin:0">{tool.name}</h1><p class="lede" style="margin-top:var(--space-2)">{tool.summary}</p></div>
+    </div>
+    <div><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+  </div>
+  <div class="badges" style="margin-top:var(--space-4)"><span class="b b-price">{tool.pricing.label}</span><span class="b b-unverified">Not tested by an editor yet</span>{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
+  <p class="confidence" style="margin-top:var(--space-3)"><a href={`/contact?about=${tool.slug}#report`}>Report outdated info</a></p>
+</div></section>
+<div class="container section" style="padding-top:var(--space-6)">
+  <div class="detail">
+    <div class="prose" style="max-width:none">
+      <h2>Good for</h2>
+      <div class="chips" style="justify-content:flex-start">{myTasks.map(t => <a class="chip" href={`/tasks/${t.slug}`}>{t.name}</a>)}</div>
+      <h2>How to get started</h2>
+      <ol><li>Visit the {tool.name} website and look for a free plan or trial.</li><li>Try one small, low-stakes task first.</li><li>Check the result, and keep private details out.</li></ol>
+      <p class="confidence">General steps. A tool-specific guide comes after editor testing.</p>
+      <h2>Pricing</h2>
+      <p>{tool.pricing.label}. Plan-by-plan prices are {nc.toLowerCase()} — see the official site.</p>
+      <h2>Privacy and safety</h2>
+      <div class="placeholder"><strong>Not checked yet.</strong> We will list whether {tool.name} trains on your data, where data is stored, and age limits, each with a source link.</div>
+      <h2>Our take <span class="b b-skill" style="vertical-align:middle">Editorial</span></h2>
+      <p class="placeholder">No editorial review yet.</p>
+      {alts.length > 0 && <><h2>Alternatives</h2><div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div></>}
+    </div>
+    <aside class="panel glance" aria-labelledby="g-h">
+      <h2 id="g-h" style="font-size:var(--fs-h4);margin-bottom:var(--space-3)">At a glance</h2>
+      <dl>
+        <dt>Made by</dt><dd>{tool.developer ?? nc}</dd>
+        <dt>Group</dt><dd>{tool.category_label}</dd>
+        <dt>Price</dt><dd>{tool.pricing.label}</dd>
+        <dt>Skill</dt><dd>{tool.skill_level ?? nc}</dd>
+        <dt>Platforms</dt><dd>{tool.platforms?.join(', ') ?? nc}</dd>
+        <dt>Data use</dt><dd>{nc}</dd>
+        <dt>Checked</dt><dd>{tool.last_verified ?? 'Not yet'}</dd>
+      </dl>
+      <p class="confidence" style="margin-top:var(--space-3)">Facts come from the research list. No company pays to be listed.</p>
+    </aside>
+  </div>
+  <div class="sticky-cta"><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name}</a></div>
+</div>
+</Base>

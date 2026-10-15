@@ -1,0 +1,24 @@
+---
+import { tint, initials } from '../lib/site';
+const { tool, best = false, why = '' } = Astro.props;
+const [bg, fg] = tint(tool.slug);
+const tested = tool.last_verified ? `Tested ${new Date(tool.last_verified).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}` : 'Not tested yet';
+---
+<article class="tool" data-slug={tool.slug}>
+  {best && <span class="badge">Best match</span>}
+  <div class="top"><div class="tile" style={`background:${bg};color:${fg}`} aria-hidden="true">{initials(tool.name)}</div>
+    <div><h3><a href={`/tools/${tool.slug}`} style="color:inherit;text-decoration:none">{tool.name}</a></h3><div class="by">{tool.category_label}{tool.platforms ? ` · ${tool.platforms.join(', ')}` : ''}</div></div></div>
+  <p class="what"><b>What it does:</b> {tool.summary}</p>
+  {why && <p class="why-match">Why it matches: {why}</p>}
+  <div class="facts">
+    <span><svg width="16" height="16" aria-hidden="true"><use href="#i-dollar"/></svg><span><strong>{tool.pricing.label}</strong></span></span>
+    <span><svg width="16" height="16" aria-hidden="true"><use href="#i-leaf"/></svg><span>{tool.skill_level ?? 'Effort: not checked yet'}</span></span>
+    <span><svg width="16" height="16" aria-hidden="true"><use href="#i-lock"/></svg><span>{tool.privacy?.summary ?? 'Privacy: not checked yet'}</span></span>
+    <span><svg width="16" height="16" aria-hidden="true"><use href="#i-hand"/></svg><span>{tested}</span></span>
+  </div>
+  {tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}
+  <div class="cta">
+    <a class="btn btn-primary btn-sm" href={tool.website} rel={tool.affiliate ? 'sponsored noopener' : 'noopener'}>Try {tool.name} <svg width="14" height="14" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens {new URL(tool.website).hostname})</span></a>
+    <a class="btn btn-ghost btn-sm" href={`/tools/${tool.slug}`}>Details<span class="sr-only"> about {tool.name}</span></a>
+  </div>
+</article>

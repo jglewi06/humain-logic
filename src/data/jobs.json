@@ -1,0 +1,868 @@
+{
+ "note": "Year ranges are HumAIn Logic editorial estimates, NOT figures published by the cited sources. None of the cited sources gives per-occupation 'full automation' dates. Method: (1) relative automation susceptibility per occupation from Frey & Osborne (2013) probabilities and task-exposure scores in Eloundou et al. (2023) and ILO (2023); (2) anchored to McKinsey (2023) 'Economic potential of generative AI', which estimates half of today's work activities could be automated between 2030 and 2060 (midpoint ~2045); (3) adjusted for physical/manual tasks (slower robotics adoption), regulation/licensing, and BLS/WEF employment outlooks. 'Near-full automation' means most of the occupation's current tasks can be done by technology at scale; it does not imply all jobs disappear, and several sources (OECD, IMF, WEF) stress augmentation and job transformation over replacement. Confidence reflects agreement among sources and technical maturity, and is low for most ranges. Source URLs were checked on 2026-10-14; IMF, WEF, OECD and BLS pages block automated fetches (HTTP 403) but are the official landing pages confirmed via web search.",
+ "updated": "2026-10-15",
+ "jobs": [
+  {
+   "slug": "data-entry-keyer",
+   "name": "Data entry keyer",
+   "outlook": "shift",
+   "estimate_range": "2030-2040",
+   "confidence": "high",
+   "rationale": "Highly routine digital input work rated among the most computerisable by Frey & Osborne and listed among fastest-declining roles by WEF.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "office-clerk-general",
+   "name": "Office clerk (general)",
+   "outlook": "shift",
+   "estimate_range": "2032-2045",
+   "confidence": "medium",
+   "rationale": "Clerical/office support is identified by McKinsey and ILO as the category most exposed to generative AI automation.",
+   "sources": [
+    {
+     "title": "Generative AI and the future of work in America",
+     "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+     "publisher": "McKinsey Global Institute",
+     "year": 2023
+    },
+    {
+     "title": "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality",
+     "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and",
+     "publisher": "International Labour Organization",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    }
+   ]
+  },
+  {
+   "slug": "bookkeeping-accounting-clerk",
+   "name": "Bookkeeping/accounting clerk",
+   "outlook": "shift",
+   "estimate_range": "2032-2045",
+   "confidence": "medium",
+   "rationale": "Rule-based transaction processing is highly automatable and WEF lists accounting/bookkeeping clerks among declining jobs.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "slug": "telemarketer",
+   "name": "Telemarketer",
+   "outlook": "shift",
+   "estimate_range": "2030-2040",
+   "confidence": "high",
+   "rationale": "Scripted voice sales work scored near the top of Frey & Osborne's automation ranking and is highly exposed to AI voice agents.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Generative AI and the future of work in America",
+     "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+     "publisher": "McKinsey Global Institute",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "slug": "customer-service-representative",
+   "name": "Customer service representative",
+   "outlook": "shift",
+   "estimate_range": "2033-2045",
+   "confidence": "medium",
+   "rationale": "Generative AI chat and voice agents can handle much routine support, though complex cases keep humans involved.",
+   "sources": [
+    {
+     "title": "Generative AI and the future of work in America",
+     "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+     "publisher": "McKinsey Global Institute",
+     "year": 2023
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    }
+   ]
+  },
+  {
+   "slug": "bank-teller",
+   "name": "Bank teller",
+   "outlook": "shift",
+   "estimate_range": "2032-2045",
+   "confidence": "medium",
+   "rationale": "Digital banking and automation are steadily shrinking teller demand; WEF lists cashiers and ticket clerks/bank tellers among declining roles.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "cashier",
+   "name": "Cashier",
+   "outlook": "shift",
+   "estimate_range": "2035-2050",
+   "confidence": "medium",
+   "rationale": "Self-checkout and cashierless stores reduce demand, but physical retail and customer-preference factors slow full replacement.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "receptionist",
+   "name": "Receptionist",
+   "outlook": "shift",
+   "estimate_range": "2035-2050",
+   "confidence": "medium",
+   "rationale": "Scheduling and call-handling are automatable, but in-person greeting and judgement roles persist.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Generative AI and the future of work in America",
+     "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+     "publisher": "McKinsey Global Institute",
+     "year": 2023
+    },
+    {
+     "title": "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality",
+     "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and",
+     "publisher": "International Labour Organization",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "slug": "bookkeeper-payroll-clerk",
+   "name": "Bookkeeper / payroll clerk",
+   "outlook": "shift",
+   "estimate_range": "2032-2045",
+   "confidence": "medium",
+   "rationale": "Payroll and ledger tasks are highly structured and already heavily software-automated.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "insurance-claims-processor",
+   "name": "Insurance claims processor",
+   "outlook": "shift",
+   "estimate_range": "2033-2045",
+   "confidence": "medium",
+   "rationale": "Document review and rules-based adjudication are high-exposure tasks for language models.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "slug": "translator-interpreter",
+   "name": "Translator / interpreter",
+   "outlook": "shift",
+   "estimate_range": "2035-2050",
+   "confidence": "low",
+   "rationale": "Machine translation covers routine text, but high-stakes, literary and live interpretation still need people; exposure rated high by Eloundou et al.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "paralegal",
+   "name": "Paralegal",
+   "outlook": "shift",
+   "estimate_range": "2035-2050",
+   "confidence": "medium",
+   "rationale": "Document review and legal research are highly exposed to LLMs, while supervision and client work remain human.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Potentially Large Effects of Artificial Intelligence on Economic Growth (Briggs/Kodnani)",
+     "url": "https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html",
+     "publisher": "Goldman Sachs",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    }
+   ]
+  },
+  {
+   "slug": "accountant-auditor",
+   "name": "Accountant / auditor",
+   "outlook": "watch",
+   "estimate_range": "2040-2055",
+   "confidence": "low",
+   "rationale": "Many tasks are automatable but professional judgement, regulation and liability slow full automation.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "Generative AI and the future of work in America",
+     "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+     "publisher": "McKinsey Global Institute",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "slug": "truck-driver-heavy-long-haul",
+   "name": "Truck driver (heavy, long-haul)",
+   "outlook": "watch",
+   "estimate_range": "2040-2060",
+   "confidence": "low",
+   "rationale": "Autonomous trucking is technically progressing but regulation, safety validation and edge cases make timelines highly uncertain.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "delivery-rideshare-driver",
+   "name": "Delivery / rideshare driver",
+   "outlook": "watch",
+   "estimate_range": "2040-2060",
+   "confidence": "low",
+   "rationale": "Robotaxi pilots exist in limited cities, but broad deployment depends on regulation and cost.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "fast-food-food-prep-worker",
+   "name": "Fast-food / food prep worker",
+   "outlook": "watch",
+   "estimate_range": "2040-2060",
+   "confidence": "low",
+   "rationale": "Robotic food prep is emerging, but physical dexterity and cost keep adoption slow; McKinsey expects food-service declines.",
+   "sources": [
+    {
+     "title": "Generative AI and the future of work in America",
+     "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+     "publisher": "McKinsey Global Institute",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "warehouse-worker-stocker",
+   "name": "Warehouse worker / stocker",
+   "outlook": "watch",
+   "estimate_range": "2038-2055",
+   "confidence": "low",
+   "rationale": "Warehouse robotics is advancing quickly, though manipulation of varied items remains hard.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "custodian-janitor",
+   "name": "Custodian / janitor",
+   "outlook": "watch",
+   "estimate_range": "2045-2065",
+   "confidence": "low",
+   "rationale": "Unstructured physical environments limit robotic cleaning to narrow tasks.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "graphic-designer",
+   "name": "Graphic designer",
+   "outlook": "watch",
+   "estimate_range": "2040-2060",
+   "confidence": "low",
+   "rationale": "Generative image tools automate production tasks, but creative direction and client work remain human-led; WEF lists graphic designers among declining roles.",
+   "sources": [
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    }
+   ]
+  },
+  {
+   "slug": "writer-copywriter",
+   "name": "Writer / copywriter",
+   "outlook": "watch",
+   "estimate_range": "2040-2060",
+   "confidence": "low",
+   "rationale": "LLMs are highly exposed for drafting text, but original reporting, voice and editing judgement remain human.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Potentially Large Effects of Artificial Intelligence on Economic Growth (Briggs/Kodnani)",
+     "url": "https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html",
+     "publisher": "Goldman Sachs",
+     "year": 2023
+    },
+    {
+     "title": "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality",
+     "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and",
+     "publisher": "International Labour Organization",
+     "year": 2023
+    }
+   ]
+  },
+  {
+   "slug": "market-research-analyst",
+   "name": "Market research analyst",
+   "outlook": "watch",
+   "estimate_range": "2040-2055",
+   "confidence": "low",
+   "rationale": "Data gathering and summarization are highly exposed, while interpretation and client strategy persist.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "software-developer",
+   "name": "Software developer",
+   "outlook": "watch",
+   "estimate_range": "2045-2065",
+   "confidence": "low",
+   "rationale": "AI coding assistants raise productivity but design, requirements and accountability keep developers in the loop; BLS still projects growth.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "financial-advisor",
+   "name": "Financial advisor",
+   "outlook": "watch",
+   "estimate_range": "2045-2065",
+   "confidence": "low",
+   "rationale": "Robo-advisors automate portfolio tasks, but trust and complex planning need humans.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "lawyer",
+   "name": "Lawyer",
+   "outlook": "steady",
+   "estimate_range": "2050-2070",
+   "confidence": "low",
+   "rationale": "Research and drafting are exposed, but advocacy, judgement and licensing slow automation.",
+   "sources": [
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    },
+    {
+     "title": "The Potentially Large Effects of Artificial Intelligence on Economic Growth (Briggs/Kodnani)",
+     "url": "https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html",
+     "publisher": "Goldman Sachs",
+     "year": 2023
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    }
+   ]
+  },
+  {
+   "slug": "teacher-k-12",
+   "name": "Teacher (K-12)",
+   "outlook": "steady",
+   "estimate_range": "2055+",
+   "confidence": "low",
+   "rationale": "AI tutoring complements teaching, but supervision, social and emotional roles are hard to automate; Frey & Osborne rated teachers low-risk.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Gen-AI: Artificial Intelligence and the Future of Work",
+     "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+     "publisher": "International Monetary Fund",
+     "year": 2024
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "registered-nurse",
+   "name": "Registered nurse",
+   "outlook": "steady",
+   "estimate_range": "2055+",
+   "confidence": "low",
+   "rationale": "Hands-on patient care and judgement make nursing among the least automatable occupations; BLS projects growth.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Gen-AI: Artificial Intelligence and the Future of Work",
+     "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+     "publisher": "International Monetary Fund",
+     "year": 2024
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "electrician",
+   "name": "Electrician",
+   "outlook": "steady",
+   "estimate_range": "2055+",
+   "confidence": "low",
+   "rationale": "Varied, unstructured physical work in buildings resists robotics.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "plumber",
+   "name": "Plumber",
+   "outlook": "steady",
+   "estimate_range": "2055+",
+   "confidence": "low",
+   "rationale": "Non-routine manual work in diverse settings is hard to automate.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "construction-laborer",
+   "name": "Construction laborer",
+   "outlook": "steady",
+   "estimate_range": "2050-2070",
+   "confidence": "low",
+   "rationale": "Some prefabrication and robotics help, but site variability limits full automation.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "The economic potential of generative AI: The next productivity frontier",
+     "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+     "publisher": "McKinsey & Company",
+     "year": 2023
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "home-health-personal-care-aide",
+   "name": "Home health / personal care aide",
+   "outlook": "steady",
+   "estimate_range": "2055+",
+   "confidence": "low",
+   "rationale": "Physical care and human interaction keep automation low; WEF expects care roles to grow.",
+   "sources": [
+    {
+     "title": "The Future of Jobs Report 2025",
+     "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+     "publisher": "World Economic Forum",
+     "year": 2025
+    },
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025
+    }
+   ]
+  },
+  {
+   "slug": "physician-medical-doctor",
+   "name": "Physician (medical doctor)",
+   "outlook": "steady",
+   "estimate_range": "2060+",
+   "confidence": "low",
+   "rationale": "AI aids diagnosis, but accountability, procedures and patient relationships make full automation unlikely in foreseeable horizons.",
+   "sources": [
+    {
+     "title": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment",
+     "publisher": "Oxford Martin School (Frey & Osborne)",
+     "year": 2013
+    },
+    {
+     "title": "Gen-AI: Artificial Intelligence and the Future of Work",
+     "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+     "publisher": "International Monetary Fund",
+     "year": 2024
+    },
+    {
+     "title": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+     "url": "https://arxiv.org/abs/2303.10130",
+     "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
+     "year": 2023
+    }
+   ]
+  }
+ ]
+}

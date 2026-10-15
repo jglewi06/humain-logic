@@ -1,0 +1,62 @@
+[
+ {
+  "slug": "productivity",
+  "label": "Everyday helpers",
+  "count": 18
+ },
+ {
+  "slug": "writing",
+  "label": "Writing",
+  "count": 6
+ },
+ {
+  "slug": "image",
+  "label": "Images and photos",
+  "count": 9
+ },
+ {
+  "slug": "video",
+  "label": "Video",
+  "count": 8
+ },
+ {
+  "slug": "marketing",
+  "label": "Marketing",
+  "count": 7
+ },
+ {
+  "slug": "design",
+  "label": "Design",
+  "count": 6
+ },
+ {
+  "slug": "coding",
+  "label": "Coding",
+  "count": 6
+ },
+ {
+  "slug": "research",
+  "label": "Research and answers",
+  "count": 5
+ },
+ {
+  "slug": "audio",
+  "label": "Audio and voice",
+  "count": 5
+ },
+ {
+  "slug": "customer-service",
+  "label": "Customer service",
+  "count": 3
+ },
+ {
+  "slug": "finance",
+  "label": "Admin and finance",
+  "count": 3
+ },
+ {
+  "slug": "education",
+  "label": "Learning",
+  "count": 3
+ }
+]

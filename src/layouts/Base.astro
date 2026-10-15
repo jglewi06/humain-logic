@@ -1,0 +1,117 @@
+---
+import '@fontsource-variable/fraunces/full.css';
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+import Icons from '../components/Icons.astro';
+import Brand from '../components/Brand.astro';
+import { SITE, NAV, abs } from '../lib/site';
+interface Props { title?: string; description?: string; noindex?: boolean; jsonld?: object[]; json?: string; path?: string }
+const { title, description = SITE.description, noindex = false, jsonld = [], json } = Astro.props;
+const path = (Astro.props.path ?? Astro.url.pathname).replace(/\.html$/, '').replace(/\/index$/, '/').replace(/(.)\/$/, '$1') || '/';
+const canonical = abs(path);
+const fullTitle = title ? `${title} | HumAIn Logic` : 'HumAIn Logic: AI tools, news & job insights in plain English';
+const isCurrent = (m: string[]) => m.some(p => path === p || path.startsWith(p + '/'));
+const graph = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg` },
+  { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: 'en-US', publisher: { '@id': `${SITE.url}/#org` },
+    potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/search?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
+  ...jsonld ] };
+---
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{fullTitle}</title>
+<meta name="description" content={description}>
+<link rel="canonical" href={canonical}>
+{noindex && <meta name="robots" content="noindex,follow">}
+<meta property="og:type" content="website"><meta property="og:site_name" content="HumAIn Logic">
+<meta property="og:title" content={fullTitle}><meta property="og:description" content={description}><meta property="og:url" content={canonical}>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="sitemap" href="/sitemap-index.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="alternate" type="application/rss+xml" title="HumAIn Logic AI news" href="/news/feed.xml">
+{json && <link rel="alternate" type="application/json" href={json}>}
+<script type="application/ld+json" set:html={JSON.stringify(graph)} />
+<script is:inline>try{if(localStorage.getItem('hl-motion')==='reduce')document.documentElement.dataset.motion='reduce'}catch(e){}</script>
+<slot name="head" />
+</head>
+<body>
+<Icons />
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site">
+  <div class="container nav">
+    <Brand />
+    <nav aria-label="Main"><ul>
+      {NAV.map(n => <li><a href={n.href} aria-current={isCurrent(n.match) ? 'page' : undefined}>{n.label}</a></li>)}
+    </ul></nav>
+    <div class="actions">
+      <a class="btn btn-ghost btn-sm" href="/newsletter">Get the newsletter</a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu-sheet"><svg width="22" height="22" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="sheet" id="menu-sheet" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="sheet-top">
+    <Brand />
+    <button class="menu-btn" type="button" data-close aria-label="Close menu" style="display:inline-flex"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <nav aria-label="Main (menu)"><ul>
+    {NAV.map(n => <li><a href={n.href} aria-current={isCurrent(n.match) ? 'page' : undefined}>{n.label}</a></li>)}
+  </ul></nav>
+  <div class="sheet-cta"><a class="btn btn-secondary" href="/newsletter">Get the newsletter</a></div>
+</div>
+<main id="main"><slot /></main>
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <Brand />
+        <p class="promise">Helping people get things done with AI, and feel calmer about it. Independent. No company pays to be listed.</p>
+      </div>
+      <div><h2 class="h6">Explore</h2><ul>{NAV.map(n => <li><a href={n.href}>{n.label}</a></li>)}</ul></div>
+      <div><h2 class="h6">About</h2><ul><li><a href="/methodology">How we test</a></li><li><a href="/about#promise">Our promise</a></li><li><a href="/about">About us</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/contact">Contact / report a problem</a></li></ul></div>
+      <div><h2 class="h6">Stay in touch</h2><ul><li><a href="/newsletter">Newsletter</a></li><li><a href="/contact#suggest">Suggest a tool</a></li><li><a href="/guides#small-business">For small businesses</a></li><li><a href="/llms.txt">For AI agents (llms.txt)</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© {new Date().getFullYear()} HumAIn Logic · humainlogic.com</span><span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/accessibility">Accessibility</a> · <button type="button" class="motion-toggle" data-motion-toggle>Reduce motion</button></span></div>
+  </div>
+</footer>
+<style is:global>
+footer h2.h6{margin:0 0 var(--space-3);font:600 var(--fs-caption) var(--font-body);color:var(--color-paper);letter-spacing:var(--tracking-label);text-transform:uppercase}
+.motion-toggle{background:none;border:0;color:var(--color-mist);font:inherit;cursor:pointer;text-decoration:underline;min-height:44px;padding:0 4px}
+.motion-toggle:focus-visible{outline:2px solid var(--color-apricot);outline-offset:2px}
+footer a:focus-visible{outline:2px solid var(--color-apricot);outline-offset:3px;border-radius:4px}
+</style>
+<script>
+/* Menu sheet (design/homepage-mockup.html): focus trapped, Esc/Close return focus to the trigger */
+const btn = document.querySelector<HTMLButtonElement>('header .menu-btn');
+const sheet = document.getElementById('menu-sheet');
+if (btn && sheet) {
+  const focusables = () => sheet.querySelectorAll<HTMLElement>('a[href],button');
+  const open = () => { sheet.hidden = false; btn.setAttribute('aria-expanded', 'true'); document.body.classList.add('sheet-open'); focusables()[1]?.focus(); };
+  const close = () => { sheet.hidden = true; btn.setAttribute('aria-expanded', 'false'); document.body.classList.remove('sheet-open'); btn.focus(); };
+  btn.addEventListener('click', open);
+  sheet.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', close));
+  sheet.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { close(); return; }
+    if (e.key !== 'Tab') return;
+    const f = focusables(), first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  matchMedia('(min-width:1024px)').addEventListener('change', m => { if (m.matches && !sheet.hidden) close(); });
+}
+/* Site "Reduce motion" setting (tokens.css data-motion="reduce") */
+const mt = document.querySelector<HTMLButtonElement>('[data-motion-toggle]');
+const sync = () => { if (mt) { const on = document.documentElement.dataset.motion === 'reduce'; mt.setAttribute('aria-pressed', String(on)); } };
+mt?.addEventListener('click', () => {
+  const on = document.documentElement.dataset.motion === 'reduce';
+  if (on) { delete document.documentElement.dataset.motion; localStorage.removeItem('hl-motion'); }
+  else { document.documentElement.dataset.motion = 'reduce'; localStorage.setItem('hl-motion', 'reduce'); }
+  sync();
+});
+sync();
+</script>
+</body>
+</html>

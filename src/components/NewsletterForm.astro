@@ -1,0 +1,67 @@
+---
+// ux/spec §1.4 + homepage-spec §7 + legal brief §3: email only, UNTICKED consent, double opt-in (Buttondown), honeypot, neutral success.
+import { SITE } from '../lib/site';
+const { id = 'nl', heading = true } = Astro.props;
+const action = SITE.buttondownUser ? `https://buttondown.com/api/emails/embed-subscribe/${SITE.buttondownUser}` : '';
+---
+<div class="newsletter" id={`${id}-wrap`}>
+  <div>
+    <span class="eyebrow">{SITE.newsletterName}</span>
+    {heading ? <h2 id={`${id}-h`}>One calm email a week</h2> : <p class="h2-like" id={`${id}-h`}>One calm email a week</p>}
+    <p>Every {SITE.newsletterDay}: the three AI changes worth knowing about, one useful tool to try, and a job tracker update. Five minutes, with coffee.</p>
+  </div>
+  <div>
+    <form class="nl-form" data-nl method="post" action={action || '/newsletter/confirmed'} novalidate aria-labelledby={`${id}-h`}>
+      <label for={`${id}-email`}>Your email</label>
+      <div class="row">
+        <input class="input" id={`${id}-email`} name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-describedby={`${id}-err`} required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </div>
+      <p class="field-error" id={`${id}-err`} role="alert" hidden></p>
+      <label class="consent"><input type="checkbox" name="consent" id={`${id}-consent`} aria-describedby={`${id}-cerr`}> <span>I want the weekly HumAIn Logic email. I can unsubscribe any time. <a href="/privacy">Privacy notice →</a></span></label>
+      <p class="field-error" id={`${id}-cerr`} role="alert" hidden></p>
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="hl_website" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="tag" value={`site-${id}`}>
+      <span class="fine">Unsubscribe in one click. We never sell your email.</span>
+    </form>
+    <div class="nl-success" role="status" tabindex="-1" hidden>
+      <h3>Check your inbox</h3>
+      <p>We've sent a confirmation link to <strong data-masked></strong>. Click it to finish.</p>
+      <p class="fine">Not there? Check spam, or <button type="button" class="btn btn-ghost btn-sm" data-change>use a different email</button></p>
+    </div>
+  </div>
+</div>
+<style>.h2-like{font-family:var(--font-heading);font-size:var(--fs-h2);font-weight:600;line-height:var(--lh-tight);margin:var(--space-2) 0 var(--space-3)}</style>
+<script>
+const msgs = { empty: 'Please enter your email address.', invalid: "That email doesn't look right. Check for typos, like a missing @.", consent: 'Please tick the box so we know you want to receive emails.', server: "Something went wrong on our side. Your email wasn't saved. Please try again." };
+const typo: Record<string, string> = { 'gmial.com': 'gmail.com', 'gmai.com': 'gmail.com', 'gnail.com': 'gmail.com', 'hotmial.com': 'hotmail.com', 'yaho.com': 'yahoo.com', 'outlok.com': 'outlook.com' };
+const icon = '<svg width="16" height="16" aria-hidden="true"><use href="#i-alert"/></svg>';
+document.querySelectorAll<HTMLFormElement>('form[data-nl]').forEach(form => {
+  const email = form.querySelector<HTMLInputElement>('input[type=email]')!;
+  const consent = form.querySelector<HTMLInputElement>('input[name=consent]')!;
+  const err = form.querySelector<HTMLElement>(`#${email.getAttribute('aria-describedby')}`)!;
+  const cerr = form.querySelector<HTMLElement>(`#${consent.getAttribute('aria-describedby')}`)!;
+  const success = form.parentElement!.querySelector<HTMLElement>('.nl-success')!;
+  const show = (el: HTMLElement, m: string) => { el.innerHTML = m ? icon + '<span></span>' : ''; if (m) el.querySelector('span')!.textContent = m; el.hidden = !m; };
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const v = email.value.trim(); let first: HTMLElement | null = null;
+    const bad = !v ? msgs.empty : !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? msgs.invalid : '';
+    const dom = v.split('@')[1]?.toLowerCase();
+    show(err, bad || (dom && typo[dom] ? `Did you mean ${v.split('@')[0]}@${typo[dom]}?` : ''));
+    email.setAttribute('aria-invalid', String(!!bad)); if (bad) first = email;
+    show(cerr, consent.checked ? '' : msgs.consent); if (!consent.checked && !first) first = consent;
+    if (bad || !consent.checked) { first?.focus(); return; }
+    if ((form.elements.namedItem('hl_website') as HTMLInputElement).value) return; // honeypot
+    const btn = form.querySelector<HTMLButtonElement>('button[type=submit]')!; btn.disabled = true; btn.textContent = 'Subscribing…';
+    try {
+      if (form.action.includes('buttondown')) {
+        await fetch(form.action, { method: 'POST', mode: 'no-cors', body: new URLSearchParams({ email: v, tag: (form.elements.namedItem('tag') as HTMLInputElement).value }) });
+      } else { console.info('[prototype] PUBLIC_BUTTONDOWN_USER not set; nothing was sent.'); }
+      const [u, d] = v.split('@'); success.querySelector('[data-masked]')!.textContent = `${u[0]}***@${d}`;
+      form.hidden = true; success.hidden = false; success.focus();
+    } catch { show(err, msgs.server); } finally { btn.disabled = false; btn.textContent = 'Subscribe'; }
+  });
+  success.querySelector('[data-change]')?.addEventListener('click', () => { success.hidden = true; form.hidden = false; email.focus(); });
+});
+</script>

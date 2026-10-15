@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import jobsData from '../../data/jobs.json';
+import { OUTLOOK, SITE, fmtDate } from '../../lib/site';
+import JobTimeline from '../../components/JobTimeline.astro';
+const groups = (['shift', 'watch', 'steady'] as const).map(k => ({ k, ...OUTLOOK[k], jobs: jobsData.jobs.filter(j => j.outlook === k) }));
+const ld = [{ '@type': 'Dataset', name: 'HumAIn Logic AI Job Safety Tracker', description: 'Editorial outlook estimates for how AI may change specific jobs, with sources.', url: `${SITE.url}/tracker`, creator: { '@id': `${SITE.url}/#org` }, dateModified: jobsData.updated, measurementTechnique: `${SITE.url}/methodology`, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${SITE.url}/api/jobs.json` }] }];
+---
+<Base title="Job safety tracker" description="How is AI changing your job? Calm, sourced outlooks for 31 jobs." jsonld={ld} json="/api/jobs.json">
+<section class="page-head"><div class="container">
+  <span class="eyebrow">Job safety tracker</span><h1>How is AI changing your job?</h1>
+  <p class="lede">Most jobs aren’t disappearing. They’re changing. Find your job to see our outlook, the reasons, and the research behind it.</p>
+  <p class="confidence" style="margin-top:var(--space-3)">Last updated {fmtDate(jobsData.updated)} · <a href="/methodology">How we decide</a> · <a href="/api/jobs.json">Download data (JSON)</a></p>
+  <form class="job-search" action="/tracker" method="get" id="jform" style="max-width:560px"><label class="sr-only" for="job">Your job title</label><input class="input" id="job" name="job" list="job-list" placeholder="Check your job, e.g. receptionist" autocomplete="off"><button class="btn btn-primary" type="submit">Check</button></form>
+  <datalist id="job-list">{jobsData.jobs.map(j => <option value={j.name} />)}</datalist>
+  <p id="jmsg" role="status"></p>
+</div></section>
+<div class="container section" style="padding-top:var(--space-6)">
+  <div class="outlook-groups">
+    {groups.map(g => (
+      <section class="panel" aria-labelledby={`g-${g.k}`}>
+        <h2 id={`g-${g.k}`} style="font-size:var(--fs-h4);margin-bottom:var(--space-3)"><span class={`pill ${g.cls}`}><span aria-hidden="true">{g.icon}</span> {g.label}</span> <span class="confidence">{g.jobs.length} jobs</span></h2>
+        <ol>{g.jobs.map(j => <li><a class="role" href={`/tracker/jobs/${j.slug}`}>{j.name}<span class="confidence">{j.confidence} confidence</span></a></li>)}</ol>
+      </section>))}
+  </div>
+  <JobTimeline jobs={jobsData.jobs} id="tl" showSources title="Timeline: when could AI do most of each job's tasks?" />
+
+  <p class="callout warm" style="margin-top:var(--space-6)"><strong>Please read:</strong> these are HumAIn Logic editorial estimates, not predictions or career advice. None of the cited sources gives per-job dates. Your own job depends on your tasks, employer and skills.</p>
+</div>
+</Base>
+<script>
+const jobs = [...document.querySelectorAll<HTMLOptionElement>('#job-list option')].map(o => o.value);
+const links = Object.fromEntries([...document.querySelectorAll<HTMLAnchorElement>('.outlook-groups a.role')].map(a => [a.firstChild!.textContent!.trim().toLowerCase(), a.href]));
+const go = (v: string) => {
+  const s = v.trim().toLowerCase(); if (!s) return false;
+  const hit = jobs.find(j => j.toLowerCase() === s) || jobs.find(j => j.toLowerCase().includes(s) || s.includes(j.toLowerCase().split(/[ /(]/)[0]));
+  if (hit) { location.href = links[hit.toLowerCase()]; return true; }
+  const m = document.getElementById('jmsg')!; m.textContent = `We don't have “${v}” yet. Try a similar job from the lists below, or ask us to add it on the Contact page.`; return false;
+};
+const q = new URLSearchParams(location.search).get('job'); if (q) { (document.getElementById('job') as HTMLInputElement).value = q; go(q); }
+document.getElementById('jform')!.addEventListener('submit', e => { e.preventDefault(); go((document.getElementById('job') as HTMLInputElement).value); });
+</script>

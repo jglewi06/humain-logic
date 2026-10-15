@@ -1,0 +1,156 @@
+[
+ {
+  "name": "arXiv cs.AI",
+  "url": "https://rss.arxiv.org/rss/cs.AI",
+  "group": "research",
+  "ai_only": true,
+  "max": 3
+ },
+ {
+  "name": "arXiv cs.LG",
+  "url": "https://rss.arxiv.org/rss/cs.LG",
+  "group": "research",
+  "ai_only": true,
+  "max": 3
+ },
+ {
+  "name": "Google Research Blog",
+  "url": "https://research.google/blog/rss/",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "Google DeepMind Blog",
+  "url": "https://deepmind.google/blog/rss.xml",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "OpenAI News",
+  "url": "https://openai.com/news/rss.xml",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "Hugging Face Blog",
+  "url": "https://huggingface.co/blog/feed.xml",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "Berkeley AI Research (BAIR)",
+  "url": "https://bair.berkeley.edu/blog/feed.xml",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "MIT News – AI",
+  "url": "https://news.mit.edu/rss/topic/artificial-intelligence2",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "MIT Technology Review – AI",
+  "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "The Verge – AI",
+  "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "TechCrunch – AI",
+  "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "Wired – AI",
+  "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+  "group": "research",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "Ars Technica – Technology Lab",
+  "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+  "group": "research",
+  "ai_only": false,
+  "max": 8
+ },
+ {
+  "name": "GOV.UK news search (Atom)",
+  "url": "https://www.gov.uk/search/news-and-communications.atom?keywords=artificial+intelligence",
+  "group": "rules-safety",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "NIST News",
+  "url": "https://www.nist.gov/news-events/news/rss.xml",
+  "group": "rules-safety",
+  "ai_only": false,
+  "max": 8
+ },
+ {
+  "name": "Google – AI blog",
+  "url": "https://blog.google/technology/ai/rss/",
+  "group": "business",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "AWS Machine Learning Blog",
+  "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+  "group": "business",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "NVIDIA Blog",
+  "url": "https://blogs.nvidia.com/feed/",
+  "group": "business",
+  "ai_only": true,
+  "max": 8
+ },
+ {
+  "name": "Positive News",
+  "url": "https://www.positive.news/feed/",
+  "group": "good-news",
+  "ai_only": false,
+  "max": 8
+ },
+ {
+  "name": "Good News Network – Science",
+  "url": "https://www.goodnewsnetwork.org/category/news/science/feed/",
+  "group": "good-news",
+  "ai_only": false,
+  "max": 8
+ },
+ {
+  "name": "Fix The News",
+  "url": "https://www.fixthenews.com/feed",
+  "group": "good-news",
+  "ai_only": false,
+  "max": 8
+ },
+ {
+  "name": "Reasons to be Cheerful",
+  "url": "https://reasonstobecheerful.world/feed/",
+  "group": "good-news",
+  "ai_only": false,
+  "max": 8
+ }
+]

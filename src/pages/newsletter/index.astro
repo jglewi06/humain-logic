@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+import { SITE } from '../../lib/site';
+---
+<Base title={SITE.newsletterName} description="One calm email a week about AI: three changes worth knowing, one tool to try, and a job tracker update.">
+<section class="page-head warm"><div class="container"><span class="eyebrow">Newsletter</span><h1>{SITE.newsletterName}: the HumAIn Logic weekly</h1><p class="lede">One email every {SITE.newsletterDay}. A 5-minute read. Useful tools, calm news, job updates. No pop-ups, no spam.</p></div></section>
+<div class="container section" style="padding-top:var(--space-6)">
+  <NewsletterForm id="nlp" />
+  <div class="prose" style="margin-top:var(--space-7)">
+    <h2>What you'll get</h2>
+    <ul><li>The three AI changes worth knowing about this week, with links to the sources.</li><li>One useful tool to try, and what it does with your data.</li><li>A short Job safety tracker update.</li></ul>
+    <h2>Your privacy</h2>
+    <p>We only ask for your email. We send a confirmation link first (double opt-in). Every email has a one-click unsubscribe. We never sell your email. Read the <a href="/privacy">privacy notice</a>.</p>
+  </div>
+</div>
+</Base>

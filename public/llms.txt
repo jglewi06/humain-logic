@@ -1,0 +1,30 @@
+# HumAIn Logic
+
+> Calm, plain-language guide to AI for everyday people and small businesses: a task-based AI tool directory, a sourced AI news feed, an AI Job Safety Tracker, and a weekly newsletter.
+
+Data is rebuilt automatically (news every few hours). Proposed license: CC BY 4.0 for editorial text and tracker data (pending owner sign-off); tool logos and third-party text excluded. Please cite "HumAIn Logic" with a link to https://humainlogic.com.
+
+## Tools directory
+- [Browse tools](https://humainlogic.com/tools): all tools by category
+- [Browse tasks](https://humainlogic.com/tasks): every task, each with matching tools
+- [Tools API](https://humainlogic.com/api/tools.json): JSON list of all tools
+- [Tasks API](https://humainlogic.com/api/tasks.json): JSON task taxonomy with tool slugs
+
+## AI Job Safety Tracker
+- [Tracker](https://humainlogic.com/tracker): outlook per job (Mostly steady / Changing / Big shift ahead), with sources
+- [Jobs API](https://humainlogic.com/api/jobs.json): JSON outlooks, editorial year-range estimates, confidence, sources
+- [Methodology](https://humainlogic.com/methodology): how outlooks are assigned
+
+## News
+- [News feed](https://humainlogic.com/news)
+- [News API](https://humainlogic.com/api/news.json)
+- [RSS](https://humainlogic.com/news/feed.xml)
+
+## About
+- [About and editorial promise](https://humainlogic.com/about)
+- [Learn about AI](https://humainlogic.com/learn): beginner guide
+- [Glossary](https://humainlogic.com/glossary)
+
+## Optional
+- [Full content for LLMs](https://humainlogic.com/llms-full.txt)
+- [Sitemap](https://humainlogic.com/sitemap-index.xml)
