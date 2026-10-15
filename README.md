@@ -9,7 +9,7 @@ npm run build              # -> dist/ (≈308 pages)
 npm run preview            # serve dist/
 npm run import-research    # ../research/{tools,jobs}.json -> src/data/
 npm run fetch-news         # RSS (src/data/feeds.json) -> src/data/news.json
-npm run build-newsletter   # -> newsletter/YYYY-MM-DD.md (+ Buttondown draft if key set)
+npm run build-newsletter   # -> newsletter/YYYY-MM-DD.md + .html for the coming Sunday (+ Buttondown draft if key set)
 ```
 
 ## Where things come from
@@ -35,6 +35,13 @@ There are no trailing slashes (`build.format: 'file'`). Every page has a canonic
 ## Config / secrets
 - `PUBLIC_BUTTONDOWN_USER` (Cloudflare Pages env var): the signup form target. Defaults to `jglewi06` when unset; set it only to point the form at a different Buttondown account.
 - `BUTTONDOWN_API_KEY` (GitHub secret), `NEWSLETTER_AUTOSEND` and `NEWSLETTER_POSTAL_ADDRESS` (GitHub variables). The newsletter refuses to upload without a postal address (CAN-SPAM).
+
+### The Sunday Brief email
+- `scripts/build-newsletter.mjs` writes `newsletter/<sunday>.md` (plain-text/archive) and `newsletter/<sunday>.html`, filled from `scripts/newsletter-template.html` by `scripts/render-newsletter.mjs` (design: `design/newsletter/notes.md`). The date is the **send** Sunday, not the build day. Override with `NEWSLETTER_DATE=YYYY-MM-DD`.
+- Placeholders are `[[field]]`. `{{ unsubscribe_url }}` is left for Buttondown. Images load from `https://humainlogic.com/email/` (`public/email/`). Never rename those files; old emails point at them.
+- **Editor step:** write `newsletter/<sunday>.why.json` with three "Why it matters to you" sentences, e.g. `["…", "…", "…"]`. Until then the issue shows `[Editor: …]` and the upload is **refused**. The Sunday workflow then fails (on purpose) but still commits the built files.
+- Feed summaries are cleaned: HTML stripped, cut at a sentence end (or a word, with "…"), and items with an empty or first-person summary are skipped.
+- **Upload** (only with `BUTTONDOWN_API_KEY`) sends the HTML with `template: "naked"`, so our template is the whole email. **Naked mode is a paid Buttondown feature.** If the API rejects it, the script falls back to the default Buttondown template with the Markdown body (light layout, Buttondown's own header/footer). It is always a **draft** unless `NEWSLETTER_AUTOSEND=true`. Use Buttondown's "Send test" to check Gmail, Outlook and Apple Mail before you ever enable autosend.
 - Analytics: turn on Cloudflare Web Analytics in the Pages dashboard (auto-injected, no code or token in the repo).
 
 ## Deploy (Francisco)

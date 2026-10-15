@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20, cache: npm }
       - run: npm ci && npm run build-newsletter
-      - run: |
+      - if: always()   # keep the built .md/.html even when an upload guard stops the run
+        run: |
           git config user.name "humain-bot"; git config user.email "bot@users.noreply.github.com"
           git add newsletter; git diff --cached --quiet || (git commit -m "chore: newsletter draft" && git push)

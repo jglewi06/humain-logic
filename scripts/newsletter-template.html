@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--
+  HumAIn Logic · "The Sunday Brief" email template v1.0
+  - Build-time placeholders: [[…]] (see notes.md, filled by render-newsletter.mjs). Every [[…]] must be replaced before upload.
+  - Buttondown merge tags stay as {{ … }} and are rendered by Buttondown at send time: {{ unsubscribe_url }} is required.
+  - Images are hosted at https://humainlogic.com/email/ (copy design/newsletter/assets/*.png to site/public/email/).
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<title>The Sunday Brief · [[issue_date]]</title>
+<!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<style>
+  table,td,p,a,span,h1,h2,h3{font-family:Arial,Helvetica,sans-serif !important;}
+  .ff-h,.ff-h a{font-family:Georgia,'Times New Roman',serif !important;}
+</style>
+<![endif]-->
+<!--[if !mso]><!-->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600,100&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<!--<![endif]-->
+<style>
+:root{color-scheme:light dark;supported-color-schemes:light dark;}
+body,#body{margin:0 !important;padding:0 !important;width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+table,td{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;}
+img{border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
+a{color:#1F6F6B;}
+a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
+#MessageViewBody a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
+.btn-a:hover{opacity:.92;}
+/* Gmail iOS/Android forced dark mode: keep white button text white (Rémi Parmentier's blend trick; Gmail-only selector). */
+u + .body .gm-screen{background:#000;mix-blend-mode:screen;display:inline-block;}
+u + .body .gm-diff{background:#000;mix-blend-mode:difference;display:inline-block;}
+
+@media screen and (max-width:599px){
+  .container{width:100% !important;}
+  .px{padding-left:16px !important;padding-right:16px !important;}
+  .card-pad{padding:22px 20px 24px 20px !important;}
+  .band-pad{padding:22px 20px 18px 20px !important;}
+  .foot-pad{padding:28px 20px 32px 20px !important;}
+  .h1{font-size:30px !important;line-height:36px !important;}
+  .h2{font-size:24px !important;line-height:30px !important;}
+  .h3{font-size:20px !important;line-height:27px !important;}
+  .lead{font-size:17px !important;line-height:26px !important;}
+  .logo{width:184px !important;height:auto !important;}
+  .btn-table{width:100% !important;}
+  .btn-a{display:block !important;padding-left:16px !important;padding-right:16px !important;}
+  .nowrap-sm{white-space:nowrap !important;}
+}
+
+/* ---------- Dark mode: Apple Mail, iOS Mail, Outlook for Mac/iOS/Android, Thunderbird, Hey ---------- */
+@media (prefers-color-scheme: dark){
+  .dm-bg-page{background-color:#18222E !important;}
+  .dm-bg-card{background-color:#222E3C !important;border-color:#34424F !important;}
+  .dm-bg-mast{background-color:#33271D !important;}
+  .dm-bg-callout,.dm-bg-band{background-color:#1B3836 !important;}
+  .dm-bg-tag{background-color:#2C2A48 !important;color:#E9E7F6 !important;}
+  .dm-bg-pill{background-color:#222E3C !important;color:#86CFC6 !important;}
+  .dm-bg-foot{background-color:#10171F !important;}
+  .dm-text,.dm-text a{color:#FAF7F2 !important;}
+  .dm-muted{color:#B9C3CE !important;}
+  .dm-link,.dm-link a{color:#86CFC6 !important;}
+  .dm-warm{color:#F4B26B !important;}
+  .dm-label{color:#9ED8CF !important;}
+  .dm-rule{border-color:#5A4532 !important;}
+  .btn-primary-td{background-color:#86CFC6 !important;}
+  .btn-primary{background-color:#86CFC6 !important;color:#18222E !important;}
+  .btn-secondary{background-color:transparent !important;color:#86CFC6 !important;border-color:#86CFC6 !important;}
+  .st-steady{background-color:#1D3A2C !important;color:#A8DDBF !important;}
+  .st-watch{background-color:#3B2E14 !important;color:#F2C46B !important;}
+  .st-shift{background-color:#432520 !important;color:#F4A897 !important;}
+  .logo-light{display:none !important;}
+  .logo-dark-wrap{display:block !important;max-height:none !important;overflow:visible !important;}
+}
+
+/* ---------- Outlook.com / Outlook apps dark mode (they rewrite colours and tag elements) ---------- */
+[data-ogsb] .dm-bg-page{background-color:#18222E !important;}
+[data-ogsb] .dm-bg-card{background-color:#222E3C !important;border-color:#34424F !important;}
+[data-ogsb] .dm-bg-mast{background-color:#33271D !important;}
+[data-ogsb] .dm-bg-callout,[data-ogsb] .dm-bg-band{background-color:#1B3836 !important;}
+[data-ogsb] .dm-bg-tag{background-color:#2C2A48 !important;}
+[data-ogsb] .dm-bg-pill{background-color:#222E3C !important;}
+[data-ogsb] .dm-bg-foot{background-color:#10171F !important;}
+[data-ogsb] .btn-primary-td,[data-ogsb] .btn-primary{background-color:#86CFC6 !important;}
+[data-ogsb] .st-steady{background-color:#1D3A2C !important;}
+[data-ogsb] .st-watch{background-color:#3B2E14 !important;}
+[data-ogsb] .st-shift{background-color:#432520 !important;}
+[data-ogsc] .dm-text,[data-ogsc] .dm-text a{color:#FAF7F2 !important;}
+[data-ogsc] .dm-muted{color:#B9C3CE !important;}
+[data-ogsc] .dm-link,[data-ogsc] .dm-link a{color:#86CFC6 !important;}
+[data-ogsc] .dm-warm{color:#F4B26B !important;}
+[data-ogsc] .dm-label{color:#9ED8CF !important;}
+[data-ogsc] .dm-bg-tag{color:#E9E7F6 !important;}
+[data-ogsc] .dm-bg-pill{color:#86CFC6 !important;}
+[data-ogsc] .btn-primary{color:#18222E !important;}
+[data-ogsc] .btn-secondary{color:#86CFC6 !important;border-color:#86CFC6 !important;}
+[data-ogsc] .st-steady{color:#A8DDBF !important;}
+[data-ogsc] .st-watch{color:#F2C46B !important;}
+[data-ogsc] .st-shift{color:#F4A897 !important;}
+[data-ogsc] .logo-light{display:none !important;}
+[data-ogsc] .logo-dark-wrap{display:block !important;max-height:none !important;overflow:visible !important;}
+</style>
+</head>
+<body id="body" class="body dm-bg-page" style="margin:0;padding:0;background-color:#FAF7F2;word-spacing:normal;">
+<div role="article" aria-roledescription="email" aria-label="The Sunday Brief, [[issue_date]]" lang="en" dir="ltr" class="dm-bg-page" style="background-color:#FAF7F2;">
+
+<!-- Preheader (inbox preview text). Hidden everywhere; the padding stops body copy leaking into the preview. -->
+<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;color:#FAF7F2;">[[preheader]]</div>
+<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;</div>
+
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-page" style="background-color:#FAF7F2;">
+<tr><td align="center" style="padding:0;">
+<!--[if mso]><table role="presentation" align="center" width="600" border="0" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+<table role="presentation" class="container" align="center" width="600" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;margin:0 auto;">
+
+<!-- ===== HEADER: logo + read online ===== -->
+<tr><td class="px" style="padding:24px 32px 20px 32px;">
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr>
+    <td valign="middle" style="padding:0;">
+      <a href="[[site_url]]" style="text-decoration:none;display:inline-block;">
+        <img class="logo logo-light" src="https://humainlogic.com/email/logo@2x.png" width="229" height="60" alt="HumAIn Logic" style="display:block;width:229px;max-width:229px;height:auto;border:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;color:#1F2A37;">
+        <!--[if !mso]><!--><div class="logo-dark-wrap" style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+          <img class="logo" src="https://humainlogic.com/email/logo-dark@2x.png" width="229" height="60" alt="HumAIn Logic" style="display:block;width:229px;max-width:229px;height:auto;border:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;color:#FAF7F2;">
+        </div><!--<![endif]-->
+      </a>
+    </td>
+    <td align="right" valign="middle" style="padding:0 0 0 12px;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;">
+      <a href="[[read_online_url]]" class="dm-link" style="color:#1F6F6B;text-decoration:underline;font-weight:600;">Read online</a>
+    </td>
+  </tr></table>
+</td></tr>
+
+<!-- ===== MASTHEAD / WARM INTRO ===== -->
+<tr><td class="px" style="padding:0 32px;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-mast" style="border-collapse:separate;background-color:#FDEBD6;border-radius:20px;">
+<tr><td class="card-pad" style="padding:32px 32px 28px 32px;">
+  <p class="dm-warm" style="margin:0 0 8px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#9A4A1E;">The Sunday Brief &middot; [[issue_date]]</p>
+  <h1 class="ff-h h1 dm-text" style="margin:0 0 10px 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:36px;line-height:42px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.015em;color:#1F2A37;font-variation-settings:'SOFT' 100;">[[greeting]]</h1>
+  <p class="lead dm-text" style="margin:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:18px;line-height:28px;mso-line-height-rule:exactly;color:#1F2A37;">[[intro]]</p>
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-top:20px;">
+  <tr><td class="dm-rule" style="border-top:1px solid #F1CFA8;padding:16px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:15px;line-height:24px;mso-line-height-rule:exactly;color:#1F2A37;">
+    <span class="dm-warm" style="color:#9A4A1E;font-weight:600;">In this issue:</span>
+    <span class="dm-text" style="color:#1F2A37;">3 AI changes &middot; a tool to try ([[tool_name]]) &middot; a job outlook ([[job_name]])</span>
+  </td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<tr><td aria-hidden="true" height="40" style="height:40px;font-size:0;line-height:0;mso-line-height-rule:exactly;">&nbsp;</td></tr>
+
+<!-- ===== NEWS SECTION HEADING ===== -->
+<tr><td class="px" style="padding:0 32px 16px 32px;">
+  <p class="dm-link" style="margin:0 0 8px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#1F6F6B;">AI news</p>
+  <h2 class="ff-h h2 dm-text" style="margin:0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:28px;line-height:34px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.015em;color:#1F2A37;font-variation-settings:'SOFT' 100;">[[news_heading]]</h2>
+</td></tr>
+
+<!-- ===== NEWS ITEM 1 ===== -->
+<tr><td class="px" style="padding:0 32px;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-card" style="border-collapse:separate;background-color:#FFFFFF;border:1px solid #E6E0D6;border-radius:20px;">
+<tr><td class="card-pad" style="padding:24px 28px 26px 28px;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr>
+    <td class="dm-bg-tag" style="background-color:#E9E7F6;border-radius:999px;padding:4px 12px;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#1F2A37;">[[news_1_source]]</td>
+  </tr></table>
+  <h3 class="ff-h h3" style="margin:14px 0 8px 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:22px;line-height:29px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.01em;color:#1F2A37;font-variation-settings:'SOFT' 100;"><a href="[[news_1_url]]" class="dm-text" style="color:#1F2A37;text-decoration:none;">[[news_1_title]]</a></h3>
+  <p class="dm-muted" style="margin:0 0 16px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#56616F;">[[news_1_summary]]</p>
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-callout" style="border-collapse:separate;background-color:#DDEDE4;border-radius:12px;">
+  <tr><td style="padding:14px 18px 16px 18px;">
+    <p class="dm-label" style="margin:0 0 4px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#17575A;">Why it matters to you</p>
+    <p class="dm-text" style="margin:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#1F2A37;">[[news_1_why]]</p>
+  </td></tr></table>
+  <p style="margin:16px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;mso-line-height-rule:exactly;font-weight:600;"><a href="[[news_1_url]]" class="dm-link" style="color:#1F6F6B;text-decoration:underline;">Read it at [[news_1_publisher]]</a><span class="dm-link" aria-hidden="true" style="color:#1F6F6B;">&nbsp;&rarr;</span></p>
+</td></tr></table>
+</td></tr>
+<tr><td aria-hidden="true" height="16" style="height:16px;font-size:0;line-height:0;mso-line-height-rule:exactly;">&nbsp;</td></tr>
+
+<!-- ===== NEWS ITEM 2 ===== -->
+<tr><td class="px" style="padding:0 32px;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-card" style="border-collapse:separate;background-color:#FFFFFF;border:1px solid #E6E0D6;border-radius:20px;">
+<tr><td class="card-pad" style="padding:24px 28px 26px 28px;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr>
+    <td class="dm-bg-tag" style="background-color:#E9E7F6;border-radius:999px;padding:4px 12px;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#1F2A37;">[[news_2_source]]</td>
+  </tr></table>
+  <h3 class="ff-h h3" style="margin:14px 0 8px 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:22px;line-height:29px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.01em;color:#1F2A37;font-variation-settings:'SOFT' 100;"><a href="[[news_2_url]]" class="dm-text" style="color:#1F2A37;text-decoration:none;">[[news_2_title]]</a></h3>
+  <p class="dm-muted" style="margin:0 0 16px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#56616F;">[[news_2_summary]]</p>
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-callout" style="border-collapse:separate;background-color:#DDEDE4;border-radius:12px;">
+  <tr><td style="padding:14px 18px 16px 18px;">
+    <p class="dm-label" style="margin:0 0 4px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#17575A;">Why it matters to you</p>
+    <p class="dm-text" style="margin:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#1F2A37;">[[news_2_why]]</p>
+  </td></tr></table>
+  <p style="margin:16px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;mso-line-height-rule:exactly;font-weight:600;"><a href="[[news_2_url]]" class="dm-link" style="color:#1F6F6B;text-decoration:underline;">Read it at [[news_2_publisher]]</a><span class="dm-link" aria-hidden="true" style="color:#1F6F6B;">&nbsp;&rarr;</span></p>
+</td></tr></table>
+</td></tr>
+<tr><td aria-hidden="true" height="16" style="height:16px;font-size:0;line-height:0;mso-line-height-rule:exactly;">&nbsp;</td></tr>
+
+<!-- ===== NEWS ITEM 3 ===== -->
+<tr><td class="px" style="padding:0 32px;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-card" style="border-collapse:separate;background-color:#FFFFFF;border:1px solid #E6E0D6;border-radius:20px;">
+<tr><td class="card-pad" style="padding:24px 28px 26px 28px;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr>
+    <td class="dm-bg-tag" style="background-color:#E9E7F6;border-radius:999px;padding:4px 12px;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#1F2A37;">[[news_3_source]]</td>
+  </tr></table>
+  <h3 class="ff-h h3" style="margin:14px 0 8px 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:22px;line-height:29px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.01em;color:#1F2A37;font-variation-settings:'SOFT' 100;"><a href="[[news_3_url]]" class="dm-text" style="color:#1F2A37;text-decoration:none;">[[news_3_title]]</a></h3>
+  <p class="dm-muted" style="margin:0 0 16px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#56616F;">[[news_3_summary]]</p>
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-callout" style="border-collapse:separate;background-color:#DDEDE4;border-radius:12px;">
+  <tr><td style="padding:14px 18px 16px 18px;">
+    <p class="dm-label" style="margin:0 0 4px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#17575A;">Why it matters to you</p>
+    <p class="dm-text" style="margin:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:24px;mso-line-height-rule:exactly;color:#1F2A37;">[[news_3_why]]</p>
+  </td></tr></table>
+  <p style="margin:16px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:15px;line-height:22px;mso-line-height-rule:exactly;font-weight:600;"><a href="[[news_3_url]]" class="dm-link" style="color:#1F6F6B;text-decoration:underline;">Read it at [[news_3_publisher]]</a><span class="dm-link" aria-hidden="true" style="color:#1F6F6B;">&nbsp;&rarr;</span></p>
+</td></tr></table>
+</td></tr>
+
+<tr><td class="px" align="left" style="padding:20px 32px 0 32px;">
+  <table role="presentation" class="btn-table" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr><td align="center" class="" style="border-radius:12px;"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="[[news_more_url]]" style="height:48px;v-text-anchor:middle;width:220px;" arcsize="25%" strokecolor="#1F6F6B" strokeweight="2px" fillcolor="#FAF7F2"><w:anchorlock/><center style="color:#1F6F6B;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;">More calm AI news &rarr;</center></v:roundrect><![endif]--><!--[if !mso]><!--><a href="[[news_more_url]]" class="btn-a btn-secondary" style="background-color:#FAF7F2;border:2px solid #1F6F6B;border-radius:12px;color:#1F6F6B;display:inline-block;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;font-weight:600;line-height:24px;mso-line-height-rule:exactly;padding:10px 22px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;">More calm AI news &rarr;</a><!--<![endif]--></td></tr></table>
+</td></tr>
+
+<tr><td aria-hidden="true" height="40" style="height:40px;font-size:0;line-height:0;mso-line-height-rule:exactly;">&nbsp;</td></tr>
+
+<!-- ===== ONE TOOL TO TRY ===== -->
+<tr><td class="px" style="padding:0 32px;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-card" style="border-collapse:separate;background-color:#FFFFFF;border:1px solid #E6E0D6;border-radius:20px;">
+<tr><td class="band-pad dm-bg-band" style="padding:24px 28px 20px 28px;background-color:#DDEDE4;border-radius:19px 19px 0 0;">
+  <p class="dm-label" style="margin:0 0 8px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#17575A;">One tool to try</p>
+  <h2 class="ff-h h2 dm-text" style="margin:0 0 12px 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:28px;line-height:34px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.015em;color:#1F2A37;font-variation-settings:'SOFT' 100;">[[tool_name]]</h2>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr>
+    <td class="dm-bg-pill" style="background-color:#FFFFFF;border-radius:999px;padding:4px 12px;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:#17575A;">[[tool_pricing]]</td>
+  </tr></table>
+</td></tr>
+<tr><td class="card-pad" style="padding:20px 28px 28px 28px;">
+  <p class="dm-text" style="margin:0 0 20px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:17px;line-height:27px;mso-line-height-rule:exactly;color:#1F2A37;">[[tool_summary]]</p>
+  <table role="presentation" class="btn-table" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr><td align="center" class="btn-primary-td" style="background-color:#1F6F6B;border-radius:12px;"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="[[tool_url]]" style="height:48px;v-text-anchor:middle;width:340px;" arcsize="25%" stroke="f" fillcolor="#1F6F6B"><w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;">[[tool_cta_label]] &rarr;</center></v:roundrect><![endif]--><!--[if !mso]><!--><a href="[[tool_url]]" class="btn-a btn-primary" style="background-color:#1F6F6B;border-radius:12px;color:#FFFFFF;display:inline-block;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;font-weight:600;line-height:24px;mso-line-height-rule:exactly;padding:12px 24px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;"><span class="gm-screen"><span class="gm-diff">[[tool_cta_label]] &rarr;</span></span></a><!--<![endif]--></td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<tr><td aria-hidden="true" height="24" style="height:24px;font-size:0;line-height:0;mso-line-height-rule:exactly;">&nbsp;</td></tr>
+
+<!-- ===== JOB TRACKER SPOTLIGHT ===== -->
+<tr><td class="px" style="padding:0 32px;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-card" style="border-collapse:separate;background-color:#FFFFFF;border:1px solid #E6E0D6;border-radius:20px;">
+<tr><td class="card-pad" style="padding:24px 28px 28px 28px;">
+  <p class="dm-link" style="margin:0 0 8px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#1F6F6B;">Job tracker spotlight</p>
+  <h2 class="ff-h h2 dm-text" style="margin:0 0 12px 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:28px;line-height:34px;mso-line-height-rule:exactly;font-weight:600;letter-spacing:-0.015em;color:#1F2A37;font-variation-settings:'SOFT' 100;">[[job_name]]</h2>
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr>
+    <td class="dm-muted" style="padding:0 10px 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:15px;line-height:20px;mso-line-height-rule:exactly;color:#56616F;">Our outlook:</td>
+    <td class="st-[[job_outlook_key]]" style="background-color:[[job_outlook_bg]];border-radius:999px;padding:4px 12px;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;mso-line-height-rule:exactly;font-weight:600;color:[[job_outlook_fg]];"><span aria-hidden="true">[[job_outlook_icon]]&nbsp;</span>[[job_outlook_label]]</td>
+  </tr></table>
+  <p class="dm-text" style="margin:16px 0 20px 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#1F2A37;">[[job_rationale]]</p>
+  <table role="presentation" class="btn-table" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;"><tr><td align="center" class="btn-primary-td" style="background-color:#1F6F6B;border-radius:12px;"><!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="[[job_url]]" style="height:48px;v-text-anchor:middle;width:230px;" arcsize="25%" stroke="f" fillcolor="#1F6F6B"><w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:bold;">[[job_cta_label]] &rarr;</center></v:roundrect><![endif]--><!--[if !mso]><!--><a href="[[job_url]]" class="btn-a btn-primary" style="background-color:#1F6F6B;border-radius:12px;color:#FFFFFF;display:inline-block;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;font-weight:600;line-height:24px;mso-line-height-rule:exactly;padding:12px 24px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;"><span class="gm-screen"><span class="gm-diff">[[job_cta_label]] &rarr;</span></span></a><!--<![endif]--></td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<tr><td aria-hidden="true" height="32" style="height:32px;font-size:0;line-height:0;mso-line-height-rule:exactly;">&nbsp;</td></tr>
+
+<!-- ===== SIGN-OFF ===== -->
+<tr><td class="px" style="padding:0 32px 32px 32px;">
+  <p class="dm-text" style="margin:0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;mso-line-height-rule:exactly;color:#1F2A37;">Until next week,</p>
+  <p class="ff-h dm-text" style="margin:2px 0 0 0;font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:20px;line-height:28px;mso-line-height-rule:exactly;font-weight:600;color:#1F2A37;font-variation-settings:'SOFT' 100;">HumAIn Logic</p>
+</td></tr>
+
+<!-- ===== FOOTER (Night; stays dark in every mode) ===== -->
+<tr><td style="padding:0;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" class="dm-bg-foot" style="border-collapse:separate;background-color:#18222E;border-radius:20px 20px 0 0;">
+<tr><td class="foot-pad" style="padding:32px 32px 36px 32px;">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr>
+    <td valign="middle" style="padding:0 12px 0 0;"><img src="https://humainlogic.com/email/mark@2x.png" width="32" height="32" alt="" style="display:block;width:32px;height:32px;border:0;"></td>
+    <td valign="middle" class="ff-h" style="font-family:'Fraunces',Georgia,'Times New Roman',serif;font-size:19px;line-height:24px;mso-line-height-rule:exactly;font-weight:600;color:#FAF7F2;font-variation-settings:'SOFT' 100;">Hum<span style="color:#F4B26B;">AI</span>n&nbsp;Logic</td>
+  </tr></table>
+  <p style="margin:16px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;mso-line-height-rule:exactly;color:#B9C3CE;">You&rsquo;re getting this because you signed up at <a href="[[site_url]]" style="color:#FAF7F2;text-decoration:underline;">humainlogic.com</a> and confirmed your email.</p>
+  <p style="margin:12px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:28px;mso-line-height-rule:exactly;font-weight:600;color:#B9C3CE;">
+    <a href="{{ unsubscribe_url }}" style="color:#FAF7F2;text-decoration:underline;white-space:nowrap;">Unsubscribe in one click</a>&nbsp; &middot; &nbsp;<a href="[[privacy_url]]" style="color:#FAF7F2;text-decoration:underline;white-space:nowrap;">Privacy notice</a>&nbsp; &middot; &nbsp;<a href="[[read_online_url]]" style="color:#FAF7F2;text-decoration:underline;white-space:nowrap;">Read online</a>
+  </p>
+  <p style="margin:12px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;mso-line-height-rule:exactly;color:#B9C3CE;">Questions or corrections? Reply to this email or write to <a href="mailto:[[contact_email]]" style="color:#FAF7F2;text-decoration:underline;">[[contact_email]]</a>.</p>
+  <p style="margin:16px 0 0 0;font-family:'Inter',Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;mso-line-height-rule:exactly;color:#B9C3CE;">HumAIn Logic &middot; <span style="color:#B9C3CE;text-decoration:none;">[[postal_address]]</span></p>
+</td></tr></table>
+</td></tr>
+
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td></tr>
+</table>
+</div>
+</body>
+</html>
