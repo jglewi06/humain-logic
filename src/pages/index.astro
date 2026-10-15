@@ -89,7 +89,13 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
     {featured ? (
     <div class="news">
       <article class="news-feature">
-        {(() => { const im = imageFor(featured); return <figure class={`news-media is-${im.kind}`}><img src={im.src} width="1200" height="675" loading="lazy" decoding="async" alt={im.alt} /><figcaption class="credit">{im.credit}</figcaption></figure>; })()}
+        <figure class="news-media is-photo">
+          <picture>
+            <source type="image/webp" srcset="/img/news/news-featured-640.webp 640w, /img/news/news-featured-1024.webp 1024w" sizes="(min-width:1296px) 627px, (min-width:768px) calc(55.6vw - 80px), calc(100vw - 66px)" />
+            <img src="/img/news/news-featured-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A man reads the news on a laptop at a sunny kitchen table, with a coffee mug, a small plant and a newspaper beside him." />
+          </picture>
+          <figcaption class="credit">Image: HumAIn Logic</figcaption>
+        </figure>
         <div class="body">
           <span class={`tag ${featured.category}`} style="align-self:flex-start">{NEWS_CATS[featured.category]}</span>
           <h3><a href={featured.link} rel="noopener" style="color:inherit;text-decoration:none">{featured.title}</a></h3>

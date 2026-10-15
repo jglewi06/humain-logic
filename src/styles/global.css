@@ -624,3 +624,14 @@ html,body{overflow-x:clip}
   .news-item p,.news-item .meta{grid-column:1 / -1}
   .news-media .credit{right:var(--space-2);bottom:var(--space-2);padding:5px 8px}
 }
+.news-media picture{display:contents}
+/* /news list: topic tile on the right of each card (same sizes as the homepage list, §5.1) */
+.news-card.has-media{display:grid;grid-template-columns:minmax(0,1fr) 128px;column-gap:var(--space-4);row-gap:var(--space-2);align-items:start}
+.news-card.has-media > *:not(.news-media){grid-column:1}
+.news-card.has-media .news-media{grid-column:2;grid-row:1 / span 4;width:128px;aspect-ratio:4/3}
+.news-card.has-media .tag{justify-self:start}
+@media (max-width: 767px){
+  .news-card.has-media{grid-template-columns:minmax(0,1fr) 96px;column-gap:var(--space-3)}
+  .news-card.has-media .news-media{width:96px;grid-row:1 / span 2}
+  .news-card.has-media > p:not(.news-media),.news-card.has-media > .meta:not(.news-media),.news-card.has-media > .ai-note:not(.news-media){grid-column:1 / -1}
+}

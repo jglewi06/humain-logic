@@ -1,6 +1,7 @@
 ---
 import news from '../data/news.json';
 import { NEWS_CATS, fmtDate } from '../lib/site';
+import { imageFor } from '../lib/news-images.mjs';
 const { category } = Astro.props;
 const items = news.items.filter(i => !category || i.category === category);
 const cats = Object.keys(NEWS_CATS).filter(c => news.items.some(i => i.category === c));
@@ -19,11 +20,12 @@ const cats = Object.keys(NEWS_CATS).filter(c => news.items.some(i => i.category 
       {items.length === 0 && <p class="placeholder">No news in this category this week. <a href="/news">See all news</a></p>}
       <ol class="news-feed" style="list-style:none;padding:0;margin:0" data-feed>
         {items.map((n, i) => (
-          <li hidden={i >= 20}><article class="news-card">
+          <li hidden={i >= 20}><article class="news-card has-media">
+            {(() => { const im = imageFor(n); return <figure class={`news-media is-${im.kind}`}><img src={im.src} width="128" height="96" loading="lazy" decoding="async" alt={im.alt} /></figure>; })()}
             <span class={`tag ${n.category}`} style="align-self:flex-start">{NEWS_CATS[n.category]}</span>
             <h2><a href={n.link} rel="noopener">{n.title}</a></h2>
             {n.summary && <p>{n.summary}</p>}
-            <span class="meta">{n.source}{n.also?.length ? ` + ${n.also.length} more source${n.also.length > 1 ? 's' : ''}` : ''} · <time datetime={n.date}>{fmtDate(n.date)}</time></span>
+            <span class="meta">{n.source}{n.also?.length ? ` + ${n.also.length} more source${n.also.length > 1 ? 's' : ''}` : ''} · <time datetime={n.date}>{fmtDate(n.date)}</time> · Image: HumAIn Logic</span>
             <span class="ai-note">Short excerpt from the publisher's feed.</span>
           </article></li>))}
       </ol>
