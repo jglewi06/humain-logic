@@ -28,3 +28,8 @@ const TINTS = [['var(--color-sage)', 'var(--color-teal-deep)'], ['var(--color-ap
 export const tint = (s: string) => TINTS[[...s].reduce((a, c) => a + c.charCodeAt(0), 0) % 3];
 export const initials = (n: string) => n.replace(/[^A-Za-z0-9 ]/g, '').split(' ').filter(Boolean).map(w => w[0]).join('').slice(0, 2).padEnd(2, n[1] || '').replace(/^(.)(.)$/, (m, a, b) => a.toUpperCase() + b.toLowerCase());
 export const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' });
+
+export const fmtMonthDay = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+/** Pricing status line: "Last verified Oct 15, 2026" or "Pricing unconfirmed" */
+export const priceStatus = (p: any) => p?.verified ? `Last verified ${fmtMonthDay(p.verified_on)}` : p?.verification_note !== undefined ? 'Pricing unconfirmed' : 'Pricing not checked yet';
+export const freeText = (p: any) => p?.free_tier === true ? 'Free plan: yes' : p?.free_tier === false ? 'Free plan: no' : 'Free plan: unclear';

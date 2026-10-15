@@ -15,7 +15,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Paid plans: Go $8/month, Plus $20/month, Pro from $100/month. Business and Enterprise plans for teams.",
+   "starting_paid_price": "$8/month (Go)",
+   "pricing_url": "https://chatgpt.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "ChatGPT is a general-purpose AI chat assistant from OpenAI. You type (or speak) a question or request and it replies in plain language, helping with emails, summaries, brainstorming, explanations and more. It can also read files you upload, create images and search the web.",
+   "who_its_for": "Anyone who wants an all-round helper for writing, questions and everyday tasks, from students to small-business owners.",
+   "pros": [
+    "Very versatile: one tool covers writing, explaining, planning and summarizing",
+    "Useful free plan for everyday chats",
+    "Works on web, iPhone and Android with voice chat",
+    "Large community, so tutorials and tips are easy to find"
+   ],
+   "cons": [
+    "Can state wrong facts confidently, so double-check important answers",
+    "The most capable models and higher limits need a paid plan",
+    "Avoid pasting private or sensitive information"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -39,7 +61,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $20/month billed monthly ($17/month with annual billing, $200 up front). Max from $100/month. Team and Enterprise plans available.",
+   "starting_paid_price": "$17/month billed annually or $20 monthly (Pro)",
+   "pricing_url": "https://claude.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Claude is an AI assistant made by Anthropic. It is especially good at reading and summarizing long documents, writing clear reports and working through files you share with it. You chat with it on the web, desktop or phone.",
+   "who_its_for": "People who work with long documents, reports or detailed writing, and anyone who wants a careful, thoughtful writing partner.",
+   "pros": [
+    "Handles long documents and files well",
+    "Writing tends to sound natural and well organized",
+    "Free plan includes web search and file creation",
+    "Paid plans add connections to other apps and tools"
+   ],
+   "cons": [
+    "Free plan has tighter usage limits than paid tiers",
+    "Like all chatbots, it can make mistakes and should be fact-checked",
+    "Heavy daily use pushes you toward the pricier Max plan"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -63,7 +107,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free with a Google Account. Google AI Plus $4.99/month, Google AI Pro $19.99/month, Google AI Ultra from $99.99/month (US prices).",
+   "starting_paid_price": "$4.99/month (Google AI Plus)",
+   "pricing_url": "https://gemini.google/subscriptions/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "US prices shown on the page."
+  },
+  "details": {
+   "what_it_does": "Gemini is Google's AI assistant. It answers questions, helps write and plan, and can work with your Google apps such as Gmail, Drive and Docs if you allow it. Paid Google AI plans add more powerful models, video generation and higher limits.",
+   "who_its_for": "People who already use Google services (Gmail, Docs, Android) and want an assistant that fits into them.",
+   "pros": [
+    "Free with a Google account",
+    "Connects to Gmail, Drive, Docs and other Google apps",
+    "Low-cost entry plan (Google AI Plus) for more usage",
+    "Available on Android, iPhone and the web"
+   ],
+   "cons": [
+    "Best features depend on giving it access to your Google data",
+    "Plan names and tiers change often, which can be confusing",
+    "Answers still need checking for accuracy"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -86,7 +152,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Copilot app is free. Copilot inside Microsoft 365 apps comes with Microsoft 365 Personal ($9.99/month or $99.99/year), Family ($12.99/month or $129.99/year) or Premium ($19.99/month or $199.99/year).",
+   "starting_paid_price": "$9.99/month (Microsoft 365 Personal)",
+   "pricing_url": "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "The consumer Copilot pricing URL returned 404; prices verified on Microsoft's official Microsoft 365 comparison page."
+  },
+  "details": {
+   "what_it_does": "Microsoft Copilot is Microsoft's AI assistant for chatting, answering questions, writing and creating images. The free app works on the web, Windows and phones, and Copilot features also appear inside Word, Excel, PowerPoint and Outlook with a Microsoft 365 subscription.",
+   "who_its_for": "Windows and Microsoft 365 users who want AI help inside the apps they already use for work and home.",
+   "pros": [
+    "Free to use in the Copilot app and on the web",
+    "Built into Windows and Microsoft 365 apps like Word and Excel",
+    "Microsoft 365 plans bundle Copilot with Office apps and cloud storage",
+    "Familiar Microsoft account sign-in"
+   ],
+   "cons": [
+    "The most useful Office integrations need a paid Microsoft 365 plan",
+    "Many similarly named 'Copilot' products can be confusing",
+    "Outputs should still be reviewed before you rely on them"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -109,7 +197,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $17/month and Max $167/month when billed annually.",
+   "starting_paid_price": "$17/month billed annually (Pro)",
+   "pricing_url": "https://www.perplexity.ai/pro",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Monthly-billing price not shown in the page text we captured."
+  },
+  "details": {
+   "what_it_does": "Perplexity is an AI-powered answer engine. Instead of a list of links, it gives you a written answer with numbered sources you can click to check. It is handy for research, comparing options and catching up on topics quickly.",
+   "who_its_for": "Curious people, students and professionals who want quick answers with sources they can verify.",
+   "pros": [
+    "Shows its sources, so checking facts is easy",
+    "Free to use for everyday searches",
+    "Good for research and comparing products or ideas",
+    "Pro plan lets you pick between several top AI models"
+   ],
+   "cons": [
+    "Summaries can still misread or oversimplify a source",
+    "Advanced features and higher limits need a paid plan",
+    "Not every source it cites is equally trustworthy"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -132,7 +242,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free tier. Paid access is now 'The X Subscription': Plus $8/month, Premium $30/month (includes SuperGrok benefits, Cursor Pro and X Premium+), Super $100/month, Ultra $200/month.",
+   "starting_paid_price": "$8/month (X Subscription Plus)",
+   "pricing_url": "https://x.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "grok.com/plans showed no prices to logged-out visitors; prices verified on x.ai/pricing. Bundle launched Oct 2026 (TechCrunch, 2026-10-13); existing SuperGrok plans continue."
+  },
+  "details": {
+   "what_it_does": "Grok is an AI assistant made by SpaceXSI (formerly xAI). It chats, searches, reasons through problems, and can create images and video. It is available on the web, iPhone, Android and inside X, and its paid tiers are now sold as part of 'The X Subscription'.",
+   "who_its_for": "People who want an all-purpose assistant with up-to-date answers, especially if they already use X.",
+   "pros": [
+    "Free tier with daily access",
+    "Can draw on current information and the X platform",
+    "Image and video creation built in",
+    "One paid subscription also covers X Premium features and Cursor"
+   ],
+   "cons": [
+    "Pricing recently changed to a bundled subscription, which can be confusing",
+    "Higher-end models require Premium or above",
+    "As with any chatbot, double-check facts and sources"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -155,7 +287,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $14.99/month (students $5.99/month), Team $24.99/user/month, Enterprise custom. Prices exclude tax.",
+   "starting_paid_price": "$14.99/month (Pro)",
+   "pricing_url": "https://mistral.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Le Chat is the AI assistant from Mistral AI, a French company. It can chat, search the web, write, generate images, make spreadsheets and slides, and help with coding. It is available on the web and on mobile.",
+   "who_its_for": "People who want a capable assistant from a European provider, including students who qualify for a discount.",
+   "pros": [
+    "Free plan for everyday tasks",
+    "European company, which some users prefer for data reasons",
+    "Student discount on the Pro plan",
+    "Over 100 connectors to other apps"
+   ],
+   "cons": [
+    "Smaller community and fewer tutorials than the biggest assistants",
+    "Free plan limits messages and searches",
+    "Some features are aimed at developers"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -178,7 +332,29 @@
   ],
   "pricing": {
    "band": "free",
-   "label": "Free"
+   "label": "Free",
+   "free_tier": true,
+   "summary": "Pi appears free to use (the site offers free sign-up). No pricing page found.",
+   "starting_paid_price": null,
+   "pricing_url": "https://pi.ai",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "No official pricing page exists; we could not confirm whether any paid tier exists."
+  },
+  "details": {
+   "what_it_does": "Pi is a friendly, conversational AI from Inflection AI. It is designed to talk things through with you, offer encouragement, help you prepare for a tough conversation or plan your day, rather than to be a heavy-duty work tool.",
+   "who_its_for": "People who want a gentle, supportive chat companion for thinking out loud and everyday questions.",
+   "pros": [
+    "Warm, easy-going conversation style",
+    "Free to use with no complicated setup",
+    "Good for talking through ideas or feelings",
+    "Simple, uncluttered app"
+   ],
+   "cons": [
+    "Not built for long documents, files or business tasks",
+    "Not a substitute for professional advice or therapy",
+    "Fewer features than general assistants"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -201,7 +377,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $12/month (USD). Enterprise pricing via sales. Education discounts available.",
+   "starting_paid_price": "$12/month (Pro)",
+   "pricing_url": "https://www.grammarly.com/plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page shows '$12 USD' for Pro; billing period (monthly vs annual) is confirmed at checkout."
+  },
+  "details": {
+   "what_it_does": "Grammarly checks your writing for spelling, grammar and clarity as you type in your browser, email and documents. It can also adjust your tone, rewrite whole sentences and help you draft with AI prompts. It is now part of the Superhuman suite of products.",
+   "who_its_for": "Anyone who writes emails, reports, essays or posts and wants to catch mistakes and sound clearer.",
+   "pros": [
+    "Works almost everywhere you type (browser, Word, email, desktop)",
+    "Free plan catches spelling and grammar mistakes",
+    "Pro plan rewrites full sentences and adjusts tone",
+    "Discounts for students and educational institutions"
+   ],
+   "cons": [
+    "Suggestions can flatten your personal voice if accepted blindly",
+    "Best rewriting features require Pro",
+    "It reads what you type, so check your organization's privacy rules"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -224,7 +422,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Premium $9.95/month billed annually. Team plan available.",
+   "starting_paid_price": "$9.95/month billed annually (Premium)",
+   "pricing_url": "https://quillbot.com/premium",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Plain HTTP fetch was blocked (403); verified by loading the page in a browser."
+  },
+  "details": {
+   "what_it_does": "QuillBot is a writing helper best known for paraphrasing: it rewrites a sentence or paragraph in different words. It also checks grammar, summarizes text, generates citations and includes an AI detector.",
+   "who_its_for": "Students, non-native English writers and anyone who wants help rewording or tidying up text.",
+   "pros": [
+    "Free plan for short paraphrasing and grammar fixes",
+    "Several rewriting modes for different tones",
+    "Handy summarizer and citation tools",
+    "Affordable Premium plan"
+   ],
+   "cons": [
+    "Free plan limits paraphrasing to short passages",
+    "Paraphrasing someone else's work is not the same as original writing; cite sources",
+    "Results still need a human read-through"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -247,7 +467,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; 7-day free trial. Pro $69/seat/month billed monthly or $59/seat/month billed yearly. Business plan via sales.",
+   "starting_paid_price": "$59/seat/month billed yearly (Pro)",
+   "pricing_url": "https://www.jasper.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Jasper is an AI writing platform for marketing teams. It helps create on-brand blog posts, ads, emails and campaign content, keeping your brand voice and style guidelines consistent across everything you produce.",
+   "who_its_for": "Marketing teams and agencies that produce a lot of content and need to keep it on-brand.",
+   "pros": [
+    "Built specifically for marketing work",
+    "Brand voice and style controls keep content consistent",
+    "Supports multiple brands and team collaboration",
+    "7-day free trial to test it"
+   ],
+   "cons": [
+    "No free plan; it is a paid business tool",
+    "More than a casual user needs",
+    "Still requires human editing and fact-checking"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -269,8 +511,30 @@
    "automate-marketing-workflows"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Chat plan $29/month billed monthly or $24/month billed annually ($288/year), up to 5 seats. Growth $1,000/month, Expansion $2,000/month, Scale $3,000/month (billed annually).",
+   "starting_paid_price": "$24/month billed annually (Chat)",
+   "pricing_url": "https://www.copy.ai/prices",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page offers 'Try for free' but lists no free plan; free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Copy.ai is an AI platform for sales and marketing teams. It offers an AI chat workspace with access to several leading AI models and 'workflows' that automate repeat tasks like writing outreach emails or product descriptions in bulk.",
+   "who_its_for": "Small to large sales and marketing teams that want to automate content and go-to-market tasks.",
+   "pros": [
+    "Chat plan includes access to models from OpenAI, Anthropic and Google",
+    "Workflows can automate repetitive content at scale",
+    "Entry plan covers up to 5 seats",
+    "Option to try before buying"
+   ],
+   "cons": [
+    "Higher tiers are expensive and aimed at larger companies",
+    "Can be more than a solo user needs",
+    "Bulk content still needs quality checks"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -291,8 +555,30 @@
    "write-seo-articles"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Starter $79/month, Basic $199/month, Growth $399/month (all billed annually). Enterprise custom.",
+   "starting_paid_price": "$79/month billed annually (Starter)",
+   "pricing_url": "https://writesonic.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page says 'Start free. No credit card needed' but lists no free plan; free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Writesonic has evolved into a tool for 'AI search visibility': it tracks how your brand appears in answers from ChatGPT, Gemini and Google AI Overviews, and helps fix gaps with AI-written articles and site audits. It is now aimed more at marketing teams than at casual writers.",
+   "who_its_for": "Businesses and marketers who care about being found in AI chat answers and search results.",
+   "pros": [
+    "Tracks brand mentions across major AI assistants",
+    "Includes AI article writing and site audits",
+    "Start without a credit card",
+    "Clear tiers that scale with your needs"
+   ],
+   "cons": [
+    "Pricing is aimed at businesses, not casual writers",
+    "Its focus has shifted away from simple copywriting",
+    "AI visibility metrics are still a new and evolving field"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -315,7 +601,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "Free trial, no credit card. Hobby & Student $10/month, Professional $22/month, Max $44/month. Yearly billing saves up to 50%.",
+   "starting_paid_price": "$10/month (Hobby & Student)",
+   "pricing_url": "https://www.sudowrite.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page has a monthly/yearly toggle; billing basis of the displayed prices was not confirmed."
+  },
+  "details": {
+   "what_it_does": "Sudowrite is an AI writing partner made for fiction. It helps novelists and screenwriters brainstorm, expand scenes, describe settings, rewrite passages and get feedback on their drafts, using AI models tuned for storytelling.",
+   "who_its_for": "Fiction writers, from hobbyists and students to published authors.",
+   "pros": [
+    "Designed specifically for creative writing",
+    "Feedback tools for developmental and line edits",
+    "Free trial with no credit card",
+    "Unused credits roll over on some plans"
+   ],
+   "cons": [
+    "Not useful for business or factual writing",
+    "Credit-based limits take some getting used to",
+    "Some writers worry about AI shaping their style too much"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -338,7 +646,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Basic plan. Advanced $6.99/month ($4.89/month billed annually). Unlimited $9.99/month ($6.99/month billed annually).",
+   "starting_paid_price": "$4.89/month billed annually (Advanced)",
+   "pricing_url": "https://www.wordtune.com/plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Wordtune suggests different ways to say what you have written: shorter, more formal, more casual or clearer. It also summarizes articles and documents and checks spelling and grammar.",
+   "who_its_for": "People who know what they want to say but want help saying it better, including non-native English writers.",
+   "pros": [
+    "Free plan with daily rewrites and unlimited spelling and grammar checks",
+    "Simple to use inside your browser",
+    "Summarizes long articles",
+    "Low-cost paid plans"
+   ],
+   "cons": [
+    "Free plan limits daily rewrites",
+    "Less powerful than full AI assistants for drafting from scratch",
+    "Suggestions should be read, not accepted blindly"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -360,8 +690,30 @@
    "write-a-document"
   ],
   "pricing": {
-   "band": "paid",
-   "label": "Paid"
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free $0 and Plus $10/member/month include an AI trial. Full Notion AI is in Business at $20/member/month. Custom Agents: $10 per 1,000 Notion credits after trial.",
+   "starting_paid_price": "$20/member/month (Business, includes Notion AI)",
+   "pricing_url": "https://www.notion.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Prices shown as monthly; yearly billing saves up to 20%."
+  },
+  "details": {
+   "what_it_does": "Notion AI is built into Notion, the all-in-one workspace for notes, documents, tasks and wikis. It can draft documents, summarize pages, fill in databases, answer questions using your workspace content with citations, and run AI agents for repetitive tasks.",
+   "who_its_for": "Teams and individuals who already organize their work in Notion.",
+   "pros": [
+    "Works right inside your notes and documents",
+    "Answers questions about your own workspace content with citations",
+    "Free and Plus plans let you trial AI features",
+    "Custom agents can handle repetitive tasks"
+   ],
+   "cons": [
+    "Full Notion AI is included only on the Business plan and above",
+    "Requires moving your work into Notion",
+    "Agents beyond the trial cost extra credits"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -384,7 +736,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Basic plan (300 transcription minutes/month). Pro $16.99/user/month monthly or $8.33/user/month billed annually. Business $30/user/month (promotional discounts shown).",
+   "starting_paid_price": "$8.33/user/month billed annually (Pro)",
+   "pricing_url": "https://otter.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page also showed limited-time 50% promotions."
+  },
+  "details": {
+   "what_it_does": "Otter.ai records and transcribes meetings in real time, then creates summaries and action items. It joins Zoom, Microsoft Teams and Google Meet calls and lets you search and chat across past meetings.",
+   "who_its_for": "Professionals, students and teams who sit in a lot of meetings or lectures.",
+   "pros": [
+    "Free plan with monthly transcription minutes",
+    "Works with Zoom, Teams and Google Meet",
+    "Searchable transcripts and AI chat across meetings",
+    "Mobile apps for in-person recording"
+   ],
+   "cons": [
+    "Free plan limits minutes and file imports",
+    "Always tell people they are being recorded",
+    "Transcripts can misspell names or technical terms"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -407,7 +781,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $18/seat/month monthly or $10 billed annually. Business $29 monthly or $19 billed annually. Enterprise $39 (annual only).",
+   "starting_paid_price": "$10/seat/month billed annually (Pro)",
+   "pricing_url": "https://fireflies.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Fireflies.ai is an AI meeting assistant that joins your calls, transcribes them and writes summaries and action items. It integrates with calendars, CRMs and project tools, and offers a mobile app and Chrome extension.",
+   "who_its_for": "Teams that want searchable records of calls, especially sales and customer-facing teams.",
+   "pros": [
+    "Free plan with unlimited transcription",
+    "Integrates with many work tools",
+    "Video recording and AI summaries on paid plans",
+    "Team analytics on Business plan"
+   ],
+   "cons": [
+    "Free plan limits AI summaries and storage",
+    "A bot joining calls can feel intrusive; get consent",
+    "Accuracy drops with poor audio or heavy accents"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -429,7 +825,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free forever for individuals. Premium $20/month ($16 billed annually). Team $19/user/month ($15 annually, 2-user minimum). Business $34 ($25 annually).",
+   "starting_paid_price": "$16/month billed annually (Premium)",
+   "pricing_url": "https://www.fathom.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Fathom is an AI notetaker that records your video calls, transcribes them and gives you instant summaries. It can push notes into tools like HubSpot or Salesforce and offers a generous free plan for individuals.",
+   "who_its_for": "Individuals and teams who want meeting notes without paying much, especially sales and customer success.",
+   "pros": [
+    "Free forever plan with unlimited recordings",
+    "Instant call summaries and highlights",
+    "CRM syncing on team plans",
+    "Option to record without a visible bot (beta)"
+   ],
+   "cons": [
+    "Advanced summaries and CRM features need paid plans",
+    "Team plans require at least 2 users",
+    "Recording others needs their consent"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -452,7 +870,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Lite plan. Starter $10/seat/month, Business $15/seat/month. Yearly billing saves 20%.",
+   "starting_paid_price": "$10/seat/month (Starter)",
+   "pricing_url": "https://reclaim.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Displayed prices appear to be the yearly-billing rate (page defaults to 'Yearly - SAVE 20%')."
+  },
+  "details": {
+   "what_it_does": "Reclaim.ai is an AI calendar assistant. It automatically finds time for your tasks, habits, focus time and breaks, and rearranges them when meetings change, so your week stays balanced.",
+   "who_its_for": "Busy professionals and teams using Google or Outlook calendars who struggle to protect focus time.",
+   "pros": [
+    "Free plan covers calendar basics",
+    "Protects focus time and habits automatically",
+    "Smart meeting scheduling across a team",
+    "Clear per-seat pricing"
+   ],
+   "cons": [
+    "Takes a little setup to get the most out of it",
+    "Works best if you live in your calendar",
+    "Automatic rescheduling can surprise you at first"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -475,7 +915,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; free trial. Pro AI $19/seat/month, Business AI $29/seat/month. Annual billing saves 33%.",
+   "starting_paid_price": "$19/seat/month (Pro AI)",
+   "pricing_url": "https://www.usemotion.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Billing basis of displayed price not confirmed; an earlier fetch labelled plans 'not available', likely a regional message."
+  },
+  "details": {
+   "what_it_does": "Motion is an AI planner that combines your calendar, tasks and projects. It automatically builds a daily schedule based on deadlines and priorities, and includes AI docs, notes and a writing assistant.",
+   "who_its_for": "Professionals and small teams juggling many tasks and deadlines.",
+   "pros": [
+    "Automatically plans your day around deadlines",
+    "Projects, tasks, calendar and docs in one place",
+    "Apps for iOS, Android and desktop",
+    "Free trial available"
+   ],
+   "cons": [
+    "No free plan",
+    "Costs more than simple to-do apps",
+    "Letting software plan your day takes some trust and adjustment"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -498,7 +960,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (100 tasks/month). Professional from $19.99/month; price rises with task volume. Yearly billing saves 33%.",
+   "starting_paid_price": "$19.99/month (Professional)",
+   "pricing_url": "https://zapier.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Zapier connects thousands of apps so they can work together automatically, for example saving email attachments to Drive or adding new form entries to a spreadsheet. Its AI features let you describe an automation in plain words and add AI steps and agents.",
+   "who_its_for": "Small businesses and busy individuals who want to automate repetitive tasks between apps without coding.",
+   "pros": [
+    "Free plan includes 100 tasks a month",
+    "Connects with thousands of popular apps",
+    "Describe automations in plain language with its AI helper",
+    "No coding required"
+   ],
+   "cons": [
+    "Costs rise as you run more tasks",
+    "Multi-step automations need a paid plan",
+    "Automations can break when connected apps change"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -521,7 +1005,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (400 credits at signup). Plus $9/seat/month, Pro $18/seat/month, Ultra $90/seat/month (billed annually).",
+   "starting_paid_price": "$9/seat/month billed annually (Plus)",
+   "pricing_url": "https://gamma.app/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Plain HTTP fetch blocked (403); verified by loading the page in a browser."
+  },
+  "details": {
+   "what_it_does": "Gamma creates presentations, documents, simple websites and social posts from a short prompt or outline. You describe what you need and it produces a designed draft you can edit, then export to PowerPoint, PDF or Google Slides.",
+   "who_its_for": "Anyone who needs good-looking slides or documents quickly without design skills.",
+   "pros": [
+    "Free plan with starter credits",
+    "Turns a rough idea into designed slides in minutes",
+    "Exports to PowerPoint, PDF and Google Slides",
+    "Affordable Plus plan removes Gamma branding"
+   ],
+   "cons": [
+    "Free plan limits slides per prompt and adds branding",
+    "AI drafts often need editing for accuracy and tone",
+    "Credit system can be confusing"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -543,7 +1049,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No general free plan (14-day free trial; free plans for students). Pro $14.50/month billed annually. Team $40/user/month billed annually or $50 monthly.",
+   "starting_paid_price": "$14.50/month billed annually (Pro)",
+   "pricing_url": "https://www.beautiful.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Beautiful.ai is presentation software that uses AI and 'smart slides' to keep layouts tidy automatically as you add content. It can generate slides from a prompt and imports and exports PowerPoint files.",
+   "who_its_for": "Professionals and teams who make frequent presentations and want them to look polished and on-brand.",
+   "pros": [
+    "Slides stay neatly designed as you edit",
+    "Unlimited AI content generation on paid plans",
+    "PowerPoint import and export",
+    "Free plans for students and a 14-day free trial"
+   ],
+   "cons": [
+    "No general free plan",
+    "Less freedom than a blank-canvas design tool",
+    "Team plan costs more per person"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -566,7 +1094,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro US$144/year for one person. Business US$250/year per person. Enterprise via sales.",
+   "starting_paid_price": "US$144/year (Pro)",
+   "pricing_url": "https://www.canva.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Verified by loading the page in a browser."
+  },
+  "details": {
+   "what_it_does": "Canva is an easy drag-and-drop design tool for social posts, flyers, presentations, videos and more. Its AI features ('Magic' tools) can write text, generate images, remove backgrounds, resize designs and translate content.",
+   "who_its_for": "Small businesses, teachers, nonprofits and anyone who needs to make good-looking designs without being a designer.",
+   "pros": [
+    "Generous free plan with templates and photos",
+    "Very beginner-friendly",
+    "AI tools for resizing, background removal and translation on Pro",
+    "Works on web, desktop and mobile"
+   ],
+   "cons": [
+    "Best AI features and templates require Pro",
+    "Designs can look similar to others using the same templates",
+    "Check image licensing rules for commercial use"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -589,7 +1139,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free daily generations without a plan. Firefly Standard US$9.99/month, Pro US$19.99/month, Pro Plus US$49.99/month, Premium US$199.99/month (limited-time discounts on the top two tiers ending Oct 21).",
+   "starting_paid_price": "US$9.99/month (Firefly Standard)",
+   "pricing_url": "https://www.adobe.com/products/firefly/plans.html",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Plain HTTP fetch blocked (403); verified by loading the page in a browser."
+  },
+  "details": {
+   "what_it_does": "Adobe Firefly is Adobe's generative AI for creating and editing images, video and audio from text descriptions. Adobe says its own Firefly models are designed to be commercially safe, and it also works with Photoshop and other Adobe apps.",
+   "who_its_for": "Creators, marketers and designers who want AI images and video, especially those already using Adobe tools.",
+   "pros": [
+    "Free daily generations without a plan",
+    "Adobe positions its models as commercially safe",
+    "Works with Photoshop, Express and other Adobe apps",
+    "Image, video and audio generation in one place"
+   ],
+   "cons": [
+    "Credit-based limits on generations",
+    "Many plans and limited-time offers can be confusing",
+    "Premium tiers get expensive"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -612,7 +1184,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan. Basic $10/month ($96/year), Standard $30/month ($288/year), Pro $60/month, Mega $120/month. Companies earning over $1M/year must use Pro or Mega.",
+   "starting_paid_price": "$10/month (Basic)",
+   "pricing_url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Official Midjourney docs plan-comparison page."
+  },
+  "details": {
+   "what_it_does": "Midjourney is a popular AI image generator known for artistic, high-quality results. You describe a picture in words and it creates several versions you can refine, upscale or turn into short videos, using its website or Discord.",
+   "who_its_for": "Artists, designers, hobbyists and marketers who want striking visual art.",
+   "pros": [
+    "Very high image quality and artistic style",
+    "Active community and gallery for inspiration",
+    "Can create short videos from images",
+    "Plans scale from casual to heavy use"
+   ],
+   "cons": [
+    "No free plan",
+    "Images are public unless you pay for Stealth Mode on higher plans",
+    "Companies earning over $1M a year must buy Pro or Mega"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -635,7 +1229,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (150 fast tokens/day). Essential $12/month, Premium $30/month, Ultimate $60/month (excl. tax). Team plans from $24/seat. Yearly billing up to 20% off.",
+   "starting_paid_price": "$12/month (Essential)",
+   "pricing_url": "https://leonardo.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Verified in a browser; billing basis of displayed price not confirmed."
+  },
+  "details": {
+   "what_it_does": "Leonardo.Ai generates images, video and design assets from text prompts, with controls for style, quality and your own trained models. It is popular for game art, product visuals, and social media content.",
+   "who_its_for": "Creators, hobbyists and small businesses who want flexible AI image and video tools.",
+   "pros": [
+    "Free plan with daily tokens",
+    "Lots of styles, presets and fine-grained controls",
+    "Train personal models on paid plans",
+    "Team plans available"
+   ],
+   "cons": [
+    "Token system takes time to understand",
+    "Free creations are public",
+    "Interface can feel busy for beginners"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -657,8 +1273,30 @@
    "generate-an-image"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Plus $20/month ($15/month billed annually, $180/year), Pro $60/month, Team $30/user/month. Pay-as-you-go at 1 cent per credit.",
+   "starting_paid_price": "$15/month billed annually (Plus)",
+   "pricing_url": "https://ideogram.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "No free plan was listed on the pricing page when checked; free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Ideogram is an AI image generator that is especially good at putting readable text inside images, like posters, logos and social graphics. It also offers video models and a pay-as-you-go option.",
+   "who_its_for": "Small businesses, marketers and creators making graphics that include words.",
+   "pros": [
+    "Strong at legible text in images",
+    "Pay-as-you-go option for occasional users",
+    "Private generation on paid plans",
+    "Team plan for shared billing"
+   ],
+   "cons": [
+    "Pricing page did not show a free plan when we checked",
+    "Credit-based plans can be hard to compare",
+    "Check outputs for spelling and brand accuracy"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -680,7 +1318,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Community License for individuals and organizations under $1M annual revenue. Enterprise license for larger businesses (contact sales).",
+   "starting_paid_price": "Custom (Enterprise license)",
+   "pricing_url": "https://stability.ai/license",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Old /pricing URL redirects to a 404; license page used."
+  },
+  "details": {
+   "what_it_does": "Stability AI builds open AI models such as Stable Diffusion for images and Stable Audio for sound. Developers and businesses can download and run these models themselves, or use them through Stability's services and partners.",
+   "who_its_for": "Developers, researchers, and technical creators who want to run or customize image and audio models.",
+   "pros": [
+    "Free Community License for individuals and businesses under $1M annual revenue",
+    "Models can be run on your own computer for privacy",
+    "Highly customizable and widely supported",
+    "Large open-source community"
+   ],
+   "cons": [
+    "Not a simple app for beginners",
+    "Larger businesses need an Enterprise license",
+    "Running models yourself needs a capable computer"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -702,7 +1362,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free to try. Pay-as-you-go 3 credits for $3. Subscription from $9/month for 40 credits. Part of Canva's Visual Suite.",
+   "starting_paid_price": "$9/month (40 credits)",
+   "pricing_url": "https://www.remove.bg/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Remove.bg removes the background from a photo automatically in a few seconds, leaving just the person or product. It is now part of Canva's family of tools and offers an API for bulk and automated editing.",
+   "who_its_for": "Online sellers, marketers and anyone who needs clean product or profile photos.",
+   "pros": [
+    "Extremely simple: upload a photo and you're done",
+    "Free to try",
+    "API and bulk editing for businesses",
+    "Fast, accurate results on most photos"
+   ],
+   "cons": [
+    "High-quality downloads cost credits",
+    "Hair and fine edges can need touch-ups",
+    "Does one job; other edits need another tool"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -723,8 +1405,30 @@
    "make-product-photos"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Pro $12.99/month or $7.50/month billed yearly. Max $34.99/month or $20.99 billed yearly. Ultra $99/month or $82.50 billed yearly. Enterprise via sales.",
+   "starting_paid_price": "$7.50/month billed yearly (Pro)",
+   "pricing_url": "https://www.photoroom.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Pricing page lists free trials but no free plan; free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Photoroom is an AI photo editor built for selling online. It removes backgrounds, creates studio-style product shots, generates AI backgrounds and fashion models, and can make product videos, on phone or web.",
+   "who_its_for": "Online sellers, small shops and marketplaces that need lots of product photos.",
+   "pros": [
+    "Fast product photos without a studio",
+    "Batch editing for many images",
+    "AI backgrounds and video features",
+    "Free trial on paid plans"
+   ],
+   "cons": [
+    "Best features and higher exports need a paid plan",
+    "AI-generated scenes may need checking for realism",
+    "Credit and export limits apply"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -747,7 +1451,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan with daily limits. Pro US$15/month.",
+   "starting_paid_price": "US$15/month (Pro)",
+   "pricing_url": "https://clipdrop.co/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Clipdrop is a set of quick AI image tools: background removal, cleanup (erasing unwanted objects), upscaling, relighting, uncropping, text removal and text-to-image. It runs in the browser.",
+   "who_its_for": "Anyone who needs fast photo fixes without learning complex editing software.",
+   "pros": [
+    "Free daily uses of most tools",
+    "Many handy tools in one place",
+    "Works in the browser with no install",
+    "Low-cost Pro plan for heavier use"
+   ],
+   "cons": [
+    "Free plan limits uses per day and resolution",
+    "Less control than professional editors",
+    "Results vary on complex photos"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -770,7 +1496,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (100 units/day). Basic $9/month ($5 billed yearly), Pro $35/month ($21 yearly), Max $105/month ($63 yearly), Business $200/month ($160 yearly).",
+   "starting_paid_price": "$5/month billed yearly (Basic)",
+   "pricing_url": "https://www.krea.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Krea is an AI creative studio for generating and editing images and video, including real-time generation and an 'agent' that plans and creates across multiple AI models for you. It gathers many popular image and video models in one place.",
+   "who_its_for": "Designers, creators and studios exploring AI images and video.",
+   "pros": [
+    "Free daily allowance",
+    "Access to many leading image and video models in one place",
+    "Real-time and agent-based creation",
+    "Discounts on yearly plans"
+   ],
+   "cons": [
+    "Unit-based pricing can be hard to estimate",
+    "Can be overwhelming for beginners",
+    "Heavy video use requires higher tiers"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -793,7 +1541,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan with 125 one-time credits. Standard $15/month ($12 billed annually), Pro $35 ($28), Max $95 ($76).",
+   "starting_paid_price": "$12/month billed annually (Standard)",
+   "pricing_url": "https://runwayml.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Runway is an AI video platform. You can turn text or images into video clips, edit footage with AI tools, upscale to 4K and use several leading video models. It is used by creators and film and ad studios.",
+   "who_its_for": "Video creators, marketers and filmmakers who want AI-generated or AI-assisted video.",
+   "pros": [
+    "Free credits to try it",
+    "Access to multiple top video models",
+    "No watermarks and 4K upscaling on paid plans",
+    "Mobile apps available"
+   ],
+   "cons": [
+    "Free credits are one-time only",
+    "Video generation uses credits quickly",
+    "Generated video can look unrealistic and needs review"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -815,7 +1585,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free account (no monthly credits; credit packs only). Starter $10/month, Creator $35/month, Fancy $95/month (billed monthly; yearly saves 20%).",
+   "starting_paid_price": "$10/month (Starter)",
+   "pricing_url": "https://pika.art/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Pika turns text prompts and images into short AI videos with fun effects. It is aimed at quick, creative social media clips rather than long productions.",
+   "who_its_for": "Social media creators and hobbyists who want quick, playful video clips.",
+   "pros": [
+    "Free account to explore",
+    "Simple, fun interface",
+    "Access to all models on every plan",
+    "Affordable entry plan"
+   ],
+   "cons": [
+    "Free plan has no monthly credits (packs only)",
+    "Commercial license only on higher tiers",
+    "Clips are short and can be inconsistent"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -836,8 +1628,30 @@
    "animate-a-photo"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan listed. Plus $30/month ($300/year), Pro $90/month ($900/year), Ultra $300/month ($3,000/year). Business plans via sales.",
+   "starting_paid_price": "$30/month (Plus)",
+   "pricing_url": "https://lumalabs.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Luma's Dream Machine creates realistic videos and images from text or pictures. Paid plans include commercial use, Luma's own models, third-party models and Luma Agents for larger creative projects.",
+   "who_its_for": "Creators and marketers who want high-quality AI video.",
+   "pros": [
+    "Strong realistic video quality",
+    "Commercial use included",
+    "Access to Luma and third-party models",
+    "Agents for multi-step creative work"
+   ],
+   "cons": [
+    "No free plan shown on its pricing page",
+    "Entry plan costs more than many competitors",
+    "Credits are used quickly on high-resolution video"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -860,7 +1674,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Basic plan (10 minutes/month, watermarked). Starter $29/month billed monthly ($18/month billed yearly). Pro $89/month billed monthly. Enterprise via sales.",
+   "starting_paid_price": "$18/month billed yearly (Starter)",
+   "pricing_url": "https://www.synthesia.io/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Synthesia makes videos with lifelike AI presenters (avatars) from a script, so you can create training, onboarding or explainer videos without a camera. It also translates and dubs videos into many languages.",
+   "who_its_for": "Companies and trainers creating instructional or internal videos at scale.",
+   "pros": [
+    "Free plan with 10 minutes of video",
+    "No camera, studio or actors needed",
+    "Many languages and avatars",
+    "Good for training and onboarding content"
+   ],
+   "cons": [
+    "Free videos carry a watermark",
+    "Avatars can still look slightly artificial",
+    "Personal avatars and more minutes cost more"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -883,7 +1719,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (3 videos/month, up to 1 minute). Creator $29/month, Pro $49/month. Business plans available.",
+   "starting_paid_price": "$29/month (Creator)",
+   "pricing_url": "https://www.heygen.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Prices shown under the monthly view; yearly billing is cheaper."
+  },
+  "details": {
+   "what_it_does": "HeyGen creates AI videos with talking avatars, translates videos into many languages with lip-sync, and can clone your voice. It is used for marketing, training and social content.",
+   "who_its_for": "Marketers, creators and businesses who want avatar videos or translated video content.",
+   "pros": [
+    "Free plan with a few short videos a month",
+    "Video translation with lip-sync",
+    "Voice cloning on paid plans",
+    "Large library of stock avatars"
+   ],
+   "cons": [
+    "Free plan limits video length and count",
+    "Voice and face cloning raise consent and deepfake concerns",
+    "Costs grow with heavy use"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -906,7 +1764,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Hobbyist $24/person/month monthly ($16 billed annually), Creator $35 ($24 annually), Business $65 ($50 annually).",
+   "starting_paid_price": "$16/person/month billed annually (Hobbyist)",
+   "pricing_url": "https://www.descript.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Descript lets you edit video and audio by editing a text transcript, like a document. Delete a word in the text and it disappears from the recording. AI tools remove filler words, create clips and even regenerate speech.",
+   "who_its_for": "Podcasters, YouTubers, educators and teams making video or audio content.",
+   "pros": [
+    "Edit recordings as easily as a document",
+    "Free plan to try core features",
+    "Removes filler words and creates clips automatically",
+    "Screen recording built in"
+   ],
+   "cons": [
+    "AI credits and media hours are limited per plan",
+    "Can be heavy on older computers",
+    "Voice regeneration should be used carefully and with consent"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -929,7 +1809,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro USD 19.99/month, Ultra USD 79/month, Teams USD 12.49/seat/month.",
+   "starting_paid_price": "USD 12.49/seat/month (Teams) or USD 19.99/month (Pro)",
+   "pricing_url": "https://www.capcut.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page says to sign in to see final pricing, taxes and offers for your account."
+  },
+  "details": {
+   "what_it_does": "CapCut is a free-to-start video editor for phone, desktop and web, popular for short social videos. It offers templates, captions and AI features including AI video generation with credits on paid plans.",
+   "who_its_for": "Social media creators and small businesses making short videos for TikTok, Reels and Shorts.",
+   "pros": [
+    "Free plan with templates and basic editing",
+    "Very easy for beginners",
+    "Large template library",
+    "Works on phone, desktop and web"
+   ],
+   "cons": [
+    "Many AI features need Pro and credits",
+    "Final prices are shown only after you sign in",
+    "Review privacy settings before uploading personal content"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -951,7 +1853,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (60 credits/month). Starter $15/month (monthly only). Pro $29/month or $14.50/month billed annually ($174/year).",
+   "starting_paid_price": "$14.50/month billed annually (Pro)",
+   "pricing_url": "https://www.opus.pro/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "OpusClip takes a long video, like a podcast or webinar, and automatically cuts it into short clips for social media. It adds captions, scores each clip's 'virality' and can post directly to YouTube Shorts, TikTok and Instagram Reels.",
+   "who_its_for": "Podcasters, coaches and marketers who want to turn long videos into short social clips.",
+   "pros": [
+    "Free plan with monthly credits",
+    "Saves hours of manual clip editing",
+    "Auto captions in 20+ languages",
+    "Direct posting to social platforms"
+   ],
+   "cons": [
+    "Free plan is limited",
+    "AI-chosen clips aren't always the best moments",
+    "Virality scores are estimates, not guarantees"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -974,7 +1898,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (10k credits/month). Starter $6/month, Creator $22/month, Pro $99/month, Scale $299/month, Business $990/month. First-month discounts were running.",
+   "starting_paid_price": "$6/month (Starter)",
+   "pricing_url": "https://elevenlabs.io/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Starter showed a $1 first-month promo until Oct 18."
+  },
+  "details": {
+   "what_it_does": "ElevenLabs generates natural-sounding speech from text, clones voices, dubs videos into other languages, and creates sound effects and music. It is used for audiobooks, videos, podcasts and voice agents.",
+   "who_its_for": "Creators, educators, publishers and businesses that need high-quality AI voices.",
+   "pros": [
+    "Very natural-sounding voices",
+    "Free plan with monthly credits",
+    "Voice cloning and dubbing",
+    "Commercial license from the Starter plan"
+   ],
+   "cons": [
+    "Free plan has no commercial license",
+    "Voice cloning must only be used with consent",
+    "Heavy use gets expensive"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -996,7 +1942,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (50 credits/day, no commercial rights). Pro $8/month and Premier $24/month (annual billing; monthly costs more).",
+   "starting_paid_price": "$8/month billed yearly (Pro)",
+   "pricing_url": "https://suno.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Suno creates full songs, with vocals and instruments, from a text description or your own lyrics. Paid plans add better models, song downloads, commercial rights and a studio for editing.",
+   "who_its_for": "Hobbyists, content creators and musicians who want to experiment with AI music.",
+   "pros": [
+    "Free plan with daily credits",
+    "Makes complete songs in seconds",
+    "Commercial rights on paid plans",
+    "Studio tools for editing on Premier"
+   ],
+   "cons": [
+    "Free songs can't be used commercially",
+    "Copyright questions around AI music are still being settled",
+    "Quality and style can be hit-or-miss"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1018,7 +1986,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (daily quota). Standard $10/month or $8/month billed annually. Pro $30/month or $24/month billed annually. Credit top-ups available.",
+   "starting_paid_price": "$8/month billed annually (Standard)",
+   "pricing_url": "https://www.udio.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Udio is an AI music generator that creates songs from text prompts, with tools to extend, remix and edit tracks. It offers a free plan with a daily quota.",
+   "who_its_for": "Music hobbyists and creators exploring AI-generated songs.",
+   "pros": [
+    "Free plan with daily credits",
+    "Good audio quality",
+    "Editing and extension tools",
+    "Student discount available"
+   ],
+   "cons": [
+    "Free plan limits songs and features",
+    "Legal questions around AI music are ongoing",
+    "Credits don't roll over"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1040,7 +2030,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (basic voices). Premium $29/month billed monthly; yearly billing saves up to 60%.",
+   "starting_paid_price": "$29/month billed monthly (Premium)",
+   "pricing_url": "https://speechify.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Speechify reads text aloud: web pages, PDFs, emails, books and documents, in natural voices and at adjustable speeds. It also offers voice typing and an AI voice assistant.",
+   "who_its_for": "People with dyslexia or low vision, busy readers and anyone who prefers listening to reading.",
+   "pros": [
+    "Free plan for basic text-to-speech",
+    "Works across phone, browser and desktop",
+    "Helpful accessibility tool",
+    "Adjustable reading speed"
+   ],
+   "cons": [
+    "Free voices sound robotic; natural voices need Premium",
+    "Premium is pricey if billed monthly",
+    "Some features overlap with free built-in phone readers"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1062,7 +2074,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan including Enhance Speech. Premium $19.99/month.",
+   "starting_paid_price": "$19.99/month (Premium)",
+   "pricing_url": "https://podcast.adobe.com/en/plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Adobe Podcast is a browser-based audio tool. Its best-known feature, Enhance Speech, makes recordings made on a laptop or phone sound like they were recorded in a studio. It also records, edits, transcribes and captions audio and video.",
+   "who_its_for": "Podcasters, teachers, video makers and anyone who records voice and wants it to sound better.",
+   "pros": [
+    "Free plan includes Enhance Speech",
+    "Works in the browser with no download",
+    "Very easy to use",
+    "Captions and transcription tools"
+   ],
+   "cons": [
+    "Premium features require a subscription",
+    "Heavy enhancement can sound unnatural",
+    "Upload limits on the free plan"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1085,7 +2119,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $10/month, Pro+ $39/month, Max $100/month. Business and Enterprise plans for organizations.",
+   "starting_paid_price": "$10/month (Pro)",
+   "pricing_url": "https://github.com/features/copilot/plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Plans include usage-based GitHub AI Credits."
+  },
+  "details": {
+   "what_it_does": "GitHub Copilot is an AI coding assistant that suggests code as you type, answers coding questions in chat, reviews code and can work on tasks in 'agent mode'. It works in popular code editors and on GitHub.",
+   "who_its_for": "Software developers, students learning to code and technical teams.",
+   "pros": [
+    "Free plan available",
+    "Works in VS Code and other popular editors",
+    "Chat, code review and agent features",
+    "Strong integration with GitHub"
+   ],
+   "cons": [
+    "Usage-based AI credits can be confusing",
+    "Suggestions can contain bugs or security issues",
+    "Best for people who can already read code"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1108,7 +2164,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Plus $8/month, Premium $30/month, Super $100/month, Ultra $200/month; Teams from $30/user/month. Third-party models billed separately. Plans are part of The X Subscription.",
+   "starting_paid_price": "$8/month (Plus)",
+   "pricing_url": "https://cursor.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Cursor's pricing now matches SpaceXSI's 'X Subscription' bundle (see x.ai/pricing; TechCrunch 2026-10-13)."
+  },
+  "details": {
+   "what_it_does": "Cursor is an AI-first code editor. You can ask it to write, explain or change code across your whole project, and run AI agents that complete tasks. Its plans are now part of 'The X Subscription' from SpaceXSI, alongside Grok and X Premium.",
+   "who_its_for": "Software developers and technical builders who want deep AI help while coding.",
+   "pros": [
+    "Understands and edits whole projects",
+    "Familiar editor experience",
+    "Free plan to start",
+    "Paid plan bundles Grok and X features"
+   ],
+   "cons": [
+    "Third-party AI models are billed separately",
+    "Pricing changed recently with the X Subscription bundle",
+    "Generated code still needs careful review"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1129,8 +2207,30 @@
    "host-a-website"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Core $20/month ($18/month billed annually). Pro $100/month ($90/month billed annually). Enterprise custom.",
+   "starting_paid_price": "$18/month billed annually (Core)",
+   "pricing_url": "https://replit.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Fetched via WebFetch (curl blocked). A free plan was not shown in the page text; free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Replit is an online platform where you can build, run and publish apps in your browser. Its AI Agent can build an app from a plain-language description, then you can keep improving it by chatting.",
+   "who_its_for": "Beginners, students, entrepreneurs and developers who want to build apps without setting up a computer.",
+   "pros": [
+    "Build and publish apps entirely in the browser",
+    "AI Agent builds from plain-language requests",
+    "Database and hosting included",
+    "Collaboration features on higher plans"
+   ],
+   "cons": [
+    "AI Agent can make mistakes and needs testing",
+    "Costs can grow with usage",
+    "Serious apps still need security review"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1152,7 +2252,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $25/month, Business $50/month (100 monthly credits each). Yearly billing gives 2 months free.",
+   "starting_paid_price": "$25/month (Pro)",
+   "pricing_url": "https://lovable.dev/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Verified by loading the page in a browser."
+  },
+  "details": {
+   "what_it_does": "Lovable builds web apps and websites from a chat conversation. Describe what you want and it writes the code, sets up hosting and lets you keep refining with more messages, no coding needed.",
+   "who_its_for": "Non-technical founders, small businesses and designers who want to turn an idea into a working web app.",
+   "pros": [
+    "Free plan to get started",
+    "No coding knowledge needed",
+    "Hosting and domains included",
+    "Unlimited collaborators"
+   ],
+   "cons": [
+    "Credits limit how much you can build",
+    "Complex apps can get messy and hard to maintain",
+    "Check security before handling customer data"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1174,7 +2296,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (1M tokens/month). Pro $25/month billed monthly. Teams $30/member/month billed monthly. Yearly saves up to 28%.",
+   "starting_paid_price": "$25/month (Pro)",
+   "pricing_url": "https://bolt.new/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Bolt (bolt.new) lets you build websites and apps by chatting with AI in your browser. It writes the code, adds databases and hosts the site so you can share it.",
+   "who_its_for": "Small businesses, founders and hobbyists who want a quick custom app or website.",
+   "pros": [
+    "Free plan with daily tokens",
+    "Hosting and databases included",
+    "No setup: everything runs in the browser",
+    "Team plan for collaboration"
+   ],
+   "cons": [
+    "Free sites show Bolt branding",
+    "Token limits can run out on bigger projects",
+    "Generated apps need testing before real use"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1196,7 +2340,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (7 messages/day). Plus $30/user/month, Business $100/user/month, each with $30 of monthly credits per user.",
+   "starting_paid_price": "$30/user/month (Plus)",
+   "pricing_url": "https://v0.app/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "v0 by Vercel builds websites, app interfaces and full apps from text prompts. You can edit visually, sync to GitHub and deploy to Vercel's hosting.",
+   "who_its_for": "Developers, designers and startups who want fast, modern web interfaces.",
+   "pros": [
+    "Free plan to try it",
+    "Produces modern, clean designs",
+    "Deploys directly to Vercel",
+    "Visual Design Mode for edits"
+   ],
+   "cons": [
+    "Free plan limited to a few messages a day",
+    "Usage-based credits beyond plan allowances",
+    "More useful if you know some web development"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1218,7 +2384,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; 14-day free trial. Fin AI Agent $0.99 per resolved outcome (50 outcomes/month minimum). With Intercom helpdesk: from $0.99/outcome plus $19/seat/month.",
+   "starting_paid_price": "$0.99 per outcome (50/month minimum)",
+   "pricing_url": "https://fin.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Fin is Intercom's AI customer service agent. It answers customer questions across chat, email, phone and messaging apps using your help content, and hands tricky cases to human agents. It works with Intercom or other helpdesks like Salesforce and HubSpot.",
+   "who_its_for": "Businesses with steady customer support volume that want to resolve common questions automatically.",
+   "pros": [
+    "Pay per resolved conversation ('outcome')",
+    "Works with many existing helpdesks",
+    "Handles many channels",
+    "Quick setup and a free trial"
+   ],
+   "cons": [
+    "No free plan; monthly minimum applies",
+    "Costs can grow with volume",
+    "Answers are only as good as your help content"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1239,8 +2427,30 @@
    "answer-customer-questions"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Starter $24.17/month, Growth from $49.17/month, Plus from $300/month (annual billing). Lyro AI Agent standalone from $32.50/month. 7-day free trials.",
+   "starting_paid_price": "$24.17/month billed annually (Starter)",
+   "pricing_url": "https://www.tidio.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page shows 'Start for free' but no explicit free plan in captured text; free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Tidio is a customer service platform with live chat, ticketing and Lyro, an AI agent that answers common customer questions. It is popular with small online shops.",
+   "who_its_for": "Small and medium online stores and service businesses.",
+   "pros": [
+    "Combines live chat, tickets and AI",
+    "Lyro AI can be bought as a standalone add-on",
+    "7-day free trials",
+    "Popular with ecommerce platforms"
+   ],
+   "cons": [
+    "Billing based on conversations can be hard to predict",
+    "Advanced features cost more",
+    "AI answers need good, up-to-date help content"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1262,7 +2472,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; free trial. Support Team $19/agent/month, Suite Team $55 (includes AI agents), Suite Professional $115 (paid yearly). Copilot add-on $50/agent/month.",
+   "starting_paid_price": "$19/agent/month paid yearly (Support Team)",
+   "pricing_url": "https://www.zendesk.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Zendesk is a customer service platform. Its AI features include AI agents that resolve customer requests, a Copilot that assists human agents, and AI-powered knowledge bases and reporting. It is designed for support teams of all sizes.",
+   "who_its_for": "Growing and larger businesses running a customer support team.",
+   "pros": [
+    "Mature, widely used support platform",
+    "AI agents included from the Suite Team plan",
+    "Copilot helps human agents reply faster",
+    "Free trial available"
+   ],
+   "cons": [
+    "No free plan",
+    "Many add-ons can raise the cost",
+    "Can be complex to set up for small teams"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1285,7 +2517,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free tools for up to 2 users. Starter listed as starting at $7/month/seat (with $20/month/seat also shown depending on billing). Marketing Professional from $800/month incl. 3 seats. Breeze AI uses HubSpot Credits.",
+   "starting_paid_price": "$7/month/seat (Starter, best rate shown)",
+   "pricing_url": "https://www.hubspot.com/pricing/marketing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Exact billing terms for $7 vs $20 per seat were not clear from page text; verify before quoting."
+  },
+  "details": {
+   "what_it_does": "Breeze is the set of AI features inside HubSpot, the customer relationship management (CRM) platform. It helps write marketing content, summarize records, research prospects and run AI agents for marketing, sales and service.",
+   "who_its_for": "Small and medium businesses using or considering HubSpot for marketing, sales and customer service.",
+   "pros": [
+    "Free HubSpot tools for up to 2 users",
+    "AI built into the CRM you already use",
+    "Covers marketing, sales and service",
+    "Large library of free training (HubSpot Academy)"
+   ],
+   "cons": [
+    "Advanced AI features use HubSpot Credits and higher plans",
+    "Professional plans are a big step up in price",
+    "Can lock you into the HubSpot ecosystem"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1307,7 +2561,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; free trial. Starter $39/month or $20/month billed yearly (20 credits). Professional $249/month or $125 yearly. Ultimate $999/month or $500 yearly.",
+   "starting_paid_price": "$20/month billed yearly (Starter)",
+   "pricing_url": "https://www.adcreative.ai/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "/pricing returns 404; prices verified on the official homepage pricing section."
+  },
+  "details": {
+   "what_it_does": "AdCreative.ai generates ad images, banners, product videos and text for social and search ads, and scores designs for likely performance. It connects to ad platforms and includes competitor insights.",
+   "who_its_for": "Small businesses and marketers running online ads who need many ad variations.",
+   "pros": [
+    "Fast ad variations for testing",
+    "Integrations with ad platforms",
+    "Stock photo access included",
+    "Free trial"
+   ],
+   "cons": [
+    "No free plan",
+    "Generated ads can look generic",
+    "Performance scores are predictions, not guarantees"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1328,8 +2604,30 @@
    "write-seo-content"
   ],
   "pricing": {
-   "band": "paid",
-   "label": "Paid"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "AI Search Analytics 82 USD/month, Standard 99 USD/month, Pro 182 USD/month (billed yearly).",
+   "starting_paid_price": "82 USD/month billed yearly",
+   "pricing_url": "https://surferseo.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page says 'Start for Free' (likely a trial); free_tier left unknown."
+  },
+  "details": {
+   "what_it_does": "Surfer is an SEO and content tool that helps your website show up in Google and in AI answers from ChatGPT, Gemini and others. It tracks AI visibility and guides you to write and optimize content.",
+   "who_its_for": "Bloggers, marketers and businesses who rely on website traffic from search.",
+   "pros": [
+    "Tracks visibility in AI search and Google",
+    "Content optimization guidance",
+    "Free courses and certification",
+    "Team collaboration features"
+   ],
+   "cons": [
+    "Pricing aimed at businesses and pros",
+    "Learning curve for SEO beginners",
+    "Rankings are never guaranteed"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1351,7 +2649,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (up to 3 channels). Essentials $5/month per channel, Team $10/month per channel (billed yearly).",
+   "starting_paid_price": "$5/month per channel billed yearly (Essentials)",
+   "pricing_url": "https://buffer.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Buffer schedules posts to your social media accounts and includes an AI Assistant that helps write and repurpose posts. It also shows analytics and lets you manage comments.",
+   "who_its_for": "Small businesses, creators and nonprofits managing a few social accounts.",
+   "pros": [
+    "Free plan for up to 3 channels",
+    "Simple and calm interface",
+    "Built-in AI Assistant for post ideas",
+    "Low price per channel"
+   ],
+   "cons": [
+    "Price grows with each channel you add",
+    "Free plan limits scheduled posts",
+    "Advanced analytics require paid plans"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1372,8 +2692,30 @@
    "write-social-posts"
   ],
   "pricing": {
-   "band": "paid",
-   "label": "Paid"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Starter $14/month billed annually or $19 monthly. Growth $199/month billed annually or $239 monthly.",
+   "starting_paid_price": "$14/month billed annually (Starter)",
+   "pricing_url": "https://www.lately.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "'Try now for free' offered; no free plan listed."
+  },
+  "details": {
+   "what_it_does": "Lately uses AI to turn long content, such as blogs, podcasts and videos, into many short social media posts in your brand voice, then schedules them and tracks results. It aims to save the time spent cutting up content by hand.",
+   "who_its_for": "Small businesses, agencies and influencers who create long-form content and want more social posts from it.",
+   "pros": [
+    "Repurposes long content into many posts",
+    "Learns your brand voice",
+    "Scheduling and analytics included",
+    "Entry-level Starter plan"
+   ],
+   "cons": [
+    "Growth plan is a big price jump",
+    "Posts still need human review",
+    "Not a full social media management suite"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1395,7 +2737,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free app. Paid tiers $5.99/month (Plus), $8.99/month and $14.99/month with more features.",
+   "starting_paid_price": "$5.99/month (Cleo Plus)",
+   "pricing_url": "https://web.meetcleo.com/products/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Cleo is an AI money app that chats with you about your spending, helps you budget, and offers credit-building and cash-advance features on paid plans. It is available in the US and UK.",
+   "who_its_for": "Young adults and anyone who wants a friendly, chat-based way to manage money.",
+   "pros": [
+    "Free app to start",
+    "Friendly, chat-style budgeting help",
+    "Credit support and debt plans on paid tiers",
+    "Mobile-first and easy to use"
+   ],
+   "cons": [
+    "Cash advances and fees can add up; read the terms",
+    "Most useful features need a subscription",
+    "Requires linking your bank account"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1418,7 +2782,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free version. Premium 'pay what you think is fair', typically $7-$14/month. Premium+ $15/month (adds Rowan AI assistant).",
+   "starting_paid_price": "$7/month (Premium, pay-what-you-want range)",
+   "pricing_url": "https://www.rocketmoney.com/learn/personal-finance/how-much-does-rocket-money-cost",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Official Rocket Money pricing explainer; /premium URL 404s."
+  },
+  "details": {
+   "what_it_does": "Rocket Money is a personal finance app that tracks your spending, finds and helps cancel unwanted subscriptions, negotiates some bills and builds budgets. Premium+ adds Rowan, an AI financial assistant you can text.",
+   "who_its_for": "People who want to cut wasted subscriptions and keep an eye on their spending.",
+   "pros": [
+    "Free version with core budgeting",
+    "Finds forgotten subscriptions",
+    "'Pay what you think is fair' Premium pricing",
+    "AI assistant on Premium+"
+   ],
+   "cons": [
+    "Bill negotiation charges a success fee on Free and Premium",
+    "Requires linking financial accounts",
+    "Best features need a subscription"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1440,7 +2826,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan. Hotel Accounting Suite from $299/property/month; Daily Flash from $100/location/month; Catch-Up Accounting $200 per month caught up.",
+   "starting_paid_price": "$100/location/month (Daily Flash)",
+   "pricing_url": "https://docyt.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Pricing page is now hotel-focused."
+  },
+  "details": {
+   "what_it_does": "Docyt is AI-powered accounting software that automates bookkeeping, reconciliation and month-end close. Its current pricing is focused on hotels and multi-location businesses, priced per property.",
+   "who_its_for": "Hotel groups, multi-location businesses and their accountants.",
+   "pros": [
+    "Automates bookkeeping and reconciliation",
+    "Unlimited users per property",
+    "Published pricing for budgeting",
+    "Catch-up service for messy books"
+   ],
+   "cons": [
+    "Expensive for very small businesses",
+    "Current offering is focused on hotels",
+    "Still needs an accountant's oversight"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1463,7 +2871,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free for teachers. $4/month or $44/year for learners and families.",
+   "starting_paid_price": "$4/month",
+   "pricing_url": "https://www.khanmigo.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Khanmigo is Khan Academy's AI tutor and teaching assistant. Instead of just giving answers, it guides learners step by step, and helps teachers plan lessons and create materials.",
+   "who_its_for": "Students, parents and teachers, especially in K-12 education.",
+   "pros": [
+    "Free for teachers",
+    "Low monthly price for learners and families",
+    "Encourages learning rather than just giving answers",
+    "Parents can view their children's activity"
+   ],
+   "cons": [
+    "Not free for students outside partner schools",
+    "Best used alongside Khan Academy content",
+    "AI tutors can still make mistakes"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1485,7 +2915,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free version with full learning content and ads. Paid Super tier with a 1-week free trial; price not shown on the page.",
+   "starting_paid_price": null,
+   "pricing_url": "https://www.duolingo.com/super",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "Price not displayed on the official page (shown in-app/at checkout)."
+  },
+  "details": {
+   "what_it_does": "Duolingo is a game-like app for learning languages, plus math, music and chess. It uses AI to personalize lessons, and its paid tiers add features such as unlimited hearts, no ads and AI conversation practice.",
+   "who_its_for": "Anyone who wants to learn a language a few minutes a day.",
+   "pros": [
+    "Free version with full learning content",
+    "Fun, game-like daily lessons",
+    "Dozens of languages",
+    "Free trial of the paid tier"
+   ],
+   "cons": [
+    "Free version has ads and limited mistakes ('hearts')",
+    "Not enough on its own to become fluent",
+    "Paid price wasn't shown on the page we checked"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1506,8 +2958,30 @@
    "study-for-a-test"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Could not verify.",
+   "starting_paid_price": null,
+   "pricing_url": "https://quizlet.com/upgrade",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "Pricing page blocked automated access (403 / bot check)."
+  },
+  "details": {
+   "what_it_does": "Quizlet is a study app built around flashcards, quizzes and practice tests. AI features can turn your notes into flashcards and study guides.",
+   "who_its_for": "Students of all ages and anyone studying for exams.",
+   "pros": [
+    "Huge library of existing flashcard sets",
+    "Several study modes and games",
+    "AI helps create study material from notes",
+    "Works on web and mobile"
+   ],
+   "cons": [
+    "Many features require a paid plan",
+    "User-made sets can contain errors",
+    "We could not load its pricing page to verify costs"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1529,8 +3003,30 @@
    "study-from-sources"
   ],
   "pricing": {
-   "band": "free",
-   "label": "Free"
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free with a Google account. Higher limits through Google AI Plus ($4.99/month), Google AI Pro ($19.99/month) and Ultra (from $99.99/month).",
+   "starting_paid_price": "$4.99/month (via Google AI Plus)",
+   "pricing_url": "https://notebooklm.google/plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Plans page now branded 'Gemini Notebook'; prices from gemini.google/subscriptions."
+  },
+  "details": {
+   "what_it_does": "NotebookLM (now also branded Gemini Notebook) is Google's AI research notebook. You upload your own sources, such as PDFs, documents, websites or videos, and it answers questions, makes summaries, slides and 'Audio Overviews' based only on those sources, with citations.",
+   "who_its_for": "Students, researchers, writers and professionals working with a set of documents.",
+   "pros": [
+    "Free with a Google account",
+    "Answers are grounded in your own sources with citations",
+    "Audio Overviews turn documents into podcast-style summaries",
+    "Higher limits through Google AI plans"
+   ],
+   "cons": [
+    "Only as good as the sources you add",
+    "Usage limits on the free version",
+    "Requires a Google account"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1553,7 +3049,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Basic plan. Plus $11/user/month ($132/year), Pro $39 ($468/year), Scale $89 ($1,068/year), billed annually.",
+   "starting_paid_price": "$11/user/month billed annually (Plus)",
+   "pricing_url": "https://elicit.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Elicit is an AI research assistant for academic papers. It searches over a hundred million papers, summarizes findings, extracts data into tables and supports systematic reviews.",
+   "who_its_for": "Researchers, students, clinicians and analysts who work with scientific literature.",
+   "pros": [
+    "Free plan with unlimited search and summaries",
+    "Searches a very large paper database",
+    "Extracts data into tables",
+    "Supports systematic reviews on Pro"
+   ],
+   "cons": [
+    "Advanced features require paid plans",
+    "Summaries should be checked against the original papers",
+    "Focused on academic research, not general questions"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1575,7 +3093,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Pro $12/month ($144/year). Deep $45/month ($540/year).",
+   "starting_paid_price": "$12/month billed annually (Pro)",
+   "pricing_url": "https://consensus.app/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Consensus is an AI search engine for scientific research. Ask a question and it finds peer-reviewed studies and summarizes what they say, with citations.",
+   "who_its_for": "Students, health professionals, journalists and curious people who want evidence-based answers.",
+   "pros": [
+    "Free plan for paper search",
+    "Answers backed by peer-reviewed studies",
+    "Clear citations",
+    "Affordable Pro plan"
+   ],
+   "cons": [
+    "Free plan limits AI analysis",
+    "Studies vary in quality; summaries can oversimplify",
+    "Not medical advice"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1597,7 +3137,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; 7-day free trial. Basic $12/month billed yearly, Pro $40/month billed yearly.",
+   "starting_paid_price": "$12/month billed yearly (Basic)",
+   "pricing_url": "https://scite.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Scite is a research tool that shows how scientific papers have been cited, whether later studies supported or contradicted them, and includes an AI assistant grounded in research literature. It helps you judge how well-supported a claim really is.",
+   "who_its_for": "Researchers, students and librarians checking the reliability of scientific claims.",
+   "pros": [
+    "Shows if findings were supported or disputed",
+    "AI assistant grounded in research",
+    "Citation alerts and dashboards",
+    "Free 7-day trial"
+   ],
+   "cons": [
+    "No free plan",
+    "Mostly useful for academic work",
+    "Citation classifications can be imperfect"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1619,8 +3181,30 @@
    "improve-writing"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available"
+   "band": "unknown",
+   "label": "Free plan unclear",
+   "free_tier": null,
+   "summary": "Pro plans shown to us in EUR: Individual €7.49/month, Team €24.99/user/month, Business €49.99/user/month (billed annually). 30-day free trial.",
+   "starting_paid_price": "€7.49/month billed annually (Individual)",
+   "pricing_url": "https://www.deepl.com/pro",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Page served regional (Germany, EUR) prices; USD prices not captured. Free translator exists on deepl.com but was not confirmed on the pricing page."
+  },
+  "details": {
+   "what_it_does": "DeepL is an AI translator known for natural, accurate translations. It translates text, whole documents and web pages, and offers a writing assistant (DeepL Write) and voice translation.",
+   "who_its_for": "Anyone who reads, writes or works across languages, from travelers to businesses.",
+   "pros": [
+    "Natural-sounding translations",
+    "Translates whole documents while keeping formatting",
+    "Pro plans do not train on your data",
+    "Browser, desktop and mobile apps"
+   ],
+   "cons": [
+    "Prices shown to us were in euros for our region",
+    "Free use has character and file limits",
+    "Always have a fluent speaker check important translations"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1642,7 +3226,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Basic $10/month, Pro $30/month (yearly billing). Extra editors $20/month.",
+   "starting_paid_price": "$10/month billed yearly (Basic)",
+   "pricing_url": "https://www.framer.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Framer is a website builder that lets you design and publish professional websites without code. AI features can generate page layouts, translate and help write content.",
+   "who_its_for": "Designers, freelancers, startups and small businesses who want a polished website.",
+   "pros": [
+    "Free plan to build and publish",
+    "Professional design and animation",
+    "Built-in SEO and hosting",
+    "AI page generation"
+   ],
+   "cons": [
+    "Free sites use a Framer domain",
+    "Costs grow with pages, CMS items and editors",
+    "Design-first tools have a learning curve"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1664,7 +3270,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "Logo packages: Basic $35 one-time, Premium $72 one-time. Brand Kit $96/year, Brand Kit Web $129/year.",
+   "starting_paid_price": "$35 one-time (Basic logo)",
+   "pricing_url": "https://looka.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Verified by loading the page in a browser."
+  },
+  "details": {
+   "what_it_does": "Looka uses AI to design logos and complete brand kits: business cards, social media profiles, email signatures and more. You choose your style and it suggests logo options you can customize.",
+   "who_its_for": "New small businesses and side hustles that need a logo and branding quickly and affordably.",
+   "pros": [
+    "Quick logo ideas in minutes",
+    "Brand kits with many ready-made assets",
+    "One-time logo packages available",
+    "You own your logo files"
+   ],
+   "cons": [
+    "Not free to download high-quality logos",
+    "Logos may look similar to other AI-made designs",
+    "Check trademarks before using a logo"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1686,7 +3314,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Starter plan. Professional Full seat $16/month, Dev seat $12, Collab seat $3. Organization Full seat $55/month (annual). Enterprise $90 (annual).",
+   "starting_paid_price": "$3/month (Professional Collab seat); $16/month Full seat",
+   "pricing_url": "https://www.figma.com/pricing/",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Figma is a collaborative design tool for apps, websites, slides and graphics. Its AI features help generate designs, rename layers, write text and prototype faster, and multiple people can work on one file at once.",
+   "who_its_for": "Designers, product teams and anyone collaborating on visual design.",
+   "pros": [
+    "Free Starter plan",
+    "Real-time collaboration",
+    "Industry-standard design tool",
+    "AI credits included in plans"
+   ],
+   "cons": [
+    "Learning curve for beginners",
+    "Costs add up per seat for teams",
+    "AI credits are limited per plan"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1708,7 +3358,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free to use (with ads). c.ai+ $94.99/year (regularly $119.88). A cheaper 'lite' tier is shown; monthly prices not shown in captured text.",
+   "starting_paid_price": "$94.99/year (c.ai+ annual)",
+   "pricing_url": "https://character.ai/subscribe",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "Monthly price not visible in the page text we captured."
+  },
+  "details": {
+   "what_it_does": "Character.AI lets you chat with AI 'characters' (fictional, historical or user-created personalities) for fun, storytelling and role-play. You can also create your own characters.",
+   "who_its_for": "Adults looking for entertainment, creative storytelling and role-play.",
+   "pros": [
+    "Free to use",
+    "Huge variety of characters",
+    "Create your own characters",
+    "Paid plan removes ads and improves memory"
+   ],
+   "cons": [
+    "Characters are AI, not real people, and can say wrong or odd things",
+    "Parents should supervise younger users",
+    "Easy to spend a lot of time on"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1730,7 +3402,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free for most usage. Subscriptions start at $4.99/month (per Poe's official About and Help pages).",
+   "starting_paid_price": "$4.99/month",
+   "pricing_url": "https://poe.com/about",
+   "verified": false,
+   "verified_on": "2026-10-15",
+   "verification_note": "Poe pages redirect to login for our fetchers; price taken from official poe.com/about and help.poe.com text in a search index, not directly loaded."
+  },
+  "details": {
+   "what_it_does": "Poe, from Quora, gives you access to many AI models (from OpenAI, Anthropic, Google, xAI and others) in one app, plus thousands of custom bots. You can chat privately or in group chats.",
+   "who_its_for": "People who want to try and compare many AI models without separate subscriptions.",
+   "pros": [
+    "Many leading AI models in one place",
+    "Free for most everyday use",
+    "Compare models side by side",
+    "Low-cost paid plans"
+   ],
+   "cons": [
+    "Points system can be confusing",
+    "Some advanced models use points quickly",
+    "We could not load its pricing page directly"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1752,7 +3446,29 @@
   ],
   "pricing": {
    "band": "free-plan",
-   "label": "Free plan available"
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan. Mem Plus $9/month, Mem Pro $29/month.",
+   "starting_paid_price": "$9/month (Mem Plus)",
+   "pricing_url": "https://get.mem.ai/pricing",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": null
+  },
+  "details": {
+   "what_it_does": "Mem is an AI note-taking app. You capture notes, voice memos and messages, and its Mem Agent organizes them, tracks tasks and projects, and answers questions about what you've saved.",
+   "who_its_for": "Busy professionals who want notes that organize themselves.",
+   "pros": [
+    "Free plan to start",
+    "AI organizes notes and finds tasks automatically",
+    "Capture by voice, chat or email",
+    "Simple monthly plans"
+   ],
+   "cons": [
+    "Free plan limits notes and messages",
+    "Requires trusting an app with your personal notes",
+    "Fewer integrations than bigger note apps"
+   ]
   },
   "skill_level": null,
   "platforms": null,
@@ -1775,7 +3491,29 @@
   ],
   "pricing": {
    "band": "paid",
-   "label": "Paid"
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "Suite has a Free tier (AI assistant, Grammarly, Docs). Superhuman Mail requires Business: $33/member/month billed annually or $40 monthly. Pro $12/member/month annual ($15 monthly) excludes Mail.",
+   "starting_paid_price": "$33/member/month billed annually (Business, includes Mail)",
+   "pricing_url": "https://superhuman.com/plans",
+   "verified": true,
+   "verified_on": "2026-10-15",
+   "verification_note": "free_tier=false refers to the Mail app; the wider suite has a free tier."
+  },
+  "details": {
+   "what_it_does": "Superhuman began as a fast, AI-powered email app and is now a suite that includes Superhuman Mail, Grammarly, Docs and an AI agent called Go. Superhuman Mail helps you write replies with AI, sort your inbox and save time on email.",
+   "who_its_for": "Busy professionals who live in their inbox and want to process email faster.",
+   "pros": [
+    "Very fast, keyboard-driven email",
+    "AI writes and summarizes emails",
+    "Suite includes Grammarly and Docs",
+    "Free tier for the AI assistant tools"
+   ],
+   "cons": [
+    "The Mail app itself requires the Business plan",
+    "Expensive compared with free email apps",
+    "Takes time to learn the shortcuts"
+   ]
   },
   "skill_level": null,
   "platforms": null,

@@ -1,0 +1,129 @@
+[
+ {
+  "slug": "what-is-ai",
+  "title": "What is AI? A plain-language introduction",
+  "summary": "What artificial intelligence actually is, how today's AI chat tools work, what they're good and bad at, and why you don't need to be technical to use them.",
+  "reading_time": "5 min read",
+  "reading_time_minutes": 5,
+  "word_count": 891,
+  "updated": "2026-10-15",
+  "sources": [
+   {
+    "title": "IBM, \"What is artificial intelligence (AI)?\"",
+    "url": "https://www.ibm.com/think/topics/artificial-intelligence"
+   },
+   {
+    "title": "Noy, S. & Zhang, W. (2023), \"Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence,\" MIT",
+    "url": "https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1.pdf"
+   },
+   {
+    "title": "NIST, AI Risk Management Framework",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+   },
+   {
+    "title": "Stanford HAI, AI Index Report 2025",
+    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report"
+   }
+  ]
+ },
+ {
+  "slug": "ai-for-small-business",
+  "title": "AI for small business: practical first steps",
+  "summary": "Where AI can genuinely save a small business time and money, which affordable tools to try first, and how to start without big risks or big budgets.",
+  "reading_time": "5 min read",
+  "reading_time_minutes": 5,
+  "word_count": 878,
+  "updated": "2026-10-15",
+  "sources": [
+   {
+    "title": "U.S. Small Business Administration, AI for small business",
+    "url": "https://www.sba.gov/business-guide/manage-your-business/ai-small-business"
+   },
+   {
+    "title": "Brynjolfsson, E., Li, D. & Raymond, L., \"Generative AI at Work,\" NBER Working Paper 31161",
+    "url": "https://www.nber.org/papers/w31161"
+   },
+   {
+    "title": "FBI Internet Crime Complaint Center, PSA241203 (Dec. 3, 2024), \"Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud.\"",
+    "url": "https://www.ic3.gov/PSA/2024/PSA241203"
+   },
+   {
+    "title": "CISA, Secure Our World",
+    "url": "https://www.cisa.gov/secure-our-world"
+   }
+  ]
+ },
+ {
+  "slug": "staying-safe-with-ai",
+  "title": "Staying safe with AI: privacy, scams, deepfakes and checking answers",
+  "summary": "Simple habits to protect your privacy, spot AI-powered scams and deepfakes, and double-check what AI tools tell you.",
+  "reading_time": "5 min read",
+  "reading_time_minutes": 5,
+  "word_count": 925,
+  "updated": "2026-10-15",
+  "sources": [
+   {
+    "title": "FBI Internet Crime Complaint Center, PSA241203, \"Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud\" (Dec. 3, 2024)",
+    "url": "https://www.ic3.gov/PSA/2024/PSA241203"
+   },
+   {
+    "title": "Federal Trade Commission, \"Scammers use AI to enhance their family emergency schemes\" (Mar. 20, 2023)",
+    "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes"
+   },
+   {
+    "title": "CISA, Secure Our World",
+    "url": "https://www.cisa.gov/secure-our-world"
+   },
+   {
+    "title": "Content Credentials (C2PA), Verify tool",
+    "url": "https://contentcredentials.org/verify"
+   }
+  ]
+ },
+ {
+  "slug": "getting-started-with-ai-chat-assistants",
+  "title": "Getting started with AI chat assistants: prompting basics",
+  "summary": "How to choose a free AI assistant, write clear requests (prompts) that get useful answers, and avoid common beginner mistakes.",
+  "reading_time": "5 min read",
+  "reading_time_minutes": 5,
+  "word_count": 952,
+  "updated": "2026-10-15",
+  "sources": [
+   {
+    "title": "OpenAI, \"Prompt engineering\" guide",
+    "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+   },
+   {
+    "title": "Anthropic, \"Prompt engineering overview.\"",
+    "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+   }
+  ]
+ },
+ {
+  "slug": "ai-and-your-job",
+  "title": "AI and your job: how to prepare with confidence",
+  "summary": "What research really says about AI and jobs, why most roles will change rather than vanish, and practical steps to build skills and stay ready.",
+  "reading_time": "5 min read",
+  "reading_time_minutes": 5,
+  "word_count": 894,
+  "updated": "2026-10-15",
+  "sources": [
+   {
+    "title": "International Labour Organization (2023), \"Generative AI and Jobs: A global analysis of potential effects on job quantity and quality.\"",
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and"
+   },
+   {
+    "title": "International Monetary Fund, K. Georgieva, \"AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity\" (Jan. 14, 2024)",
+    "url": "https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity"
+   },
+   {
+    "title": "World Economic Forum, *The Future of Jobs Report 2025*",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/"
+   },
+   {
+    "title": "Brynjolfsson, E., Li, D. & Raymond, L., \"Generative AI at Work,\" NBER Working Paper 31161",
+    "url": "https://www.nber.org/papers/w31161"
+   }
+  ]
+ }
+]

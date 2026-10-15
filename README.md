@@ -19,13 +19,16 @@ npm run build-newsletter   # -> newsletter/YYYY-MM-DD.md (+ Buttondown draft if 
 | `src/styles/learn.css`, `src/pages/learn.astro` | ported from `design/learn-about-ai.html` (copy: `learn-about-ai.md`) |
 | `public/img/*.svg`, `public/favicon.svg` | `design/logo.svg`, `mark.svg`, `hero-illustration.svg` |
 | `src/data/tools.json`, `tasks.json`, `categories.json`, `jobs.json` | generated from `research/tools.json` and `research/jobs.json` by `scripts/import-research.mjs` |
+| `src/data/tools.json` → `details`, `pricing` | `research/content/tool-details.json` (verified prices; `free_tier: null` = unknown) |
+| `src/data/jobs.json` → `help`, `general_resources` | `research/content/job-help.json` |
+| `src/content/guides/*.md`, `src/data/guides.json` | `research/content/guides.json` + `guides/*.md` (content collection, `src/content.config.ts`) |
 | `src/data/feeds.json` | verified feeds in `research/news-sources.md` (Google News excluded: non-commercial ToS) |
 | Routes, robots, llms.txt, JSON endpoints, JSON-LD | `ux/spec.md` §§ IA, 4.1–4.7 |
 
 When a design file changes, re-copy it (see the header comments in `global.css`). After research changes, run `npm run import-research`.
 
 ## Routes
-`/` · `/search?q=` (noindex) · `/tools` · `/tools/{slug}` · `/tasks` · `/tasks/{slug}` · `/news` · `/news/category/{slug}` · `/news/feed.xml` · `/tracker` · `/tracker/jobs/{slug}` · `/learn` · `/guides` · `/newsletter` · `/newsletter/confirmed` · `/about` · `/methodology` · `/glossary` · `/privacy` · `/terms` · `/accessibility` · `/contact` · `/api/{tools,tasks,jobs,news,search-index}.json` · `/llms.txt` · `/llms-full.txt` · `/robots.txt` · `/sitemap-index.xml`
+`/` · `/search?q=` (noindex) · `/tools` · `/tools/{slug}` · `/tasks` · `/tasks/{slug}` · `/news` · `/news/category/{slug}` · `/news/feed.xml` · `/tracker` · `/tracker/jobs/{slug}` · `/learn` · `/guides` · `/guides/{slug}` · `/newsletter` · `/newsletter/confirmed` · `/about` · `/methodology` · `/glossary` · `/privacy` · `/terms` · `/accessibility` · `/contact` · `/api/{tools,tasks,jobs,news,search-index}.json` · `/llms.txt` · `/llms-full.txt` · `/robots.txt` · `/sitemap-index.xml`
 
 There are no trailing slashes (`build.format: 'file'`). Every page has a canonical `https://humainlogic.com/...` link.
 

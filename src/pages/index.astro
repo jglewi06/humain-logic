@@ -125,9 +125,9 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
           <div class="scale" aria-hidden="true"><span>Mostly steady</span><span>Changing</span><span>Big shift ahead</span></div>
         </div>
         <p style="font-size:var(--fs-small)">{example.rationale}</p>
-        <div class="placeholder" style="margin:var(--space-4) 0;font-size:var(--fs-caption)"><strong>Coming soon:</strong> “AI can help with” and “Stays with people” task lists. The research data doesn't include task breakdowns yet.</div>
-        <p class="next"><b>A good next step:</b> learn one AI tool for your work. <a href="/learn#get-started">Start with our beginner guide</a></p>
-        <p class="source">Editorial estimate based on public labor research ({example.confidence} confidence). Last update {fmtDate(jobsData.updated)}. <a href="/methodology">How we decide</a></p>
+        {example.help && <p style="font-size:var(--fs-small);margin-top:var(--space-3)"><b>{example.help.summary}</b></p>}
+        <p class="next" style="margin-top:var(--space-3)"><b>A good next step:</b> {example.help ? <>{example.help.actions[0].title}. <a href={`/tracker/jobs/${example.slug}`}>See all {example.help.actions.length} steps</a></> : <>learn one AI tool for your work. <a href="/learn#get-started">Start with our beginner guide</a></>}</p>
+        <p class="source">HumAIn Logic estimate {example.estimate_range}, based on public labor research ({example.confidence} confidence). Last update {fmtDate(jobsData.updated)}. <a href="/methodology">How we decide</a></p>
       </div>
     </div>
   </div>

@@ -1,6 +1,38 @@
 {
  "note": "Year ranges are HumAIn Logic editorial estimates, NOT figures published by the cited sources. None of the cited sources gives per-occupation 'full automation' dates. Method: (1) relative automation susceptibility per occupation from Frey & Osborne (2013) probabilities and task-exposure scores in Eloundou et al. (2023) and ILO (2023); (2) anchored to McKinsey (2023) 'Economic potential of generative AI', which estimates half of today's work activities could be automated between 2030 and 2060 (midpoint ~2045); (3) adjusted for physical/manual tasks (slower robotics adoption), regulation/licensing, and BLS/WEF employment outlooks. 'Near-full automation' means most of the occupation's current tasks can be done by technology at scale; it does not imply all jobs disappear, and several sources (OECD, IMF, WEF) stress augmentation and job transformation over replacement. Confidence reflects agreement among sources and technical maturity, and is low for most ranges. Source URLs were checked on 2026-10-14; IMF, WEF, OECD and BLS pages block automated fetches (HTTP 403) but are the official landing pages confirmed via web search.",
  "updated": "2026-10-15",
+ "help_note": "Practical, encouraging next steps per profession. Links point to real training and career resources checked on 2026-10-15. Automation year ranges live in jobs.json and are HumAIn Logic estimates.",
+ "help_updated": "2026-10-15",
+ "general_resources": [
+  {
+   "label": "Google AI Essentials",
+   "url": "https://grow.google/ai-essentials/"
+  },
+  {
+   "label": "Elements of AI (free course)",
+   "url": "https://www.elementsofai.com/"
+  },
+  {
+   "label": "AI For Everyone (Coursera, free to audit)",
+   "url": "https://www.coursera.org/learn/ai-for-everyone"
+  },
+  {
+   "label": "CareerOneStop (U.S. Dept. of Labor)",
+   "url": "https://www.careeronestop.org/"
+  },
+  {
+   "label": "O*NET OnLine career explorer",
+   "url": "https://www.onetonline.org/"
+  },
+  {
+   "label": "BLS Occupational Outlook Handbook",
+   "url": "https://www.bls.gov/ooh/"
+  },
+  {
+   "label": "Apprenticeship.gov",
+   "url": "https://www.apprenticeship.gov/"
+  }
+ ],
  "jobs": [
   {
    "slug": "data-entry-keyer",
@@ -28,7 +60,57 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Your accuracy and eye for detail are the foundation for data checking and analysis work, which is growing.",
+    "actions": [
+     {
+      "title": "Learn to check and clean data",
+      "detail": "Move from typing data in to checking it: spotting errors, fixing duplicates and keeping records tidy. Spreadsheet skills (filters, lookups, pivot tables) are the core.",
+      "type": "skill",
+      "link": {
+       "label": "GCFGlobal free computer & Excel lessons",
+       "url": "https://edu.gcfglobal.org/en/"
+      }
+     },
+     {
+      "title": "Try automation tools",
+      "detail": "Learn how tools like Microsoft Power Automate or Zapier move data between forms and spreadsheets, so you become the person who sets up and checks the automation.",
+      "type": "tool",
+      "link": {
+       "label": "Microsoft Learn: Power Automate",
+       "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-automate/"
+      }
+     },
+     {
+      "title": "Start a beginner data course",
+      "detail": "A beginner data analytics certificate teaches spreadsheets, SQL and charts at your own pace.",
+      "type": "training",
+      "link": {
+       "label": "Google Data Analytics Certificate (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Data quality specialist, records coordinator, and operations or junior data analyst roles build on what you already do.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Get comfortable with AI basics",
+      "detail": "A short free course explains what AI can and can't do, so you can talk confidently about it at work.",
+      "type": "training",
+      "link": {
+       "label": "Google AI Essentials",
+       "url": "https://grow.google/ai-essentials/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "office-clerk-general",
@@ -56,7 +138,57 @@
      "publisher": "Oxford Martin School (Frey & Osborne)",
      "year": 2013
     }
-   ]
+   ],
+   "help": {
+    "summary": "Organized people who keep an office running are still needed; AI can take the dull parts so you can focus on people and problems.",
+    "actions": [
+     {
+      "title": "Use AI inside the tools you already have",
+      "detail": "Microsoft 365 Copilot and Gemini in Google Workspace can draft emails, summarize documents and tidy schedules. Learn them before your office rolls them out.",
+      "type": "tool",
+      "link": {
+       "label": "Microsoft Learn free training",
+       "url": "https://learn.microsoft.com/en-us/training/"
+      }
+     },
+     {
+      "title": "Strengthen spreadsheet and document skills",
+      "detail": "Confident Excel, Word and Google Docs skills remain in demand and make AI tools more useful.",
+      "type": "skill",
+      "link": {
+       "label": "GCFGlobal free computer & Excel lessons",
+       "url": "https://edu.gcfglobal.org/en/"
+      }
+     },
+     {
+      "title": "Build toward office or operations coordinator",
+      "detail": "Coordinators plan, manage vendors and solve problems, work that relies on judgment and relationships.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Take a free AI fundamentals course",
+      "detail": "Learn simple, safe ways to use AI at work in a few hours.",
+      "type": "training",
+      "link": {
+       "label": "Google AI Essentials",
+       "url": "https://grow.google/ai-essentials/"
+      }
+     },
+     {
+      "title": "Learn simple automations",
+      "detail": "Set up automatic reminders, form-to-spreadsheet flows and file organizing with no-code tools.",
+      "type": "tool",
+      "link": {
+       "label": "Microsoft Learn: Power Automate",
+       "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-automate/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "bookkeeping-accounting-clerk",
@@ -84,7 +216,51 @@
      "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "Software is doing more data entry, which makes people who can review, explain and advise on numbers more valuable.",
+    "actions": [
+     {
+      "title": "Get certified in modern bookkeeping",
+      "detail": "A recognized bookkeeping credential shows employers and clients you know current software and practice.",
+      "type": "training",
+      "link": {
+       "label": "Intuit Academy Bookkeeping (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/intuit-bookkeeping"
+      }
+     },
+     {
+      "title": "Learn the AI features in accounting software",
+      "detail": "QuickBooks, Xero and similar tools now auto-categorize transactions; learn to review and correct them quickly.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Move toward review and advisory work",
+      "detail": "Reconciliation reviews, month-end close support and explaining reports to business owners are harder to automate.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Explore accounting technician or staff accountant paths",
+      "detail": "Further study can lead to roles with more analysis and responsibility.",
+      "type": "role",
+      "link": {
+       "label": "AICPA & CIMA",
+       "url": "https://www.aicpa-cima.com/"
+      }
+     },
+     {
+      "title": "Build reporting skills",
+      "detail": "Learning Power BI or advanced Excel helps you turn numbers into clear charts and dashboards.",
+      "type": "training",
+      "link": {
+       "label": "Microsoft Learn: Power BI",
+       "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "telemarketer",
@@ -106,7 +282,54 @@
      "publisher": "McKinsey Global Institute",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "Your persuasion and resilience transfer well to sales and customer success roles that value real human relationships.",
+    "actions": [
+     {
+      "title": "Learn modern sales skills",
+      "detail": "Free courses cover inbound sales, prospecting and using a CRM, the core tools of today's sales teams.",
+      "type": "training",
+      "link": {
+       "label": "HubSpot Academy (free courses)",
+       "url": "https://academy.hubspot.com/"
+      }
+     },
+     {
+      "title": "Get comfortable with CRM software",
+      "detail": "Hands-on learning with Salesforce or HubSpot is valued by almost every sales team.",
+      "type": "tool",
+      "link": {
+       "label": "Salesforce Trailhead (free)",
+       "url": "https://trailhead.salesforce.com/"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Inside sales representative, account manager, customer success and appointment setter roles reward the people skills you have built.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Use AI to prepare, not replace, your calls",
+      "detail": "AI assistants can research a prospect and draft follow-up emails, freeing you for the conversation itself.",
+      "type": "tool",
+      "link": {
+       "label": "Google AI Essentials",
+       "url": "https://grow.google/ai-essentials/"
+      }
+     },
+     {
+      "title": "Know the rules",
+      "detail": "Learn the basics of telemarketing and consent rules, an asset as AI calling grows.",
+      "type": "skill",
+      "link": null
+     }
+    ]
+   }
   },
   {
    "slug": "customer-service-representative",
@@ -134,7 +357,51 @@
      "publisher": "Oxford Martin School (Frey & Osborne)",
      "year": 2013
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI is taking on simple questions, and people who handle complex, emotional or high-value conversations are becoming more important.",
+    "actions": [
+     {
+      "title": "Learn how support AI works",
+      "detail": "Understand tools like Zendesk AI, Intercom Fin and Tidio so you can work alongside them and improve their answers.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Build de-escalation and problem-solving skills",
+      "detail": "Calm, empathetic handling of difficult cases is exactly what customers want a human for.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Write and improve help content",
+      "detail": "AI agents rely on knowledge bases; people who write clear help articles are in demand.",
+      "type": "skill",
+      "link": {
+       "label": "HubSpot Academy (free courses)",
+       "url": "https://academy.hubspot.com/"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Customer success manager, support team lead, quality analyst and AI support trainer are natural next steps.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn a CRM platform",
+      "detail": "Free training on Salesforce Service Cloud and similar tools adds a valued skill to your resume.",
+      "type": "training",
+      "link": {
+       "label": "Salesforce Trailhead (free)",
+       "url": "https://trailhead.salesforce.com/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "bank-teller",
@@ -162,7 +429,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Branches are changing, but people who can guide customers through financial decisions remain valued.",
+    "actions": [
+     {
+      "title": "Build toward a personal banker or relationship role",
+      "detail": "Opening accounts, explaining products and helping with loans rely on trust and conversation.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Take banking industry training",
+      "detail": "Industry training covers compliance, fraud prevention and customer service.",
+      "type": "training",
+      "link": {
+       "label": "American Bankers Association training",
+       "url": "https://www.aba.com/training-events"
+      }
+     },
+     {
+      "title": "Become the fraud-awareness expert",
+      "detail": "AI-powered scams are rising; helping customers spot them is a valuable, human skill.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Learn your bank's digital tools",
+      "detail": "Helping customers use mobile banking and AI assistants confidently is a real service.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Strengthen personal finance knowledge",
+      "detail": "Free lessons on budgeting, credit and saving help you give better guidance.",
+      "type": "training",
+      "link": {
+       "label": "Khan Academy",
+       "url": "https://www.khanacademy.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "cashier",
@@ -190,7 +501,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Self-checkout is spreading, but stores still need people who help customers, solve problems and keep things running.",
+    "actions": [
+     {
+      "title": "Earn a free retail credential",
+      "detail": "Retail credentials cover customer service, sales and store operations and are recognized by many employers.",
+      "type": "training",
+      "link": {
+       "label": "NRF Foundation RISE Up retail credentials",
+       "url": "https://nrffoundation.org/riseup"
+      }
+     },
+     {
+      "title": "Move toward customer service or supervisor roles",
+      "detail": "Shift lead, customer service desk and assistant manager roles build on your experience.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn inventory and ordering systems",
+      "detail": "Stock and ordering software skills prepare you for operations roles.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Build basic computer skills",
+      "detail": "Free lessons on email, spreadsheets and online tools open doors to office and online-store work.",
+      "type": "training",
+      "link": {
+       "label": "GCFGlobal free computer & Excel lessons",
+       "url": "https://edu.gcfglobal.org/en/"
+      }
+     },
+     {
+      "title": "Explore new career paths for free",
+      "detail": "Career tools match your strengths to jobs and local training programs.",
+      "type": "role",
+      "link": {
+       "label": "CareerOneStop (U.S. Dept. of Labor)",
+       "url": "https://www.careeronestop.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "receptionist",
@@ -218,7 +576,54 @@
      "publisher": "International Labour Organization",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "The warm first impression you give is hard to automate; adding scheduling and admin tech skills keeps you in demand.",
+    "actions": [
+     {
+      "title": "Learn scheduling and phone AI tools",
+      "detail": "Get familiar with online booking systems and AI phone assistants so you can manage them, not compete with them.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Add a healthcare admin certification",
+      "detail": "Medical receptionist and administrative assistant credentials open roles in a growing sector.",
+      "type": "training",
+      "link": {
+       "label": "NHA certifications (e.g., medical administrative assistant)",
+       "url": "https://www.nhanow.com/"
+      }
+     },
+     {
+      "title": "Explore medical coding and billing",
+      "detail": "Coding and billing build on front-desk knowledge and pay well.",
+      "type": "role",
+      "link": {
+       "label": "AAPC medical coding & billing",
+       "url": "https://www.aapc.com/"
+      }
+     },
+     {
+      "title": "Strengthen office software skills",
+      "detail": "Confident use of Outlook, Excel and Google Workspace makes you more effective.",
+      "type": "skill",
+      "link": {
+       "label": "GCFGlobal free computer & Excel lessons",
+       "url": "https://edu.gcfglobal.org/en/"
+      }
+     },
+     {
+      "title": "Move toward office manager",
+      "detail": "Running an office, vendors and schedules is a natural next step.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "bookkeeper-payroll-clerk",
@@ -246,7 +651,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Payroll software automates calculations, but people who understand the rules, catch errors and help employees are still needed.",
+    "actions": [
+     {
+      "title": "Get a modern bookkeeping credential",
+      "detail": "A recognized certificate shows you know current tools and practice.",
+      "type": "training",
+      "link": {
+       "label": "Intuit Academy Bookkeeping (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/intuit-bookkeeping"
+      }
+     },
+     {
+      "title": "Learn payroll compliance",
+      "detail": "Tax rules, benefits and state regulations change often, and that knowledge stays valuable.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Master the AI features in payroll and accounting tools",
+      "detail": "Learn to review automated runs and spot exceptions quickly.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Explore HR and payroll specialist roles",
+      "detail": "Payroll specialist, HR coordinator and benefits administrator build on your experience.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Build spreadsheet and reporting skills",
+      "detail": "Clear reports for managers make you more valuable.",
+      "type": "training",
+      "link": {
+       "label": "Microsoft Learn: Power BI",
+       "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "insurance-claims-processor",
@@ -274,7 +723,51 @@
      "publisher": "McKinsey & Company",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI is speeding up routine claims, while people are needed for complex cases, fraud checks and caring for customers.",
+    "actions": [
+     {
+      "title": "Earn an industry credential",
+      "detail": "Insurance designations, such as claims credentials, show expertise and support promotion.",
+      "type": "training",
+      "link": {
+       "label": "The Institutes (insurance credentials)",
+       "url": "https://www.theinstitutes.org/"
+      }
+     },
+     {
+      "title": "Move toward claims adjuster or examiner",
+      "detail": "Investigating and deciding complex claims needs judgment and often a license.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn how claims AI works",
+      "detail": "Understanding automated triage and fraud tools helps you review their decisions well.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Build data skills",
+      "detail": "Spreadsheets and basic data analysis help you spot patterns and issues.",
+      "type": "training",
+      "link": {
+       "label": "Google Data Analytics Certificate (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      }
+     },
+     {
+      "title": "Strengthen customer empathy",
+      "detail": "People filing claims are often stressed; clear, kind communication matters.",
+      "type": "skill",
+      "link": null
+     }
+    ]
+   }
   },
   {
    "slug": "translator-interpreter",
@@ -302,7 +795,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Machine translation is everywhere, and skilled linguists who ensure accuracy, nuance and cultural fit are still trusted for work that matters.",
+    "actions": [
+     {
+      "title": "Specialize in high-stakes fields",
+      "detail": "Legal, medical and technical translation need certified human accuracy.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Get certified",
+      "detail": "A recognized certification strengthens trust with clients.",
+      "type": "training",
+      "link": {
+       "label": "American Translators Association certification",
+       "url": "https://www.atanet.org/certification/"
+      }
+     },
+     {
+      "title": "Learn post-editing of machine translation",
+      "detail": "Editing AI output (from tools like DeepL) efficiently is now a paid, in-demand service.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Explore localization and interpreting roles",
+      "detail": "Localization specialist, cultural consultant and community or court interpreter roles value human judgment.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Understand AI basics",
+      "detail": "A short course helps you explain AI's limits to clients.",
+      "type": "training",
+      "link": {
+       "label": "Elements of AI (free course)",
+       "url": "https://www.elementsofai.com/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "paralegal",
@@ -330,7 +867,54 @@
      "publisher": "Oxford Martin School (Frey & Osborne)",
      "year": 2013
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI speeds up research and document review, freeing paralegals for case management and client work.",
+    "actions": [
+     {
+      "title": "Learn legal AI and e-discovery tools",
+      "detail": "Firms are adopting AI for research and document review; knowing these tools sets you apart.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Earn a paralegal certification",
+      "detail": "Professional credentials show commitment and current knowledge.",
+      "type": "training",
+      "link": {
+       "label": "NALA, The Paralegal Association",
+       "url": "https://www.nala.org/"
+      }
+     },
+     {
+      "title": "Become the accuracy checker",
+      "detail": "AI can invent case citations, so verifying sources is a vital skill.",
+      "type": "skill",
+      "link": {
+       "label": "Cornell Legal Information Institute (free law)",
+       "url": "https://www.law.cornell.edu/"
+      }
+     },
+     {
+      "title": "Explore legal operations or litigation support",
+      "detail": "Legal ops, e-discovery specialist and compliance roles are growing.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Take a free AI fundamentals course",
+      "detail": "Understand how AI works so you can use it safely with confidential information.",
+      "type": "training",
+      "link": {
+       "label": "Google AI Essentials",
+       "url": "https://grow.google/ai-essentials/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "accountant-auditor",
@@ -358,7 +942,54 @@
      "publisher": "McKinsey Global Institute",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI handles more number-crunching, which shifts accountants toward judgment, advice and trust, work that remains human.",
+    "actions": [
+     {
+      "title": "Learn data analytics and visualization",
+      "detail": "Power BI, Excel and data skills help you find insights and anomalies.",
+      "type": "training",
+      "link": {
+       "label": "Microsoft Learn: Power BI",
+       "url": "https://learn.microsoft.com/en-us/training/powerplatform/power-bi/"
+      }
+     },
+     {
+      "title": "Understand AI for audit and tax",
+      "detail": "Learn how AI tools test transactions and draft analysis, and how to review their output.",
+      "type": "tool",
+      "link": {
+       "label": "AICPA & CIMA",
+       "url": "https://www.aicpa-cima.com/"
+      }
+     },
+     {
+      "title": "Move toward advisory work",
+      "detail": "Business advisory, forecasting and tax planning rely on relationships and judgment.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Financial analyst, forensic accountant, IT auditor and controller roles build on your skills.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Keep up with professional development",
+      "detail": "Professional bodies offer continuing education on technology and AI.",
+      "type": "training",
+      "link": {
+       "label": "AICPA & CIMA",
+       "url": "https://www.aicpa-cima.com/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "truck-driver-heavy-long-haul",
@@ -386,7 +1017,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Self-driving trucks are being tested, but widespread change will take years; drivers can prepare at their own pace.",
+    "actions": [
+     {
+      "title": "Add endorsements",
+      "detail": "Hazmat, tanker and doubles/triples endorsements make you more versatile and harder to replace.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Consider local, regional or specialized hauling",
+      "detail": "Local delivery, oversized loads and specialized freight need skilled human drivers.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn fleet and logistics technology",
+      "detail": "Telematics, routing software and electronic logs are skills logistics companies value.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Explore dispatcher, trainer or logistics coordinator",
+      "detail": "Your road experience is valuable in planning and training roles.",
+      "type": "role",
+      "link": {
+       "label": "CareerOneStop (U.S. Dept. of Labor)",
+       "url": "https://www.careeronestop.org/"
+      }
+     },
+     {
+      "title": "Look into apprenticeships",
+      "detail": "Registered apprenticeships offer paid training in diesel mechanics and logistics.",
+      "type": "training",
+      "link": {
+       "label": "Apprenticeship.gov",
+       "url": "https://www.apprenticeship.gov/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "delivery-rideshare-driver",
@@ -414,7 +1089,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Robotaxis and delivery robots are spreading slowly and unevenly; there's time to build skills for your next step.",
+    "actions": [
+     {
+      "title": "Explore logistics and warehouse operations",
+      "detail": "Dispatch, fleet coordination and logistics roles use your route knowledge.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Earn a logistics credential",
+      "detail": "Industry certifications in logistics and supply chain are recognized by employers.",
+      "type": "training",
+      "link": {
+       "label": "MSSC Certified Logistics Technician",
+       "url": "https://www.msscusa.org/"
+      }
+     },
+     {
+      "title": "Consider a commercial driver's license",
+      "detail": "Commercial driving remains in demand for many types of freight.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Explore skilled trades through apprenticeships",
+      "detail": "Paid apprenticeships in trades offer stable careers with less exposure to automation.",
+      "type": "training",
+      "link": {
+       "label": "Apprenticeship.gov",
+       "url": "https://www.apprenticeship.gov/"
+      }
+     },
+     {
+      "title": "Use free career tools",
+      "detail": "Find training programs and job options near you.",
+      "type": "role",
+      "link": {
+       "label": "CareerOneStop (U.S. Dept. of Labor)",
+       "url": "https://www.careeronestop.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "fast-food-food-prep-worker",
@@ -442,7 +1164,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Kiosks and kitchen robots are appearing, but restaurants still rely on people for service, quality and teamwork.",
+    "actions": [
+     {
+      "title": "Earn a food safety certification",
+      "detail": "Food handler and manager certificates are widely recognized and help with promotion.",
+      "type": "training",
+      "link": {
+       "label": "ServSafe food safety training",
+       "url": "https://www.servsafe.com/"
+      }
+     },
+     {
+      "title": "Move toward shift lead or kitchen manager",
+      "detail": "Leading a team, scheduling and handling problems are human strengths.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn the restaurant's ordering and inventory tech",
+      "detail": "Being the person who understands kiosks and ordering apps makes you valuable.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Explore culinary or catering paths",
+      "detail": "Cooking skills transfer to catering, institutional kitchens and culinary training.",
+      "type": "role",
+      "link": {
+       "label": "CareerOneStop (U.S. Dept. of Labor)",
+       "url": "https://www.careeronestop.org/"
+      }
+     },
+     {
+      "title": "Build basic computer skills",
+      "detail": "Free lessons open doors to office, online and supervisory roles.",
+      "type": "training",
+      "link": {
+       "label": "GCFGlobal free computer & Excel lessons",
+       "url": "https://edu.gcfglobal.org/en/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "warehouse-worker-stocker",
@@ -470,7 +1239,54 @@
      "publisher": "World Economic Forum",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Robots are joining warehouses, which creates jobs for people who run, maintain and work alongside them.",
+    "actions": [
+     {
+      "title": "Get forklift and equipment certified",
+      "detail": "Powered industrial truck training is required and valued by employers.",
+      "type": "training",
+      "link": {
+       "label": "OSHA powered industrial trucks (forklifts)",
+       "url": "https://www.osha.gov/powered-industrial-trucks"
+      }
+     },
+     {
+      "title": "Earn a logistics technician credential",
+      "detail": "Certified Logistics Technician credentials show you know modern warehouse operations.",
+      "type": "training",
+      "link": {
+       "label": "MSSC Certified Logistics Technician",
+       "url": "https://www.msscusa.org/"
+      }
+     },
+     {
+      "title": "Learn about warehouse robots and systems",
+      "detail": "Robot operators and maintenance technicians are growing roles.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Move toward inventory control or team lead",
+      "detail": "Inventory accuracy and leading teams rely on judgment.",
+      "type": "role",
+      "link": null
+     },
+     {
+      "title": "Explore maintenance apprenticeships",
+      "detail": "Industrial maintenance and mechatronics apprenticeships pay while you learn.",
+      "type": "training",
+      "link": {
+       "label": "Apprenticeship.gov",
+       "url": "https://www.apprenticeship.gov/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "custodian-janitor",
@@ -498,7 +1314,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Cleaning robots handle simple floors, but varied spaces and safety still need skilled people.",
+    "actions": [
+     {
+      "title": "Earn a cleaning industry certification",
+      "detail": "Industry training in infection prevention and green cleaning adds value.",
+      "type": "training",
+      "link": {
+       "label": "ISSA (cleaning industry training)",
+       "url": "https://www.issa.com/"
+      }
+     },
+     {
+      "title": "Learn to operate and maintain cleaning robots",
+      "detail": "Facilities are adopting robotic floor cleaners; operators are needed.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Move toward facilities or maintenance work",
+      "detail": "Facilities technician and building maintenance roles pay more and use hands-on skills.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Take safety training",
+      "detail": "Workplace safety knowledge is valued in every facility.",
+      "type": "training",
+      "link": {
+       "label": "OSHA training resources",
+       "url": "https://www.osha.gov/training"
+      }
+     },
+     {
+      "title": "Explore trade apprenticeships",
+      "detail": "HVAC, electrical and plumbing apprenticeships build on practical experience.",
+      "type": "training",
+      "link": {
+       "label": "Apprenticeship.gov",
+       "url": "https://www.apprenticeship.gov/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "graphic-designer",
@@ -526,7 +1389,51 @@
      "publisher": "Oxford Martin School (Frey & Osborne)",
      "year": 2013
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI makes fast images easy, which puts a premium on designers with strong ideas, taste and brand thinking.",
+    "actions": [
+     {
+      "title": "Add AI tools to your workflow",
+      "detail": "Adobe Firefly, Canva's AI features and Midjourney can speed up drafts while you focus on concept and polish.",
+      "type": "tool",
+      "link": {
+       "label": "Canva Design School (free)",
+       "url": "https://www.canva.com/designschool/"
+      }
+     },
+     {
+      "title": "Strengthen brand strategy and art direction",
+      "detail": "Clients value designers who understand their goals and keep work consistent.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Move into UX/UI design",
+      "detail": "Designing apps and websites combines visual skill with research and problem-solving.",
+      "type": "training",
+      "link": {
+       "label": "Google UX Design Certificate (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Art director, brand designer, motion designer and product designer are growing paths.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn the rules around AI images",
+      "detail": "Understand licensing and copyright so you can advise clients safely.",
+      "type": "skill",
+      "link": null
+     }
+    ]
+   }
   },
   {
    "slug": "writer-copywriter",
@@ -554,7 +1461,54 @@
      "publisher": "International Labour Organization",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI can draft quickly, but original thinking, real reporting and a true voice remain human strengths clients pay for.",
+    "actions": [
+     {
+      "title": "Use AI as a research and drafting assistant",
+      "detail": "Learn to brainstorm and outline with ChatGPT or Claude, then add your voice and verify facts.",
+      "type": "tool",
+      "link": {
+       "label": "DeepLearning.AI: Prompt Engineering short course",
+       "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"
+      }
+     },
+     {
+      "title": "Specialize",
+      "detail": "Expertise in a field like healthcare, finance or technical writing makes you harder to replace.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Learn content strategy and SEO",
+      "detail": "Planning content, understanding audiences and search are valued skills.",
+      "type": "training",
+      "link": {
+       "label": "HubSpot Academy (free courses)",
+       "url": "https://academy.hubspot.com/"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Content strategist, editor, UX writer and communications specialist build on writing skills.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Take a generative AI course",
+      "detail": "Understand what AI writing tools do well and badly.",
+      "type": "training",
+      "link": {
+       "label": "Generative AI for Everyone (Coursera)",
+       "url": "https://www.coursera.org/learn/generative-ai-for-everyone"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "market-research-analyst",
@@ -582,7 +1536,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI speeds up data crunching, so analysts who ask the right questions and tell clear stories become more valuable.",
+    "actions": [
+     {
+      "title": "Build data analysis skills",
+      "detail": "SQL, spreadsheets and visualization help you work with larger datasets.",
+      "type": "training",
+      "link": {
+       "label": "Google Data Analytics Certificate (Coursera)",
+       "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      }
+     },
+     {
+      "title": "Learn AI research tools",
+      "detail": "Use AI to summarize surveys and reports, then check results carefully.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Strengthen storytelling and presentation",
+      "detail": "Turning findings into clear recommendations is the part clients remember.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Connect with the industry",
+      "detail": "Professional associations offer training and standards for research.",
+      "type": "training",
+      "link": {
+       "label": "Insights Association",
+       "url": "https://www.insightsassociation.org/"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Data analyst, consumer insights manager and UX researcher are related paths.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "software-developer",
@@ -610,7 +1608,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI coding assistants make developers faster; those who design systems, review code and understand users are thriving.",
+    "actions": [
+     {
+      "title": "Get fluent with AI coding assistants",
+      "detail": "Learn GitHub Copilot, Cursor or similar tools and how to review their code critically.",
+      "type": "tool",
+      "link": {
+       "label": "GitHub Skills (free, hands-on)",
+       "url": "https://skills.github.com/"
+      }
+     },
+     {
+      "title": "Deepen your fundamentals",
+      "detail": "Strong computer science foundations help you spot AI's mistakes.",
+      "type": "training",
+      "link": {
+       "label": "Harvard CS50 (free)",
+       "url": "https://cs50.harvard.edu/x/"
+      }
+     },
+     {
+      "title": "Learn how AI systems work",
+      "detail": "Building with AI models is a fast-growing skill.",
+      "type": "training",
+      "link": {
+       "label": "Harvard CS50 AI (free)",
+       "url": "https://cs50.harvard.edu/ai/"
+      }
+     },
+     {
+      "title": "Focus on architecture, security and testing",
+      "detail": "Designing reliable, secure systems needs human judgment.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "AI engineer, solutions architect, DevOps and security engineer are growing.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "financial-advisor",
@@ -638,7 +1683,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Clients still want a trusted person for big money decisions; AI can handle paperwork so you have more time for them.",
+    "actions": [
+     {
+      "title": "Use AI for research and admin",
+      "detail": "AI can summarize reports and prepare meeting notes; always review for accuracy and compliance.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Strengthen credentials",
+      "detail": "Professional certifications build trust with clients.",
+      "type": "training",
+      "link": {
+       "label": "CFP Board",
+       "url": "https://www.cfp.net/"
+      }
+     },
+     {
+      "title": "Focus on behavioral coaching and planning",
+      "detail": "Helping clients stay calm and plan for life events is deeply human work.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Stay current on rules",
+      "detail": "Regulators publish guidance about technology and AI in financial services.",
+      "type": "training",
+      "link": {
+       "label": "FINRA",
+       "url": "https://www.finra.org/"
+      }
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Wealth planner, retirement specialist and financial coach build on your skills.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "lawyer",
@@ -666,7 +1755,48 @@
      "publisher": "Oxford Martin School (Frey & Osborne)",
      "year": 2013
     }
-   ]
+   ],
+   "help": {
+    "summary": "AI speeds research and drafting, while judgment, advocacy and client trust remain the heart of legal work.",
+    "actions": [
+     {
+      "title": "Learn legal AI tools carefully",
+      "detail": "Use AI for research and first drafts, but always verify citations; courts have sanctioned lawyers for fake AI citations.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Understand ethics rules for AI",
+      "detail": "Learn your duties around confidentiality, competence and supervision when using AI.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Develop AI and technology law expertise",
+      "detail": "AI regulation, privacy and data law are growing practice areas.",
+      "type": "role",
+      "link": null
+     },
+     {
+      "title": "Take an AI fundamentals course",
+      "detail": "Understand how AI works so you can advise clients and use tools wisely.",
+      "type": "training",
+      "link": {
+       "label": "AI For Everyone (Coursera, free to audit)",
+       "url": "https://www.coursera.org/learn/ai-for-everyone"
+      }
+     },
+     {
+      "title": "Use free legal research resources",
+      "detail": "Free sources help you double-check AI output.",
+      "type": "training",
+      "link": {
+       "label": "Cornell Legal Information Institute (free law)",
+       "url": "https://www.law.cornell.edu/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "teacher-k-12",
@@ -694,7 +1824,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Teaching relies on relationships, motivation and care; AI can lighten planning and grading so you have more time for students.",
+    "actions": [
+     {
+      "title": "Try AI planning assistants",
+      "detail": "Free teacher tools like Khanmigo can help draft lesson plans, quizzes and rubrics.",
+      "type": "tool",
+      "link": {
+       "label": "Khan Academy",
+       "url": "https://www.khanacademy.org/"
+      }
+     },
+     {
+      "title": "Take AI training for educators",
+      "detail": "Free professional learning explains AI and how to teach about it.",
+      "type": "training",
+      "link": {
+       "label": "Code.org AI resources for educators",
+       "url": "https://code.org/ai"
+      }
+     },
+     {
+      "title": "Teach AI literacy",
+      "detail": "Helping students use AI responsibly and spot misinformation is a valuable new skill.",
+      "type": "skill",
+      "link": {
+       "label": "Common Sense Education",
+       "url": "https://www.commonsense.org/education/"
+      }
+     },
+     {
+      "title": "Set clear classroom AI policies",
+      "detail": "Clear guidance on when AI is allowed supports honest learning.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Explore adjacent roles",
+      "detail": "Instructional coach, curriculum designer and education technology specialist build on teaching.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "registered-nurse",
@@ -722,7 +1899,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Nursing's hands-on care, judgment and compassion are far from automation; AI can help with documentation so you spend more time with patients.",
+    "actions": [
+     {
+      "title": "Learn the AI tools in your workplace",
+      "detail": "AI documentation and early-warning systems are arriving in hospitals; understand their limits.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Take a healthcare AI course",
+      "detail": "Learn how AI is used in clinical settings and where it can go wrong.",
+      "type": "training",
+      "link": {
+       "label": "Stanford AI in Healthcare (Coursera)",
+       "url": "https://www.coursera.org/specializations/ai-healthcare"
+      }
+     },
+     {
+      "title": "Advance your specialty",
+      "detail": "Specialty certifications and advanced practice roles are in demand.",
+      "type": "role",
+      "link": {
+       "label": "American Nurses Association",
+       "url": "https://www.nursingworld.org/"
+      }
+     },
+     {
+      "title": "Explore nursing informatics",
+      "detail": "Nurse informaticists bridge clinical care and technology.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Speak up for safe AI",
+      "detail": "Nurses' feedback is essential to safe use of new tools.",
+      "type": "skill",
+      "link": null
+     }
+    ]
+   }
   },
   {
    "slug": "electrician",
@@ -750,7 +1971,48 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Skilled trades are among the safest from automation, and new technology like solar, EV chargers and smart buildings is creating more work.",
+    "actions": [
+     {
+      "title": "Learn solar, battery and EV charger installation",
+      "detail": "Clean-energy installations are a growing source of work.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Keep training through apprenticeships and courses",
+      "detail": "Industry training keeps your skills and code knowledge current.",
+      "type": "training",
+      "link": {
+       "label": "Electrical Training Alliance",
+       "url": "https://www.electricaltrainingalliance.org/"
+      }
+     },
+     {
+      "title": "Explore smart building and automation systems",
+      "detail": "Building controls and low-voltage systems are valuable specialties.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Use digital tools for estimating and admin",
+      "detail": "AI tools can draft quotes and invoices, freeing your time for the job.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Consider becoming a master electrician or contractor",
+      "detail": "Licensing and business skills open higher-paying paths.",
+      "type": "role",
+      "link": null
+     }
+    ]
+   }
   },
   {
    "slug": "plumber",
@@ -778,7 +2040,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Plumbing needs hands-on skill in unpredictable spaces, making it one of the most automation-resistant careers.",
+    "actions": [
+     {
+      "title": "Keep building certifications",
+      "detail": "Union and industry training covers new systems and codes.",
+      "type": "training",
+      "link": {
+       "label": "United Association (plumbing & pipefitting training)",
+       "url": "https://ua.org/"
+      }
+     },
+     {
+      "title": "Learn high-efficiency and green systems",
+      "detail": "Heat pumps, water efficiency and modern piping are growing specialties.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Use AI for quotes, scheduling and customer messages",
+      "detail": "Small-business tools can save time on paperwork.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Consider becoming a master plumber or contractor",
+      "detail": "Licensing and business skills increase earning potential.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Mentor apprentices",
+      "detail": "Experienced plumbers are needed to train the next generation.",
+      "type": "role",
+      "link": {
+       "label": "Apprenticeship.gov",
+       "url": "https://www.apprenticeship.gov/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "construction-laborer",
@@ -806,7 +2112,54 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Construction sites change constantly, so skilled people remain essential; new technology adds opportunities for those who learn it.",
+    "actions": [
+     {
+      "title": "Earn construction credentials",
+      "detail": "Recognized credentials show employers your skills and safety knowledge.",
+      "type": "training",
+      "link": {
+       "label": "NCCER construction credentials",
+       "url": "https://www.nccer.org/"
+      }
+     },
+     {
+      "title": "Take safety training",
+      "detail": "Safety certifications are required on many sites and help you stand out.",
+      "type": "training",
+      "link": {
+       "label": "OSHA training resources",
+       "url": "https://www.osha.gov/training"
+      }
+     },
+     {
+      "title": "Learn new site technology",
+      "detail": "Drones, laser layout, and equipment technology are growing skills.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Move into a skilled trade",
+      "detail": "Apprenticeships in carpentry, electrical, plumbing or equipment operation pay while you learn.",
+      "type": "training",
+      "link": {
+       "label": "Apprenticeship.gov",
+       "url": "https://www.apprenticeship.gov/"
+      }
+     },
+     {
+      "title": "Explore supervisor and estimator roles",
+      "detail": "Foreman, site supervisor and estimator roles build on field experience.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "home-health-personal-care-aide",
@@ -834,7 +2187,51 @@
      "publisher": "U.S. Bureau of Labor Statistics",
      "year": 2025
     }
-   ]
+   ],
+   "help": {
+    "summary": "Caring for people at home relies on trust, compassion and physical help, and demand is growing as populations age.",
+    "actions": [
+     {
+      "title": "Earn additional certifications",
+      "detail": "CPR, first aid and caregiving classes increase your value.",
+      "type": "training",
+      "link": {
+       "label": "American Red Cross classes",
+       "url": "https://www.redcross.org/take-a-class"
+      }
+     },
+     {
+      "title": "Consider becoming a nursing assistant or LPN",
+      "detail": "Further training opens higher-paying healthcare roles.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     },
+     {
+      "title": "Learn care technology",
+      "detail": "Remote monitoring, medication apps and digital care notes are becoming common.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Specialize in dementia or disability care",
+      "detail": "Specialized skills are in high demand.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Find training and advocacy resources",
+      "detail": "Direct care workforce organizations share training and career information.",
+      "type": "training",
+      "link": {
+       "label": "PHI (direct care workforce)",
+       "url": "https://www.phinational.org/"
+      }
+     }
+    ]
+   }
   },
   {
    "slug": "physician-medical-doctor",
@@ -862,7 +2259,51 @@
      "publisher": "arXiv (Eloundou, Manning, Mishkin, Rock)",
      "year": 2023
     }
-   ]
+   ],
+   "help": {
+    "summary": "Medicine relies on judgment, empathy and accountability; AI is becoming a helpful assistant, not a replacement.",
+    "actions": [
+     {
+      "title": "Learn how clinical AI works",
+      "detail": "Understand the strengths, biases and limits of AI diagnostic and documentation tools.",
+      "type": "training",
+      "link": {
+       "label": "Stanford AI in Healthcare (Coursera)",
+       "url": "https://www.coursera.org/specializations/ai-healthcare"
+      }
+     },
+     {
+      "title": "Try AI documentation tools",
+      "detail": "AI scribes can reduce paperwork; review notes carefully for accuracy.",
+      "type": "tool",
+      "link": null
+     },
+     {
+      "title": "Follow professional guidance",
+      "detail": "Medical associations publish guidance on digital health and AI.",
+      "type": "training",
+      "link": {
+       "label": "AMA digital health resources",
+       "url": "https://www.ama-assn.org/practice-management/digital-health"
+      }
+     },
+     {
+      "title": "Contribute to safe AI in your organization",
+      "detail": "Clinician input is vital for evaluating and governing AI tools.",
+      "type": "skill",
+      "link": null
+     },
+     {
+      "title": "Explore clinical informatics",
+      "detail": "Clinical informatics combines medicine and technology leadership.",
+      "type": "role",
+      "link": {
+       "label": "O*NET OnLine career explorer",
+       "url": "https://www.onetonline.org/"
+      }
+     }
+    ]
+   }
   }
  ]
 }

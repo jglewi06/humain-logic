@@ -25,6 +25,9 @@ const ld = [{ '@type': 'Dataset', name: 'HumAIn Logic AI Job Safety Tracker', de
   </div>
   <JobTimeline jobs={jobsData.jobs} id="tl" showSources title="Timeline: when could AI do most of each job's tasks?" />
 
+  <section style="margin-top:var(--space-7)" aria-labelledby="gr-h"><h2 id="gr-h" style="font-size:var(--fs-h3);margin-bottom:var(--space-3)">Helpful for any job</h2>
+    <ul class="panel" style="padding-left:40px">{jobsData.general_resources.map(r => <li><a href={r.url} rel="noopener">{r.label}</a></li>)}</ul>
+    <p class="confidence" style="margin-top:var(--space-2)">{jobsData.help_note} Each job page lists practical next steps.</p></section>
   <p class="callout warm" style="margin-top:var(--space-6)"><strong>Please read:</strong> these are HumAIn Logic editorial estimates, not predictions or career advice. None of the cited sources gives per-job dates. Your own job depends on your tasks, employer and skills.</p>
 </div>
 </Base>

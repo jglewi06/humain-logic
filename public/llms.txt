@@ -15,6 +15,14 @@ Data is rebuilt automatically (news every few hours). Proposed license: CC BY 4.
 - [Jobs API](https://humainlogic.com/api/jobs.json): JSON outlooks, editorial year-range estimates, confidence, sources
 - [Methodology](https://humainlogic.com/methodology): how outlooks are assigned
 
+## Guides
+- [All guides](https://humainlogic.com/guides)
+- [What is AI? A plain-language introduction](https://humainlogic.com/guides/what-is-ai): What artificial intelligence actually is, how today's AI chat tools work, what they're good and bad at, and why you don't need to be technical to use them.
+- [AI for small business: practical first steps](https://humainlogic.com/guides/ai-for-small-business): Where AI can genuinely save a small business time and money, which affordable tools to try first, and how to start without big risks or big budgets.
+- [Staying safe with AI: privacy, scams, deepfakes and checking answers](https://humainlogic.com/guides/staying-safe-with-ai): Simple habits to protect your privacy, spot AI-powered scams and deepfakes, and double-check what AI tools tell you.
+- [Getting started with AI chat assistants: prompting basics](https://humainlogic.com/guides/getting-started-with-ai-chat-assistants): How to choose a free AI assistant, write clear requests (prompts) that get useful answers, and avoid common beginner mistakes.
+- [AI and your job: how to prepare with confidence](https://humainlogic.com/guides/ai-and-your-job): What research really says about AI and jobs, why most roles will change rather than vanish, and practical steps to build skills and stay ready.
+
 ## News
 - [News feed](https://humainlogic.com/news)
 - [News API](https://humainlogic.com/api/news.json)

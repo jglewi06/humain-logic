@@ -1,0 +1,36 @@
+---
+const { help, resources = [], note, updated } = Astro.props;
+const TYPE = { skill: 'Skill to build', tool: 'Tool to try', role: 'Role to explore', training: 'Training' } as Record<string, string>;
+---
+<section aria-labelledby="help-h" class="job-help">
+  <h2 id="help-h">What you can do</h2>
+  {help ? <>
+    <p class="lede-sm">{help.summary}</p>
+    <ol class="actions">
+      {help.actions.map((a: any) => (
+        <li class="panel action">
+          <span class={`b atype ${a.type}`}>{TYPE[a.type] ?? a.type}</span>
+          <h3>{a.title}</h3>
+          <p>{a.detail}</p>
+          {a.link && <p><a href={a.link.url} rel="noopener">{a.link.label} <svg width="14" height="14" aria-hidden="true"><use href="#i-ext"/></svg></a></p>}
+        </li>))}
+    </ol>
+  </> : <p class="placeholder">Next steps for this job are coming soon.</p>}
+  {resources.length > 0 && <>
+    <h3 class="res-h">Helpful for any job</h3>
+    <ul class="res">{resources.map((r: any) => <li><a href={r.url} rel="noopener">{r.label}</a></li>)}</ul>
+  </>}
+  {note && <p class="confidence">{note}{updated ? ` Links checked ${updated}.` : ''}</p>}
+</section>
+<style is:global>
+.job-help .lede-sm{font-size:var(--fs-body-lg);margin-bottom:var(--space-4)}
+.job-help .actions{list-style:none;padding:0;margin:0 0 var(--space-5);display:grid;gap:var(--space-3)}
+.job-help .action h3{font-size:var(--fs-h4);margin:var(--space-2) 0}
+.job-help .action p{margin:0 0 var(--space-2);font-size:var(--fs-small)}
+.atype.skill{background:var(--color-sage);color:var(--color-teal-deep)}
+.atype.tool{background:var(--color-lavender);color:var(--color-ink)}
+.atype.role{background:var(--color-apricot-tint);color:var(--color-clay)}
+.atype.training{background:var(--color-safe-tint);color:var(--color-safe)}
+.job-help .res-h{font-size:var(--fs-h4);margin:var(--space-4) 0 var(--space-2)}
+.job-help .res{padding-left:20px;margin:0 0 var(--space-3)}
+</style>

@@ -3,14 +3,15 @@ import Base from '../../layouts/Base.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import tools from '../../data/tools.json';
 import tasks from '../../data/tasks.json';
-import { SITE, tint, initials } from '../../lib/site';
+import { SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
 export function getStaticPaths() { return tools.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
 const { tool } = Astro.props;
 const [bg, fg] = tint(tool.slug);
+const p = tool.pricing; const d = tool.details;
 const myTasks = tool.tasks.map(s => tasks.find(t => t.slug === s)).filter(Boolean);
 const alts = tools.filter(t => t.slug !== tool.slug && t.category === tool.category).slice(0, 3);
 const ld = [
-  { '@type': 'SoftwareApplication', name: tool.name, url: tool.website, mainEntityOfPage: `${SITE.url}/tools/${tool.slug}`, applicationCategory: 'BusinessApplication', description: tool.summary, ...(tool.developer ? { author: { '@type': 'Organization', name: tool.developer } } : {}) },
+  { '@type': 'SoftwareApplication', name: tool.name, url: tool.website, mainEntityOfPage: `${SITE.url}/tools/${tool.slug}`, applicationCategory: 'BusinessApplication', description: tool.summary, ...(p.free_tier !== null ? { offers: { '@type': 'Offer', price: p.free_tier ? '0' : undefined, priceCurrency: 'USD', description: p.summary } } : {}), ...(tool.developer ? { author: { '@type': 'Organization', name: tool.developer } } : {}) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
 ];
 const nc = 'Not checked yet';
@@ -25,19 +26,29 @@ const nc = 'Not checked yet';
     </div>
     <div><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
   </div>
-  <div class="badges" style="margin-top:var(--space-4)"><span class="b b-price">{tool.pricing.label}</span><span class="b b-unverified">Not tested by an editor yet</span>{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
+  <div class="badges" style="margin-top:var(--space-4)"><span class="b b-price">{tool.pricing.label}</span>{p.verified ? <span class="b b-verified">Price verified {fmtMonthDay(p.verified_on)}</span> : <span class="b b-unverified">Pricing unconfirmed</span>}{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
   <p class="confidence" style="margin-top:var(--space-3)"><a href={`/contact?about=${tool.slug}#report`}>Report outdated info</a></p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div class="detail">
     <div class="prose" style="max-width:none">
+      {d && <><h2>What it does</h2><p>{d.what_it_does}</p>
+      <h2>Who it's for</h2><p>{d.who_its_for}</p>
+      <div class="grid-2" style="margin:var(--space-4) 0">
+        <div class="panel"><h3 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)"><span aria-hidden="true">✓ </span>Good points</h3><ul style="margin:0;padding-left:20px">{d.pros.map(x => <li>{x}</li>)}</ul></div>
+        <div class="panel"><h3 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)"><span aria-hidden="true">! </span>Watch out for</h3><ul style="margin:0;padding-left:20px">{d.cons.map(x => <li>{x}</li>)}</ul></div>
+      </div></>}
       <h2>Good for</h2>
       <div class="chips" style="justify-content:flex-start">{myTasks.map(t => <a class="chip" href={`/tasks/${t.slug}`}>{t.name}</a>)}</div>
-      <h2>How to get started</h2>
-      <ol><li>Visit the {tool.name} website and look for a free plan or trial.</li><li>Try one small, low-stakes task first.</li><li>Check the result, and keep private details out.</li></ol>
-      <p class="confidence">General steps. A tool-specific guide comes after editor testing.</p>
-      <h2>Pricing</h2>
-      <p>{tool.pricing.label}. Plan-by-plan prices are {nc.toLowerCase()} — see the official site.</p>
+      <h2 id="pricing">Pricing</h2>
+      <div class="panel">
+        <p style="margin-bottom:var(--space-2)"><strong>{freeText(p)}</strong>{p.starting_paid_price && <> · Paid plans from <strong>{p.starting_paid_price}</strong></>}</p>
+        {p.summary && <p style="margin-bottom:var(--space-2)">{p.summary}</p>}
+        {p.verified
+          ? <p class="confidence">Last verified {fmtMonthDay(p.verified_on)} on the official pricing page. Prices can change; check before you buy.</p>
+          : <p class="confidence"><strong>Pricing unconfirmed.</strong> {p.verification_note}</p>}
+        {p.pricing_url && <p style="margin-top:var(--space-2)"><a href={p.pricing_url} rel="noopener">Official pricing page <svg width="14" height="14" aria-hidden="true"><use href="#i-ext"/></svg></a></p>}
+      </div>
       <h2>Privacy and safety</h2>
       <div class="placeholder"><strong>Not checked yet.</strong> We will list whether {tool.name} trains on your data, where data is stored, and age limits, each with a source link.</div>
       <h2>Our take <span class="b b-skill" style="vertical-align:middle">Editorial</span></h2>
@@ -49,13 +60,14 @@ const nc = 'Not checked yet';
       <dl>
         <dt>Made by</dt><dd>{tool.developer ?? nc}</dd>
         <dt>Group</dt><dd>{tool.category_label}</dd>
-        <dt>Price</dt><dd>{tool.pricing.label}</dd>
+        <dt>Price</dt><dd>{p.label}{p.starting_paid_price ? `; paid from ${p.starting_paid_price}` : ''}</dd>
+        <dt>Pricing</dt><dd>{priceStatus(p)}</dd>
         <dt>Skill</dt><dd>{tool.skill_level ?? nc}</dd>
         <dt>Platforms</dt><dd>{tool.platforms?.join(', ') ?? nc}</dd>
         <dt>Data use</dt><dd>{nc}</dd>
-        <dt>Checked</dt><dd>{tool.last_verified ?? 'Not yet'}</dd>
+        <dt>Editor test</dt><dd>{tool.last_verified ?? 'Not yet'}</dd>
       </dl>
-      <p class="confidence" style="margin-top:var(--space-3)">Facts come from the research list. No company pays to be listed.</p>
+      <p class="confidence" style="margin-top:var(--space-3)">Details and prices from our research team, checked on official pages. No company pays to be listed.</p>
     </aside>
   </div>
   <div class="sticky-cta"><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name}</a></div>
