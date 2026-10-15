@@ -1,9 +1,19 @@
 {
-  "stories": [
-    {
-      "link": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
-      "title": "Google’s Universal Cart shopping tool launches in the US",
-      "why": "If you shop through Google, AI can now gather items from different stores into one cart, so it's worth comparing prices yourself before you check out."
-    }
-  ]
+ "stories": [
+  {
+   "link": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+   "title": "Google’s Universal Cart shopping tool launches in the US",
+   "why": "If you shop through Google, AI can now gather items from different stores into one cart, so it's worth comparing prices yourself before you check out."
+  },
+  {
+   "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+   "title": "AI agents are coming to Rivian’s cars",
+   "why": "AI assistants are moving into everyday things like cars, so expect to talk to your next vehicle and check what it records and shares."
+  },
+  {
+   "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
+   "title": "Amazon’s always-listening Bee wearable can now help you buy stuff",
+   "why": "Always-listening AI gadgets can now make purchases for you, so if you or your staff wear one, review its privacy and spending settings first."
+  }
+ ]
 }
