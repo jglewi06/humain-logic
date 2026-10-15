@@ -5,12 +5,17 @@ import { mailto, OUTLOOK, SITE, fmtDate, HIRING_INTRO } from '../../../lib/site'
 import JobTimeline from '../../../components/JobTimeline.astro';
 import JobHelp from '../../../components/JobHelp.astro';
 import HiringImpact from '../../../components/HiringImpact.astro';
+import { citation } from '../../../lib/ld.mjs';
 export function getStaticPaths() { return jobsData.jobs.map(j => ({ params: { slug: j.slug }, props: { job: j } })); }
 const { job } = Astro.props;
 const o = OUTLOOK[job.outlook];
 const pos = { steady: 15, watch: 50, shift: 85 }[job.outlook];
 const similar = jobsData.jobs.filter(j => j.slug !== job.slug && j.outlook === job.outlook).slice(0, 4);
-const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.name}`, about: { '@type': 'Occupation', name: job.name }, dateModified: jobsData.updated, author: { '@id': `${SITE.url}/#org` }, isBasedOn: job.sources.map(s => s.url) }];
+const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.name}`, about: { '@type': 'Occupation', name: job.name }, dateModified: jobsData.updated,
+  author: { '@id': `${SITE.url}/#org` }, publisher: { '@id': `${SITE.url}/#org` }, mainEntityOfPage: `${SITE.url}/tracker/jobs/${job.slug}`,
+  isPartOf: { '@id': `${SITE.url}/tracker#dataset` }, isBasedOn: `${SITE.url}/methodology`,
+  citation: [...new Map([...job.sources, ...(job.employment_pressure_sources ?? [])].map(s => [s.url, citation(s)])).values()] },
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Job tracker', item: `${SITE.url}/tracker` }, { '@type': 'ListItem', position: 3, name: job.name, item: `${SITE.url}/tracker/jobs/${job.slug}` }] }];
 ---
 <Base title={`Will AI change the job of ${job.name.toLowerCase()}?`} description={`Our calm, sourced outlook for ${job.name}: ${o.label}.`} jsonld={ld}>
 <section class="page-head"><div class="container">
@@ -32,8 +37,9 @@ const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.
       <h2>HumAIn Logic estimate</h2>
       <p>Our estimate (a <strong>HumAIn Logic estimate</strong>, not a figure from the sources): technology could do most of this job's <em>current tasks</em> at scale around <strong>{job.estimate_range}</strong>. Confidence: <strong>{job.confidence}</strong>. That doesn't mean the job disappears — most jobs change shape as tasks move around.</p>
       <JobHelp help={job.help} resources={jobsData.general_resources} note={jobsData.help_note} updated={jobsData.help_updated} />
-      <h2>Sources for the estimate</h2>
-      <ol class="sources">{job.sources.map(s => <li><a href={s.url} rel="noopener">{s.title}</a> — {s.publisher}{s.year ? `, ${s.year}` : ''}</li>)}</ol>
+      <h2 id="sources">Sources for the automation timeline</h2>
+      <ol class="sources">{job.sources.map(s => <li><cite><a href={s.url} rel="noopener">{s.title}</a></cite>{s.publisher ? ` — ${s.publisher}` : ''}{s.year ? `, ${s.year}` : ''}</li>)}</ol>
+      <p class="confidence">How we turn these sources into a year range and an outlook: <a href="/methodology#automation">methodology</a>.</p>
       <p class="confidence">{jobsData.note}</p>
       <HiringImpact level={job.employment_pressure_by_2030} summary={job.employment_pressure_summary} sources={job.employment_pressure_sources} note={jobsData.employment_pressure_note} intro={HIRING_INTRO} />
     </div>

@@ -9,7 +9,8 @@ const h = HIRING[level];
   {summary && <p>{summary}</p>}
   <p class="confidence"><strong>HumAIn Logic estimate.</strong>{' '}{intro}</p>
   {sources.length > 0 && <details class="hi-src"><summary>Sources for the hiring estimate ({sources.length})</summary>
-    <ol class="sources">{sources.map((s: any) => <li><a href={s.url} rel="noopener">{s.title}</a>{s.publisher ? ` — ${s.publisher}` : ''}{s.year ? `, ${s.year}` : ''}</li>)}</ol>
+    <ol class="sources">{sources.map((s: any) => <li><cite><a href={s.url} rel="noopener">{s.title}</a></cite>{s.publisher ? ` — ${s.publisher}` : ''}{s.year ? `, ${s.year}` : ''}</li>)}</ol>
     {note && <p class="confidence">Researcher's note: {note}</p>}
+    <p class="confidence">How hiring impact is estimated: <a href="/methodology#hiring">methodology</a>.</p>
   </details>}
 </section>}

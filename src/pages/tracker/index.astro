@@ -3,9 +3,10 @@ import Base from '../../layouts/Base.astro';
 import jobsData from '../../data/jobs.json';
 import { OUTLOOK, SITE, fmtDate, HIRING, HIRING_ORDER, HIRING_INTRO } from '../../lib/site';
 import JobTimeline from '../../components/JobTimeline.astro';
+import { jobsDatasetLd, itemList } from '../../lib/ld.mjs';
 const groups = (['shift', 'watch', 'steady'] as const).map(k => ({ k, ...OUTLOOK[k], jobs: jobsData.jobs.filter(j => j.outlook === k) }));
 const hgroups = HIRING_ORDER.map(k => ({ k, ...HIRING[k], jobs: jobsData.jobs.filter(j => j.employment_pressure_by_2030 === k) })).filter(g => g.jobs.length);
-const ld = [{ '@type': 'Dataset', name: 'HumAIn Logic AI Job Safety Tracker', description: 'Editorial outlook estimates for how AI may change specific jobs, with sources.', url: `${SITE.url}/tracker`, creator: { '@id': `${SITE.url}/#org` }, dateModified: jobsData.updated, measurementTechnique: `${SITE.url}/methodology`, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${SITE.url}/api/jobs.json` }] }];
+const ld = [jobsDatasetLd(jobsData), itemList('Jobs in the tracker', jobsData.jobs.map(j => ({ url: `${SITE.url}/tracker/jobs/${j.slug}`, name: j.name })))];
 ---
 <Base title="Job safety tracker" description="How is AI changing your job? Calm, sourced outlooks for 31 jobs." jsonld={ld} json="/api/jobs.json">
 <section class="page-head"><div class="container">

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ToolCard from '../../components/ToolCard.astro';
+import { toolLd } from '../../lib/ld.mjs';
 import tools from '../../data/tools.json';
 import tasks from '../../data/tasks.json';
 import { mailto, SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
@@ -11,7 +12,7 @@ const p = tool.pricing; const d = tool.details;
 const myTasks = tool.tasks.map(s => tasks.find(t => t.slug === s)).filter(Boolean);
 const alts = tools.filter(t => t.slug !== tool.slug && t.category === tool.category).slice(0, 3);
 const ld = [
-  { '@type': 'SoftwareApplication', name: tool.name, url: tool.website, mainEntityOfPage: `${SITE.url}/tools/${tool.slug}`, applicationCategory: 'BusinessApplication', description: tool.summary, ...(p.free_tier !== null ? { offers: { '@type': 'Offer', price: p.free_tier ? '0' : undefined, priceCurrency: 'USD', description: p.summary } } : {}), ...(tool.developer ? { author: { '@type': 'Organization', name: tool.developer } } : {}) },
+  toolLd(tool),
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
 ];
 ---

@@ -1,5 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import NewsFeed from '../../components/NewsFeed.astro';
+import news from '../../data/news.json';
+import { newsListLd } from '../../lib/ld.mjs';
+const ld = [newsListLd(news.items.slice(0, 20), 'Latest AI news')];
 ---
-<Base title="AI news" description="Calm, sourced AI news for everyday people and small businesses." json="/api/news.json"><NewsFeed /></Base>
+<Base jsonld={ld} title="AI news" description="Calm, sourced AI news for everyday people and small businesses." json="/api/news.json"><NewsFeed /></Base>

@@ -1,13 +1,91 @@
 ---
 import Base from '../layouts/Base.astro';
+import jobsData from '../data/jobs.json';
+import tools from '../data/tools.json';
+import { HIRING, HIRING_ORDER, OUTLOOK, fmtDate } from '../lib/site';
+import { jobsDatasetLd, SITE_URL, ORG } from '../lib/ld.mjs';
+// Every source cited anywhere in the tracker, de-duplicated by URL, with how many jobs cite it
+const srcMap = new Map();
+for (const j of jobsData.jobs) for (const [s, kind] of [...j.sources.map(s => [s, 'timeline']), ...(j.employment_pressure_sources ?? []).map(s => [s, 'hiring'])]) {
+  const e = srcMap.get(s.url) ?? { ...s, jobs: new Set(), kinds: new Set() }; e.jobs.add(j.slug); e.kinds.add(kind); srcMap.set(s.url, e);
+}
+const sources = [...srcMap.values()].sort((a, b) => b.jobs.size - a.jobs.size || (b.year ?? 0) - (a.year ?? 0));
+const conf = Object.fromEntries(['high', 'medium', 'low'].map(c => [c, jobsData.jobs.filter(j => j.confidence === c).length]));
+const hcount = Object.fromEntries(HIRING_ORDER.map(k => [k, jobsData.jobs.filter(j => j.employment_pressure_by_2030 === k).length]));
+const ocount = Object.fromEntries(Object.keys(OUTLOOK).map(k => [k, jobsData.jobs.filter(j => j.outlook === k).length]));
+const HDESC: Record<string, string> = { high: 'Sources point to clearly fewer openings or headcount declines by about 2030.', medium: 'Some sources point to slower hiring or fewer openings; others are mixed.', low: 'Sources point to little change in openings by about 2030.', growth: 'Sources point to more openings by about 2030.' };
+const verified = tools.filter(t => t.pricing.verified).length;
+const ld = [
+  { '@type': 'Article', '@id': `${SITE_URL}/methodology#article`, headline: 'How HumAIn Logic estimates how AI may change jobs', description: 'Methodology for the HumAIn Logic Job safety tracker: automation year ranges, outlook levels, hiring impact by 2030, sources, limitations and updates.',
+    author: ORG, publisher: ORG, dateModified: jobsData.updated, mainEntityOfPage: `${SITE_URL}/methodology`, about: { '@id': `${SITE_URL}/tracker#dataset` },
+    citation: sources.map(s => ({ '@type': 'CreativeWork', name: s.title, url: s.url, ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}), ...(s.year ? { datePublished: String(s.year) } : {}) })) },
+  jobsDatasetLd(jobsData),
+];
 ---
-<Base title="How we test and decide">
-<section class="page-head"><div class="container"><span class="eyebrow">Methodology</span><h1>How we test and decide</h1></div></section>
+<Base title="Methodology: how we estimate AI's effect on jobs" description="How the HumAIn Logic Job safety tracker works: automation year ranges, outlook levels, hiring impact by 2030, sources, limitations and update policy." jsonld={ld}>
+<section class="page-head"><div class="container"><span class="eyebrow">Methodology</span><h1>How we test and decide</h1>
+<p class="lede">How the Job safety tracker turns public research into two separate HumAIn Logic estimates, and how we check tools and news.</p>
+<p class="confidence" style="margin-top:var(--space-3)">Tracker data last updated <time datetime={jobsData.updated}>{fmtDate(jobsData.updated)}</time> · {jobsData.jobs.length} jobs · <a href="/api/jobs.json">Download the data (JSON)</a></p></div></section>
 <div class="container section" style="padding-top:var(--space-6)"><div class="prose">
-<h2>Tools</h2><p>Our tool list comes from public research. Each tool shows its price type, the tasks it helps with, and a link to its website. Tools marked “Not tested yet” have not been tried by an editor. Testing notes, pricing tables and privacy facts are added as we check each tool.</p>
-<h2>Job safety tracker</h2><p>Each job gets one of three outlooks: <strong>✓ Mostly steady</strong>, <strong>◐ Changing</strong>, or <strong>↻ Big shift ahead</strong>. The outlook comes from our editorial estimate of when technology could do most of the job’s current tasks at scale:</p>
-<ul><li>Range starts in 2035 or earlier: Big shift ahead</li><li>Range starts 2036–2045: Changing</li><li>Range starts after 2045: Mostly steady</li></ul>
-<p>The estimates combine Frey &amp; Osborne (2013), Eloundou et al. (2023), ILO (2023) and McKinsey (2023), adjusted for physical work, licensing and BLS/WEF outlooks. None of these sources publishes per-job dates. Confidence is low for most jobs. These are estimates, not predictions or advice.</p>
-<h2>News</h2><p>Headlines are collected automatically from public RSS feeds every few hours. We show the headline, a short excerpt, the source and the time, and always link to the original. Stories are sorted into topics by keywords. AI-written summaries, if we add them, will be labelled.</p>
+<nav aria-label="On this page" class="panel" style="margin-bottom:var(--space-6)"><strong>On this page:</strong> <a href="#automation">Automation year ranges</a> · <a href="#outlook">Outlook levels</a> · <a href="#hiring">Hiring impact by 2030</a> · <a href="#sources">Sources</a> · <a href="#limits">Limitations</a> · <a href="#updates">Updates</a> · <a href="#tools">Tools</a> · <a href="#news">News</a></nav>
+
+<h2>Two separate estimates</h2>
+<p>Each job in the <a href="/tracker">Job safety tracker</a> has two estimates that answer different questions. Both are <strong>HumAIn Logic estimates</strong>, not figures published by the sources.</p>
+<ol><li><strong>Automation timeline:</strong> when could technology do most of this job's <em>current tasks</em> at scale?</li><li><strong>Hiring impact by 2030:</strong> are employers likely to hire fewer or more people for this job by about 2030?</li></ol>
+<p>A job can have a distant automation range and still face hiring pressure now, or the other way round.</p>
+
+<h2 id="automation">1. Automation year ranges</h2>
+<p>None of the sources gives a per-job date for “full automation”. We build each range in three steps:</p>
+<ol>
+<li><strong>Relative exposure.</strong> How exposed the job's tasks are, from the automation probabilities in Frey &amp; Osborne (2013) and the task-exposure scores in Eloundou et al. (2023) and the ILO (2023).</li>
+<li><strong>Anchor to a timeline.</strong> McKinsey (2023) estimates that half of today's work activities could be automated between 2030 and 2060, with a midpoint around 2045. More exposed jobs are placed earlier in that window and less exposed jobs later.</li>
+<li><strong>Adjust.</strong> Ranges move later for physical and manual work (robotics is adopted more slowly) and for regulated or licensed work, and are checked against BLS and WEF employment outlooks.</li>
+</ol>
+<p>“Most current tasks can be done by technology” does not mean the job disappears. Several sources (OECD, IMF, WEF) stress that AI more often changes jobs than replaces them.</p>
+<h3>Confidence</h3>
+<p>Confidence reflects how much the sources agree and how mature the technology is: <strong>high</strong> ({conf.high} jobs), <strong>medium</strong> ({conf.medium}), <strong>low</strong> ({conf.low}). It is low for most ranges.</p>
+
+<h2 id="outlook">2. Outlook levels</h2>
+<p>The outlook shown on each job is set only by where its automation range <em>starts</em>:</p>
+<table><thead><tr><th scope="col">Outlook</th><th scope="col">Rule</th><th scope="col">Jobs</th></tr></thead><tbody>
+<tr><td><span class="pill shift" style="white-space:nowrap"><span aria-hidden="true">{OUTLOOK.shift.icon}</span> {OUTLOOK.shift.label}</span></td><td>Range starts in 2035 or earlier</td><td>{ocount.shift}</td></tr>
+<tr><td><span class="pill watch"><span aria-hidden="true">{OUTLOOK.watch.icon}</span> {OUTLOOK.watch.label}</span></td><td>Range starts 2036–2045</td><td>{ocount.watch}</td></tr>
+<tr><td><span class="pill safe"><span aria-hidden="true">{OUTLOOK.steady.icon}</span> {OUTLOOK.steady.label}</span></td><td>Range starts after 2045</td><td>{ocount.steady}</td></tr>
+</tbody></table>
+
+<h2 id="hiring">3. Hiring impact by 2030</h2>
+<p>This is a separate, faster estimate: expected hiring slowdowns or headcount changes by about 2030, based on employer surveys (WEF Future of Jobs Report 2025) and early labor-market data (Stanford Digital Economy Lab, “Canaries in the Coal Mine?”, August 2026; Metaculus Labor Automation Forecasting Hub). It is not a full-automation forecast. Overall forecasts remain modest: Forrester expects about 6% of US jobs to be lost to AI and automation by 2030, and BCG finds more jobs reshaped than replaced.</p>
+<table><thead><tr><th scope="col">Level</th><th scope="col">What it means</th><th scope="col">Jobs</th></tr></thead><tbody>
+{HIRING_ORDER.map(k => <tr><td><span class={`hi-tag ${(HIRING as any)[k].cls}`}><span aria-hidden="true">{(HIRING as any)[k].icon}</span> {(HIRING as any)[k].label}</span></td><td>{HDESC[k]}</td><td>{hcount[k]}</td></tr>)}
+</tbody></table>
+<p>Each job page explains its level in one or two sentences and lists the sources behind it.</p>
+
+<h2 id="sources">4. Sources</h2>
+<p>All {sources.length} sources cited across the tracker, most-cited first. Each job page lists the ones it uses.</p>
+<ol class="sources">{sources.map(s => <li><cite><a href={s.url} rel="noopener">{s.title}</a></cite>{s.publisher ? ` — ${s.publisher}` : ''}{s.year ? `, ${s.year}` : ''} <span class="confidence">({s.jobs.size} job{s.jobs.size === 1 ? '' : 's'}; {[...s.kinds].map(k => k === 'timeline' ? 'automation timeline' : 'hiring impact').join(' and ')})</span></li>)}</ol>
+<p class="confidence">Source links were checked on October 14, 2026. Some official pages (IMF, WEF, OECD, BLS) block automated checks; their official landing pages were confirmed by search.</p>
+
+<h2 id="limits">5. Limitations</h2>
+<ul>
+<li>These are editorial estimates, not predictions, and not career, legal or financial advice.</li>
+<li>No source publishes per-job automation dates; the year ranges are our synthesis, and confidence is low for most jobs.</li>
+<li>Estimates describe a type of job in general, mostly from US and global data. Your own job depends on your tasks, employer, location and skills.</li>
+<li>Job titles are broad groups; a specific role can differ a lot from the group.</li>
+<li>Research in this area is new and changes quickly; early labor-market data covers only a few years.</li>
+<li>The estimates must not be used to make decisions about hiring, firing, pay or promotion of any individual (see our <a href="/terms">terms</a>).</li>
+</ul>
+
+<h2 id="updates">6. Update policy</h2>
+<ul>
+<li>Each job page and the tracker show the date the data was last updated. The full dataset is published at <a href="/api/jobs.json">/api/jobs.json</a> under CC BY 4.0 with attribution.</li>
+<li>We review the estimates when major new research or official outlooks are published, and correct errors as soon as we confirm them.</li>
+<li>Found an error or a better source? Email <a href="mailto:hello@humainlogic.com?subject=Tracker%20methodology">hello@humainlogic.com</a>, or use “Report an error” on any job page.</li>
+</ul>
+
+<h2 id="tools">Tools</h2>
+<p>Our tool list comes from public research. Each tool shows what it does, who it's for, the tasks it helps with and a link to its website. Prices are checked on each tool's official pricing page and show “Last verified” with the date ({verified} of {tools.length} tools so far). When we can't confirm a price, the tool says <strong>Pricing unconfirmed</strong> with the reason. No company pays to be listed or ranked.</p>
+
+<h2 id="news">News</h2>
+<p>Headlines are collected automatically from public RSS feeds every few hours. Feeds that cover more than AI must mention AI in the headline or excerpt. We show the headline, a short excerpt, the source and the time, and always link to the original. Stories are sorted into topics by keywords. Images are our own illustrations. AI-written summaries, if we add them, will be labelled.</p>
 </div></div>
 </Base>

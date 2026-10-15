@@ -16,6 +16,7 @@ User-agent: ChatGPT-User
 User-agent: ClaudeBot
 User-agent: Claude-User
 User-agent: Claude-SearchBot
+User-agent: Claude-Web
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: Google-Extended
@@ -25,6 +26,7 @@ User-agent: Meta-ExternalAgent
 User-agent: Amazonbot
 User-agent: DuckAssistBot
 User-agent: MistralAI-User
+User-agent: Bingbot
 Allow: /
 Disallow: /search
 Disallow: /newsletter/confirm

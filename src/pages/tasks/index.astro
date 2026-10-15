@@ -2,8 +2,10 @@
 import Base from '../../layouts/Base.astro';
 import tasks from '../../data/tasks.json';
 import categories from '../../data/categories.json';
+import { itemList, SITE_URL } from '../../lib/ld.mjs';
+const ld = [itemList('Everyday tasks AI tools can help with', tasks.map(t => ({ url: `${SITE_URL}/tasks/${t.slug}`, name: t.name })))];
 ---
-<Base title="Browse by task" description="Every task our AI tools can help with, in plain words." json="/api/tasks.json">
+<Base jsonld={ld} title="Browse by task" description="Every task our AI tools can help with, in plain words." json="/api/tasks.json">
 <section class="page-head"><div class="container"><span class="eyebrow">Find a tool</span><h1>Browse by task</h1><p class="lede">{tasks.length} everyday tasks. Pick one to see tools that can help.</p></div></section>
 <div class="container">
   {categories.map(c => { const ts = tasks.filter(t => t.categories.includes(c.slug)); return ts.length > 0 && (

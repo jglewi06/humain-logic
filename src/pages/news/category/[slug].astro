@@ -2,7 +2,10 @@
 import Base from '../../../layouts/Base.astro';
 import NewsFeed from '../../../components/NewsFeed.astro';
 import { NEWS_CATS } from '../../../lib/site';
+import news from '../../../data/news.json';
+import { newsListLd } from '../../../lib/ld.mjs';
 export function getStaticPaths() { return Object.keys(NEWS_CATS).map(slug => ({ params: { slug } })); }
 const { slug } = Astro.params;
+const ld = [newsListLd(news.items.filter(i => i.category === slug).slice(0, 20), `AI news: ${NEWS_CATS[slug]}`)];
 ---
-<Base title={`AI news: ${NEWS_CATS[slug]}`}><NewsFeed category={slug} /></Base>
+<Base title={`AI news: ${NEWS_CATS[slug]}`} jsonld={ld}><NewsFeed category={slug} /></Base>
