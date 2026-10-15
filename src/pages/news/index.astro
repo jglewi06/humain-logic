@@ -5,4 +5,10 @@ import news from '../../data/news.json';
 import { newsListLd } from '../../lib/ld.mjs';
 const ld = [newsListLd(news.items.slice(0, 20), 'Latest AI news')];
 ---
-<Base jsonld={ld} title="AI news" description="Calm, sourced AI news for everyday people and small businesses." json="/api/news.json"><NewsFeed /></Base>
+<Base jsonld={ld} title="AI news" description="Calm, sourced AI news for everyday people and small businesses." json="/api/news.json">
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/img/news-page/news-hero-1024.webp" imagesrcset="/img/news-page/news-hero-640.webp 640w, /img/news-page/news-hero-1024.webp 1024w, /img/news-page/news-hero-1600.webp 1600w" imagesizes="(min-width:768px) 54vw, 100vw" type="image/webp" fetchpriority="high">
+    <script is:inline>if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches && document.documentElement.dataset.motion!=='reduce')document.documentElement.classList.add('js-reveal');</script>
+  </Fragment>
+  <NewsFeed />
+</Base>

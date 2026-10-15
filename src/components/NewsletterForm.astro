@@ -1,10 +1,13 @@
 ---
 // ux/spec §1.4 + homepage-spec §7 + legal brief §3: email only, UNTICKED consent, double opt-in (Buttondown), honeypot, neutral success.
 import { SITE } from '../lib/site';
-const { id = 'nl', heading = true } = Astro.props;
+const { id = 'nl', heading = true, class: cls = '' } = Astro.props;
+const media = Astro.slots.has('media');
 const action = SITE.buttondownUser ? `https://buttondown.com/api/emails/embed-subscribe/${SITE.buttondownUser}` : '';
 ---
-<div class="newsletter" id={`${id}-wrap`}>
+<div class={`newsletter ${cls}`.trim()} id={`${id}-wrap`}>
+  <slot name="media" />
+  <Fragment set:html={media ? '<div class="nl-inner">' : ''} />
   <div>
     <span class="eyebrow">{SITE.newsletterName}</span>
     {heading ? <h2 id={`${id}-h`}>One calm email a week</h2> : <p class="h2-like" id={`${id}-h`}>One calm email a week</p>}
@@ -30,6 +33,7 @@ const action = SITE.buttondownUser ? `https://buttondown.com/api/emails/embed-su
       <p class="fine">Not there? Check spam, or <button type="button" class="btn btn-ghost btn-sm" data-change>use a different email</button></p>
     </div>
   </div>
+  <Fragment set:html={media ? '</div>' : ''} />
 </div>
 <style>.h2-like{font-family:var(--font-heading);font-size:var(--fs-h2);font-weight:600;line-height:var(--lh-tight);margin:var(--space-2) 0 var(--space-3)}</style>
 <script>
