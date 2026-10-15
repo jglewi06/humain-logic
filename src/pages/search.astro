@@ -49,7 +49,7 @@ const popular = ['Write an email', 'Make a flyer', 'Take meeting notes', 'Summar
 </div>
 </Base>
 <script>
-import Fuse from 'fuse.js';
+import { prepare, search } from '../lib/search-core.mjs';
 type Task = { s: string; n: string; c: string[]; k: string[] };
 type Tool = { s: string; n: string; d: string; c: string; cl: string; p: string; pl: string; f: boolean | null; sp: string | null; v: boolean; t: string[]; w: string };
 const $ = (id: string) => document.getElementById(id)!;
@@ -57,42 +57,33 @@ const esc = (s: string) => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt
 const params = new URLSearchParams(location.search);
 const q = (params.get('q') || '').trim();
 (document.getElementById('q') as HTMLInputElement).value = q;
-const STOP = /\b(help me|i want to|i need to|how (do|can) i|can you|please|ai|tool|tools|app|for me|with ai|some|a|an|the|my|to|me)\b/gi;
 let index: { tasks: Task[]; tools: Tool[] };
+let prepared: any;
 
 function render() {
   const sel = (n: string) => [...document.querySelectorAll<HTMLInputElement>(`input[name=${n}]:checked`)].map(i => i.value);
   const prices = sel('price'), cats = sel('cat');
   const chosenTask = params.get('task');
-  const clean = q.replace(STOP, ' ').replace(/\s+/g, ' ').trim();
   const freeInQuery = /\bfree\b/i.test(q);
   if (freeInQuery && !params.has('price')) { (document.querySelector('input[value=free-option]') as HTMLInputElement).checked = true; params.set('price', 'free-option'); return render(); }
-  const taskFuse = new Fuse(index.tasks, { keys: ['n'], includeScore: true, threshold: 0.45, ignoreLocation: true });
-  const toolFuse = new Fuse(index.tools, { keys: [{ name: 'n', weight: 2 }, { name: 'd', weight: 1 }, { name: 'cl', weight: 1 }, { name: 't', weight: 1.5 }], includeScore: true, threshold: 0.4, ignoreLocation: true });
-  const taskHits = clean.length >= 2 ? taskFuse.search(clean.replace(/\bfree\b/i, '').trim() || clean).slice(0, 5) : [];
-  let task: Task | undefined = chosenTask ? index.tasks.find(t => t.s === chosenTask) : taskHits[0]?.item;
-  const ambiguous = !chosenTask && taskHits.length > 1 && (taskHits[1].score! - taskHits[0].score!) < 0.04 && taskHits[0].score! > 0.02;
+  const r = search(prepared ??= prepare(index), q, { chosenTask });
+  const task: Task | undefined = r.task; const taskHits = r.taskHits; const ambiguous = r.ambiguous;
   // interpretation banner / ambiguity (ux/spec §1.1)
   let html = '';
   if (!q) html = '<p>Describe a task above, for example <em>write a job advert</em>.</p>';
   else if (q.length < 3 || /^ai$/i.test(q)) html = '<p class="interp">Try describing the task, e.g. <em>&nbsp;write a job advert</em>.</p>';
   else if (task && ambiguous) {
-    html = `<div class="ambig"><fieldset><legend>“${esc(q)}” can mean a few things. Which is closest?</legend>${taskHits.slice(0, 4).map((h, i) => `<label><input type="radio" name="pick" value="${h.item.s}" ${i === 0 ? 'checked' : ''}> ${esc(h.item.n)}</label>`).join('')}</fieldset></div>`;
+    html = `<div class="ambig"><fieldset><legend>“${esc(q)}” can mean a few things. Which is closest?</legend>${taskHits.slice(0, 4).map((h: any, i: number) => `<label><input type="radio" name="pick" value="${h.item.s}" ${i === 0 ? 'checked' : ''}> ${esc(h.item.n)}</label>`).join('')}</fieldset></div>`;
   } else if (task) html = `<div class="interp"><span>We think you want to: <strong>${esc(task.n)}</strong></span><button class="btn btn-ghost btn-sm" type="button" id="change">✎ Change</button></div>`;
+  else if (r.closest) html = `<div class="interp"><span>No exact match for “${esc(q)}”. Showing the <strong>closest matches</strong>: ${esc(r.closestLabel)}.</span></div>`;
   $('interp').innerHTML = html;
-  // results: tools tagged with the task first, then fuzzy matches
-  const scored = new Map<string, { tool: Tool; score: number; why: string }>();
-  if (task) for (const s of task.k) { const t = index.tools.find(x => x.s === s)!; scored.set(s, { tool: t, score: 0, why: `listed for “${task.n.toLowerCase()}”` }); }
-  for (const h of taskHits.slice(1)) for (const s of h.item.k) if (!scored.has(s)) { const t = index.tools.find(x => x.s === s)!; scored.set(s, { tool: t, score: 0.2 + h.score!, why: `related task: ${h.item.n.toLowerCase()}` }); }
-  if (clean) for (const h of toolFuse.search(clean).slice(0, 12)) if (!scored.has(h.item.s)) scored.set(h.item.s, { tool: h.item, score: 0.4 + h.score!, why: 'matches the words you used' });
-  if (task) for (const t of index.tools) if (!scored.has(t.s) && task.c.includes(t.c)) scored.set(t.s, { tool: t, score: 0.9, why: `also in ${t.cl}` });
-  const all = [...scored.values()].sort((a, b) => a.score - b.score);
+  const all = r.results as { tool: Tool; score: number; why: string }[];
   // free_tier: true = has a free plan; false = no; null = unknown (never counted as free)
   const pass = (r: { tool: Tool }) => (!prices.length || prices.some(p => p === 'free' ? r.tool.p === 'free' : r.tool.f === true)) && (!cats.length || cats.includes(r.tool.c));
   const shown = all.filter(pass);
   const unknownHidden = prices.length ? all.filter(r => r.tool.f === null && (!cats.length || cats.includes(r.tool.c))).length : 0;
   $('count').textContent = q ? `${shown.length} tool${shown.length === 1 ? '' : 's'} match${unknownHidden ? ` · ${unknownHidden} hidden because we couldn't confirm a free plan` : ''}` : '';
-  $('results').innerHTML = shown.map((r, i) => `<article class="tool compact">${i === 0 ? '<span class="badge">Best match</span>' : ''}<div class="top"><div><h3><a href="/tools/${r.tool.s}" style="color:inherit">${esc(r.tool.n)}</a></h3><div class="by">${esc(r.tool.cl)}</div></div></div><p class="what">${esc(r.tool.d)}</p><div class="badges"><span class="b b-price">${esc(r.tool.pl)}</span>${r.tool.sp ? `<span class="b b-price">Paid from ${esc(r.tool.sp)}</span>` : ''}${r.tool.v ? '' : '<span class="b b-unverified">Pricing unconfirmed</span>'}</div><p class="why-match">Why it matches: ${esc(r.why)}</p><div class="cta"><a class="btn btn-primary btn-sm" href="/tools/${r.tool.s}">View details</a></div></article>`).join('');
+  $('results').innerHTML = shown.map((r, i) => `<article class="tool compact">${i === 0 && !r.closest ? '<span class="badge">Best match</span>' : ''}<div class="top"><div><h3><a href="/tools/${r.tool.s}" style="color:inherit">${esc(r.tool.n)}</a></h3><div class="by">${esc(r.tool.cl)}</div></div></div><p class="what">${esc(r.tool.d)}</p><div class="badges"><span class="b b-price">${esc(r.tool.pl)}</span>${r.tool.sp ? `<span class="b b-price">Paid from ${esc(r.tool.sp)}</span>` : ''}${r.tool.v ? '' : '<span class="b b-unverified">Pricing unconfirmed</span>'}</div><p class="why-match">Why it matches: ${esc(r.why)}</p><div class="cta"><a class="btn btn-primary btn-sm" href="/tools/${r.tool.s}">View details</a></div></article>`).join('');
   $('empty').hidden = !q || shown.length > 0;
   if (q && !shown.length) {
     $('empty-h').textContent = `We couldn't find a tool for “${q}” yet.`;

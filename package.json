@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "fetch-news": "node scripts/fetch-news.mjs",
     "build-newsletter": "node scripts/build-newsletter.mjs",
-    "import-research": "node scripts/import-research.mjs"
+    "import-research": "node scripts/import-research.mjs",
+    "search:eval": "node scripts/search-eval.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
