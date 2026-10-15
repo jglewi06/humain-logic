@@ -520,6 +520,7 @@ a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .tool.compact{gap:var(--space-3)}
 .why-match{font-size:var(--fs-caption);color:var(--color-slate)}
 @media (max-width:1023px){.search-layout{grid-template-columns:minmax(0,1fr)}.filters{position:static}}
+@media (max-width:760px){.search-layout .search-results{order:1}.search-layout .filters{order:2;border-top:1px solid var(--color-line,#e3e3e3);padding-top:var(--space-5)}.search-results .count{scroll-margin-top:calc(var(--hl-header-h, 64px) + 12px)}}
 .search.compact{margin:var(--space-5) 0 0;max-width:none;box-shadow:var(--shadow-sm)}
 
 /* Tool detail */

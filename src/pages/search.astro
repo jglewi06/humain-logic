@@ -28,10 +28,10 @@ const popular = ['Write an email', 'Make a flyer', 'Take meeting notes', 'Summar
       <button type="button" class="btn btn-ghost btn-sm" id="clear">Clear all filters</button>
       <p class="confidence" style="margin-top:var(--space-4)">“Has a free plan” only counts tools where we confirmed one. Tools with an unclear free plan are hidden while it's on.</p>
     </aside>
-    <div>
+    <div class="search-results">
       <div id="interp" aria-live="polite"></div>
       <h2 class="sr-only">Matched tools</h2>
-      <p class="count" id="count" role="status" style="color:var(--color-slate);margin-bottom:var(--space-4)"></p>
+      <p class="count" id="count" role="status" aria-live="polite" tabindex="-1" style="color:var(--color-slate);margin-bottom:var(--space-4)"></p>
       <div class="grid-2" id="results"></div>
       <div id="empty" hidden>
         <div class="panel">
@@ -82,7 +82,7 @@ function render() {
   const pass = (r: { tool: Tool }) => (!prices.length || prices.some(p => p === 'free' ? r.tool.p === 'free' : r.tool.f === true)) && (!cats.length || cats.includes(r.tool.c));
   const shown = all.filter(pass);
   const unknownHidden = prices.length ? all.filter(r => r.tool.f === null && (!cats.length || cats.includes(r.tool.c))).length : 0;
-  $('count').textContent = q ? `${shown.length} tool${shown.length === 1 ? '' : 's'} match${unknownHidden ? ` · ${unknownHidden} hidden because we couldn't confirm a free plan` : ''}` : '';
+  $('count').textContent = q ? `${shown.length} result${shown.length === 1 ? '' : 's'} for “${q}”${unknownHidden ? ` · ${unknownHidden} hidden because we couldn't confirm a free plan` : ''}` : '';
   $('results').innerHTML = shown.map((r, i) => `<article class="tool compact">${i === 0 && !r.closest ? '<span class="badge">Best match</span>' : ''}<div class="top"><div><h3><a href="/tools/${r.tool.s}" style="color:inherit">${esc(r.tool.n)}</a></h3><div class="by">${esc(r.tool.cl)}</div></div></div><p class="what">${esc(r.tool.d)}</p><div class="badges"><span class="b b-price">${esc(r.tool.pl)}</span>${r.tool.sp ? `<span class="b b-price">Paid from ${esc(r.tool.sp)}</span>` : ''}${r.tool.v ? '' : '<span class="b b-unverified">Pricing unconfirmed</span>'}</div><p class="why-match">Why it matches: ${esc(r.why)}</p><div class="cta"><a class="btn btn-primary btn-sm" href="/tools/${r.tool.s}">View details</a></div></article>`).join('');
   $('empty').hidden = !q || shown.length > 0;
   if (q && !shown.length) {
@@ -104,6 +104,14 @@ function clearAll() { document.querySelectorAll<HTMLInputElement>('.filters inpu
 for (const n of ['price', 'cat']) params.getAll(n).forEach(v => { const el = document.querySelector<HTMLInputElement>(`input[name=${n}][value="${v}"]`); if (el) el.checked = true; });
 document.querySelectorAll('.filters input').forEach(i => i.addEventListener('change', syncUrl));
 $('clear').addEventListener('click', clearAll);
-fetch('/api/search-index.json').then(r => r.json()).then(d => { index = d; render(); })
+const isMobile = () => window.matchMedia('(max-width:760px)').matches;
+$('sform').addEventListener('submit', () => { if (isMobile()) (document.getElementById('q') as HTMLInputElement).blur(); });
+function revealResults() {
+  if (!q || !isMobile()) return;
+  const c = $('count'); const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  (document.activeElement as HTMLElement | null)?.blur?.();
+  c.focus({ preventScroll: true }); c.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+}
+fetch('/api/search-index.json').then(r => r.json()).then(d => { index = d; render(); revealResults(); })
   .catch(() => { $('interp').innerHTML = '<div class="panel">Search is having trouble right now. <a class="btn btn-secondary btn-sm" href="">Try again</a> or <a href="/tools">browse categories</a>.</div>'; });
 </script>
