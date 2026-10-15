@@ -4,17 +4,20 @@ export const SITE_URL = 'https://humainlogic.com';
 export const ORG = { '@id': `${SITE_URL}/#org` };
 const clean = (o) => JSON.parse(JSON.stringify(o)); // drops undefined
 
-const priceNum = (s) => { const m = String(s ?? '').match(/(?:US\$|USD\s?|\$)\s?(\d+(?:\.\d+)?)/); return m ? m[1] : undefined; };
+// Returns [amount, ISO currency] from a price string like "$12/month" or "€11/month + VAT".
+const priceNum = (s, fallback = 'USD') => { const str = String(s ?? '');
+  const m = str.match(/(US\$|USD\s?|\$|€|EUR\s?|£|GBP\s?)\s?(\d+(?:\.\d+)?)/); if (!m) return [undefined, fallback];
+  const cur = /€|EUR/.test(m[1]) ? 'EUR' : /£|GBP/.test(m[1]) ? 'GBP' : 'USD'; return [m[2], cur]; };
 
 export function toolLd(tool) {
   const p = tool.pricing, url = `${SITE_URL}/tools/${tool.slug}`;
   const offers = [];
-  if (p.free_tier === true) offers.push({ '@type': 'Offer', name: 'Free plan', price: '0', priceCurrency: 'USD', url: p.pricing_url ?? tool.website, availability: 'https://schema.org/InStock' });
-  const paid = priceNum(p.starting_paid_price);
-  if (paid) offers.push({ '@type': 'Offer', name: `Paid plans from ${p.starting_paid_price}`, price: paid, priceCurrency: 'USD', url: p.pricing_url ?? tool.website, ...(p.verified ? { priceValidUntil: undefined } : {}) });
+  const [paid, cur] = priceNum(p.starting_paid_price, p.currency ?? 'USD');
+  if (p.free_tier === true) offers.push({ '@type': 'Offer', name: 'Free plan', price: '0', priceCurrency: p.currency ?? cur, url: p.pricing_url ?? tool.website, availability: 'https://schema.org/InStock' });
+  if (paid) offers.push({ '@type': 'Offer', name: `Paid plans from ${p.starting_paid_price}`, price: paid, priceCurrency: cur, url: p.pricing_url ?? tool.website, ...(p.verified ? { priceValidUntil: undefined } : {}) });
   return clean({
     '@type': 'SoftwareApplication', '@id': `${url}#app`, name: tool.name, url: tool.website, mainEntityOfPage: url,
-    applicationCategory: tool.category === 'coding' ? 'DeveloperApplication' : tool.category === 'education' ? 'EducationalApplication' : tool.category === 'image' || tool.category === 'video' || tool.category === 'audio' || tool.category === 'design' ? 'MultimediaApplication' : tool.category === 'finance' ? 'FinanceApplication' : 'BusinessApplication',
+    applicationCategory: tool.category === 'coding' ? 'DeveloperApplication' : tool.category === 'education' ? 'EducationalApplication' : tool.category === 'image' || tool.category === 'video' || tool.category === 'audio' || tool.category === 'design' ? 'MultimediaApplication' : tool.category === 'finance' ? 'FinanceApplication' : tool.category === 'health' ? 'HealthApplication' : tool.category === 'travel' ? 'TravelApplication' : tool.category === 'shopping' ? 'ShoppingApplication' : 'BusinessApplication',
     applicationSubCategory: tool.category_label,
     ...(tool.platforms?.length ? { operatingSystem: tool.platforms.join(', ') } : {}),
     description: tool.details?.what_it_does ?? tool.summary,

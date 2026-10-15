@@ -1,67 +1,1053 @@
 {
   "note": "Everyday queries a non-technical person might type, with tools from tools.json/tool-details.json that would be a good answer. precision@3 = share of the top 3 results that are in 'expect' (denominator = min(3, expected count)).",
   "queries": [
-    { "q": "school", "expect": ["quizlet", "khanmigo", "duolingo", "notebooklm", "chatgpt", "gemini", "claude", "grammarly", "quillbot"] },
-    { "q": "homework", "expect": ["khanmigo", "quizlet", "chatgpt", "gemini", "claude", "notebooklm", "perplexity"] },
-    { "q": "study", "expect": ["quizlet", "khanmigo", "notebooklm", "duolingo", "chatgpt", "elicit", "consensus"] },
-    { "q": "resume", "expect": ["chatgpt", "claude", "gemini", "grammarly", "microsoft-copilot", "canva", "wordtune", "quillbot"] },
-    { "q": "job", "expect": ["chatgpt", "claude", "gemini", "grammarly", "microsoft-copilot", "canva"] },
-    { "q": "email", "expect": ["superhuman", "grammarly", "chatgpt", "claude", "gemini", "microsoft-copilot", "wordtune", "copy-ai", "jasper"] },
-    { "q": "logo", "expect": ["looka", "canva", "ideogram", "adobe-firefly", "midjourney"] },
-    { "q": "video", "expect": ["runway", "capcut", "descript", "pika", "synthesia", "heygen", "luma-dream-machine", "opusclip"] },
-    { "q": "music", "expect": ["suno", "udio", "elevenlabs"] },
-    { "q": "essay", "expect": ["grammarly", "quillbot", "chatgpt", "claude", "wordtune", "gemini", "khanmigo"] },
-    { "q": "taxes", "expect": ["docyt", "rocket-money", "cleo", "chatgpt"] },
-    { "q": "budget", "expect": ["cleo", "rocket-money"] },
-    { "q": "recipe", "expect": ["chatgpt", "claude", "gemini", "microsoft-copilot", "le-chat"] },
-    { "q": "language", "expect": ["duolingo", "deepl", "chatgpt", "elevenlabs"] },
-    { "q": "spanish", "expect": ["duolingo", "deepl"] },
-    { "q": "presentation", "expect": ["gamma", "beautiful-ai", "canva", "microsoft-copilot"] },
-    { "q": "business", "expect": ["hubspot-breeze", "zapier", "canva", "chatgpt", "tidio", "docyt", "buffer", "looka", "intercom-fin", "zendesk-ai", "microsoft-copilot", "notion-ai"] },
-    { "q": "marketing", "expect": ["jasper", "copy-ai", "hubspot-breeze", "adcreative-ai", "surfer", "buffer", "lately", "writesonic", "canva"] },
-    { "q": "social media", "expect": ["buffer", "lately", "canva", "capcut", "opusclip", "copy-ai", "jasper"] },
-    { "q": "photo", "expect": ["photoroom", "remove-bg", "clipdrop", "adobe-firefly", "canva", "krea", "leonardo-ai"] },
-    { "q": "kids", "expect": ["khanmigo", "duolingo", "quizlet"] },
-    { "q": "teacher", "expect": ["khanmigo", "quizlet", "gamma", "canva", "notebooklm"] },
-    { "q": "writing", "expect": ["grammarly", "quillbot", "wordtune", "sudowrite", "chatgpt", "claude", "jasper", "writesonic"] },
-    { "q": "coding", "expect": ["github-copilot", "cursor", "replit", "lovable", "bolt", "v0"] },
-    { "q": "website", "expect": ["framer", "lovable", "bolt", "v0", "replit", "tidio"] },
-    { "q": "meeting", "expect": ["otter-ai", "fireflies-ai", "fathom", "reclaim-ai", "motion"] },
-    { "q": "notes", "expect": ["notion-ai", "mem", "otter-ai", "notebooklm", "fireflies-ai", "fathom"] },
-    { "q": "calendar", "expect": ["reclaim-ai", "motion"] },
-    { "q": "translate", "expect": ["deepl", "heygen", "elevenlabs", "chatgpt"] },
-    { "q": "flashcards", "expect": ["quizlet"] },
-    { "q": "math", "expect": ["khanmigo", "chatgpt", "gemini", "claude"] },
-    { "q": "podcast", "expect": ["descript", "adobe-podcast", "elevenlabs", "notebooklm", "opusclip"] },
-    { "q": "voice", "expect": ["elevenlabs", "speechify", "adobe-podcast", "synthesia", "heygen"] },
-    { "q": "customer service", "expect": ["intercom-fin", "tidio", "zendesk-ai", "hubspot-breeze"] },
-    { "q": "research", "expect": ["perplexity", "elicit", "consensus", "scite", "notebooklm"] },
-    { "q": "pictures", "expect": ["midjourney", "adobe-firefly", "leonardo-ai", "ideogram", "canva", "krea", "photoroom", "clipdrop", "stability-ai"] },
-    { "q": "art", "expect": ["midjourney", "leonardo-ai", "adobe-firefly", "krea", "ideogram", "stability-ai"] },
-    { "q": "write my resume", "expect": ["chatgpt", "claude", "gemini", "grammarly", "microsoft-copilot", "canva", "wordtune"] },
-    { "q": "help with homework", "expect": ["khanmigo", "quizlet", "chatgpt", "gemini", "claude", "notebooklm"] },
-    { "q": "study for exams", "expect": ["quizlet", "khanmigo", "notebooklm"] },
-    { "q": "learn spanish", "expect": ["duolingo"] },
-    { "q": "make a logo for my business", "expect": ["looka", "canva", "ideogram", "adobe-firefly"] },
-    { "q": "edit photos", "expect": ["photoroom", "clipdrop", "adobe-firefly", "canva", "remove-bg", "krea"] },
-    { "q": "remove background", "expect": ["remove-bg", "photoroom", "clipdrop", "canva", "capcut"] },
-    { "q": "make a slideshow", "expect": ["gamma", "beautiful-ai", "canva"] },
-    { "q": "save money", "expect": ["rocket-money", "cleo"] },
-    { "q": "write a cover letter", "expect": ["chatgpt", "claude", "gemini", "grammarly", "wordtune", "microsoft-copilot", "quillbot"] },
-    { "q": "make youtube videos", "expect": ["capcut", "descript", "opusclip", "runway", "heygen", "synthesia", "pika"] },
-    { "q": "build a website without code", "expect": ["framer", "lovable", "bolt", "v0", "replit"] },
-    { "q": "meeting notes", "expect": ["otter-ai", "fireflies-ai", "fathom"] },
-    { "q": "read pdf out loud", "expect": ["speechify", "elevenlabs"] },
-    { "q": "answer customer emails", "expect": ["zendesk-ai", "intercom-fin", "tidio", "superhuman"] },
-    { "q": "grammar check", "expect": ["grammarly", "quillbot", "wordtune"] },
-    { "q": "write a book", "expect": ["sudowrite", "chatgpt", "claude"] },
-    { "q": "homwork", "expect": ["khanmigo", "quizlet", "chatgpt", "gemini", "claude", "notebooklm"] },
-    { "q": "resumee", "expect": ["chatgpt", "claude", "gemini", "grammarly", "microsoft-copilot", "canva", "wordtune"] },
-    { "q": "presentaton", "expect": ["gamma", "beautiful-ai", "canva", "microsoft-copilot"] },
-    { "q": "spansh", "expect": ["duolingo", "deepl"] },
-    { "q": "vidoe editing", "expect": ["capcut", "descript", "runway", "opusclip"] },
-    { "q": "flash cards", "expect": ["quizlet"] },
-    { "q": "logos", "expect": ["looka", "canva", "ideogram", "adobe-firefly", "midjourney"] },
-    { "q": "free video editor", "expect": ["capcut", "descript", "runway"] }
+    {
+      "q": "school",
+      "expect": [
+        "quizlet",
+        "khanmigo",
+        "duolingo",
+        "notebooklm",
+        "chatgpt",
+        "gemini",
+        "claude",
+        "grammarly",
+        "quillbot"
+      ]
+    },
+    {
+      "q": "homework",
+      "expect": [
+        "khanmigo",
+        "quizlet",
+        "chatgpt",
+        "gemini",
+        "claude",
+        "notebooklm",
+        "perplexity"
+      ]
+    },
+    {
+      "q": "study",
+      "expect": [
+        "quizlet",
+        "khanmigo",
+        "notebooklm",
+        "duolingo",
+        "chatgpt",
+        "elicit",
+        "consensus",
+        "brainly",
+        "knowt",
+        "photomath"
+      ]
+    },
+    {
+      "q": "resume",
+      "expect": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grammarly",
+        "microsoft-copilot",
+        "canva",
+        "wordtune",
+        "quillbot",
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "huntr",
+        "simplify",
+        "wonsulting"
+      ]
+    },
+    {
+      "q": "job",
+      "expect": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grammarly",
+        "microsoft-copilot",
+        "canva",
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "huntr",
+        "simplify",
+        "wonsulting",
+        "final-round-ai",
+        "yoodli"
+      ]
+    },
+    {
+      "q": "email",
+      "expect": [
+        "superhuman",
+        "grammarly",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "microsoft-copilot",
+        "wordtune",
+        "copy-ai",
+        "jasper",
+        "spark-mail",
+        "shortwave",
+        "sanebox",
+        "fyxer-ai"
+      ]
+    },
+    {
+      "q": "logo",
+      "expect": [
+        "looka",
+        "canva",
+        "ideogram",
+        "adobe-firefly",
+        "midjourney"
+      ]
+    },
+    {
+      "q": "video",
+      "expect": [
+        "runway",
+        "capcut",
+        "descript",
+        "pika",
+        "synthesia",
+        "heygen",
+        "luma-dream-machine",
+        "opusclip",
+        "kling-ai",
+        "invideo-ai",
+        "veed",
+        "kapwing",
+        "clipchamp"
+      ]
+    },
+    {
+      "q": "music",
+      "expect": [
+        "suno",
+        "udio",
+        "elevenlabs",
+        "aiva",
+        "soundraw"
+      ]
+    },
+    {
+      "q": "essay",
+      "expect": [
+        "grammarly",
+        "quillbot",
+        "chatgpt",
+        "claude",
+        "wordtune",
+        "gemini",
+        "khanmigo"
+      ]
+    },
+    {
+      "q": "taxes",
+      "expect": [
+        "docyt",
+        "rocket-money",
+        "cleo",
+        "chatgpt",
+        "turbotax",
+        "quickbooks",
+        "xero",
+        "wave",
+        "freshbooks"
+      ]
+    },
+    {
+      "q": "budget",
+      "expect": [
+        "cleo",
+        "rocket-money"
+      ]
+    },
+    {
+      "q": "recipe",
+      "expect": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "microsoft-copilot",
+        "le-chat"
+      ]
+    },
+    {
+      "q": "language",
+      "expect": [
+        "duolingo",
+        "deepl",
+        "chatgpt",
+        "elevenlabs",
+        "praktika",
+        "speak",
+        "reverso"
+      ]
+    },
+    {
+      "q": "spanish",
+      "expect": [
+        "duolingo",
+        "deepl"
+      ]
+    },
+    {
+      "q": "presentation",
+      "expect": [
+        "gamma",
+        "beautiful-ai",
+        "canva",
+        "microsoft-copilot",
+        "presentations-ai",
+        "plus-ai",
+        "slidesai"
+      ]
+    },
+    {
+      "q": "business",
+      "expect": [
+        "hubspot-breeze",
+        "zapier",
+        "canva",
+        "chatgpt",
+        "tidio",
+        "docyt",
+        "buffer",
+        "looka",
+        "intercom-fin",
+        "zendesk-ai",
+        "microsoft-copilot",
+        "notion-ai",
+        "copy-ai",
+        "adcreative-ai",
+        "durable",
+        "jobber",
+        "calendly",
+        "bonsai",
+        "invoice-simple"
+      ]
+    },
+    {
+      "q": "marketing",
+      "expect": [
+        "jasper",
+        "copy-ai",
+        "hubspot-breeze",
+        "adcreative-ai",
+        "surfer",
+        "buffer",
+        "lately",
+        "writesonic",
+        "canva"
+      ]
+    },
+    {
+      "q": "social media",
+      "expect": [
+        "buffer",
+        "lately",
+        "canva",
+        "capcut",
+        "opusclip",
+        "copy-ai",
+        "jasper"
+      ]
+    },
+    {
+      "q": "photo",
+      "expect": [
+        "photoroom",
+        "remove-bg",
+        "clipdrop",
+        "adobe-firefly",
+        "canva",
+        "krea",
+        "leonardo-ai"
+      ]
+    },
+    {
+      "q": "kids",
+      "expect": [
+        "khanmigo",
+        "duolingo",
+        "quizlet"
+      ]
+    },
+    {
+      "q": "teacher",
+      "expect": [
+        "khanmigo",
+        "quizlet",
+        "gamma",
+        "canva",
+        "notebooklm"
+      ]
+    },
+    {
+      "q": "writing",
+      "expect": [
+        "grammarly",
+        "quillbot",
+        "wordtune",
+        "sudowrite",
+        "chatgpt",
+        "claude",
+        "jasper",
+        "writesonic"
+      ]
+    },
+    {
+      "q": "coding",
+      "expect": [
+        "github-copilot",
+        "cursor",
+        "replit",
+        "lovable",
+        "bolt",
+        "v0"
+      ]
+    },
+    {
+      "q": "website",
+      "expect": [
+        "framer",
+        "lovable",
+        "bolt",
+        "v0",
+        "replit",
+        "tidio",
+        "hostinger-website-builder",
+        "durable",
+        "wix",
+        "squarespace"
+      ]
+    },
+    {
+      "q": "meeting",
+      "expect": [
+        "otter-ai",
+        "fireflies-ai",
+        "fathom",
+        "reclaim-ai",
+        "motion"
+      ]
+    },
+    {
+      "q": "notes",
+      "expect": [
+        "notion-ai",
+        "mem",
+        "otter-ai",
+        "notebooklm",
+        "fireflies-ai",
+        "fathom"
+      ]
+    },
+    {
+      "q": "calendar",
+      "expect": [
+        "reclaim-ai",
+        "motion"
+      ]
+    },
+    {
+      "q": "translate",
+      "expect": [
+        "deepl",
+        "heygen",
+        "elevenlabs",
+        "chatgpt",
+        "rask-ai",
+        "reverso"
+      ]
+    },
+    {
+      "q": "flashcards",
+      "expect": [
+        "quizlet"
+      ]
+    },
+    {
+      "q": "math",
+      "expect": [
+        "khanmigo",
+        "chatgpt",
+        "gemini",
+        "claude",
+        "photomath",
+        "brainly"
+      ]
+    },
+    {
+      "q": "podcast",
+      "expect": [
+        "descript",
+        "adobe-podcast",
+        "elevenlabs",
+        "notebooklm",
+        "opusclip"
+      ]
+    },
+    {
+      "q": "voice",
+      "expect": [
+        "elevenlabs",
+        "speechify",
+        "adobe-podcast",
+        "synthesia",
+        "heygen",
+        "murf-ai",
+        "naturalreader"
+      ]
+    },
+    {
+      "q": "customer service",
+      "expect": [
+        "intercom-fin",
+        "tidio",
+        "zendesk-ai",
+        "hubspot-breeze"
+      ]
+    },
+    {
+      "q": "research",
+      "expect": [
+        "perplexity",
+        "elicit",
+        "consensus",
+        "scite",
+        "notebooklm"
+      ]
+    },
+    {
+      "q": "pictures",
+      "expect": [
+        "midjourney",
+        "adobe-firefly",
+        "leonardo-ai",
+        "ideogram",
+        "canva",
+        "krea",
+        "photoroom",
+        "clipdrop",
+        "stability-ai"
+      ]
+    },
+    {
+      "q": "art",
+      "expect": [
+        "midjourney",
+        "leonardo-ai",
+        "adobe-firefly",
+        "krea",
+        "ideogram",
+        "stability-ai"
+      ]
+    },
+    {
+      "q": "write my resume",
+      "expect": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grammarly",
+        "microsoft-copilot",
+        "canva",
+        "wordtune",
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "huntr",
+        "simplify",
+        "wonsulting"
+      ]
+    },
+    {
+      "q": "help with homework",
+      "expect": [
+        "khanmigo",
+        "quizlet",
+        "chatgpt",
+        "gemini",
+        "claude",
+        "notebooklm"
+      ]
+    },
+    {
+      "q": "study for exams",
+      "expect": [
+        "quizlet",
+        "khanmigo",
+        "notebooklm",
+        "knowt",
+        "brainly"
+      ]
+    },
+    {
+      "q": "learn spanish",
+      "expect": [
+        "duolingo"
+      ]
+    },
+    {
+      "q": "make a logo for my business",
+      "expect": [
+        "looka",
+        "canva",
+        "ideogram",
+        "adobe-firefly"
+      ]
+    },
+    {
+      "q": "edit photos",
+      "expect": [
+        "photoroom",
+        "clipdrop",
+        "adobe-firefly",
+        "canva",
+        "remove-bg",
+        "krea",
+        "fotor",
+        "picsart",
+        "pixlr",
+        "lets-enhance"
+      ]
+    },
+    {
+      "q": "remove background",
+      "expect": [
+        "remove-bg",
+        "photoroom",
+        "clipdrop",
+        "canva",
+        "capcut",
+        "fotor",
+        "picsart",
+        "pixlr",
+        "pixelcut"
+      ]
+    },
+    {
+      "q": "make a slideshow",
+      "expect": [
+        "gamma",
+        "beautiful-ai",
+        "canva",
+        "clipchamp",
+        "plus-ai",
+        "slidesai",
+        "presentations-ai"
+      ]
+    },
+    {
+      "q": "save money",
+      "expect": [
+        "rocket-money",
+        "cleo"
+      ]
+    },
+    {
+      "q": "write a cover letter",
+      "expect": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grammarly",
+        "wordtune",
+        "microsoft-copilot",
+        "quillbot",
+        "careerflow",
+        "kickresume",
+        "enhancv",
+        "teal",
+        "rezi",
+        "huntr",
+        "wonsulting"
+      ]
+    },
+    {
+      "q": "make youtube videos",
+      "expect": [
+        "capcut",
+        "descript",
+        "opusclip",
+        "runway",
+        "heygen",
+        "synthesia",
+        "pika",
+        "fliki",
+        "invideo-ai",
+        "clipchamp",
+        "veed",
+        "kapwing"
+      ]
+    },
+    {
+      "q": "build a website without code",
+      "expect": [
+        "framer",
+        "lovable",
+        "bolt",
+        "v0",
+        "replit",
+        "bubble",
+        "glide",
+        "durable",
+        "wix",
+        "squarespace"
+      ]
+    },
+    {
+      "q": "meeting notes",
+      "expect": [
+        "otter-ai",
+        "fireflies-ai",
+        "fathom",
+        "tldv",
+        "read-ai",
+        "granola",
+        "krisp",
+        "fyxer-ai"
+      ]
+    },
+    {
+      "q": "read pdf out loud",
+      "expect": [
+        "speechify",
+        "elevenlabs"
+      ]
+    },
+    {
+      "q": "answer customer emails",
+      "expect": [
+        "zendesk-ai",
+        "intercom-fin",
+        "tidio",
+        "superhuman",
+        "crisp",
+        "fyxer-ai",
+        "shortwave"
+      ]
+    },
+    {
+      "q": "grammar check",
+      "expect": [
+        "grammarly",
+        "quillbot",
+        "wordtune",
+        "languagetool",
+        "prowritingaid"
+      ]
+    },
+    {
+      "q": "write a book",
+      "expect": [
+        "sudowrite",
+        "chatgpt",
+        "claude",
+        "prowritingaid"
+      ]
+    },
+    {
+      "q": "homwork",
+      "expect": [
+        "khanmigo",
+        "quizlet",
+        "chatgpt",
+        "gemini",
+        "claude",
+        "notebooklm"
+      ]
+    },
+    {
+      "q": "resumee",
+      "expect": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grammarly",
+        "microsoft-copilot",
+        "canva",
+        "wordtune",
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "huntr",
+        "simplify",
+        "wonsulting"
+      ]
+    },
+    {
+      "q": "presentaton",
+      "expect": [
+        "gamma",
+        "beautiful-ai",
+        "canva",
+        "microsoft-copilot",
+        "presentations-ai",
+        "plus-ai",
+        "slidesai"
+      ]
+    },
+    {
+      "q": "spansh",
+      "expect": [
+        "duolingo",
+        "deepl"
+      ]
+    },
+    {
+      "q": "vidoe editing",
+      "expect": [
+        "capcut",
+        "descript",
+        "runway",
+        "opusclip"
+      ]
+    },
+    {
+      "q": "flash cards",
+      "expect": [
+        "quizlet"
+      ]
+    },
+    {
+      "q": "logos",
+      "expect": [
+        "looka",
+        "canva",
+        "ideogram",
+        "adobe-firefly",
+        "midjourney"
+      ]
+    },
+    {
+      "q": "free video editor",
+      "expect": [
+        "capcut",
+        "descript",
+        "runway",
+        "kapwing",
+        "clipchamp",
+        "veed"
+      ]
+    },
+    {
+      "q": "help with a lease",
+      "expect": [
+        "lawdepot",
+        "rocket-lawyer",
+        "legalzoom",
+        "donotpay"
+      ]
+    },
+    {
+      "q": "make my resume better",
+      "expect": [
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "wonsulting",
+        "huntr",
+        "simplify"
+      ]
+    },
+    {
+      "q": "build a website",
+      "expect": [
+        "durable",
+        "wix",
+        "squarespace",
+        "hostinger-website-builder",
+        "framer",
+        "bolt",
+        "glide",
+        "bubble"
+      ]
+    },
+    {
+      "q": "do my taxes",
+      "expect": [
+        "turbotax",
+        "quickbooks",
+        "xero",
+        "wave",
+        "freshbooks",
+        "docyt"
+      ]
+    },
+    {
+      "q": "make a will",
+      "expect": [
+        "trust-and-will",
+        "lawdepot",
+        "rocket-lawyer",
+        "legalzoom"
+      ]
+    },
+    {
+      "q": "review a contract",
+      "expect": [
+        "spellbook",
+        "genie-ai",
+        "rocket-lawyer",
+        "lawgeex",
+        "luminance",
+        "harvey",
+        "legalzoom"
+      ]
+    },
+    {
+      "q": "need an nda",
+      "expect": [
+        "lawdepot",
+        "rocket-lawyer",
+        "genie-ai",
+        "legalzoom"
+      ]
+    },
+    {
+      "q": "talk to a lawyer",
+      "expect": [
+        "rocket-lawyer",
+        "legalzoom",
+        "donotpay",
+        "lawdepot"
+      ]
+    },
+    {
+      "q": "fix my cv",
+      "expect": [
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "huntr",
+        "simplify",
+        "wonsulting",
+        "final-round-ai",
+        "yoodli",
+        "lazyapply"
+      ]
+    },
+    {
+      "q": "practice for a job interview",
+      "expect": [
+        "final-round-ai",
+        "yoodli",
+        "rezi"
+      ]
+    },
+    {
+      "q": "job hunt",
+      "expect": [
+        "teal",
+        "rezi",
+        "kickresume",
+        "jobscan",
+        "enhancv",
+        "resume-worded",
+        "careerflow",
+        "huntr",
+        "simplify",
+        "wonsulting",
+        "final-round-ai",
+        "yoodli",
+        "lazyapply"
+      ]
+    },
+    {
+      "q": "website builder for my bakery",
+      "expect": [
+        "durable",
+        "wix",
+        "squarespace",
+        "hostinger-website-builder",
+        "framer",
+        "glide",
+        "bubble"
+      ]
+    },
+    {
+      "q": "clean up my inbox",
+      "expect": [
+        "shortwave",
+        "sanebox",
+        "spark-mail",
+        "fyxer-ai"
+      ]
+    },
+    {
+      "q": "improve my google ranking",
+      "expect": [
+        "surfer",
+        "semrush",
+        "ahrefs",
+        "frase",
+        "neuronwriter"
+      ]
+    },
+    {
+      "q": "seo",
+      "expect": [
+        "surfer",
+        "semrush",
+        "ahrefs",
+        "frase",
+        "neuronwriter",
+        "writesonic"
+      ]
+    },
+    {
+      "q": "find sales leads",
+      "expect": [
+        "apollo-io",
+        "close",
+        "lavender",
+        "lindy",
+        "hubspot-breeze"
+      ]
+    },
+    {
+      "q": "analyze a spreadsheet",
+      "expect": [
+        "rows",
+        "julius-ai"
+      ]
+    },
+    {
+      "q": "read text aloud",
+      "expect": [
+        "naturalreader",
+        "murf-ai",
+        "speechify",
+        "seeing-ai",
+        "envision"
+      ]
+    },
+    {
+      "q": "make a workout plan",
+      "expect": [
+        "fitbod"
+      ]
+    },
+    {
+      "q": "check my symptoms",
+      "expect": [
+        "ada-health"
+      ]
+    },
+    {
+      "q": "plan a trip",
+      "expect": [
+        "mindtrip",
+        "layla",
+        "wonderplan"
+      ]
+    },
+    {
+      "q": "compare prices",
+      "expect": [
+        "phia"
+      ]
+    },
+    {
+      "q": "redesign my room",
+      "expect": [
+        "interior-ai",
+        "reimaginehome",
+        "planner-5d",
+        "virtual-staging-ai"
+      ]
+    },
+    {
+      "q": "virtual staging for a listing",
+      "expect": [
+        "virtual-staging-ai",
+        "reimaginehome",
+        "interior-ai"
+      ]
+    },
+    {
+      "q": "app for blind people",
+      "expect": [
+        "be-my-eyes",
+        "seeing-ai",
+        "envision"
+      ]
+    },
+    {
+      "q": "adhd help",
+      "expect": [
+        "goblin-tools"
+      ]
+    },
+    {
+      "q": "send an invoice",
+      "expect": [
+        "invoice-simple",
+        "jobber",
+        "bonsai",
+        "quickbooks",
+        "freshbooks",
+        "wave",
+        "xero"
+      ]
+    },
+    {
+      "q": "let clients book appointments",
+      "expect": [
+        "calendly",
+        "jobber"
+      ]
+    },
+    {
+      "q": "translate a document",
+      "expect": [
+        "deepl",
+        "reverso"
+      ]
+    },
+    {
+      "q": "make slides",
+      "expect": [
+        "gamma",
+        "beautiful-ai",
+        "plus-ai",
+        "slidesai",
+        "presentations-ai",
+        "canva"
+      ]
+    }
   ]
 }

@@ -1,5 +1,24 @@
 [
  {
+  "slug": "take-meeting-notes",
+  "name": "Take meeting notes",
+  "tools": [
+   "notion-ai",
+   "otter-ai",
+   "fathom",
+   "krisp",
+   "tldv",
+   "read-ai",
+   "granola",
+   "fyxer-ai"
+  ],
+  "categories": [
+   "productivity",
+   "audio",
+   "email"
+  ]
+ },
+ {
   "slug": "answer-questions",
   "name": "Answer questions",
   "tools": [
@@ -16,15 +35,434 @@
   ]
  },
  {
+  "slug": "cover-letter",
+  "name": "Cover letter",
+  "tools": [
+   "teal",
+   "rezi",
+   "kickresume",
+   "enhancv",
+   "huntr",
+   "careerflow",
+   "wonsulting"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "fix-my-resume",
+  "name": "Fix my resume",
+  "tools": [
+   "teal",
+   "rezi",
+   "kickresume",
+   "jobscan",
+   "enhancv",
+   "resume-worded"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
   "slug": "generate-an-image",
   "name": "Generate an image",
   "tools": [
    "leonardo-ai",
    "ideogram",
-   "stability-ai"
+   "stability-ai",
+   "picsart",
+   "fotor",
+   "pixlr"
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "track-job-applications",
+  "name": "Track job applications",
+  "tools": [
+   "teal",
+   "jobscan",
+   "huntr",
+   "simplify",
+   "careerflow",
+   "wonsulting"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "write-a-resume",
+  "name": "Write a resume",
+  "tools": [
+   "teal",
+   "rezi",
+   "kickresume",
+   "enhancv",
+   "careerflow",
+   "wonsulting"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "find-a-job",
+  "name": "Find a job",
+  "tools": [
+   "teal",
+   "huntr",
+   "simplify",
+   "lazyapply",
+   "wonsulting"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "make-a-presentation",
+  "name": "Make a presentation",
+  "tools": [
+   "gamma",
+   "beautiful-ai",
+   "plus-ai",
+   "slidesai",
+   "presentations-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-video-from-text",
+  "name": "Make a video from text",
+  "tools": [
+   "runway",
+   "luma-dream-machine",
+   "kling-ai",
+   "invideo-ai",
+   "fliki"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "review-a-contract",
+  "name": "Review a contract",
+  "tools": [
+   "rocket-lawyer",
+   "spellbook",
+   "genie-ai",
+   "harvey",
+   "lawgeex"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "translate-a-video",
+  "name": "Translate a video",
+  "tools": [
+   "synthesia",
+   "heygen",
+   "veed",
+   "kapwing",
+   "rask-ai"
+  ],
+  "categories": [
+   "video",
+   "translation"
+  ]
+ },
+ {
+  "slug": "improve-my-resume",
+  "name": "Improve my resume",
+  "tools": [
+   "teal",
+   "rezi",
+   "kickresume",
+   "enhancv"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "make-a-logo",
+  "name": "Make a logo",
+  "tools": [
+   "ideogram",
+   "looka",
+   "recraft",
+   "kittl"
+  ],
+  "categories": [
+   "image",
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-resume",
+  "name": "Make a resume",
+  "tools": [
+   "teal",
+   "rezi",
+   "kickresume",
+   "enhancv"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "make-a-will",
+  "name": "Make a will",
+  "tools": [
+   "legalzoom",
+   "rocket-lawyer",
+   "trust-and-will",
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "make-an-nda",
+  "name": "Make an NDA",
+  "tools": [
+   "legalzoom",
+   "rocket-lawyer",
+   "genie-ai",
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "plan-a-trip",
+  "name": "Plan a trip",
+  "tools": [
+   "gemini",
+   "mindtrip",
+   "layla",
+   "wonderplan"
+  ],
+  "categories": [
+   "productivity",
+   "travel"
+  ]
+ },
+ {
+  "slug": "remove-background",
+  "name": "Remove background",
+  "tools": [
+   "picsart",
+   "fotor",
+   "pixlr",
+   "pixelcut"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "upscale-an-image",
+  "name": "Upscale an image",
+  "tools": [
+   "clipdrop",
+   "krea",
+   "lets-enhance",
+   "pixelcut"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "write-an-email",
+  "name": "Write an email",
+  "tools": [
+   "chatgpt",
+   "superhuman",
+   "rytr",
+   "spark-mail"
+  ],
+  "categories": [
+   "productivity",
+   "writing",
+   "email"
+  ]
+ },
+ {
+  "slug": "write-my-cv",
+  "name": "Write my CV",
+  "tools": [
+   "teal",
+   "rezi",
+   "kickresume",
+   "enhancv"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "create-an-image",
+  "name": "Create an image",
+  "tools": [
+   "microsoft-copilot",
+   "grok",
+   "microsoft-designer"
+  ],
+  "categories": [
+   "productivity",
+   "design"
+  ]
+ },
+ {
+  "slug": "create-an-image-from-text",
+  "name": "Create an image from text",
+  "tools": [
+   "adobe-firefly",
+   "midjourney",
+   "nightcafe"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "dub-a-video",
+  "name": "Dub a video",
+  "tools": [
+   "elevenlabs",
+   "murf-ai",
+   "rask-ai"
+  ],
+  "categories": [
+   "audio",
+   "voice",
+   "translation"
+  ]
+ },
+ {
+  "slug": "edit-a-photo",
+  "name": "Edit a photo",
+  "tools": [
+   "adobe-firefly",
+   "picsart",
+   "fotor"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "edit-a-video",
+  "name": "Edit a video",
+  "tools": [
+   "runway",
+   "capcut",
+   "clipchamp"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "improve-linkedin-profile",
+  "name": "Improve LinkedIn profile",
+  "tools": [
+   "jobscan",
+   "resume-worded",
+   "careerflow"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "make-a-collage",
+  "name": "Make a collage",
+  "tools": [
+   "picsart",
+   "fotor",
+   "pixlr"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-a-website",
+  "name": "Make a website",
+  "tools": [
+   "durable",
+   "wix",
+   "squarespace"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-website-with-ai",
+  "name": "Make a website with AI",
+  "tools": [
+   "durable",
+   "wix",
+   "squarespace"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "plan-my-day",
+  "name": "Plan my day",
+  "tools": [
+   "motion",
+   "todoist",
+   "goblin-tools"
+  ],
+  "categories": [
+   "productivity",
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "practice-interview",
+  "name": "Practice interview",
+  "tools": [
+   "rezi",
+   "final-round-ai",
+   "yoodli"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "read-text-aloud",
+  "name": "Read text aloud",
+  "tools": [
+   "speechify",
+   "naturalreader",
+   "envision"
+  ],
+  "categories": [
+   "audio",
+   "voice",
+   "accessibility"
   ]
  },
  {
@@ -41,6 +479,18 @@
   ]
  },
  {
+  "slug": "small-business-accounting",
+  "name": "Small business accounting",
+  "tools": [
+   "quickbooks",
+   "xero",
+   "wave"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
   "slug": "summarize-a-document",
   "name": "Summarize a document",
   "tools": [
@@ -54,48 +504,295 @@
   ]
  },
  {
-  "slug": "take-meeting-notes",
-  "name": "Take meeting notes",
+  "slug": "text-to-speech",
+  "name": "Text to speech",
   "tools": [
-   "notion-ai",
-   "otter-ai",
-   "fathom"
+   "fliki",
+   "murf-ai",
+   "naturalreader"
   ],
   "categories": [
-   "productivity"
+   "video",
+   "voice"
   ]
  },
  {
-  "slug": "create-an-image",
-  "name": "Create an image",
+  "slug": "virtual-staging",
+  "name": "Virtual staging",
   "tools": [
-   "microsoft-copilot",
-   "grok"
+   "interior-ai",
+   "reimaginehome",
+   "virtual-staging-ai"
   ],
   "categories": [
-   "productivity"
+   "home-and-real-estate"
   ]
  },
  {
-  "slug": "create-an-image-from-text",
-  "name": "Create an image from text",
+  "slug": "write-social-posts",
+  "name": "Write social posts",
   "tools": [
-   "adobe-firefly",
-   "midjourney"
+   "buffer",
+   "lately",
+   "hootsuite"
   ],
   "categories": [
-   "image"
+   "marketing"
   ]
  },
  {
-  "slug": "edit-a-video",
-  "name": "Edit a video",
+  "slug": "add-a-chatbot-to-my-website",
+  "name": "Add a chatbot to my website",
   "tools": [
-   "runway",
-   "capcut"
+   "tidio",
+   "chatbase"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "add-auto-captions",
+  "name": "Add auto captions",
+  "tools": [
+   "capcut",
+   "clipchamp"
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "add-captions",
+  "name": "Add captions",
+  "tools": [
+   "opusclip",
+   "pictory"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "ai-email-assistant",
+  "name": "AI email assistant",
+  "tools": [
+   "shortwave",
+   "fyxer-ai"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "analyze-a-spreadsheet",
+  "name": "Analyze a spreadsheet",
+  "tools": [
+   "rows",
+   "julius-ai"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "animate-an-image",
+  "name": "Animate an image",
+  "tools": [
+   "pika",
+   "kling-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "answer-customer-questions-automatically",
+  "name": "Answer customer questions automatically",
+  "tools": [
+   "intercom-fin",
+   "chatbase"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "break-a-task-into-steps",
+  "name": "Break a task into steps",
+  "tools": [
+   "todoist",
+   "goblin-tools"
+  ],
+  "categories": [
+   "productivity",
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "build-an-ai-agent",
+  "name": "Build an AI agent",
+  "tools": [
+   "zapier",
+   "taskade"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "build-an-online-store",
+  "name": "Build an online store",
+  "tools": [
+   "wix",
+   "squarespace"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "check-my-grammar",
+  "name": "Check my grammar",
+  "tools": [
+   "prowritingaid",
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "clean-up-audio",
+  "name": "Clean up audio",
+  "tools": [
+   "adobe-podcast",
+   "auphonic"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "clean-up-my-inbox",
+  "name": "Clean up my inbox",
+  "tools": [
+   "shortwave",
+   "sanebox"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "conversation-practice",
+  "name": "Conversation practice",
+  "tools": [
+   "speak",
+   "praktika"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "create-slides",
+  "name": "Create slides",
+  "tools": [
+   "gamma",
+   "presentations-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "describe-a-scene",
+  "name": "Describe a scene",
+  "tools": [
+   "sudowrite",
+   "seeing-ai"
+  ],
+  "categories": [
+   "writing",
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "design-a-social-media-post",
+  "name": "Design a social media post",
+  "tools": [
+   "canva",
+   "microsoft-designer"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "design-a-sticker",
+  "name": "Design a sticker",
+  "tools": [
+   "kittl",
+   "microsoft-designer"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "draft-a-contract",
+  "name": "Draft a contract",
+  "tools": [
+   "spellbook",
+   "genie-ai"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "edit-a-video-online",
+  "name": "Edit a video online",
+  "tools": [
+   "veed",
+   "kapwing"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "find-keywords",
+  "name": "Find keywords",
+  "tools": [
+   "semrush",
+   "ahrefs"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "find-research-papers",
+  "name": "Find research papers",
+  "tools": [
+   "elicit",
+   "scispace"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "fix-a-blurry-photo",
+  "name": "Fix a blurry photo",
+  "tools": [
+   "fotor",
+   "lets-enhance"
+  ],
+  "categories": [
+   "image"
   ]
  },
  {
@@ -110,25 +807,147 @@
   ]
  },
  {
-  "slug": "make-a-logo",
-  "name": "Make a logo",
+  "slug": "generate-a-song",
+  "name": "Generate a song",
   "tools": [
-   "ideogram",
-   "looka"
+   "soundraw",
+   "aiva"
   ],
   "categories": [
-   "image",
+   "audio"
+  ]
+ },
+ {
+  "slug": "improve-my-seo",
+  "name": "Improve my SEO",
+  "tools": [
+   "semrush",
+   "ahrefs"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "improve-my-writing",
+  "name": "Improve my writing",
+  "tools": [
+   "grammarly",
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "language-tutor",
+  "name": "Language tutor",
+  "tools": [
+   "speak",
+   "praktika"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "learn-a-language",
+  "name": "Learn a language",
+  "tools": [
+   "duolingo",
+   "speak"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "learn-english",
+  "name": "Learn English",
+  "tools": [
+   "speak",
+   "praktika"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "legal-question",
+  "name": "Legal question",
+  "tools": [
+   "donotpay",
+   "rocket-lawyer"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "legal-research",
+  "name": "Legal research",
+  "tools": [
+   "harvey",
+   "cocounsel"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "listen-to-a-pdf",
+  "name": "Listen to a PDF",
+  "tools": [
+   "speechify",
+   "naturalreader"
+  ],
+  "categories": [
+   "audio",
+   "voice"
+  ]
+ },
+ {
+  "slug": "literature-review",
+  "name": "Literature review",
+  "tools": [
+   "scispace",
+   "researchrabbit"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "make-a-contract",
+  "name": "Make a contract",
+  "tools": [
+   "legalzoom",
+   "rocket-lawyer"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "make-a-flyer",
+  "name": "Make a flyer",
+  "tools": [
+   "canva",
+   "microsoft-designer"
+  ],
+  "categories": [
    "design"
   ]
  },
  {
-  "slug": "make-a-presentation",
-  "name": "Make a presentation",
+  "slug": "make-a-mockup",
+  "name": "Make a mockup",
   "tools": [
-   "gamma",
-   "beautiful-ai"
+   "recraft",
+   "kittl"
   ],
   "categories": [
+   "image",
    "design"
   ]
  },
@@ -144,14 +963,248 @@
   ]
  },
  {
-  "slug": "make-a-video-from-text",
-  "name": "Make a video from text",
+  "slug": "make-a-tiktok",
+  "name": "Make a TikTok",
   "tools": [
-   "runway",
-   "luma-dream-machine"
+   "capcut",
+   "captions"
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "make-a-to-do-list",
+  "name": "Make a to-do list",
+  "tools": [
+   "taskade",
+   "todoist"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "make-a-training-video",
+  "name": "Make a training video",
+  "tools": [
+   "synthesia",
+   "pictory"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-travel-itinerary",
+  "name": "Make a travel itinerary",
+  "tools": [
+   "mindtrip",
+   "wonderplan"
+  ],
+  "categories": [
+   "travel"
+  ]
+ },
+ {
+  "slug": "make-a-voiceover",
+  "name": "Make a voiceover",
+  "tools": [
+   "fliki",
+   "murf-ai"
+  ],
+  "categories": [
+   "video",
+   "voice"
+  ]
+ },
+ {
+  "slug": "make-an-email-campaign",
+  "name": "Make an email campaign",
+  "tools": [
+   "mailchimp",
+   "klaviyo"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "make-flashcards",
+  "name": "Make flashcards",
+  "tools": [
+   "quizlet",
+   "knowt"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "make-my-writing-clearer",
+  "name": "Make my writing clearer",
+  "tools": [
+   "prowritingaid",
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "make-product-photos",
+  "name": "Make product photos",
+  "tools": [
+   "photoroom",
+   "pixelcut"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "manage-projects",
+  "name": "Manage projects",
+  "tools": [
+   "motion",
+   "clickup-brain"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "optimize-a-blog-post-for-seo",
+  "name": "Optimize a blog post for SEO",
+  "tools": [
+   "surfer",
+   "neuronwriter"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "organize-my-notes",
+  "name": "Organize my notes",
+  "tools": [
+   "mem",
+   "granola"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "redesign-my-room",
+  "name": "Redesign my room",
+  "tools": [
+   "interior-ai",
+   "reimaginehome"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "remove-an-object-from-a-photo",
+  "name": "Remove an object from a photo",
+  "tools": [
+   "picsart",
+   "pixelcut"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "remove-background-noise",
+  "name": "Remove background noise",
+  "tools": [
+   "veed",
+   "lalal-ai"
+  ],
+  "categories": [
+   "video",
+   "audio"
+  ]
+ },
+ {
+  "slug": "research-a-topic",
+  "name": "Research a topic",
+  "tools": [
+   "perplexity",
+   "kagi"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "schedule-social-media-posts",
+  "name": "Schedule social media posts",
+  "tools": [
+   "buffer",
+   "hootsuite"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "send-an-invoice",
+  "name": "Send an invoice",
+  "tools": [
+   "quickbooks",
+   "freshbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "solve-a-math-problem",
+  "name": "Solve a math problem",
+  "tools": [
+   "brainly",
+   "photomath"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "sort-my-inbox",
+  "name": "Sort my inbox",
+  "tools": [
+   "superhuman",
+   "spark-mail"
+  ],
+  "categories": [
+   "productivity",
+   "email"
+  ]
+ },
+ {
+  "slug": "study-for-a-test",
+  "name": "Study for a test",
+  "tools": [
+   "quizlet",
+   "knowt"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "summarize-a-call",
+  "name": "Summarize a call",
+  "tools": [
+   "otter-ai",
+   "granola"
+  ],
+  "categories": [
+   "productivity"
   ]
  },
  {
@@ -166,6 +1219,39 @@
   ]
  },
  {
+  "slug": "summarize-a-zoom-call",
+  "name": "Summarize a Zoom call",
+  "tools": [
+   "fathom",
+   "tldv"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "summarize-emails",
+  "name": "Summarize emails",
+  "tools": [
+   "shortwave",
+   "spark-mail"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "tailor-my-resume",
+  "name": "Tailor my resume",
+  "tools": [
+   "huntr",
+   "simplify"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
   "slug": "track-spending",
   "name": "Track spending",
   "tools": [
@@ -177,36 +1263,82 @@
   ]
  },
  {
-  "slug": "translate-a-video",
-  "name": "Translate a video",
+  "slug": "track-time",
+  "name": "Track time",
   "tools": [
-   "synthesia",
-   "heygen"
+   "freshbooks",
+   "bonsai"
   ],
   "categories": [
-   "video"
+   "finance",
+   "small-business"
   ]
  },
  {
-  "slug": "upscale-an-image",
-  "name": "Upscale an image",
+  "slug": "transcribe-a-call",
+  "name": "Transcribe a call",
   "tools": [
-   "clipdrop",
-   "krea"
-  ],
-  "categories": [
-   "image"
-  ]
- },
- {
-  "slug": "write-an-email",
-  "name": "Write an email",
-  "tools": [
-   "chatgpt",
-   "superhuman"
+   "fireflies-ai",
+   "read-ai"
   ],
   "categories": [
    "productivity"
+  ]
+ },
+ {
+  "slug": "transcribe-a-meeting",
+  "name": "Transcribe a meeting",
+  "tools": [
+   "otter-ai",
+   "krisp"
+  ],
+  "categories": [
+   "productivity",
+   "audio"
+  ]
+ },
+ {
+  "slug": "translate-text",
+  "name": "Translate text",
+  "tools": [
+   "deepl",
+   "reverso"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "write-a-blog-post",
+  "name": "Write a blog post",
+  "tools": [
+   "writesonic",
+   "rytr"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-a-lease",
+  "name": "Write a lease",
+  "tools": [
+   "rocket-lawyer",
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "write-a-will",
+  "name": "Write a will",
+  "tools": [
+   "legalzoom",
+   "trust-and-will"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -221,44 +1353,214 @@
   ]
  },
  {
-  "slug": "write-social-posts",
-  "name": "Write social posts",
+  "slug": "write-seo-content",
+  "name": "Write SEO content",
   "tools": [
-   "buffer",
-   "lately"
+   "surfer",
+   "neuronwriter"
   ],
   "categories": [
-   "marketing"
+   "seo"
   ]
  },
  {
-  "slug": "add-a-chatbot-to-my-website",
-  "name": "Add a chatbot to my website",
+  "slug": "3d-home-design",
+  "name": "3D home design",
   "tools": [
-   "tidio"
+   "planner-5d"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "accept-online-payments",
+  "name": "Accept online payments",
+  "tools": [
+   "wave"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "accounting-for-freelancers",
+  "name": "Accounting for freelancers",
+  "tools": [
+   "freshbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "add-ai-voiceover",
+  "name": "Add AI voiceover",
+  "tools": [
+   "clipchamp"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-b-roll",
+  "name": "Add b-roll",
+  "tools": [
+   "submagic"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-captions-to-a-reel",
+  "name": "Add captions to a reel",
+  "tools": [
+   "submagic"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-captions-to-my-video",
+  "name": "Add captions to my video",
+  "tools": [
+   "captions"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-citations",
+  "name": "Add citations",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "add-emojis-to-captions",
+  "name": "Add emojis to captions",
+  "tools": [
+   "submagic"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-live-chat-to-my-website",
+  "name": "Add live chat to my website",
+  "tools": [
+   "crisp"
   ],
   "categories": [
    "customer-service"
   ]
  },
  {
-  "slug": "add-auto-captions",
-  "name": "Add auto captions",
+  "slug": "add-stickers-to-photo",
+  "name": "Add stickers to photo",
   "tools": [
-   "capcut"
+   "picsart"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "add-subtitles",
+  "name": "Add subtitles",
+  "tools": [
+   "kapwing"
   ],
   "categories": [
    "video"
   ]
  },
  {
-  "slug": "add-captions",
-  "name": "Add captions",
+  "slug": "add-subtitles-to-a-video",
+  "name": "Add subtitles to a video",
   "tools": [
-   "opusclip"
+   "veed"
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "add-text-to-a-video",
+  "name": "Add text to a video",
+  "tools": [
+   "clipchamp"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "add-text-to-an-image",
+  "name": "Add text to an image",
+  "tools": [
+   "pixlr"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "ai-chatbot-for-support",
+  "name": "AI chatbot for support",
+  "tools": [
+   "crisp"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "ai-customer-support",
+  "name": "AI customer support",
+  "tools": [
+   "chatbase"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "ai-executive-assistant",
+  "name": "AI executive assistant",
+  "tools": [
+   "lindy"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "ai-search",
+  "name": "AI search",
+  "tools": [
+   "kagi"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "ai-support-agent",
+  "name": "AI support agent",
+  "tools": [
+   "freshdesk"
+  ],
+  "categories": [
+   "customer-service"
   ]
  },
  {
@@ -272,20 +1574,20 @@
   ]
  },
  {
+  "slug": "analyze-excel",
+  "name": "Analyze Excel",
+  "tools": [
+   "julius-ai"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
   "slug": "animate-a-photo",
   "name": "Animate a photo",
   "tools": [
    "luma-dream-machine"
-  ],
-  "categories": [
-   "video"
-  ]
- },
- {
-  "slug": "animate-an-image",
-  "name": "Animate an image",
-  "tools": [
-   "pika"
   ],
   "categories": [
    "video"
@@ -322,13 +1624,113 @@
   ]
  },
  {
-  "slug": "answer-customer-questions-automatically",
-  "name": "Answer customer questions automatically",
+  "slug": "answer-customers-on-whatsapp",
+  "name": "Answer customers on WhatsApp",
   "tools": [
-   "intercom-fin"
+   "crisp"
   ],
   "categories": [
    "customer-service"
+  ]
+ },
+ {
+  "slug": "answer-questions-about-my-data",
+  "name": "Answer questions about my data",
+  "tools": [
+   "julius-ai"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "answer-support-emails",
+  "name": "Answer support emails",
+  "tools": [
+   "freshdesk"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "apply-to-jobs-automatically",
+  "name": "Apply to jobs automatically",
+  "tools": [
+   "lazyapply"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "apply-to-jobs-faster",
+  "name": "Apply to jobs faster",
+  "tools": [
+   "simplify"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "approve-contracts-faster",
+  "name": "Approve contracts faster",
+  "tools": [
+   "lawgeex"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "ask-questions-about-my-work",
+  "name": "Ask questions about my work",
+  "tools": [
+   "clickup-brain"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "ats-friendly-resume",
+  "name": "ATS friendly resume",
+  "tools": [
+   "rezi"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "ats-resume-checker",
+  "name": "ATS resume checker",
+  "tools": [
+   "jobscan"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "audit-my-website",
+  "name": "Audit my website",
+  "tools": [
+   "ahrefs"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "autofill-job-applications",
+  "name": "Autofill job applications",
+  "tools": [
+   "simplify"
+  ],
+  "categories": [
+   "jobs-and-careers"
   ]
  },
  {
@@ -342,6 +1744,16 @@
   ]
  },
  {
+  "slug": "automate-emails",
+  "name": "Automate emails",
+  "tools": [
+   "mailchimp"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
   "slug": "automate-marketing-workflows",
   "name": "Automate marketing workflows",
   "tools": [
@@ -349,6 +1761,16 @@
   ],
   "categories": [
    "marketing"
+  ]
+ },
+ {
+  "slug": "automate-my-email",
+  "name": "Automate my email",
+  "tools": [
+   "lindy"
+  ],
+  "categories": [
+   "productivity"
   ]
  },
  {
@@ -362,6 +1784,16 @@
   ]
  },
  {
+  "slug": "automate-support",
+  "name": "Automate support",
+  "tools": [
+   "botpress"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
   "slug": "automate-support-tickets",
   "name": "Automate support tickets",
   "tools": [
@@ -369,6 +1801,36 @@
   ],
   "categories": [
    "customer-service"
+  ]
+ },
+ {
+  "slug": "automate-tasks",
+  "name": "Automate tasks",
+  "tools": [
+   "lindy"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "balance-audio-levels",
+  "name": "Balance audio levels",
+  "tools": [
+   "auphonic"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "booking-page",
+  "name": "Booking page",
+  "tools": [
+   "calendly"
+  ],
+  "categories": [
+   "small-business"
   ]
  },
  {
@@ -392,6 +1854,16 @@
   ]
  },
  {
+  "slug": "brainstorm-with-ai",
+  "name": "Brainstorm with AI",
+  "tools": [
+   "taskade"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
   "slug": "budget-my-money",
   "name": "Budget my money",
   "tools": [
@@ -399,6 +1871,66 @@
   ],
   "categories": [
    "finance"
+  ]
+ },
+ {
+  "slug": "build-a-chatbot",
+  "name": "Build a chatbot",
+  "tools": [
+   "botpress"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "build-a-chatbot-without-code",
+  "name": "Build a chatbot without code",
+  "tools": [
+   "landbot"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "build-a-help-center",
+  "name": "Build a help center",
+  "tools": [
+   "freshdesk"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "build-a-mobile-app",
+  "name": "Build a mobile app",
+  "tools": [
+   "bubble"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "build-a-prospect-list",
+  "name": "Build a prospect list",
+  "tools": [
+   "apollo-io"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "build-a-restaurant-website",
+  "name": "Build a restaurant website",
+  "tools": [
+   "wix"
+  ],
+  "categories": [
+   "website-builders"
   ]
  },
  {
@@ -432,6 +1964,26 @@
   ]
  },
  {
+  "slug": "build-a-website-for-my-business",
+  "name": "Build a website for my business",
+  "tools": [
+   "durable"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "build-a-website-with-ai",
+  "name": "Build a website with AI",
+  "tools": [
+   "hostinger-website-builder"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
   "slug": "build-a-website-without-coding",
   "name": "Build a website without coding",
   "tools": [
@@ -442,10 +1994,10 @@
   ]
  },
  {
-  "slug": "build-an-ai-agent",
-  "name": "Build an AI agent",
+  "slug": "build-an-ai-assistant",
+  "name": "Build an AI assistant",
   "tools": [
-   "zapier"
+   "lindy"
   ],
   "categories": [
    "productivity"
@@ -462,6 +2014,86 @@
   ]
  },
  {
+  "slug": "build-an-app-without-coding",
+  "name": "Build an app without coding",
+  "tools": [
+   "bubble"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "build-an-email-list",
+  "name": "Build an email list",
+  "tools": [
+   "mailchimp"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "build-an-inventory-app",
+  "name": "Build an inventory app",
+  "tools": [
+   "glide"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "build-my-personal-brand",
+  "name": "Build my personal brand",
+  "tools": [
+   "taplio"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "call-leads",
+  "name": "Call leads",
+  "tools": [
+   "close"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "calorie-counter",
+  "name": "Calorie counter",
+  "tools": [
+   "cal-ai"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "cancel-a-subscription",
+  "name": "Cancel a subscription",
+  "tools": [
+   "donotpay"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "cancel-noise-on-zoom",
+  "name": "Cancel noise on Zoom",
+  "tools": [
+   "krisp"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
   "slug": "cancel-subscriptions",
   "name": "Cancel subscriptions",
   "tools": [
@@ -469,6 +2101,46 @@
   ],
   "categories": [
    "finance"
+  ]
+ },
+ {
+  "slug": "career-change",
+  "name": "Career change",
+  "tools": [
+   "careerflow"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "career-change-resume",
+  "name": "Career change resume",
+  "tools": [
+   "resume-worded"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "categorize-expenses",
+  "name": "Categorize expenses",
+  "tools": [
+   "quickbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "cbt-exercises",
+  "name": "CBT exercises",
+  "tools": [
+   "wysa"
+  ],
+  "categories": [
+   "health"
   ]
  },
  {
@@ -492,6 +2164,36 @@
   ]
  },
  {
+  "slug": "chat-with-a-pdf",
+  "name": "Chat with a PDF",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "chatbot-for-whatsapp",
+  "name": "Chatbot for WhatsApp",
+  "tools": [
+   "botpress"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "check-for-overused-words",
+  "name": "Check for overused words",
+  "tools": [
+   "prowritingaid"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
   "slug": "check-grammar",
   "name": "Check grammar",
   "tools": [
@@ -499,6 +2201,16 @@
   ],
   "categories": [
    "writing"
+  ]
+ },
+ {
+  "slug": "check-grammar-in-another-language",
+  "name": "Check grammar in another language",
+  "tools": [
+   "reverso"
+  ],
+  "categories": [
+   "translation"
   ]
  },
  {
@@ -512,13 +2224,113 @@
   ]
  },
  {
-  "slug": "clean-up-audio",
-  "name": "Clean up audio",
+  "slug": "check-my-backlinks",
+  "name": "Check my backlinks",
   "tools": [
-   "adobe-podcast"
+   "ahrefs"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "check-my-resume-against-a-job",
+  "name": "Check my resume against a job",
+  "tools": [
+   "jobscan"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "check-my-symptoms",
+  "name": "Check my symptoms",
+  "tools": [
+   "ada-health"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "check-my-website-seo",
+  "name": "Check my website SEO",
+  "tools": [
+   "semrush"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "check-punctuation",
+  "name": "Check punctuation",
+  "tools": [
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "check-readability",
+  "name": "Check readability",
+  "tools": [
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "check-writing-in-another-language",
+  "name": "Check writing in another language",
+  "tools": [
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "cite-sources",
+  "name": "Cite sources",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "clean-up-data",
+  "name": "Clean up data",
+  "tools": [
+   "rows"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "clean-up-my-microphone",
+  "name": "Clean up my microphone",
+  "tools": [
+   "krisp"
   ],
   "categories": [
    "audio"
+  ]
+ },
+ {
+  "slug": "client-portal",
+  "name": "Client portal",
+  "tools": [
+   "bonsai"
+  ],
+  "categories": [
+   "small-business"
   ]
  },
  {
@@ -532,6 +2344,36 @@
   ]
  },
  {
+  "slug": "cold-email-outreach",
+  "name": "Cold email outreach",
+  "tools": [
+   "apollo-io"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "collect-leads",
+  "name": "Collect leads",
+  "tools": [
+   "landbot"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "compare-prices",
+  "name": "Compare prices",
+  "tools": [
+   "phia"
+  ],
+  "categories": [
+   "shopping"
+  ]
+ },
+ {
   "slug": "compare-products",
   "name": "Compare products",
   "tools": [
@@ -542,6 +2384,26 @@
   ]
  },
  {
+  "slug": "compose-music",
+  "name": "Compose music",
+  "tools": [
+   "aiva"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "conjugate-verbs",
+  "name": "Conjugate verbs",
+  "tools": [
+   "reverso"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
   "slug": "connect-apps",
   "name": "Connect apps",
   "tools": [
@@ -549,6 +2411,76 @@
   ],
   "categories": [
    "productivity"
+  ]
+ },
+ {
+  "slug": "content-brief",
+  "name": "Content brief",
+  "tools": [
+   "frase"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "content-plan",
+  "name": "Content plan",
+  "tools": [
+   "neuronwriter"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "contract-analysis",
+  "name": "Contract analysis",
+  "tools": [
+   "luminance"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "contract-review",
+  "name": "Contract review",
+  "tools": [
+   "spellbook"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "contract-review-automation",
+  "name": "Contract review automation",
+  "tools": [
+   "lawgeex"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "correct-my-german",
+  "name": "Correct my German",
+  "tools": [
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "count-calories",
+  "name": "Count calories",
+  "tools": [
+   "cal-ai"
+  ],
+  "categories": [
+   "health"
   ]
  },
  {
@@ -572,6 +2504,36 @@
   ]
  },
  {
+  "slug": "create-a-portfolio",
+  "name": "Create a portfolio",
+  "tools": [
+   "squarespace"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "create-a-portfolio-website",
+  "name": "Create a portfolio website",
+  "tools": [
+   "wix"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "create-a-poster",
+  "name": "Create a poster",
+  "tools": [
+   "kittl"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
   "slug": "create-a-poster-with-text",
   "name": "Create a poster with text",
   "tools": [
@@ -579,6 +2541,96 @@
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "create-a-powerpoint",
+  "name": "Create a PowerPoint",
+  "tools": [
+   "slidesai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "create-a-profile-picture",
+  "name": "Create a profile picture",
+  "tools": [
+   "nightcafe"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "create-a-saas",
+  "name": "Create a SaaS",
+  "tools": [
+   "bubble"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "create-a-short-film",
+  "name": "Create a short film",
+  "tools": [
+   "kling-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "create-a-slide-deck",
+  "name": "Create a slide deck",
+  "tools": [
+   "plus-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "create-a-small-business-website",
+  "name": "Create a small business website",
+  "tools": [
+   "durable"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "create-a-trust",
+  "name": "Create a trust",
+  "tools": [
+   "trust-and-will"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "create-a-video-ad",
+  "name": "Create a video ad",
+  "tools": [
+   "invideo-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "create-a-video-with-ai-voice",
+  "name": "Create a video with AI voice",
+  "tools": [
+   "fliki"
+  ],
+  "categories": [
+   "video"
   ]
  },
  {
@@ -612,6 +2664,36 @@
   ]
  },
  {
+  "slug": "create-an-online-store",
+  "name": "Create an online store",
+  "tools": [
+   "hostinger-website-builder"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "create-an-svg",
+  "name": "Create an SVG",
+  "tools": [
+   "recraft"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "create-background-music",
+  "name": "Create background music",
+  "tools": [
+   "aiva"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
   "slug": "create-blog-posts",
   "name": "Create blog posts",
   "tools": [
@@ -632,23 +2714,173 @@
   ]
  },
  {
-  "slug": "create-slides",
-  "name": "Create slides",
+  "slug": "create-instagram-posts",
+  "name": "Create Instagram posts",
   "tools": [
-   "gamma"
+   "predis-ai"
   ],
   "categories": [
-   "design"
+   "marketing"
   ]
  },
  {
-  "slug": "describe-a-scene",
-  "name": "Describe a scene",
+  "slug": "create-product-images",
+  "name": "Create product images",
   "tools": [
-   "sudowrite"
+   "pixelcut"
   ],
   "categories": [
-   "writing"
+   "image"
+  ]
+ },
+ {
+  "slug": "create-royalty-free-music",
+  "name": "Create royalty-free music",
+  "tools": [
+   "soundraw"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "create-tasks-automatically",
+  "name": "Create tasks automatically",
+  "tools": [
+   "clickup-brain"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "create-vector-graphics",
+  "name": "Create vector graphics",
+  "tools": [
+   "recraft"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "creative-resume",
+  "name": "Creative resume",
+  "tools": [
+   "enhancv"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "customer-service-bot",
+  "name": "Customer service bot",
+  "tools": [
+   "botpress"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "customer-support-software",
+  "name": "Customer support software",
+  "tools": [
+   "crisp"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "customer-support-ticketing",
+  "name": "Customer support ticketing",
+  "tools": [
+   "freshdesk"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "cut-a-long-video-into-clips",
+  "name": "Cut a long video into clips",
+  "tools": [
+   "captions"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "cut-a-video",
+  "name": "Cut a video",
+  "tools": [
+   "veed"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "day-by-day-travel-plan",
+  "name": "Day by day travel plan",
+  "tools": [
+   "wonderplan"
+  ],
+  "categories": [
+   "travel"
+  ]
+ },
+ {
+  "slug": "decorate-my-living-room",
+  "name": "Decorate my living room",
+  "tools": [
+   "interior-ai"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "describe-surroundings",
+  "name": "Describe surroundings",
+  "tools": [
+   "envision"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "describe-what-my-camera-sees",
+  "name": "Describe what my camera sees",
+  "tools": [
+   "be-my-eyes"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "design-a-floor-plan",
+  "name": "Design a floor plan",
+  "tools": [
+   "planner-5d"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "design-a-flyer",
+  "name": "Design a flyer",
+  "tools": [
+   "fotor"
+  ],
+  "categories": [
+   "image"
   ]
  },
  {
@@ -672,10 +2904,30 @@
   ]
  },
  {
-  "slug": "design-a-social-media-post",
-  "name": "Design a social media post",
+  "slug": "design-a-poster",
+  "name": "Design a poster",
   "tools": [
-   "canva"
+   "recraft"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "design-a-powerpoint",
+  "name": "Design a PowerPoint",
+  "tools": [
+   "presentations-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "design-a-t-shirt",
+  "name": "Design a t-shirt",
+  "tools": [
+   "kittl"
   ],
   "categories": [
    "design"
@@ -712,6 +2964,76 @@
   ]
  },
  {
+  "slug": "dispute-a-charge",
+  "name": "Dispute a charge",
+  "tools": [
+   "donotpay"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "do-bookkeeping-for-free",
+  "name": "Do bookkeeping for free",
+  "tools": [
+   "wave"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "do-my-bookkeeping",
+  "name": "Do my bookkeeping",
+  "tools": [
+   "quickbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "do-my-books",
+  "name": "Do my books",
+  "tools": [
+   "xero"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "do-my-taxes",
+  "name": "Do my taxes",
+  "tools": [
+   "turbotax"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "do-statistics",
+  "name": "Do statistics",
+  "tools": [
+   "julius-ai"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "draft-a-legal-memo",
+  "name": "Draft a legal memo",
+  "tools": [
+   "cocounsel"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
   "slug": "draft-a-message",
   "name": "Draft a message",
   "tools": [
@@ -722,13 +3044,53 @@
   ]
  },
  {
-  "slug": "dub-a-video",
-  "name": "Dub a video",
+  "slug": "draft-client-emails",
+  "name": "Draft client emails",
   "tools": [
-   "elevenlabs"
+   "clio-duo"
   ],
   "categories": [
-   "audio"
+   "legal"
+  ]
+ },
+ {
+  "slug": "draft-follow-ups",
+  "name": "Draft follow-ups",
+  "tools": [
+   "fyxer-ai"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "draft-legal-documents",
+  "name": "Draft legal documents",
+  "tools": [
+   "harvey"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "due-diligence",
+  "name": "Due diligence",
+  "tools": [
+   "harvey"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "e-sign-a-pdf",
+  "name": "E-sign a PDF",
+  "tools": [
+   "docusign"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -742,10 +3104,10 @@
   ]
  },
  {
-  "slug": "edit-a-photo",
-  "name": "Edit a photo",
+  "slug": "edit-a-photo-online",
+  "name": "Edit a photo online",
   "tools": [
-   "adobe-firefly"
+   "pixlr"
   ],
   "categories": [
    "image"
@@ -762,6 +3124,56 @@
   ]
  },
  {
+  "slug": "edit-a-talking-head-video",
+  "name": "Edit a talking head video",
+  "tools": [
+   "captions"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "edit-my-blog-post",
+  "name": "Edit my blog post",
+  "tools": [
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "edit-my-essay",
+  "name": "Edit my essay",
+  "tools": [
+   "prowritingaid"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "edit-my-novel",
+  "name": "Edit my novel",
+  "tools": [
+   "prowritingaid"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "edit-short-videos",
+  "name": "Edit short videos",
+  "tools": [
+   "submagic"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
   "slug": "edit-video-by-editing-text",
   "name": "Edit video by editing text",
   "tools": [
@@ -769,6 +3181,126 @@
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "email-coaching",
+  "name": "Email coaching",
+  "tools": [
+   "lavender"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "email-marketing",
+  "name": "Email marketing",
+  "tools": [
+   "mailchimp"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "email-marketing-for-my-store",
+  "name": "Email marketing for my store",
+  "tools": [
+   "klaviyo"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "email-reminders",
+  "name": "Email reminders",
+  "tools": [
+   "sanebox"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "employment-contract",
+  "name": "Employment contract",
+  "tools": [
+   "genie-ai"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "enhance-a-photo",
+  "name": "Enhance a photo",
+  "tools": [
+   "fotor"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "enhance-photo-quality",
+  "name": "Enhance photo quality",
+  "tools": [
+   "lets-enhance"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "enlarge-a-picture-for-printing",
+  "name": "Enlarge a picture for printing",
+  "tools": [
+   "lets-enhance"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "estate-planning",
+  "name": "Estate planning",
+  "tools": [
+   "trust-and-will"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "estimate-how-long-a-task-takes",
+  "name": "Estimate how long a task takes",
+  "tools": [
+   "goblin-tools"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "explain-a-question",
+  "name": "Explain a question",
+  "tools": [
+   "brainly"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "explain-a-scientific-paper",
+  "name": "Explain a scientific paper",
+  "tools": [
+   "scispace"
+  ],
+  "categories": [
+   "research"
   ]
  },
  {
@@ -782,6 +3314,16 @@
   ]
  },
  {
+  "slug": "explain-math-steps",
+  "name": "Explain math steps",
+  "tools": [
+   "photomath"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
   "slug": "extract-data-from-papers",
   "name": "Extract data from papers",
   "tools": [
@@ -789,6 +3331,106 @@
   ],
   "categories": [
    "research"
+  ]
+ },
+ {
+  "slug": "extract-instruments",
+  "name": "Extract instruments",
+  "tools": [
+   "lalal-ai"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "feel-better",
+  "name": "Feel better",
+  "tools": [
+   "wysa"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "fight-a-parking-ticket",
+  "name": "Fight a parking ticket",
+  "tools": [
+   "donotpay"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "file-my-tax-return",
+  "name": "File my tax return",
+  "tools": [
+   "turbotax"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "file-taxes-online",
+  "name": "File taxes online",
+  "tools": [
+   "turbotax"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "filter-unimportant-emails",
+  "name": "Filter unimportant emails",
+  "tools": [
+   "sanebox"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "find-a-cheaper-price",
+  "name": "Find a cheaper price",
+  "tools": [
+   "phia"
+  ],
+  "categories": [
+   "shopping"
+  ]
+ },
+ {
+  "slug": "find-business-contacts",
+  "name": "Find business contacts",
+  "tools": [
+   "apollo-io"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "find-hotels",
+  "name": "Find hotels",
+  "tools": [
+   "mindtrip"
+  ],
+  "categories": [
+   "travel"
+  ]
+ },
+ {
+  "slug": "find-leads",
+  "name": "Find leads",
+  "tools": [
+   "apollo-io"
+  ],
+  "categories": [
+   "sales"
   ]
  },
  {
@@ -802,13 +3444,23 @@
   ]
  },
  {
-  "slug": "find-research-papers",
-  "name": "Find research papers",
+  "slug": "find-related-papers",
+  "name": "Find related papers",
   "tools": [
-   "elicit"
+   "researchrabbit"
   ],
   "categories": [
    "research"
+  ]
+ },
+ {
+  "slug": "find-risky-clauses",
+  "name": "Find risky clauses",
+  "tools": [
+   "spellbook"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -832,6 +3484,26 @@
   ]
  },
  {
+  "slug": "find-secondhand-items",
+  "name": "Find secondhand items",
+  "tools": [
+   "phia"
+  ],
+  "categories": [
+   "shopping"
+  ]
+ },
+ {
+  "slug": "find-someone-s-email",
+  "name": "Find someone's email",
+  "tools": [
+   "apollo-io"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
   "slug": "find-supporting-evidence",
   "name": "Find supporting evidence",
   "tools": [
@@ -839,6 +3511,26 @@
   ],
   "categories": [
    "research"
+  ]
+ },
+ {
+  "slug": "find-the-best-time-to-post",
+  "name": "Find the best time to post",
+  "tools": [
+   "later"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "find-things-to-do",
+  "name": "Find things to do",
+  "tools": [
+   "layla"
+  ],
+  "categories": [
+   "travel"
   ]
  },
  {
@@ -852,6 +3544,36 @@
   ]
  },
  {
+  "slug": "finish-my-sentence",
+  "name": "Finish my sentence",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "fix-a-photo",
+  "name": "Fix a photo",
+  "tools": [
+   "pixlr"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "fix-eye-contact",
+  "name": "Fix eye contact",
+  "tools": [
+   "captions"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
   "slug": "fix-grammar",
   "name": "Fix grammar",
   "tools": [
@@ -862,6 +3584,76 @@
   ]
  },
  {
+  "slug": "fix-spelling",
+  "name": "Fix spelling",
+  "tools": [
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "fix-spelling-mistakes",
+  "name": "Fix spelling mistakes",
+  "tools": [
+   "prowritingaid"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "follow-up-with-customers",
+  "name": "Follow up with customers",
+  "tools": [
+   "close"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "follow-up-with-leads",
+  "name": "Follow up with leads",
+  "tools": [
+   "lindy"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "form-an-llc",
+  "name": "Form an LLC",
+  "tools": [
+   "legalzoom"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "freelance-contract",
+  "name": "Freelance contract",
+  "tools": [
+   "bonsai"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "furnish-an-empty-room-photo",
+  "name": "Furnish an empty room photo",
+  "tools": [
+   "virtual-staging-ai"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
   "slug": "generate-a-pattern",
   "name": "Generate a pattern",
   "tools": [
@@ -869,6 +3661,46 @@
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "generate-a-picture",
+  "name": "Generate a picture",
+  "tools": [
+   "nightcafe"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "generate-a-video-clip",
+  "name": "Generate a video clip",
+  "tools": [
+   "kling-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "generate-an-illustration",
+  "name": "Generate an illustration",
+  "tools": [
+   "recraft"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "generate-content-ideas",
+  "name": "Generate content ideas",
+  "tools": [
+   "rytr"
+  ],
+  "categories": [
+   "writing"
   ]
  },
  {
@@ -902,6 +3734,36 @@
   ]
  },
  {
+  "slug": "get-a-refund",
+  "name": "Get a refund",
+  "tools": [
+   "donotpay"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "get-a-signature",
+  "name": "Get a signature",
+  "tools": [
+   "docusign"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "get-action-items-from-a-meeting",
+  "name": "Get action items from a meeting",
+  "tools": [
+   "tldv"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
   "slug": "get-advice",
   "name": "Get advice",
   "tools": [
@@ -932,6 +3794,86 @@
   ]
  },
  {
+  "slug": "get-legal-advice",
+  "name": "Get legal advice",
+  "tools": [
+   "legalzoom"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "get-meeting-action-items",
+  "name": "Get meeting action items",
+  "tools": [
+   "read-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "get-more-email-replies",
+  "name": "Get more email replies",
+  "tools": [
+   "lavender"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "get-my-business-online",
+  "name": "Get my business online",
+  "tools": [
+   "durable"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "get-my-tax-refund",
+  "name": "Get my tax refund",
+  "tools": [
+   "turbotax"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "get-paid",
+  "name": "Get paid",
+  "tools": [
+   "invoice-simple"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "get-paid-online",
+  "name": "Get paid online",
+  "tools": [
+   "freshbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "grow-on-linkedin",
+  "name": "Grow on LinkedIn",
+  "tools": [
+   "taplio"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
   "slug": "have-a-conversation",
   "name": "Have a conversation",
   "tools": [
@@ -939,6 +3881,86 @@
   ],
   "categories": [
    "productivity"
+  ]
+ },
+ {
+  "slug": "health-question",
+  "name": "Health question",
+  "tools": [
+   "ada-health"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "help-desk-software",
+  "name": "Help desk software",
+  "tools": [
+   "freshdesk"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "help-for-blind-people",
+  "name": "Help for blind people",
+  "tools": [
+   "be-my-eyes"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "help-with-adhd",
+  "name": "Help with ADHD",
+  "tools": [
+   "goblin-tools"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "help-with-homework",
+  "name": "Help with homework",
+  "tools": [
+   "brainly"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "help-with-math-homework",
+  "name": "Help with math homework",
+  "tools": [
+   "photomath"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "help-with-my-thesis",
+  "name": "Help with my thesis",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "honeymoon-planning",
+  "name": "Honeymoon planning",
+  "tools": [
+   "layla"
+  ],
+  "categories": [
+   "travel"
   ]
  },
  {
@@ -952,13 +3974,83 @@
   ]
  },
  {
-  "slug": "improve-my-writing",
-  "name": "Improve my writing",
+  "slug": "identify-money",
+  "name": "Identify money",
   "tools": [
-   "grammarly"
+   "seeing-ai"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "import-data-from-apps",
+  "name": "Import data from apps",
+  "tools": [
+   "rows"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "improve-google-ranking",
+  "name": "Improve Google ranking",
+  "tools": [
+   "neuronwriter"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "improve-my-cold-email",
+  "name": "Improve my cold email",
+  "tools": [
+   "lavender"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "improve-my-writing-style",
+  "name": "Improve my writing style",
+  "tools": [
+   "prowritingaid"
   ],
   "categories": [
    "writing"
+  ]
+ },
+ {
+  "slug": "improve-podcast-audio",
+  "name": "Improve podcast audio",
+  "tools": [
+   "auphonic"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "improve-product-photos",
+  "name": "Improve product photos",
+  "tools": [
+   "lets-enhance"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "improve-public-speaking",
+  "name": "Improve public speaking",
+  "tools": [
+   "yoodli"
+  ],
+  "categories": [
+   "jobs-and-careers"
   ]
  },
  {
@@ -968,27 +4060,167 @@
    "deepl"
   ],
   "categories": [
-   "writing"
+   "translation"
   ]
  },
  {
-  "slug": "learn-a-language",
-  "name": "Learn a language",
+  "slug": "interior-design-ideas",
+  "name": "Interior design ideas",
   "tools": [
-   "duolingo"
+   "interior-ai"
   ],
   "categories": [
-   "education"
+   "home-and-real-estate"
   ]
  },
  {
-  "slug": "listen-to-a-pdf",
-  "name": "Listen to a PDF",
+  "slug": "interview-questions",
+  "name": "Interview questions",
   "tools": [
-   "speechify"
+   "final-round-ai"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "invoice-a-client",
+  "name": "Invoice a client",
+  "tools": [
+   "bonsai"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "invoice-app",
+  "name": "Invoice app",
+  "tools": [
+   "invoice-simple"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "invoice-customers",
+  "name": "Invoice customers",
+  "tools": [
+   "jobber"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "is-this-a-good-deal",
+  "name": "Is this a good deal",
+  "tools": [
+   "phia"
+  ],
+  "categories": [
+   "shopping"
+  ]
+ },
+ {
+  "slug": "isolate-a-voice",
+  "name": "Isolate a voice",
+  "tools": [
+   "lalal-ai"
   ],
   "categories": [
    "audio"
+  ]
+ },
+ {
+  "slug": "keyword-suggestions-for-an-article",
+  "name": "Keyword suggestions for an article",
+  "tools": [
+   "neuronwriter"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "label-my-emails",
+  "name": "Label my emails",
+  "tools": [
+   "fyxer-ai"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "landscaping-ideas",
+  "name": "Landscaping ideas",
+  "tools": [
+   "reimaginehome"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "lead-generation-bot",
+  "name": "Lead generation bot",
+  "tools": [
+   "landbot"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "legal-billing",
+  "name": "Legal billing",
+  "tools": [
+   "clio-duo"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "legal-templates",
+  "name": "Legal templates",
+  "tools": [
+   "genie-ai"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "let-clients-book-appointments",
+  "name": "Let clients book appointments",
+  "tools": [
+   "calendly"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "linkedin-content-ideas",
+  "name": "LinkedIn content ideas",
+  "tools": [
+   "taplio"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "lose-weight",
+  "name": "Lose weight",
+  "tools": [
+   "cal-ai"
+  ],
+  "categories": [
+   "health"
   ]
  },
  {
@@ -1002,10 +4234,210 @@
   ]
  },
  {
-  "slug": "make-a-flyer",
-  "name": "Make a flyer",
+  "slug": "make-a-bill-of-sale",
+  "name": "Make a bill of sale",
   "tools": [
-   "canva"
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "make-a-birthday-card",
+  "name": "Make a birthday card",
+  "tools": [
+   "microsoft-designer"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-booking-page",
+  "name": "Make a booking page",
+  "tools": [
+   "durable"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-booking-website",
+  "name": "Make a booking website",
+  "tools": [
+   "wix"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-budget",
+  "name": "Make a budget",
+  "tools": [
+   "monarch-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "make-a-business-app",
+  "name": "Make a business app",
+  "tools": [
+   "glide"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-chart",
+  "name": "Make a chart",
+  "tools": [
+   "rows"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "make-a-chart-from-data",
+  "name": "Make a chart from data",
+  "tools": [
+   "julius-ai"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "make-a-cheap-website",
+  "name": "Make a cheap website",
+  "tools": [
+   "hostinger-website-builder"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-checklist",
+  "name": "Make a checklist",
+  "tools": [
+   "taskade"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "make-a-customer-portal",
+  "name": "Make a customer portal",
+  "tools": [
+   "glide"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-explainer-video",
+  "name": "Make a explainer video",
+  "tools": [
+   "invideo-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-faceless-video",
+  "name": "Make a faceless video",
+  "tools": [
+   "invideo-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-faceless-youtube-video",
+  "name": "Make a faceless YouTube video",
+  "tools": [
+   "fliki"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-karaoke-track",
+  "name": "Make a karaoke track",
+  "tools": [
+   "lalal-ai"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-a-link-in-bio",
+  "name": "Make a link in bio",
+  "tools": [
+   "later"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "make-a-marketplace-app",
+  "name": "Make a marketplace app",
+  "tools": [
+   "bubble"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-meme",
+  "name": "Make a meme",
+  "tools": [
+   "kapwing"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-mind-map",
+  "name": "Make a mind map",
+  "tools": [
+   "taskade"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "make-a-photo-higher-resolution",
+  "name": "Make a photo higher resolution",
+  "tools": [
+   "lets-enhance"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-a-pitch-deck",
+  "name": "Make a pitch deck",
+  "tools": [
+   "presentations-ai"
   ],
   "categories": [
    "design"
@@ -1022,10 +4454,70 @@
   ]
  },
  {
+  "slug": "make-a-portfolio",
+  "name": "Make a portfolio",
+  "tools": [
+   "hostinger-website-builder"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-power-of-attorney",
+  "name": "Make a power of attorney",
+  "tools": [
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "make-a-powerpoint",
+  "name": "Make a PowerPoint",
+  "tools": [
+   "plus-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
   "slug": "make-a-prototype",
   "name": "Make a prototype",
   "tools": [
    "figma"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-rental-agreement",
+  "name": "Make a rental agreement",
+  "tools": [
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "make-a-resume-from-linkedin",
+  "name": "Make a resume from LinkedIn",
+  "tools": [
+   "kickresume"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "make-a-sales-deck",
+  "name": "Make a sales deck",
+  "tools": [
+   "presentations-ai"
   ],
   "categories": [
    "design"
@@ -1042,30 +4534,80 @@
   ]
  },
  {
+  "slug": "make-a-slide-deck-for-school",
+  "name": "Make a slide deck for school",
+  "tools": [
+   "slidesai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-a-slideshow-video",
+  "name": "Make a slideshow video",
+  "tools": [
+   "clipchamp"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-social-media-post",
+  "name": "Make a social media post",
+  "tools": [
+   "picsart"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-a-social-media-video",
+  "name": "Make a social media video",
+  "tools": [
+   "veed"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-social-video",
+  "name": "Make a social video",
+  "tools": [
+   "pictory"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-soundtrack",
+  "name": "Make a soundtrack",
+  "tools": [
+   "aiva"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-a-support-bot",
+  "name": "Make a support bot",
+  "tools": [
+   "chatbase"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
   "slug": "make-a-talking-head-video",
   "name": "Make a talking head video",
   "tools": [
    "heygen"
-  ],
-  "categories": [
-   "video"
-  ]
- },
- {
-  "slug": "make-a-tiktok",
-  "name": "Make a TikTok",
-  "tools": [
-   "capcut"
-  ],
-  "categories": [
-   "video"
-  ]
- },
- {
-  "slug": "make-a-training-video",
-  "name": "Make a training video",
-  "tools": [
-   "synthesia"
   ],
   "categories": [
    "video"
@@ -1082,6 +4624,96 @@
   ]
  },
  {
+  "slug": "make-a-video-for-youtube",
+  "name": "Make a video for YouTube",
+  "tools": [
+   "clipchamp"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-video-from-a-script",
+  "name": "Make a video from a script",
+  "tools": [
+   "pictory"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-a-wallpaper",
+  "name": "Make a wallpaper",
+  "tools": [
+   "nightcafe"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-a-web-app",
+  "name": "Make a web app",
+  "tools": [
+   "bubble"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-website-and-hosting",
+  "name": "Make a website and hosting",
+  "tools": [
+   "hostinger-website-builder"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-wedding-website",
+  "name": "Make a wedding website",
+  "tools": [
+   "squarespace"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-a-workout-plan",
+  "name": "Make a workout plan",
+  "tools": [
+   "fitbod"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "make-a-youtube-video",
+  "name": "Make a YouTube video",
+  "tools": [
+   "invideo-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-ad-copy",
+  "name": "Make ad copy",
+  "tools": [
+   "rytr"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
   "slug": "make-ad-images",
   "name": "Make ad images",
   "tools": [
@@ -1089,6 +4721,66 @@
   ],
   "categories": [
    "marketing"
+  ]
+ },
+ {
+  "slug": "make-ads",
+  "name": "Make ads",
+  "tools": [
+   "predis-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "make-ai-art",
+  "name": "Make AI art",
+  "tools": [
+   "nightcafe"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-an-ai-agent",
+  "name": "Make an AI agent",
+  "tools": [
+   "botpress"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "make-an-ai-avatar-video",
+  "name": "Make an AI avatar video",
+  "tools": [
+   "captions"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-an-ai-video",
+  "name": "Make an AI video",
+  "tools": [
+   "kling-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-an-ai-voice",
+  "name": "Make an AI voice",
+  "tools": [
+   "murf-ai"
+  ],
+  "categories": [
+   "voice"
   ]
  },
  {
@@ -1102,6 +4794,76 @@
   ]
  },
  {
+  "slug": "make-an-app-without-coding",
+  "name": "Make an app without coding",
+  "tools": [
+   "glide"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "make-an-audiobook-sample",
+  "name": "Make an audiobook sample",
+  "tools": [
+   "murf-ai"
+  ],
+  "categories": [
+   "voice"
+  ]
+ },
+ {
+  "slug": "make-an-etsy-listing-photo",
+  "name": "Make an Etsy listing photo",
+  "tools": [
+   "pixelcut"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-an-instagram-reel",
+  "name": "Make an Instagram reel",
+  "tools": [
+   "invideo-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-an-invitation",
+  "name": "Make an invitation",
+  "tools": [
+   "microsoft-designer"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-an-invoice",
+  "name": "Make an invoice",
+  "tools": [
+   "invoice-simple"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "make-an-itinerary",
+  "name": "Make an itinerary",
+  "tools": [
+   "layla"
+  ],
+  "categories": [
+   "travel"
+  ]
+ },
+ {
   "slug": "make-art",
   "name": "Make art",
   "tools": [
@@ -1109,6 +4871,66 @@
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "make-background-music",
+  "name": "Make background music",
+  "tools": [
+   "soundraw"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-brand-images",
+  "name": "Make brand images",
+  "tools": [
+   "recraft"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-captions",
+  "name": "Make captions",
+  "tools": [
+   "veed"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-carousels",
+  "name": "Make carousels",
+  "tools": [
+   "predis-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "make-classical-music",
+  "name": "Make classical music",
+  "tools": [
+   "aiva"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-clips-from-a-long-video",
+  "name": "Make clips from a long video",
+  "tools": [
+   "kapwing"
+  ],
+  "categories": [
+   "video"
   ]
  },
  {
@@ -1122,23 +4944,173 @@
   ]
  },
  {
-  "slug": "make-flashcards",
-  "name": "Make flashcards",
+  "slug": "make-fantasy-art",
+  "name": "Make fantasy art",
   "tools": [
-   "quizlet"
-  ],
-  "categories": [
-   "education"
-  ]
- },
- {
-  "slug": "make-product-photos",
-  "name": "Make product photos",
-  "tools": [
-   "photoroom"
+   "nightcafe"
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "make-game-music",
+  "name": "Make game music",
+  "tools": [
+   "aiva"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-google-slides",
+  "name": "Make Google Slides",
+  "tools": [
+   "plus-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-icons",
+  "name": "Make icons",
+  "tools": [
+   "recraft"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-merch-designs",
+  "name": "Make merch designs",
+  "tools": [
+   "kittl"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-music-for-my-video",
+  "name": "Make music for my video",
+  "tools": [
+   "soundraw"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-my-audio-louder",
+  "name": "Make my audio louder",
+  "tools": [
+   "auphonic"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-my-message-sound-nicer",
+  "name": "Make my message sound nicer",
+  "tools": [
+   "goblin-tools"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "make-my-video-in-spanish",
+  "name": "Make my video in Spanish",
+  "tools": [
+   "rask-ai"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "make-photos-for-my-online-store",
+  "name": "Make photos for my online store",
+  "tools": [
+   "pixelcut"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "make-podcast-music",
+  "name": "Make podcast music",
+  "tools": [
+   "soundraw"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "make-short-clips-from-a-long-video",
+  "name": "Make short clips from a long video",
+  "tools": [
+   "pictory"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-shorts-from-a-long-video",
+  "name": "Make shorts from a long video",
+  "tools": [
+   "submagic"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "make-slides",
+  "name": "Make slides",
+  "tools": [
+   "plus-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-slides-from-notes",
+  "name": "Make slides from notes",
+  "tools": [
+   "slidesai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "make-social-media-posts",
+  "name": "Make social media posts",
+  "tools": [
+   "predis-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "make-tiktok-subtitles",
+  "name": "Make TikTok subtitles",
+  "tools": [
+   "submagic"
+  ],
+  "categories": [
+   "video"
   ]
  },
  {
@@ -1152,30 +5124,260 @@
   ]
  },
  {
-  "slug": "manage-projects",
-  "name": "Manage projects",
+  "slug": "make-writing-easier-to-read",
+  "name": "Make writing easier to read",
   "tools": [
-   "motion"
+   "hemingway-editor"
   ],
   "categories": [
-   "productivity"
+   "writing"
   ]
  },
  {
-  "slug": "optimize-a-blog-post-for-seo",
-  "name": "Optimize a blog post for SEO",
+  "slug": "manage-a-cleaning-business",
+  "name": "Manage a cleaning business",
   "tools": [
-   "surfer"
+   "jobber"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "manage-a-law-practice",
+  "name": "Manage a law practice",
+  "tools": [
+   "clio-duo"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "manage-multiple-email-accounts",
+  "name": "Manage multiple email accounts",
+  "tools": [
+   "spark-mail"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "manage-my-pipeline",
+  "name": "Manage my pipeline",
+  "tools": [
+   "close"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "manage-social-accounts",
+  "name": "Manage social accounts",
+  "tools": [
+   "hootsuite"
   ],
   "categories": [
    "marketing"
   ]
  },
  {
-  "slug": "organize-my-notes",
-  "name": "Organize my notes",
+  "slug": "manage-stress",
+  "name": "Manage stress",
   "tools": [
-   "mem"
+   "wysa"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "mass-apply-to-jobs",
+  "name": "Mass apply to jobs",
+  "tools": [
+   "lazyapply"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "master-my-podcast",
+  "name": "Master my podcast",
+  "tools": [
+   "auphonic"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "meeting-minutes",
+  "name": "Meeting minutes",
+  "tools": [
+   "tldv"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "meeting-notes-without-a-bot",
+  "name": "Meeting notes without a bot",
+  "tools": [
+   "granola"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "mental-health-support",
+  "name": "Mental health support",
+  "tools": [
+   "wysa"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "mock-interview",
+  "name": "Mock interview",
+  "tools": [
+   "final-round-ai"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "music-for-youtube",
+  "name": "Music for youtube",
+  "tools": [
+   "soundraw"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "name-a-guardian-for-my-kids",
+  "name": "Name a guardian for my kids",
+  "tools": [
+   "trust-and-will"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "narrate-a-video",
+  "name": "Narrate a video",
+  "tools": [
+   "murf-ai"
+  ],
+  "categories": [
+   "voice"
+  ]
+ },
+ {
+  "slug": "negotiate-a-contract",
+  "name": "Negotiate a contract",
+  "tools": [
+   "luminance"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "no-code-app-builder",
+  "name": "No-code app builder",
+  "tools": [
+   "bubble"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "optimize-my-content",
+  "name": "Optimize my content",
+  "tools": [
+   "frase"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "organize-gmail",
+  "name": "Organize gmail",
+  "tools": [
+   "shortwave"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "organize-my-email",
+  "name": "Organize my email",
+  "tools": [
+   "sanebox"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "organize-my-inbox",
+  "name": "Organize my inbox",
+  "tools": [
+   "fyxer-ai"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "organize-my-job-search",
+  "name": "Organize my job search",
+  "tools": [
+   "huntr"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "organize-my-life",
+  "name": "Organize my life",
+  "tools": [
+   "todoist"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "organize-my-tasks",
+  "name": "Organize my tasks",
+  "tools": [
+   "taskade"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "organize-my-team",
+  "name": "Organize my team",
+  "tools": [
+   "clickup-brain"
   ],
   "categories": [
    "productivity"
@@ -1192,6 +5394,56 @@
   ]
  },
  {
+  "slug": "personal-trainer-app",
+  "name": "Personal trainer app",
+  "tools": [
+   "fitbod"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "personalize-outreach",
+  "name": "Personalize outreach",
+  "tools": [
+   "lavender"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "photoshop-alternative",
+  "name": "Photoshop alternative",
+  "tools": [
+   "pixlr"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "plain-language-writing",
+  "name": "Plain language writing",
+  "tools": [
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "plan-a-content-calendar",
+  "name": "Plan a content calendar",
+  "tools": [
+   "predis-ai"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
   "slug": "plan-a-lesson",
   "name": "Plan a lesson",
   "tools": [
@@ -1202,23 +5454,63 @@
   ]
  },
  {
-  "slug": "plan-a-trip",
-  "name": "Plan a trip",
+  "slug": "plan-a-project",
+  "name": "Plan a project",
   "tools": [
-   "gemini"
+   "taskade"
   ],
   "categories": [
    "productivity"
   ]
  },
  {
-  "slug": "plan-my-day",
-  "name": "Plan my day",
+  "slug": "plan-a-vacation",
+  "name": "Plan a vacation",
   "tools": [
-   "motion"
+   "mindtrip"
   ],
   "categories": [
-   "productivity"
+   "travel"
+  ]
+ },
+ {
+  "slug": "plan-finances-with-my-partner",
+  "name": "Plan finances with my partner",
+  "tools": [
+   "monarch-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "plan-my-gym-workouts",
+  "name": "Plan my gym workouts",
+  "tools": [
+   "fitbod"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "plan-my-kitchen",
+  "name": "Plan my kitchen",
+  "tools": [
+   "planner-5d"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "plan-my-social-media",
+  "name": "Plan my social media",
+  "tools": [
+   "later"
+  ],
+  "categories": [
+   "marketing"
   ]
  },
  {
@@ -1242,6 +5534,16 @@
   ]
  },
  {
+  "slug": "practice-a-speech",
+  "name": "Practice a speech",
+  "tools": [
+   "yoodli"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
   "slug": "practice-conversation",
   "name": "Practice conversation",
   "tools": [
@@ -1249,6 +5551,76 @@
   ],
   "categories": [
    "education"
+  ]
+ },
+ {
+  "slug": "practice-speaking-english",
+  "name": "Practice speaking English",
+  "tools": [
+   "praktika"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "practice-speaking-spanish",
+  "name": "Practice speaking Spanish",
+  "tools": [
+   "speak"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "prepare-for-a-job-interview",
+  "name": "Prepare for a job interview",
+  "tools": [
+   "final-round-ai"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "prepare-for-taxes",
+  "name": "Prepare for taxes",
+  "tools": [
+   "quickbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "private-search",
+  "name": "Private search",
+  "tools": [
+   "kagi"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "proofread-a-manuscript",
+  "name": "Proofread a manuscript",
+  "tools": [
+   "prowritingaid"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "proofread-an-email",
+  "name": "Proofread an email",
+  "tools": [
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
   ]
  },
  {
@@ -1262,13 +5634,93 @@
   ]
  },
  {
-  "slug": "read-text-aloud",
-  "name": "Read text aloud",
+  "slug": "quiz-me",
+  "name": "Quiz me",
   "tools": [
-   "speechify"
+   "knowt"
   ],
   "categories": [
-   "audio"
+   "education"
+  ]
+ },
+ {
+  "slug": "quizlet-alternative",
+  "name": "Quizlet alternative",
+  "tools": [
+   "knowt"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "rank-higher-on-google",
+  "name": "Rank higher on Google",
+  "tools": [
+   "semrush"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "read-a-document",
+  "name": "Read a document",
+  "tools": [
+   "seeing-ai"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "read-a-document-to-me",
+  "name": "Read a document to me",
+  "tools": [
+   "naturalreader"
+  ],
+  "categories": [
+   "voice"
+  ]
+ },
+ {
+  "slug": "read-a-label",
+  "name": "Read a label",
+  "tools": [
+   "be-my-eyes"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "read-text-aloud-from-camera",
+  "name": "Read text aloud from camera",
+  "tools": [
+   "seeing-ai"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "read-webpages-aloud",
+  "name": "Read webpages aloud",
+  "tools": [
+   "naturalreader"
+  ],
+  "categories": [
+   "voice"
+  ]
+ },
+ {
+  "slug": "recap-a-zoom-call",
+  "name": "Recap a zoom call",
+  "tools": [
+   "read-ai"
+  ],
+  "categories": [
+   "productivity"
   ]
  },
  {
@@ -1282,6 +5734,26 @@
   ]
  },
  {
+  "slug": "reconcile-bank-transactions",
+  "name": "Reconcile bank transactions",
+  "tools": [
+   "xero"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "record-a-meeting",
+  "name": "Record a meeting",
+  "tools": [
+   "tldv"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
   "slug": "record-meeting-notes",
   "name": "Record meeting notes",
   "tools": [
@@ -1292,6 +5764,36 @@
   ]
  },
  {
+  "slug": "record-my-screen",
+  "name": "Record my screen",
+  "tools": [
+   "clipchamp"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "redline-a-contract",
+  "name": "Redline a contract",
+  "tools": [
+   "spellbook"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "register-a-trademark",
+  "name": "Register a trademark",
+  "tools": [
+   "legalzoom"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
   "slug": "relight-a-photo",
   "name": "Relight a photo",
   "tools": [
@@ -1299,6 +5801,26 @@
   ],
   "categories": [
    "image"
+  ]
+ },
+ {
+  "slug": "remember-tasks",
+  "name": "Remember tasks",
+  "tools": [
+   "todoist"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "remodel-planning",
+  "name": "Remodel planning",
+  "tools": [
+   "planner-5d"
+  ],
+  "categories": [
+   "home-and-real-estate"
   ]
  },
  {
@@ -1322,6 +5844,16 @@
   ]
  },
  {
+  "slug": "remove-background-noise-on-calls",
+  "name": "Remove background noise on calls",
+  "tools": [
+   "krisp"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
   "slug": "remove-filler-words",
   "name": "Remove filler words",
   "tools": [
@@ -1329,6 +5861,16 @@
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "remove-noise-from-a-recording",
+  "name": "Remove noise from a recording",
+  "tools": [
+   "auphonic"
+  ],
+  "categories": [
+   "audio"
   ]
  },
  {
@@ -1342,6 +5884,46 @@
   ]
  },
  {
+  "slug": "remove-passive-voice",
+  "name": "Remove passive voice",
+  "tools": [
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "remove-silence-from-a-video",
+  "name": "Remove silence from a video",
+  "tools": [
+   "kapwing"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "remove-vocals-from-a-song",
+  "name": "Remove vocals from a song",
+  "tools": [
+   "lalal-ai"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "rephrase-a-sentence",
+  "name": "Rephrase a sentence",
+  "tools": [
+   "languagetool"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
   "slug": "reply-faster",
   "name": "Reply faster",
   "tools": [
@@ -1352,13 +5934,123 @@
   ]
  },
  {
-  "slug": "research-a-topic",
-  "name": "Research a topic",
+  "slug": "reply-to-comments",
+  "name": "Reply to comments",
   "tools": [
-   "perplexity"
+   "hootsuite"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "research-a-blog-topic",
+  "name": "Research a blog topic",
+  "tools": [
+   "frase"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "research-map",
+  "name": "Research map",
+  "tools": [
+   "researchrabbit"
   ],
   "categories": [
    "research"
+  ]
+ },
+ {
+  "slug": "resize-a-video-for-tiktok",
+  "name": "Resize a video for TikTok",
+  "tools": [
+   "kapwing"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "resize-an-image",
+  "name": "Resize an image",
+  "tools": [
+   "pixlr"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "resume-feedback",
+  "name": "Resume feedback",
+  "tools": [
+   "resume-worded"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "resume-keywords",
+  "name": "Resume keywords",
+  "tools": [
+   "jobscan"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "resume-templates",
+  "name": "Resume templates",
+  "tools": [
+   "kickresume"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "retouch-a-portrait",
+  "name": "Retouch a portrait",
+  "tools": [
+   "fotor"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "retouch-a-selfie",
+  "name": "Retouch a selfie",
+  "tools": [
+   "picsart"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "review-contracts",
+  "name": "Review contracts",
+  "tools": [
+   "luminance"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "review-documents",
+  "name": "Review documents",
+  "tools": [
+   "cocounsel"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -1372,6 +6064,146 @@
   ]
  },
  {
+  "slug": "rewrite-text",
+  "name": "Rewrite text",
+  "tools": [
+   "rytr"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "roleplay-a-conversation",
+  "name": "Roleplay a conversation",
+  "tools": [
+   "yoodli"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "run-a-landscaping-business",
+  "name": "Run a landscaping business",
+  "tools": [
+   "jobber"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "run-payroll",
+  "name": "Run payroll",
+  "tools": [
+   "quickbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "sales-crm",
+  "name": "Sales CRM",
+  "tools": [
+   "close"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "sales-prospecting",
+  "name": "Sales prospecting",
+  "tools": [
+   "apollo-io"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "save-money",
+  "name": "Save money",
+  "tools": [
+   "monarch-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "scan-a-math-problem",
+  "name": "Scan a math problem",
+  "tools": [
+   "photomath"
+  ],
+  "categories": [
+   "education"
+  ]
+ },
+ {
+  "slug": "schedule-an-email",
+  "name": "Schedule an email",
+  "tools": [
+   "spark-mail"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "schedule-instagram-posts",
+  "name": "Schedule Instagram posts",
+  "tools": [
+   "later"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "schedule-jobs",
+  "name": "Schedule jobs",
+  "tools": [
+   "jobber"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "schedule-linkedin-posts",
+  "name": "Schedule LinkedIn posts",
+  "tools": [
+   "taplio"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "schedule-meetings",
+  "name": "Schedule meetings",
+  "tools": [
+   "calendly"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "schedule-meetings-automatically",
+  "name": "Schedule meetings automatically",
+  "tools": [
+   "lindy"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
   "slug": "schedule-my-tasks",
   "name": "Schedule my tasks",
   "tools": [
@@ -1382,10 +6214,10 @@
   ]
  },
  {
-  "slug": "schedule-social-media-posts",
-  "name": "Schedule social media posts",
+  "slug": "schedule-posts",
+  "name": "Schedule posts",
   "tools": [
-   "buffer"
+   "predis-ai"
   ],
   "categories": [
    "marketing"
@@ -1396,6 +6228,46 @@
   "name": "Schedule tasks automatically",
   "tools": [
    "motion"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "schedule-tiktoks",
+  "name": "Schedule TikToks",
+  "tools": [
+   "later"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "score-my-resume",
+  "name": "Score my resume",
+  "tools": [
+   "resume-worded"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "search-my-email",
+  "name": "Search my email",
+  "tools": [
+   "shortwave"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "search-my-meetings",
+  "name": "Search my meetings",
+  "tools": [
+   "read-ai"
   ],
   "categories": [
    "productivity"
@@ -1422,6 +6294,156 @@
   ]
  },
  {
+  "slug": "search-without-ads",
+  "name": "Search without ads",
+  "tools": [
+   "kagi"
+  ],
+  "categories": [
+   "research"
+  ]
+ },
+ {
+  "slug": "see-all-my-accounts",
+  "name": "See all my accounts",
+  "tools": [
+   "monarch-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "see-competitor-traffic",
+  "name": "See competitor traffic",
+  "tools": [
+   "ahrefs"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "see-my-room-in-a-new-style",
+  "name": "See my room in a new style",
+  "tools": [
+   "interior-ai"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "see-words-in-context",
+  "name": "See words in context",
+  "tools": [
+   "reverso"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "send-a-contract-for-signature",
+  "name": "Send a contract for signature",
+  "tools": [
+   "docusign"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "send-a-newsletter",
+  "name": "Send a newsletter",
+  "tools": [
+   "mailchimp"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "send-a-proposal",
+  "name": "Send a proposal",
+  "tools": [
+   "bonsai"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "send-abandoned-cart-emails",
+  "name": "Send abandoned cart emails",
+  "tools": [
+   "klaviyo"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "send-an-estimate",
+  "name": "Send an estimate",
+  "tools": [
+   "invoice-simple"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "send-free-invoices",
+  "name": "Send free invoices",
+  "tools": [
+   "wave"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "send-invoices",
+  "name": "Send invoices",
+  "tools": [
+   "xero"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "send-quotes",
+  "name": "Send quotes",
+  "tools": [
+   "jobber"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "separate-vocals",
+  "name": "Separate vocals",
+  "tools": [
+   "lalal-ai"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "set-reminders",
+  "name": "Set reminders",
+  "tools": [
+   "todoist"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
   "slug": "set-up-a-support-chatbot",
   "name": "Set up a support chatbot",
   "tools": [
@@ -1429,6 +6451,66 @@
   ],
   "categories": [
    "customer-service"
+  ]
+ },
+ {
+  "slug": "shared-inbox",
+  "name": "Shared inbox",
+  "tools": [
+   "spark-mail"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "shared-support-inbox",
+  "name": "Shared support inbox",
+  "tools": [
+   "crisp"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "sharpen-an-image",
+  "name": "Sharpen an image",
+  "tools": [
+   "lets-enhance"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "shop-smarter",
+  "name": "Shop smarter",
+  "tools": [
+   "phia"
+  ],
+  "categories": [
+   "shopping"
+  ]
+ },
+ {
+  "slug": "shopify-email-marketing",
+  "name": "Shopify email marketing",
+  "tools": [
+   "klaviyo"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "shorten-long-sentences",
+  "name": "Shorten long sentences",
+  "tools": [
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
   ]
  },
  {
@@ -1442,23 +6524,203 @@
   ]
  },
  {
-  "slug": "sort-my-inbox",
-  "name": "Sort my inbox",
+  "slug": "should-i-see-a-doctor",
+  "name": "Should I see a doctor",
   "tools": [
-   "superhuman"
+   "ada-health"
   ],
   "categories": [
-   "productivity"
+   "health"
   ]
  },
  {
-  "slug": "study-for-a-test",
-  "name": "Study for a test",
+  "slug": "show-up-in-chatgpt-answers",
+  "name": "Show up in ChatGPT answers",
   "tools": [
-   "quizlet"
+   "semrush"
   ],
   "categories": [
-   "education"
+   "seo"
+  ]
+ },
+ {
+  "slug": "sign-a-document-online",
+  "name": "Sign a document online",
+  "tools": [
+   "docusign"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "simplify-my-text",
+  "name": "Simplify my text",
+  "tools": [
+   "hemingway-editor"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "small-claims",
+  "name": "Small claims",
+  "tools": [
+   "donotpay"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "small-claims-forms",
+  "name": "Small claims forms",
+  "tools": [
+   "lawdepot"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "smart-glasses-for-blind",
+  "name": "Smart glasses for blind",
+  "tools": [
+   "envision"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "sms-marketing",
+  "name": "SMS marketing",
+  "tools": [
+   "klaviyo"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "social-media-calendar",
+  "name": "Social media calendar",
+  "tools": [
+   "hootsuite"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "spreadsheet-formulas",
+  "name": "Spreadsheet formulas",
+  "tools": [
+   "rows"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "spy-on-competitors",
+  "name": "Spy on competitors",
+  "tools": [
+   "semrush"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "stage-a-listing",
+  "name": "Stage a listing",
+  "tools": [
+   "reimaginehome"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "stage-a-real-estate-listing",
+  "name": "Stage a real estate listing",
+  "tools": [
+   "virtual-staging-ai"
+  ],
+  "categories": [
+   "home-and-real-estate"
+  ]
+ },
+ {
+  "slug": "start-a-blog",
+  "name": "Start a blog",
+  "tools": [
+   "squarespace"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
+  "slug": "stop-dog-barking-on-calls",
+  "name": "Stop dog barking on calls",
+  "tools": [
+   "krisp"
+  ],
+  "categories": [
+   "audio"
+  ]
+ },
+ {
+  "slug": "stop-email-back-and-forth",
+  "name": "Stop email back-and-forth",
+  "tools": [
+   "calendly"
+  ],
+  "categories": [
+   "small-business"
+  ]
+ },
+ {
+  "slug": "stop-email-overload",
+  "name": "Stop email overload",
+  "tools": [
+   "sanebox"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "stop-robocalls",
+  "name": "Stop robocalls",
+  "tools": [
+   "donotpay"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "stop-saying-um",
+  "name": "Stop saying um",
+  "tools": [
+   "yoodli"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "strength-training-plan",
+  "name": "Strength training plan",
+  "tools": [
+   "fitbod"
+  ],
+  "categories": [
+   "health"
   ]
  },
  {
@@ -1472,13 +6734,33 @@
   ]
  },
  {
-  "slug": "summarize-a-call",
-  "name": "Summarize a call",
+  "slug": "study-help",
+  "name": "Study help",
   "tools": [
-   "otter-ai"
+   "brainly"
   ],
   "categories": [
-   "productivity"
+   "education"
+  ]
+ },
+ {
+  "slug": "subtitles-in-another-language",
+  "name": "Subtitles in another language",
+  "tools": [
+   "rask-ai"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "summarize-a-legal-document",
+  "name": "Summarize a legal document",
+  "tools": [
+   "cocounsel"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -1492,13 +6774,23 @@
   ]
  },
  {
-  "slug": "summarize-a-zoom-call",
-  "name": "Summarize a Zoom call",
+  "slug": "summarize-a-paper",
+  "name": "Summarize a paper",
   "tools": [
-   "fathom"
+   "scispace"
   ],
   "categories": [
-   "productivity"
+   "research"
+  ]
+ },
+ {
+  "slug": "summarize-an-agreement",
+  "name": "Summarize an agreement",
+  "tools": [
+   "docusign"
+  ],
+  "categories": [
+   "legal"
   ]
  },
  {
@@ -1512,6 +6804,16 @@
   ]
  },
  {
+  "slug": "summarize-case-documents",
+  "name": "Summarize case documents",
+  "tools": [
+   "clio-duo"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
   "slug": "summarize-crm-records",
   "name": "Summarize CRM records",
   "tools": [
@@ -1522,6 +6824,16 @@
   ]
  },
  {
+  "slug": "summarize-data",
+  "name": "Summarize data",
+  "tools": [
+   "rows"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
   "slug": "summarize-my-documents",
   "name": "Summarize my documents",
   "tools": [
@@ -1529,6 +6841,26 @@
   ],
   "categories": [
    "research"
+  ]
+ },
+ {
+  "slug": "summarize-my-meetings",
+  "name": "Summarize my meetings",
+  "tools": [
+   "read-ai"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "summarize-my-notes",
+  "name": "Summarize my notes",
+  "tools": [
+   "knowt"
+  ],
+  "categories": [
+   "education"
   ]
  },
  {
@@ -1552,6 +6884,36 @@
   ]
  },
  {
+  "slug": "summarize-tasks",
+  "name": "Summarize tasks",
+  "tools": [
+   "clickup-brain"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "tailor-my-resume-to-a-job",
+  "name": "Tailor my resume to a job",
+  "tools": [
+   "teal"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "talk-about-anxiety",
+  "name": "Talk about anxiety",
+  "tools": [
+   "wysa"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
   "slug": "talk-through-a-problem",
   "name": "Talk through a problem",
   "tools": [
@@ -1562,23 +6924,163 @@
   ]
  },
  {
-  "slug": "transcribe-a-call",
-  "name": "Transcribe a call",
+  "slug": "tax-questions",
+  "name": "Tax questions",
   "tools": [
-   "fireflies-ai"
+   "turbotax"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-brand-mentions",
+  "name": "Track brand mentions",
+  "tools": [
+   "hootsuite"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "track-business-expenses",
+  "name": "Track business expenses",
+  "tools": [
+   "quickbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-cash-flow",
+  "name": "Track cash flow",
+  "tools": [
+   "xero"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-expenses",
+  "name": "Track expenses",
+  "tools": [
+   "freshbooks"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-income-and-expenses",
+  "name": "Track income and expenses",
+  "tools": [
+   "wave"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-keyword-rankings",
+  "name": "Track keyword rankings",
+  "tools": [
+   "ahrefs"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "track-macros",
+  "name": "Track macros",
+  "tools": [
+   "cal-ai"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "track-my-rankings",
+  "name": "Track my rankings",
+  "tools": [
+   "semrush"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "track-my-spending",
+  "name": "Track my spending",
+  "tools": [
+   "monarch-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-net-worth",
+  "name": "Track net worth",
+  "tools": [
+   "monarch-money"
+  ],
+  "categories": [
+   "finance"
+  ]
+ },
+ {
+  "slug": "track-sales-leads",
+  "name": "Track sales leads",
+  "tools": [
+   "close"
+  ],
+  "categories": [
+   "sales"
+  ]
+ },
+ {
+  "slug": "track-what-i-eat",
+  "name": "Track what I eat",
+  "tools": [
+   "cal-ai"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "train-a-chatbot-on-my-documents",
+  "name": "Train a chatbot on my documents",
+  "tools": [
+   "chatbase"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "transcribe-a-google-meet",
+  "name": "Transcribe a google meet",
+  "tools": [
+   "tldv"
   ],
   "categories": [
    "productivity"
   ]
  },
  {
-  "slug": "transcribe-a-meeting",
-  "name": "Transcribe a meeting",
+  "slug": "transcribe-a-video",
+  "name": "Transcribe a video",
   "tools": [
-   "otter-ai"
+   "veed"
   ],
   "categories": [
-   "productivity"
+   "video"
   ]
  },
  {
@@ -1588,17 +7090,27 @@
    "deepl"
   ],
   "categories": [
-   "writing"
+   "translation"
   ]
  },
  {
-  "slug": "translate-text",
-  "name": "Translate text",
+  "slug": "translate-a-sentence",
+  "name": "Translate a sentence",
   "tools": [
-   "deepl"
+   "reverso"
   ],
   "categories": [
-   "writing"
+   "translation"
+  ]
+ },
+ {
+  "slug": "travel-ideas",
+  "name": "Travel ideas",
+  "tools": [
+   "layla"
+  ],
+  "categories": [
+   "travel"
   ]
  },
  {
@@ -1612,6 +7124,16 @@
   ]
  },
  {
+  "slug": "turn-a-blog-into-a-video",
+  "name": "Turn a blog into a video",
+  "tools": [
+   "fliki"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
   "slug": "turn-a-blog-into-social-posts",
   "name": "Turn a blog into social posts",
   "tools": [
@@ -1622,6 +7144,76 @@
   ]
  },
  {
+  "slug": "turn-a-blog-post-into-a-video",
+  "name": "Turn a blog post into a video",
+  "tools": [
+   "pictory"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "turn-a-book-into-audio",
+  "name": "Turn a book into audio",
+  "tools": [
+   "naturalreader"
+  ],
+  "categories": [
+   "voice"
+  ]
+ },
+ {
+  "slug": "turn-a-document-into-slides",
+  "name": "Turn a document into slides",
+  "tools": [
+   "plus-ai"
+  ],
+  "categories": [
+   "design"
+  ]
+ },
+ {
+  "slug": "turn-a-photo-into-a-video",
+  "name": "Turn a photo into a video",
+  "tools": [
+   "kling-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "turn-a-photo-into-art",
+  "name": "Turn a photo into art",
+  "tools": [
+   "nightcafe"
+  ],
+  "categories": [
+   "image"
+  ]
+ },
+ {
+  "slug": "turn-a-script-into-a-video",
+  "name": "Turn a script into a video",
+  "tools": [
+   "invideo-ai"
+  ],
+  "categories": [
+   "video"
+  ]
+ },
+ {
+  "slug": "turn-a-spreadsheet-into-an-app",
+  "name": "Turn a spreadsheet into an app",
+  "tools": [
+   "glide"
+  ],
+  "categories": [
+   "website-builders"
+  ]
+ },
+ {
   "slug": "turn-long-video-into-short-clips",
   "name": "Turn long video into short clips",
   "tools": [
@@ -1629,6 +7221,16 @@
   ],
   "categories": [
    "video"
+  ]
+ },
+ {
+  "slug": "turn-text-into-slides",
+  "name": "Turn text into slides",
+  "tools": [
+   "slidesai"
+  ],
+  "categories": [
+   "design"
   ]
  },
  {
@@ -1652,10 +7254,120 @@
   ]
  },
  {
-  "slug": "write-a-blog-post",
-  "name": "Write a blog post",
+  "slug": "understand-a-contract",
+  "name": "Understand a contract",
   "tools": [
-   "writesonic"
+   "genie-ai"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "understand-a-lease",
+  "name": "Understand a lease",
+  "tools": [
+   "rocket-lawyer"
+  ],
+  "categories": [
+   "legal"
+  ]
+ },
+ {
+  "slug": "unsubscribe-from-newsletters",
+  "name": "Unsubscribe from newsletters",
+  "tools": [
+   "sanebox"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "visual-assistance",
+  "name": "Visual assistance",
+  "tools": [
+   "be-my-eyes"
+  ],
+  "categories": [
+   "accessibility"
+  ]
+ },
+ {
+  "slug": "visualize-data",
+  "name": "Visualize data",
+  "tools": [
+   "julius-ai"
+  ],
+  "categories": [
+   "data"
+  ]
+ },
+ {
+  "slug": "voice-for-presentation",
+  "name": "Voice for presentation",
+  "tools": [
+   "murf-ai"
+  ],
+  "categories": [
+   "voice"
+  ]
+ },
+ {
+  "slug": "voice-translation",
+  "name": "Voice translation",
+  "tools": [
+   "rask-ai"
+  ],
+  "categories": [
+   "translation"
+  ]
+ },
+ {
+  "slug": "website-chatbot",
+  "name": "Website chatbot",
+  "tools": [
+   "landbot"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "weekend-getaway-ideas",
+  "name": "Weekend getaway ideas",
+  "tools": [
+   "mindtrip"
+  ],
+  "categories": [
+   "travel"
+  ]
+ },
+ {
+  "slug": "what-could-this-symptom-be",
+  "name": "What could this symptom be",
+  "tools": [
+   "ada-health"
+  ],
+  "categories": [
+   "health"
+  ]
+ },
+ {
+  "slug": "whatsapp-chatbot",
+  "name": "WhatsApp chatbot",
+  "tools": [
+   "landbot"
+  ],
+  "categories": [
+   "customer-service"
+  ]
+ },
+ {
+  "slug": "write-a-bio",
+  "name": "Write a bio",
+  "tools": [
+   "rytr"
   ],
   "categories": [
    "writing"
@@ -1672,6 +7384,56 @@
   ]
  },
  {
+  "slug": "write-a-literature-review",
+  "name": "Write a literature review",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-a-marketing-email",
+  "name": "Write a marketing email",
+  "tools": [
+   "mailchimp"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-a-networking-message",
+  "name": "Write a networking message",
+  "tools": [
+   "wonsulting"
+  ],
+  "categories": [
+   "jobs-and-careers"
+  ]
+ },
+ {
+  "slug": "write-a-product-description",
+  "name": "Write a product description",
+  "tools": [
+   "rytr"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-a-project-update",
+  "name": "Write a project update",
+  "tools": [
+   "clickup-brain"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
   "slug": "write-a-report",
   "name": "Write a report",
   "tools": [
@@ -1679,6 +7441,26 @@
   ],
   "categories": [
    "productivity"
+  ]
+ },
+ {
+  "slug": "write-a-research-paper",
+  "name": "Write a research paper",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-a-sales-email",
+  "name": "Write a sales email",
+  "tools": [
+   "lavender"
+  ],
+  "categories": [
+   "sales"
   ]
  },
  {
@@ -1696,6 +7478,66 @@
   "name": "Write ad text",
   "tools": [
    "jasper"
+  ],
+  "categories": [
+   "marketing"
+  ]
+ },
+ {
+  "slug": "write-an-essay",
+  "name": "Write an essay",
+  "tools": [
+   "jenni-ai"
+  ],
+  "categories": [
+   "writing"
+  ]
+ },
+ {
+  "slug": "write-an-seo-blog-post",
+  "name": "Write an SEO blog post",
+  "tools": [
+   "frase"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "write-content-that-ranks",
+  "name": "Write content that ranks",
+  "tools": [
+   "frase"
+  ],
+  "categories": [
+   "seo"
+  ]
+ },
+ {
+  "slug": "write-email-replies",
+  "name": "Write email replies",
+  "tools": [
+   "shortwave"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "write-email-replies-for-me",
+  "name": "Write email replies for me",
+  "tools": [
+   "fyxer-ai"
+  ],
+  "categories": [
+   "email"
+  ]
+ },
+ {
+  "slug": "write-linkedin-posts",
+  "name": "Write LinkedIn posts",
+  "tools": [
+   "taplio"
   ],
   "categories": [
    "marketing"
@@ -1762,13 +7604,13 @@
   ]
  },
  {
-  "slug": "write-seo-content",
-  "name": "Write SEO content",
+  "slug": "write-social-media-captions",
+  "name": "Write social media captions",
   "tools": [
-   "surfer"
+   "rytr"
   ],
   "categories": [
-   "marketing"
+   "writing"
   ]
  },
  {
@@ -1776,6 +7618,16 @@
   "name": "Write text",
   "tools": [
    "le-chat"
+  ],
+  "categories": [
+   "productivity"
+  ]
+ },
+ {
+  "slug": "write-up-my-meeting",
+  "name": "Write up my meeting",
+  "tools": [
+   "granola"
   ],
   "categories": [
    "productivity"

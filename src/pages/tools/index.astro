@@ -20,7 +20,7 @@ const ld = [{ '@type': 'ItemList', name: 'AI tools directory', numberOfItems: to
   <nav aria-label="Categories" style="margin-top:var(--space-6)"><div class="cat-grid">{categories.map(c => <a class="cat" href={`#${c.slug}`}>{c.label} <span>{c.count}</span></a>)}</div></nav>
   {categories.map(c => (
     <section class="dir-section" id={c.slug} aria-labelledby={`${c.slug}-h`}>
-      <h2 id={`${c.slug}-h`}>{c.label}</h2>
+      <h2 id={`${c.slug}-h`}>{c.label} <a href={`/tools/category/${c.slug}`} style="font:500 var(--fs-small) var(--font-body);margin-left:var(--space-2)">See all {c.count}<span class="sr-only"> {c.label} tools</span> →</a></h2>
       <div class="grid-3">{tools.filter(t => t.category === c.slug).map(t => <ToolCard tool={t} />)}</div>
     </section>))}
   <p class="note">We’re independent. No company pays to be listed or ranked higher. Tools are listed alphabetically within groups until editors finish testing.</p>

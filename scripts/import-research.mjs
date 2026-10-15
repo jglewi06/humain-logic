@@ -14,6 +14,18 @@ const CATEGORY_LABELS = {
   'productivity': 'Everyday helpers', 'writing': 'Writing', 'image': 'Images and photos', 'video': 'Video',
   'marketing': 'Marketing', 'design': 'Design', 'coding': 'Coding', 'research': 'Research and answers',
   'audio': 'Audio and voice', 'customer service': 'Customer service', 'finance': 'Admin and finance', 'education': 'Learning',
+  'legal': 'Legal help', 'jobs & careers': 'Jobs and careers', 'website builders': 'Website builders', 'email': 'Email',
+  'seo': 'SEO and search visibility', 'sales': 'Sales', 'data': 'Data and spreadsheets', 'voice': 'Voice and speech',
+  'health': 'Health and fitness', 'travel': 'Travel', 'shopping': 'Shopping', 'home & real estate': 'Home and real estate',
+  'accessibility': 'Accessibility', 'small business': 'Small business', 'translation': 'Translation',
+};
+// Editorial re-filing (2026-10-15, approved): research category -> site category
+const RECATEGORY = { 'Surfer': 'seo', 'DeepL': 'translation' };
+// Always-visible disclaimers for advice-adjacent categories (shown on tool pages, kept in the data)
+const DISCLAIMERS = {
+  'legal': 'This tool does not give legal advice and is not a lawyer. For contracts, wills, leases, disputes or anything with real consequences, have a qualified lawyer in your area check your situation.',
+  'health': 'This tool is not a doctor and does not diagnose or treat. For symptoms, medication or mental-health concerns, talk to a qualified health professional. In an emergency or crisis, call your local emergency number (in the US, 911 or the 988 Suicide & Crisis Lifeline).',
+  'jobs & careers': 'AI can help draft and practise, but check every application yourself: make sure facts about your experience are true, follow each employer\'s rules on AI use, and never share sensitive personal data you would not put on a public CV.',
 };
 const PRICE = { free: { band: 'free', label: 'Free' }, freemium: { band: 'free-plan', label: 'Free plan available' }, paid: { band: 'paid', label: 'Paid' } };
 
@@ -21,6 +33,8 @@ const PRICE = { free: { band: 'free', label: 'Free' }, freemium: { band: 'free-p
 const C = path.join(R, 'content');
 const readC = f => fs.existsSync(path.join(C, f)) ? JSON.parse(fs.readFileSync(path.join(C, f), 'utf8')) : null;
 const DETAILS = readC('tool-details.json') ?? {};
+// Some tools' detail keys are cleaner than the generated slug (e.g. "Microsoft Clipchamp" -> clipchamp); use the key, matched by name.
+const DETAIL_SLUG_BY_NAME = Object.fromEntries(Object.entries(DETAILS).map(([k, v]) => [v?.name, k]));
 const JOBHELP = readC('job-help.json');
 const mismatch = [];
 // free_tier from tool-details wins over the older pricing_tier; null = unknown (never guessed)
@@ -38,10 +52,12 @@ if (fs.existsSync(path.join(R, 'tools.json'))) {
   const raw = JSON.parse(fs.readFileSync(path.join(R, 'tools.json'), 'utf8'));
   const seen = new Set();
   const tools = raw.map(t => {
-    let s = slug(t.name); while (seen.has(s)) s += '-2'; seen.add(s);
+    let s = DETAIL_SLUG_BY_NAME[t.name] ?? slug(t.name); while (seen.has(s)) s += '-2'; seen.add(s);
+    const rawCat = RECATEGORY[t.name] ?? t.category;
     return {
       slug: s, name: t.name, website: t.url, developer: t.developer ?? null,
-      category: slug(t.category), category_label: CATEGORY_LABELS[t.category] ?? t.category,
+      category: slug(rawCat), category_label: CATEGORY_LABELS[rawCat] ?? rawCat,
+      disclaimer: DISCLAIMERS[rawCat] ?? null,
       summary: t.description,
       tasks: (t.tasks || []).map(x => slug(x)),
       pricing: pricingFor(s, t),
@@ -58,6 +74,7 @@ if (fs.existsSync(path.join(R, 'tools.json'))) {
     tasks[s].tools.push(tools[i].slug); tasks[s].categories.add(tools[i].category);
   }));
   const taskList = Object.values(tasks).map(t => ({ ...t, categories: [...t.categories] })).sort((a, b) => b.tools.length - a.tools.length || a.name.localeCompare(b.name));
+  for (const t of raw) if (!(t.category in CATEGORY_LABELS)) mismatch.push(`unlabelled category: ${t.category}`);
   const cats = Object.entries(CATEGORY_LABELS).map(([k, label]) => ({ slug: slug(k), label, count: tools.filter(t => t.category === slug(k)).length })).filter(c => c.count);
   for (const k of Object.keys(DETAILS)) if (!tools.some(t => t.slug === k)) mismatch.push(`details without tool: ${k}`);
   write('tools.json', tools); write('tasks.json', taskList); write('categories.json', cats);

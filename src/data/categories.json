@@ -2,32 +2,32 @@
  {
   "slug": "productivity",
   "label": "Everyday helpers",
-  "count": 18
+  "count": 25
  },
  {
   "slug": "writing",
   "label": "Writing",
-  "count": 6
+  "count": 10
  },
  {
   "slug": "image",
   "label": "Images and photos",
-  "count": 9
+  "count": 16
  },
  {
   "slug": "video",
   "label": "Video",
-  "count": 8
+  "count": 17
  },
  {
   "slug": "marketing",
   "label": "Marketing",
-  "count": 7
+  "count": 12
  },
  {
   "slug": "design",
   "label": "Design",
-  "count": 6
+  "count": 11
  },
  {
   "slug": "coding",
@@ -37,26 +37,101 @@
  {
   "slug": "research",
   "label": "Research and answers",
-  "count": 5
+  "count": 8
  },
  {
   "slug": "audio",
   "label": "Audio and voice",
-  "count": 5
+  "count": 10
  },
  {
   "slug": "customer-service",
   "label": "Customer service",
-  "count": 3
+  "count": 8
  },
  {
   "slug": "finance",
   "label": "Admin and finance",
-  "count": 3
+  "count": 9
  },
  {
   "slug": "education",
   "label": "Learning",
+  "count": 8
+ },
+ {
+  "slug": "legal",
+  "label": "Legal help",
+  "count": 13
+ },
+ {
+  "slug": "jobs-and-careers",
+  "label": "Jobs and careers",
+  "count": 13
+ },
+ {
+  "slug": "website-builders",
+  "label": "Website builders",
+  "count": 6
+ },
+ {
+  "slug": "email",
+  "label": "Email",
+  "count": 4
+ },
+ {
+  "slug": "seo",
+  "label": "SEO and search visibility",
+  "count": 5
+ },
+ {
+  "slug": "sales",
+  "label": "Sales",
+  "count": 3
+ },
+ {
+  "slug": "data",
+  "label": "Data and spreadsheets",
+  "count": 2
+ },
+ {
+  "slug": "voice",
+  "label": "Voice and speech",
+  "count": 2
+ },
+ {
+  "slug": "health",
+  "label": "Health and fitness",
+  "count": 4
+ },
+ {
+  "slug": "travel",
+  "label": "Travel",
+  "count": 3
+ },
+ {
+  "slug": "shopping",
+  "label": "Shopping",
+  "count": 1
+ },
+ {
+  "slug": "home-and-real-estate",
+  "label": "Home and real estate",
+  "count": 4
+ },
+ {
+  "slug": "accessibility",
+  "label": "Accessibility",
+  "count": 4
+ },
+ {
+  "slug": "small-business",
+  "label": "Small business",
+  "count": 4
+ },
+ {
+  "slug": "translation",
+  "label": "Translation",
   "count": 3
  }
 ]

@@ -133,7 +133,8 @@
     "spanish",
     "french",
     "german",
-    "foreign language"
+    "foreign language",
+    "document"
   ],
   "duolingo": [
     "language",
@@ -542,7 +543,8 @@
     "seo",
     "google ranking",
     "blog",
-    "marketing"
+    "marketing",
+    "rank"
   ],
   "buffer": [
     "social media",
@@ -602,5 +604,442 @@
     "business",
     "finance",
     "invoices"
+  ],
+  "lawdepot": [
+    "lease",
+    "rental agreement",
+    "landlord",
+    "tenant",
+    "will",
+    "nda",
+    "legal forms",
+    "contract"
+  ],
+  "rocket-lawyer": [
+    "lease",
+    "lawyer",
+    "attorney",
+    "contract",
+    "nda",
+    "will",
+    "legal"
+  ],
+  "legalzoom": [
+    "lease",
+    "lawyer",
+    "attorney",
+    "will",
+    "llc",
+    "legal",
+    "contract"
+  ],
+  "donotpay": [
+    "lease",
+    "landlord",
+    "dispute",
+    "legal",
+    "consumer rights"
+  ],
+  "trust-and-will": [
+    "will",
+    "trust",
+    "estate",
+    "legal"
+  ],
+  "genie-ai": [
+    "contract",
+    "nda",
+    "legal",
+    "lawyer"
+  ],
+  "teal": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "better resume",
+    "job tracker"
+  ],
+  "rezi": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "better resume",
+    "ats"
+  ],
+  "kickresume": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "better resume"
+  ],
+  "enhancv": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "better resume"
+  ],
+  "resume-worded": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "resume feedback",
+    "better resume"
+  ],
+  "jobscan": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "ats"
+  ],
+  "careerflow": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "linkedin"
+  ],
+  "huntr": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "job tracker"
+  ],
+  "simplify": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application",
+    "apply"
+  ],
+  "wonsulting": [
+    "resume",
+    "cv",
+    "job",
+    "job hunt",
+    "job search",
+    "career",
+    "cover letter",
+    "application"
+  ],
+  "final-round-ai": [
+    "interview",
+    "job",
+    "mock interview"
+  ],
+  "yoodli": [
+    "interview",
+    "speaking",
+    "presentation practice"
+  ],
+  "wix": [
+    "website",
+    "site builder",
+    "website builder",
+    "build a website",
+    "online store"
+  ],
+  "squarespace": [
+    "website",
+    "site builder",
+    "website builder",
+    "build a website",
+    "portfolio"
+  ],
+  "durable": [
+    "website",
+    "site builder",
+    "website builder",
+    "build a website",
+    "small business",
+    "bakery"
+  ],
+  "hostinger-website-builder": [
+    "website",
+    "site builder",
+    "website builder",
+    "build a website"
+  ],
+  "mindtrip": [
+    "trip",
+    "travel",
+    "vacation",
+    "itinerary",
+    "holiday"
+  ],
+  "wonderplan": [
+    "trip",
+    "travel",
+    "vacation",
+    "itinerary"
+  ],
+  "layla": [
+    "trip",
+    "travel",
+    "vacation",
+    "itinerary",
+    "honeymoon"
+  ],
+  "reverso": [
+    "translate",
+    "translation",
+    "document",
+    "language",
+    "dictionary"
+  ],
+  "tldv": [
+    "meeting notes",
+    "zoom",
+    "meetings"
+  ],
+  "granola": [
+    "meeting notes",
+    "meetings"
+  ],
+  "read-ai": [
+    "meeting notes",
+    "meetings"
+  ],
+  "turbotax": [
+    "taxes",
+    "tax return",
+    "file taxes"
+  ],
+  "quickbooks": [
+    "taxes",
+    "bookkeeping",
+    "invoice",
+    "accounting"
+  ],
+  "calendly": [
+    "appointments",
+    "booking",
+    "schedule",
+    "clients"
+  ],
+  "jobber": [
+    "appointments",
+    "booking",
+    "quotes",
+    "invoice",
+    "clients"
+  ],
+  "invoice-simple": [
+    "invoice",
+    "invoices",
+    "estimate",
+    "get paid"
+  ],
+  "bonsai": [
+    "invoice",
+    "clients",
+    "freelance",
+    "proposal"
+  ],
+  "be-my-eyes": [
+    "blind",
+    "low vision",
+    "accessibility"
+  ],
+  "seeing-ai": [
+    "blind",
+    "low vision",
+    "accessibility",
+    "read aloud"
+  ],
+  "envision": [
+    "blind",
+    "low vision",
+    "accessibility"
+  ],
+  "goblin-tools": [
+    "adhd",
+    "neurodivergent",
+    "autism",
+    "to do"
+  ],
+  "fitbod": [
+    "workout",
+    "gym",
+    "fitness",
+    "exercise"
+  ],
+  "ada-health": [
+    "symptoms",
+    "symptom checker",
+    "health",
+    "doctor"
+  ],
+  "wysa": [
+    "stress",
+    "anxiety",
+    "mental health"
+  ],
+  "cal-ai": [
+    "calories",
+    "diet",
+    "food"
+  ],
+  "phia": [
+    "shopping",
+    "deal",
+    "compare prices",
+    "secondhand"
+  ],
+  "interior-ai": [
+    "room",
+    "interior design",
+    "decorate"
+  ],
+  "reimaginehome": [
+    "room",
+    "staging",
+    "landscaping"
+  ],
+  "planner-5d": [
+    "floor plan",
+    "room",
+    "kitchen"
+  ],
+  "virtual-staging-ai": [
+    "staging",
+    "listing",
+    "real estate"
+  ],
+  "apollo-io": [
+    "sales",
+    "leads",
+    "prospects"
+  ],
+  "close": [
+    "sales",
+    "crm",
+    "leads"
+  ],
+  "lavender": [
+    "sales email",
+    "cold email"
+  ],
+  "semrush": [
+    "seo",
+    "keywords",
+    "google ranking"
+  ],
+  "ahrefs": [
+    "seo",
+    "backlinks",
+    "keywords"
+  ],
+  "frase": [
+    "seo",
+    "content brief"
+  ],
+  "neuronwriter": [
+    "seo",
+    "content"
+  ],
+  "rows": [
+    "spreadsheet",
+    "excel",
+    "chart",
+    "data"
+  ],
+  "julius-ai": [
+    "spreadsheet",
+    "excel",
+    "chart",
+    "data",
+    "statistics"
+  ],
+  "murf-ai": [
+    "voiceover",
+    "voice",
+    "narration"
+  ],
+  "naturalreader": [
+    "read aloud",
+    "text to speech",
+    "pdf",
+    "dyslexia"
+  ],
+  "shortwave": [
+    "inbox",
+    "email",
+    "gmail"
+  ],
+  "sanebox": [
+    "inbox",
+    "email",
+    "clean up inbox"
+  ],
+  "spark-mail": [
+    "email",
+    "inbox"
+  ],
+  "fyxer-ai": [
+    "email",
+    "inbox",
+    "replies"
+  ],
+  "plus-ai": [
+    "slides",
+    "presentation",
+    "powerpoint"
+  ],
+  "slidesai": [
+    "slides",
+    "presentation",
+    "powerpoint"
+  ],
+  "presentations-ai": [
+    "slides",
+    "presentation",
+    "pitch deck"
+  ],
+  "rask-ai": [
+    "translate video",
+    "dubbing"
   ]
 }

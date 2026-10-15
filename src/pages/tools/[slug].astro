@@ -13,12 +13,12 @@ const myTasks = tool.tasks.map(s => tasks.find(t => t.slug === s)).filter(Boolea
 const alts = tools.filter(t => t.slug !== tool.slug && t.category === tool.category).slice(0, 3);
 const ld = [
   toolLd(tool),
-  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.category_label, item: `${SITE.url}/tools/category/${tool.category}` }, { '@type': 'ListItem', position: 4, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
 ];
 ---
 <Base title={`${tool.name}: what it does, price and privacy`} description={`${tool.name}: ${tool.summary}`} jsonld={ld}>
 <section class="page-head"><div class="container">
-  <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › <a href={`/tools#${tool.category}`}>{tool.category_label}</a> › {tool.name}</p>
+  <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › <a href={`/tools/category/${tool.category}`}>{tool.category_label}</a> › {tool.name}</p>
   <div class="tool-head">
     <div style="display:flex;gap:var(--space-4);align-items:center">
       <div class="tile" style={`background:${bg};color:${fg}`} aria-hidden="true">{initials(tool.name)}</div>
@@ -27,6 +27,7 @@ const ld = [
     <div><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
   </div>
   <div class="badges" style="margin-top:var(--space-4)"><span class="b b-price">{tool.pricing.label}</span>{p.verified ? <span class="b b-verified">Price verified {fmtMonthDay(p.verified_on)}</span> : <span class="b b-unverified">Pricing unconfirmed</span>}{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
+  {tool.disclaimer && <div class="panel tool-disclaimer" role="note" aria-label="Important" style="margin-top:var(--space-4);border-left:4px solid var(--color-teal)"><p style="margin:0"><strong>Important:</strong> {tool.disclaimer}</p></div>}
   <p class="confidence" style="margin-top:var(--space-3)"><a href={mailto(`Outdated info: ${SITE.url}/tools/${tool.slug}`, `Page: ${SITE.url}/tools/${tool.slug}\nWhat looks wrong:\nCorrect source (if you have one):\n`)}>Report outdated info</a></p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
@@ -49,6 +50,7 @@ const ld = [
           : <p class="confidence"><strong>Pricing unconfirmed.</strong> {p.verification_note}</p>}
         {p.pricing_url && <p style="margin-top:var(--space-2)"><a href={p.pricing_url} rel="noopener">Official pricing page <svg width="14" height="14" aria-hidden="true"><use href="#i-ext"/></svg></a></p>}
       </div>
+      {tool.disclaimer && <p class="confidence"><strong>Reminder:</strong> {tool.disclaimer}</p>}
       {tool.privacy?.summary && <><h2>Privacy and safety</h2><p>{tool.privacy.summary}</p></>}
       {alts.length > 0 && <><h2>Alternatives</h2><div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div></>}
     </div>
@@ -56,7 +58,7 @@ const ld = [
       <h2 id="g-h" style="font-size:var(--fs-h4);margin-bottom:var(--space-3)">At a glance</h2>
       <dl>
         {tool.developer && <><dt>Made by</dt><dd>{tool.developer}</dd></>}
-        <dt>Group</dt><dd>{tool.category_label}</dd>
+        <dt>Group</dt><dd><a href={`/tools/category/${tool.category}`}>{tool.category_label}</a></dd>
         <dt>Price</dt><dd>{p.label}{p.starting_paid_price ? `; paid from ${p.starting_paid_price}` : ''}</dd>
         <dt>Pricing</dt><dd>{priceStatus(p)}</dd>
         {tool.skill_level && <><dt>Skill</dt><dd>{tool.skill_level}</dd></>}
