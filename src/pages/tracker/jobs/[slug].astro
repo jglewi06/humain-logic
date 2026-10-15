@@ -38,7 +38,7 @@ const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.
     <aside class="panel">
       <h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-3)">Similar outlook</h2>
       <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px">{similar.map(j => <li><a href={`/tracker/jobs/${j.slug}`}>{j.name}</a></li>)}</ul>
-      <p class="confidence" style="margin-top:var(--space-4)">Updated {fmtDate(jobsData.updated)} · <a href="/methodology">Methodology</a> · <a href={`/contact?about=${job.slug}#report`}>Report an error</a></p>
+      <p class="confidence" style="margin-top:var(--space-4)">Updated {fmtDate(jobsData.updated)} · <a href="/methodology">Methodology</a> · <a href={`https://github.com/jglewi06/humain-logic/issues/new?labels=report&title=${encodeURIComponent(`Tracker error: ${job.name} (/tracker/jobs/${job.slug})`)}`} rel="noopener">Report an error</a></p>
     </aside>
   </div>
   <JobTimeline jobs={[job]} id="tl-job" showSources title={`Timeline: ${job.name}`} />

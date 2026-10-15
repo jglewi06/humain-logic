@@ -31,5 +31,5 @@ export const fmtDate = (d: string) => new Date(d).toLocaleDateString('en-US', { 
 
 export const fmtMonthDay = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 /** Pricing status line: "Last verified Oct 15, 2026" or "Pricing unconfirmed" */
-export const priceStatus = (p: any) => p?.verified ? `Last verified ${fmtMonthDay(p.verified_on)}` : p?.verification_note !== undefined ? 'Pricing unconfirmed' : 'Pricing not checked yet';
+export const priceStatus = (p: any) => p?.verified ? `Last verified ${fmtMonthDay(p.verified_on)}` : p?.verification_note !== undefined ? 'Pricing unconfirmed' : 'Pricing unconfirmed';
 export const freeText = (p: any) => p?.free_tier === true ? 'Free plan: yes' : p?.free_tier === false ? 'Free plan: no' : 'Free plan: unclear';

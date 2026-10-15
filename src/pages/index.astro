@@ -57,7 +57,7 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
   <div class="container">
     <div class="interp"><span>We think you want to: <strong>Reply to an upset customer</strong></span><a class="btn btn-ghost btn-sm" href="/search?q=reply+to+an+upset+customer">✎ Change</a></div>
     <div class="section-head">
-      <div><span class="eyebrow">Example matches</span><h2 id="results-h">Tools that can help you reply kindly</h2></div>
+      <div><span class="eyebrow">Your matches</span><h2 id="results-h">Tools that can help you reply kindly</h2></div>
       <a class="link-arrow" href="/search?q=answer+customer+emails">See all {matchCount} matches <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
     <div class="grid-3">{preview.map((t, i) => <ToolCard tool={t} best={i === 0} />)}</div>
@@ -101,7 +101,7 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
       <div class="news-list">
         {list.map(n => <article class="news-item"><span class={`tag ${n.category}`} style="align-self:flex-start">{NEWS_CATS[n.category]}</span><h4><a href={n.link} rel="noopener">{n.title}</a></h4><p>{n.source} · <time datetime={n.date}>{fmtDate(n.date)}</time></p></article>)}
       </div>
-    </div>) : <p class="placeholder">Today's stories are on their way. Check back after 8 AM.</p>}
+    </div>) : <p>No new stories in the last few days. <a href="/news">See all AI news</a></p>}
   </div>
 </section>
 
@@ -118,8 +118,8 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
           {popular.map(j => <a class="role" href={`/tracker/jobs/${j.slug}`} style="color:inherit;text-decoration:none">{j.name} <span class={`pill ${OUTLOOK[j.outlook].cls}`}><span aria-hidden="true">{OUTLOOK[j.outlook].icon}</span> {OUTLOOK[j.outlook].label}</span></a>)}
         </div>
       </div>
-      <div class="report" aria-label={`Example result: ${example.name}`}>
-        <div class="rh"><div><span class="meta">Example result</span><h3>{example.name}</h3></div><span class={`pill ${OUTLOOK[example.outlook].cls}`}><span aria-hidden="true">{OUTLOOK[example.outlook].icon}</span> {OUTLOOK[example.outlook].label}</span></div>
+      <div class="report" aria-label={`Tracker result: ${example.name}`}>
+        <div class="rh"><div><span class="meta">From the Job safety tracker</span><h3>{example.name}</h3></div><span class={`pill ${OUTLOOK[example.outlook].cls}`}><span aria-hidden="true">{OUTLOOK[example.outlook].icon}</span> {OUTLOOK[example.outlook].label}</span></div>
         <div class="meter" role="img" aria-label={`Outlook: ${OUTLOOK[example.outlook].label}, on a scale from mostly steady to big shift ahead`}>
           <div class="track"><span class="dot" style={`left:${meterPos[example.outlook]}%;border-color:var(--hl-outlook-${example.outlook})`}></span></div>
           <div class="scale" aria-hidden="true"><span>Mostly steady</span><span>Changing</span><span>Big shift ahead</span></div>

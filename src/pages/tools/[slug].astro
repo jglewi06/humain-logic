@@ -14,7 +14,6 @@ const ld = [
   { '@type': 'SoftwareApplication', name: tool.name, url: tool.website, mainEntityOfPage: `${SITE.url}/tools/${tool.slug}`, applicationCategory: 'BusinessApplication', description: tool.summary, ...(p.free_tier !== null ? { offers: { '@type': 'Offer', price: p.free_tier ? '0' : undefined, priceCurrency: 'USD', description: p.summary } } : {}), ...(tool.developer ? { author: { '@type': 'Organization', name: tool.developer } } : {}) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
 ];
-const nc = 'Not checked yet';
 ---
 <Base title={`${tool.name}: what it does, price and privacy`} description={`${tool.name}: ${tool.summary}`} jsonld={ld}>
 <section class="page-head"><div class="container">
@@ -27,7 +26,7 @@ const nc = 'Not checked yet';
     <div><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
   </div>
   <div class="badges" style="margin-top:var(--space-4)"><span class="b b-price">{tool.pricing.label}</span>{p.verified ? <span class="b b-verified">Price verified {fmtMonthDay(p.verified_on)}</span> : <span class="b b-unverified">Pricing unconfirmed</span>}{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
-  <p class="confidence" style="margin-top:var(--space-3)"><a href={`/contact?about=${tool.slug}#report`}>Report outdated info</a></p>
+  <p class="confidence" style="margin-top:var(--space-3)"><a href={`https://github.com/jglewi06/humain-logic/issues/new?labels=report&title=${encodeURIComponent(`Outdated info: ${tool.name} (/tools/${tool.slug})`)}`} rel="noopener">Report outdated info</a></p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div class="detail">
@@ -49,25 +48,20 @@ const nc = 'Not checked yet';
           : <p class="confidence"><strong>Pricing unconfirmed.</strong> {p.verification_note}</p>}
         {p.pricing_url && <p style="margin-top:var(--space-2)"><a href={p.pricing_url} rel="noopener">Official pricing page <svg width="14" height="14" aria-hidden="true"><use href="#i-ext"/></svg></a></p>}
       </div>
-      <h2>Privacy and safety</h2>
-      <div class="placeholder"><strong>Not checked yet.</strong> We will list whether {tool.name} trains on your data, where data is stored, and age limits, each with a source link.</div>
-      <h2>Our take <span class="b b-skill" style="vertical-align:middle">Editorial</span></h2>
-      <p class="placeholder">No editorial review yet.</p>
+      {tool.privacy?.summary && <><h2>Privacy and safety</h2><p>{tool.privacy.summary}</p></>}
       {alts.length > 0 && <><h2>Alternatives</h2><div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div></>}
     </div>
     <aside class="panel glance" aria-labelledby="g-h">
       <h2 id="g-h" style="font-size:var(--fs-h4);margin-bottom:var(--space-3)">At a glance</h2>
       <dl>
-        <dt>Made by</dt><dd>{tool.developer ?? nc}</dd>
+        {tool.developer && <><dt>Made by</dt><dd>{tool.developer}</dd></>}
         <dt>Group</dt><dd>{tool.category_label}</dd>
         <dt>Price</dt><dd>{p.label}{p.starting_paid_price ? `; paid from ${p.starting_paid_price}` : ''}</dd>
         <dt>Pricing</dt><dd>{priceStatus(p)}</dd>
-        <dt>Skill</dt><dd>{tool.skill_level ?? nc}</dd>
-        <dt>Platforms</dt><dd>{tool.platforms?.join(', ') ?? nc}</dd>
-        <dt>Data use</dt><dd>{nc}</dd>
-        <dt>Editor test</dt><dd>{tool.last_verified ?? 'Not yet'}</dd>
+        {tool.skill_level && <><dt>Skill</dt><dd>{tool.skill_level}</dd></>}
+        {tool.platforms?.length > 0 && <><dt>Platforms</dt><dd>{tool.platforms.join(', ')}</dd></>}
       </dl>
-      <p class="confidence" style="margin-top:var(--space-3)">Details and prices from our research team, checked on official pages. No company pays to be listed.</p>
+      <p class="confidence" style="margin-top:var(--space-3)">Details and prices come from the tool's official pages. No company pays to be listed.</p>
     </aside>
   </div>
   <div class="sticky-cta"><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name}</a></div>

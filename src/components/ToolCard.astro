@@ -14,7 +14,7 @@ const p = tool.pricing;
   <div class="facts">
     <span><svg width="16" height="16" aria-hidden="true"><use href="#i-dollar"/></svg><span><strong>{p.label}</strong></span></span>
     <span><svg width="16" height="16" aria-hidden="true"><use href="#i-leaf"/></svg><span>{p.starting_paid_price ? <>Paid from <strong>{p.starting_paid_price}</strong></> : 'Paid price: unconfirmed'}</span></span>
-    <span><svg width="16" height="16" aria-hidden="true"><use href="#i-lock"/></svg><span>{tool.privacy?.summary ?? 'Privacy: not checked yet'}</span></span>
+    {tool.privacy?.summary && <span><svg width="16" height="16" aria-hidden="true"><use href="#i-lock"/></svg><span>{tool.privacy.summary}</span></span>}
     <span><svg width="16" height="16" aria-hidden="true"><use href="#i-hand"/></svg><span class={p.verified ? '' : 'unconfirmed'}>{priceStatus(p)}</span></span>
   </div>
   {tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}

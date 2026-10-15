@@ -4,7 +4,7 @@ const TYPE = { skill: 'Skill to build', tool: 'Tool to try', role: 'Role to expl
 ---
 <section aria-labelledby="help-h" class="job-help">
   <h2 id="help-h">What you can do</h2>
-  {help ? <>
+  {help && <>
     <p class="lede-sm">{help.summary}</p>
     <ol class="actions">
       {help.actions.map((a: any) => (
@@ -15,9 +15,9 @@ const TYPE = { skill: 'Skill to build', tool: 'Tool to try', role: 'Role to expl
           {a.link && <p><a href={a.link.url} rel="noopener">{a.link.label} <svg width="14" height="14" aria-hidden="true"><use href="#i-ext"/></svg></a></p>}
         </li>))}
     </ol>
-  </> : <p class="placeholder">Next steps for this job are coming soon.</p>}
+  </>}
   {resources.length > 0 && <>
-    <h3 class="res-h">Helpful for any job</h3>
+    {help ? <h3 class="res-h">Helpful for any job</h3> : <p class="lede-sm">These free resources help with building AI skills in any job.</p>}
     <ul class="res">{resources.map((r: any) => <li><a href={r.url} rel="noopener">{r.label}</a></li>)}</ul>
   </>}
   {note && <p class="confidence">{note}{updated ? ` Links checked ${updated}.` : ''}</p>}

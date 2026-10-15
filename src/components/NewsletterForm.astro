@@ -57,7 +57,7 @@ document.querySelectorAll<HTMLFormElement>('form[data-nl]').forEach(form => {
     try {
       if (form.action.includes('buttondown')) {
         await fetch(form.action, { method: 'POST', mode: 'no-cors', body: new URLSearchParams({ email: v, tag: (form.elements.namedItem('tag') as HTMLInputElement).value }) });
-      } else { console.info('[prototype] PUBLIC_BUTTONDOWN_USER not set; nothing was sent.'); }
+      }
       const [u, d] = v.split('@'); success.querySelector('[data-masked]')!.textContent = `${u[0]}***@${d}`;
       form.hidden = true; success.hidden = false; success.focus();
     } catch { show(err, msgs.server); } finally { btn.disabled = false; btn.textContent = 'Subscribe'; }

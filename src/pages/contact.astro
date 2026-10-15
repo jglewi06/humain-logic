@@ -1,11 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
+const gh = 'https://github.com/jglewi06/humain-logic/issues';
 ---
-<Base title="Contact us">
+<Base title="Contact us" description="Report outdated info or suggest a tool or job for HumAIn Logic.">
 <section class="page-head"><div class="container"><span class="eyebrow">Contact</span><h1>Contact us</h1></div></section>
 <div class="container section" style="padding-top:var(--space-6)"><div class="prose">
-<p>We read every message.</p>
-<h2 id="report">Report a problem or outdated info</h2><p class="placeholder">Contact email/form: placeholder until Francisco sets up a mailbox for humainlogic.com.</p>
-<h2 id="suggest">Suggest a tool or a job to track</h2><p class="placeholder">Suggestion form: placeholder (a free static-form option is listed in tech/plan.md).</p>
+<p>We read every message. The quickest way to reach us is our public GitHub page. It's free, but you need a GitHub account to post, and posts there are public, so please don't include private details.</p>
+<h2 id="report">Report a problem or outdated info</h2>
+<p>Tell us the page, what looks wrong, and a link to the correct source if you have one.</p>
+<p><a class="btn btn-primary" href={`${gh}/new?title=${encodeURIComponent('Outdated info: ')}&labels=report`} rel="noopener">Report a problem on GitHub</a></p>
+<h2 id="suggest">Suggest a tool or a job to track</h2>
+<p>Give us the tool's name and website, or the job title, and why it would help people like you. No company can pay to be added.</p>
+<p><a class="btn btn-secondary" href={`${gh}/new?title=${encodeURIComponent('Suggestion: ')}&labels=suggestion`} rel="noopener">Make a suggestion on GitHub</a></p>
+<h2>Prefer email?</h2>
+<p>If you get <a href="/newsletter">The Sunday Brief</a>, just reply to any issue and it reaches us.</p>
 </div></div>
 </Base>

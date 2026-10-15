@@ -30,10 +30,6 @@ const popular = ['Write an email', 'Make a flyer', 'Take meeting notes', 'Summar
     </aside>
     <div>
       <div id="interp" aria-live="polite"></div>
-      <section aria-labelledby="sol-h" class="placeholder" id="solutions" hidden style="margin-bottom:var(--space-5)">
-        <h2 id="sol-h" style="font-size:var(--fs-h4);margin-bottom:var(--space-2)">Solutions</h2>
-        <p>Step-by-step recipes (which tool, steps, cost, setup time) are coming soon. For now, compare the matched tools below.</p>
-      </section>
       <h2 class="sr-only">Matched tools</h2>
       <p class="count" id="count" role="status" style="color:var(--color-slate);margin-bottom:var(--space-4)"></p>
       <div class="grid-2" id="results"></div>
@@ -95,7 +91,6 @@ function render() {
   const pass = (r: { tool: Tool }) => (!prices.length || prices.some(p => p === 'free' ? r.tool.p === 'free' : r.tool.f === true)) && (!cats.length || cats.includes(r.tool.c));
   const shown = all.filter(pass);
   const unknownHidden = prices.length ? all.filter(r => r.tool.f === null && (!cats.length || cats.includes(r.tool.c))).length : 0;
-  $('solutions').hidden = !shown.length;
   $('count').textContent = q ? `${shown.length} tool${shown.length === 1 ? '' : 's'} match${unknownHidden ? ` · ${unknownHidden} hidden because we couldn't confirm a free plan` : ''}` : '';
   $('results').innerHTML = shown.map((r, i) => `<article class="tool compact">${i === 0 ? '<span class="badge">Best match</span>' : ''}<div class="top"><div><h3><a href="/tools/${r.tool.s}" style="color:inherit">${esc(r.tool.n)}</a></h3><div class="by">${esc(r.tool.cl)}</div></div></div><p class="what">${esc(r.tool.d)}</p><div class="badges"><span class="b b-price">${esc(r.tool.pl)}</span>${r.tool.sp ? `<span class="b b-price">Paid from ${esc(r.tool.sp)}</span>` : ''}${r.tool.v ? '' : '<span class="b b-unverified">Pricing unconfirmed</span>'}</div><p class="why-match">Why it matches: ${esc(r.why)}</p><div class="cta"><a class="btn btn-primary btn-sm" href="/tools/${r.tool.s}">View details</a></div></article>`).join('');
   $('empty').hidden = !q || shown.length > 0;

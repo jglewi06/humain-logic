@@ -24,14 +24,14 @@ const cats = Object.keys(NEWS_CATS).filter(c => news.items.some(i => i.category 
             <h2><a href={n.link} rel="noopener">{n.title}</a></h2>
             {n.summary && <p>{n.summary}</p>}
             <span class="meta">{n.source}{n.also?.length ? ` + ${n.also.length} more source${n.also.length > 1 ? 's' : ''}` : ''} · <time datetime={n.date}>{fmtDate(n.date)}</time></span>
-            <span class="ai-note">Excerpt from the publisher's feed. Not yet reviewed by an editor.</span>
+            <span class="ai-note">Short excerpt from the publisher's feed.</span>
           </article></li>))}
       </ol>
       {items.length > 20 && <p style="text-align:center;margin-top:var(--space-5)"><button class="btn btn-secondary" type="button" data-more>Load more news</button></p>}
       <noscript><style>.news-feed li[hidden]{display:block!important}</style></noscript>
     </div>
     <aside>
-      <div class="panel"><h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)">How we make news</h2><p style="font-size:var(--fs-small);color:var(--color-slate)">We collect headlines from public feeds and always link to the original. We show only a short excerpt. Plain-language summaries and “Why it matters to you” notes come once editors review stories.</p></div>
+      <div class="panel"><h2 style="font-size:var(--fs-h4);margin-bottom:var(--space-2)">How we make news</h2><p style="font-size:var(--fs-small);color:var(--color-slate)">We collect headlines from public feeds and always link to the original. We show only a short excerpt. Headlines are grouped by topic so you can skip what you don't need.</p></div>
       <p style="margin-top:var(--space-4)"><a href="/news/feed.xml">RSS feed</a> · <a href="/api/news.json">JSON</a></p>
     </aside>
   </div>
