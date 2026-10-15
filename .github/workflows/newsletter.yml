@@ -15,7 +15,10 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20, cache: npm }
       - run: npm ci && npm run build-newsletter
-      - if: always()   # keep the built .md/.html even when an upload guard stops the run
+      # Commit only the story pins (newsletter/*.picks.json): no postal address in them. The .md/.html issue
+      # contains the address, so it is never committed (Buttondown holds the draft).
+      - if: always()
         run: |
           git config user.name "humain-bot"; git config user.email "bot@users.noreply.github.com"
-          git add newsletter; git diff --cached --quiet || (git commit -m "chore: newsletter draft" && git push)
+          git add newsletter/*.picks.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "chore: pin Sunday Brief stories" && git push)

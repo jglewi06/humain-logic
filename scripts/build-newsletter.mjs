@@ -8,6 +8,7 @@
 // CAN-SPAM (legal/brief.md §3): sender, postal address, one-click unsubscribe ({{ unsubscribe_url }} is left for Buttondown).
 import fs from 'node:fs';
 import { fillTemplate, esc, inline, OUTLOOK } from './render-newsletter.mjs';
+import { isAboutAI } from '../src/lib/news-filter.mjs';
 const SITE = 'https://humainlogic.com';
 const EMAIL = 'hello@humainlogic.com';
 const POSTAL = process.env.NEWSLETTER_POSTAL_ADDRESS || '[POSTAL ADDRESS REQUIRED — set NEWSLETTER_POSTAL_ADDRESS (PO box is fine)]';
@@ -41,11 +42,32 @@ export function tidySummary(raw, max = 220) {
   return `${word}…`;
 }
 
-const weekAgo = sendMs - 8 * 864e5;
-const pool = (items) => items.map(n => ({ ...n, summary: tidySummary(n.summary) })).filter(n => n.summary);
-let top = pool(news.items.filter(n => Date.parse(n.date) > weekAgo && n.category !== 'research')).slice(0, 3);
-if (top.length < 3) top = [...top, ...pool(news.items).filter(n => !top.some(t => t.link === n.link))].slice(0, 3);
-if (top.length < 3) throw new Error(`Only ${top.length} usable news items; need 3.`);
+// Story choice is pinned in newsletter/<sunday>.picks.json (committed), so a rebuild in CI uses the same three
+// stories the editor wrote "Why it matters" lines for, even after news.json has moved on.
+const picksFile = `newsletter/${d}.picks.json`;
+let top;
+if (fs.existsSync(picksFile)) {
+  top = JSON.parse(fs.readFileSync(picksFile, 'utf8')).stories;
+  console.log(`using pinned stories from ${picksFile}`);
+} else {
+  const weekAgo = sendMs - 8 * 864e5;
+  const pool = (items) => items.filter(isAboutAI).map(n => ({ ...n, summary: tidySummary(n.summary) })).filter(n => n.summary);
+  // Skip a story that's the same news as one already picked (different outlets, different headlines)
+  const words = (t) => new Set(t.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(' ').filter(w => w.length > 3));
+  const same = (a, b) => { const A = words(a.title), B = words(b.title); let n = 0; A.forEach(w => B.has(w) && n++); return n / Math.min(A.size, B.size || 1) >= 0.5; };
+  const add = (list, items) => { for (const n of items) if (list.length < 3 && !list.some(t => t.link === n.link || same(t, n))) list.push(n); return list; };
+  // Keep stories the editor already wrote lines for (by link), as long as they still pass the filters
+  const keep = (() => { try { const w = JSON.parse(fs.readFileSync(`newsletter/${d}.why.json`, 'utf8')); return Array.isArray(w) ? [] : (w.stories ?? []).map(x => x.link); } catch { return []; } })();
+  const all = pool(news.items);
+  top = add([], all.filter(n => keep.includes(n.link)));
+  add(top, pool(news.items.filter(n => Date.parse(n.date) > weekAgo && n.category !== 'research')));
+  add(top, all);
+  if (top.length < 3) throw new Error(`Only ${top.length} usable news items; need 3.`);
+  top = top.map(({ title, link, source, date, summary }) => ({ title, link, source, date, summary }));
+  fs.mkdirSync('newsletter', { recursive: true });
+  fs.writeFileSync(picksFile, JSON.stringify({ send_date: d, picked_at: new Date().toISOString(), stories: top }, null, 1) + '\n');
+  console.log(`pinned stories in ${picksFile}`);
+}
 const tool = tools[week % tools.length];
 const job = jobs.jobs[week % jobs.jobs.length];
 const outlook = { steady: 'Mostly steady', watch: 'Changing', shift: 'Big shift ahead' }[job.outlook];
@@ -54,10 +76,17 @@ const utm = (u) => `${u}${u.includes('?') ? '&' : '?'}utm_source=newsletter&utm_
 const sourceName = (s) => s.replace(/\s*\((Atom|RSS|feed)\)\s*/gi, ' ').replace(/\s+news search\b/i, '').trim();
 const publisher = (s) => sourceName(s).replace(/\s+[–—-]\s+.*$/, '');
 
+// Editor input, newsletter/<sunday>.why.json, either
+//   { "stories": [ { "link": "<story link>", "why": "One plain sentence." }, … ] }   (matched by link; preferred)
+//   [ "line for story 1", "line for story 2", "line for story 3" ]                 (matched by position)
 const whyFile = `newsletter/${d}.why.json`;
-const whyIn = fs.existsSync(whyFile) ? JSON.parse(fs.readFileSync(whyFile, 'utf8')) : [];
+const whyIn = fs.existsSync(whyFile) ? JSON.parse(fs.readFileSync(whyFile, 'utf8')) : null;
 const PH = '[Editor: one plain sentence before sending.]';
-const why = [0, 1, 2].map(i => (typeof whyIn[i] === 'string' && whyIn[i].trim()) ? whyIn[i].trim() : PH);
+const why = top.map((n, i) => {
+  const v = Array.isArray(whyIn) ? whyIn[i] : whyIn?.stories?.find(x => x.link === n.link)?.why;
+  return typeof v === 'string' && v.trim() && !/\[Editor:/.test(v) ? v.trim() : PH;
+});
+if (whyIn && !Array.isArray(whyIn)) for (const x of whyIn.stories ?? []) if (!top.some(n => n.link === x.link)) console.warn(`why.json line for a story not in this issue: ${x.link}`);
 
 // ---- Markdown (archive / plain text) ----
 const md = `Hi there,

@@ -1,0 +1,27 @@
+{
+ "send_date": "2026-10-18",
+ "picked_at": "2026-10-15T16:38:40.076Z",
+ "stories": [
+  {
+   "title": "Google’s Universal Cart shopping tool launches in the US",
+   "link": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-15T14:29:33.000Z",
+   "summary": "The new shopping tool is available in the U.S. across Google Search and the Gemini app."
+  },
+  {
+   "title": "AI agents are coming to Rivian’s cars",
+   "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-15T15:02:36.000Z",
+   "summary": "We'll likely learn more about how this will work at the company's upcoming \"AI & Autonomy Day\" event in December."
+  },
+  {
+   "title": "Amazon’s always-listening Bee wearable can now help you buy stuff",
+   "link": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
+   "source": "The Verge – AI",
+   "date": "2026-10-15T12:00:00.000Z",
+   "summary": "Last year, Amazon bought Bee, a relatively unknown startup with a $50 always-listening AI wearable that summarized every conversation you had."
+  }
+ ]
+}

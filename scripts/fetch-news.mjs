@@ -3,11 +3,12 @@
 import Parser from 'rss-parser';
 import fs from 'node:fs';
 import { topicFor, feedImageUrl } from '../src/lib/news-images.mjs';
+import { isAboutAI } from '../src/lib/news-filter.mjs';
+// ai_only feeds are AI-dedicated sections; GOV.UK and NVIDIA are general and must pass the AI test.
 
 const FEEDS = JSON.parse(fs.readFileSync('src/data/feeds.json', 'utf8'));
 const OUT = 'src/data/news.json';
 const MAX_ITEMS = 80, MAX_AGE_DAYS = 21;
-const AI_RE = /\b(ai|a\.i\.|artificial intelligence|machine learning|chatbot|llm|generative|neural|deep learning|gpt|gemini|copilot)\b/i;
 const CATS = [
   ['jobs-work', /\b(jobs?|work(ers?|force|place)?|employ(ment|ees?|ers?)?|hiring|layoffs?|careers?|labou?r|wages?|skills?)\b/i],
   ['rules-safety', /\b(law|laws|regulat\w*|rules?|polic(y|ies)|safety|privacy|ban|court|lawsuit|copyright|government|congress|senate|eu ai act|deepfakes?|scams?)\b/i],
@@ -34,7 +35,7 @@ for (const f of FEEDS) {
       if (isNaN(date) || date.getTime() < cutoff) continue;
       const title = strip(i.title); const summary = clip(strip(i.contentSnippet || i.summary || i.content), 240);
       if (!title || !i.link) continue;
-      if (!f.ai_only && !AI_RE.test(title + ' ' + summary)) continue;
+      if (!f.ai_only && !isAboutAI({ title, summary })) continue;
       const text = title + ' ' + summary;
       const category = f.group === 'good-news' ? 'good-news' : (CATS.find(([, re]) => re.test(text))?.[0] ?? GROUP_DEFAULT[f.group] ?? 'research');
       items.push({ id: slug(title), title, link: i.link, source: f.name, date: date.toISOString(), summary, category,
