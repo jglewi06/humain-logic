@@ -33,7 +33,7 @@ When a design file changes, re-copy it (see the header comments in `global.css`)
 There are no trailing slashes (`build.format: 'file'`). Every page has a canonical `https://humainlogic.com/...` link.
 
 ## Config / secrets
-- `PUBLIC_BUTTONDOWN_USER` (Cloudflare Pages env var): the signup form target. If it is unset, the form validates and shows the success state but sends nothing.
+- `PUBLIC_BUTTONDOWN_USER` (Cloudflare Pages env var): the signup form target. Defaults to `jglewi06` when unset; set it only to point the form at a different Buttondown account.
 - `BUTTONDOWN_API_KEY` (GitHub secret), `NEWSLETTER_AUTOSEND` and `NEWSLETTER_POSTAL_ADDRESS` (GitHub variables). The newsletter refuses to upload without a postal address (CAN-SPAM).
 - Analytics: turn on Cloudflare Web Analytics in the Pages dashboard (auto-injected, no code or token in the repo).
 

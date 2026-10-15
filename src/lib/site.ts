@@ -5,7 +5,7 @@ export const SITE = {
   description: 'Find the right AI tool for your task in plain English, read calm AI news, and see how AI is changing your job.',
   newsletterName: 'The Sunday Brief',
   newsletterDay: 'Sunday',
-  buttondownUser: import.meta.env.PUBLIC_BUTTONDOWN_USER || '',
+  buttondownUser: import.meta.env.PUBLIC_BUTTONDOWN_USER || 'jglewi06',
 };
 export const NAV = [
   { href: '/tools', label: 'Find a tool', match: ['/tools', '/search', '/tasks'] },
