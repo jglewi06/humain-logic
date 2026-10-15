@@ -13,7 +13,7 @@ const sources = [...srcMap.values()].sort((a, b) => b.jobs.size - a.jobs.size ||
 const conf = Object.fromEntries(['high', 'medium', 'low'].map(c => [c, jobsData.jobs.filter(j => j.confidence === c).length]));
 const hcount = Object.fromEntries(HIRING_ORDER.map(k => [k, jobsData.jobs.filter(j => j.employment_pressure_by_2030 === k).length]));
 const ocount = Object.fromEntries(Object.keys(OUTLOOK).map(k => [k, jobsData.jobs.filter(j => j.outlook === k).length]));
-const HDESC: Record<string, string> = { high: 'Sources point to clearly fewer openings or headcount declines by about 2030.', medium: 'Some sources point to slower hiring or fewer openings; others are mixed.', low: 'Sources point to little change in openings by about 2030.', growth: 'Sources point to more openings by about 2030.' };
+const HDESC: Record<string, string> = { high: 'Employer surveys or early labor data point to clearly less hiring or a shrinking headcount for this job by about 2030.', medium: 'Sources point to slower hiring or a modest headcount decline by about 2030, but the evidence is mixed or limited.', low: 'Sources point to little or no drop in hiring or headcount from AI by about 2030.', growth: 'Sources expect hiring or headcount for this job to hold steady or grow by about 2030.' };
 const verified = tools.filter(t => t.pricing.verified).length;
 const ld = [
   { '@type': 'Article', '@id': `${SITE_URL}/methodology#article`, headline: 'How HumAIn Logic estimates how AI may change jobs', description: 'Methodology for the HumAIn Logic Job safety tracker: automation year ranges, outlook levels, hiring impact by 2030, sources, limitations and updates.',

@@ -3,6 +3,8 @@ slug: staying-safe-with-ai
 title: "Staying safe with AI: privacy, scams, deepfakes and checking answers"
 summary: "Simple habits to protect your privacy, spot AI-powered scams and deepfakes, and double-check what AI tools tell you."
 updated: 2026-10-15
+published: 2026-10-15
+author: HumAIn Logic editorial team
 ---
 
 
@@ -61,7 +63,7 @@ A **deepfake** is a fake image, video or audio clip made with AI to look or soun
 
 - Who posted it? Is it from a trusted news outlet or an official account?
 - Can you find the same story reported elsewhere?
-- Some images now carry "Content Credentials," a kind of digital label showing how they were made. You can upload an image to the free [Content Credentials Verify tool](https://contentcredentials.org/verify) to check.
+- Some images now carry "Content Credentials," a kind of digital label showing how they were made. You can upload an image to the free [Content Credentials Verify tool](https://verify.contentauthenticity.org/) to check.
 
 **Protect yourself, too:** consider making social media accounts private and limiting how much video and audio of yourself you share publicly ([FBI IC3](https://www.ic3.gov/PSA/2024/PSA241203)).
 
@@ -99,7 +101,7 @@ Staying safe with AI comes down to a few calm habits: share less, pause before a
 ---
 
 **Sources**
-- FBI Internet Crime Complaint Center, PSA241203, "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud" (Dec. 3, 2024). https://www.ic3.gov/PSA/2024/PSA241203
-- Federal Trade Commission, "Scammers use AI to enhance their family emergency schemes" (Mar. 20, 2023). https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes
-- CISA, Secure Our World. https://www.cisa.gov/secure-our-world
-- Content Credentials (C2PA), Verify tool. https://contentcredentials.org/verify
+- FBI Internet Crime Complaint Center, PSA241203, "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud" (Dec. 3, 2024). https://www.ic3.gov/PSA/2024/PSA241203 (accessed 2026-10-15)
+- Federal Trade Commission, "Scammers use AI to enhance their family emergency schemes" (Mar. 20, 2023). https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes (accessed 2026-10-15)
+- CISA, "Secure Our World" campaign page (undated). https://www.cisa.gov/secure-our-world (accessed 2026-10-15)
+- Content Authenticity Initiative / C2PA, "Content Credentials Verify" tool (undated). https://verify.contentauthenticity.org/ (accessed 2026-10-15)

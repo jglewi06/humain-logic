@@ -9,20 +9,27 @@
   "updated": "2026-10-15",
   "sources": [
    {
-    "title": "IBM, \"What is artificial intelligence (AI)?\"",
-    "url": "https://www.ibm.com/think/topics/artificial-intelligence"
+    "title": "IBM, \"What Is Artificial Intelligence (AI)?\" (IBM Think, undated)",
+    "url": "https://www.ibm.com/think/topics/artificial-intelligence",
+    "accessed": "2026-10-15"
    },
    {
     "title": "Noy, S. & Zhang, W. (2023), \"Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence,\" MIT",
-    "url": "https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1.pdf"
+    "url": "https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1.pdf",
+    "year": 2023,
+    "accessed": "2026-10-15"
    },
    {
-    "title": "NIST, AI Risk Management Framework",
-    "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+    "title": "NIST, \"AI Risk Management Framework\" (AI RMF 1.0 released Jan. 2023)",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "year": 2023,
+    "accessed": "2026-10-15"
    },
    {
-    "title": "Stanford HAI, AI Index Report 2025",
-    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report"
+    "title": "Stanford HAI, \"The 2025 AI Index Report\"",
+    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+    "year": 2025,
+    "accessed": "2026-10-15"
    }
   ]
  },
@@ -36,20 +43,26 @@
   "updated": "2026-10-15",
   "sources": [
    {
-    "title": "U.S. Small Business Administration, AI for small business",
-    "url": "https://www.sba.gov/business-guide/manage-your-business/ai-small-business"
+    "title": "U.S. Small Business Administration, \"Manage your business: AI for small businesses\" (undated)",
+    "url": "https://www.sba.gov/counseling/manage-your-business/#ai-for-small-business",
+    "accessed": "2026-10-15"
    },
    {
-    "title": "Brynjolfsson, E., Li, D. & Raymond, L., \"Generative AI at Work,\" NBER Working Paper 31161",
-    "url": "https://www.nber.org/papers/w31161"
+    "title": "Brynjolfsson, E., Li, D. & Raymond, L. (2023), \"Generative AI at Work,\" NBER Working Paper 31161",
+    "url": "https://www.nber.org/papers/w31161",
+    "year": 2023,
+    "accessed": "2026-10-15"
    },
    {
     "title": "FBI Internet Crime Complaint Center, PSA241203 (Dec. 3, 2024), \"Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud.\"",
-    "url": "https://www.ic3.gov/PSA/2024/PSA241203"
+    "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+    "year": 2024,
+    "accessed": "2026-10-15"
    },
    {
-    "title": "CISA, Secure Our World",
-    "url": "https://www.cisa.gov/secure-our-world"
+    "title": "CISA, \"Secure Our World\" campaign page (undated)",
+    "url": "https://www.cisa.gov/secure-our-world",
+    "accessed": "2026-10-15"
    }
   ]
  },
@@ -64,19 +77,25 @@
   "sources": [
    {
     "title": "FBI Internet Crime Complaint Center, PSA241203, \"Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud\" (Dec. 3, 2024)",
-    "url": "https://www.ic3.gov/PSA/2024/PSA241203"
+    "url": "https://www.ic3.gov/PSA/2024/PSA241203",
+    "year": 2024,
+    "accessed": "2026-10-15"
    },
    {
     "title": "Federal Trade Commission, \"Scammers use AI to enhance their family emergency schemes\" (Mar. 20, 2023)",
-    "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes"
+    "url": "https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes",
+    "year": 2023,
+    "accessed": "2026-10-15"
    },
    {
-    "title": "CISA, Secure Our World",
-    "url": "https://www.cisa.gov/secure-our-world"
+    "title": "CISA, \"Secure Our World\" campaign page (undated)",
+    "url": "https://www.cisa.gov/secure-our-world",
+    "accessed": "2026-10-15"
    },
    {
-    "title": "Content Credentials (C2PA), Verify tool",
-    "url": "https://contentcredentials.org/verify"
+    "title": "Content Authenticity Initiative / C2PA, \"Content Credentials Verify\" tool (undated)",
+    "url": "https://verify.contentauthenticity.org/",
+    "accessed": "2026-10-15"
    }
   ]
  },
@@ -90,12 +109,14 @@
   "updated": "2026-10-15",
   "sources": [
    {
-    "title": "OpenAI, \"Prompt engineering\" guide",
-    "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+    "title": "OpenAI, \"Prompt engineering,\" OpenAI API docs (undated)",
+    "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+    "accessed": "2026-10-15"
    },
    {
-    "title": "Anthropic, \"Prompt engineering overview.\"",
-    "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+    "title": "Anthropic, \"Prompt engineering overview,\" Claude Platform Docs (undated)",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+    "accessed": "2026-10-15"
    }
   ]
  },
@@ -110,19 +131,27 @@
   "sources": [
    {
     "title": "International Labour Organization (2023), \"Generative AI and Jobs: A global analysis of potential effects on job quantity and quality.\"",
-    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and"
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and",
+    "year": 2023,
+    "accessed": "2026-10-15"
    },
    {
     "title": "International Monetary Fund, K. Georgieva, \"AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity\" (Jan. 14, 2024)",
-    "url": "https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity"
+    "url": "https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity",
+    "year": 2024,
+    "accessed": "2026-10-15"
    },
    {
-    "title": "World Economic Forum, *The Future of Jobs Report 2025*",
-    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/"
+    "title": "World Economic Forum (2025), *The Future of Jobs Report 2025*: Digest",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/",
+    "year": 2025,
+    "accessed": "2026-10-15"
    },
    {
-    "title": "Brynjolfsson, E., Li, D. & Raymond, L., \"Generative AI at Work,\" NBER Working Paper 31161",
-    "url": "https://www.nber.org/papers/w31161"
+    "title": "Brynjolfsson, E., Li, D. & Raymond, L. (2023), \"Generative AI at Work,\" NBER Working Paper 31161",
+    "url": "https://www.nber.org/papers/w31161",
+    "year": 2023,
+    "accessed": "2026-10-15"
    }
   ]
  }

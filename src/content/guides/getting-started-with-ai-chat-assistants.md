@@ -3,6 +3,8 @@ slug: getting-started-with-ai-chat-assistants
 title: "Getting started with AI chat assistants: prompting basics"
 summary: "How to choose a free AI assistant, write clear requests (prompts) that get useful answers, and avoid common beginner mistakes."
 updated: 2026-10-15
+published: 2026-10-15
+author: HumAIn Logic editorial team
 ---
 
 
@@ -25,7 +27,7 @@ A **prompt** is simply what you type (or say) to the AI. It can be a question, a
 
 ## Step 3: Use the "four-part" recipe
 
-The companies that make these tools publish advice on writing good prompts, and it comes down to a few common ideas: be clear and specific, give context and say what you want the result to look like ([OpenAI](https://platform.openai.com/docs/guides/prompt-engineering); [Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)). An easy way to remember it:
+The companies that make these tools publish advice on writing good prompts, and it comes down to a few common ideas: be clear and specific, give context and say what you want the result to look like ([OpenAI](https://developers.openai.com/api/docs/guides/prompt-engineering); [Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)). An easy way to remember it:
 
 1. **Task**: What do you want? ("Write an email...")
 2. **Context**: What's the background? ("...to my landlord about a leaking kitchen tap that's been broken for two weeks...")
@@ -70,7 +72,7 @@ That last one is a great trick: **ask the AI to ask *you* questions** first. It 
 
 ## Step 5: Give it examples
 
-If you want something in a particular style, show it. For example: "Here's a social post I liked: [example]. Write three more like it about our weekend bakery special." Both OpenAI and Anthropic recommend examples as one of the most effective ways to guide the result ([OpenAI](https://platform.openai.com/docs/guides/prompt-engineering); [Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview)).
+If you want something in a particular style, show it. For example: "Here's a social post I liked: [example]. Write three more like it about our weekend bakery special." Both OpenAI and Anthropic recommend examples as one of the most effective ways to guide the result ([OpenAI](https://developers.openai.com/api/docs/guides/prompt-engineering); [Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)).
 
 ## Common beginner mistakes (and easy fixes)
 
@@ -111,5 +113,5 @@ Good prompting isn't a technical skill. It's clear communication. Say what you w
 ---
 
 **Sources**
-- OpenAI, "Prompt engineering" guide. https://platform.openai.com/docs/guides/prompt-engineering
-- Anthropic, "Prompt engineering overview." https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+- OpenAI, "Prompt engineering," OpenAI API docs (undated). https://developers.openai.com/api/docs/guides/prompt-engineering (accessed 2026-10-15)
+- Anthropic, "Prompt engineering overview," Claude Platform Docs (undated). https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview (accessed 2026-10-15)

@@ -22,7 +22,8 @@
    "pricing_url": "https://chatgpt.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "ChatGPT is a general-purpose AI chat assistant from OpenAI. You type (or speak) a question or request and it replies in plain language, helping with emails, summaries, brainstorming, explanations and more. It can also read files you upload, create images and search the web.",
@@ -39,8 +40,15 @@
     "Avoid pasting private or sensitive information"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -68,7 +76,8 @@
    "pricing_url": "https://claude.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Claude is an AI assistant made by Anthropic. It is especially good at reading and summarizing long documents, writing clear reports and working through files you share with it. You chat with it on the web, desktop or phone.",
@@ -85,8 +94,15 @@
     "Heavy daily use pushes you toward the pricier Max plan"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -114,7 +130,8 @@
    "pricing_url": "https://gemini.google/subscriptions/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "US prices shown on the page."
+   "verification_note": "US prices shown on the page.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Gemini is Google's AI assistant. It answers questions, helps write and plan, and can work with your Google apps such as Gmail, Drive and Docs if you allow it. Paid Google AI plans add more powerful models, video generation and higher limits.",
@@ -131,8 +148,13 @@
     "Answers still need checking for accuracy"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -159,7 +181,8 @@
    "pricing_url": "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "The consumer Copilot pricing URL returned 404; prices verified on Microsoft's official Microsoft 365 comparison page."
+   "verification_note": "The consumer Copilot pricing URL returned 404; prices verified on Microsoft's official Microsoft 365 comparison page.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Microsoft Copilot is Microsoft's AI assistant for chatting, answering questions, writing and creating images. The free app works on the web, Windows and phones, and Copilot features also appear inside Word, Excel, PowerPoint and Outlook with a Microsoft 365 subscription.",
@@ -176,8 +199,14 @@
     "Outputs should still be reviewed before you rely on them"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -204,7 +233,8 @@
    "pricing_url": "https://www.perplexity.ai/pro",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Monthly-billing price not shown in the page text we captured."
+   "verification_note": "Monthly-billing price not shown in the page text we captured.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Perplexity is an AI-powered answer engine. Instead of a list of links, it gives you a written answer with numbered sources you can click to check. It is handy for research, comparing options and catching up on topics quickly.",
@@ -221,8 +251,15 @@
     "Not every source it cites is equally trustworthy"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -249,7 +286,8 @@
    "pricing_url": "https://x.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "grok.com/plans showed no prices to logged-out visitors; prices verified on x.ai/pricing. Bundle launched Oct 2026 (TechCrunch, 2026-10-13); existing SuperGrok plans continue."
+   "verification_note": "grok.com/plans showed no prices to logged-out visitors; prices verified on x.ai/pricing. Bundle launched Oct 2026 (TechCrunch, 2026-10-13); existing SuperGrok plans continue.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Grok is an AI assistant made by SpaceXSI (formerly xAI). It chats, searches, reasons through problems, and can create images and video. It is available on the web, iPhone, Android and inside X, and its paid tiers are now sold as part of 'The X Subscription'.",
@@ -266,8 +304,13 @@
     "As with any chatbot, double-check facts and sources"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -294,7 +337,8 @@
    "pricing_url": "https://mistral.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Le Chat is the AI assistant from Mistral AI, a French company. It can chat, search the web, write, generate images, make spreadsheets and slides, and help with coding. It is available on the web and on mobile.",
@@ -311,8 +355,12 @@
     "Some features are aimed at developers"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -336,10 +384,11 @@
    "free_tier": true,
    "summary": "Pi appears free to use (the site offers free sign-up). No pricing page found.",
    "starting_paid_price": null,
-   "pricing_url": "https://pi.ai",
+   "pricing_url": null,
    "verified": false,
    "verified_on": "2026-10-15",
-   "verification_note": "No official pricing page exists; we could not confirm whether any paid tier exists."
+   "verification_note": "Pi has no pricing page (pi.ai offers free sign-up; no plan table or paid tier found on the official site, 2026-10-15). Shown as free; we could not officially confirm that no paid tier exists.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Pi is a friendly, conversational AI from Inflection AI. It is designed to talk things through with you, offer encouragement, help you prepare for a tough conversation or plan your day, rather than to be a heavy-duty work tool.",
@@ -356,8 +405,12 @@
     "Fewer features than general assistants"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -384,7 +437,8 @@
    "pricing_url": "https://www.grammarly.com/plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page shows '$12 USD' for Pro; billing period (monthly vs annual) is confirmed at checkout."
+   "verification_note": "Page shows '$12 USD' for Pro; billing period (monthly vs annual) is confirmed at checkout.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Grammarly checks your writing for spelling, grammar and clarity as you type in your browser, email and documents. It can also adjust your tone, rewrite whole sentences and help you draft with AI prompts. It is now part of the Superhuman suite of products.",
@@ -401,8 +455,15 @@
     "It reads what you type, so check your organization's privacy rules"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -429,7 +490,8 @@
    "pricing_url": "https://quillbot.com/premium",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Plain HTTP fetch was blocked (403); verified by loading the page in a browser."
+   "verification_note": "Plain HTTP fetch was blocked (403); verified by loading the page in a browser.",
+   "currency": null
   },
   "details": {
    "what_it_does": "QuillBot is a writing helper best known for paraphrasing: it rewrites a sentence or paragraph in different words. It also checks grammar, summarizes text, generates citations and includes an AI detector.",
@@ -446,8 +508,14 @@
     "Results still need a human read-through"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "mac",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -474,7 +542,8 @@
    "pricing_url": "https://www.jasper.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Jasper is an AI writing platform for marketing teams. It helps create on-brand blog posts, ads, emails and campaign content, keeping your brand voice and style guidelines consistent across everything you produce.",
@@ -491,8 +560,12 @@
     "Still requires human editing and fact-checking"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "browser-extension",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -511,15 +584,16 @@
    "automate-marketing-workflows"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
    "summary": "Chat plan $29/month billed monthly or $24/month billed annually ($288/year), up to 5 seats. Growth $1,000/month, Expansion $2,000/month, Scale $3,000/month (billed annually).",
    "starting_paid_price": "$24/month billed annually (Chat)",
    "pricing_url": "https://www.copy.ai/prices",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page offers 'Try for free' but lists no free plan; free_tier left unknown."
+   "verification_note": "Re-checked 2026-10-15 in a headless browser: pricing page lists only paid plans (Chat, Growth, Enterprise); 'Get started' leads to paid plans and no free plan is shown.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Copy.ai is an AI platform for sales and marketing teams. It offers an AI chat workspace with access to several leading AI models and 'workflows' that automate repeat tasks like writing outreach emails or product descriptions in bulk.",
@@ -536,8 +610,11 @@
     "Bulk content still needs quality checks"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -555,15 +632,16 @@
    "write-seo-articles"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Starter $79/month, Basic $199/month, Growth $399/month (all billed annually). Enterprise custom.",
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan; free trial ('Start free. No credit card needed'). Starter $79/month, Basic $199/month, Growth $399/month (all billed annually). Enterprise custom.",
    "starting_paid_price": "$79/month billed annually (Starter)",
    "pricing_url": "https://writesonic.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page says 'Start free. No credit card needed' but lists no free plan; free_tier left unknown."
+   "verification_note": "Re-checked 2026-10-15 in a headless browser: every plan uses 'Start free trial'; no free plan listed.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Writesonic has evolved into a tool for 'AI search visibility': it tracks how your brand appears in answers from ChatGPT, Gemini and Google AI Overviews, and helps fix gaps with AI-written articles and site audits. It is now aimed more at marketing teams than at casual writers.",
@@ -580,8 +658,10 @@
     "AI visibility metrics are still a new and evolving field"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -608,7 +688,8 @@
    "pricing_url": "https://www.sudowrite.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page has a monthly/yearly toggle; billing basis of the displayed prices was not confirmed."
+   "verification_note": "Page has a monthly/yearly toggle; billing basis of the displayed prices was not confirmed.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Sudowrite is an AI writing partner made for fiction. It helps novelists and screenwriters brainstorm, expand scenes, describe settings, rewrite passages and get feedback on their drafts, using AI models tuned for storytelling.",
@@ -625,8 +706,11 @@
     "Some writers worry about AI shaping their style too much"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -653,7 +737,8 @@
    "pricing_url": "https://www.wordtune.com/plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Wordtune suggests different ways to say what you have written: shorter, more formal, more casual or clearer. It also summarizes articles and documents and checks spelling and grammar.",
@@ -670,8 +755,12 @@
     "Suggestions should be read, not accepted blindly"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -690,15 +779,16 @@
    "write-a-document"
   ],
   "pricing": {
-   "band": "free-plan",
-   "label": "Free plan available",
-   "free_tier": true,
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
    "summary": "Free $0 and Plus $10/member/month include an AI trial. Full Notion AI is in Business at $20/member/month. Custom Agents: $10 per 1,000 Notion credits after trial.",
    "starting_paid_price": "$20/member/month (Business, includes Notion AI)",
    "pricing_url": "https://www.notion.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Prices shown as monthly; yearly billing saves up to 20%."
+   "verification_note": "Prices shown as monthly; yearly billing saves up to 20%. free_tier=false because full Notion AI requires the Business plan; the Free ($0) and Plus Notion plans include only an AI trial (re-checked 2026-10-15).",
+   "currency": null
   },
   "details": {
    "what_it_does": "Notion AI is built into Notion, the all-in-one workspace for notes, documents, tasks and wikis. It can draft documents, summarize pages, fill in databases, answer questions using your workspace content with citations, and run AI agents for repetitive tasks.",
@@ -715,8 +805,14 @@
     "Agents beyond the trial cost extra credits"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -743,7 +839,8 @@
    "pricing_url": "https://otter.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page also showed limited-time 50% promotions."
+   "verification_note": "Page also showed limited-time 50% promotions.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Otter.ai records and transcribes meetings in real time, then creates summaries and action items. It joins Zoom, Microsoft Teams and Google Meet calls and lets you search and chat across past meetings.",
@@ -760,8 +857,13 @@
     "Transcripts can misspell names or technical terms"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -788,7 +890,8 @@
    "pricing_url": "https://fireflies.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Fireflies.ai is an AI meeting assistant that joins your calls, transcribes them and writes summaries and action items. It integrates with calendars, CRMs and project tools, and offers a mobile app and Chrome extension.",
@@ -805,8 +908,14 @@
     "Accuracy drops with poor audio or heavy accents"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "browser-extension",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -832,7 +941,8 @@
    "pricing_url": "https://www.fathom.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Fathom is an AI notetaker that records your video calls, transcribes them and gives you instant summaries. It can push notes into tools like HubSpot or Salesforce and offers a generous free plan for individuals.",
@@ -849,8 +959,13 @@
     "Recording others needs their consent"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -877,7 +992,8 @@
    "pricing_url": "https://reclaim.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Displayed prices appear to be the yearly-billing rate (page defaults to 'Yearly - SAVE 20%')."
+   "verification_note": "Displayed prices appear to be the yearly-billing rate (page defaults to 'Yearly - SAVE 20%').",
+   "currency": null
   },
   "details": {
    "what_it_does": "Reclaim.ai is an AI calendar assistant. It automatically finds time for your tasks, habits, focus time and breaks, and rearranges them when meetings change, so your week stays balanced.",
@@ -894,8 +1010,10 @@
     "Automatic rescheduling can surprise you at first"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -922,7 +1040,8 @@
    "pricing_url": "https://www.usemotion.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Billing basis of displayed price not confirmed; an earlier fetch labelled plans 'not available', likely a regional message."
+   "verification_note": "Billing basis of displayed price not confirmed; an earlier fetch labelled plans 'not available', likely a regional message.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Motion is an AI planner that combines your calendar, tasks and projects. It automatically builds a daily schedule based on deadlines and priorities, and includes AI docs, notes and a writing assistant.",
@@ -939,8 +1058,14 @@
     "Letting software plan your day takes some trust and adjustment"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -967,7 +1092,8 @@
    "pricing_url": "https://zapier.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Zapier connects thousands of apps so they can work together automatically, for example saving email attachments to Drive or adding new form entries to a spreadsheet. Its AI features let you describe an automation in plain words and add AI steps and agents.",
@@ -984,8 +1110,10 @@
     "Automations can break when connected apps change"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1012,7 +1140,8 @@
    "pricing_url": "https://gamma.app/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Plain HTTP fetch blocked (403); verified by loading the page in a browser."
+   "verification_note": "Plain HTTP fetch blocked (403); verified by loading the page in a browser.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Gamma creates presentations, documents, simple websites and social posts from a short prompt or outline. You describe what you need and it produces a designed draft you can edit, then export to PowerPoint, PDF or Google Slides.",
@@ -1029,8 +1158,11 @@
     "Credit system can be confusing"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1056,7 +1188,8 @@
    "pricing_url": "https://www.beautiful.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Beautiful.ai is presentation software that uses AI and 'smart slides' to keep layouts tidy automatically as you add content. It can generate slides from a prompt and imports and exports PowerPoint files.",
@@ -1073,8 +1206,10 @@
     "Team plan costs more per person"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1101,7 +1236,8 @@
    "pricing_url": "https://www.canva.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Verified by loading the page in a browser."
+   "verification_note": "Verified by loading the page in a browser.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Canva is an easy drag-and-drop design tool for social posts, flyers, presentations, videos and more. Its AI features ('Magic' tools) can write text, generate images, remove backgrounds, resize designs and translate content.",
@@ -1118,8 +1254,14 @@
     "Check image licensing rules for commercial use"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1146,7 +1288,8 @@
    "pricing_url": "https://www.adobe.com/products/firefly/plans.html",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Plain HTTP fetch blocked (403); verified by loading the page in a browser."
+   "verification_note": "Plain HTTP fetch blocked (403); verified by loading the page in a browser.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Adobe Firefly is Adobe's generative AI for creating and editing images, video and audio from text descriptions. Adobe says its own Firefly models are designed to be commercially safe, and it also works with Photoshop and other Adobe apps.",
@@ -1163,8 +1306,13 @@
     "Premium tiers get expensive"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1191,7 +1339,8 @@
    "pricing_url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Official Midjourney docs plan-comparison page."
+   "verification_note": "Official Midjourney docs plan-comparison page.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Midjourney is a popular AI image generator known for artistic, high-quality results. You describe a picture in words and it creates several versions you can refine, upscale or turn into short videos, using its website or Discord.",
@@ -1208,8 +1357,10 @@
     "Companies earning over $1M a year must buy Pro or Mega"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1236,7 +1387,8 @@
    "pricing_url": "https://leonardo.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Verified in a browser; billing basis of displayed price not confirmed."
+   "verification_note": "Verified in a browser; billing basis of displayed price not confirmed.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Leonardo.Ai generates images, video and design assets from text prompts, with controls for style, quality and your own trained models. It is popular for game art, product visuals, and social media content.",
@@ -1253,8 +1405,13 @@
     "Interface can feel busy for beginners"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1273,15 +1430,16 @@
    "generate-an-image"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Plus $20/month ($15/month billed annually, $180/year), Pro $60/month, Team $30/user/month. Pay-as-you-go at 1 cent per credit.",
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan: accounts that sign in with Google, Apple or Microsoft get free weekly credits (30/week per Ideogram docs). Plus $20/month ($15/month billed annually, $180/year), Pro $60/month, Team $30/user/month. Pay-as-you-go at 1 cent per credit.",
    "starting_paid_price": "$15/month billed annually (Plus)",
    "pricing_url": "https://ideogram.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "No free plan was listed on the pricing page when checked; free_tier left unknown."
+   "verification_note": "Pricing page FAQ says eligible free accounts receive weekly credits; the 30/week figure is from Ideogram's official docs (docs.ideogram.ai/plans-and-billing/available-plans). Email/password accounts get no free credits.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Ideogram is an AI image generator that is especially good at putting readable text inside images, like posters, logos and social graphics. It also offers video models and a pay-as-you-go option.",
@@ -1298,8 +1456,12 @@
     "Check outputs for spelling and brand accuracy"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1325,7 +1487,8 @@
    "pricing_url": "https://stability.ai/license",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Old /pricing URL redirects to a 404; license page used."
+   "verification_note": "Old /pricing URL redirects to a 404; license page used.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Stability AI builds open AI models such as Stable Diffusion for images and Stable Audio for sound. Developers and businesses can download and run these models themselves, or use them through Stability's services and partners.",
@@ -1342,8 +1505,10 @@
     "Running models yourself needs a capable computer"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "advanced",
+  "platforms": [
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1369,7 +1534,8 @@
    "pricing_url": "https://www.remove.bg/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Remove.bg removes the background from a photo automatically in a few seconds, leaving just the person or product. It is now part of Canva's family of tools and offers an API for bulk and automated editing.",
@@ -1386,8 +1552,14 @@
     "Does one job; other edits need another tool"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "windows",
+   "mac",
+   "linux",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1405,15 +1577,16 @@
    "make-product-photos"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Pro $12.99/month or $7.50/month billed yearly. Max $34.99/month or $20.99 billed yearly. Ultra $99/month or $82.50 billed yearly. Enterprise via sales.",
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan listed on the pricing page; free trials on paid plans. Pro $12.99/month or $7.50/month billed yearly. Max $34.99/month or $20.99 billed yearly. Ultra $99/month or $82.50 billed yearly.",
    "starting_paid_price": "$7.50/month billed yearly (Pro)",
    "pricing_url": "https://www.photoroom.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Pricing page lists free trials but no free plan; free_tier left unknown."
+   "verification_note": "Re-checked 2026-10-15 in a headless browser: only Pro, Max and Ultra are listed, each with 'Start free trial'. The app may allow limited use without paying, but no free plan is offered on the official pricing page.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Photoroom is an AI photo editor built for selling online. It removes backgrounds, creates studio-style product shots, generates AI backgrounds and fashion models, and can make product videos, on phone or web.",
@@ -1430,8 +1603,13 @@
     "Credit and export limits apply"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1458,7 +1636,8 @@
    "pricing_url": "https://clipdrop.co/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Clipdrop is a set of quick AI image tools: background removal, cleanup (erasing unwanted objects), upscaling, relighting, uncropping, text removal and text-to-image. It runs in the browser.",
@@ -1475,8 +1654,11 @@
     "Results vary on complex photos"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1503,7 +1685,8 @@
    "pricing_url": "https://www.krea.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Krea is an AI creative studio for generating and editing images and video, including real-time generation and an 'agent' that plans and creates across multiple AI models for you. It gathers many popular image and video models in one place.",
@@ -1520,8 +1703,11 @@
     "Heavy video use requires higher tiers"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1548,7 +1734,8 @@
    "pricing_url": "https://runwayml.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Runway is an AI video platform. You can turn text or images into video clips, edit footage with AI tools, upscale to 4K and use several leading video models. It is used by creators and film and ad studios.",
@@ -1565,8 +1752,12 @@
     "Generated video can look unrealistic and needs review"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1592,7 +1783,8 @@
    "pricing_url": "https://pika.art/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Pika turns text prompts and images into short AI videos with fun effects. It is aimed at quick, creative social media clips rather than long productions.",
@@ -1609,8 +1801,11 @@
     "Clips are short and can be inconsistent"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1636,7 +1831,8 @@
    "pricing_url": "https://lumalabs.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Luma's Dream Machine creates realistic videos and images from text or pictures. Paid plans include commercial use, Luma's own models, third-party models and Luma Agents for larger creative projects.",
@@ -1653,8 +1849,12 @@
     "Credits are used quickly on high-resolution video"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1681,7 +1881,8 @@
    "pricing_url": "https://www.synthesia.io/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Synthesia makes videos with lifelike AI presenters (avatars) from a script, so you can create training, onboarding or explainer videos without a camera. It also translates and dubs videos into many languages.",
@@ -1698,8 +1899,11 @@
     "Personal avatars and more minutes cost more"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1726,7 +1930,8 @@
    "pricing_url": "https://www.heygen.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Prices shown under the monthly view; yearly billing is cheaper."
+   "verification_note": "Prices shown under the monthly view; yearly billing is cheaper.",
+   "currency": null
   },
   "details": {
    "what_it_does": "HeyGen creates AI videos with talking avatars, translates videos into many languages with lip-sync, and can clone your voice. It is used for marketing, training and social content.",
@@ -1743,8 +1948,12 @@
     "Costs grow with heavy use"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1771,7 +1980,8 @@
    "pricing_url": "https://www.descript.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Descript lets you edit video and audio by editing a text transcript, like a document. Delete a word in the text and it disappears from the recording. AI tools remove filler words, create clips and even regenerate speech.",
@@ -1788,8 +1998,12 @@
     "Voice regeneration should be used carefully and with consent"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1816,7 +2030,8 @@
    "pricing_url": "https://www.capcut.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page says to sign in to see final pricing, taxes and offers for your account."
+   "verification_note": "Page says to sign in to see final pricing, taxes and offers for your account.",
+   "currency": null
   },
   "details": {
    "what_it_does": "CapCut is a free-to-start video editor for phone, desktop and web, popular for short social videos. It offers templates, captions and AI features including AI video generation with credits on paid plans.",
@@ -1833,8 +2048,14 @@
     "Review privacy settings before uploading personal content"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1860,7 +2081,8 @@
    "pricing_url": "https://www.opus.pro/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "OpusClip takes a long video, like a podcast or webinar, and automatically cuts it into short clips for social media. It adds captions, scores each clip's 'virality' and can post directly to YouTube Shorts, TikTok and Instagram Reels.",
@@ -1877,8 +2099,11 @@
     "Virality scores are estimates, not guarantees"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1905,7 +2130,8 @@
    "pricing_url": "https://elevenlabs.io/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Starter showed a $1 first-month promo until Oct 18."
+   "verification_note": "Starter showed a $1 first-month promo until Oct 18.",
+   "currency": null
   },
   "details": {
    "what_it_does": "ElevenLabs generates natural-sounding speech from text, clones voices, dubs videos into other languages, and creates sound effects and music. It is used for audiobooks, videos, podcasts and voice agents.",
@@ -1922,8 +2148,13 @@
     "Heavy use gets expensive"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1949,7 +2180,8 @@
    "pricing_url": "https://suno.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Suno creates full songs, with vocals and instruments, from a text description or your own lyrics. Paid plans add better models, song downloads, commercial rights and a studio for editing.",
@@ -1966,8 +2198,12 @@
     "Quality and style can be hit-or-miss"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -1993,7 +2229,8 @@
    "pricing_url": "https://www.udio.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Udio is an AI music generator that creates songs from text prompts, with tools to extend, remix and edit tracks. It offers a free plan with a daily quota.",
@@ -2010,8 +2247,11 @@
     "Credits don't roll over"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2037,7 +2277,8 @@
    "pricing_url": "https://speechify.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Speechify reads text aloud: web pages, PDFs, emails, books and documents, in natural voices and at adjustable speeds. It also offers voice typing and an AI voice assistant.",
@@ -2054,8 +2295,14 @@
     "Some features overlap with free built-in phone readers"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "mac",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2081,7 +2328,8 @@
    "pricing_url": "https://podcast.adobe.com/en/plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Adobe Podcast is a browser-based audio tool. Its best-known feature, Enhance Speech, makes recordings made on a laptop or phone sound like they were recorded in a studio. It also records, edits, transcribes and captions audio and video.",
@@ -2098,8 +2346,10 @@
     "Upload limits on the free plan"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2126,7 +2376,8 @@
    "pricing_url": "https://github.com/features/copilot/plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Plans include usage-based GitHub AI Credits."
+   "verification_note": "Plans include usage-based GitHub AI Credits.",
+   "currency": null
   },
   "details": {
    "what_it_does": "GitHub Copilot is an AI coding assistant that suggests code as you type, answers coding questions in chat, reviews code and can work on tasks in 'agent mode'. It works in popular code editors and on GitHub.",
@@ -2143,8 +2394,15 @@
     "Best for people who can already read code"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "linux"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2171,7 +2429,8 @@
    "pricing_url": "https://cursor.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Cursor's pricing now matches SpaceXSI's 'X Subscription' bundle (see x.ai/pricing; TechCrunch 2026-10-13)."
+   "verification_note": "Cursor's pricing now matches SpaceXSI's 'X Subscription' bundle (see x.ai/pricing; TechCrunch 2026-10-13).",
+   "currency": null
   },
   "details": {
    "what_it_does": "Cursor is an AI-first code editor. You can ask it to write, explain or change code across your whole project, and run AI agents that complete tasks. Its plans are now part of 'The X Subscription' from SpaceXSI, alongside Grok and X Premium.",
@@ -2188,8 +2447,14 @@
     "Generated code still needs careful review"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "advanced",
+  "platforms": [
+   "windows",
+   "mac",
+   "linux",
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2207,15 +2472,16 @@
    "host-a-website"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Core $20/month ($18/month billed annually). Pro $100/month ($90/month billed annually). Enterprise custom.",
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free Starter plan (daily Agent allowance, limited monthly cloud credits, one published app). Core $20/month ($18/month billed annually). Pro $100/month ($90/month billed annually). Enterprise custom.",
    "starting_paid_price": "$18/month billed annually (Core)",
    "pricing_url": "https://replit.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Fetched via WebFetch (curl blocked). A free plan was not shown in the page text; free_tier left unknown."
+   "verification_note": "replit.com/pricing is Cloudflare-protected (headless browser got a bot check); free Starter plan confirmed in Replit's official docs (docs.replit.com/billing/plans/starter-plan and docs.replit.com/help/pricing-and-plans: 'The Starter plan is free with no time limit').",
+   "currency": null
   },
   "details": {
    "what_it_does": "Replit is an online platform where you can build, run and publish apps in your browser. Its AI Agent can build an app from a plain-language description, then you can keep improving it by chatting.",
@@ -2232,8 +2498,14 @@
     "Serious apps still need security review"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2259,7 +2531,8 @@
    "pricing_url": "https://lovable.dev/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Verified by loading the page in a browser."
+   "verification_note": "Verified by loading the page in a browser.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Lovable builds web apps and websites from a chat conversation. Describe what you want and it writes the code, sets up hosting and lets you keep refining with more messages, no coding needed.",
@@ -2276,8 +2549,11 @@
     "Check security before handling customer data"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2303,7 +2579,8 @@
    "pricing_url": "https://bolt.new/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Bolt (bolt.new) lets you build websites and apps by chatting with AI in your browser. It writes the code, adds databases and hosts the site so you can share it.",
@@ -2320,8 +2597,10 @@
     "Generated apps need testing before real use"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2347,7 +2626,8 @@
    "pricing_url": "https://v0.app/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "v0 by Vercel builds websites, app interfaces and full apps from text prompts. You can edit visually, sync to GitHub and deploy to Vercel's hosting.",
@@ -2364,8 +2644,12 @@
     "More useful if you know some web development"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2391,7 +2675,8 @@
    "pricing_url": "https://fin.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Fin is Intercom's AI customer service agent. It answers customer questions across chat, email, phone and messaging apps using your help content, and hands tricky cases to human agents. It works with Intercom or other helpdesks like Salesforce and HubSpot.",
@@ -2408,8 +2693,11 @@
     "Answers are only as good as your help content"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2427,15 +2715,16 @@
    "answer-customer-questions"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Starter $24.17/month, Growth from $49.17/month, Plus from $300/month (annual billing). Lyro AI Agent standalone from $32.50/month. 7-day free trials.",
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free plan (50 billable conversations, 50 one-time Lyro AI conversations, 100 Flows visitors). Starter $24.17/month, Growth from $49.17/month, Plus from $300/month (annual billing). 7-day free trial on paid plans.",
    "starting_paid_price": "$24.17/month billed annually (Starter)",
    "pricing_url": "https://www.tidio.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page shows 'Start for free' but no explicit free plan in captured text; free_tier left unknown."
+   "verification_note": "Re-checked 2026-10-15 in a headless browser: pricing page shows a 'Free Plan' at $0/mo.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Tidio is a customer service platform with live chat, ticketing and Lyro, an AI agent that answers common customer questions. It is popular with small online shops.",
@@ -2452,8 +2741,12 @@
     "AI answers need good, up-to-date help content"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2479,7 +2772,8 @@
    "pricing_url": "https://www.zendesk.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Zendesk is a customer service platform. Its AI features include AI agents that resolve customer requests, a Copilot that assists human agents, and AI-powered knowledge bases and reporting. It is designed for support teams of all sizes.",
@@ -2496,8 +2790,13 @@
     "Can be complex to set up for small teams"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2524,7 +2823,8 @@
    "pricing_url": "https://www.hubspot.com/pricing/marketing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Exact billing terms for $7 vs $20 per seat were not clear from page text; verify before quoting."
+   "verification_note": "Exact billing terms for $7 vs $20 per seat were not clear from page text; verify before quoting.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Breeze is the set of AI features inside HubSpot, the customer relationship management (CRM) platform. It helps write marketing content, summarize records, research prospects and run AI agents for marketing, sales and service.",
@@ -2541,8 +2841,13 @@
     "Can lock you into the HubSpot ecosystem"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2568,7 +2873,8 @@
    "pricing_url": "https://www.adcreative.ai/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "/pricing returns 404; prices verified on the official homepage pricing section."
+   "verification_note": "/pricing returns 404; prices verified on the official homepage pricing section.",
+   "currency": null
   },
   "details": {
    "what_it_does": "AdCreative.ai generates ad images, banners, product videos and text for social and search ads, and scores designs for likely performance. It connects to ad platforms and includes competitor insights.",
@@ -2585,8 +2891,11 @@
     "Performance scores are predictions, not guarantees"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2604,15 +2913,16 @@
    "write-seo-content"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "AI Search Analytics 82 USD/month, Standard 99 USD/month, Pro 182 USD/month (billed yearly).",
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
+   "summary": "No free plan ('Start for Free' buttons lead to paid plans/trial). AI Search Analytics 82 USD/month, Standard 99 USD/month, Pro 182 USD/month (billed yearly).",
    "starting_paid_price": "82 USD/month billed yearly",
    "pricing_url": "https://surferseo.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page says 'Start for Free' (likely a trial); free_tier left unknown."
+   "verification_note": "Re-checked 2026-10-15 in a headless browser: only paid plans are listed; no $0 plan.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Surfer is an SEO and content tool that helps your website show up in Google and in AI answers from ChatGPT, Gemini and others. It tracks AI visibility and guides you to write and optimize content.",
@@ -2629,8 +2939,11 @@
     "Rankings are never guaranteed"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2656,7 +2969,8 @@
    "pricing_url": "https://buffer.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Buffer schedules posts to your social media accounts and includes an AI Assistant that helps write and repurpose posts. It also shows analytics and lets you manage comments.",
@@ -2673,8 +2987,13 @@
     "Advanced analytics require paid plans"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2692,15 +3011,16 @@
    "write-social-posts"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
+   "band": "paid",
+   "label": "Paid only",
+   "free_tier": false,
    "summary": "Starter $14/month billed annually or $19 monthly. Growth $199/month billed annually or $239 monthly.",
    "starting_paid_price": "$14/month billed annually (Starter)",
    "pricing_url": "https://www.lately.ai/pricing",
-   "verified": true,
+   "verified": false,
    "verified_on": "2026-10-15",
-   "verification_note": "'Try now for free' offered; no free plan listed."
+   "verification_note": "Re-checked 2026-10-15 in a headless browser: the official pricing page no longer shows any plan prices (it promotes a 'Kately' waitlist) and lists no free plan. Prices in the summary are from an earlier check and could not be re-confirmed on the official site.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Lately uses AI to turn long content, such as blogs, podcasts and videos, into many short social media posts in your brand voice, then schedules them and tracks results. It aims to save the time spent cutting up content by hand.",
@@ -2717,8 +3037,10 @@
     "Not a full social media management suite"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2744,7 +3066,8 @@
    "pricing_url": "https://web.meetcleo.com/products/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Cleo is an AI money app that chats with you about your spending, helps you budget, and offers credit-building and cash-advance features on paid plans. It is available in the US and UK.",
@@ -2761,8 +3084,12 @@
     "Requires linking your bank account"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2789,7 +3116,8 @@
    "pricing_url": "https://www.rocketmoney.com/learn/personal-finance/how-much-does-rocket-money-cost",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Official Rocket Money pricing explainer; /premium URL 404s."
+   "verification_note": "Official Rocket Money pricing explainer; /premium URL 404s.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Rocket Money is a personal finance app that tracks your spending, finds and helps cancel unwanted subscriptions, negotiates some bills and builds budgets. Premium+ adds Rowan, an AI financial assistant you can text.",
@@ -2806,8 +3134,12 @@
     "Best features need a subscription"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2833,7 +3165,8 @@
    "pricing_url": "https://docyt.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Pricing page is now hotel-focused."
+   "verification_note": "Pricing page is now hotel-focused.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Docyt is AI-powered accounting software that automates bookkeeping, reconciliation and month-end close. Its current pricing is focused on hotels and multi-location businesses, priced per property.",
@@ -2850,8 +3183,11 @@
     "Still needs an accountant's oversight"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2878,7 +3214,8 @@
    "pricing_url": "https://www.khanmigo.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Khanmigo is Khan Academy's AI tutor and teaching assistant. Instead of just giving answers, it guides learners step by step, and helps teachers plan lessons and create materials.",
@@ -2895,8 +3232,10 @@
     "AI tutors can still make mistakes"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2917,12 +3256,13 @@
    "band": "free-plan",
    "label": "Free plan available",
    "free_tier": true,
-   "summary": "Free version with full learning content and ads. Paid Super tier with a 1-week free trial; price not shown on the page.",
-   "starting_paid_price": null,
+   "summary": "Free version with full learning content and ads. Super (no ads, unlimited hearts) has a 1-week free trial; the US App Store lists Super Duolingo in-app prices from $9.99 to $119.99 (billing periods not labelled). Super Family covers up to 6 accounts.",
+   "starting_paid_price": "$9.99 (Super Duolingo, lowest US App Store in-app price; billing period not labelled)",
    "pricing_url": "https://www.duolingo.com/super",
    "verified": false,
    "verified_on": "2026-10-15",
-   "verification_note": "Price not displayed on the official page (shown in-app/at checkout)."
+   "verification_note": "duolingo.com/super shows no price to logged-out visitors. Prices from the official US App Store listing, which doesn't label monthly vs yearly; third-party sites report $12.99/month and $83.99/year in the US but these were not officially verified.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Duolingo is a game-like app for learning languages, plus math, music and chess. It uses AI to personalize lessons, and its paid tiers add features such as unlimited hearts, no ads and AI conversation practice.",
@@ -2939,8 +3279,12 @@
     "Paid price wasn't shown on the page we checked"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -2958,15 +3302,16 @@
    "study-for-a-test"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Could not verify.",
-   "starting_paid_price": null,
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free basic plan (flashcards and some study modes). Quizlet Plus is a paid subscription (monthly or annual) that unlocks Learn, Practice Tests, Study Guides and Expert Solutions; the US App Store lists Quizlet Plus in-app purchases at $9.99 and $44.99 (billing periods not labelled). Quizlet Plus for Teachers is a separate plan.",
+   "starting_paid_price": "$9.99 (Quizlet Plus, lowest US App Store in-app price; billing period not labelled)",
    "pricing_url": "https://quizlet.com/upgrade",
    "verified": false,
    "verified_on": "2026-10-15",
-   "verification_note": "Pricing page blocked automated access (403 / bot check)."
+   "verification_note": "quizlet.com/upgrade blocks automated access (bot check). Free tier confirmed by the official US App Store listing ('Free · In-App Purchases'); monthly/annual options from help.quizlet.com. Web checkout prices not verified.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Quizlet is a study app built around flashcards, quizzes and practice tests. AI features can turn your notes into flashcards and study guides.",
@@ -2983,8 +3328,12 @@
     "We could not load its pricing page to verify costs"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3011,7 +3360,8 @@
    "pricing_url": "https://notebooklm.google/plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Plans page now branded 'Gemini Notebook'; prices from gemini.google/subscriptions."
+   "verification_note": "Plans page now branded 'Gemini Notebook'; prices from gemini.google/subscriptions.",
+   "currency": null
   },
   "details": {
    "what_it_does": "NotebookLM (now also branded Gemini Notebook) is Google's AI research notebook. You upload your own sources, such as PDFs, documents, websites or videos, and it answers questions, makes summaries, slides and 'Audio Overviews' based only on those sources, with citations.",
@@ -3028,8 +3378,12 @@
     "Requires a Google account"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3056,7 +3410,8 @@
    "pricing_url": "https://elicit.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Elicit is an AI research assistant for academic papers. It searches over a hundred million papers, summarizes findings, extracts data into tables and supports systematic reviews.",
@@ -3073,8 +3428,10 @@
     "Focused on academic research, not general questions"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3100,7 +3457,8 @@
    "pricing_url": "https://consensus.app/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Consensus is an AI search engine for scientific research. Ask a question and it finds peer-reviewed studies and summarizes what they say, with citations.",
@@ -3117,8 +3475,10 @@
     "Not medical advice"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3144,7 +3504,8 @@
    "pricing_url": "https://scite.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Scite is a research tool that shows how scientific papers have been cited, whether later studies supported or contradicted them, and includes an AI assistant grounded in research literature. It helps you judge how well-supported a claim really is.",
@@ -3161,8 +3522,11 @@
     "Citation classifications can be imperfect"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "browser-extension"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3181,15 +3545,16 @@
    "improve-writing"
   ],
   "pricing": {
-   "band": "unknown",
-   "label": "Free plan unclear",
-   "free_tier": null,
-   "summary": "Pro plans shown to us in EUR: Individual €7.49/month, Team €24.99/user/month, Business €49.99/user/month (billed annually). 30-day free trial.",
-   "starting_paid_price": "€7.49/month billed annually (Individual)",
-   "pricing_url": "https://www.deepl.com/pro",
+   "band": "free-plan",
+   "label": "Free plan available",
+   "free_tier": true,
+   "summary": "Free translator (Free version). Pro, US prices billed annually: Individual $8.74/month, Team $28.74/user/month, Business $57.49/user/month; Enterprise custom. Monthly billing costs about 16% more. 30-day free trial on Individual and Team.",
+   "starting_paid_price": "$8.74/month billed annually (Individual)",
+   "pricing_url": "https://www.deepl.com/en/pro",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Page served regional (Germany, EUR) prices; USD prices not captured. Free translator exists on deepl.com but was not confirmed on the pricing page."
+   "verification_note": "Loaded 2026-10-15 in a headless browser and switched the page's region selector to 'United States (USD $)'. Plan comparison lists a 'Free version'.",
+   "currency": "USD"
   },
   "details": {
    "what_it_does": "DeepL is an AI translator known for natural, accurate translations. It translates text, whole documents and web pages, and offers a writing assistant (DeepL Write) and voice translation.",
@@ -3206,8 +3571,16 @@
     "Always have a fluent speaker check important translations"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "browser-extension",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3233,7 +3606,8 @@
    "pricing_url": "https://www.framer.com/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Framer is a website builder that lets you design and publish professional websites without code. AI features can generate page layouts, translate and help write content.",
@@ -3250,8 +3624,12 @@
     "Design-first tools have a learning curve"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3277,7 +3655,8 @@
    "pricing_url": "https://looka.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Verified by loading the page in a browser."
+   "verification_note": "Verified by loading the page in a browser.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Looka uses AI to design logos and complete brand kits: business cards, social media profiles, email signatures and more. You choose your style and it suggests logo options you can customize.",
@@ -3293,8 +3672,10 @@
     "Logos may look similar to other AI-made designs"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3320,7 +3701,8 @@
    "pricing_url": "https://www.figma.com/pricing/",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Figma is a collaborative design tool for apps, websites, slides and graphics. Its AI features help generate designs, rename layers, write text and prototype faster, and multiple people can work on one file at once.",
@@ -3337,8 +3719,15 @@
     "AI credits are limited per plan"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "intermediate",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3364,7 +3753,8 @@
    "pricing_url": "https://character.ai/subscribe",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Monthly price not visible in the page text we captured."
+   "verification_note": "Monthly price not visible in the page text we captured.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Character.AI lets you chat with AI 'characters' (fictional, historical or user-created personalities) for fun, storytelling and role-play. You can also create your own characters.",
@@ -3381,8 +3771,12 @@
     "Easy to spend a lot of time on"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3405,10 +3799,11 @@
    "free_tier": true,
    "summary": "Free for most usage. Subscriptions start at $4.99/month (per Poe's official About and Help pages).",
    "starting_paid_price": "$4.99/month",
-   "pricing_url": "https://poe.com/about",
-   "verified": false,
+   "pricing_url": "https://help.poe.com/hc/en-us/articles/19945140063636-Poe-Purchases-FAQs",
+   "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "Poe pages redirect to login for our fetchers; price taken from official poe.com/about and help.poe.com text in a search index, not directly loaded."
+   "verification_note": "Confirmed 2026-10-15 on Poe's official Help Center ('Poe Purchases FAQs'): 'Poe offers access to all major models and more starting at $4.99/month.' poe.com pages redirect to login for automated fetchers.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Poe, from Quora, gives you access to many AI models (from OpenAI, Anthropic, Google, xAI and others) in one app, plus thousands of custom bots. You can chat privately or in group chats.",
@@ -3425,8 +3820,15 @@
     "We could not load its pricing page directly"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac",
+   "api"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3452,7 +3854,8 @@
    "pricing_url": "https://get.mem.ai/pricing",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": null
+   "verification_note": null,
+   "currency": null
   },
   "details": {
    "what_it_does": "Mem is an AI note-taking app. You capture notes, voice memos and messages, and its Mem Agent organizes them, tracks tasks and projects, and answers questions about what you've saved.",
@@ -3469,8 +3872,11 @@
     "Fewer integrations than bigger note apps"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false
@@ -3497,7 +3903,8 @@
    "pricing_url": "https://superhuman.com/plans",
    "verified": true,
    "verified_on": "2026-10-15",
-   "verification_note": "free_tier=false refers to the Mail app; the wider suite has a free tier."
+   "verification_note": "free_tier=false refers to the Mail app; the wider suite has a free tier.",
+   "currency": null
   },
   "details": {
    "what_it_does": "Superhuman began as a fast, AI-powered email app and is now a suite that includes Superhuman Mail, Grammarly, Docs and an AI agent called Go. Superhuman Mail helps you write replies with AI, sort your inbox and save time on email.",
@@ -3514,8 +3921,14 @@
     "Takes time to learn the shortcuts"
    ]
   },
-  "skill_level": null,
-  "platforms": null,
+  "skill_level": "beginner",
+  "platforms": [
+   "web",
+   "ios",
+   "android",
+   "windows",
+   "mac"
+  ],
   "privacy": null,
   "last_verified": null,
   "affiliate": false

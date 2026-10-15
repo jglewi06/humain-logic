@@ -3,12 +3,14 @@ slug: ai-for-small-business
 title: "AI for small business: practical first steps"
 summary: "Where AI can genuinely save a small business time and money, which affordable tools to try first, and how to start without big risks or big budgets."
 updated: 2026-10-15
+published: 2026-10-15
+author: HumAIn Logic editorial team
 ---
 
 
 If you run a small business, you probably wear many hats: owner, marketer, bookkeeper, customer service team and more. AI tools won't run your business for you, but used well, they can take some of the repetitive work off your plate, so you can spend more time on customers and the parts of the job you enjoy.
 
-The U.S. Small Business Administration puts it simply: small businesses can use AI tools to find solutions for all kinds of issues, as long as they also understand the risks ([SBA](https://www.sba.gov/business-guide/manage-your-business/ai-small-business)). This guide walks you through both.
+The U.S. Small Business Administration puts it simply: small businesses can use AI tools to find solutions for all kinds of issues, as long as they also understand the risks ([SBA](https://www.sba.gov/counseling/manage-your-business/#ai-for-small-business)). This guide walks you through both.
 
 ## Start with your time, not the technology
 
@@ -74,7 +76,7 @@ AI brings real benefits, but also some risks worth managing:
 
 ## Where to learn more (free)
 
-- [SBA: AI for small business](https://www.sba.gov/business-guide/manage-your-business/ai-small-business)
+- [SBA: AI for small business](https://www.sba.gov/counseling/manage-your-business/#ai-for-small-business)
 - [Google AI Essentials](https://grow.google/ai-essentials/): a short beginner course
 - [HubSpot Academy](https://academy.hubspot.com/): free marketing and sales courses
 - [SCORE](https://www.score.org/): free mentoring for small business owners
@@ -86,8 +88,8 @@ You don't need a big budget or a tech team. Start small, keep a human in charge,
 ---
 
 **Sources**
-- U.S. Small Business Administration, AI for small business. https://www.sba.gov/business-guide/manage-your-business/ai-small-business
-- Brynjolfsson, E., Li, D. & Raymond, L., "Generative AI at Work," NBER Working Paper 31161. https://www.nber.org/papers/w31161
-- FBI Internet Crime Complaint Center, PSA241203 (Dec. 3, 2024), "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud." https://www.ic3.gov/PSA/2024/PSA241203
-- CISA, Secure Our World. https://www.cisa.gov/secure-our-world
+- U.S. Small Business Administration, "Manage your business: AI for small businesses" (undated). https://www.sba.gov/counseling/manage-your-business/#ai-for-small-business (accessed 2026-10-15)
+- Brynjolfsson, E., Li, D. & Raymond, L. (2023), "Generative AI at Work," NBER Working Paper 31161. https://www.nber.org/papers/w31161 (accessed 2026-10-15)
+- FBI Internet Crime Complaint Center, PSA241203 (Dec. 3, 2024), "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud." https://www.ic3.gov/PSA/2024/PSA241203 (accessed 2026-10-15)
+- CISA, "Secure Our World" campaign page (undated). https://www.cisa.gov/secure-our-world (accessed 2026-10-15)
 - HumAIn Logic tool pricing checks, 2026-10-15 (see tool-details.json).

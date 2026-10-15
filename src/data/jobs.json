@@ -56,10 +56,12 @@
      "year": 2025
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Data for Occupations Not Covered in Detail (Data entry keyers, SOC 43-9021), Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/about/data-for-occupations-not-covered-in-detail.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "high",
@@ -511,10 +513,12 @@
      "year": 2025
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Tellers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/office-and-administrative-support/tellers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "high",
@@ -593,10 +597,12 @@
      "year": 2025
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Cashiers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/sales/cashiers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "high",
@@ -769,10 +775,20 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Bookkeeping, Accounting, and Auditing Clerks, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
+    },
+    {
+     "title": "Financial Clerks (includes payroll and timekeeping clerks), Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/office-and-administrative-support/financial-clerks.htm",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "high",
@@ -945,10 +961,12 @@
      "year": 2013
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Interpreters and Translators, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/media-and-communication/interpreters-and-translators.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "medium",
@@ -1055,10 +1073,11 @@
      "year": 2026
     },
     {
-     "title": "Labor Automation Forecasting Hub",
+     "title": "Labor Automation Forecasting Hub (no Paralegals page; overview used)",
      "url": "https://www.metaculus.com/labor-hub/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     }
    ],
    "help": {
@@ -1221,10 +1240,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Heavy and Tractor-Trailer Truck Drivers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/transportation-and-material-moving/heavy-and-tractor-trailer-truck-drivers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "low",
@@ -1309,10 +1330,20 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Delivery Truck Drivers and Driver/Sales Workers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/transportation-and-material-moving/delivery-truck-drivers-and-driver-sales-workers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
+    },
+    {
+     "title": "Taxi Drivers, Shuttle Drivers, and Chauffeurs, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/transportation-and-material-moving/taxi-drivers-and-chauffeurs.htm",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "low",
@@ -1394,10 +1425,20 @@
      "year": 2013
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Food Preparation Workers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/food-preparation-and-serving/food-preparation-workers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
+    },
+    {
+     "title": "Cooks, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/food-preparation-and-serving/cooks.htm",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "low",
@@ -1495,10 +1536,11 @@
    "employment_pressure_summary": "Physical warehouse work has low AI exposure; forecasters expect robots to matter more after 2030 than before.",
    "employment_pressure_sources": [
     {
-     "title": "Labor Automation Forecasting Hub",
-     "url": "https://www.metaculus.com/labor-hub/",
+     "title": "Laborers and Movers: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/laborers-and-movers/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     },
     {
      "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
@@ -1576,20 +1618,23 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Janitors and Building Cleaners, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/building-and-grounds-cleaning/janitors-and-building-cleaners.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "low",
    "employment_pressure_summary": "Cleaning work is physical and has little AI exposure, so hiring is not expected to drop much by 2030.",
    "employment_pressure_sources": [
     {
-     "title": "Labor Automation Forecasting Hub",
-     "url": "https://www.metaculus.com/labor-hub/",
+     "title": "Janitors and Cleaners: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/janitors-and-cleaners/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     },
     {
      "title": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
@@ -1846,10 +1891,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Market Research Analysts, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/business-and-financial/market-research-analysts.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "medium",
@@ -1934,10 +1981,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Software Developers, Quality Assurance Analysts, and Testers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "medium",
@@ -1953,7 +2002,8 @@
      "title": "Software Developers: Labor Automation Forecasting Hub",
      "url": "https://www.metaculus.com/labor-hub/jobs/software-developers/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     },
     {
      "title": "Future of Jobs Report 2025",
@@ -2031,10 +2081,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Personal Financial Advisors, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/business-and-financial/personal-financial-advisors.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "low",
@@ -2135,10 +2187,11 @@
      "year": 2026
     },
     {
-     "title": "Labor Automation Forecasting Hub",
-     "url": "https://www.metaculus.com/labor-hub/",
+     "title": "Lawyers and Law Clerks: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/lawyers-and-law-clerks/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     }
    ],
    "help": {
@@ -2204,10 +2257,28 @@
      "year": 2024
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Kindergarten and Elementary School Teachers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/education-training-and-library/kindergarten-and-elementary-school-teachers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
+    },
+    {
+     "title": "Middle School Teachers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/education-training-and-library/middle-school-teachers.htm",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
+    },
+    {
+     "title": "High School Teachers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/education-training-and-library/high-school-teachers.htm",
+     "publisher": "U.S. Bureau of Labor Statistics",
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "growth",
@@ -2220,10 +2291,11 @@
      "year": 2025
     },
     {
-     "title": "Labor Automation Forecasting Hub",
-     "url": "https://www.metaculus.com/labor-hub/",
+     "title": "K-12 Teachers: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/k12-teachers/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     }
    ],
    "help": {
@@ -2295,10 +2367,12 @@
      "year": 2024
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Registered Nurses, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/healthcare/registered-nurses.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "growth",
@@ -2377,10 +2451,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Electricians, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/construction-and-extraction/electricians.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "growth",
@@ -2462,10 +2538,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Plumbers, Pipefitters, and Steamfitters, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/construction-and-extraction/plumbers-pipefitters-and-steamfitters.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "growth",
@@ -2550,10 +2628,12 @@
      "year": 2023
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Construction Laborers and Helpers, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/construction-and-extraction/construction-laborers-and-helpers.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "growth",
@@ -2566,10 +2646,11 @@
      "year": 2025
     },
     {
-     "title": "Labor Automation Forecasting Hub",
-     "url": "https://www.metaculus.com/labor-hub/",
+     "title": "Construction Workers: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/construction-workers/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     }
    ],
    "help": {
@@ -2641,10 +2722,12 @@
      "year": 2013
     },
     {
-     "title": "Occupational Outlook Handbook",
-     "url": "https://www.bls.gov/ooh/",
+     "title": "Home Health and Personal Care Aides, Occupational Outlook Handbook",
+     "url": "https://www.bls.gov/ooh/healthcare/home-health-aides-and-personal-care-aides.htm",
      "publisher": "U.S. Bureau of Labor Statistics",
-     "year": 2025
+     "year": 2025,
+     "edition": "2025–35 projections",
+     "accessed": "2026-10-15"
     }
    ],
    "employment_pressure_by_2030": "growth",
@@ -2739,10 +2822,11 @@
      "year": 2025
     },
     {
-     "title": "Labor Automation Forecasting Hub",
-     "url": "https://www.metaculus.com/labor-hub/",
+     "title": "Physicians: Labor Automation Forecasting Hub",
+     "url": "https://www.metaculus.com/labor-hub/jobs/physicians/",
      "publisher": "Metaculus",
-     "year": 2026
+     "year": 2026,
+     "accessed": "2026-10-15"
     }
    ],
    "help": {

@@ -30,7 +30,7 @@ function pricingFor(s, t) {
   const band = p.free_tier === true ? (t.pricing_tier === 'free' && !p.starting_paid_price ? 'free' : 'free-plan') : p.free_tier === false ? 'paid' : 'unknown';
   const label = { free: 'Free', 'free-plan': 'Free plan available', paid: 'Paid only', unknown: 'Free plan unclear' }[band];
   return { band, label, free_tier: p.free_tier, summary: p.summary, starting_paid_price: p.starting_paid_price, pricing_url: p.pricing_url,
-    verified: p.verified, verified_on: p.verified_on, verification_note: p.verification_note };
+    verified: p.verified, verified_on: p.verified_on, verification_note: p.verification_note, currency: p.currency ?? null };
 }
 
 // ---- Tools ----
@@ -47,7 +47,7 @@ if (fs.existsSync(path.join(R, 'tools.json'))) {
       pricing: pricingFor(s, t),
       details: DETAILS[s] ? { what_it_does: DETAILS[s].what_it_does, who_its_for: DETAILS[s].who_its_for, pros: DETAILS[s].pros, cons: DETAILS[s].cons.filter(c => !/trademark/i.test(c)) /* owner: no trademark items for now */ } : null,
       // Fields the UX spec wants but research does not provide yet (left null on purpose):
-      skill_level: null, platforms: null, privacy: null, last_verified: null, affiliate: false,
+      skill_level: DETAILS[s]?.skill_level ?? null, platforms: DETAILS[s]?.platforms ?? null, privacy: null, last_verified: null, affiliate: false,
     };
   });
   // Tasks taxonomy from the tools' task phrases

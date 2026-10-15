@@ -3,6 +3,8 @@ slug: what-is-ai
 title: "What is AI? A plain-language introduction"
 summary: "What artificial intelligence actually is, how today's AI chat tools work, what they're good and bad at, and why you don't need to be technical to use them."
 updated: 2026-10-15
+published: 2026-10-15
+author: HumAIn Logic editorial team
 ---
 
 
@@ -92,7 +94,7 @@ AI is a powerful tool, not magic and not a mind. Think of it like a very fast, v
 ---
 
 **Sources**
-- IBM, "What is artificial intelligence (AI)?" https://www.ibm.com/think/topics/artificial-intelligence
-- Noy, S. & Zhang, W. (2023), "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence," MIT. https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1.pdf
-- NIST, AI Risk Management Framework. https://www.nist.gov/itl/ai-risk-management-framework
-- Stanford HAI, AI Index Report 2025. https://hai.stanford.edu/ai-index/2025-ai-index-report
+- IBM, "What Is Artificial Intelligence (AI)?" (IBM Think, undated). https://www.ibm.com/think/topics/artificial-intelligence (accessed 2026-10-15)
+- Noy, S. & Zhang, W. (2023), "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence," MIT. https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1.pdf (accessed 2026-10-15)
+- NIST, "AI Risk Management Framework" (AI RMF 1.0 released Jan. 2023). https://www.nist.gov/itl/ai-risk-management-framework (accessed 2026-10-15)
+- Stanford HAI, "The 2025 AI Index Report". https://hai.stanford.edu/ai-index/2025-ai-index-report (accessed 2026-10-15)

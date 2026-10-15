@@ -3,6 +3,8 @@ slug: ai-and-your-job
 title: "AI and your job: how to prepare with confidence"
 summary: "What research really says about AI and jobs, why most roles will change rather than vanish, and practical steps to build skills and stay ready."
 updated: 2026-10-15
+published: 2026-10-15
+author: HumAIn Logic editorial team
 ---
 
 
@@ -13,9 +15,9 @@ It's natural to wonder what AI means for your job. Headlines swing between "AI w
 Let's look at what major organizations have found:
 
 - **Most jobs will change, not disappear.** The International Labour Organization (ILO) found that generative AI is more likely to *augment* jobs, taking over some tasks while leaving others, than to fully automate them. Clerical work was the most exposed category ([ILO, 2023](https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and)).
-- **Many jobs will feel some effect.** The International Monetary Fund estimated that almost 40% of jobs worldwide are exposed to AI, around 60% in advanced economies. Some will benefit from AI help, others may see tasks replaced ([IMF](https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity)).
-- **New jobs are being created, too.** The World Economic Forum's *Future of Jobs Report 2025* projects that between 2025 and 2030, about 170 million jobs will be created and 92 million displaced, a net gain of 78 million jobs worldwide. It also expects 39% of workers' core skills to change by 2030 ([WEF](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)).
-- **AI can help people do their jobs better.** In a study of customer support agents, those using an AI assistant were nearly 14% more productive, and newer workers improved the most ([NBER](https://www.nber.org/papers/w31161)).
+- **Many jobs will feel some effect.** The International Monetary Fund estimated that almost 40% of jobs worldwide are exposed to AI, around 60% in advanced economies. Some will benefit from AI help, others may see tasks replaced ([IMF, 2024](https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity)).
+- **New jobs are being created, too.** The World Economic Forum's *Future of Jobs Report 2025* projects that between 2025 and 2030, about 170 million jobs will be created and 92 million displaced, a net gain of 78 million jobs worldwide. It also expects 39% of workers' core skills to change by 2030 ([WEF, 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)).
+- **AI can help people do their jobs better.** In a study of customer support agents, those using an AI assistant were nearly 14% more productive, and newer workers improved the most ([NBER, 2023](https://www.nber.org/papers/w31161)).
 
 **The big picture:** change is coming, but gradually, and unevenly. People who learn to work *with* AI are generally better placed than those who avoid it.
 
@@ -37,7 +39,7 @@ The best way to reduce worry is hands-on experience. Use a free AI assistant for
 
 ### 2. Build "human" strengths
 
-Skills like communication, problem-solving, teamwork, creativity, and emotional intelligence remain valuable because they're hard to automate. The WEF lists analytical thinking, resilience, flexibility and curiosity among the skills employers value most ([WEF](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)).
+Skills like communication, problem-solving, teamwork, creativity, and emotional intelligence remain valuable because they're hard to automate. The WEF lists analytical thinking, resilience, flexibility and curiosity among the skills employers value most ([WEF, 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/)).
 
 ### 3. Learn the basics of AI (free)
 
@@ -83,7 +85,7 @@ AI will change many jobs, but people who stay curious, build human strengths and
 ---
 
 **Sources**
-- International Labour Organization (2023), "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality." https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and
-- International Monetary Fund, K. Georgieva, "AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity" (Jan. 14, 2024). https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity
-- World Economic Forum, *The Future of Jobs Report 2025*. https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/
-- Brynjolfsson, E., Li, D. & Raymond, L., "Generative AI at Work," NBER Working Paper 31161. https://www.nber.org/papers/w31161
+- International Labour Organization (2023), "Generative AI and Jobs: A global analysis of potential effects on job quantity and quality." https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and (accessed 2026-10-15)
+- International Monetary Fund, K. Georgieva, "AI Will Transform the Global Economy. Let's Make Sure It Benefits Humanity" (Jan. 14, 2024). https://www.imf.org/en/blogs/articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity (accessed 2026-10-15)
+- World Economic Forum (2025), *The Future of Jobs Report 2025*: Digest. https://www.weforum.org/publications/the-future-of-jobs-report-2025/digest/ (accessed 2026-10-15)
+- Brynjolfsson, E., Li, D. & Raymond, L. (2023), "Generative AI at Work," NBER Working Paper 31161. https://www.nber.org/papers/w31161 (accessed 2026-10-15)

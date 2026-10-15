@@ -13,7 +13,7 @@ const others = meta.filter(g => g.slug !== entry.id).slice(0, 3);
 const updated = entry.data.updated.toISOString().slice(0, 10);
 const published = entry.data.published?.toISOString().slice(0, 10);
 const authorName = entry.data.author ?? 'HumAIn Logic editorial team';
-const authorLd = entry.data.author ? { '@type': 'Person', name: entry.data.author } : { '@type': 'Organization', name: 'HumAIn Logic editorial team', url: `${SITE.url}/about`, parentOrganization: { '@id': `${SITE.url}/#org` } };
+const authorLd = entry.data.author && !/team|staff|editor/i.test(entry.data.author) ? { '@type': 'Person', name: entry.data.author } : { '@type': 'Organization', name: 'HumAIn Logic editorial team', url: `${SITE.url}/about`, parentOrganization: { '@id': `${SITE.url}/#org` } };
 const ld = [
   { '@type': 'Article', headline: entry.data.title, description: entry.data.summary, ...(published ? { datePublished: published } : {}), dateModified: updated, author: authorLd, publisher: { '@id': `${SITE.url}/#org` }, mainEntityOfPage: `${SITE.url}/guides/${entry.id}`, ...(m?.sources ? { citation: m.sources.map(s => ({ '@type': 'CreativeWork', url: s.url, ...(s.title ? { name: s.title } : {}), ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}) })) } : {}) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE.url}/guides` }, { '@type': 'ListItem', position: 3, name: entry.data.title, item: `${SITE.url}/guides/${entry.id}` }] },
