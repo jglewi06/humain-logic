@@ -11,11 +11,11 @@ export const SITE = {
 /** mailto link with a prefilled subject (and optional body) */
 export const mailto = (subject: string, body = '') => `mailto:hello@humainlogic.com?subject=${encodeURIComponent(subject)}${body ? `&body=${encodeURIComponent(body)}` : ''}`;
 export const NAV = [
+  { href: '/learn', label: 'Learn about AI', match: ['/learn'] },
+  { href: '/guides', label: 'Guides', match: ['/guides'] },
   { href: '/tools', label: 'Find a tool', match: ['/tools', '/search', '/tasks'] },
   { href: '/news', label: 'AI news', match: ['/news'] },
   { href: '/tracker', label: 'Job tracker', match: ['/tracker'] },
-  { href: '/guides', label: 'Guides', match: ['/guides'] },
-  { href: '/learn', label: 'Learn about AI', match: ['/learn'] },
 ];
 export const abs = (p: string) => new URL(p, SITE.url).href.replace(/\/$/, p === '/' ? '/' : '');
 export const OUTLOOK = {
