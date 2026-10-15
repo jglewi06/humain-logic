@@ -636,3 +636,5 @@ html,body{overflow-x:clip}
   .news-card.has-media .news-media{width:96px;grid-row:1 / span 2}
   .news-card.has-media > p:not(.news-media),.news-card.has-media > .meta:not(.news-media),.news-card.has-media > .ai-note:not(.news-media){grid-column:1 / -1}
 }
+#count:focus{outline:none}
+#count:focus-visible{outline:2px solid var(--color-teal);outline-offset:4px;border-radius:6px}
