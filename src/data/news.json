@@ -1,9 +1,35 @@
 {
- "updated": "2026-10-16T07:02:20.107Z",
- "failed_feeds": [
-  "Google DeepMind Blog"
- ],
+ "updated": "2026-10-16T13:01:22.337Z",
+ "failed_feeds": [],
  "items": [
+  {
+   "id": "replit-s-ceo-says-the-future-of-work-is-the-self-driving-company",
+   "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+   "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-16T12:55:09.000Z",
+   "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-",
+   "title": "AI-Generated Hot Girls Are Ripping Off Comedians to Boost Their Horny Content",
+   "link": "https://www.wired.com/story/ai-generated-hot-girls-are-ripping-off-comedians-to-boost-their-horny-content/",
+   "source": "Wired – AI",
+   "date": "2026-10-16T11:00:00.000Z",
+   "summary": "A network of AI-generated models is using comics’ material to funnel views to their OnlyFans and Fanvue accounts—and there’s not much comedians can do about it.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6ad165ce87819d1c9639eaa6/master/pass/Business_ComediansAreGettingRippedOffByAIHotGirls-ezgif.com-video-to-gif-converter%20(2).gif",
+   "also": []
+  },
   {
    "id": "the-world-won-t-wait-evaluating-and-teaching-agents-under-a-live-clock",
    "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
@@ -397,6 +423,20 @@
    "also": []
   },
   {
+   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-15T16:08:03.000Z",
+   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "trust-in-depth-giving-agents-more-autonomy-without-losing-control",
    "title": "Trust in Depth: Giving agents more autonomy without losing control",
    "link": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
@@ -431,20 +471,6 @@
    "source": "The Verge – AI",
    "date": "2026-10-15T14:30:00.000Z",
    "summary": "Microsoft and Nvidia held a launch party for the first wave of RTX Spark laptops last week in San Francisco, where a new wave of AI PCs took center stage amid a packed crowd and a lively hands-on area. A day after the media event, I was…",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "google-s-universal-cart-shopping-tool-launches-in-the-us",
-   "title": "Google’s Universal Cart shopping tool launches in the US",
-   "link": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-15T14:29:33.000Z",
-   "summary": "The new shopping tool is available in the U.S. across Google Search and the Gemini app.",
    "category": "tools-launches",
    "ai_summary": false,
    "editor_reviewed": false,
@@ -789,6 +815,20 @@
    "also": []
   },
   {
+   "id": "google-deepmind-and-singapore-government-collaborate-to-build-fine-tun",
+   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+   "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-14T02:00:14.000Z",
+   "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": "https://lh3.googleusercontent.com/5PC4h7MzjC0ojOxiK-nPcRz0b6kUybKnCBjLL3nsb9T9qt7-2ciORJPnrObeFaYbAMqPxIhH4Wq9HD-U73lCivpFBcK8gABvhXXDo2lzUUSk9olsZQ=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "the-eu-s-next-chapter-in-ai-is-agentic",
    "title": "The EU’s next chapter in AI is agentic",
    "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
@@ -859,17 +899,17 @@
    "also": []
   },
   {
-   "id": "openai-and-anthropic-tell-british-lawmakers-regulate-us",
-   "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
-   "link": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
-   "source": "Wired – AI",
-   "date": "2026-10-13T19:35:29.000Z",
-   "summary": "AI leaders joined whistleblowers and security leaders at a sweeping parliamentary session, while a few hundred meters away Britain’s spy chief warned AI could be used to create new bioweapons.",
-   "category": "rules-safety",
+   "id": "developing-gemini-4-argon-responsibly-and-safely",
+   "title": "Developing Gemini 4 Argon responsibly and safely",
+   "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-13T19:43:07.000Z",
+   "summary": "",
+   "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
-   "topic": "safety",
-   "image_url_source": "https://media.wired.com/photos/6ace48fd005dc85af95e36ae/master/pass/101326-Big%20Four%20UK%20parliment.jpg",
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   },
   {
@@ -901,18 +941,37 @@
    "also": []
   },
   {
-   "id": "gemini-4-argon-built-to-solve-your-hardest-problems",
-   "title": "Gemini 4 Argon: Built to solve your hardest problems",
-   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-   "source": "Google – AI blog",
-   "date": "2026-10-13T16:00:00.000Z",
-   "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
-   "category": "business",
+   "id": "gemini-4-argon-for-robotics",
+   "title": "Gemini 4 Argon for Robotics",
+   "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-13T16:01:58.000Z",
+   "summary": "",
+   "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp",
+   "topic": "research",
+   "image_url_source": null,
    "also": []
+  },
+  {
+   "id": "gemini-4-argon-built-to-solve-your-hardest-problems",
+   "title": "Gemini 4 Argon: Built to solve your hardest problems",
+   "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-13T16:01:52.000Z",
+   "summary": "",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": [
+    {
+     "source": "Google – AI blog",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    }
+   ]
   },
   {
    "id": "all-systems-go-global-pc-app-ecosystem-ready-for-nvidia-rtx-spark",
@@ -1061,62 +1120,6 @@
    "source": "MIT Technology Review – AI",
    "date": "2026-10-09T09:00:00.000Z",
    "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience.…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "roundtables-a-conversation-with-the-creator-of-ai-designed-viruses",
-   "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-   "link": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-09T00:08:24.000Z",
-   "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "3-questions-what-is-the-best-path-forward-for-ai-in-academia",
-   "title": "3 Questions: What is the best path forward for AI in academia?",
-   "link": "https://news.mit.edu/2026/3-questions-best-path-forward-for-ai-academia-1008",
-   "source": "MIT News – AI",
-   "date": "2026-10-08T21:25:00.000Z",
-   "summary": "MIT Statistics and Data Science Center Director Alexander (Sasha) Rakhlin shares important considerations for departments and institutions.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/ai-and-academia-00_0.jpg?itok=4Oa1HIoD",
-   "also": []
-  },
-  {
-   "id": "ai-breakthroughs-in-robotics-won-t-change-your-life-any-time-soon",
-   "title": "AI breakthroughs in robotics won’t change your life any time soon",
-   "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-08T09:00:00.000Z",
-   "summary": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live. A robot shaped like a human—white…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "building-a-safer-path-to-autonomous-industrial-ai",
-   "title": "Building a safer path to autonomous industrial AI",
-   "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-08T08:17:32.000Z",
-   "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across…",
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
