@@ -1,7 +1,51 @@
 {
- "updated": "2026-10-17T00:58:39.404Z",
- "failed_feeds": [],
+ "updated": "2026-10-17T06:57:02.125Z",
+ "failed_feeds": [
+  "Google DeepMind Blog"
+ ],
  "items": [
+  {
+   "id": "the-world-won-t-wait-evaluating-and-teaching-agents-under-a-live-clock",
+   "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+   "link": "https://arxiv.org/abs/2610.20665",
+   "source": "arXiv cs.AI",
+   "date": "2026-10-17T04:00:00.000Z",
+   "summary": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "evaluating-model-capabilities-after-benchmark-saturation",
+   "title": "Evaluating Model Capabilities After Benchmark Saturation",
+   "link": "https://arxiv.org/abs/2610.20667",
+   "source": "arXiv cs.AI",
+   "date": "2026-10-17T04:00:00.000Z",
+   "summary": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between them, and with it its…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "value-informed-schedule-trimming-for-accelerated-sequential-monte-carl",
+   "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
+   "link": "https://arxiv.org/abs/2610.20669",
+   "source": "arXiv cs.AI",
+   "date": "2026-10-17T04:00:00.000Z",
+   "summary": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "replit-is-no-longer-working-with-anthropic-ceo-says",
    "title": "Replit is no longer working with Anthropic, CEO says",
@@ -283,90 +327,6 @@
    "also": []
   },
   {
-   "id": "the-world-won-t-wait-evaluating-and-teaching-agents-under-a-live-clock",
-   "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
-   "link": "https://arxiv.org/abs/2610.20665",
-   "source": "arXiv cs.AI",
-   "date": "2026-10-16T04:00:00.000Z",
-   "summary": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "evaluating-model-capabilities-after-benchmark-saturation",
-   "title": "Evaluating Model Capabilities After Benchmark Saturation",
-   "link": "https://arxiv.org/abs/2610.20667",
-   "source": "arXiv cs.AI",
-   "date": "2026-10-16T04:00:00.000Z",
-   "summary": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between them, and with it its…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "value-informed-schedule-trimming-for-accelerated-sequential-monte-carl",
-   "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
-   "link": "https://arxiv.org/abs/2610.20669",
-   "source": "arXiv cs.AI",
-   "date": "2026-10-16T04:00:00.000Z",
-   "summary": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "flowbudget-training-free-sampling-budget-estimation-for-flow-matching-",
-   "title": "FlowBudget: Training-Free Sampling-Budget Estimation for Flow Matching Models",
-   "link": "https://arxiv.org/abs/2610.20636",
-   "source": "arXiv cs.LG",
-   "date": "2026-10-16T04:00:00.000Z",
-   "summary": "arXiv:2610.20636v1 Announce Type: new Abstract: Sampling from continuous flow-based generators such as flow matching models requires numerical ODE or SDE integration, making inference cost depend on the number of function evaluations…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "expanding-attention-a-taylor-series-route-to-linear-time-transformers-",
-   "title": "Expanding Attention: A Taylor-Series Route to Linear-Time Transformers with a Fixed Number of Recurrent States",
-   "link": "https://arxiv.org/abs/2610.20637",
-   "source": "arXiv cs.LG",
-   "date": "2026-10-16T04:00:00.000Z",
-   "summary": "arXiv:2610.20637v1 Announce Type: new Abstract: We expand the exponential kernel of attention into a truncated Taylor series of $n$ terms and factorize each term into a tensor-power inner product, which collapses the causal history into…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "feature-elicitation-for-sae-steering-of-deceptive-behaviour-in-small-l",
-   "title": "Feature Elicitation for SAE Steering of Deceptive Behaviour in Small LLMs",
-   "link": "https://arxiv.org/abs/2610.20638",
-   "source": "arXiv cs.LG",
-   "date": "2026-10-16T04:00:00.000Z",
-   "summary": "arXiv:2610.20638v1 Announce Type: new Abstract: Research on deceptive alignment is becoming increasingly urgent as frontier-model capabilities advance and their risk of causing catastrophic harm increases. Alignment faking is a form of…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "scaling-indic-pretraining-2-8-trillion-tokens-and-an-open-data-generat",
    "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
    "link": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
@@ -387,6 +347,20 @@
    "source": "OpenAI News",
    "date": "2026-10-16T00:00:00.000Z",
    "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "benefit-street-partners-answers-questions-faster-with-codex",
+   "title": "Benefit Street Partners answers questions faster with Codex",
+   "link": "https://openai.com/index/benefit-street-partners",
+   "source": "OpenAI News",
+   "date": "2026-10-16T00:00:00.000Z",
+   "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.",
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
@@ -602,20 +576,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/press-nvidia-rtx-spark-launch-events-1920x1080-1.png",
-   "also": []
-  },
-  {
-   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
-   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-15T16:08:03.000Z",
-   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -913,20 +873,6 @@
    "also": []
   },
   {
-   "id": "how-third-moment-research-runs-10-000-agents-for-36-hours",
-   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-   "link": "https://openai.com/index/third-moment-research",
-   "source": "OpenAI News",
-   "date": "2026-10-14T07:00:00.000Z",
-   "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "european-cities-deploy-nvidia-powered-ai-agents-to-run-smarter-urban-o",
    "title": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
    "link": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
@@ -938,20 +884,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gtc-berlin-smart-cities-blog.jpg",
-   "also": []
-  },
-  {
-   "id": "google-deepmind-and-singapore-government-collaborate-to-build-fine-tun",
-   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-   "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-14T02:00:14.000Z",
-   "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-   "category": "rules-safety",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "safety",
-   "image_url_source": "https://lh3.googleusercontent.com/5PC4h7MzjC0ojOxiK-nPcRz0b6kUybKnCBjLL3nsb9T9qt7-2ciORJPnrObeFaYbAMqPxIhH4Wq9HD-U73lCivpFBcK8gABvhXXDo2lzUUSk9olsZQ=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -983,20 +915,6 @@
    "also": []
   },
   {
-   "id": "developing-gemini-4-argon-responsibly-and-safely",
-   "title": "Developing Gemini 4 Argon responsibly and safely",
-   "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-13T19:43:07.000Z",
-   "summary": "",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "run-fast-private-agents-on-device-with-lfm2-5-24b-a2b",
    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
    "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
@@ -1011,37 +929,18 @@
    "also": []
   },
   {
-   "id": "gemini-4-argon-for-robotics",
-   "title": "Gemini 4 Argon for Robotics",
-   "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-13T16:01:58.000Z",
-   "summary": "",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "gemini-4-argon-built-to-solve-your-hardest-problems",
    "title": "Gemini 4 Argon: Built to solve your hardest problems",
-   "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-13T16:01:52.000Z",
-   "summary": "",
-   "category": "research",
+   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+   "source": "Google – AI blog",
+   "date": "2026-10-13T16:00:00.000Z",
+   "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
+   "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": [
-    {
-     "source": "Google – AI blog",
-     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
-    }
-   ]
+   "topic": "tools",
+   "image_url_source": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp",
+   "also": []
   },
   {
    "id": "all-systems-go-global-pc-app-ecosystem-ready-for-nvidia-rtx-spark",
@@ -1125,6 +1024,104 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gpu-architecture-rolling-blog-kv-ocp-blog-1920x1080-5820310.jpg",
+   "also": []
+  },
+  {
+   "id": "building-a-safer-more-secure-britain-in-the-age-of-ai",
+   "title": "Building a Safer, More Secure Britain in the age of AI",
+   "link": "https://www.gov.uk/government/speeches/building-a-safer-more-secure-britain-in-the-age-of-ai",
+   "source": "GOV.UK news search (Atom)",
+   "date": "2026-10-12T11:59:53.000Z",
+   "summary": "Speech delivered by the Minister for Artificial Intelligence …",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "britain-steps-up-national-defences-against-growing-ai-risks",
+   "title": "Britain steps up national defences against growing AI risks",
+   "link": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
+   "source": "GOV.UK news search (Atom)",
+   "date": "2026-10-12T10:14:00.000Z",
+   "summary": "Britain will be better protected from the risks posed by increasingly powerful AI by a suite of measures.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "into-the-omniverse-how-developers-turn-ideas-into-simulations-with-fro",
+   "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+   "link": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+   "source": "NVIDIA Blog",
+   "date": "2026-10-09T16:00:35.000Z",
+   "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to…",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/Copy-of-nvidia-ov-x-astra-4up-KV-r1-press-4k-r2-scaled.png",
+   "also": []
+  },
+  {
+   "id": "100-new-uk-jobs-created-as-kuwait-buys-british-made-ai-enabled-air-def",
+   "title": "100 new UK jobs created as Kuwait buys British-made AI-enabled air defence systems",
+   "link": "https://www.gov.uk/government/news/100-new-uk-jobs-created-as-kuwait-buys-british-made-ai-enabled-air-defence-systems",
+   "source": "GOV.UK news search (Atom)",
+   "date": "2026-10-09T13:24:48.000Z",
+   "summary": "British jobs and skills will be boosted by a £370 million deal as Kuwait buys vital air defence systems from a UK-based business.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "we-re-putting-too-much-faith-in-ai-s-ability-to-say-no",
+   "title": "We’re putting too much faith in AI’s ability to say no",
+   "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-09T09:00:00.000Z",
+   "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience.…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-breakthroughs-in-robotics-won-t-change-your-life-any-time-soon",
+   "title": "AI breakthroughs in robotics won’t change your life any time soon",
+   "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-08T09:00:00.000Z",
+   "summary": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live. A robot shaped like a human—white…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "building-a-safer-path-to-autonomous-industrial-ai",
+   "title": "Building a safer path to autonomous industrial AI",
+   "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-08T08:17:32.000Z",
+   "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
    "also": []
   }
  ]
