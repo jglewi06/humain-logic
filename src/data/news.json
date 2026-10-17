@@ -1,9 +1,23 @@
 {
- "updated": "2026-10-17T06:57:02.125Z",
+ "updated": "2026-10-17T12:52:26.089Z",
  "failed_feeds": [
   "Google DeepMind Blog"
  ],
  "items": [
+  {
+   "id": "why-ai-isn-t-ready-to-tackle-our-convoluted-genomes",
+   "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+   "link": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+   "source": "Wired – AI",
+   "date": "2026-10-17T09:00:00.000Z",
+   "summary": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6acf63d6b06331734b2e70d7/master/pass/Physical%20Genome%20cr-Samuel%20Velasco%20and%20Hannah%20Waters_Quanta%20Magazine-Lede.jpg",
+   "also": []
+  },
   {
    "id": "the-world-won-t-wait-evaluating-and-teaching-agents-under-a-live-clock",
    "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
@@ -856,20 +870,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://media.wired.com/photos/6acdf17fe71041f109e915b0/master/pass/E4.jpg",
-   "also": []
-  },
-  {
-   "id": "men-can-t-stop-faking-how-much-they-know-about-ai",
-   "title": "Men Can’t Stop Faking How Much They Know About AI",
-   "link": "https://www.wired.com/story/men-cant-stop-faking-how-much-they-know-about-ai/",
-   "source": "Wired – AI",
-   "date": "2026-10-14T09:30:00.000Z",
-   "summary": "More than half of the men surveyed in a new Harvard study claimed to recognize AI leaders who were, in fact, totally fictional.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6ace9af8b7c3e684c0712364/master/pass/Men-Cant-Stop-Lying-About-AI-Business938329806.jpg",
    "also": []
   },
   {
