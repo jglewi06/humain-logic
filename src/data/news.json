@@ -1,7 +1,21 @@
 {
- "updated": "2026-10-18T00:59:04.141Z",
+ "updated": "2026-10-18T06:55:54.240Z",
  "failed_feeds": [],
  "items": [
+  {
+   "id": "giving-ai-a-crystal-clear-view-of-the-materials-world",
+   "title": "Giving AI a “crystal clear” view of the materials world",
+   "link": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+   "source": "MIT News – AI",
+   "date": "2026-10-18T04:00:00.000Z",
+   "summary": "New research can help AI models understand crystalline materials in 3D and reason about their properties.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-Synthetic-Narratives-01-press.jpg?itok=Bh8fzury",
+   "also": []
+  },
   {
    "id": "meta-removes-language-that-raised-scraping-and-ai-training-concerns",
    "title": "Meta removes language that raised scraping and AI training concerns",
@@ -98,48 +112,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://media.wired.com/photos/6acf63d6b06331734b2e70d7/master/pass/Physical%20Genome%20cr-Samuel%20Velasco%20and%20Hannah%20Waters_Quanta%20Magazine-Lede.jpg",
-   "also": []
-  },
-  {
-   "id": "the-world-won-t-wait-evaluating-and-teaching-agents-under-a-live-clock",
-   "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
-   "link": "https://arxiv.org/abs/2610.20665",
-   "source": "arXiv cs.AI",
-   "date": "2026-10-17T04:00:00.000Z",
-   "summary": "arXiv:2610.20665v1 Announce Type: new Abstract: Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "evaluating-model-capabilities-after-benchmark-saturation",
-   "title": "Evaluating Model Capabilities After Benchmark Saturation",
-   "link": "https://arxiv.org/abs/2610.20667",
-   "source": "arXiv cs.AI",
-   "date": "2026-10-17T04:00:00.000Z",
-   "summary": "arXiv:2610.20667v1 Announce Type: new Abstract: Rapid advances in AI capabilities are causing benchmarks to saturate. Once several models approach perfect scores, a benchmark loses its power to differentiate between them, and with it its…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "value-informed-schedule-trimming-for-accelerated-sequential-monte-carl",
-   "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
-   "link": "https://arxiv.org/abs/2610.20669",
-   "source": "arXiv cs.AI",
-   "date": "2026-10-17T04:00:00.000Z",
-   "summary": "arXiv:2610.20669v1 Announce Type: new Abstract: Reward-guided discrete diffusion enables test-time alignment with downstream objectives, but applying Sequential Monte Carlo (SMC) guidance at every denoising step is computationally…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
    "also": []
   },
   {
@@ -1072,20 +1044,6 @@
    "also": []
   },
   {
-   "id": "q-a-building-accountability-behind-our-words-and-ai-s-in-civic-convers",
-   "title": "Q&A: Building accountability behind our words — and AI’s — in civic conversations",
-   "link": "https://news.mit.edu/2026/qa-building-accountability-behind-our-words-and-ai-civic-conversations-1013",
-   "source": "MIT News – AI",
-   "date": "2026-10-13T04:00:00.000Z",
-   "summary": "Professor Deb Roy contends there should be someone who is “answerable” for every piece of text in public life, no matter its origins.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-3Q-AI-Accountability-01-Press.jpg?itok=qmMiDsu5",
-   "also": []
-  },
-  {
    "id": "ocp-global-summit-amid-ecosystem-adoption-nvidia-opens-vera-rubin-arch",
    "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
    "link": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
@@ -1124,6 +1082,48 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "into-the-omniverse-how-developers-turn-ideas-into-simulations-with-fro",
+   "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+   "link": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+   "source": "NVIDIA Blog",
+   "date": "2026-10-09T16:00:35.000Z",
+   "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to…",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/Copy-of-nvidia-ov-x-astra-4up-KV-r1-press-4k-r2-scaled.png",
+   "also": []
+  },
+  {
+   "id": "100-new-uk-jobs-created-as-kuwait-buys-british-made-ai-enabled-air-def",
+   "title": "100 new UK jobs created as Kuwait buys British-made AI-enabled air defence systems",
+   "link": "https://www.gov.uk/government/news/100-new-uk-jobs-created-as-kuwait-buys-british-made-ai-enabled-air-defence-systems",
+   "source": "GOV.UK news search (Atom)",
+   "date": "2026-10-09T13:24:48.000Z",
+   "summary": "British jobs and skills will be boosted by a £370 million deal as Kuwait buys vital air defence systems from a UK-based business.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "we-re-putting-too-much-faith-in-ai-s-ability-to-say-no",
+   "title": "We’re putting too much faith in AI’s ability to say no",
+   "link": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-09T09:00:00.000Z",
+   "summary": "Ever since people first seriously contemplated giving machines an intelligence modeled on our own, there has never been any question that they would, like us, be able to say no. The sci-fi canon is full of stories of robotic disobedience.…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
    "image_url_source": null,
    "also": []
   }
