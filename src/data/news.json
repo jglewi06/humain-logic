@@ -1,9 +1,21 @@
 {
- "updated": "2026-10-18T18:47:16.643Z",
- "failed_feeds": [
-  "Google DeepMind Blog"
- ],
+ "updated": "2026-10-19T01:00:43.617Z",
+ "failed_feeds": [],
  "items": [
+  {
+   "id": "anthropic-says-it-s-committing-5-of-its-shares-to-a-public-benefit-fun",
+   "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+   "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-18T20:37:40.000Z",
+   "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
    "title": "A woman was arrested in Philly for blocking a delivery robot",
@@ -24,7 +36,7 @@
    "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
    "source": "TechCrunch – AI",
    "date": "2026-10-18T16:30:00.000Z",
-   "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first…",
+   "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
    "category": "jobs-work",
    "ai_summary": false,
    "editor_reviewed": false,
@@ -295,20 +307,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "safety",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "elorian-s-first-ai-model-wants-to-reason-with-images-not-just-about-th",
-   "title": "Elorian’s first AI model wants to reason with images, not just about them",
-   "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-16T16:01:37.000Z",
-   "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
    "image_url_source": null,
    "also": []
   },
@@ -607,6 +605,20 @@
    "also": []
   },
   {
+   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-15T16:08:03.000Z",
+   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "trust-in-depth-giving-agents-more-autonomy-without-losing-control",
    "title": "Trust in Depth: Giving agents more autonomy without losing control",
    "link": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
@@ -873,6 +885,20 @@
    "also": []
   },
   {
+   "id": "google-deepmind-and-singapore-government-collaborate-to-build-fine-tun",
+   "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+   "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-14T02:00:14.000Z",
+   "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": "https://lh3.googleusercontent.com/5PC4h7MzjC0ojOxiK-nPcRz0b6kUybKnCBjLL3nsb9T9qt7-2ciORJPnrObeFaYbAMqPxIhH4Wq9HD-U73lCivpFBcK8gABvhXXDo2lzUUSk9olsZQ=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "how-artificial-neural-networks-build-their-own-learning-machinery",
    "title": "How artificial neural networks build their own learning machinery",
    "link": "https://news.mit.edu/2026/how-artificial-neural-networks-build-their-own-learning-machinery-1013",
@@ -901,6 +927,20 @@
    "also": []
   },
   {
+   "id": "developing-gemini-4-argon-responsibly-and-safely",
+   "title": "Developing Gemini 4 Argon responsibly and safely",
+   "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-13T19:43:07.000Z",
+   "summary": "",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
    "id": "run-fast-private-agents-on-device-with-lfm2-5-24b-a2b",
    "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
    "link": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
@@ -915,18 +955,37 @@
    "also": []
   },
   {
-   "id": "gemini-4-argon-built-to-solve-your-hardest-problems",
-   "title": "Gemini 4 Argon: Built to solve your hardest problems",
-   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-   "source": "Google – AI blog",
-   "date": "2026-10-13T16:00:00.000Z",
-   "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model.",
-   "category": "business",
+   "id": "gemini-4-argon-for-robotics",
+   "title": "Gemini 4 Argon for Robotics",
+   "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-13T16:01:58.000Z",
+   "summary": "",
+   "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__27.max-600x600.format-webp.webp",
+   "topic": "research",
+   "image_url_source": null,
    "also": []
+  },
+  {
+   "id": "gemini-4-argon-built-to-solve-your-hardest-problems",
+   "title": "Gemini 4 Argon: Built to solve your hardest problems",
+   "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-13T16:01:52.000Z",
+   "summary": "",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": [
+    {
+     "source": "Google – AI blog",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    }
+   ]
   },
   {
    "id": "all-systems-go-global-pc-app-ecosystem-ready-for-nvidia-rtx-spark",
@@ -1066,62 +1125,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "ai-breakthroughs-in-robotics-won-t-change-your-life-any-time-soon",
-   "title": "AI breakthroughs in robotics won’t change your life any time soon",
-   "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-08T09:00:00.000Z",
-   "summary": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live. A robot shaped like a human—white…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "building-a-safer-path-to-autonomous-industrial-ai",
-   "title": "Building a safer path to autonomous industrial AI",
-   "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-08T08:17:32.000Z",
-   "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "the-model-that-didn-t-exist-so-you-made-it-yourself",
-   "title": "The model that didn't exist, so you made it yourself",
-   "link": "https://huggingface.co/blog/building-with-ml-intern",
-   "source": "Hugging Face Blog",
-   "date": "2026-10-08T00:00:00.000Z",
-   "summary": "",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "does-better-work-always-mean-better-workers",
-   "title": "Does better work always mean better workers?",
-   "link": "https://research.google/blog/does-better-work-always-mean-better-workers/",
-   "source": "Google Research Blog",
-   "date": "2026-10-07T20:19:57.000Z",
-   "summary": "",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
-   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/BetterWork2-AverageRedliningScore.png",
    "also": []
   }
  ]
