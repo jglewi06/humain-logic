@@ -1,7 +1,63 @@
 {
- "updated": "2026-10-19T07:07:44.649Z",
+ "updated": "2026-10-19T13:01:35.405Z",
  "failed_feeds": [],
  "items": [
+  {
+   "id": "democrats-think-cracking-down-on-ai-could-give-them-an-edge",
+   "title": "Democrats think cracking down on AI could give them an edge",
+   "link": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
+   "source": "The Verge – AI",
+   "date": "2026-10-19T12:00:00.000Z",
+   "summary": "Democrats could win back control of Congress this November, and if they do, they'll need to decide how to approach one of the country's newest and thorniest political issues: AI. Polls predict Democrats will flip at least one chamber of…",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-sovereignty-preserving-uk-agency-in-an-ai-enabled-world",
+   "title": "AI sovereignty: preserving UK agency in an AI-enabled world",
+   "link": "https://www.gov.uk/government/publications/ai-sovereignty-preserving-uk-agency-in-an-ai-enabled-world",
+   "source": "GOV.UK news search (Atom)",
+   "date": "2026-10-19T09:30:05.000Z",
+   "summary": "This letter provides advice to the Minister for AI on how the UK can build capability to make strategic choices about current and future AI technology.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-researchers-stranded-claude-on-a-virtual-desert-island-it-started-t",
+   "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+   "link": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-19T09:08:05.000Z",
+   "summary": "What do AI agents do if you don’t tell them to do anything? The answer looks a lot like play. Researchers repeatedly stranded them alone on a virtual desert island for 30 hours in an experiment reminiscent of the movies Cast Away or Home…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "disney-asked-character-ai-to-go-bankrupt-for-a-get-out-of-lawsuits-car",
+   "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
+   "link": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+   "source": "Wired – AI",
+   "date": "2026-10-19T09:00:00.000Z",
+   "summary": "The entertainment giant hopes to get trust and safety tech, among other IP, from a startup whose chatbots dozens of states allege encouraged minors to self-harm and kill their parents.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": "https://media.wired.com/photos/6acfe36ba2733753393886b8/master/pass/Disney-Asked-Character.AI-to-Go-Bankrupt-Business-1530260396.jpg",
+   "also": []
+  },
   {
    "id": "when-is-a-large-language-model-a-good-calibration-agent-physics-labele",
    "title": "When is a large language model a good calibration agent? Physics-labeled prompting for budgeted engineering simulator calibration",
@@ -521,20 +577,6 @@
    "also": []
   },
   {
-   "id": "the-tech-backlash-is-now-in-theaters",
-   "title": "The tech backlash is now in theaters",
-   "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-   "source": "The Verge – AI",
-   "date": "2026-10-15T21:39:52.000Z",
-   "summary": "Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron Sorkin's The Social Reckoning frames Mark…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "we-got-hot-and-heavy-with-meta-s-muse-and-baffled-by-apple-s-homeview",
    "title": "We Got Hot and Heavy With Meta’s Muse—and Baffled by Apple’s HomeView",
    "link": "https://www.wired.com/story/uncanny-valley-podcast-we-got-hot-and-heavy-with-metas-muse-and-underwhelmed-by-apples-homeview/",
@@ -546,20 +588,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://media.wired.com/photos/6acff05076c17d102a553f12/master/pass/Uncanny-Valley-Meta-Sexting-Business-2296314651.jpg",
-   "also": []
-  },
-  {
-   "id": "ai-hacks-leave-a-mess-that-ai-companies-aren-t-paying-for",
-   "title": "AI Hacks Leave a Mess That AI Companies Aren’t Paying For",
-   "link": "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/",
-   "source": "Wired – AI",
-   "date": "2026-10-15T21:00:28.000Z",
-   "summary": "Powerful AI models continue to cause chaos, but their targets aren’t widely seeking justice. Instead, they’re being encouraged to adopt those same tools.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://media.wired.com/photos/6ad00a8917414371d605a797/master/pass/Model-Behavior-Cybersecurity-Experts-Discuss-AI-Threats-Business.jpg",
    "also": []
   },
   {
@@ -685,6 +713,20 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "apertus-1-5-release-notes",
+   "title": "Apertus 1.5 Release Notes",
+   "link": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+   "source": "Hugging Face Blog",
+   "date": "2026-10-15T09:08:45.000Z",
+   "summary": "",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
    "image_url_source": null,
    "also": []
   },
@@ -1083,48 +1125,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/france-ai-ecosystem-gtc-berlin-updated.jpeg",
-   "also": []
-  },
-  {
-   "id": "ocp-global-summit-amid-ecosystem-adoption-nvidia-opens-vera-rubin-arch",
-   "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
-   "link": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
-   "source": "NVIDIA Blog",
-   "date": "2026-10-12T15:00:25.000Z",
-   "summary": "As AI factories grow from megawatts to gigawatts, building them takes more than advanced computing. Open standards are helping the industry scale AI infrastructure faster, more efficiently and more reliably. At the Open Compute Project…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gpu-architecture-rolling-blog-kv-ocp-blog-1920x1080-5820310.jpg",
-   "also": []
-  },
-  {
-   "id": "building-a-safer-more-secure-britain-in-the-age-of-ai",
-   "title": "Building a Safer, More Secure Britain in the age of AI",
-   "link": "https://www.gov.uk/government/speeches/building-a-safer-more-secure-britain-in-the-age-of-ai",
-   "source": "GOV.UK news search (Atom)",
-   "date": "2026-10-12T11:59:53.000Z",
-   "summary": "Speech delivered by the Minister for Artificial Intelligence …",
-   "category": "rules-safety",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "policy",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "britain-steps-up-national-defences-against-growing-ai-risks",
-   "title": "Britain steps up national defences against growing AI risks",
-   "link": "https://www.gov.uk/government/news/britain-steps-up-national-defences-against-growing-ai-risks",
-   "source": "GOV.UK news search (Atom)",
-   "date": "2026-10-12T10:14:00.000Z",
-   "summary": "Britain will be better protected from the risks posed by increasingly powerful AI by a suite of measures.",
-   "category": "rules-safety",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "policy",
-   "image_url_source": null,
    "also": []
   }
  ]
