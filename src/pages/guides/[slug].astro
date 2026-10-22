@@ -10,6 +10,7 @@ export async function getStaticPaths() {
 }
 const { entry, m } = Astro.props;
 const { Content } = await render(entry);
+const hero = entry.data.hero;
 const others = meta.filter(g => g.slug !== entry.id).slice(0, 3);
 const updated = entry.data.updated.toISOString().slice(0, 10);
 const published = entry.data.published?.toISOString().slice(0, 10);
@@ -21,18 +22,25 @@ const ld = [
 ];
 ---
 <Base title={entry.data.title} description={entry.data.summary} jsonld={ld} path={`/guides/${entry.id}`}>
-<section class="page-head"><div class="container">
+{hero && <Fragment slot="head"><script is:inline>if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches && document.documentElement.dataset.motion!=='reduce')document.documentElement.classList.add('js-reveal');</script></Fragment>}
+<section class:list={['page-head', hero && 'guide-hero']}>{hero && <GuidePhoto base={hero.src} alt={hero.alt} />}<div class="container"><div class="guide-head-copy">
   <p class="crumbs"><a href="/">Home</a> › <a href="/guides">Guides</a> › {entry.data.title}</p>
   <span class="eyebrow">Guide</span><h1>{entry.data.title}</h1>
   <p class="lede">{entry.data.summary}</p>
   <p class="confidence" style="margin-top:var(--space-3)">By {authorName} · {published && <>Published <time datetime={published}>{fmtMonthDay(published)}</time> · </>}Updated <time datetime={updated}>{fmtMonthDay(updated)}</time> · {m?.reading_time}</p>
-</div></section>
+</div></div></section>
 <div class="container section" style="padding-top:var(--space-6)">
-  {entry.data.hero && <GuidePhoto base={entry.data.hero.src} alt={entry.data.hero.alt} eager />}
   <article class="prose guide"><Content /></article>
   {others.length > 0 && <section style="margin-top:var(--space-7)" aria-labelledby="more-h"><h2 id="more-h" style="font-size:var(--fs-h3);margin-bottom:var(--space-4)">More guides</h2>
     <div class="grid-3">{others.map(g => <article class="news-card"><h3><a href={`/guides/${g.slug}`}>{g.title}</a></h3><p>{g.summary}</p></article>)}</div></section>}
 </div>
+{hero && <script>
+// Scroll fade-in for in-article guide photos (only when <head> set html.js-reveal: IO available, motion allowed)
+if (document.documentElement.classList.contains('js-reveal')) {
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+  document.querySelectorAll('.guide .guide-photo').forEach(el => io.observe(el));
+}
+</script>}
 </Base>
 <style is:global>
 .guide{font-size:var(--fs-body)}
@@ -41,8 +49,45 @@ const ld = [
 .guide li{margin-bottom:var(--space-2)}
 .guide hr{border:0;border-top:1px solid var(--color-border);margin:var(--space-6) 0}
 .guide a{overflow-wrap:anywhere}
-.guide-photo{aspect-ratio:16/9;max-width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12);margin:var(--space-5) 0 var(--space-6)}
-.guide .guide-photo{margin:var(--space-5) 0}
-.guide-hero{max-width:44rem;margin-top:0}
+/* Guide photos: /news faded-photo technique (design/news-page/notes.md §2). Mask sits on the <img> so the credit stays crisp;
+   black = photo shows, transparent = page background shows. Text never sits on a photo. */
+.guide-hero{position:relative;overflow:hidden;isolation:isolate}
+.guide-hero .container{position:relative;z-index:1}
+.guide-hero .guide-head-copy{width:46%;max-width:560px}
+.guide-hero-photo{position:absolute;top:0;right:0;bottom:0;width:54%;margin:0;z-index:0}
+.guide-hero-photo picture,.guide-photo picture{display:contents}
+.guide-hero-photo img,.guide-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(.97)}
+.guide-hero-photo img{
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.18) 14%,rgba(0,0,0,.62) 30%,#000 50%),linear-gradient(to bottom,#000 72%,transparent 100%);
+          mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.18) 14%,rgba(0,0,0,.62) 30%,#000 50%),linear-gradient(to bottom,#000 72%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.guide-hero-photo .photo-credit,.guide-photo .photo-credit{position:absolute;z-index:1;font:500 var(--fs-caption)/1 var(--font-body);color:var(--color-ink);background:rgba(255,255,255,.92);padding:6px 10px;border-radius:var(--radius-pill)}
+.guide-hero-photo .photo-credit{right:var(--space-4);top:var(--space-4)}
+/* In-article: wider than the text column (1.3x, never past the container), edges feathered, fade side alternates */
+.guide .guide-photo{position:relative;margin:var(--space-6) 0;aspect-ratio:16/9;width:100%;max-width:none}
+@media (min-width:960px){.guide .guide-photo{width:min(130%,calc(100vw - 2*var(--page-pad)),var(--container-max))}}
+.guide .guide-photo.fade-r img{
+  -webkit-mask-image:linear-gradient(to right,#000 0%,#000 55%,rgba(0,0,0,.6) 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 12%,#000 82%,transparent 100%);
+          mask-image:linear-gradient(to right,#000 0%,#000 55%,rgba(0,0,0,.6) 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 12%,#000 82%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.guide .guide-photo.fade-l img{
+  -webkit-mask-image:linear-gradient(to left,#000 0%,#000 55%,rgba(0,0,0,.6) 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 12%,#000 82%,transparent 100%);
+          mask-image:linear-gradient(to left,#000 0%,#000 55%,rgba(0,0,0,.6) 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 12%,#000 82%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.guide .guide-photo.fade-r .photo-credit{left:var(--space-3);top:16%}
+.guide .guide-photo.fade-l .photo-credit{right:var(--space-3);top:16%}
+.js-reveal .guide .guide-photo{opacity:0;transform:translateY(14px);transition:opacity 1100ms var(--ease-calm,ease),transform 1100ms var(--ease-calm,ease)}
+.js-reveal .guide .guide-photo.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js-reveal .guide .guide-photo{opacity:1;transform:none;transition:none}}
+:root[data-motion="reduce"] .guide .guide-photo{opacity:1!important;transform:none!important;transition:none!important}
+@media (max-width:767px){
+  .guide-hero{padding-top:0}
+  .guide-hero-photo{position:relative;height:min(60vw,280px);width:auto}
+  .guide-hero-photo img{-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}
+  .guide-hero-photo .photo-credit{right:var(--space-3);top:var(--space-3)}
+  .guide-hero .guide-head-copy{width:auto;max-width:none}
+  .guide .guide-photo.fade-r img,.guide .guide-photo.fade-l img{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 10%,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 10%,#000 80%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}
+  .guide .guide-photo .photo-credit{top:14%}
+}
 .guide blockquote{background:var(--color-sage);border-left:6px solid var(--color-teal);margin:var(--space-4) 0;padding:var(--space-3) var(--space-4);border-radius:var(--radius-md)}
 </style>

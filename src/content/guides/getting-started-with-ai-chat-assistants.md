@@ -94,12 +94,12 @@ If you want something in a particular style, show it. For example: "Here's a soc
 
 ## Practice for 10 minutes
 
-<figure class="news-media is-photo guide-photo">
+<figure class="guide-photo fade-r">
 <picture>
-<source type="image/webp" srcset="/img/guides/getting-started-with-ai-chat-assistants/start-practice-640.webp 640w, /img/guides/getting-started-with-ai-chat-assistants/start-practice-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<source type="image/webp" srcset="/img/guides/getting-started-with-ai-chat-assistants/start-practice-640.webp 640w, /img/guides/getting-started-with-ai-chat-assistants/start-practice-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/getting-started-with-ai-chat-assistants/start-practice-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A smiling engineer types on a laptop in a factory control room, with robotic arms on the production floor behind the window." />
 </picture>
-<figcaption class="credit">Image: HumAIn Logic</figcaption>
+<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 Try this today:

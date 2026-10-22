@@ -23,12 +23,12 @@ The key word is *simulate*. AI doesn't think or feel the way people do. It's a v
 
 AI isn't brand new. You've likely used it without noticing:
 
-<figure class="news-media is-photo guide-photo">
+<figure class="guide-photo fade-r">
 <picture>
-<source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-everyday-640.webp 640w, /img/guides/what-is-ai/what-is-ai-everyday-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-everyday-640.webp 640w, /img/guides/what-is-ai/what-is-ai-everyday-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/what-is-ai/what-is-ai-everyday-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A woman on her sofa smiles at her phone, with a smart speaker on the table beside her." />
 </picture>
-<figcaption class="credit">Image: HumAIn Logic</figcaption>
+<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 - **Spam filters** that keep junk out of your inbox
@@ -90,12 +90,12 @@ Quickly. Stanford University's yearly AI Index tracks how much AI tools are impr
 
 You don't need to master everything. Try this:
 
-<figure class="news-media is-photo guide-photo">
+<figure class="guide-photo fade-l">
 <picture>
-<source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-getting-started-640.webp 640w, /img/guides/what-is-ai/what-is-ai-getting-started-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-getting-started-640.webp 640w, /img/guides/what-is-ai/what-is-ai-getting-started-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/what-is-ai/what-is-ai-getting-started-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A teenage boy shows his grandmother how to use an app on a tablet at the dining table." />
 </picture>
-<figcaption class="credit">Image: HumAIn Logic</figcaption>
+<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 1. **Pick one free tool.** ChatGPT, Gemini, Claude or Copilot all have free versions.

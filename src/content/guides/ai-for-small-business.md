@@ -72,12 +72,12 @@ AI brings real benefits, but also some risks worth managing:
 
 ## A simple 30-day plan
 
-<figure class="news-media is-photo guide-photo">
+<figure class="guide-photo fade-r">
 <picture>
-<source type="image/webp" srcset="/img/guides/ai-for-small-business/smb-plan-640.webp 640w, /img/guides/ai-for-small-business/smb-plan-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<source type="image/webp" srcset="/img/guides/ai-for-small-business/smb-plan-640.webp 640w, /img/guides/ai-for-small-business/smb-plan-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/ai-for-small-business/smb-plan-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A workshop owner smiles as he works on a laptop at his workbench, with tools hung neatly behind him." />
 </picture>
-<figcaption class="credit">Image: HumAIn Logic</figcaption>
+<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 - **Week 1:** List your top three time-wasting tasks.

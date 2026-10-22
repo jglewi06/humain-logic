@@ -29,12 +29,12 @@ When you type something into an AI chat tool, that information is sent to the co
 
 Scammers have always tried to trick people. AI simply helps them do it faster and more convincingly. The FBI warns that criminals now use AI to write convincing messages, create fake profile photos, clone voices and even produce fake video calls ([FBI IC3](https://www.ic3.gov/PSA/2024/PSA241203)).
 
-<figure class="news-media is-photo guide-photo">
+<figure class="guide-photo fade-r">
 <picture>
-<source type="image/webp" srcset="/img/guides/staying-safe-with-ai/safe-scams-640.webp 640w, /img/guides/staying-safe-with-ai/safe-scams-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<source type="image/webp" srcset="/img/guides/staying-safe-with-ai/safe-scams-640.webp 640w, /img/guides/staying-safe-with-ai/safe-scams-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/staying-safe-with-ai/safe-scams-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A man on his sofa looks carefully at a message on his phone before replying." />
 </picture>
-<figcaption class="credit">Image: HumAIn Logic</figcaption>
+<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 ### Voice-cloning "emergency" calls

@@ -1,12 +1,14 @@
 ---
-// 16:9 guide photo (same treatment as /guides): WebP 640/1024 + 1024 JPG fallback. `base` is the path without -<w>.<ext>.
-interface Props { base: string; alt: string; eager?: boolean }
-const { base, alt, eager = false } = Astro.props;
+// Guide lead photo (same faded-photo technique as /news): bleeds in from the right and fades left + down into the
+// page background; on mobile it is a band above the title that fades out at the bottom. WebP 640/1024 + 1024 JPG.
+// `base` is the path without -<w>.<ext>. Alt text is kept (the photo is informative, not decorative).
+interface Props { base: string; alt: string }
+const { base, alt } = Astro.props;
 ---
-<figure class:list={['news-media', 'is-photo', 'guide-photo', eager && 'guide-hero']}>
+<figure class="guide-hero-photo">
   <picture>
-    <source type="image/webp" srcset={`${base}-640.webp 640w, ${base}-1024.webp 1024w`} sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
-    <img src={`${base}-1024.jpg`} width="1024" height="576" loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" alt={alt} />
+    <source type="image/webp" srcset={`${base}-640.webp 640w, ${base}-1024.webp 1024w`} sizes="(min-width:768px) 54vw, 100vw" />
+    <img src={`${base}-1024.jpg`} width="1024" height="576" loading="eager" fetchpriority="high" decoding="async" alt={alt} />
   </picture>
-  <figcaption class="credit">Image: HumAIn Logic</figcaption>
+  <figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
