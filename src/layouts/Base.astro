@@ -45,7 +45,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [
   <div class="container nav">
     <Brand />
     <nav aria-label="Main"><ul>
-      {NAV.map(n => <li><a href={n.href} aria-current={isCurrent(n.match) ? 'page' : undefined}>{n.label}</a></li>)}
+      {NAV.map(n => <li><a href={n.href} aria-current={isCurrent(n.match) ? 'page' : undefined}>{n.label}{n.isNew && <span class="nav-new">New</span>}</a></li>)}
     </ul></nav>
     <div class="actions">
       <a class="btn btn-ghost btn-sm" href="/newsletter">Get the newsletter</a>
@@ -59,7 +59,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [
     <button class="menu-btn" type="button" data-close aria-label="Close menu" style="display:inline-flex"><svg width="22" height="22" aria-hidden="true"><use href="#i-close"/></svg></button>
   </div>
   <nav aria-label="Main (menu)"><ul>
-    {NAV.map(n => <li><a href={n.href} aria-current={isCurrent(n.match) ? 'page' : undefined}>{n.label}</a></li>)}
+    {NAV.map(n => <li><a href={n.href} aria-current={isCurrent(n.match) ? 'page' : undefined}>{n.label}{n.isNew && <span class="nav-new">New</span>}</a></li>)}
   </ul></nav>
   <div class="sheet-cta"><a class="btn btn-secondary" href="/newsletter">Get the newsletter</a></div>
 </div>

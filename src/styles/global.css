@@ -637,3 +637,6 @@ html,body{overflow-x:clip}
 #count:focus-visible{outline:2px solid var(--color-teal);outline-offset:4px;border-radius:6px}
 /* Footer email link was 2px wider than a 390px screen */
 footer a[href^="mailto"]{overflow-wrap:anywhere}
+
+/* Small "New" tag in the main menu */
+.nav-new { display:inline-block; margin-left:6px; padding:1px 6px; border-radius:999px; background:#1F6F6B; color:#fff; font-size:10px; font-weight:600; line-height:1.5; letter-spacing:.03em; text-transform:uppercase; vertical-align:2px; }
