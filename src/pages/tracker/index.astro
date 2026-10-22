@@ -18,6 +18,13 @@ const ld = [jobsDatasetLd(jobsData), itemList('Jobs in the tracker', jobsData.jo
   <p id="jmsg" role="status"></p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
+  <figure class="tracker-photo">
+    <picture>
+      <source type="image/webp" srcset="/img/tracker/tracker-job-loss-640.webp 640w, /img/tracker/tracker-job-loss-1024.webp 1024w" sizes="(min-width:1056px) 960px, calc(100vw - 40px)" />
+      <img src="/img/tracker/tracker-job-loss-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A person sits on office steps holding a box of desk belongings, looking out over the city." />
+    </picture>
+    <figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
+  </figure>
   <div class="outlook-groups">
     {groups.map(g => (
       <section class="panel" aria-labelledby={`g-${g.k}`}>
@@ -55,3 +62,13 @@ const go = (v: string) => {
 const q = new URLSearchParams(location.search).get('job'); if (q) { (document.getElementById('job') as HTMLInputElement).value = q; go(q); }
 document.getElementById('jform')!.addEventListener('submit', e => { e.preventDefault(); go((document.getElementById('job') as HTMLInputElement).value); });
 </script>
+<style>
+/* Tracker photo: soft radial fade into the page background (same mask technique as /news and the guides).
+   The mask is on the <img>, so the credit pill stays crisp; it sits inside the opaque centre of the ellipse. */
+.tracker-photo{position:relative;margin:0 auto var(--space-6);max-width:960px;aspect-ratio:16/9;pointer-events:none}
+.tracker-photo picture{display:contents}
+.tracker-photo img{display:block;width:100%;height:100%;object-fit:cover;opacity:.9;filter:saturate(.92) contrast(.97);
+  -webkit-mask-image:radial-gradient(ellipse closest-side at center,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse closest-side at center,#000 55%,transparent 100%)}
+.tracker-photo .photo-credit{position:absolute;right:31%;bottom:31%;font:500 var(--fs-caption)/1 var(--font-body);color:var(--color-ink);background:rgba(255,255,255,.92);padding:6px 10px;border-radius:var(--radius-pill)}
+@media (max-width:767px){.tracker-photo{margin-bottom:var(--space-5)}.tracker-photo .photo-credit{display:none} /* at phone size the unfaded centre is too small: the pill would cover the subject */}
+</style>

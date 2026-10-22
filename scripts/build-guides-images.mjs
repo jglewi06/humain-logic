@@ -19,3 +19,15 @@ for (const [name, srcDir, dir] of jobs) {
     if (w === 1024) await img.clone().jpeg({ quality: 80, progressive: true, mozjpeg: true }).toFile(`${out}${dir}${name}-${w}.jpg`);
   }
 }
+
+// /tracker photo (same treatment): WebP 640/1024 + 1024 JPG fallback -> public/img/tracker/
+{
+  const tsrc = new URL('../../../humainlogic-assets/tracker-job-loss.jpg', import.meta.url).pathname;
+  const tout = new URL('../public/img/tracker/', import.meta.url).pathname;
+  mkdirSync(tout, { recursive: true });
+  for (const w of [640, 1024]) {
+    const img = sharp(tsrc).resize(w, Math.round(w * 9 / 16), { fit: 'cover' });
+    await img.clone().webp({ quality: 78 }).toFile(`${tout}tracker-job-loss-${w}.webp`);
+    if (w === 1024) await img.clone().jpeg({ quality: 80, progressive: true, mozjpeg: true }).toFile(`${tout}tracker-job-loss-${w}.jpg`);
+  }
+}
