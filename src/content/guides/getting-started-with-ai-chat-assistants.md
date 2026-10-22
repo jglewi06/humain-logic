@@ -5,6 +5,9 @@ summary: "How to choose a free AI assistant, write clear requests (prompts) that
 updated: 2026-10-15
 published: 2026-10-15
 author: HumAIn Logic editorial team
+hero:
+  src: /img/guides/getting-started-with-ai-chat-assistants/start-hero
+  alt: "An engineer in a teal work jacket checks a tablet in a bright AI hardware facility, with server racks and a robotic arm assembling circuit boards."
 ---
 
 
@@ -90,6 +93,14 @@ If you want something in a particular style, show it. For example: "Here's a soc
 - **Voice mode** on phone apps lets you just talk, which many beginners find easier.
 
 ## Practice for 10 minutes
+
+<figure class="news-media is-photo guide-photo">
+<picture>
+<source type="image/webp" srcset="/img/guides/getting-started-with-ai-chat-assistants/start-practice-640.webp 640w, /img/guides/getting-started-with-ai-chat-assistants/start-practice-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<img src="/img/guides/getting-started-with-ai-chat-assistants/start-practice-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A smiling engineer types on a laptop in a factory control room, with robotic arms on the production floor behind the window." />
+</picture>
+<figcaption class="credit">Image: HumAIn Logic</figcaption>
+</figure>
 
 Try this today:
 

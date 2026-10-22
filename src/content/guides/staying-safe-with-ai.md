@@ -5,6 +5,9 @@ summary: "Simple habits to protect your privacy, spot AI-powered scams and deepf
 updated: 2026-10-15
 published: 2026-10-15
 author: HumAIn Logic editorial team
+hero:
+  src: /img/guides/staying-safe-with-ai/safe-hero
+  alt: "A software security engineer calmly reviews code at a bright office desk, with a padlock shield on her screen."
 ---
 
 
@@ -25,6 +28,14 @@ When you type something into an AI chat tool, that information is sent to the co
 ## 2. Recognize AI-powered scams
 
 Scammers have always tried to trick people. AI simply helps them do it faster and more convincingly. The FBI warns that criminals now use AI to write convincing messages, create fake profile photos, clone voices and even produce fake video calls ([FBI IC3](https://www.ic3.gov/PSA/2024/PSA241203)).
+
+<figure class="news-media is-photo guide-photo">
+<picture>
+<source type="image/webp" srcset="/img/guides/staying-safe-with-ai/safe-scams-640.webp 640w, /img/guides/staying-safe-with-ai/safe-scams-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<img src="/img/guides/staying-safe-with-ai/safe-scams-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A man on his sofa looks carefully at a message on his phone before replying." />
+</picture>
+<figcaption class="credit">Image: HumAIn Logic</figcaption>
+</figure>
 
 ### Voice-cloning "emergency" calls
 

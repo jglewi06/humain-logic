@@ -5,6 +5,9 @@ summary: "Where AI can genuinely save a small business time and money, which aff
 updated: 2026-10-15
 published: 2026-10-15
 author: HumAIn Logic editorial team
+hero:
+  src: /img/guides/ai-for-small-business/smb-hero
+  alt: "A smiling florist plans orders on a tablet at her shop counter, surrounded by fresh flowers."
 ---
 
 
@@ -68,6 +71,14 @@ AI brings real benefits, but also some risks worth managing:
 5. **Keep your cybersecurity basics strong.** Use strong passwords, turn on multi-factor authentication and keep software updated ([CISA Secure Our World](https://www.cisa.gov/secure-our-world)).
 
 ## A simple 30-day plan
+
+<figure class="news-media is-photo guide-photo">
+<picture>
+<source type="image/webp" srcset="/img/guides/ai-for-small-business/smb-plan-640.webp 640w, /img/guides/ai-for-small-business/smb-plan-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<img src="/img/guides/ai-for-small-business/smb-plan-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A workshop owner smiles as he works on a laptop at his workbench, with tools hung neatly behind him." />
+</picture>
+<figcaption class="credit">Image: HumAIn Logic</figcaption>
+</figure>
 
 - **Week 1:** List your top three time-wasting tasks.
 - **Week 2:** Pick one. Try a free AI tool for it.
