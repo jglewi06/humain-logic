@@ -28,7 +28,6 @@ AI isn't brand new. You've likely used it without noticing:
 <source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-everyday-640.webp 640w, /img/guides/what-is-ai/what-is-ai-everyday-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/what-is-ai/what-is-ai-everyday-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A woman on her sofa smiles at her phone, with a smart speaker on the table beside her." />
 </picture>
-<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 - **Spam filters** that keep junk out of your inbox
@@ -95,7 +94,6 @@ You don't need to master everything. Try this:
 <source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-getting-started-640.webp 640w, /img/guides/what-is-ai/what-is-ai-getting-started-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/what-is-ai/what-is-ai-getting-started-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A teenage boy shows his grandmother how to use an app on a tablet at the dining table." />
 </picture>
-<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 1. **Pick one free tool.** ChatGPT, Gemini, Claude or Copilot all have free versions.

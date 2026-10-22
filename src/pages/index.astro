@@ -98,7 +98,6 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
             <source type="image/webp" srcset="/img/news/news-featured-640.webp 640w, /img/news/news-featured-1024.webp 1024w" sizes="(min-width:1296px) 627px, (min-width:768px) calc(55.6vw - 80px), calc(100vw - 66px)" />
             <img src="/img/news/news-featured-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A man reads the news on a laptop at a sunny kitchen table, with a coffee mug, a small plant and a newspaper beside him." />
           </picture>
-          <figcaption class="credit">Image: HumAIn Logic</figcaption>
         </figure>
         <div class="body">
           <span class={`tag ${featured.category}`} style="align-self:flex-start">{NEWS_CATS[featured.category]}</span>
@@ -109,7 +108,7 @@ const meterPos = { steady: 15, watch: 50, shift: 85 };
       </article>
       <div class="news-list">
         {list.map(n => { const im = imageFor(n); return <article class="news-item">
-          <div class="txt"><span class={`tag ${n.category}`} style="align-self:flex-start">{NEWS_CATS[n.category]}</span><h4><a href={n.link} rel="noopener">{n.title}</a></h4><p class="meta">{n.source} · <time datetime={n.date}>{fmtDate(n.date)}</time><span class="img-credit">{im.credit}</span></p></div>
+          <div class="txt"><span class={`tag ${n.category}`} style="align-self:flex-start">{NEWS_CATS[n.category]}</span><h4><a href={n.link} rel="noopener">{n.title}</a></h4><p class="meta">{n.source} · <time datetime={n.date}>{fmtDate(n.date)}</time></p></div>
           <figure class={`news-media is-${im.kind}`}><img src={im.src} width="128" height="96" loading="lazy" decoding="async" alt={im.alt} /></figure>
         </article>; })}
       </div>

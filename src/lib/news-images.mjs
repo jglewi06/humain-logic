@@ -15,7 +15,7 @@ export const TILE_ALT = {
 export function imageFor(it) {
   const topic = it.topic ?? topicFor(it);
   // if (it.image_url_source && IMAGE_ALLOWLIST.includes(it.source)) { ...phase 2: downloaded, resized copy... }
-  return { kind: 'tile', topic, src: `/img/news/tile-${topic}.svg`, alt: TILE_ALT[topic], credit: 'Image: HumAIn Logic' };
+  return { kind: 'tile', topic, src: `/img/news/tile-${topic}.svg`, alt: TILE_ALT[topic] };
 }
 
 /** Best image URL the feed itself offers (media:content > media:thumbnail > image enclosure). Stored, not displayed. */

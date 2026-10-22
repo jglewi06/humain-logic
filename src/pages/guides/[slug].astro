@@ -49,7 +49,7 @@ if (document.documentElement.classList.contains('js-reveal')) {
 .guide li{margin-bottom:var(--space-2)}
 .guide hr{border:0;border-top:1px solid var(--color-border);margin:var(--space-6) 0}
 .guide a{overflow-wrap:anywhere}
-/* Guide photos: /news faded-photo technique (design/news-page/notes.md §2). Mask sits on the <img> so the credit stays crisp;
+/* Guide photos: /news faded-photo technique (design/news-page/notes.md §2). Mask sits on the <img>;
    black = photo shows, transparent = page background shows. Text never sits on a photo. */
 .guide-hero{position:relative;overflow:hidden;isolation:isolate}
 .guide-hero .container{position:relative;z-index:1}
@@ -61,8 +61,6 @@ if (document.documentElement.classList.contains('js-reveal')) {
   -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.18) 14%,rgba(0,0,0,.62) 30%,#000 50%),linear-gradient(to bottom,#000 72%,transparent 100%);
           mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.18) 14%,rgba(0,0,0,.62) 30%,#000 50%),linear-gradient(to bottom,#000 72%,transparent 100%);
   -webkit-mask-composite:source-in;mask-composite:intersect}
-.guide-hero-photo .photo-credit,.guide-photo .photo-credit{position:absolute;z-index:1;font:500 var(--fs-caption)/1 var(--font-body);color:var(--color-ink);background:rgba(255,255,255,.92);padding:6px 10px;border-radius:var(--radius-pill)}
-.guide-hero-photo .photo-credit{right:var(--space-4);top:var(--space-4)}
 /* In-article: wider than the text column (1.3x, never past the container), edges feathered, fade side alternates */
 .guide .guide-photo{position:relative;margin:var(--space-6) 0;aspect-ratio:16/9;width:100%;max-width:none}
 @media (min-width:960px){.guide .guide-photo{width:min(130%,calc(100vw - 2*var(--page-pad)),var(--container-max))}}
@@ -74,8 +72,6 @@ if (document.documentElement.classList.contains('js-reveal')) {
   -webkit-mask-image:linear-gradient(to left,#000 0%,#000 55%,rgba(0,0,0,.6) 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 12%,#000 82%,transparent 100%);
           mask-image:linear-gradient(to left,#000 0%,#000 55%,rgba(0,0,0,.6) 78%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 12%,#000 82%,transparent 100%);
   -webkit-mask-composite:source-in;mask-composite:intersect}
-.guide .guide-photo.fade-r .photo-credit{left:var(--space-3);top:16%}
-.guide .guide-photo.fade-l .photo-credit{right:var(--space-3);top:16%}
 .js-reveal .guide .guide-photo{opacity:0;transform:translateY(14px);transition:opacity 1100ms var(--ease-calm,ease),transform 1100ms var(--ease-calm,ease)}
 .js-reveal .guide .guide-photo.is-in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js-reveal .guide .guide-photo{opacity:1;transform:none;transition:none}}
@@ -84,10 +80,8 @@ if (document.documentElement.classList.contains('js-reveal')) {
   .guide-hero{padding-top:0}
   .guide-hero-photo{position:relative;height:min(60vw,280px);width:auto}
   .guide-hero-photo img{-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}
-  .guide-hero-photo .photo-credit{right:var(--space-3);top:var(--space-3)}
   .guide-hero .guide-head-copy{width:auto;max-width:none}
   .guide .guide-photo.fade-r img,.guide .guide-photo.fade-l img{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 10%,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 10%,#000 80%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}
-  .guide .guide-photo .photo-credit{top:14%}
 }
 .guide blockquote{background:var(--color-sage);border-left:6px solid var(--color-teal);margin:var(--space-4) 0;padding:var(--space-3) var(--space-4);border-radius:var(--radius-md)}
 </style>

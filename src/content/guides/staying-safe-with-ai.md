@@ -34,7 +34,6 @@ Scammers have always tried to trick people. AI simply helps them do it faster an
 <source type="image/webp" srcset="/img/guides/staying-safe-with-ai/safe-scams-640.webp 640w, /img/guides/staying-safe-with-ai/safe-scams-1024.webp 1024w" sizes="(min-width:960px) 916px, calc(100vw - 40px)" />
 <img src="/img/guides/staying-safe-with-ai/safe-scams-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A man on his sofa looks carefully at a message on his phone before replying." />
 </picture>
-<figcaption class="photo-credit">Image: HumAIn Logic</figcaption>
 </figure>
 
 ### Voice-cloning "emergency" calls
