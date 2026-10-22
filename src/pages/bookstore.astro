@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import { BOOKS } from '../data/bookstore';
+---
+<Base title="Bookstore: quick-read AI guides (PDF)" description="Simple, quick-read PDF guides from HumAIn Logic: enhanced editions of our free guides, with checklists, worksheets and ready-made prompts.">
+<section class="page-head"><div class="container"><span class="eyebrow">Bookstore</span><h1>Quick-read AI guides</h1><p class="lede">Enhanced PDF editions of our <a href="/guides">free guides</a>. Still simple and quick to read, with extra checklists, worksheets and ready-made prompts you can keep.</p></div></section>
+<div class="section" style="padding-top:var(--space-6)"><div class="container">
+  <ul class="grid-3 bookstore-grid" style="list-style:none;padding:0;margin:0">
+    {BOOKS.map(b => (
+      <li style="display:flex"><article class="tool" style="width:100%">
+        {b.badge && <span class="badge">{b.badge}</span>}
+        <span class="eyebrow">PDF guide</span>
+        <h2 class="h4" style="font-size:var(--fs-h4)">{b.title}</h2>
+        <p class="what">{b.description}</p>
+        <div class="facts"><span><strong>{b.pages} pages</strong></span><span>{b.readTime}</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:var(--space-3)">
+          <strong style="font:600 var(--fs-h4) var(--font-heading)">{b.price}</strong>
+          {b.basedOn && <a class="meta" href={b.basedOn}>Read the free version</a>}
+        </div>
+        <div class="cta">
+          {b.checkoutUrl
+            ? <a class="btn btn-primary" href={b.checkoutUrl} rel="noopener">Buy for {b.price}</a>
+            : <button class="btn btn-primary" type="button" disabled aria-disabled="true">Coming soon</button>}
+        </div>
+      </article></li>
+    ))}
+  </ul>
+  <p class="note">Not on sale yet. <a href="/newsletter">Join the newsletter</a> and we'll tell you when the guides are ready.</p>
+</div></div>
+</Base>
