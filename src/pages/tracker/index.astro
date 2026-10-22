@@ -9,21 +9,23 @@ const hgroups = HIRING_ORDER.map(k => ({ k, ...HIRING[k], jobs: jobsData.jobs.fi
 const ld = [jobsDatasetLd(jobsData), itemList('Jobs in the tracker', jobsData.jobs.map(j => ({ url: `${SITE.url}/tracker/jobs/${j.slug}`, name: j.name })))];
 ---
 <Base title="Job safety tracker" description="How is AI changing your job? Calm, sourced outlooks for 31 jobs." jsonld={ld} json="/api/jobs.json">
-<section class="page-head"><div class="container">
+<section class="page-head tracker-head"><div class="container tracker-head-grid">
+<div class="tracker-head-copy">
   <span class="eyebrow">Job safety tracker</span><h1>How is AI changing your job?</h1>
   <p class="lede">Most jobs aren’t disappearing. They’re changing. Find your job to see our outlook, the reasons, and the research behind it.</p>
   <p class="confidence" style="margin-top:var(--space-3)">Last updated {fmtDate(jobsData.updated)} · <a href="/methodology">How we decide</a> · <a href="/api/jobs.json">Download data (JSON)</a></p>
   <form class="job-search" action="/tracker" method="get" id="jform" style="max-width:560px"><label class="sr-only" for="job">Your job title</label><input class="input" id="job" name="job" list="job-list" placeholder="Check your job, e.g. receptionist" autocomplete="off"><button class="btn btn-primary" type="submit">Check</button></form>
   <datalist id="job-list">{jobsData.jobs.map(j => <option value={j.name} />)}</datalist>
   <p id="jmsg" role="status"></p>
-</div></section>
-<div class="container section" style="padding-top:var(--space-6)">
+</div>
   <figure class="tracker-photo">
     <picture>
-      <source type="image/webp" srcset="/img/tracker/tracker-job-loss-640.webp 640w, /img/tracker/tracker-job-loss-1024.webp 1024w" sizes="(min-width:768px) 720px, calc(75vw - 30px)" />
-      <img src="/img/tracker/tracker-job-loss-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A person sits on office steps holding a box of desk belongings, looking out over the city." />
+      <source type="image/webp" srcset="/img/tracker/tracker-job-loss-640.webp 640w, /img/tracker/tracker-job-loss-1024.webp 1024w" sizes="(min-width:900px) 42vw, calc(100vw - 40px)" />
+      <img src="/img/tracker/tracker-job-loss-1024.jpg" width="1024" height="576" loading="eager" fetchpriority="high" decoding="async" alt="A person sits on office steps holding a box of desk belongings, looking out over the city." />
     </picture>
   </figure>
+</div></section>
+<div class="container section" style="padding-top:var(--space-6)">
   <div class="outlook-groups">
     {groups.map(g => (
       <section class="panel" aria-labelledby={`g-${g.k}`}>
@@ -63,9 +65,15 @@ document.getElementById('jform')!.addEventListener('submit', e => { e.preventDef
 </script>
 <style>
 /* Tracker photo: soft radial fade into the page background (same mask technique as /news and the guides). */
-.tracker-photo{position:relative;margin:0 auto var(--space-6);max-width:720px;aspect-ratio:16/9;pointer-events:none}
+.tracker-head-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-4)}
+.tracker-head-copy{min-width:0}
+.tracker-photo{position:relative;margin:0;width:100%;pointer-events:none}
 .tracker-photo picture{display:contents}
 .tracker-photo img{display:block;width:100%;height:100%;object-fit:cover;opacity:.9;filter:saturate(.92) contrast(.97);
   -webkit-mask-image:radial-gradient(ellipse closest-side at center,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse closest-side at center,#000 55%,transparent 100%)}
-@media (max-width:767px){.tracker-photo{width:75%;margin-bottom:var(--space-5)}}
+/* Desktop: text left, photo right, so the job list starts above the fold. */
+@media (min-width:900px){.tracker-head-grid{grid-template-columns:minmax(0,1fr) 42%;align-items:center;gap:var(--space-6)}.tracker-photo{aspect-ratio:16/10}}
+/* Tablet/mobile: a short faded band under the intro. */
+@media (max-width:899px){.tracker-photo{height:180px;max-width:640px;margin:0 auto}.tracker-photo img{object-position:center 40%}}
+@media (max-width:599px){.tracker-photo{height:120px}.tracker-head + .section{padding-top:var(--space-4)!important}}
 </style>
