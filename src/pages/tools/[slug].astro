@@ -24,7 +24,7 @@ const ld = [
       <div class="tile" style={`background:${bg};color:${fg}`} aria-hidden="true">{initials(tool.name)}</div>
       <div><h1 style="margin:0">{tool.name}</h1><p class="lede" style="margin-top:var(--space-2)">{tool.summary}</p></div>
     </div>
-    <div><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
+    <div><a class="btn btn-primary" href={tool.website} target="_blank" rel="noopener">Visit {tool.name} <svg width="16" height="16" aria-hidden="true"><use href="#i-ext"/></svg></a></div>
   </div>
   <div class="badges" style="margin-top:var(--space-4)">{tool.companion && <span class="b b-unverified">AI companion, not therapy</span>}<span class="b b-price">{tool.pricing.label}</span>{p.verified ? <span class="b b-verified">Price verified {fmtMonthDay(p.verified_on)}</span> : <span class="b b-unverified">Pricing unconfirmed</span>}{tool.affiliate && <span class="b b-affiliate">Affiliate link</span>}</div>
   {tool.disclaimer && <div class="panel tool-disclaimer" role="note" aria-label="Important" style="margin-top:var(--space-4);border-left:4px solid var(--color-teal)"><p style="margin:0"><strong>Important:</strong> {tool.disclaimer}</p></div>}
@@ -67,6 +67,6 @@ const ld = [
       <p class="confidence" style="margin-top:var(--space-3)">Details and prices come from the tool's official pages. No company pays to be listed.</p>
     </aside>
   </div>
-  <div class="sticky-cta"><a class="btn btn-primary" href={tool.website} rel="noopener">Visit {tool.name}</a></div>
+  <div class="sticky-cta"><a class="btn btn-primary" href={tool.website} target="_blank" rel="noopener">Visit {tool.name}</a></div>
 </div>
 </Base>
