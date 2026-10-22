@@ -97,7 +97,29 @@ if (fs.existsSync(path.join(R, 'jobs.json'))) {
 // ---- Guides: copy Markdown into the site (the repo only contains site/) ----
 const G = readC('guides.json');
 if (G) {
-  const dir = path.resolve('src/content/guides'); fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
+  const dir = path.resolve('src/content/guides');
+  // Guide photos are site-only edits (front-matter `hero:` + <figure class="... guide-photo"> blocks).
+  // Capture them before the wipe and re-apply them if the research copy doesn't already carry them.
+  const photos = {};
+  if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.md'))) {
+    const old = fs.readFileSync(path.join(dir, f), 'utf8');
+    const hero = old.match(/^---\n[\s\S]*?^(hero:\n(?:  .*\n)+)/m)?.[1];
+    const figs = [...old.matchAll(/((?:^|\n\n)([^\n][\s\S]*?))\n\n(<figure class="[^"]*guide-photo[^"]*">[\s\S]*?<\/figure>)\n/g)]
+      .map(m => ({ anchor: m[2].split('\n\n').pop(), html: m[3] }));
+    photos[f] = { hero, figs };
+  }
+  const keepPhotos = (f, md) => {
+    const p = photos[f]; if (!p) return md;
+    if (p.hero && !/^hero:/m.test(md.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '')) md = md.replace(/^(---\n[\s\S]*?\n)---/, `$1${p.hero}---`);
+    for (const { anchor, html } of p.figs) {
+      if (md.includes(html.match(/src="([^"]+)"/)[1])) continue;
+      const i = md.indexOf(anchor + '\n\n');
+      if (i < 0) { mismatch.push(`guide photo anchor not found in ${f}; photo dropped`); continue; }
+      const at = i + anchor.length + 2; md = md.slice(0, at) + html + '\n\n' + md.slice(at);
+    }
+    return md;
+  };
+  fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
   for (const g of G.guides) {
     const src = path.join(C, g.file);
     if (!fs.existsSync(src)) { mismatch.push(`guide file missing: ${g.file}`); continue; }
@@ -106,7 +128,7 @@ if (G) {
     const fmSlug = fm.match(/^slug:\s*(.+)$/m)?.[1].trim();
     if (fmSlug !== g.slug) mismatch.push(`guide slug mismatch: guides.json ${g.slug} vs front matter ${fmSlug}`);
     // The page renders the title as its H1, so drop the body's duplicate leading H1
-    fs.writeFileSync(path.join(dir, `${g.slug}.md`), md.replace(/^(---\n[\s\S]*?\n---\n\s*)# [^\n]*\n/, '$1'));
+    fs.writeFileSync(path.join(dir, `${g.slug}.md`), keepPhotos(`${g.slug}.md`, md.replace(/^(---\n[\s\S]*?\n---\n\s*)# [^\n]*\n/, '$1')));
   }
   write('guides.json', G.guides.map(({ file, ...g }) => g));
 }
