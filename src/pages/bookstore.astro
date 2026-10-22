@@ -8,6 +8,10 @@ import { BOOKS } from '../data/bookstore';
   <ul class="grid-3 bookstore-grid" style="list-style:none;padding:0;margin:0">
     {BOOKS.map(b => (
       <li style="display:flex"><article class="tool" style="width:100%">
+        <picture class="book-cover">
+          <source type="image/webp" srcset={`/img/bookstore/${b.cover}-640.webp 640w, /img/bookstore/${b.cover}-1024.webp 1024w`} sizes="(min-width: 900px) 33vw, 100vw" />
+          <img src={`/img/bookstore/${b.cover}.jpg`} alt={`${b.title} cover`} width="1024" height="1365" loading="lazy" decoding="async" />
+        </picture>
         {b.badge && <span class="badge">{b.badge}</span>}
         <span class="eyebrow">PDF guide</span>
         <h2 class="h4" style="font-size:var(--fs-h4)">{b.title}</h2>
@@ -28,4 +32,8 @@ import { BOOKS } from '../data/bookstore';
   <p class="note">Not on sale yet. <a href="/newsletter">Join the newsletter</a> and we'll tell you when the guides are ready.</p>
   <p class="note">All sales are final. Because these are instant digital downloads, we don't offer refunds. Purchases include the version available at the time of sale.</p>
 </div></div>
+<style>
+  .book-cover { display:block; aspect-ratio:3/4; overflow:hidden; border-radius:var(--radius-md); margin-bottom:var(--space-4); background:var(--color-surface-2, #eef2f1); }
+  .book-cover img { width:100%; height:100%; object-fit:cover; display:block; }
+</style>
 </Base>
