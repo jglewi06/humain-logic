@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import GuidePhoto from '../../components/GuidePhoto.astro';
 import { getCollection, render } from 'astro:content';
 import meta from '../../data/guides.json';
 import { SITE, fmtMonthDay } from '../../lib/site';
@@ -27,6 +28,7 @@ const ld = [
   <p class="confidence" style="margin-top:var(--space-3)">By {authorName} · {published && <>Published <time datetime={published}>{fmtMonthDay(published)}</time> · </>}Updated <time datetime={updated}>{fmtMonthDay(updated)}</time> · {m?.reading_time}</p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
+  {entry.data.hero && <GuidePhoto base={entry.data.hero.src} alt={entry.data.hero.alt} eager />}
   <article class="prose guide"><Content /></article>
   {others.length > 0 && <section style="margin-top:var(--space-7)" aria-labelledby="more-h"><h2 id="more-h" style="font-size:var(--fs-h3);margin-bottom:var(--space-4)">More guides</h2>
     <div class="grid-3">{others.map(g => <article class="news-card"><h3><a href={`/guides/${g.slug}`}>{g.title}</a></h3><p>{g.summary}</p></article>)}</div></section>}
@@ -39,5 +41,8 @@ const ld = [
 .guide li{margin-bottom:var(--space-2)}
 .guide hr{border:0;border-top:1px solid var(--color-border);margin:var(--space-6) 0}
 .guide a{overflow-wrap:anywhere}
+.guide-photo{aspect-ratio:16/9;max-width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.12);margin:var(--space-5) 0 var(--space-6)}
+.guide .guide-photo{margin:var(--space-5) 0}
+.guide-hero{max-width:44rem;margin-top:0}
 .guide blockquote{background:var(--color-sage);border-left:6px solid var(--color-teal);margin:var(--space-4) 0;padding:var(--space-3) var(--space-4);border-radius:var(--radius-md)}
 </style>

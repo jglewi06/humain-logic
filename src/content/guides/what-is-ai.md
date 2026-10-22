@@ -5,6 +5,9 @@ summary: "What artificial intelligence actually is, how today's AI chat tools wo
 updated: 2026-10-15
 published: 2026-10-15
 author: HumAIn Logic editorial team
+hero:
+  src: /img/guides/what-is-ai/what-is-ai-hero
+  alt: "An older man in glasses types a question into a laptop at his sunny kitchen table."
 ---
 
 
@@ -19,6 +22,14 @@ The key word is *simulate*. AI doesn't think or feel the way people do. It's a v
 ## You've been using AI for years
 
 AI isn't brand new. You've likely used it without noticing:
+
+<figure class="news-media is-photo guide-photo">
+<picture>
+<source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-everyday-640.webp 640w, /img/guides/what-is-ai/what-is-ai-everyday-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<img src="/img/guides/what-is-ai/what-is-ai-everyday-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A woman on her sofa smiles at her phone, with a smart speaker on the table beside her." />
+</picture>
+<figcaption class="credit">Image: HumAIn Logic</figcaption>
+</figure>
 
 - **Spam filters** that keep junk out of your inbox
 - **Maps apps** that predict traffic and suggest faster routes
@@ -78,6 +89,14 @@ Quickly. Stanford University's yearly AI Index tracks how much AI tools are impr
 ## Getting started, gently
 
 You don't need to master everything. Try this:
+
+<figure class="news-media is-photo guide-photo">
+<picture>
+<source type="image/webp" srcset="/img/guides/what-is-ai/what-is-ai-getting-started-640.webp 640w, /img/guides/what-is-ai/what-is-ai-getting-started-1024.webp 1024w" sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+<img src="/img/guides/what-is-ai/what-is-ai-getting-started-1024.jpg" width="1024" height="576" loading="lazy" decoding="async" alt="A teenage boy shows his grandmother how to use an app on a tablet at the dining table." />
+</picture>
+<figcaption class="credit">Image: HumAIn Logic</figcaption>
+</figure>
 
 1. **Pick one free tool.** ChatGPT, Gemini, Claude or Copilot all have free versions.
 2. **Ask it something low-stakes.** "Suggest five easy weeknight dinners using chicken and rice."

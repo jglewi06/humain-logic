@@ -3,6 +3,6 @@ import { glob } from 'astro/loaders';
 // Guides: copied from research/content/guides by `npm run import-research`
 const guides = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/guides' }),
-  schema: z.object({ slug: z.string(), title: z.string(), summary: z.string(), updated: z.coerce.date(), published: z.coerce.date().optional(), author: z.string().optional() }),
+  schema: z.object({ slug: z.string(), title: z.string(), summary: z.string(), updated: z.coerce.date(), published: z.coerce.date().optional(), author: z.string().optional(), hero: z.object({ src: z.string(), alt: z.string() }).optional() }),
 });
 export const collections = { guides };

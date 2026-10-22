@@ -1,0 +1,12 @@
+---
+// 16:9 guide photo (same treatment as /guides): WebP 640/1024 + 1024 JPG fallback. `base` is the path without -<w>.<ext>.
+interface Props { base: string; alt: string; eager?: boolean }
+const { base, alt, eager = false } = Astro.props;
+---
+<figure class:list={['news-media', 'is-photo', 'guide-photo', eager && 'guide-hero']}>
+  <picture>
+    <source type="image/webp" srcset={`${base}-640.webp 640w, ${base}-1024.webp 1024w`} sizes="(min-width:744px) 704px, calc(100vw - 40px)" />
+    <img src={`${base}-1024.jpg`} width="1024" height="576" loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} decoding="async" alt={alt} />
+  </picture>
+  <figcaption class="credit">Image: HumAIn Logic</figcaption>
+</figure>
