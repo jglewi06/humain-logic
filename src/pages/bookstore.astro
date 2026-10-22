@@ -7,7 +7,7 @@ import { BOOKS } from '../data/bookstore';
 <div class="section" style="padding-top:var(--space-6)"><div class="container">
   <ul class="grid-3 bookstore-grid" style="list-style:none;padding:0;margin:0">
     {BOOKS.map((b, i) => (<>
-      {i === 3 && <li class="book-banner"><picture><source type="image/webp" srcset="/img/bookstore/maya-laptop-banner-640.webp 640w, /img/bookstore/maya-laptop-banner-1280.webp 1280w" sizes="(min-width: 1100px) 1100px, 100vw" /><img src="/img/bookstore/maya-laptop-banner-1280.webp" alt="Maya reading on a laptop" width="1280" height="533" loading="lazy" decoding="async" /></picture></li>}
+      {i === 3 && <li class="book-banner"><picture><source type="image/webp" srcset="/img/bookstore/bookshelf-banner-640.webp 640w, /img/bookstore/bookshelf-banner-1255.webp 1255w" sizes="(min-width: 1100px) 1100px, 100vw" /><img src="/img/bookstore/bookshelf-banner-1255.webp" alt="" aria-hidden="true" width="1255" height="363" loading="lazy" decoding="async" /></picture></li>}
       <li style="display:flex"><article class="tool" style="width:100%">
         <picture class="book-cover">
           <source type="image/webp" srcset={`/img/bookstore/${b.cover}-640.webp 640w, /img/bookstore/${b.cover}-1024.webp 1024w`} sizes="(min-width: 900px) 33vw, 100vw" />
@@ -35,11 +35,10 @@ import { BOOKS } from '../data/bookstore';
 <style>
   .book-banner { grid-column: 1 / -1; display:flex; justify-content:center; }
   .book-banner picture { display:block; width:100%; }
-  .book-banner img { width:100%; height:300px; object-fit:cover; object-position:70% 30%; display:block; opacity:.9;
+  .book-banner img { width:100%; height:min(260px, 29vw); object-fit:cover; object-position:center; display:block; opacity:.9;
     -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent), linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent); -webkit-mask-composite: source-in;
     mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent), linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent); mask-composite: intersect; }
-  @media (max-width: 899px) { .book-banner img { height:180px; } }
-  .bookstore-head { position:relative; overflow:hidden; }
+    .bookstore-head { position:relative; overflow:hidden; }
   .bookstore-head .container { position:relative; z-index:1; }
   .maya-bg { position:absolute; top:0; right:0; width:min(480px, 38vw); pointer-events:none; z-index:0; opacity:.65;
     -webkit-mask-image: linear-gradient(to left, #000 40%, transparent 95%), linear-gradient(to top, transparent 0%, #000 35%); -webkit-mask-composite: source-in;
