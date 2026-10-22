@@ -6,7 +6,8 @@ import { BOOKS } from '../data/bookstore';
 <section class="page-head bookstore-head"><picture class="maya-bg" aria-hidden="true"><source type="image/webp" srcset="/img/bookstore/maya-reading-640.webp 640w, /img/bookstore/maya-reading-1024.webp 1024w" sizes="520px" /><img src="/img/bookstore/maya-reading-1024.webp" alt="" width="1024" height="576" loading="lazy" decoding="async" /></picture><div class="container"><span class="eyebrow">Bookstore</span><h1>Quick-read AI guides</h1><p class="lede">Enhanced PDF editions of our <a href="/guides">free guides</a>. Still simple and quick to read, with extra checklists, worksheets and ready-made prompts you can keep.</p></div></section>
 <div class="section" style="padding-top:var(--space-6)"><div class="container">
   <ul class="grid-3 bookstore-grid" style="list-style:none;padding:0;margin:0">
-    {BOOKS.map(b => (
+    {BOOKS.map((b, i) => (<>
+      {i === 3 && <li class="book-banner"><picture><source type="image/webp" srcset="/img/bookstore/maya-laptop-banner-640.webp 640w, /img/bookstore/maya-laptop-banner-1280.webp 1280w" sizes="(min-width: 1100px) 1100px, 100vw" /><img src="/img/bookstore/maya-laptop-banner-1280.webp" alt="Maya reading on a laptop" width="1280" height="533" loading="lazy" decoding="async" /></picture></li>}
       <li style="display:flex"><article class="tool" style="width:100%">
         <picture class="book-cover">
           <source type="image/webp" srcset={`/img/bookstore/${b.cover}-640.webp 640w, /img/bookstore/${b.cover}-1024.webp 1024w`} sizes="(min-width: 900px) 33vw, 100vw" />
@@ -27,11 +28,17 @@ import { BOOKS } from '../data/bookstore';
             : <button class="btn btn-primary" type="button" disabled aria-disabled="true">Coming soon</button>}
         </div>
       </article></li>
-    ))}
+    </>))}
   </ul>
   <p class="note">All sales are final. Because these are instant digital downloads, we don't offer refunds. Purchases include the version available at the time of sale.</p>
 </div></div>
 <style>
+  .book-banner { grid-column: 1 / -1; display:flex; justify-content:center; }
+  .book-banner picture { display:block; width:100%; }
+  .book-banner img { width:100%; height:300px; object-fit:cover; object-position:70% 30%; display:block; opacity:.9;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent), linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent); -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent), linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent); mask-composite: intersect; }
+  @media (max-width: 899px) { .book-banner img { height:180px; } }
   .bookstore-head { position:relative; overflow:hidden; }
   .bookstore-head .container { position:relative; z-index:1; }
   .maya-bg { position:absolute; top:0; right:0; width:min(480px, 38vw); pointer-events:none; z-index:0; opacity:.65;
