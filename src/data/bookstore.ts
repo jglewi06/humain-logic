@@ -24,5 +24,5 @@ export const BOOKS: BookProduct[] = [
     pages: 20, readTime: '20 min read', price: '$7.99', basedOn: '/guides/ai-and-your-job', checkoutUrl: '' },
   { slug: 'complete-bundle-pdf', title: 'The complete HumAIn Logic bundle',
     description: 'All five guides in one download, at a lower price than buying them separately.',
-    pages: 94, readTime: 'About 1.5 hours total', price: '$9.99', checkoutUrl: '', badge: 'Best value' },
+    pages: 94, readTime: 'About 1.5 hours total', price: '$19.99', checkoutUrl: '', badge: 'Best value' },
 ];
