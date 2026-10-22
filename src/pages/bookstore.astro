@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { BOOKS } from '../data/bookstore';
 ---
 <Base title="Bookstore: quick-read AI guides (PDF)" description="Simple, quick-read PDF guides from HumAIn Logic: enhanced editions of our free guides, with checklists, worksheets and ready-made prompts.">
-<section class="page-head"><div class="container"><span class="eyebrow">Bookstore</span><h1>Quick-read AI guides</h1><p class="lede">Enhanced PDF editions of our <a href="/guides">free guides</a>. Still simple and quick to read, with extra checklists, worksheets and ready-made prompts you can keep.</p></div></section>
+<section class="page-head bookstore-head"><picture class="maya-bg" aria-hidden="true"><source type="image/webp" srcset="/img/bookstore/maya-reading-640.webp 640w, /img/bookstore/maya-reading-1024.webp 1024w" sizes="520px" /><img src="/img/bookstore/maya-reading-1024.webp" alt="" width="1024" height="576" loading="lazy" decoding="async" /></picture><div class="container"><span class="eyebrow">Bookstore</span><h1>Quick-read AI guides</h1><p class="lede">Enhanced PDF editions of our <a href="/guides">free guides</a>. Still simple and quick to read, with extra checklists, worksheets and ready-made prompts you can keep.</p></div></section>
 <div class="section" style="padding-top:var(--space-6)"><div class="container">
   <ul class="grid-3 bookstore-grid" style="list-style:none;padding:0;margin:0">
     {BOOKS.map(b => (
@@ -32,6 +32,14 @@ import { BOOKS } from '../data/bookstore';
   <p class="note">All sales are final. Because these are instant digital downloads, we don't offer refunds. Purchases include the version available at the time of sale.</p>
 </div></div>
 <style>
+  .bookstore-head { position:relative; overflow:hidden; }
+  .bookstore-head .container { position:relative; z-index:1; }
+  .maya-bg { position:absolute; top:0; right:0; width:min(480px, 38vw); pointer-events:none; z-index:0; opacity:.65;
+    -webkit-mask-image: linear-gradient(to left, #000 40%, transparent 95%), linear-gradient(to top, transparent 0%, #000 35%); -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to left, #000 40%, transparent 95%), linear-gradient(to top, transparent 0%, #000 35%); mask-composite: intersect; }
+  .maya-bg img { width:100%; height:auto; display:block; }
+  @media (min-width: 900px) { .bookstore-head .lede, .bookstore-head h1 { max-width: 58%; } }
+  @media (max-width: 899px) { .maya-bg { display:none; } }
   .book-cover { display:block; aspect-ratio:3/4; overflow:hidden; border-radius:var(--radius-md); margin-bottom:var(--space-4); background:var(--color-surface-2, #eef2f1); }
   .book-cover img { width:100%; height:100%; object-fit:cover; display:block; }
 </style>
