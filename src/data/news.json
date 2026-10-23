@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-23T07:02:15.240Z",
- "failed_feeds": [],
+ "updated": "2026-10-23T12:59:10.654Z",
+ "failed_feeds": [
+  "Google DeepMind Blog"
+ ],
  "items": [
+  {
+   "id": "retro-gaming-is-being-overrun-with-ai",
+   "title": "Retro gaming is being overrun with AI",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+   "source": "The Verge – AI",
+   "date": "2026-10-23T12:00:00.000Z",
+   "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "the-cost-of-saying-hello-an-empirical-study-of-handshake-overhead-in-a",
    "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
@@ -120,7 +136,7 @@
    "link": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
    "source": "NVIDIA Blog",
    "date": "2026-10-23T02:00:13.000Z",
-   "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. Together, the ecosystem announcements below point to the nation’s…",
+   "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by…",
    "category": "business",
    "ai_summary": false,
    "editor_reviewed": false,
@@ -311,20 +327,6 @@
    "also": []
   },
   {
-   "id": "canva-releases-its-first-image-generation-model",
-   "title": "Canva releases its first image generation model",
-   "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-22T19:00:00.000Z",
-   "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "openai-makes-its-jev-competitor-widely-available-as-decision-model-com",
    "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
    "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
@@ -335,6 +337,20 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "canva-releases-its-first-image-generation-model",
+   "title": "Canva releases its first image generation model",
+   "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-22T19:00:00.000Z",
+   "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
    "image_url_source": null,
    "also": []
   },
@@ -493,20 +509,6 @@
    "also": []
   },
   {
-   "id": "someone-hacked-the-switch-2-by-using-an-old-game-and-ai",
-   "title": "Someone hacked the Switch 2 by using an old game and AI",
-   "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
-   "source": "The Verge – AI",
-   "date": "2026-10-22T17:21:31.000Z",
-   "summary": "The Nintendo Switch 2 has apparently been jailbroken, and a modder has already shown the console running a custom version of Mario Kart World featuring new playable characters like Cinnamoroll, the red Angry Bird, Peter Griffin, and Steve…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-gia",
    "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
    "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
@@ -574,20 +576,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ethernet-corp-blog-minerva-kv-1280x680-5595752.png",
-   "also": []
-  },
-  {
-   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
-   "title": "Beyond tree cover: mapping the world’s forest types",
-   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-22T14:30:24.000Z",
-   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -1120,6 +1108,20 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-ctl-sustainability.jpg?itok=r36wfDxM",
+   "also": []
+  },
+  {
+   "id": "ai-model-decodes-the-language-cells-use-to-communicate",
+   "title": "AI model decodes the language cells use to communicate",
+   "link": "https://news.mit.edu/2026/ai-model-decodes-language-cells-use-communicate-1015",
+   "source": "MIT News – AI",
+   "date": "2026-10-15T20:50:00.000Z",
+   "summary": "A new computational approach reveals how cells communicate to assemble into tissues. This could accelerate stem cell engineering, improve disease models, and inform therapies.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202609/mit-whitehead-lung.jpg?itok=sctJv0ef",
    "also": []
   }
  ]
