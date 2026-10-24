@@ -1,0 +1,19 @@
+{
+ "stories": [
+  {
+   "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+   "why": "OpenAI says it will stop training its frontier AI models on the live internet because of significant risks, which may change how up to date and how safe the AI tools people and businesses rely on turn out to be."
+  },
+  {
+   "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+   "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+   "why": "A full-day TechCrunch founder event will cover practical topics like finding customers, building teams, and sharpening a pitch, which are the same everyday challenges small business owners face."
+  },
+  {
+   "link": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+   "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+   "why": "Amazon has published a hands-on guide for training AI on the outcome of a whole multi-step task, which could lead to AI assistants that handle complete jobs like bookings or support requests more reliably."
+  }
+ ]
+}
