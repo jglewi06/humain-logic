@@ -1,7 +1,65 @@
 {
- "updated": "2026-10-24T12:55:41.250Z",
- "failed_feeds": [],
+ "updated": "2026-10-24T18:49:19.324Z",
+ "failed_feeds": [
+  "Google DeepMind Blog"
+ ],
  "items": [
+  {
+   "id": "pennsylvania-will-require-labels-on-ai-generated-ads",
+   "title": "Pennsylvania will require labels on AI-generated ads",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+   "source": "The Verge – AI",
+   "date": "2026-10-24T18:32:21.000Z",
+   "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text -…",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "block-s-new-voice-model-sounds-eerily-human",
+   "title": "Block’s new voice model sounds eerily human",
+   "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-24T16:00:00.000Z",
+   "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "forced-to-pick-grok-s-ai-model-chooses-republicans-openai-s-picks-demo",
+   "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+   "link": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-24T15:00:00.000Z",
+   "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "here-are-the-top-ai-agents-that-can-live-in-your-text-messages",
+   "title": "Here are the top AI agents that can live in your text messages",
+   "link": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-24T14:00:00.000Z",
+   "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable",
    "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
@@ -381,20 +439,6 @@
    "also": []
   },
   {
-   "id": "openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo",
-   "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-   "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-22T22:08:24.000Z",
-   "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "canva-s-first-ai-image-model-plans-designs-before-generating-them",
    "title": "Canva’s first AI image model plans designs before generating them",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
@@ -437,20 +481,6 @@
    "also": []
   },
   {
-   "id": "meta-s-ai-could-still-scrape-news-sites-legal-experts-say",
-   "title": "Meta’s AI could still scrape news sites, legal experts say",
-   "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-   "source": "The Verge – AI",
-   "date": "2026-10-22T20:32:05.000Z",
-   "summary": "Meta has tweaked its business terms to remove language suggesting that it could freely train its AI models on news sites, like The Verge - but legal experts say these changes aren't enough to address their concerns. \"This does nothing to…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "the-social-society-helping-women-join-the-ai-boom",
    "title": "The Social Society Helping Women Join the AI Boom",
    "link": "https://www.wired.com/story/aged-intelligence-society-interview/",
@@ -465,40 +495,12 @@
    "also": []
   },
   {
-   "id": "1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-withou",
-   "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-   "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-22T19:07:09.000Z",
-   "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "build-more-responsive-apps-with-the-decisions-api",
    "title": "Build more responsive apps with the Decisions API",
    "link": "https://openai.com/index/decisions-api",
    "source": "OpenAI News",
    "date": "2026-10-22T19:00:00.000Z",
    "summary": "Fast, focused, low-cost decisions for any application.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "openai-makes-its-jev-competitor-widely-available-as-decision-model-com",
-   "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
-   "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-22T19:00:00.000Z",
-   "summary": "OpenAI is launching its decision model to the world. Can it compete with the original Jev?",
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
@@ -588,20 +590,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ethernet-corp-blog-minerva-kv-1280x680-5595752.png",
-   "also": []
-  },
-  {
-   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
-   "title": "Beyond tree cover: mapping the world’s forest types",
-   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-22T14:30:24.000Z",
-   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -1081,20 +1069,6 @@
    "also": []
   },
   {
-   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
-   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-15T16:08:03.000Z",
-   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
-   "also": []
-  },
-  {
    "id": "putting-earth-ai-to-work-geospatial-agents-for-our-planet-s-biggest-ch",
    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
    "link": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
@@ -1120,6 +1094,34 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/DeepReview2.jpg",
+   "also": []
+  },
+  {
+   "id": "research-2026-10-ways-we-re-amplifying-human-ingenuity",
+   "title": "Research@ 2026: 10 ways we're amplifying human ingenuity",
+   "link": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
+   "source": "Google Research Blog",
+   "date": "2026-10-14T16:14:00.000Z",
+   "summary": "General Science",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/USS0291-Google_Research_Anthem_Film_Thumbnail4_1.jpg",
+   "also": []
+  },
+  {
+   "id": "anthropic-warns-small-ai-models-could-self-replicate-through-iot-devic",
+   "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+   "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+   "source": "Ars Technica – Technology Lab",
+   "date": "2026-10-14T12:55:06.000Z",
+   "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "also": []
   }
  ]
