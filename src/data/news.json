@@ -1,9 +1,21 @@
 {
- "updated": "2026-10-24T06:58:53.104Z",
- "failed_feeds": [
-  "Google DeepMind Blog"
- ],
+ "updated": "2026-10-24T12:55:41.250Z",
+ "failed_feeds": [],
  "items": [
+  {
+   "id": "the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable",
+   "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
+   "link": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
+   "source": "Wired – AI",
+   "date": "2026-10-24T12:00:00.000Z",
+   "summary": "Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adbb8a7e6d0c133525c3e7c/master/pass/KernelPanic_The%20PHP%20Meltdown%20Shows%20How%20AI%20Makes%20Bugs%20More%20Exploitable.jpg",
+   "also": []
+  },
   {
    "id": "openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet",
    "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
@@ -579,6 +591,20 @@
    "also": []
   },
   {
+   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
+   "title": "Beyond tree cover: mapping the world’s forest types",
+   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-22T14:30:24.000Z",
+   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "meet-mori-a-cute-robot-mushroom-that-doesn-t-really-say-or-do-anything",
    "title": "Meet Mori, a Cute Robot Mushroom That Doesn’t Really Say (or Do) Anything",
    "link": "https://www.wired.com/story/meet-mori-a-cute-robot-mushroom-that-doesnt-really-say-or-do-anything/",
@@ -859,20 +885,6 @@
    "also": []
   },
   {
-   "id": "this-is-not-a-drill-critical-php-vulnerabilities-are-setting-the-inter",
-   "title": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
-   "link": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
-   "source": "Wired – AI",
-   "date": "2026-10-21T14:26:19.000Z",
-   "summary": "The PHP Foundation has revealed two serious vulnerabilities that could impact millions of websites. Security experts warn that failure to quickly patch the flaws could have dire consequences.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6ad8c3e67fa1a6118ccee121/master/pass/102126-PHP.jpg",
-   "also": []
-  },
-  {
    "id": "bringing-the-spark-to-europe-local-intelligence-powers-next-wave-of-ag",
    "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
    "link": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
@@ -1069,6 +1081,20 @@
    "also": []
   },
   {
+   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-15T16:08:03.000Z",
+   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "putting-earth-ai-to-work-geospatial-agents-for-our-planet-s-biggest-ch",
    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
    "link": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
@@ -1094,34 +1120,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/DeepReview2.jpg",
-   "also": []
-  },
-  {
-   "id": "research-2026-10-ways-we-re-amplifying-human-ingenuity",
-   "title": "Research@ 2026: 10 ways we're amplifying human ingenuity",
-   "link": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
-   "source": "Google Research Blog",
-   "date": "2026-10-14T16:14:00.000Z",
-   "summary": "General Science",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/USS0291-Google_Research_Anthem_Film_Thumbnail4_1.jpg",
-   "also": []
-  },
-  {
-   "id": "anthropic-warns-small-ai-models-could-self-replicate-through-iot-devic",
-   "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-   "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-   "source": "Ars Technica – Technology Lab",
-   "date": "2026-10-14T12:55:06.000Z",
-   "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "also": []
   }
  ]
