@@ -1,0 +1,27 @@
+{
+ "send_date": "2026-10-25",
+ "picked_at": "2026-10-24T13:53:20.059Z",
+ "stories": [
+  {
+   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+   "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-23T23:05:49.000Z",
+   "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work."
+  },
+  {
+   "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+   "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-23T19:06:23.000Z",
+   "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder…"
+  },
+  {
+   "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+   "link": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+   "source": "AWS Machine Learning Blog",
+   "date": "2026-10-23T17:48:54.000Z",
+   "summary": "Multi-Turn Reinforcement Learning (MTRL) on Amazon SageMaker AI trains models on the outcome of a whole multi-step task rather than labeled steps."
+  }
+ ]
+}
