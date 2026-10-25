@@ -1,9 +1,35 @@
 {
- "updated": "2026-10-24T18:49:19.324Z",
- "failed_feeds": [
-  "Google DeepMind Blog"
- ],
+ "updated": "2026-10-25T00:56:43.845Z",
+ "failed_feeds": [],
  "items": [
+  {
+   "id": "blue-planet-iii-is-keeping-the-rough-edges-in-the-age-of-ai",
+   "title": "Blue Planet III is keeping the rough edges in the age of AI",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+   "source": "The Verge – AI",
+   "date": "2026-10-24T21:29:12.000Z",
+   "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real.…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "the-ai-graveyard-a-running-list-of-projects-and-startups-that-didn-t-m",
+   "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+   "link": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-24T19:00:00.000Z",
+   "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "pennsylvania-will-require-labels-on-ai-generated-ads",
    "title": "Pennsylvania will require labels on AI-generated ads",
@@ -383,20 +409,6 @@
    "also": []
   },
   {
-   "id": "left-alone-with-nothing-to-do-ai-agents-started-playing",
-   "title": "Left alone with nothing to do, AI agents started playing",
-   "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-23T00:45:37.000Z",
-   "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "openai-and-poland-s-nask-partner-to-advance-ai-safety-and-security",
    "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
    "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
@@ -435,20 +447,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "canva-s-first-ai-image-model-plans-designs-before-generating-them",
-   "title": "Canva’s first AI image model plans designs before generating them",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-   "source": "The Verge – AI",
-   "date": "2026-10-22T21:51:25.000Z",
-   "summary": "Canva is diving even deeper into AI with the launch of an image generation model that competes directly with those from OpenAI, Microsoft, and Google. The model, called Canva Craft, uses a two-stage architecture that allows it to plan a…",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
    "image_url_source": null,
    "also": []
   },
@@ -590,6 +588,20 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ethernet-corp-blog-minerva-kv-1280x680-5595752.png",
+   "also": []
+  },
+  {
+   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
+   "title": "Beyond tree cover: mapping the world’s forest types",
+   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-22T14:30:24.000Z",
+   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -1069,6 +1081,20 @@
    "also": []
   },
   {
+   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-15T16:08:03.000Z",
+   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "putting-earth-ai-to-work-geospatial-agents-for-our-planet-s-biggest-ch",
    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
    "link": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
@@ -1094,34 +1120,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/DeepReview2.jpg",
-   "also": []
-  },
-  {
-   "id": "research-2026-10-ways-we-re-amplifying-human-ingenuity",
-   "title": "Research@ 2026: 10 ways we're amplifying human ingenuity",
-   "link": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
-   "source": "Google Research Blog",
-   "date": "2026-10-14T16:14:00.000Z",
-   "summary": "General Science",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/USS0291-Google_Research_Anthem_Film_Thumbnail4_1.jpg",
-   "also": []
-  },
-  {
-   "id": "anthropic-warns-small-ai-models-could-self-replicate-through-iot-devic",
-   "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-   "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-   "source": "Ars Technica – Technology Lab",
-   "date": "2026-10-14T12:55:06.000Z",
-   "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "also": []
   }
  ]
