@@ -1,7 +1,49 @@
 {
- "updated": "2026-10-25T12:55:44.955Z",
+ "updated": "2026-10-25T18:51:02.660Z",
  "failed_feeds": [],
  "items": [
+  {
+   "id": "ai-delivers-zero-financial-payoff-to-most-companies-apollo-economist-s",
+   "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+   "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-25T16:57:32.000Z",
+   "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "the-hottest-ai-wearables-and-gadgets-you-should-know-about",
+   "title": "The hottest AI wearables and gadgets you should know about",
+   "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-25T14:10:00.000Z",
+   "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "r-opensource-just-banned-ai-non-english-speakers-and-more",
+   "title": "r/opensource just banned AI, non-English speakers, and more",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+   "source": "The Verge – AI",
+   "date": "2026-10-25T13:25:32.000Z",
+   "summary": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on…",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "google-s-ai-search-changes-upended-online-publishing",
    "title": "Google’s AI search changes upended online publishing",
@@ -213,20 +255,6 @@
    "also": []
   },
   {
-   "id": "from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-found",
-   "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
-   "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-23T19:06:23.000Z",
-   "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "bringing-foundational-models-to-the-front-lines-of-tb-screening",
    "title": "Bringing foundational models to the front lines of TB screening",
    "link": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
@@ -353,20 +381,6 @@
    "also": []
   },
   {
-   "id": "meta-delays-new-business-terms-after-publisher-pushback-on-ai-scraping",
-   "title": "Meta delays new business terms after publisher pushback on AI scraping",
-   "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-   "source": "The Verge – AI",
-   "date": "2026-10-23T14:47:41.000Z",
-   "summary": "Meta is delaying the enforcement of its new business terms after publishers raised concerns that they could allow the company to scrape news sites for AI training, as reported earlier by Fast Company. In a statement to The Verge, Meta…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "securing-our-frontier-model-training-environment",
    "title": "Securing our frontier model training environment",
    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
@@ -392,20 +406,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/MIT-indquist_Ben_IrrationalComputer-01-press.jpg?itok=syHYcG5I",
-   "also": []
-  },
-  {
-   "id": "uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-",
-   "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
-   "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-23T04:00:00.000Z",
-   "summary": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
    "also": []
   },
   {
