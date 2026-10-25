@@ -1,9 +1,35 @@
 {
- "updated": "2026-10-25T06:59:40.218Z",
- "failed_feeds": [
-  "Google DeepMind Blog"
- ],
+ "updated": "2026-10-25T12:55:44.955Z",
+ "failed_feeds": [],
  "items": [
+  {
+   "id": "google-s-ai-search-changes-upended-online-publishing",
+   "title": "Google’s AI search changes upended online publishing",
+   "link": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+   "source": "The Verge – AI",
+   "date": "2026-10-25T12:00:00.000Z",
+   "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "what-the-us-movement-against-data-centers-can-learn-from-abroad",
+   "title": "What the US Movement Against Data Centers Can Learn From Abroad",
+   "link": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/",
+   "source": "Wired – AI",
+   "date": "2026-10-25T10:00:00.000Z",
+   "summary": "Paris Marx, author of Hyperscale, has been tracking global data center development for years. The US has a lot to learn from what’s happened everywhere from Ireland to New Zealand.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adbe4fc594ddd5d406f1b4a/master/pass/102326-Power%20Play-What%20the%20US%20Anti-Data%20Center%20Movement%20Can%20Learn%20From%20Everywhere%20Else-v2.jpg",
+   "also": []
+  },
   {
    "id": "blue-planet-iii-is-keeping-the-rough-edges-in-the-age-of-ai",
    "title": "Blue Planet III is keeping the rough edges in the age of AI",
@@ -341,20 +367,6 @@
    "also": []
   },
   {
-   "id": "retro-gaming-is-being-overrun-with-ai",
-   "title": "Retro gaming is being overrun with AI",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
-   "source": "The Verge – AI",
-   "date": "2026-10-23T12:00:00.000Z",
-   "summary": "Retro video games are everywhere lately - especially in places where they aren't supposed to be. Halo in a web browser, Wind Waker on the iPhone, Super Smash Bros. in mixed reality. Over the past month or so, these kinds of unexpected…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "securing-our-frontier-model-training-environment",
    "title": "Securing our frontier model training environment",
    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
@@ -590,6 +602,20 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ethernet-corp-blog-minerva-kv-1280x680-5595752.png",
+   "also": []
+  },
+  {
+   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
+   "title": "Beyond tree cover: mapping the world’s forest types",
+   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-22T14:30:24.000Z",
+   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -845,20 +871,6 @@
    "also": []
   },
   {
-   "id": "jensen-huang-s-vision-for-europe-runs-on-plug-in-data-centers",
-   "title": "Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers",
-   "link": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
-   "source": "Wired – AI",
-   "date": "2026-10-21T15:02:15.000Z",
-   "summary": "At Nvidia’s GTC in Berlin, Huang unveiled the company’s new plug-in data center—the DSX Pod—as the key to unlocking Europe’s AI infrastructure lag. Oh, and autonomous humanoid robotics.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://media.wired.com/photos/6ad8c8882adb51db52e1a235/master/pass/GettyImages-2301295306.jpg",
-   "also": []
-  },
-  {
    "id": "granite-speech-5-0-transcribe-translate-and-attribute-more-accurately-",
    "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
    "link": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
@@ -1069,6 +1081,20 @@
    "also": []
   },
   {
+   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
+   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-15T16:08:03.000Z",
+   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "putting-earth-ai-to-work-geospatial-agents-for-our-planet-s-biggest-ch",
    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
    "link": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
@@ -1094,34 +1120,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/DeepReview2.jpg",
-   "also": []
-  },
-  {
-   "id": "research-2026-10-ways-we-re-amplifying-human-ingenuity",
-   "title": "Research@ 2026: 10 ways we're amplifying human ingenuity",
-   "link": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
-   "source": "Google Research Blog",
-   "date": "2026-10-14T16:14:00.000Z",
-   "summary": "General Science",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/USS0291-Google_Research_Anthem_Film_Thumbnail4_1.jpg",
-   "also": []
-  },
-  {
-   "id": "anthropic-warns-small-ai-models-could-self-replicate-through-iot-devic",
-   "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-   "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-   "source": "Ars Technica – Technology Lab",
-   "date": "2026-10-14T12:55:06.000Z",
-   "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "also": []
   }
  ]
