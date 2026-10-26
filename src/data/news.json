@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-25T18:51:02.660Z",
- "failed_feeds": [],
+ "updated": "2026-10-26T01:11:42.110Z",
+ "failed_feeds": [
+  "Google DeepMind Blog"
+ ],
  "items": [
+  {
+   "id": "grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey",
+   "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+   "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-25T21:31:16.000Z",
+   "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "ai-delivers-zero-financial-payoff-to-most-companies-apollo-economist-s",
    "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
@@ -181,20 +197,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "jobs",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-rob",
-   "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-   "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-23T21:59:19.000Z",
-   "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
    "image_url_source": null,
    "also": []
   },
@@ -602,20 +604,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ethernet-corp-blog-minerva-kv-1280x680-5595752.png",
-   "also": []
-  },
-  {
-   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
-   "title": "Beyond tree cover: mapping the world’s forest types",
-   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-22T14:30:24.000Z",
-   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -1081,20 +1069,6 @@
    "also": []
   },
   {
-   "id": "accelerating-the-search-for-antimicrobial-peptides-with-google-antigra",
-   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-   "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-15T16:08:03.000Z",
-   "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
-   "also": []
-  },
-  {
    "id": "putting-earth-ai-to-work-geospatial-agents-for-our-planet-s-biggest-ch",
    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
    "link": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
@@ -1120,6 +1094,34 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/DeepReview2.jpg",
+   "also": []
+  },
+  {
+   "id": "research-2026-10-ways-we-re-amplifying-human-ingenuity",
+   "title": "Research@ 2026: 10 ways we're amplifying human ingenuity",
+   "link": "https://research.google/blog/research-2026-10-ways-were-amplifying-human-ingenuity/",
+   "source": "Google Research Blog",
+   "date": "2026-10-14T16:14:00.000Z",
+   "summary": "General Science",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/USS0291-Google_Research_Anthem_Film_Thumbnail4_1.jpg",
+   "also": []
+  },
+  {
+   "id": "anthropic-warns-small-ai-models-could-self-replicate-through-iot-devic",
+   "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+   "link": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+   "source": "Ars Technica – Technology Lab",
+   "date": "2026-10-14T12:55:06.000Z",
+   "summary": "\"Small weight-based replicators\" could usher in a new generation of computer worms.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-caution-threat-1152x648.jpg",
    "also": []
   }
  ]
