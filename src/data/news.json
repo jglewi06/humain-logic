@@ -1,7 +1,135 @@
 {
- "updated": "2026-10-26T07:07:58.597Z",
- "failed_feeds": [],
+ "updated": "2026-10-26T14:57:19.158Z",
+ "failed_feeds": [
+  "Google DeepMind Blog"
+ ],
  "items": [
+  {
+   "id": "anthropic-s-ipo-prospectus-reveals-what-s-under-the-hood",
+   "title": "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
+   "link": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
+   "source": "Wired – AI",
+   "date": "2026-10-26T14:50:47.000Z",
+   "summary": "Anthropic on Monday filed documents ahead of a blockbuster IPO that offers insight into the company’s financials, risk factors, and views on the future of AI.",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://media.wired.com/photos/6adf541e68b92dce121f585d/master/pass/102626-Anthropic%20IPO.jpg",
+   "also": []
+  },
+  {
+   "id": "anthropic-officially-files-for-its-public-debut",
+   "title": "Anthropic officially files for its public debut",
+   "link": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-26T14:35:22.000Z",
+   "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "kevin-roose-is-agi-pilled-why-aren-t-you",
+   "title": "Kevin Roose is AGI-pilled. Why aren’t you?",
+   "link": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+   "source": "The Verge – AI",
+   "date": "2026-10-26T14:00:00.000Z",
+   "summary": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and host of the popular…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "anthropic-s-ipo-filing-lays-out-a-plan-to-revolutionize-every-area-of-",
+   "title": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "source": "The Verge – AI",
+   "date": "2026-10-26T13:32:49.000Z",
+   "summary": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list on the Nasdaq…",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "can-ai-help-solve-the-cobol-code-crisis",
+   "title": "Can AI help solve the COBOL code crisis?",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+   "source": "The Verge – AI",
+   "date": "2026-10-26T13:15:00.000Z",
+   "summary": "A computer running COBOL 73, an antiquated computer programming language, awaits taxpayer information entries at the Internal Revenue Service in Austin, Tx., on Friday, June 10, 2022. | Image: Getty Images What do the IRS, banks, airlines,…",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "meet-the-ai-agents-trying-to-be-real-life-journalists",
+   "title": "Meet the AI Agents Trying to Be Real-Life Journalists",
+   "link": "https://www.wired.com/story/ai-agents-are-trying-to-be-journalists-now/",
+   "source": "Wired – AI",
+   "date": "2026-10-26T09:30:00.000Z",
+   "summary": "Jayden, Sam, and Zack are eagerly pitching editors on reported stories and investigative features. The catch? They're all AI agents.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adcfb8cc56cd60fecb6db05/master/pass/AI%20journalists%202.jpg",
+   "also": []
+  },
+  {
+   "id": "the-focus-on-ai-safety-disasters-ignores-everyday-harms",
+   "title": "The focus on AI safety disasters ignores everyday harms",
+   "link": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-26T09:01:00.000Z",
+   "summary": "Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are important protections, and…",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "safety",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "this-ai-radio-host-speaks-spanish-and-backs-immigrants-it-s-winning-ov",
+   "title": "This AI Radio Host Speaks Spanish and Backs Immigrants. It’s Winning Over Listeners",
+   "link": "https://www.wired.com/story/this-ai-radio-hosts-speaks-spanish-and-backs-immigrants-its-winning-over-listeners/",
+   "source": "Wired – AI",
+   "date": "2026-10-26T09:00:00.000Z",
+   "summary": "Coyotec is bilingual, swears, and tells listeners how to defend themselves against ICE. Its popularity comes as more broadcasters are experimenting with artificial personalities.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adbe71b429a21d2813df7cd/master/pass/GGC%20-%205-watermarked.jpg",
+   "also": []
+  },
+  {
+   "id": "how-fanatics-and-openai-streamline-the-fan-experience",
+   "title": "How Fanatics and OpenAI streamline the fan experience",
+   "link": "https://openai.com/index/fanatics-streamline-fan-experience",
+   "source": "OpenAI News",
+   "date": "2026-10-26T07:00:00.000Z",
+   "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
   {
    "id": "tradeoff-aware-territory-design-a-multi-objective-decision-system-for-",
    "title": "Tradeoff-Aware Territory Design: A Multi-Objective Decision System for Enterprise Customer-to-Seller Allocation",
@@ -269,20 +397,6 @@
    "also": []
   },
   {
-   "id": "openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet",
-   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-   "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-23T23:05:49.000Z",
-   "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "openai-now-trains-its-frontier-ai-models-with-no-internet-access",
    "title": "OpenAI now trains its frontier AI models with no internet access",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
@@ -325,20 +439,6 @@
    "also": []
   },
   {
-   "id": "jack-dorsey-s-block-made-an-ai-model-that-talks-to-you-like-an-awkward",
-   "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-   "source": "The Verge – AI",
-   "date": "2026-10-23T19:32:39.000Z",
-   "summary": "Jack Dorsey's Block announced an AI model called Dessa that's trained \"from scratch on nothing but human conversation,\" and to show off the model, Block shared chats it has had with humans that can occasionally be a little awkward and…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "bringing-foundational-models-to-the-front-lines-of-tb-screening",
    "title": "Bringing foundational models to the front lines of TB screening",
    "link": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
@@ -367,20 +467,6 @@
    "also": []
   },
   {
-   "id": "the-iphone-duo-should-have-been-an-ipad",
-   "title": "The iPhone Duo should have been an iPad",
-   "link": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
-   "source": "The Verge – AI",
-   "date": "2026-10-23T17:00:18.000Z",
-   "summary": "We gave the iPhone Duo a 7 /10. But that wasn't always the score we planned, and it might not be the right score forever. Such are the challenges of reviewing - and assessing - a big, new idea about the most popular smartphone in history.…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "rapidly-scaling-online-storage-to-serve-over-1-billion-chatgpt-users-p",
    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
    "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
@@ -391,20 +477,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "now-google-says-it-might-use-your-gmail-and-google-photos-data-to-targ",
-   "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-   "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
-   "source": "The Verge – AI",
-   "date": "2026-10-23T16:52:55.000Z",
-   "summary": "Google has updated its privacy policy in a way that could mean you'll start seeing targeted ads based on your personal data if you're using personalized AI features. The update, spotted by Android Authority, adds an exception to its…",
-   "category": "rules-safety",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "safety",
    "image_url_source": null,
    "also": []
   },
@@ -689,20 +761,6 @@
    "also": []
   },
   {
-   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
-   "title": "Beyond tree cover: mapping the world’s forest types",
-   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-22T14:30:24.000Z",
-   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
-   "also": []
-  },
-  {
    "id": "meet-mori-a-cute-robot-mushroom-that-doesn-t-really-say-or-do-anything",
    "title": "Meet Mori, a Cute Robot Mushroom That Doesn’t Really Say (or Do) Anything",
    "link": "https://www.wired.com/story/meet-mori-a-cute-robot-mushroom-that-doesnt-really-say-or-do-anything/",
@@ -815,20 +873,6 @@
    "also": []
   },
   {
-   "id": "hackers-exploited-the-php-vulnerabilities-days-before-they-were-patche",
-   "title": "Hackers Exploited the PHP Vulnerabilities Days Before They Were Patched",
-   "link": "https://www.wired.com/story/hackers-exploited-the-php-vulnerabilities-days-before-they-were-patched/",
-   "source": "Wired – AI",
-   "date": "2026-10-22T02:24:17.000Z",
-   "summary": "Amazon Web Services logged attempts to leverage the internet-melting PHP2Shell bugs four days ago. They’re now being “broadly exploited” across the internet.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6ad971de90e0d6636d239398/master/pass/Security_HackersExploitingPHPBugsforDays-ezgif.com-video-to-gif-converter.gif",
-   "also": []
-  },
-  {
    "id": "uber-brings-chatgpt-work-to-all-employees-with-openai",
    "title": "Uber brings ChatGPT Work to all employees with OpenAI",
    "link": "https://openai.com/index/uber-chatgpt-work-rollout",
@@ -839,34 +883,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "jobs",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "mark-zuckerberg-agrees-to-stay-in-california-despite-billionaires-tax-",
-   "title": "Mark Zuckerberg Agrees to Stay in California Despite Billionaires’ Tax Ballot Measure",
-   "link": "https://www.wired.com/story/mark-zuckerberg-agrees-to-stay-in-california-despite-billionaires-tax-ballot-measure/",
-   "source": "Wired – AI",
-   "date": "2026-10-21T22:39:50.000Z",
-   "summary": "Meta’s board feared that its CEO’s departure could disrupt the company’s AI ambitions. A new stock agreement gives him financial incentives to stay put.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://media.wired.com/photos/6ad9408768bf72427a051c89/master/pass/WIRED_Business_Mark-Z_CA.jpg",
-   "also": []
-  },
-  {
-   "id": "broad-access-through-consistent-standards",
-   "title": "Broad access through consistent standards",
-   "link": "https://openai.com/index/broad-access-through-consistent-standards",
-   "source": "OpenAI News",
-   "date": "2026-10-21T21:00:00.000Z",
-   "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.",
-   "category": "rules-safety",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "policy",
    "image_url_source": null,
    "also": []
   },
@@ -938,20 +954,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "this-startup-is-all-in-on-recursive-self-improvement-its-latest-model-",
-   "title": "This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good",
-   "link": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/",
-   "source": "Wired – AI",
-   "date": "2026-10-21T16:00:00.000Z",
-   "summary": "Recursive makes the case that the benefits of using AI to build AI outweigh the risks.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://media.wired.com/photos/6ad8079d19d8dd7213438cc0/master/pass/business_ai_lab_recursive_improvement.jpg",
    "also": []
   },
   {
@@ -1053,20 +1055,6 @@
    "also": []
   },
   {
-   "id": "making-the-internet-better-for-ai-agents-might-make-it-worse-for-every",
-   "title": "Making the internet better for AI agents might make it worse for everyone else",
-   "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-19T18:22:47.000Z",
-   "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Until recently, you could divide internet users into just two categories: bots and people. Websites…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "why-teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reli",
    "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
    "link": "https://news.mit.edu/2026/teaching-ai-about-symmetry-could-make-prenatal-diagnosis-more-reliable-1019",
@@ -1120,6 +1108,20 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-1152x648.jpg",
+   "also": []
+  },
+  {
+   "id": "grounding-ai-agents-in-biological-reality-building-blocks-for-autonomo",
+   "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+   "link": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+   "source": "Google Research Blog",
+   "date": "2026-10-16T18:11:34.000Z",
+   "summary": "General Science",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://storage.googleapis.com/gweb-research2023-media/original_images/AutonomousWetLabs_Cover.gif",
    "also": []
   }
  ]
