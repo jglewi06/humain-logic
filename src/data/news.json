@@ -1,9 +1,107 @@
 {
- "updated": "2026-10-27T07:03:33.886Z",
+ "updated": "2026-10-27T13:04:26.489Z",
  "failed_feeds": [
   "Google DeepMind Blog"
  ],
  "items": [
+  {
+   "id": "general-compute-raises-100-million-series-a-countering-the-neocloud-di",
+   "title": "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
+   "link": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-27T13:00:00.000Z",
+   "summary": "General Compute is betting on inference chips from outside the Nvidia ecosystem.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-",
+   "title": "Opera introduces a new web standard to let users deploy AI locally in their browser",
+   "link": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-27T13:00:00.000Z",
+   "summary": "The new standard, WebAI, is designed to work with a variety of AI models.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "industrial-intelligence-the-next-growth-opportunity-for-manufacturing",
+   "title": "Industrial Intelligence: The next growth opportunity for manufacturing",
+   "link": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-27T11:19:18.000Z",
+   "summary": "Every manufacturer has its own industrial intelligence. Some is documented, and some resides in the knowledge of experienced workers. Consider an experienced operator preparing to restart a line after a changeover. The machine settings…",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer",
+   "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+   "link": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-27T11:00:00.000Z",
+   "summary": "Simplismart says its annualized revenue run rate has grown 14-fold in six months, with the U.S. accounting for more than half its revenue.",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-agents-are-media-s-new-favorite-audience",
+   "title": "AI Agents Are Media’s New Favorite Audience",
+   "link": "https://www.wired.com/story/ai-agents-are-medias-new-favorite-audience/",
+   "source": "Wired – AI",
+   "date": "2026-10-27T11:00:00.000Z",
+   "summary": "As agents go mainstream, some publishers are hoping that people will pay for content tailor-made for AI—not humans.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adfd6269b54dbfcc0225ffd/master/pass/business_ai_agents_media_audience.jpg",
+   "also": []
+  },
+  {
+   "id": "data-center-backlash-is-uniting-america",
+   "title": "Data center backlash is uniting America",
+   "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+   "source": "The Verge – AI",
+   "date": "2026-10-27T10:00:00.000Z",
+   "summary": "If there's one issue that seems to activate all kinds of voters in 2026, it's data centers. The rapid buildout of these massive server storage facilities - and the infrastructure construction and expenses that come with them - has sparked…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "i-tested-every-major-ai-agent-for-a-day-here-s-the-best-one",
+   "title": "I Tested Every Major AI Agent for a Day. Here’s the Best One",
+   "link": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/",
+   "source": "Wired – AI",
+   "date": "2026-10-27T09:30:00.000Z",
+   "summary": "I ranked six AI agents—from Meta’s Muse to Anthropic’s Claude Duet—on how well they completed basic tasks.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adbdf82eed013bcc79da54f/master/pass/gear-ai-agent-best.jpg",
+   "also": []
+  },
   {
    "id": "tradeoff-aware-territory-design-a-multi-objective-decision-system-for-",
    "title": "Tradeoff-Aware Territory Design: A Multi-Objective Decision System for Enterprise Customer-to-Seller Allocation",
@@ -425,20 +523,6 @@
    "also": []
   },
   {
-   "id": "can-ai-help-solve-the-cobol-code-crisis",
-   "title": "Can AI help solve the COBOL code crisis?",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-   "source": "The Verge – AI",
-   "date": "2026-10-26T13:15:00.000Z",
-   "summary": "A computer running COBOL 73, an antiquated computer programming language, awaits taxpayer information entries at the Internal Revenue Service in Austin, Tx., on Friday, June 10, 2022. | Image: Getty Images What do the IRS, banks, airlines,…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "chatgpt-s-expanding-world-of-work",
    "title": "ChatGPT’s expanding world of work",
    "link": "https://openai.com/index/chatgpt-expanding-world-of-work",
@@ -537,48 +621,6 @@
    "also": []
   },
   {
-   "id": "grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey",
-   "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
-   "link": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-25T21:31:16.000Z",
-   "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "ai-delivers-zero-financial-payoff-to-most-companies-apollo-economist-s",
-   "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-   "link": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-25T16:57:32.000Z",
-   "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "the-hottest-ai-wearables-and-gadgets-you-should-know-about",
-   "title": "The hottest AI wearables and gadgets you should know about",
-   "link": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-25T14:10:00.000Z",
-   "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "what-the-us-movement-against-data-centers-can-learn-from-abroad",
    "title": "What the US Movement Against Data Centers Can Learn From Abroad",
    "link": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/",
@@ -590,20 +632,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://media.wired.com/photos/6adbe4fc594ddd5d406f1b4a/master/pass/102326-Power%20Play-What%20the%20US%20Anti-Data%20Center%20Movement%20Can%20Learn%20From%20Everywhere%20Else-v2.jpg",
-   "also": []
-  },
-  {
-   "id": "the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable",
-   "title": "The PHP Meltdown Shows How AI Makes Bugs More Exploitable",
-   "link": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
-   "source": "Wired – AI",
-   "date": "2026-10-24T12:00:00.000Z",
-   "summary": "Security researchers used AI tools to help uncover years-old vulnerabilities in the PHP web scripting language. Then the AI-assisted attacks began.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6adbb8a7e6d0c133525c3e7c/master/pass/KernelPanic_The%20PHP%20Meltdown%20Shows%20How%20AI%20Makes%20Bugs%20More%20Exploitable.jpg",
    "also": []
   },
   {
@@ -814,20 +842,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://news.mit.edu/sites/default/files/styles/news_article__cover_image__original/public/images/202610/mit-csail-X-hinges-cover.gif?itok=IsidN-fT",
-   "also": []
-  },
-  {
-   "id": "the-social-society-helping-women-join-the-ai-boom",
-   "title": "The Social Society Helping Women Join the AI Boom",
-   "link": "https://www.wired.com/story/aged-intelligence-society-interview/",
-   "source": "Wired – AI",
-   "date": "2026-10-22T19:56:32.000Z",
-   "summary": "WIRED spoke with the founders of the Aged Intelligence Society, a fast-growing events startup that brings women together to “solve midlife problems using frontier tools.”",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://media.wired.com/photos/6ada7db9ecc44326fbe9e386/master/pass/Model-Behavior-Illo-102226-2.jpg",
    "also": []
   },
   {
@@ -1065,20 +1079,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "ai-adoption-by-industry-shows-what-other-sectors-can-learn",
-   "title": "AI adoption by industry shows what other sectors can learn",
-   "link": "https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-20T12:00:00.000Z",
-   "summary": "The current narrative around artificial intelligence in the workplace is largely driven by Silicon Valley. But treating the tech sector as an island misses the actual trends in technology adoption–tech is just the first industry in line.…",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
    "image_url_source": null,
    "also": []
   },
