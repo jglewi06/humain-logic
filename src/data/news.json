@@ -1,9 +1,105 @@
 {
- "updated": "2026-10-28T07:15:19.918Z",
- "failed_feeds": [
-  "Google DeepMind Blog"
- ],
+ "updated": "2026-10-28T13:13:04.268Z",
+ "failed_feeds": [],
  "items": [
+  {
+   "id": "7-days-until-techcrunch-founder-summit-save-up-to-100-on-your-pass-bef",
+   "title": "7 days until TechCrunch Founder Summit: Save up to $100 on your pass before doors open",
+   "link": "https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-28T13:00:00.000Z",
+   "summary": "In just 7 days, TechCrunch Founder Summit takes over Boston’s SoWa Power Station on November 4. Your chance to save up to $100 on tickets is running out, and the opportunity to learn and connect directly with experienced founders,…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "pairing-industrial-ai-autonomy-and-human-control",
+   "title": "Pairing industrial AI autonomy and human control",
+   "link": "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-28T12:00:00.000Z",
+   "summary": "",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "voters-in-texas-agree-they-hate-data-centers",
+   "title": "Voters in Texas agree: They hate data centers",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
+   "source": "The Verge – AI",
+   "date": "2026-10-28T12:00:00.000Z",
+   "summary": "Ask Texas NAACP president Gary Bledsoe what it's been like to see data center developers descend upon Austin and its surrounding suburbs and he can rattle off project after project facing opposition from locals. There's the fight in Taylor…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "meta-quietly-launched-an-ai-pet-journal-app",
+   "title": "Meta quietly launched an ‘AI pet journal’ app",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+   "source": "The Verge – AI",
+   "date": "2026-10-28T11:27:30.000Z",
+   "summary": "Meta has launched a \"tamagotchi-style\" pet game called Waddle World, with virtual creatures that chat with users and create doodles to illustrate conversations. According to its Apple and Play Store listings, the \"16-bit pet care game\" is…",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-ass",
+   "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
+   "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
+   "source": "Wired – AI",
+   "date": "2026-10-28T10:15:00.000Z",
+   "summary": "Workers tell WIRED that NOA—or “No Ordinary Assistant”—was unhelpful. Bestselling authors also say AI is ruining their relationships with Big Five publishers.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": "https://media.wired.com/photos/6ad92ed7649bdf60df6fd555/master/pass/culture_macmillon_failed_ai_project.jpg",
+   "also": []
+  },
+  {
+   "id": "legora-is-building-the-agentic-operating-system-for-legal-work",
+   "title": "Legora is building the agentic operating system for legal work",
+   "link": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+   "source": "OpenAI News",
+   "date": "2026-10-28T09:30:00.000Z",
+   "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+   "category": "jobs-work",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "jobs",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-emergency-alerts-are-coming-humans-might-not-be-ready",
+   "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
+   "link": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
+   "source": "Wired – AI",
+   "date": "2026-10-28T08:30:00.000Z",
+   "summary": "Human beings struggle with emergency communication. Chatbots can help—if people take them seriously.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6ae1120223d445186a16d911/master/pass/ai-weather-alerts-emergency.jpg",
+   "also": []
+  },
   {
    "id": "should-ai-decide-your-court-case-this-judge-says-yes",
    "title": "Should AI Decide Your Court Case? This Judge Says Yes",
@@ -369,20 +465,6 @@
    "also": []
   },
   {
-   "id": "google-s-genie-4-world-model-adds-audio-more-realistic-worlds-and-real",
-   "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
-   "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-   "source": "TechCrunch – AI",
-   "date": "2026-10-27T16:30:57.000Z",
-   "summary": "Genie 4 can maintain a consistent scene for up to two minutes, double Genie 3's limit, and offers better physics and more humanlike characters.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "firefox-s-smart-window-adds-ai-form-filling-and-webpage-monitoring",
    "title": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
@@ -408,6 +490,20 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "genie-4-a-new-generation-of-world-simulation",
+   "title": "Genie 4: A new generation of world simulation",
+   "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-27T16:01:38.000Z",
+   "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/i7iotPkcMbMubxRzAdriO5wsIsowROonBvjLNnmPbOaRgEb1k4LKTBqay5VrcPpZi0R4il_bYCCsPYQ0Gy_-XbAw66azAGEfE-E6_9Izz5apP0BMJVE=w528-h297-n-nu-rw-lo",
    "also": []
   },
   {
@@ -509,20 +605,6 @@
    "also": []
   },
   {
-   "id": "data-center-backlash-is-uniting-america",
-   "title": "Data center backlash is uniting America",
-   "link": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-   "source": "The Verge – AI",
-   "date": "2026-10-27T10:00:00.000Z",
-   "summary": "If there's one issue that seems to activate all kinds of voters in 2026, it's data centers. The rapid buildout of these massive server storage facilities - and the infrastructure construction and expenses that come with them - has sparked…",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "i-tested-every-major-ai-agent-for-a-day-here-s-the-best-one",
    "title": "I Tested Every Major AI Agent for a Day. Here’s the Best One",
    "link": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/",
@@ -561,20 +643,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "openai-announces-three-big-science-discoveries-and-a-new-way-to-work-w",
-   "title": "OpenAI announces three big science discoveries and a new way to work with academics",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics",
-   "source": "The Verge – AI",
-   "date": "2026-10-26T23:34:58.000Z",
-   "summary": "Less than a month after its mass release of hundreds of manuscripts that it said contained solutions to long-standing mathematics questions, OpenAI is back with three more \"major\" discoveries in math, computer science, and physics. What's…",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
    "image_url_source": null,
    "also": []
   },
@@ -677,20 +745,6 @@
    "also": []
   },
   {
-   "id": "the-anthropic-s-1-filing-is-also-an-ai-doomsday-primer",
-   "title": "The Anthropic S-1 Filing Is Also an AI Doomsday Primer",
-   "link": "https://www.wired.com/story/the-anthropic-ipo-is-also-a-doomsday-primer/",
-   "source": "Wired – AI",
-   "date": "2026-10-26T16:01:55.000Z",
-   "summary": "Anthropic thinks “closing the loop” is the best path to AI triumph—and a recipe for “existential” threats to humanity.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6adf6d7844b1eb496ab79957/master/pass/Business_The%20Anthropic%20IPO%20Is%20Also%20a%20Doomsday%20Primer_v1.jpg",
-   "also": []
-  },
-  {
    "id": "our-newest-ai-quest-mapping-the-human-brain",
    "title": "Our newest AI Quest: Mapping the human brain",
    "link": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
@@ -702,20 +756,6 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/social_sharing_updated.max-600x600.format-webp.webp",
-   "also": []
-  },
-  {
-   "id": "anthropic-s-ipo-prospectus-reveals-what-s-under-the-hood",
-   "title": "Anthropic’s IPO Prospectus Reveals What’s Under the Hood",
-   "link": "https://www.wired.com/story/anthropic-ipo-filings-reveal-finances-risks-strategy/",
-   "source": "Wired – AI",
-   "date": "2026-10-26T14:50:47.000Z",
-   "summary": "Anthropic on Monday filed documents ahead of a blockbuster IPO that offers insight into the company’s financials, risk factors, and views on the future of AI.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://media.wired.com/photos/6adf6c00ca47359863df5ba5/master/pass/102626-Anthropic%20IPO.jpg",
    "also": []
   },
   {
@@ -771,20 +811,6 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "safety",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "how-fanatics-and-openai-streamline-the-fan-experience",
-   "title": "How Fanatics and OpenAI streamline the fan experience",
-   "link": "https://openai.com/index/fanatics-streamline-fan-experience",
-   "source": "OpenAI News",
-   "date": "2026-10-26T07:00:00.000Z",
-   "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
    "image_url_source": null,
    "also": []
   },
@@ -957,6 +983,20 @@
    "also": []
   },
   {
+   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
+   "title": "Beyond tree cover: mapping the world’s forest types",
+   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "source": "Google DeepMind Blog",
+   "date": "2026-10-22T14:30:24.000Z",
+   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
+   "also": []
+  },
+  {
    "id": "making-the-case-for-context-aware-ai",
    "title": "Making the case for context-aware AI",
    "link": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
@@ -1080,48 +1120,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "bringing-the-spark-to-europe-local-intelligence-powers-next-wave-of-ag",
-   "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
-   "link": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
-   "source": "NVIDIA Blog",
-   "date": "2026-10-21T10:50:37.000Z",
-   "summary": "At GTC Berlin, NVIDIA is showcasing its full lineup of local AI hardware. RTX Spark, which launched last week, powers personal agents on Windows PCs; DGX Spark supports developers building and scaling applications on Linux; and DGX Station…",
-   "category": "tools-launches",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nv-blog-1280x680-2.jpg",
-   "also": []
-  },
-  {
-   "id": "nvidia-cloud-partners-scale-across-europe-sovereign-open-and-built-for",
-   "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
-   "link": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
-   "source": "NVIDIA Blog",
-   "date": "2026-10-21T10:30:41.000Z",
-   "summary": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-cloud-announcement-gtc-berlin-social-1920x1080-5852877-r2.png",
-   "also": []
-  },
-  {
-   "id": "southeast-asia-s-digital-economy-to-hit-368-billion",
-   "title": "Southeast Asia’s digital economy to hit $368 billion",
-   "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-   "source": "Google – AI blog",
-   "date": "2026-10-21T04:00:00.000Z",
-   "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/e-Conomy_SEA_hero.max-600x600.format-webp.webp",
    "also": []
   }
  ]
