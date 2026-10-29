@@ -2558,6 +2558,60 @@
   "affiliate": false
  },
  {
+  "slug": "claude-code",
+  "name": "Claude Code",
+  "website": "https://www.anthropic.com/claude-code",
+  "developer": "Anthropic",
+  "category": "coding",
+  "category_label": "Coding",
+  "disclaimer": null,
+  "companion": false,
+  "summary": "AI coding agent for your terminal and IDE.",
+  "tasks": [
+   "write-code",
+   "edit-a-codebase",
+   "fix-a-bug",
+   "explain-code"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid",
+   "free_tier": false,
+   "summary": "Included with paid Claude plans: Pro $20/month billed monthly ($17/month with annual billing), Max from $100/month, plus Team and Enterprise. Not included in the Free plan. Can also be used with pay-as-you-go API credits.",
+   "starting_paid_price": "$17/month billed annually or $20 monthly (Claude Pro)",
+   "pricing_url": "https://www.anthropic.com/pricing",
+   "verified": true,
+   "verified_on": "2026-10-28",
+   "verification_note": "Claude Code shares usage limits with the rest of your Claude plan.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Claude Code is an AI coding agent from Anthropic that works in your terminal or IDE. It can read a codebase, edit files, run commands and make commits. It runs in the terminal on macOS, Linux and Windows, has VS Code and JetBrains extensions, and is also available on the web.",
+   "who_its_for": "Software developers.",
+   "pros": [
+    "Works across a whole codebase, not just one file",
+    "Runs in the terminal, VS Code, JetBrains or the web",
+    "Included with paid Claude plans",
+    "Pay-as-you-go API option for heavy use"
+   ],
+   "cons": [
+    "No free plan",
+    "Usage is shared with your Claude chat limits",
+    "Built for people comfortable with code and the command line"
+   ]
+  },
+  "skill_level": "advanced",
+  "platforms": [
+   "mac",
+   "linux",
+   "windows",
+   "web"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
   "slug": "replit",
   "name": "Replit",
   "website": "https://replit.com",

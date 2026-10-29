@@ -27,7 +27,7 @@ const ld = [
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div class="grid-3">{list.map(t => <ToolCard tool={t} />)}</div>
-  {pairs.length > 0 && <><h2>Compare them side by side</h2><div class="chips" style="justify-content:flex-start">{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div></>}
+  {(pairs.length > 0 || topic.slug === 'coding') && <><h2>Compare them side by side</h2><div class="chips" style="justify-content:flex-start">{topic.slug === 'coding' && <a class="chip" href="/compare/claude-code-vs-github-copilot-vs-cursor">Claude Code vs GitHub Copilot vs Cursor</a>}{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div></>}
   {list.some(hasAlternatives) && <><h2>Alternatives</h2><div class="chips" style="justify-content:flex-start">{list.filter(hasAlternatives).map(t => <a class="chip" href={`/alternatives/${t.slug}`}>{t.name} alternatives</a>)}</div></>}
   {g && <p style="margin-top:var(--space-6)">New to AI? Read our free guide: <a href={`/guides/${g.slug}`}>{g.title}</a>.</p>}
   <h2>More “best AI for” lists</h2><div class="chips" style="justify-content:flex-start">{others.map(x => <a class="chip" href={`/best-ai-for/${x.slug}`}>{x.h1}</a>)}</div>

@@ -11,6 +11,7 @@ Data is rebuilt automatically (news every few hours). Proposed license: CC BY 4.
 - [Tasks API](https://humainlogic.com/api/tasks.json): JSON task taxonomy with tool slugs
 - [Free AI tools](https://humainlogic.com/tools/free): every listed tool with a free plan
 - [ChatGPT vs Gemini vs Claude](https://humainlogic.com/compare/chatgpt-vs-gemini-vs-claude): three-way comparison
+- [Claude Code vs GitHub Copilot vs Cursor](https://humainlogic.com/compare/claude-code-vs-github-copilot-vs-cursor): three-way AI coding tool comparison
 - Best AI for: [coding](https://humainlogic.com/best-ai-for/coding), [writing](https://humainlogic.com/best-ai-for/writing), [image generation](https://humainlogic.com/best-ai-for/image-generation), [resumes](https://humainlogic.com/best-ai-for/resume), [interior design](https://humainlogic.com/best-ai-for/interior-design), [research](https://humainlogic.com/best-ai-for/research), [video](https://humainlogic.com/best-ai-for/video), [PowerPoint](https://humainlogic.com/best-ai-for/powerpoint)
 - Alternatives pages: https://humainlogic.com/alternatives/{tool-slug} (e.g. [ChatGPT alternatives](https://humainlogic.com/alternatives/chatgpt))
 - Comparisons: https://humainlogic.com/compare/{a}-vs-{b} (e.g. [ChatGPT vs Claude](https://humainlogic.com/compare/chatgpt-vs-claude))
