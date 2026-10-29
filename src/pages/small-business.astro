@@ -109,6 +109,12 @@ const desc = "AI help for small businesses, from websites to custom automated so
     else { err.hidden = true; err.textContent = ''; el.removeAttribute('aria-invalid'); }
     return m;
   }
+  summary.addEventListener('click', (ev) => {
+    const a = (ev.target as HTMLElement).closest('a[data-focus]');
+    if (!a) return; ev.preventDefault();
+    const f = document.getElementById(a.getAttribute('data-focus')!) as HTMLElement;
+    f.scrollIntoView({ block: 'center' }); f.focus({ preventScroll: true });
+  });
   [msg, email].forEach(el => {
     el.addEventListener('blur', () => check(el));
     el.addEventListener('input', () => { if (el.getAttribute('aria-invalid')) { check(el); if (!msg.getAttribute('aria-invalid') && !email.getAttribute('aria-invalid')) summary.hidden = true; } });
@@ -116,9 +122,10 @@ const desc = "AI help for small businesses, from websites to custom automated so
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const errs = [msg, email].map(check).filter(Boolean);
+    const errs = [msg, email].map(el => [el.id, check(el)]).filter(e => e[1]);
     if (errs.length) {
-      summary.innerHTML = ICON + '<span>Please fix ' + (errs.length === 1 ? 'this' : 'these ' + errs.length) + ' before sending: ' + errs.join(' ') + '</span>';
+      summary.innerHTML = '<p class="sum-h">' + ICON + '<span>Please fix ' + (errs.length === 1 ? 'this' : 'these ' + errs.length) + ' before sending:</span></p><ul>' +
+        errs.map(([id, m]) => '<li><a href="#' + id + '" data-focus="' + id + '">' + m + '</a></li>').join('') + '</ul>';
       summary.hidden = false;
       (msg.getAttribute('aria-invalid') ? msg : email).focus();
       return;
@@ -185,8 +192,12 @@ const desc = "AI help for small businesses, from websites to custom automated so
 .f [aria-invalid=true]{border-color:#9A4A1E}
 .err,.smb-summary{display:flex;gap:6px;align-items:flex-start;color:#9A4A1E;font:500 15px/1.4 var(--font-body);margin:6px 0 0}
 .err[hidden],.smb-summary[hidden],.smb-success[hidden]{display:none}
-.err svg,.smb-summary svg{flex:none;margin-top:2px}
-.smb-summary{background:#FDEBD6;border-radius:12px;padding:12px 14px;margin:0 0 20px}
+.err :global(svg),.smb-summary :global(svg){flex:none;margin-top:2px}
+.smb-summary{display:block;background:#FDEBD6;border-radius:12px;padding:12px 14px;margin:0 0 20px}
+.smb-summary :global(.sum-h){display:flex;gap:6px;align-items:flex-start;margin:0 0 6px;font-weight:600}
+.smb-summary :global(ul){margin:0;padding-left:26px}
+.smb-summary :global(li){margin:4px 0}
+.smb-summary :global(a){color:#9A4A1E;text-decoration:underline;display:inline-block;min-height:24px;padding:2px 0}
 .hp{position:absolute!important;left:-10000px;width:1px;height:1px;overflow:hidden}
 .smb-submit:disabled{opacity:.7;cursor:wait}
 .fine{margin:12px 0 0;color:var(--color-slate);font-size:14px}
