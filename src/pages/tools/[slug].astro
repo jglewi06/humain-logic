@@ -5,7 +5,7 @@ import { toolLd } from '../../lib/ld.mjs';
 import tools from '../../data/tools.json';
 import tasks from '../../data/tasks.json';
 import guides from '../../data/guides.json';
-import { hasAlternatives, pairsFor, vsSlug, guideFor } from '../../lib/seo-pages';
+import { BEST_FOR_LIVE, hasAlternatives, pairsFor, vsSlug, guideFor } from '../../lib/seo-pages';
 import { clip, mailto, SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
 export function getStaticPaths() { return tools.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
 const { tool } = Astro.props;
@@ -58,6 +58,7 @@ const ld = [
       {tool.privacy?.summary && <><h2>Privacy and safety</h2><p>{tool.privacy.summary}</p></>}
       {alts.length > 0 && <><h2>Alternatives</h2><div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div>{hasAlternatives(tool) && <p style="margin-top:var(--space-3)"><a href={`/alternatives/${tool.slug}`}>See all {tool.name} alternatives</a></p>}</>}
       {pairs.length > 0 && <><h2>Compare {tool.name}</h2><div class="chips" style="justify-content:flex-start">{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div></>}
+      {BEST_FOR_LIVE.some(x => x.tools.some(t => t.slug === tool.slug)) && <><h2>Featured in</h2><div class="chips" style="justify-content:flex-start">{BEST_FOR_LIVE.filter(x => x.tools.some(t => t.slug === tool.slug)).map(x => <a class="chip" href={`/best-ai-for/${x.slug}`}>{x.h1}</a>)}{['chatgpt','gemini','claude'].includes(tool.slug) && <a class="chip" href="/compare/chatgpt-vs-gemini-vs-claude">ChatGPT vs Gemini vs Claude</a>}</div></>}
       {guide && <><h2>Related guide</h2><p><a href={`/guides/${guide.slug}`}>{guide.title}</a>: {guide.summary}</p></>}
     </div>
     <aside class="panel glance" aria-labelledby="g-h">

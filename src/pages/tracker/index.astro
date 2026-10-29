@@ -11,7 +11,7 @@ const ld = [jobsDatasetLd(jobsData), itemList('Jobs in the tracker', jobsData.jo
 <Base title="Is AI taking my job? AI job safety tracker" description="Is AI taking your job? Check calm, sourced outlooks for 31 jobs: which are mostly steady, which are changing, and practical steps to stay ready." jsonld={ld} json="/api/jobs.json">
 <section class="page-head tracker-head"><div class="container tracker-head-grid">
 <div class="tracker-head-copy">
-  <span class="eyebrow">Job safety tracker</span><h1>How is AI changing your job?</h1>
+  <span class="eyebrow">Job safety tracker</span><h1>How is AI changing your job?</h1><p><a href="/will-ai-take-my-job">Will AI take my job? Quick answers for lawyers, accountants, nurses and more</a></p>
   <p class="lede">Most jobs aren’t disappearing. They’re changing. Find your job to see our outlook, the reasons, and the research behind it.</p>
   <p class="confidence" style="margin-top:var(--space-3)">Last updated {fmtDate(jobsData.updated)} · <a href="/methodology">How we decide</a> · <a href="/api/jobs.json">Download data (JSON)</a></p>
   <form class="job-search" action="/tracker" method="get" id="jform" style="max-width:560px"><label class="sr-only" for="job">Your job title</label><input class="input" id="job" name="job" list="job-list" placeholder="Check your job, e.g. receptionist" autocomplete="off"><button class="btn btn-primary" type="submit">Check</button></form>

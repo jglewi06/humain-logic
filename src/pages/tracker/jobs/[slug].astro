@@ -6,21 +6,24 @@ import JobTimeline from '../../../components/JobTimeline.astro';
 import JobHelp from '../../../components/JobHelp.astro';
 import HiringImpact from '../../../components/HiringImpact.astro';
 import { citation } from '../../../lib/ld.mjs';
+import { HIRING } from '../../../lib/site';
+import { jobFaq, faqLd, JOB_SEARCH_NAME } from '../../../lib/seo-pages';
 export function getStaticPaths() { return jobsData.jobs.map(j => ({ params: { slug: j.slug }, props: { job: j } })); }
 const { job } = Astro.props;
 const o = OUTLOOK[job.outlook];
 const pos = { steady: 15, watch: 50, shift: 85 }[job.outlook];
 const similar = jobsData.jobs.filter(j => j.slug !== job.slug && j.outlook === job.outlook).slice(0, 4);
-const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.name}`, about: { '@type': 'Occupation', name: job.name }, dateModified: jobsData.updated,
+const faq = jobFaq(job, OUTLOOK, HIRING);
+const ld = [faqLd(faq), { '@type': 'Article', headline: `How AI may change the job of ${job.name}`, about: { '@type': 'Occupation', name: job.name }, dateModified: jobsData.updated,
   author: { '@id': `${SITE.url}/#org` }, publisher: { '@id': `${SITE.url}/#org` }, mainEntityOfPage: `${SITE.url}/tracker/jobs/${job.slug}`,
   isPartOf: { '@id': `${SITE.url}/tracker#dataset` }, isBasedOn: `${SITE.url}/methodology`,
   citation: [...new Map([...job.sources, ...(job.employment_pressure_sources ?? [])].map(s => [s.url, citation(s)])).values()] },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Job tracker', item: `${SITE.url}/tracker` }, { '@type': 'ListItem', position: 3, name: job.name, item: `${SITE.url}/tracker/jobs/${job.slug}` }] }];
 ---
-<Base title={(() => { const n = job.name.toLowerCase(); const a = `Will AI replace ${n} jobs? Outlook`; return a.length <= 46 ? a : `Will AI replace ${n}?`.length <= 46 ? `Will AI replace ${n}?` : `AI and ${n} jobs`; })()} description={clip(`Is AI taking ${job.name.toLowerCase()} jobs? Our sourced outlook: ${o.label}. See which tasks are changing, a timeline, hiring impact, and practical steps to stay ready.`)} jsonld={ld}>
+<Base title={(() => { const n = JOB_SEARCH_NAME[job.slug] ?? `${job.name.toLowerCase()} jobs`; const a = `Will AI replace ${n}? Outlook & tips`; return a.length <= 46 ? a : `Will AI replace ${n}?`.length <= 46 ? `Will AI replace ${n}?` : `AI and ${n}`; })()} description={clip(`${JOB_SEARCH_NAME[job.slug] ? `Will AI replace ${JOB_SEARCH_NAME[job.slug]}?` : `Will AI take ${job.name.toLowerCase()} jobs?`} Our sourced outlook: ${o.label}. See which tasks are changing, a timeline, hiring impact, and practical steps to stay ready.`)} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tracker">Job tracker</a> › {job.name}</p>
-  <span class="eyebrow">Job outlook</span><h1>{job.name}</h1>
+  <span class="eyebrow">Job outlook</span><h1>Will AI replace {JOB_SEARCH_NAME[job.slug] ?? `${job.name.toLowerCase()} jobs`}?</h1>
   <p><span class={`pill ${o.cls}`}><span aria-hidden="true">{o.icon}</span> {o.label}</span></p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
@@ -53,4 +56,8 @@ const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.
   <JobTimeline jobs={jobsData.jobs} highlight={job.slug} id="tl-all" title="Compared with other jobs" />
   <p class="callout warm" style="margin-top:var(--space-6)">This is an editorial estimate, not a prediction or career, legal or financial advice.</p>
 </div>
+<section class="container section" aria-labelledby="faq-h"><h2 id="faq-h">Questions about AI and {job.name.toLowerCase()} jobs</h2>
+  {faq.map(f => <details class="panel" style="margin-bottom:var(--space-3)"><summary><strong>{f.q}</strong></summary><p style="margin-top:var(--space-2)">{f.a}</p></details>)}
+  <p><a href="/will-ai-take-my-job">Will AI take my job? See every job we track</a> · <a href="/guides/ai-and-your-job">How to prepare: our free guide</a></p>
+</section>
 </Base>

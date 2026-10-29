@@ -4,12 +4,14 @@ import ToolCard from '../../components/ToolCard.astro';
 import tools from '../../data/tools.json';
 import categories from '../../data/categories.json';
 import { SITE } from '../../lib/site';
+import { BEST_FOR_LIVE } from '../../lib/seo-pages';
 const ld = [{ '@type': 'ItemList', name: 'AI tools directory', numberOfItems: tools.length, itemListElement: tools.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) }];
 ---
 <Base title="AI tools directory: free & paid, compared" description={`Browse ${tools.length} AI tools for everyday tasks, explained in plain English. Find the best free AI tools, checked prices, privacy notes and what each one is good for.`} jsonld={ld} json="/api/tools.json">
 <section class="page-head"><div class="container">
   <span class="eyebrow">Find a tool</span><h1>AI tools, sorted by what they help you do</h1>
   <p class="lede">{tools.length} tools in {categories.length} groups. Not sure what to pick? <a href="/search">Describe your task</a>, <a href="/tasks">browse by task</a> or see the <a href="/tools/free">best free AI tools</a>.</p>
+  <p class="chips" style="justify-content:flex-start">{BEST_FOR_LIVE.map(x => <a class="chip" href={`/best-ai-for/${x.slug}`}>{x.h1}</a>)}<a class="chip" href="/compare/chatgpt-vs-gemini-vs-claude">ChatGPT vs Gemini vs Claude</a></p>
   <form class="search compact" role="search" action="/search" method="get">
     <div class="row" style="display:flex;gap:14px;align-items:center;flex:1;min-width:0"><svg width="24" height="24" aria-hidden="true"><use href="#i-search"/></svg>
     <div class="field"><label for="q">Describe your task</label><input id="q" name="q" type="search" enterkeyhint="search" placeholder="e.g. make a flyer for my bakery"></div></div>
