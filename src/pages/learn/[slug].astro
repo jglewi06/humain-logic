@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import CopyExtra from '../../components/CopyExtra.astro';
+import { SITE } from '../../lib/site';
+import { LEARN, copyFaqLd } from '../../lib/seo-copy';
+export function getStaticPaths() { return LEARN.map(c => ({ params: { slug: c.slug.replace('/learn/', '') }, props: { c } })); }
+const { c } = Astro.props;
+const url = `${SITE.url}${c.slug}`;
+const ld = [
+  { '@type': 'Article', headline: c.h1, description: c.description, url, mainEntityOfPage: url, ...(c.checked ? { dateModified: c.checked } : {}), publisher: { '@type': 'Organization', name: 'HumAIn Logic', url: SITE.url } },
+  ...(c.faq.length ? [copyFaqLd(c)] : []),
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Learn', item: `${SITE.url}/learn` }, { '@type': 'ListItem', position: 3, name: c.h1, item: url }] },
+];
+---
+<Base title={c.title} description={c.description} jsonld={ld} ogType="article">
+<section class="page-head"><div class="container">
+  <p class="crumbs"><a href="/">Home</a> › <a href="/learn">Learn</a> › {c.h1}</p>
+  <span class="eyebrow">Explainer</span><h1>{c.h1}</h1>
+</div></section>
+<div class="container section" style="padding-top:var(--space-6)">
+  <div class="prose" set:html={c.intro} />
+  <CopyExtra copy={c} />
+  <h2 style="margin-top:var(--space-7)">More explainers</h2><div class="chips" style="justify-content:flex-start">{LEARN.filter(x => x.slug !== c.slug).map(x => <a class="chip" href={x.slug}>{x.h1}</a>)}</div>
+</div>
+</Base>

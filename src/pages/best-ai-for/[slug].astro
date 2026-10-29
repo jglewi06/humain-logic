@@ -3,6 +3,8 @@ import Base from '../../layouts/Base.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import guides from '../../data/guides.json';
 import { SITE, clip } from '../../lib/site';
+import { copyFor, copyFaqLd } from '../../lib/seo-copy';
+import CopyExtra from '../../components/CopyExtra.astro';
 import { BEST_FOR_LIVE, hasAlternatives, VS_PAIRS, vsSlug } from '../../lib/seo-pages';
 export function getStaticPaths() { return BEST_FOR_LIVE.map(x => ({ params: { slug: x.slug }, props: { topic: x } })); }
 const { topic } = Astro.props;
@@ -14,22 +16,27 @@ const pairs = VS_PAIRS.filter(([a, b]) => ids.has(a.slug) && ids.has(b.slug));
 const others = BEST_FOR_LIVE.filter(x => x.slug !== topic.slug);
 const t1 = `${topic.h1} (free & paid, ${new Date().getFullYear()})`, title = t1.length <= 46 ? t1 : topic.h1;
 const url = `${SITE.url}/best-ai-for/${topic.slug}`;
+const c = copyFor(`/best-ai-for/${topic.slug}`);
+const h1 = c?.h1 ?? topic.h1;
 const ld = [
+  ...(c?.faq.length ? [copyFaqLd(c)] : []),
   { '@type': 'ItemList', name: topic.h1, url, numberOfItems: list.length, itemListElement: list.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: topic.h1, item: url }] },
 ];
 ---
-<Base title={title} description={clip(`${topic.h1}? Compare ${list.length} AI tools for ${topic.label} in plain English, ${free.length} with a free plan: ${list.slice(0, 3).map(t => t.name).join(', ')} and more, with prices and privacy notes.`)} jsonld={ld}>
+<Base title={c?.title ?? title} description={c?.description ?? clip(`${topic.h1}? Compare ${list.length} AI tools for ${topic.label} in plain English, ${free.length} with a free plan: ${list.slice(0, 3).map(t => t.name).join(', ')} and more, with prices and privacy notes.`)} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › {topic.h1}</p>
-  <span class="eyebrow">Best AI for {topic.label}</span><h1>{topic.h1}</h1>
-  <p class="lede">{list.length} tools in our directory that help with {topic.label}{free.length ? `, ${free.length} with a free plan` : ''}. Listed in directory order, not ranked: the best one depends on your task and budget. See also the <a href="/tools/free">best free AI tools</a>.</p>
+  <span class="eyebrow">Best AI for {topic.label}</span><h1>{h1}</h1>
+  {c && <div class="lede" set:html={c.intro} />}
+  <p class={c ? '' : 'lede'}>{list.length} tools in our directory that help with {topic.label}{free.length ? `, ${free.length} with a free plan` : ''}. Listed in directory order, not ranked: the best one depends on your task and budget. See also the <a href="/tools/free">best free AI tools</a>.</p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div class="grid-3">{list.map(t => <ToolCard tool={t} />)}</div>
   {(pairs.length > 0 || topic.slug === 'coding') && <><h2>Compare them side by side</h2><div class="chips" style="justify-content:flex-start">{topic.slug === 'coding' && <a class="chip" href="/compare/claude-code-vs-github-copilot-vs-cursor">Claude Code vs GitHub Copilot vs Cursor</a>}{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div></>}
   {list.some(hasAlternatives) && <><h2>Alternatives</h2><div class="chips" style="justify-content:flex-start">{list.filter(hasAlternatives).map(t => <a class="chip" href={`/alternatives/${t.slug}`}>{t.name} alternatives</a>)}</div></>}
   {g && <p style="margin-top:var(--space-6)">New to AI? Read our free guide: <a href={`/guides/${g.slug}`}>{g.title}</a>.</p>}
+  {c && <CopyExtra copy={c} />}
   <h2>More “best AI for” lists</h2><div class="chips" style="justify-content:flex-start">{others.map(x => <a class="chip" href={`/best-ai-for/${x.slug}`}>{x.h1}</a>)}</div>
   <p class="note">We’re independent. No company pays to be listed. Prices come from each tool's official pricing page; check before you buy.</p>
 </div>

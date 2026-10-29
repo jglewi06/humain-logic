@@ -3,6 +3,7 @@
 // Edit copy there first, then re-port; keep FK grade <= 6 (design/readability.py).
 import Base from '../layouts/Base.astro';
 import '../styles/learn.css';
+import { LEARN } from '../lib/seo-copy';
 ---
 <Base title="Learn about AI" description="AI, explained simply. A calm 10-minute guide for anyone new to AI.">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -315,6 +316,11 @@ import '../styles/learn.css';
         <p>Smart speakers listen for a wake word, like “Alexa.” Most only start recording after they hear it. Sometimes they wake up by mistake. You can mute the microphone. You can also delete old recordings in the app’s settings.</p></article>
     </div>
     <a class="to-top" href="#top"><svg width="18" height="18" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+  </section>
+
+  <section aria-labelledby="explainers-h" style="margin:var(--space-7) 0">
+    <h2 id="explainers-h">Big questions about AI, explained</h2>
+    <ul>{LEARN.map(x => <li><a href={x.slug}>{x.h1}</a></li>)}</ul>
   </section>
 
   <section class="closing" aria-labelledby="close-h">

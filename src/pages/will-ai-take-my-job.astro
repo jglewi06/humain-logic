@@ -2,6 +2,8 @@
 import Base from '../layouts/Base.astro';
 import jobsData from '../data/jobs.json';
 import { SITE, OUTLOOK, HIRING } from '../lib/site';
+import { copyFor, copyFaqLd } from '../lib/seo-copy';
+import CopyExtra from '../components/CopyExtra.astro';
 import { jobFaq, faqLd, PRIORITY_JOBS, JOB_SEARCH_NAME } from '../lib/seo-pages';
 const jobs = jobsData.jobs;
 const pri = PRIORITY_JOBS.map(s => jobs.find(j => j.slug === s)).filter(Boolean) as any[];
@@ -12,14 +14,16 @@ const faq = [
   { q: 'Which jobs are safest from AI?', a: `Jobs with a "${OUTLOOK.steady.label}" outlook in our tracker: ${by('steady').map(j => j.name).join(', ')}.` },
   ...pri.map(j => jobFaq(j, OUTLOOK, HIRING)[0]),
 ];
-const ld = [faqLd(faq), { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Job tracker', item: `${SITE.url}/tracker` }, { '@type': 'ListItem', position: 3, name: 'Will AI take my job?', item: `${SITE.url}/will-ai-take-my-job` }] },
+const c = copyFor('/will-ai-take-my-job');
+const ld = [c?.faq.length ? copyFaqLd(c) : faqLd(faq), { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Job tracker', item: `${SITE.url}/tracker` }, { '@type': 'ListItem', position: 3, name: 'Will AI take my job?', item: `${SITE.url}/will-ai-take-my-job` }] },
   { '@type': 'ItemList', name: 'AI job outlooks', itemListElement: jobs.map((j, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tracker/jobs/${j.slug}`, name: `Will AI replace ${JOB_SEARCH_NAME[j.slug] ?? j.name.toLowerCase() + ' jobs'}?` })) }];
 ---
-<Base title="Will AI take my job? Check your job's outlook" description={`Will AI take my job? Check sourced outlooks for ${jobs.length} jobs, including lawyers, accountants and nurses: which are steady, which are changing, and how to prepare.`} jsonld={ld}>
+<Base title={c?.title ?? "Will AI take my job? Check your job's outlook"} description={c?.description ?? `Will AI take my job? Check sourced outlooks for ${jobs.length} jobs, including lawyers, accountants and nurses: which are steady, which are changing, and how to prepare.`} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tracker">Job tracker</a> › Will AI take my job?</p>
-  <span class="eyebrow">AI and jobs</span><h1>Will AI take my job?</h1>
-  <p class="lede">Quick, sourced answers from our <a href="/tracker">AI job safety tracker</a>, which covers {jobs.length} jobs. Most will change rather than vanish. <a href="/methodology">How we estimate this</a>.</p>
+  <span class="eyebrow">AI and jobs</span><h1>{c?.h1 ?? 'Will AI take my job?'}</h1>
+  {c && <div class="lede" set:html={c.intro} />}
+  <p class={c ? '' : 'lede'}>Quick, sourced answers from our <a href="/tracker">AI job safety tracker</a>, which covers {jobs.length} jobs. Most will change rather than vanish. <a href="/methodology">How we estimate this</a>.</p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <h2>Lawyers, accountants and nurses</h2>
@@ -30,9 +34,9 @@ const ld = [faqLd(faq), { '@type': 'BreadcrumbList', itemListElement: [{ '@type'
   </div>)}</div>
   {(['shift', 'watch', 'steady'] as const).map(k => <section style="margin-top:var(--space-6)"><h2>{OUTLOOK[k].label} ({by(k).length} jobs)</h2>
     <div class="chips" style="justify-content:flex-start">{by(k).map(j => <a class="chip" href={`/tracker/jobs/${j.slug}`}>{j.name}</a>)}</div></section>)}
-  <section style="margin-top:var(--space-7)" aria-labelledby="faq-h"><h2 id="faq-h">Common questions</h2>
+  {c ? <CopyExtra copy={c} /> : <section style="margin-top:var(--space-7)" aria-labelledby="faq-h"><h2 id="faq-h">Common questions</h2>
     {faq.map(f => <details class="panel" style="margin-bottom:var(--space-3)"><summary><strong>{f.q}</strong></summary><p style="margin-top:var(--space-2)">{f.a}</p></details>)}
-  </section>
+  </section>}
   <p>Ready to act? Read <a href="/guides/ai-and-your-job">Is AI taking my job? How to prepare</a>, see the <a href="/best-ai-for/resume">best AI resume builders</a>, or get the <a href="/bookstore">career action plan PDF</a>.</p>
 </div>
 </Base>

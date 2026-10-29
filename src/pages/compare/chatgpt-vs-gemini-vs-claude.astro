@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import tasks from '../../data/tasks.json';
 import { SITE, clip, freeText, priceStatus } from '../../lib/site';
+import { copyFor, copyFaqLd } from '../../lib/seo-copy';
+import CopyExtra from '../../components/CopyExtra.astro';
 import { THREE_WAY, vsSlug, VS_PAIRS } from '../../lib/seo-pages';
 const set = THREE_WAY[0]; const all = set.tools as any[];
 const tName = (s: string) => tasks.find(t => t.slug === s)?.name;
@@ -14,14 +16,16 @@ const rows: [string, (t: any) => any][] = [
   ['Price', t => t.pricing.label + (t.pricing.starting_paid_price ? `; paid from ${t.pricing.starting_paid_price}` : '')], ['Pricing checked', t => priceStatus(t.pricing)],
   ['Skill level', t => t.skill_level ?? 'Not listed'], ['Platforms', t => t.platforms?.length ? t.platforms.join(', ') : 'Not listed'], ['Privacy', t => t.privacy?.summary ?? 'See the tool page'],
 ];
-const ld = [{ '@type': 'ItemList', name, url, itemListElement: all.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) },
+const c = copyFor('/compare/chatgpt-vs-gemini-vs-claude');
+const ld = [...(c?.faq.length ? [copyFaqLd(c)] : []), { '@type': 'ItemList', name, url, itemListElement: all.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name, item: url }] }];
 ---
-<Base title={`${name}: which AI is best?`} description={clip(`${name}: which AI chatbot is best for you? Compare free plans, paid prices from ${all.map(t => t.pricing.starting_paid_price?.split(' ')[0]).filter(Boolean).join(', ')}, privacy, platforms and who each suits.`)} jsonld={ld}>
+<Base title={c?.title ?? `${name}: which AI is best?`} description={c?.description ?? clip(`${name}: which AI chatbot is best for you? Compare free plans, paid prices from ${all.map(t => t.pricing.starting_paid_price?.split(' ')[0]).filter(Boolean).join(', ')}, privacy, platforms and who each suits.`)} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › {name}</p>
-  <span class="eyebrow">Compare</span><h1>{name}</h1>
-  <p class="lede">The three best-known AI chat assistants side by side, using the facts on our tool pages. We don't pick a winner; the right one depends on what you need.</p>
+  <span class="eyebrow">Compare</span><h1>{c?.h1 ?? name}</h1>
+  {c && <div class="lede" set:html={c.intro} />}
+  <p class={c ? '' : 'lede'}>The three best-known AI chat assistants side by side, using the facts on our tool pages. We don't pick a winner; the right one depends on what you need.</p>
 </div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div style="overflow-x:auto"><table class="compare-table">
@@ -42,6 +46,7 @@ const ld = [{ '@type': 'ItemList', name, url, itemListElement: all.map((t, i) =>
   <h2>Head-to-head</h2><div class="chips" style="justify-content:flex-start">{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div>
   <p style="margin-top:var(--space-6)">New to AI chat? Read our free guide: <a href="/guides/getting-started-with-ai-chat-assistants">Getting started with AI chat assistants</a>.</p>
   <p class="note">We’re independent. No company pays to be listed. Prices come from each tool's official pricing page; check before you buy.</p>
+  {c && <CopyExtra copy={c} />}
 </div>
 </Base>
 <style>

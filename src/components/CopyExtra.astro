@@ -1,0 +1,9 @@
+---
+import type { Copy } from '../lib/seo-copy';
+const { copy, faqTitle = 'Common questions' } = Astro.props as { copy: Copy; faqTitle?: string };
+---
+{copy.body && <section class="prose copy-body" style="margin-top:var(--space-7)" set:html={copy.body} />}
+{copy.faq.length > 0 && <section style="margin-top:var(--space-7)" aria-labelledby="copy-faq-h"><h2 id="copy-faq-h">{faqTitle}</h2>
+  {copy.faq.map(f => <details class="panel" style="margin-bottom:var(--space-3)"><summary><strong>{f.q}</strong></summary><div style="margin-top:var(--space-2)" set:html={f.html} /></details>)}
+</section>}
+{copy.related.length > 0 && <><h2 style="margin-top:var(--space-7)">Related</h2><div class="chips" style="justify-content:flex-start">{copy.related.map(r => <a class="chip" href={r.href}>{r.label}</a>)}</div></>}

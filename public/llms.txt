@@ -20,6 +20,10 @@ Data is rebuilt automatically (news every few hours). Proposed license: CC BY 4.
 - [Tracker](https://humainlogic.com/tracker): outlook per job (Mostly steady / Changing / Big shift ahead), with sources
 - [Jobs API](https://humainlogic.com/api/jobs.json): JSON outlooks, editorial year-range estimates, confidence, sources
 - [Will AI take my job?](https://humainlogic.com/will-ai-take-my-job): quick answers and FAQ from the tracker
+- [Is AI a bubble?](https://humainlogic.com/learn/is-ai-a-bubble): explainer
+- [Is AI bad for the environment?](https://humainlogic.com/learn/is-ai-bad-for-the-environment): explainer
+- [How to use AI to make money, realistically](https://humainlogic.com/learn/how-to-use-ai-to-make-money): explainer
+- [AI detectors and humanizers: how accurate are they?](https://humainlogic.com/learn/ai-detectors-and-humanizers): explainer
 - [Methodology](https://humainlogic.com/methodology): how outlooks are assigned
 
 ## Guides
