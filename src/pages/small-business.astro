@@ -51,7 +51,7 @@ const desc = "AI help for small businesses, from websites to custom automated so
             <label for="smb-phone">Phone <span class="opt">(optional)</span></label>
             <input id="smb-phone" name="phone" type="tel" autocomplete="tel">
           </div>
-          <div class="hp" aria-hidden="true"><label for="smb-honey">Leave this empty</label><input id="smb-honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="hp" aria-hidden="true"><label for="smb-honey">Leave this unchecked</label><input id="smb-honey" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off"></div>
           <button class="smb-submit" type="submit">Request my free consultation</button>
           <p class="fine">We'll only use your details to reply. No spam, ever. <a href="/privacy">Privacy policy</a></p>
         </form>
@@ -75,8 +75,9 @@ const desc = "AI help for small businesses, from websites to custom automated so
 </Base>
 
 <script>
-  // Swap this to a FormSubmit alias later if needed.
-  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/humainlogicgroup@gmail.com';
+  // Web3Forms endpoint + public access key (safe in client code).
+  const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
+  const ACCESS_KEY = 'b995b097-0688-4950-b42f-1000546923f0';
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   const ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/></svg>';
   const open = document.getElementById('smb-open') as HTMLButtonElement;
@@ -137,11 +138,11 @@ const desc = "AI help for small businesses, from websites to custom automated so
       const res = await fetch(FORM_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ message: msg.value.trim(), email: email.value.trim(), phone: phone.value.trim(),
-          _subject: 'New HumAIn Logic consultation request', _template: 'table', _captcha: 'false', _honey: honey.value }),
+        body: JSON.stringify({ access_key: ACCESS_KEY, message: msg.value.trim(), email: email.value.trim(), phone: phone.value.trim(),
+          subject: 'New HumAIn Logic consultation request', from_name: 'HumAIn Logic website', replyto: email.value.trim(), botcheck: honey.checked }),
       });
       const data = await res.json().catch(() => ({}));
-      if (!res.ok || String((data as any).success) === 'false') throw new Error('send failed');
+      if (!res.ok || (data as any).success !== true) throw new Error('send failed');
       form.hidden = true; success.hidden = false; success.focus();
     } catch {
       summary.innerHTML = ICON + '<span>Sorry, something went wrong sending your message. Please try again in a moment, or email us at humainlogicgroup@gmail.com.</span>';
