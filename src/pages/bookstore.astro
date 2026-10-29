@@ -5,10 +5,15 @@ import { BOOKS } from '../data/bookstore';
 <Base title="Bookstore: quick-read AI guides (PDF)" description="Simple, quick-read PDF guides from HumAIn Logic: enhanced editions of our free guides, with checklists, worksheets and ready-made prompts.">
 <section class="page-head bookstore-head"><picture class="maya-bg" aria-hidden="true"><source type="image/webp" srcset="/img/bookstore/maya-reading-640.webp 640w, /img/bookstore/maya-reading-1024.webp 1024w" sizes="520px" /><img src="/img/bookstore/maya-reading-1024.webp" alt="" width="1024" height="576" loading="lazy" decoding="async" /></picture><div class="container"><span class="eyebrow">Bookstore</span><h1>Quick-read AI guides</h1><p class="lede">Enhanced PDF editions of our <a href="/guides">free guides</a>. Still simple and quick to read, with extra checklists, worksheets and ready-made prompts you can keep.</p></div></section>
 <div class="section" style="padding-top:var(--space-6)"><div class="container">
+  <div class="book-search" role="search">
+    <label for="book-q" class="sr-only">Search PDF guides</label>
+    <input id="book-q" type="search" placeholder="Search guides, e.g. prompts, safety, business" autocomplete="off" />
+    <p id="book-count" class="meta" aria-live="polite"></p>
+  </div>
   <ul class="grid-3 bookstore-grid" style="list-style:none;padding:0;margin:0">
     {BOOKS.map((b, i) => (<>
       {i === 3 && <li class="book-banner"><picture><source type="image/webp" srcset="/img/bookstore/bookshelf-banner-640.webp 640w, /img/bookstore/bookshelf-banner-1255.webp 1255w" sizes="(min-width: 1100px) 1100px, 100vw" /><img src="/img/bookstore/bookshelf-banner-1255.webp" alt="" aria-hidden="true" width="1255" height="363" loading="lazy" decoding="async" /></picture></li>}
-      <li style="display:flex"><article class="tool" style="width:100%">
+      <li class="book-item" style="display:flex" data-search={`${b.title} ${b.description} ${b.badge ?? ''}`.toLowerCase()}><article class="tool" style="width:100%">
         <picture class="book-cover">
           <source type="image/webp" srcset={`/img/bookstore/${b.cover}-640.webp 640w, /img/bookstore/${b.cover}-1024.webp 1024w`} sizes="(min-width: 900px) 33vw, 100vw" />
           <img src={`/img/bookstore/${b.cover}.jpg`} alt={`${b.title} cover`} width="1024" height="1365" loading="lazy" decoding="async" />
@@ -30,9 +35,29 @@ import { BOOKS } from '../data/bookstore';
       </article></li>
     </>))}
   </ul>
+  <p id="book-empty" class="note" hidden>No guides match that search yet. Try a different word, or <a href="#" id="book-clear">show all guides</a>.</p>
   <p class="note">All sales are final. Because these are instant digital downloads, we don't offer refunds. Purchases include the version available at the time of sale.</p>
 </div></div>
+<script>
+  const q = document.getElementById('book-q') as HTMLInputElement;
+  const items = [...document.querySelectorAll<HTMLElement>('.book-item')];
+  const banner = document.querySelector<HTMLElement>('.book-banner');
+  const empty = document.getElementById('book-empty')!; const count = document.getElementById('book-count')!;
+  function run() {
+    const terms = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    let n = 0;
+    for (const li of items) { const ok = terms.every(t => li.dataset.search!.includes(t)); li.style.display = ok ? 'flex' : 'none'; if (ok) n++; }
+    if (banner) banner.style.display = terms.length ? 'none' : '';
+    empty.hidden = n > 0; count.textContent = terms.length ? `${n} guide${n === 1 ? '' : 's'} found` : '';
+  }
+  q.addEventListener('input', run);
+  document.getElementById('book-clear')!.addEventListener('click', e => { e.preventDefault(); q.value = ''; run(); q.focus(); });
+</script>
 <style>
+  .book-search { max-width: 560px; margin: 0 0 var(--space-5); }
+  .book-search input { width:100%; padding:.75rem 1rem; font-size:1rem; border:1px solid var(--color-border, #cfd8d6); border-radius:var(--radius-md); background:#fff; }
+  .book-search input:focus { outline:2px solid #1F6F6B; outline-offset:1px; }
+  .book-search .meta { margin:.5rem 0 0; min-height:1.2em; }
   .book-banner { grid-column: 1 / -1; display:flex; justify-content:center; }
   .book-banner picture { display:block; width:100%; }
   .book-banner img { width:100%; height:min(260px, 29vw); object-fit:cover; object-position:center; display:block; opacity:.9;
