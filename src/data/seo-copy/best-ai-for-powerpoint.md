@@ -16,7 +16,7 @@ pricing_source: site/src/data/tools.json (verified 2026-10-15) and linked pricin
 A blank slide deck can eat an afternoon. AI presentation tools turn an outline, a document or a single prompt into a first draft of slides, so you can spend your time on the message instead of the layout. You'll still need to check the facts and trim the wording.
 
 ## Picks for different needs
-- **Inside PowerPoint:** Copilot in Microsoft 365 apps comes with [Microsoft 365 Personal ($9.99/month), Family or Premium](https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products).
+- **Inside PowerPoint:** [Copilot in PowerPoint](/tools/copilot-in-powerpoint) comes with [Microsoft 365 Personal ($9.99/month), Family or Premium](https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products).
 - **Add-ons for PowerPoint and Google Slides:** [Plus AI](https://plusai.com/pricing) (7-day free trial, from $10/user/month billed annually) and [SlidesAI](https://www.slidesai.io/pricing) (free Basic plan).
 - **Standalone deck makers:** [Gamma](https://gamma.app/pricing) has a free plan with 400 credits at signup. [Beautiful.ai](https://www.beautiful.ai/pricing) offers a 14-day trial. [Presentations.AI](https://www.presentations.ai/pricing) has a free Starter plan.
 - **Free outline help:** ask ChatGPT, Claude or Gemini to write a slide-by-slide outline, then paste it in.
@@ -28,7 +28,7 @@ Give the AI your audience, time limit and the one thing you want people to remem
 
 ## FAQ
 **Is there a free AI for PowerPoint?** SlidesAI's Basic plan and Gamma's free credits are free starts (as of Oct 2026).
-**Does PowerPoint have AI built in?** Copilot is available in PowerPoint with Microsoft 365 Personal, Family or Premium.
+**Does PowerPoint have AI built in?** [Copilot in PowerPoint](/tools/copilot-in-powerpoint) is available with Microsoft 365 Personal, Family or Premium.
 **Can AI make slides from a document?** Yes, tools like Gamma and Copilot can draft slides from text you provide.
 **Are AI slides good enough to present?** They're a first draft. Edit for accuracy, length and your own style.
 

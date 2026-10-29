@@ -17,7 +17,7 @@ Whether you write code for a living or just want to build a simple website, AI c
 
 ## Picks for different people
 - **For developers in an editor:** [GitHub Copilot](https://github.com/features/copilot/plans) has a free plan; Pro is $10/month. [Cursor](https://cursor.com/pricing) is an AI-first code editor with a free plan; paid plans start at $8/month.
-- **For beginners and hobbyists:** [Replit](https://replit.com/pricing) runs in your browser with an AI agent and a free Starter plan. [Lovable](https://lovable.dev/pricing) and [Bolt](https://bolt.new/pricing) build web apps from a prompt, both with free plans.
+- **For beginners and hobbyists:** [Replit](/tools/replit) runs in your browser with an AI agent and a free Starter plan. [Lovable](/tools/lovable) and [Bolt](https://bolt.new/pricing) build web apps from a prompt, both with free plans.
 - **For quick questions:** general assistants like ChatGPT, Claude and Gemini all explain and write code on their free plans.
 
 Prices are from each tool's pricing page, checked October 15, 2026, and change often.
@@ -27,7 +27,7 @@ Start with a free plan, try it on a real small task, and keep the one that expla
 
 ## FAQ
 **What is the best free AI for coding?** GitHub Copilot, Cursor, Replit and Bolt all offer free plans (as of Oct 2026). The best one depends on whether you work in an editor or the browser.
-**Can AI write code for a beginner?** Yes, tools like Lovable and Replit build simple apps from a description, but you should still test the result.
+**Can AI write code for a beginner?** Yes, tools like [Lovable](/tools/lovable) and [Replit](/tools/replit) build simple apps from a description, but you should still test the result.
 **Will AI replace programmers?** Our job tracker rates software developers "watch," not "shift." See the [developer outlook](/tracker/jobs/software-developer).
 **Is AI-written code safe?** Not automatically. Review and test it, and keep secrets out of prompts.
 

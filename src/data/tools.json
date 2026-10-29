@@ -220,6 +220,59 @@
   "affiliate": false
  },
  {
+  "slug": "copilot-in-powerpoint",
+  "name": "Copilot in PowerPoint",
+  "website": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+  "developer": "Microsoft",
+  "category": "productivity",
+  "category_label": "Everyday helpers",
+  "disclaimer": null,
+  "companion": false,
+  "summary": "Microsoft's AI assistant built into PowerPoint.",
+  "tasks": [
+   "make-a-presentation",
+   "create-slides"
+  ],
+  "pricing": {
+   "band": "paid",
+   "label": "Paid",
+   "free_tier": false,
+   "summary": "Comes with Microsoft 365 plans that include Copilot. Home: Microsoft 365 Personal $9.99/month or $99.99/year, Family $12.99/month or $129.99/year, Premium $199.99/year (AI features for the subscription owner only; usage limits apply). Business: Microsoft 365 Business Standard with Copilot $23.50/user/month, Business Premium with Copilot $32.00/user/month, or the Microsoft 365 Copilot Business add-on from $18.00/user/month (promotional, first year; normally $21.00), all paid yearly. PowerPoint for the web is free, but Copilot in PowerPoint needs one of these plans.",
+   "starting_paid_price": "$9.99/month (Microsoft 365 Personal)",
+   "pricing_url": "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products",
+   "verified": true,
+   "verified_on": "2026-10-28",
+   "verification_note": "Home prices from Microsoft's Microsoft 365 comparison page; business prices from microsoft.com/en-us/microsoft-365-copilot/pricing. Premium monthly price was not shown on the page.",
+   "currency": null
+  },
+  "details": {
+   "what_it_does": "Copilot in PowerPoint is Microsoft's AI assistant inside PowerPoint. You describe what you need and it can generate a presentation outline, add slides on a topic, and rewrite, reorganize or format your deck, while you review the changes. It works in PowerPoint on Windows, Mac, the web, iPhone, iPad and Android.",
+   "who_its_for": "People who already make presentations in PowerPoint and have, or want, a Microsoft 365 plan with Copilot, at home or at work.",
+   "pros": [
+    "Built into PowerPoint, so no new app to learn",
+    "Drafts outlines and new slides from a description",
+    "Edits an existing deck while you stay in control",
+    "Included with Microsoft 365 Personal, Family and Premium"
+   ],
+   "cons": [
+    "Needs a paid Microsoft 365 plan with Copilot",
+    "On home plans, AI features are for the subscription owner only and have usage limits",
+    "Drafts still need checking for accuracy"
+   ]
+  },
+  "skill_level": "beginner",
+  "platforms": [
+   "windows",
+   "mac",
+   "web",
+   "ios",
+   "android"
+  ],
+  "privacy": null,
+  "last_verified": null,
+  "affiliate": false
+ },
+ {
   "slug": "perplexity",
   "name": "Perplexity",
   "website": "https://www.perplexity.ai",
