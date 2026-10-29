@@ -16,7 +16,7 @@ const ld = [
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: cat.label, item: url }] },
 ];
 ---
-<Base title={`${cat.label}: AI tools`} description={`${list.length} AI tools for ${cat.label.toLowerCase()}, explained in plain English with checked prices.`} jsonld={ld}>
+<Base title={`Best AI tools: ${cat.label.toLowerCase()}`} description={`The best AI tools for ${cat.label.toLowerCase()}: ${list.length} options compared in plain English, with checked prices, free plans and privacy notes so you can pick the right one.`} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › {cat.label}</p>
   <span class="eyebrow">Find a tool</span><h1>{cat.label}</h1>

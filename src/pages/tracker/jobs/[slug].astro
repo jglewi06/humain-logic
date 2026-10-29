@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import jobsData from '../../../data/jobs.json';
-import { mailto, OUTLOOK, SITE, fmtDate, HIRING_INTRO } from '../../../lib/site';
+import { clip, mailto, OUTLOOK, SITE, fmtDate, HIRING_INTRO } from '../../../lib/site';
 import JobTimeline from '../../../components/JobTimeline.astro';
 import JobHelp from '../../../components/JobHelp.astro';
 import HiringImpact from '../../../components/HiringImpact.astro';
@@ -17,7 +17,7 @@ const ld = [{ '@type': 'Article', headline: `How AI may change the job of ${job.
   citation: [...new Map([...job.sources, ...(job.employment_pressure_sources ?? [])].map(s => [s.url, citation(s)])).values()] },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Job tracker', item: `${SITE.url}/tracker` }, { '@type': 'ListItem', position: 3, name: job.name, item: `${SITE.url}/tracker/jobs/${job.slug}` }] }];
 ---
-<Base title={`Will AI change the job of ${job.name.toLowerCase()}?`} description={`Our calm, sourced outlook for ${job.name}: ${o.label}.`} jsonld={ld}>
+<Base title={(() => { const n = job.name.toLowerCase(); const a = `Will AI replace ${n} jobs? Outlook`; return a.length <= 46 ? a : `Will AI replace ${n}?`.length <= 46 ? `Will AI replace ${n}?` : `AI and ${n} jobs`; })()} description={clip(`Is AI taking ${job.name.toLowerCase()} jobs? Our sourced outlook: ${o.label}. See which tasks are changing, a timeline, hiring impact, and practical steps to stay ready.`)} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tracker">Job tracker</a> › {job.name}</p>
   <span class="eyebrow">Job outlook</span><h1>{job.name}</h1>

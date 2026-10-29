@@ -4,7 +4,7 @@ import ToolCard from '../../components/ToolCard.astro';
 import { toolLd } from '../../lib/ld.mjs';
 import tools from '../../data/tools.json';
 import tasks from '../../data/tasks.json';
-import { mailto, SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
+import { clip, mailto, SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
 export function getStaticPaths() { return tools.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
 const { tool } = Astro.props;
 const [bg, fg] = tint(tool.slug);
@@ -16,7 +16,7 @@ const ld = [
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.category_label, item: `${SITE.url}/tools/category/${tool.category}` }, { '@type': 'ListItem', position: 4, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
 ];
 ---
-<Base title={`${tool.name}: what it does, price and privacy`} description={`${tool.name}: ${tool.summary}`} jsonld={ld}>
+<Base title={(() => { const t = `${tool.name} review: ${p.free_tier ? 'free plan, ' : ''}price & privacy`; return t.length <= 46 ? t : `${tool.name} review: price & privacy`.length <= 46 ? `${tool.name} review: price & privacy` : tool.name; })()} description={clip(`${tool.name} review: ${tool.summary.replace(/\.$/, '')}. ${p.label}${p.starting_paid_price ? `, paid from ${p.starting_paid_price}` : ''}. Best for: ${myTasks.slice(0, 3).map(t => t.name.toLowerCase()).join(', ')}. Plus ${alts.length ? 'alternatives like ' + alts.slice(0, 2).map(a => a.name).join(' and ') : 'privacy notes'}.`)} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › <a href={`/tools/category/${tool.category}`}>{tool.category_label}</a> › {tool.name}</p>
   <div class="tool-head">

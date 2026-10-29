@@ -7,7 +7,7 @@ const entries = await getCollection('guides');
 const guides = meta.map(m => ({ ...m, entry: entries.find(e => e.id === m.slug) })).filter(g => g.entry);
 const ld = [{ '@type': 'ItemList', name: 'HumAIn Logic guides', itemListElement: guides.map((g, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/guides/${g.slug}`, name: g.title })) }];
 ---
-<Base title="Guides" description="Short, plain-language guides to using AI safely at home, at work and in a small business." jsonld={ld}>
+<Base title="AI guides for beginners, in plain English" description="Free AI guides for beginners: what AI is, how to use ChatGPT and other chat assistants, staying safe from AI scams, AI and your job, and AI for small business." jsonld={ld}>
 <section class="page-head"><div class="container guides-head"><div class="guides-head-text"><span class="eyebrow">Guides</span><h1>Plain-language AI guides</h1><p class="lede">Short reads you can finish with a coffee. New to AI? Start with <a href="/learn">AI, explained simply</a>.</p></div>
   <figure class="news-media is-photo guides-photo">
     <picture>

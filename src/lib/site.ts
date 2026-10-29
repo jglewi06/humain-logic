@@ -47,3 +47,6 @@ export const HIRING = {
 } as Record<string, { label: string; icon: string; cls: string }>;
 export const HIRING_ORDER = ['high', 'medium', 'low', 'growth'];
 export const HIRING_INTRO = 'Hiring impact by 2030 is a separate HumAIn Logic estimate of whether employers are likely to hire fewer or more people for a job by about 2030, based on employer surveys and early labor-market data. It is not the automation timeline: the year ranges estimate when technology could do most of a job’s tasks, which is a different question.';
+
+/** Trim text to a meta-description length (≤160) on a word boundary. */
+export const clip = (s: string, n = 160) => { s = s.replace(/\s+/g, ' ').trim(); if (s.length <= n) return s; const c = s.slice(0, n - 1); return c.slice(0, c.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'; };

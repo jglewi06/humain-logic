@@ -34,3 +34,4 @@ Disallow: /newsletter/confirmed
 Disallow: /newsletter/unsubscribe
 
 Sitemap: https://humainlogic.com/sitemap-index.xml
+Sitemap: https://humainlogic.com/sitemap.xml

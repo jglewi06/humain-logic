@@ -5,11 +5,12 @@ import '../styles/global.css';
 import Icons from '../components/Icons.astro';
 import Brand from '../components/Brand.astro';
 import { SITE, NAV, abs } from '../lib/site';
-interface Props { title?: string; description?: string; noindex?: boolean; jsonld?: object[]; json?: string; path?: string }
-const { title, description = SITE.description, noindex = false, jsonld = [], json } = Astro.props;
+interface Props { title?: string; description?: string; noindex?: boolean; jsonld?: object[]; json?: string; path?: string; image?: string; imageAlt?: string; ogType?: string; fullTitle?: string }
+const { title, description = SITE.description, noindex = false, jsonld = [], json, image = '/img/guides/guides-hero-1024.jpg', imageAlt = 'HumAIn Logic: plain-English AI guides and tools', ogType = 'website' } = Astro.props;
+const ogImage = image.startsWith('http') ? image : `${SITE.url}${image}`;
 const path = (Astro.props.path ?? Astro.url.pathname).replace(/\.html$/, '').replace(/\/index$/, '/').replace(/(.)\/$/, '$1') || '/';
 const canonical = abs(path);
-const fullTitle = title ? `${title} | HumAIn Logic` : 'HumAIn Logic: AI tools, news & job insights in plain English';
+const fullTitle = Astro.props.fullTitle ?? (title ? `${title} | HumAIn Logic` : 'HumAIn Logic: AI tools, news & job insights in plain English');
 const isCurrent = (m: string[]) => m.some(p => path === p || path.startsWith(p + '/'));
 const graph = { '@context': 'https://schema.org', '@graph': [
   { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg`, email: SITE.email, contactPoint: { '@type': 'ContactPoint', email: SITE.email, contactType: 'customer support' } },
@@ -27,8 +28,10 @@ const graph = { '@context': 'https://schema.org', '@graph': [
 <meta name="description" content={description}>
 <link rel="canonical" href={canonical}>
 {noindex && <meta name="robots" content="noindex,follow">}
-<meta property="og:type" content="website"><meta property="og:site_name" content="HumAIn Logic">
+<meta property="og:type" content={ogType}><meta property="og:locale" content="en_US"><meta property="og:site_name" content="HumAIn Logic">
 <meta property="og:title" content={fullTitle}><meta property="og:description" content={description}><meta property="og:url" content={canonical}>
+<meta property="og:image" content={ogImage}><meta property="og:image:alt" content={imageAlt}>
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={fullTitle}><meta name="twitter:description" content={description}><meta name="twitter:image" content={ogImage}><meta name="twitter:image:alt" content={imageAlt}>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="sitemap" href="/sitemap-index.xml">
 <link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">

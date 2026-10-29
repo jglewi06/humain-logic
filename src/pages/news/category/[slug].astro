@@ -8,4 +8,4 @@ export function getStaticPaths() { return Object.keys(NEWS_CATS).map(slug => ({ 
 const { slug } = Astro.params;
 const ld = [newsListLd(news.items.filter(i => i.category === slug).slice(0, 20), `AI news: ${NEWS_CATS[slug]}`)];
 ---
-<Base title={`AI news: ${NEWS_CATS[slug]}`} jsonld={ld}><NewsFeed category={slug} /></Base>
+<Base title={`AI news: ${NEWS_CATS[slug]}`} description={`The latest AI news about ${NEWS_CATS[slug].toLowerCase()}, explained in plain English. Calm, sourced updates for everyday people and small businesses, with no hype.`} jsonld={ld}><NewsFeed category={slug} /></Base>

@@ -3,14 +3,14 @@ import Base from '../../layouts/Base.astro';
 import ToolCard from '../../components/ToolCard.astro';
 import tasks from '../../data/tasks.json';
 import tools from '../../data/tools.json';
-import { SITE } from '../../lib/site';
+import { SITE, clip } from '../../lib/site';
 export function getStaticPaths() { return tasks.map(t => ({ params: { slug: t.slug }, props: { task: t } })); }
 const { task } = Astro.props;
 const list = task.tools.map(s => tools.find(t => t.slug === s)).filter(Boolean);
 const related = tasks.filter(t => t.slug !== task.slug && t.categories.some(c => task.categories.includes(c))).slice(0, 8);
 const ld = [{ '@type': 'ItemList', name: `Tools for: ${task.name}`, itemListElement: list.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) }];
 ---
-<Base title={`AI tools to ${task.name.toLowerCase()}`} description={`AI tools that can help you ${task.name.toLowerCase()}, explained in plain English.`} jsonld={ld}>
+<Base title={(() => { const n = task.name.toLowerCase(); const a = `Best AI tools to ${n} (free & paid)`; return a.length <= 46 ? a : `Best AI tools to ${n}`.length <= 46 ? `Best AI tools to ${n}` : `AI tools to ${n}`; })()} description={clip(`The best AI tools to ${task.name.toLowerCase()}, compared in plain English: ${list.slice(0, 4).map(t => t.name).join(', ')}${list.length > 4 ? ' and more' : ''}. See which have a free plan, what they cost, and privacy notes.`)} jsonld={ld}>
 <section class="page-head"><div class="container"><p class="crumbs"><a href="/">Home</a> › <a href="/tasks">Tasks</a> › {task.name}</p><span class="eyebrow">Task</span><h1>{task.name}</h1><p class="lede">{list.length} tool{list.length === 1 ? '' : 's'} that can help.</p></div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <div class="grid-3">{list.map((t, i) => <ToolCard tool={t} best={i === 0 && list.length > 1} />)}</div>
