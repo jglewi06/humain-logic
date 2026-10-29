@@ -48,5 +48,12 @@ export const HIRING = {
 export const HIRING_ORDER = ['high', 'medium', 'low', 'growth'];
 export const HIRING_INTRO = 'Hiring impact by 2030 is a separate HumAIn Logic estimate of whether employers are likely to hire fewer or more people for a job by about 2030, based on employer surveys and early labor-market data. It is not the automation timeline: the year ranges estimate when technology could do most of a job’s tasks, which is a different question.';
 
-/** Trim text to a meta-description length (≤160) on a word boundary. */
-export const clip = (s: string, n = 160) => { s = s.replace(/\s+/g, ' ').trim(); if (s.length <= n) return s; const c = s.slice(0, n - 1); return c.slice(0, c.lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '…'; };
+/** Fit text to a meta-description length (≤n), cutting at a sentence or clause end, never mid-phrase and never with "…". */
+export const clip = (s: string, n = 160) => {
+  s = s.replace(/\s+/g, ' ').trim(); if (s.length <= n) return s;
+  const c = s.slice(0, n), cands: string[] = [];
+  const sent = c.lastIndexOf('. '); if (sent > 0) cands.push(c.slice(0, sent + 1));
+  for (const sep of [', ', '; ', ': ', ' and ', ' with ']) { const k = c.slice(0, n - 1).lastIndexOf(sep); if (k > 0) cands.push(c.slice(0, k).replace(/[,;:\s]+$/, '') + '.'); }
+  const best = cands.filter(x => x.length <= n).sort((x, y) => y.length - x.length)[0];
+  return best && best.length >= 100 ? best : c.slice(0, c.slice(0, n - 1).lastIndexOf(' ')).replace(/[,;:.\s]+$/, '') + '.';
+};

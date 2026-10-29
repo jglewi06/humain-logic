@@ -4,6 +4,8 @@ import ToolCard from '../../components/ToolCard.astro';
 import { toolLd } from '../../lib/ld.mjs';
 import tools from '../../data/tools.json';
 import tasks from '../../data/tasks.json';
+import guides from '../../data/guides.json';
+import { hasAlternatives, pairsFor, vsSlug, guideFor } from '../../lib/seo-pages';
 import { clip, mailto, SITE, tint, initials, priceStatus, freeText, fmtMonthDay } from '../../lib/site';
 export function getStaticPaths() { return tools.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
 const { tool } = Astro.props;
@@ -11,12 +13,14 @@ const [bg, fg] = tint(tool.slug);
 const p = tool.pricing; const d = tool.details;
 const myTasks = tool.tasks.map(s => tasks.find(t => t.slug === s)).filter(Boolean);
 const alts = tools.filter(t => t.slug !== tool.slug && t.category === tool.category).slice(0, 3);
+const guide = guides.find(g => g.slug === guideFor(tool.category));
+const pairs = pairsFor(tool);
 const ld = [
   toolLd(tool),
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.category_label, item: `${SITE.url}/tools/category/${tool.category}` }, { '@type': 'ListItem', position: 4, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }] },
 ];
 ---
-<Base title={(() => { const t = `${tool.name} review: ${p.free_tier ? 'free plan, ' : ''}price & privacy`; return t.length <= 46 ? t : `${tool.name} review: price & privacy`.length <= 46 ? `${tool.name} review: price & privacy` : tool.name; })()} description={clip(`${tool.name} review: ${tool.summary.replace(/\.$/, '')}. ${p.label}${p.starting_paid_price ? `, paid from ${p.starting_paid_price}` : ''}. Best for: ${myTasks.slice(0, 3).map(t => t.name.toLowerCase()).join(', ')}. Plus ${alts.length ? 'alternatives like ' + alts.slice(0, 2).map(a => a.name).join(' and ') : 'privacy notes'}.`)} jsonld={ld}>
+<Base title={(() => { const t = `${tool.name} review: ${p.free_tier ? 'free plan, ' : ''}price & privacy`; return t.length <= 46 ? t : `${tool.name} review: price & privacy`.length <= 46 ? `${tool.name} review: price & privacy` : tool.name; })()} description={clip(`${tool.name} review: ${tool.summary.replace(/\.$/, '')}. ${p.label}${p.starting_paid_price ? `${p.free_tier ? ", paid" : ","} from ${p.starting_paid_price}` : ''}. Best for: ${myTasks.slice(0, 3).map(t => t.name.toLowerCase()).join(', ')}. Plus ${alts.length ? 'alternatives like ' + alts.slice(0, 2).map(a => a.name).join(' and ') : 'privacy notes'}.`)} jsonld={ld}>
 <section class="page-head"><div class="container">
   <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › <a href={`/tools/category/${tool.category}`}>{tool.category_label}</a> › {tool.name}</p>
   <div class="tool-head">
@@ -52,7 +56,9 @@ const ld = [
       </div>
       {tool.disclaimer && <p class="confidence"><strong>Reminder:</strong> {tool.disclaimer}</p>}
       {tool.privacy?.summary && <><h2>Privacy and safety</h2><p>{tool.privacy.summary}</p></>}
-      {alts.length > 0 && <><h2>Alternatives</h2><div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div></>}
+      {alts.length > 0 && <><h2>Alternatives</h2><div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div>{hasAlternatives(tool) && <p style="margin-top:var(--space-3)"><a href={`/alternatives/${tool.slug}`}>See all {tool.name} alternatives</a></p>}</>}
+      {pairs.length > 0 && <><h2>Compare {tool.name}</h2><div class="chips" style="justify-content:flex-start">{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div></>}
+      {guide && <><h2>Related guide</h2><p><a href={`/guides/${guide.slug}`}>{guide.title}</a>: {guide.summary}</p></>}
     </div>
     <aside class="panel glance" aria-labelledby="g-h">
       <h2 id="g-h" style="font-size:var(--fs-h4);margin-bottom:var(--space-3)">At a glance</h2>

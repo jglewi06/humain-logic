@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { SITE, clip } from '../../lib/site';
+import { ALT_TOOLS, alternativesFor, pairsFor, vsSlug } from '../../lib/seo-pages';
+export function getStaticPaths() { return ALT_TOOLS.map(t => ({ params: { slug: t.slug }, props: { tool: t } })); }
+const { tool } = Astro.props;
+const alts = alternativesFor(tool);
+const free = alts.filter(t => t.pricing.free_tier === true);
+const pairs = pairsFor(tool);
+const t1 = `${tool.name} alternatives: free & paid options`, t2 = `Best ${tool.name} alternatives`;
+const title = t1.length <= 46 ? t1 : t2.length <= 46 ? t2 : `${tool.name} alternatives`;
+const ld = [
+  { '@type': 'ItemList', name: `${tool.name} alternatives`, itemListElement: alts.map((t, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/tools/${t.slug}`, name: t.name })) },
+  { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Tools', item: `${SITE.url}/tools` }, { '@type': 'ListItem', position: 3, name: tool.name, item: `${SITE.url}/tools/${tool.slug}` }, { '@type': 'ListItem', position: 4, name: 'Alternatives', item: `${SITE.url}/alternatives/${tool.slug}` }] },
+];
+---
+<Base title={title} description={clip(`Looking for ${tool.name} alternatives? Compare ${alts.length} similar AI tools in plain English, ${free.length} with a free plan: ${alts.slice(0, 3).map(t => t.name).join(', ')} and more, with prices and privacy notes.`)} jsonld={ld}>
+<section class="page-head"><div class="container">
+  <p class="crumbs"><a href="/">Home</a> › <a href="/tools">Tools</a> › <a href={`/tools/${tool.slug}`}>{tool.name}</a> › Alternatives</p>
+  <span class="eyebrow">Alternatives</span><h1>{tool.name} alternatives</h1>
+  <p class="lede">{tool.name}: {tool.summary} Here are {alts.length} other tools in our <a href={`/tools/category/${tool.category}`}>{tool.category_label}</a> group{free.length ? `, ${free.length} with a free plan` : ''}. Listed in our directory order, not ranked.</p>
+  <p><a href={`/tools/${tool.slug}`}>Read our full {tool.name} page</a> · <a href="/tools/free">All free AI tools</a></p>
+</div></section>
+<div class="container section" style="padding-top:var(--space-6)">
+  {pairs.length > 0 && <><h2>Side-by-side comparisons</h2><div class="chips" style="justify-content:flex-start;margin-bottom:var(--space-6)">{pairs.map(([a, b]) => <a class="chip" href={`/compare/${vsSlug(a, b)}`}>{a.name} vs {b.name}</a>)}</div></>}
+  <h2>{alts.length} alternatives to {tool.name}</h2>
+  <div class="grid-3">{alts.map(t => <ToolCard tool={t} />)}</div>
+  <p class="note">We’re independent. No company pays to be listed. Prices come from each tool's official pricing page; check before you buy.</p>
+</div>
+</Base>

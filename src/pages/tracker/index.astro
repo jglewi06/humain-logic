@@ -8,7 +8,7 @@ const groups = (['shift', 'watch', 'steady'] as const).map(k => ({ k, ...OUTLOOK
 const hgroups = HIRING_ORDER.map(k => ({ k, ...HIRING[k], jobs: jobsData.jobs.filter(j => j.employment_pressure_by_2030 === k) })).filter(g => g.jobs.length);
 const ld = [jobsDatasetLd(jobsData), itemList('Jobs in the tracker', jobsData.jobs.map(j => ({ url: `${SITE.url}/tracker/jobs/${j.slug}`, name: j.name })))];
 ---
-<Base title="Is AI taking my job? AI job safety tracker" description="Is AI taking your job? Check calm, sourced outlooks for 31 jobs: which are mostly steady, which are changing, and practical steps to stay ready for an AI job market." jsonld={ld} json="/api/jobs.json">
+<Base title="Is AI taking my job? AI job safety tracker" description="Is AI taking your job? Check calm, sourced outlooks for 31 jobs: which are mostly steady, which are changing, and practical steps to stay ready." jsonld={ld} json="/api/jobs.json">
 <section class="page-head tracker-head"><div class="container tracker-head-grid">
 <div class="tracker-head-copy">
   <span class="eyebrow">Job safety tracker</span><h1>How is AI changing your job?</h1>

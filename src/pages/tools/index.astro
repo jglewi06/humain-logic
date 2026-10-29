@@ -9,7 +9,7 @@ const ld = [{ '@type': 'ItemList', name: 'AI tools directory', numberOfItems: to
 <Base title="AI tools directory: free & paid, compared" description={`Browse ${tools.length} AI tools for everyday tasks, explained in plain English. Find the best free AI tools, checked prices, privacy notes and what each one is good for.`} jsonld={ld} json="/api/tools.json">
 <section class="page-head"><div class="container">
   <span class="eyebrow">Find a tool</span><h1>AI tools, sorted by what they help you do</h1>
-  <p class="lede">{tools.length} tools in {categories.length} groups. Not sure what to pick? <a href="/search">Describe your task</a> or <a href="/tasks">browse by task</a>.</p>
+  <p class="lede">{tools.length} tools in {categories.length} groups. Not sure what to pick? <a href="/search">Describe your task</a>, <a href="/tasks">browse by task</a> or see the <a href="/tools/free">best free AI tools</a>.</p>
   <form class="search compact" role="search" action="/search" method="get">
     <div class="row" style="display:flex;gap:14px;align-items:center;flex:1;min-width:0"><svg width="24" height="24" aria-hidden="true"><use href="#i-search"/></svg>
     <div class="field"><label for="q">Describe your task</label><input id="q" name="q" type="search" enterkeyhint="search" placeholder="e.g. make a flyer for my bakery"></div></div>
