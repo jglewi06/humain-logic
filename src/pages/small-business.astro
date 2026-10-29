@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+const desc = "AI help for small businesses, from websites to custom automated software. Free consultations available: tell us what's slowing you down and get plain-language ideas.";
+---
+<Base path="/small-business" title="Small Business AI Solutions, Free Consultation" description={desc} image="/img/small-business/smb-hero-1200.jpg" imageAlt="A florist working in her small shop">
+<div class="smb">
+  <section class="smb-hero" aria-labelledby="smb-h">
+    <div class="smb-hero-art" aria-hidden="true"></div>
+    <div class="container smb-hero-inner">
+      <span class="smb-chip">Free consultation</span>
+      <h1 id="smb-h">AI help for your small business, at your pace</h1>
+      <p class="smb-sub">Tell us what's slowing you down. We'll reply with plain-language ideas, no jargon and no pressure.</p>
+      <p class="smb-sub2">We help with everything from simple websites to custom automated software that handles the busywork for you.</p>
+      <button class="smb-btn-primary" type="button" id="smb-open" aria-expanded="false" aria-controls="consult">Free Consultation</button>
+    </div>
+  </section>
+
+  <section class="container smb-cards" aria-label="What to expect">
+    <div class="smb-card"><h2>It's free</h2><p>No cost and no commitment to ask.</p></div>
+    <div class="smb-card"><h2>No sales pitch</h2><p>Honest ideas, even if the answer is "you don't need AI."</p></div>
+    <div class="smb-card"><h2>Real answers in plain words</h2><p>We skip the jargon and explain what would actually help.</p></div>
+  </section>
+
+  <section class="container smb-steps" aria-labelledby="how-h">
+    <h2 id="how-h">How it works</h2>
+    <ol>
+      <li><span class="n" aria-hidden="true">1</span><div><h3>Tell us the problem</h3><p>Describe the task you'd like to automate or the software you wish you had.</p></div></li>
+      <li><span class="n" aria-hidden="true">2</span><div><h3>We review it</h3><p>We look at what you shared and think through practical options.</p></div></li>
+      <li><span class="n" aria-hidden="true">3</span><div><h3>We reply by email</h3><p>We reply by email within 2 business days.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="container smb-form-wrap" id="consult" hidden aria-labelledby="form-h">
+    <div class="smb-grid">
+      <div class="smb-form-card">
+        <h2 id="form-h" tabindex="-1">Request your free consultation</h2>
+        <div id="smb-summary" class="smb-summary" role="alert" aria-live="assertive" hidden></div>
+        <form id="smb-form" novalidate>
+          <div class="f">
+            <label for="smb-message">What can we help with?</label>
+            <p class="help" id="smb-message-help">A few sentences is plenty. What's the problem, and what do you hope to automate or want the software to do?</p>
+            <textarea id="smb-message" name="message" rows="7" required aria-describedby="smb-message-help smb-message-err"></textarea>
+            <p class="err" id="smb-message-err" hidden></p>
+          </div>
+          <div class="f">
+            <label for="smb-email">Email</label>
+            <input id="smb-email" name="email" type="email" autocomplete="email" required aria-describedby="smb-email-err">
+            <p class="err" id="smb-email-err" hidden></p>
+          </div>
+          <div class="f">
+            <label for="smb-phone">Phone <span class="opt">(optional)</span></label>
+            <input id="smb-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="hp" aria-hidden="true"><label for="smb-honey">Leave this empty</label><input id="smb-honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="smb-submit" type="submit">Request my free consultation</button>
+          <p class="fine">We'll only use your details to reply. No spam, ever. <a href="/privacy">Privacy policy</a></p>
+        </form>
+        <div id="smb-success" class="smb-success" tabindex="-1" aria-live="polite" hidden>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>
+          <p><strong>Thanks! We got your message.</strong> We'll review your request and reply within 2 business days.</p>
+        </div>
+      </div>
+      <aside class="smb-aside" aria-label="About this consultation">
+        <h3>What happens with your message</h3>
+        <ul>
+          <li>A real person reads it.</li>
+          <li>We only use your email (and phone, if given) to reply.</li>
+          <li>There's no cost and no obligation.</li>
+          <li>Not sure how to describe it? Just tell us what eats up your time.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</div>
+</Base>
+
+<script>
+  // Swap this to a FormSubmit alias later if needed.
+  const FORM_ENDPOINT = 'https://formsubmit.co/ajax/humainlogicgroup@gmail.com';
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  const ICON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/></svg>';
+  const open = document.getElementById('smb-open') as HTMLButtonElement;
+  const wrap = document.getElementById('consult') as HTMLElement;
+  const form = document.getElementById('smb-form') as HTMLFormElement;
+  const summary = document.getElementById('smb-summary') as HTMLElement;
+  const success = document.getElementById('smb-success') as HTMLElement;
+  const msg = document.getElementById('smb-message') as HTMLTextAreaElement;
+  const email = document.getElementById('smb-email') as HTMLInputElement;
+  const phone = document.getElementById('smb-phone') as HTMLInputElement;
+  const honey = document.getElementById('smb-honey') as HTMLInputElement;
+
+  open.addEventListener('click', () => {
+    wrap.hidden = false; open.setAttribute('aria-expanded', 'true');
+    wrap.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    (document.getElementById('form-h') as HTMLElement).focus({ preventScroll: true });
+  });
+  if (location.hash === '#consult') open.click();
+
+  function check(el: HTMLInputElement | HTMLTextAreaElement): string {
+    const err = document.getElementById(el.id + '-err') as HTMLElement;
+    let m = '';
+    if (el === msg && !msg.value.trim()) m = 'Please tell us a little about what you need help with.';
+    if (el === email) {
+      const v = email.value.trim();
+      if (!v) m = 'Please enter your email so we can reply.';
+      else if (!email.checkValidity() || !EMAIL_RE.test(v)) m = 'Please enter a valid email, like name@example.com.';
+    }
+    if (m) { err.innerHTML = ICON + '<span>' + m + '</span>'; err.hidden = false; el.setAttribute('aria-invalid', 'true'); }
+    else { err.hidden = true; err.textContent = ''; el.removeAttribute('aria-invalid'); }
+    return m;
+  }
+  [msg, email].forEach(el => {
+    el.addEventListener('blur', () => check(el));
+    el.addEventListener('input', () => { if (el.getAttribute('aria-invalid')) { check(el); if (!msg.getAttribute('aria-invalid') && !email.getAttribute('aria-invalid')) summary.hidden = true; } });
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const errs = [msg, email].map(check).filter(Boolean);
+    if (errs.length) {
+      summary.innerHTML = ICON + '<span>Please fix ' + (errs.length === 1 ? 'this' : 'these ' + errs.length) + ' before sending: ' + errs.join(' ') + '</span>';
+      summary.hidden = false;
+      (msg.getAttribute('aria-invalid') ? msg : email).focus();
+      return;
+    }
+    summary.hidden = true;
+    const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
+    btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ message: msg.value.trim(), email: email.value.trim(), phone: phone.value.trim(),
+          _subject: 'New HumAIn Logic consultation request', _template: 'table', _captcha: 'false', _honey: honey.value }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || String((data as any).success) === 'false') throw new Error('send failed');
+      form.hidden = true; success.hidden = false; success.focus();
+    } catch {
+      summary.innerHTML = ICON + '<span>Sorry, something went wrong sending your message. Please try again in a moment, or email us at humainlogicgroup@gmail.com.</span>';
+      summary.hidden = false; summary.focus?.();
+    } finally { btn.disabled = false; btn.textContent = 'Request my free consultation'; }
+  });
+</script>
+
+<style>
+.smb{background:var(--color-paper)}
+.smb-hero{position:relative;overflow:hidden;padding:72px 0 56px}
+.smb-hero-art{position:absolute;inset:0 0 0 auto;width:58%;background:url(/img/small-business/smb-hero-1200.jpg) center/cover no-repeat;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.18) 14%,rgba(0,0,0,.62) 30%,#000 50%),linear-gradient(to bottom,#000 72%,transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.18) 14%,rgba(0,0,0,.62) 30%,#000 50%),linear-gradient(to bottom,#000 72%,transparent 100%);
+  -webkit-mask-composite:source-in;mask-composite:intersect}
+.smb-hero-inner{position:relative}
+.smb-hero-inner > *{max-width:560px}
+.smb-chip{display:inline-block;background:#FDEBD6;color:var(--color-clay);font:600 14px/1 var(--font-body);letter-spacing:var(--tracking-label);text-transform:uppercase;padding:8px 14px;border-radius:999px}
+.smb h1{font-family:var(--font-display);font-weight:700;font-variation-settings:"SOFT" 100,"opsz" 144;font-size:clamp(2.4rem,5vw,3.75rem);line-height:1.05;letter-spacing:-.012em;color:var(--color-ink);margin:18px 0 16px}
+.smb-sub{font:400 18px/1.6 var(--font-body);color:var(--color-slate);margin:0 0 10px}
+.smb-sub2{font:400 18px/1.6 var(--font-body);color:var(--color-ink);margin:0 0 28px}
+.smb-btn-primary,.smb-submit{background:var(--color-teal);color:#fff;border:0;border-radius:999px;font:600 18px/1.2 var(--font-body);min-height:52px;padding:14px 28px;cursor:pointer}
+.smb-btn-primary:hover,.smb-submit:hover{background:#17575A}
+.smb-btn-primary:focus-visible,.smb-submit:focus-visible,.smb a:focus-visible{outline:3px solid var(--color-teal);outline-offset:2px}
+.smb-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:8px;padding-bottom:48px}
+.smb-card{background:#fff;border-radius:16px;box-shadow:0 2px 6px rgba(31,42,55,.06),0 8px 24px rgba(31,42,55,.06);padding:24px}
+.smb-card h2{font:600 20px/1.3 var(--font-heading);margin:0 0 6px;color:var(--color-ink)}
+.smb-card p{margin:0;color:var(--color-slate);font-size:16px}
+.smb-steps{padding-bottom:48px}
+.smb-steps h2,.smb-form-card h2{font:600 var(--fs-h2)/1.2 var(--font-heading);color:var(--color-ink);margin:0 0 20px}
+.smb-steps ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.smb-steps li{display:flex;gap:14px}
+.smb-steps .n{flex:none;width:40px;height:40px;border-radius:50%;background:var(--color-sage);color:var(--color-teal);font:700 18px/40px var(--font-body);text-align:center}
+.smb-steps h3{font:600 18px/1.3 var(--font-body);margin:6px 0 4px}
+.smb-steps p{margin:0;color:var(--color-slate);font-size:16px}
+.smb-form-wrap{padding-bottom:80px;scroll-margin-top:90px}
+.smb-grid{display:grid;grid-template-columns:7fr 5fr;gap:32px;align-items:start}
+.smb-form-card{background:#fff;border-radius:20px;padding:32px;max-width:640px;box-shadow:0 2px 6px rgba(31,42,55,.06),0 8px 24px rgba(31,42,55,.06)}
+.smb-form-card h2{font-size:28px}
+.smb-form-card h2:focus{outline:none}
+.f{margin-bottom:22px}
+.f label{display:block;font:600 16px/1.3 var(--font-body);color:var(--color-ink);margin-bottom:6px}
+.opt{color:var(--color-slate);font-weight:400}
+.help{margin:0 0 8px;color:var(--color-slate);font-size:15px}
+.f input,.f textarea{width:100%;box-sizing:border-box;font:400 18px/1.5 var(--font-body);color:var(--color-ink);min-height:48px;padding:10px 14px;border:1px solid #B9C3CE;border-radius:12px;background:#fff}
+.f textarea{resize:vertical}
+.f input:focus,.f textarea:focus{outline:none;border-color:var(--color-teal);box-shadow:0 0 0 3px rgba(31,111,107,.25)}
+.f [aria-invalid=true]{border-color:#9A4A1E}
+.err,.smb-summary{display:flex;gap:6px;align-items:flex-start;color:#9A4A1E;font:500 15px/1.4 var(--font-body);margin:6px 0 0}
+.err[hidden],.smb-summary[hidden],.smb-success[hidden]{display:none}
+.err svg,.smb-summary svg{flex:none;margin-top:2px}
+.smb-summary{background:#FDEBD6;border-radius:12px;padding:12px 14px;margin:0 0 20px}
+.hp{position:absolute!important;left:-10000px;width:1px;height:1px;overflow:hidden}
+.smb-submit:disabled{opacity:.7;cursor:wait}
+.fine{margin:12px 0 0;color:var(--color-slate);font-size:14px}
+.fine a{color:var(--color-teal)}
+.smb-success{display:flex;gap:12px;align-items:flex-start;background:var(--color-sage);color:var(--color-ink);border-radius:16px;padding:20px 22px}
+.smb-success svg{color:var(--color-teal);flex:none}
+.smb-success p{margin:0;font-size:18px;line-height:1.5}
+.smb-success:focus{outline:3px solid var(--color-teal);outline-offset:2px}
+.smb-aside{background:var(--color-sage);border-radius:20px;padding:28px}
+.smb-aside h3{font:600 20px/1.3 var(--font-heading);margin:0 0 12px}
+.smb-aside ul{margin:0;padding-left:20px;color:var(--color-ink);font-size:16px;line-height:1.6}
+.smb-aside li{margin-bottom:8px}
+@media (max-width:860px){
+  .smb-hero{padding:0 0 40px}
+  .smb-hero-art{position:relative;width:100%;height:220px;-webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 100%);mask-image:linear-gradient(to bottom,#000 60%,transparent 100%)}
+  .smb-cards,.smb-steps ol,.smb-grid{grid-template-columns:1fr}
+  .smb-form-card{padding:24px}
+  .smb-submit{width:100%}
+}
+</style>
