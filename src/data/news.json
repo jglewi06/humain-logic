@@ -1,7 +1,51 @@
 {
- "updated": "2026-10-29T07:16:05.195Z",
- "failed_feeds": [],
+ "updated": "2026-10-29T13:15:40.354Z",
+ "failed_feeds": [
+  "Google DeepMind Blog"
+ ],
  "items": [
+  {
+   "id": "we-urgently-need-to-monitor-ai-agents-actions-in-real-time",
+   "title": "We urgently need to monitor AI agents’ actions in real time",
+   "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
+   "source": "MIT Technology Review – AI",
+   "date": "2026-10-29T10:11:12.000Z",
+   "summary": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded. Around the same…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "ai-has-come-for-arizona-s-water",
+   "title": "AI has come for Arizona’s water",
+   "link": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+   "source": "The Verge – AI",
+   "date": "2026-10-29T10:00:04.000Z",
+   "summary": "A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded apps and websites. The complex is…",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "i-gave-my-blood-to-the-ai-death-clock",
+   "title": "I Gave My Blood to the AI Death Clock",
+   "link": "https://www.wired.com/story/i-gave-an-ai-death-clock-my-blood/",
+   "source": "Wired – AI",
+   "date": "2026-10-29T10:00:00.000Z",
+   "summary": "Death Clock promises to predict when you’re going to die and help you extend your time on Earth. After a month, I felt like it was sucking the life out of me.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6adbec3437abe86dfce58fe9/master/pass/WIRED-Ghost-Stories-Death-Clock.jpg",
+   "also": []
+  },
   {
    "id": "counting-the-bandages-on-measuring-the-time-that-ai-saves",
    "title": "Counting the Bandages: On measuring the time that AI saves",
@@ -41,6 +85,20 @@
    "ai_summary": false,
    "editor_reviewed": false,
    "topic": "research",
+   "image_url_source": null,
+   "also": []
+  },
+  {
+   "id": "introducing-anyspeechrecognizer-and-anydecisionmodel-open-models-for-s",
+   "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+   "link": "https://huggingface.co/blog/anydecisionmodel",
+   "source": "Hugging Face Blog",
+   "date": "2026-10-29T00:00:00.000Z",
+   "summary": "",
+   "category": "tools-launches",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
    "image_url_source": null,
    "also": []
   },
@@ -269,20 +327,6 @@
    "also": []
   },
   {
-   "id": "gemini-4-carbon-our-next-frontier-model",
-   "title": "Gemini 4 Carbon: Our next frontier model",
-   "link": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-28T17:00:58.000Z",
-   "summary": "",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "chrome-s-enhanced-autofill-can-now-pull-info-from-gmail-to-help-you-fi",
    "title": "Chrome’s enhanced autofill can now pull info from Gmail to help you fill out forms",
    "link": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
@@ -387,20 +431,6 @@
    "source": "MIT Technology Review – AI",
    "date": "2026-10-28T12:00:00.000Z",
    "summary": "",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "voters-in-texas-agree-they-hate-data-centers",
-   "title": "Voters in Texas agree: They hate data centers",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1018676/data-center-midterm-election-energy-water-texas",
-   "source": "The Verge – AI",
-   "date": "2026-10-28T12:00:00.000Z",
-   "summary": "Ask Texas NAACP president Gary Bledsoe what it's been like to see data center developers descend upon Austin and its surrounding suburbs and he can rattle off project after project facing opposition from locals. There's the fight in Taylor…",
    "category": "research",
    "ai_summary": false,
    "editor_reviewed": false,
@@ -619,20 +649,6 @@
    "also": []
   },
   {
-   "id": "genie-4-a-new-generation-of-world-simulation",
-   "title": "Genie 4: A new generation of world simulation",
-   "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-27T16:01:38.000Z",
-   "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/i7iotPkcMbMubxRzAdriO5wsIsowROonBvjLNnmPbOaRgEb1k4LKTBqay5VrcPpZi0R4il_bYCCsPYQ0Gy_-XbAw66azAGEfE-E6_9Izz5apP0BMJVE=w528-h297-n-nu-rw-lo",
-   "also": []
-  },
-  {
    "id": "uk-home-office-may-face-investigation-over-use-of-openai-tech",
    "title": "UK Home Office May Face Investigation Over Use of OpenAI Tech",
    "link": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools/",
@@ -700,20 +716,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": "https://media.wired.com/photos/6adfd6269b54dbfcc0225ffd/master/pass/business_ai_agents_media_audience.jpg",
-   "also": []
-  },
-  {
-   "id": "i-tested-every-major-ai-agent-for-a-day-here-s-the-best-one",
-   "title": "I Tested Every Major AI Agent for a Day. Here’s the Best One",
-   "link": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/",
-   "source": "Wired – AI",
-   "date": "2026-10-27T09:30:00.000Z",
-   "summary": "I ranked six AI agents—from Meta’s Muse to Anthropic’s Claude Duet—on how well they completed basic tasks.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6adbdf82eed013bcc79da54f/master/pass/gear-ai-agent-best.jpg",
    "also": []
   },
   {
@@ -997,34 +999,6 @@
    "also": []
   },
   {
-   "id": "beyond-tree-cover-mapping-the-world-s-forest-types",
-   "title": "Beyond tree cover: mapping the world’s forest types",
-   "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-   "source": "Google DeepMind Blog",
-   "date": "2026-10-22T14:30:24.000Z",
-   "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://lh3.googleusercontent.com/Et3g0tNB_bC00f6cP94Y40QbqshCvf7_fg_gRVfZQoeVSc3Hn9g6jIenf1udZdACY4x-wpY_5tyy_LznFSlu0yhGCqfxKos6QFRRj4lad_hQHOBV8Q=w528-h297-n-nu-rw-lo",
-   "also": []
-  },
-  {
-   "id": "making-the-case-for-context-aware-ai",
-   "title": "Making the case for context-aware AI",
-   "link": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
-   "source": "MIT Technology Review – AI",
-   "date": "2026-10-22T10:00:00.000Z",
-   "summary": "Enterprise AI can generate recommendations, automate tasks, and help organizations make decisions faster. But without an understanding of how a business actually operates, even powerful models can miss the constraints and relationships…",
-   "category": "business",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "tools",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "ensemble-forecasting-with-ibm-granite-time-series-models",
    "title": "Ensemble forecasting with IBM Granite time-series models",
    "link": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
@@ -1095,20 +1069,6 @@
    "also": []
   },
   {
-   "id": "profiling-torchneuron-part-1-system-level-profiling-on-aws-trainium",
-   "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-   "link": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-   "source": "Hugging Face Blog",
-   "date": "2026-10-21T16:04:43.000Z",
-   "summary": "",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": null,
-   "also": []
-  },
-  {
    "id": "bringing-the-spark-to-europe-local-intelligence-powers-next-wave-of-ag",
    "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
    "link": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
@@ -1120,6 +1080,48 @@
    "editor_reviewed": false,
    "topic": "tools",
    "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/nv-blog-1280x680-2.jpg",
+   "also": []
+  },
+  {
+   "id": "nvidia-cloud-partners-scale-across-europe-sovereign-open-and-built-for",
+   "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+   "link": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+   "source": "NVIDIA Blog",
+   "date": "2026-10-21T10:30:41.000Z",
+   "summary": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by…",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://blogs.nvidia.com/wp-content/uploads/2026/10/ai-cloud-announcement-gtc-berlin-social-1920x1080-5852877-r2.png",
+   "also": []
+  },
+  {
+   "id": "southeast-asia-s-digital-economy-to-hit-368-billion",
+   "title": "Southeast Asia’s digital economy to hit $368 billion",
+   "link": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+   "source": "Google – AI blog",
+   "date": "2026-10-21T04:00:00.000Z",
+   "summary": "Widespread AI adoption is propelling Southeast Asia's digital economy to a projected $368 billion in 2026 and $1 trillion by 2035.",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/e-Conomy_SEA_hero.max-600x600.format-webp.webp",
+   "also": []
+  },
+  {
+   "id": "ai-sovereignty-preserving-uk-agency-in-an-ai-enabled-world",
+   "title": "AI sovereignty: preserving UK agency in an AI-enabled world",
+   "link": "https://www.gov.uk/government/publications/ai-sovereignty-preserving-uk-agency-in-an-ai-enabled-world",
+   "source": "GOV.UK news search (Atom)",
+   "date": "2026-10-19T09:30:05.000Z",
+   "summary": "This letter provides advice to the Minister for AI on how the UK can build capability to make strategic choices about current and future AI technology.",
+   "category": "rules-safety",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "policy",
+   "image_url_source": null,
    "also": []
   }
  ]
