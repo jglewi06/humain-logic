@@ -3,7 +3,7 @@
 // checkoutUrl: paste the payment link (Gumroad / Lemon Squeezy / Stripe Payment Link).
 // Empty string = button shows "Coming soon" and is disabled.
 export interface BookProduct {
-  slug: string; title: string; description: string; pages: number; readTime: string;
+  slug: string; title: string; description: string; pages: number | string; readTime: string;
   price: string; basedOn?: string; checkoutUrl: string; badge?: string; cover: string; coverAlt?: string;
 }
 export const BOOKS: BookProduct[] = [
@@ -44,4 +44,14 @@ export const BOOKS: BookProduct[] = [
   { slug: 'perplexity-guide-pdf', cover: 'photos/guide-perplexity', coverAlt: "Hands highlighting a printed article at a desk with index cards, a magnifying glass and a laptop", title: "The Practical Perplexity Guide: Research Answers You Can Actually Check",
     description: "A plain-English, 30-minute guide to Perplexity by Jordan Lewis M.S. Learn how to get cited, current answers for everyday questions and small-business research: competitors, suppliers, licenses, pricing and fact-checking, with Spaces, Deep Research and the free Comet browser explained. Includes plans and prices checked October 2026, 66 copy-ready prompts in clearly marked boxes, a source-checking routine and a one-page cheat sheet.",
     pages: 27, readTime: '30 min read', price: '$1.99', checkoutUrl: 'https://humainlogic.gumroad.com/l/vdycev' },
+  // Income adds: Gumroad titles and prices checked Oct 31, 2026.
+  { slug: 'everything-bundle-pdf', cover: 'photos/everything-bundle', coverAlt: 'A laptop, a tablet, a teal notebook with a pen and a cup of coffee on a sunlit wooden desk', title: 'HumAIn Logic Complete Guide Bundle (21 PDFs)',
+    description: 'Every HumAIn Logic guide in one download: 21 PDFs of plain-English help with AI, scams, money, work and small business, including the six AI assistant guides.',
+    pages: 'About 560', readTime: '21 PDFs in one ZIP', price: '$9', checkoutUrl: 'https://humainlogic.gumroad.com/l/pdhbwb' },
+  { slug: 'small-business-prompts-pdf', cover: 'photos/small-business-prompts', coverAlt: 'A laptop with a chat window open on a shop counter beside a coffee cup, a checklist and a card reader, with stocked shelves behind', title: '50 AI Prompts for Small Business',
+    description: '50 copy-ready AI prompts that help small-business owners write posts, answer customers, price services and plan the week in minutes.',
+    pages: 18, readTime: '50 copy-ready prompts', price: '$2.99', checkoutUrl: 'https://humainlogic.gumroad.com/l/iiebhkd' },
+  { slug: 'grandparents-prompts-pdf', cover: 'photos/grandparents-prompts', coverAlt: 'An older couple smiling together at a tablet at a kitchen table', title: 'AI for Grandparents: 40 Easy Prompts',
+    description: '40 simple, large-print prompts that help grandparents use AI chat assistants for family, health questions, hobbies and staying safe from scams.',
+    pages: 15, readTime: '40 prompts, large print', price: '$2.99', checkoutUrl: 'https://humainlogic.gumroad.com/l/tbqar' },
 ];

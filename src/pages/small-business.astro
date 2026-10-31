@@ -80,6 +80,62 @@ const desc = "AI help for small businesses, from websites to custom automated so
       </aside>
     </div>
   </section>
+  <section class="container smb-setup" id="setup-session" aria-labelledby="setup-h">
+    <div class="smb-setup-card">
+      <span class="smb-chip">Fixed price</span>
+      <h2 id="setup-h">AI Setup Session — $149, 60 minutes</h2>
+      <p class="smb-setup-lead"><strong>60 minutes. $149, fixed price. You leave with a written action plan.</strong></p>
+      <p>You've heard AI can save your business time, but where do you start? In one focused session, Jordan Lewis M.S., founder of HumAIn Logic, works through your business with you, picks the AI tools that fit and shows you how to use them on your real tasks.</p>
+      <div class="smb-setup-cols">
+        <div>
+          <h3>What's included</h3>
+          <ul>
+            <li><strong>A 60-minute one-to-one video session</strong> focused on your business, not a generic demo.</li>
+            <li><strong>A quick look at how you work now:</strong> the tasks that take too long, the tools you already use and your budget.</li>
+            <li><strong>Tool recommendations that fit you:</strong> which AI assistant and tools make sense for your business, and which ones you can skip.</li>
+            <li><strong>Hands-on setup help:</strong> we set up or tune at least one tool together during the session, so you leave with something working.</li>
+            <li><strong>Prompts made for your business:</strong> ready-to-use prompts for your top tasks, such as social posts, customer replies, quotes and planning.</li>
+            <li><strong>Safety and privacy basics:</strong> what you should never paste into an AI tool, and how to check AI output before it reaches a customer.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>What you get afterward</h3>
+          <p>A written action plan, sent after your session. It includes:</p>
+          <ul>
+            <li>Your recommended tools, what each one is for and the plans to consider</li>
+            <li>Your custom prompts, ready to copy and paste</li>
+            <li>Step-by-step next actions for the next 30 days</li>
+            <li>Notes on privacy and checking AI output</li>
+          </ul>
+          <h3>Who it's for</h3>
+          <ul>
+            <li>Small-business owners, sole traders and freelancers who are new to AI or have tried it and gotten stuck</li>
+            <li>Small teams that want a simple, safe starting point</li>
+            <li>Anyone who would rather spend an hour getting it right than weeks of trial and error</li>
+          </ul>
+          <p>No technical skills needed. If you can send an email, you're ready.</p>
+        </div>
+      </div>
+      <h3>How to book</h3>
+      <ol class="smb-setup-steps">
+        <li><strong>Fill in the consultation form</strong> on this page. Tell us about your business and what you'd like help with.</li>
+        <li><strong>We reply within 2 business days</strong> with available times and a payment link.</li>
+        <li><strong>Pick your time and pay.</strong> Your session is confirmed once payment is received.</li>
+        <li><strong>Meet online.</strong> We'll send a video call link before your session. Have your laptop or phone handy and the logins for any tools you already use.</li>
+        <li><strong>Get your action plan.</strong> Your written plan arrives after the session.</li>
+      </ol>
+      <p class="smb-price"><span class="amt">$149</span> <span class="per">fixed price. No hourly billing and no surprise extras. Covers the 60-minute session and your written action plan.</span></p>
+      <button type="button" class="smb-btn-primary" data-consult>Book your AI Setup Session</button>
+      <details class="smb-details smb-setup-faq">
+        <summary>Questions about the session</summary>
+        <p><strong>Do I need to prepare anything?</strong> Just fill in the form as fully as you can. A short list of your most time-consuming tasks helps a lot.</p>
+        <p><strong>Is this right if I've never used AI?</strong> Yes. Many clients start from zero.</p>
+        <p><strong>Will you recommend tools that pay you?</strong> We recommend what fits your business. HumAIn Logic never sells rankings, and any paid placement on our site is clearly labeled "Featured".</p>
+        <p><strong>Is this legal, tax or financial advice?</strong> No. We'll help you use AI tools well. For legal, tax or financial questions, talk to a qualified professional.</p>
+      </details>
+      <p class="smb-setup-q">Questions? Email <a href="mailto:hello@humainlogic.com">hello@humainlogic.com</a>.</p>
+    </div>
+  </section>
   <section class="container smb-pricing" id="pricing" aria-labelledby="price-h">
     <h2 id="price-h">Pricing for our other services</h2>
     <p class="smb-price-note">Every project starts with a free consultation. The prices below are for the work that follows, if you decide to go ahead.</p>
@@ -339,6 +395,18 @@ const desc = "AI help for small businesses, from websites to custom automated so
 .smb-aside h3{font:600 20px/1.3 var(--font-heading);margin:0 0 12px}
 .smb-aside ul{margin:0;padding-left:20px;color:var(--color-ink);font-size:16px;line-height:1.6}
 .smb-aside li{margin-bottom:8px}
+.smb-setup{padding:24px 0 40px}
+.smb-setup-card{background:#fff;border:2px solid var(--color-teal);border-radius:20px;box-shadow:0 8px 24px rgba(31,42,55,.08);padding:32px}
+.smb-setup h2{font:600 var(--fs-h2)/1.2 var(--font-heading);color:var(--color-ink);margin:14px 0 8px}
+.smb-setup h3{font:600 20px/1.3 var(--font-heading);color:var(--color-ink);margin:20px 0 8px}
+.smb-setup p,.smb-setup li{font-size:17px;line-height:1.6;color:var(--color-ink)}
+.smb-setup-lead{font-size:19px}
+.smb-setup-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.smb-setup ul,.smb-setup-steps{padding-left:22px;margin:0}
+.smb-setup li{margin-bottom:6px}
+.smb-setup .smb-price{margin:20px 0 16px}
+.smb-setup-faq{margin-top:24px}
+@media (max-width:760px){.smb-setup-cols{grid-template-columns:1fr;gap:0}.smb-setup-card{padding:22px}.smb-setup .smb-btn-primary{width:100%}}
 .smb-pricing h2{font:600 var(--fs-h2)/1.2 var(--font-heading);color:var(--color-ink);margin:0 0 10px}
 .smb-price-note{margin:0 0 24px;color:var(--color-slate);font-size:18px}
 .smb-price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}

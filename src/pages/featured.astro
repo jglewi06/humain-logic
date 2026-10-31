@@ -1,0 +1,138 @@
+---
+import Base from '../layouts/Base.astro';
+const desc = 'Get your AI tool featured on HumAIn Logic: a clearly labeled Featured listing for 30 days, only after your tool passes our review. Plans from $29, one-time payment.';
+const PLANS = [
+  { name: 'Featured Badge', price: '$29', what: 'A "Featured" badge on your tool\'s page for 30 days.', items: ['"Featured" badge on your tool\'s page'] },
+  { name: 'Featured Plus', price: '$59', what: 'Everything in Featured Badge, plus a featured spot on 1 relevant task page for 30 days. We agree the task page with you, and it must be a genuine fit for what your tool does.', items: ['"Featured" badge on your tool\'s page', 'Featured spot on 1 relevant task page'] },
+  { name: 'Featured Pro', price: '$99', what: 'Everything in Featured Plus, plus one mention in the HumAIn Logic newsletter during your 30 days.', items: ['"Featured" badge on your tool\'s page', 'Featured spot on 1 relevant task page', 'One mention in the HumAIn Logic newsletter'] },
+];
+const RULES = [
+  ['Always labeled.', 'Every paid placement is clearly marked "Featured". We never present paid placements as editorial picks.'],
+  ['No pay-to-rank.', 'Payment never changes a review, a rating, a ranking or a "best for" pick. Our reviews are written independently, and a Featured listing sits beside them, not inside them.'],
+  ['Review first.', 'We only accept tools that pass our review. We check that the tool works as described, is honest about pricing, handles user data responsibly and is suitable for our readers. We can decline any tool.'],
+  ['Refunds for rejected tools.', 'If your tool does not pass our review, we refund your payment in full.'],
+  ['Honest copy.', 'Featured text must be accurate. No false claims, fake reviews or misleading pricing. We may edit copy for clarity and to match our style.'],
+  ['We can remove it.', 'If a tool changes in a way that breaks these rules during the 30 days, we may remove the listing. If we remove it for a reason that is not your fault, we refund the unused days.'],
+];
+const STEPS = [
+  ['Apply.', 'Use the form below (or email hello@humainlogic.com) with your tool\'s name and website, the plan you want and, for Featured Plus or Featured Pro, the task page you think fits best.'],
+  ['We review your tool.', 'We test it and let you know whether it is accepted.'],
+  ['Pay.', 'Once accepted, we send a payment link. (If you have already paid and your tool is not accepted, we refund you in full.)'],
+  ['Go live.', 'Your listing starts on a date we agree, and runs for 30 days.'],
+  ['Wrap-up.', 'At the end of the 30 days, the badge and placement come down. You are welcome to book again.'],
+];
+const FAQ = [
+  ["Will paying improve my tool's review or ranking?", 'No. Reviews, ratings and rankings are never for sale. A Featured listing adds a clearly labeled badge or spot. It does not change what we say about your tool.'],
+  ['What if my tool is not on HumAIn Logic yet?', 'Apply anyway. We review it the same way. If it passes, we add a tool page and your badge goes there.'],
+  ['What happens if my tool is rejected?', 'We tell you, and if you have paid, we refund you in full.'],
+  ['Which task page will I get?', "One that genuinely matches what your tool does. We agree it with you before the listing starts. We won't place a tool on a page where it doesn't belong."],
+  ['When does the newsletter mention go out?', 'In one of our regular newsletter issues during your 30 days. It is labeled as Featured.'],
+  ['Does it renew automatically?', 'No. Every plan is a one-time payment for 30 days.'],
+  ['Can I change my copy during the 30 days?', 'Yes, within reason. Email us the change and we will review it before updating.'],
+];
+const ld = [
+  { '@type': 'FAQPage', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
+];
+---
+<Base path="/featured" title="Get your AI tool featured" description={desc} jsonld={ld}>
+<section class="page-head"><div class="container"><span class="eyebrow">For AI tool makers</span><h1>Get your AI tool featured on HumAIn Logic</h1>
+<p class="lede">HumAIn Logic helps everyday people, seniors, parents and small businesses find AI tools they can trust. Readers come to our tool pages and task pages ("best AI for writing", "best AI for small business" and more) to decide what to try next. A Featured listing puts your tool in front of them, clearly labeled and only after it passes our review.</p>
+<p><a class="btn btn-primary" href="#apply">Apply for a Featured listing</a></p></div></section>
+
+<div class="container section ft">
+  <h2 id="plans-h">Choose your plan</h2>
+  <div class="ft-plans">
+    {PLANS.map(p => <article class="ft-plan"><h3>{p.name}</h3><p class="ft-price"><span class="amt">{p.price}</span> <span class="per">30 days, one-time</span></p><ul>{p.items.map(i => <li>{i}</li>)}</ul><p class="ft-what">{p.what}</p><a class="btn btn-secondary" href="#apply" data-plan={p.name}>Apply for {p.name}</a></article>)}
+  </div>
+  <p class="ft-note">All prices are in US dollars and are one-time payments. Nothing renews automatically.</p>
+
+  <h2>Our rules</h2>
+  <p>We want readers to keep trusting us, so these rules apply to every Featured listing:</p>
+  <ol class="ft-list">{RULES.map(([h, t]) => <li><strong>{h}</strong> {t}</li>)}</ol>
+
+  <h2>How it works</h2>
+  <ol class="ft-list">{STEPS.map(([h, t]) => <li><strong>{h}</strong> {t}</li>)}</ol>
+
+  <section id="apply" class="ft-apply" aria-labelledby="apply-h">
+    <h2 id="apply-h" tabindex="-1">Apply for a Featured listing</h2>
+    <p>Tell us about your tool. We review it first and only send a payment link once it is accepted. Prefer email? Write to <a href="mailto:hello@humainlogic.com?subject=Featured%20listing%20application">hello@humainlogic.com</a>.</p>
+    <div id="ft-summary" class="ft-summary" role="alert" hidden></div>
+    <form id="ft-form" novalidate>
+      <div class="f"><label for="ft-tool">Tool name</label><input id="ft-tool" name="tool" required autocomplete="organization"><p class="err" id="ft-tool-err" hidden></p></div>
+      <div class="f"><label for="ft-site">Tool website</label><input id="ft-site" name="website" type="url" inputmode="url" placeholder="https://" required><p class="err" id="ft-site-err" hidden></p></div>
+      <div class="f"><label for="ft-plan">Plan</label><select id="ft-plan" name="plan">{PLANS.map(p => <option value={p.name}>{p.name} ({p.price})</option>)}</select></div>
+      <div class="f"><label for="ft-task">Task page that fits best <span class="opt">(Featured Plus or Pro)</span></label><input id="ft-task" name="task_page" placeholder="For example: best AI for writing"></div>
+      <div class="f"><label for="ft-email">Your email</label><input id="ft-email" name="email" type="email" autocomplete="email" required><p class="err" id="ft-email-err" hidden></p></div>
+      <div class="f"><label for="ft-msg">Anything else we should know? <span class="opt">(optional)</span></label><textarea id="ft-msg" name="message" rows="4"></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="ft-honey">Leave this unchecked</label><input id="ft-honey" type="checkbox" tabindex="-1" autocomplete="off"></div>
+      <button class="btn btn-primary" type="submit">Send my application</button>
+      <p class="ft-fine">We only use your details to reply about your application. <a href="/privacy">Privacy policy</a></p>
+    </form>
+    <div id="ft-success" class="ft-success" tabindex="-1" hidden><p><strong>Thanks, we got your application.</strong> We'll review your tool and let you know whether it is accepted.</p></div>
+  </section>
+
+  <h2>FAQ</h2>
+  <div class="ft-faq">{FAQ.map(([q, a]) => <details><summary>{q}</summary><p>{a}</p></details>)}
+    <details><summary>Who do I contact?</summary><p>Email <a href="mailto:hello@humainlogic.com">hello@humainlogic.com</a>.</p></details></div>
+</div>
+</Base>
+
+<script>
+  const FORM_ENDPOINT = 'https://api.web3forms.com/submit';
+  const ACCESS_KEY = 'b995b097-0688-4950-b42f-1000546923f0';
+  const $ = (id: string) => document.getElementById(id) as any;
+  const form = $('ft-form'), summary = $('ft-summary');
+  document.querySelectorAll<HTMLAnchorElement>('[data-plan]').forEach(a => a.addEventListener('click', () => { $('ft-plan').value = a.dataset.plan; }));
+  const rules: [string, (v: string) => string][] = [
+    ['ft-tool', v => v ? '' : "Please enter your tool's name."],
+    ['ft-site', v => /^https?:\/\/[^\s.]+\.[^\s]+$/i.test(v) ? '' : 'Please enter the website, starting with https://'],
+    ['ft-email', v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : 'Please enter a valid email, like name@example.com.'],
+  ];
+  const check = () => rules.map(([id, fn]) => { const el = $(id), m = fn(el.value.trim()), e = $(id + '-err'); e.textContent = m; e.hidden = !m; m ? el.setAttribute('aria-invalid', 'true') : el.removeAttribute('aria-invalid'); return [id, m]; }).filter(x => x[1]);
+  form.addEventListener('submit', async (ev: Event) => {
+    ev.preventDefault();
+    const errs = check();
+    if (errs.length) { summary.textContent = 'Please fix ' + (errs.length === 1 ? 'this' : 'these ' + errs.length) + ' before sending: ' + errs.map(e => e[1]).join(' '); summary.hidden = false; $(errs[0][0]).focus(); return; }
+    summary.hidden = true;
+    const btn = form.querySelector('button[type=submit]'); btn.disabled = true; btn.textContent = 'Sending…';
+    try {
+      const res = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ access_key: ACCESS_KEY, subject: 'New HumAIn Logic Featured listing application', from_name: 'HumAIn Logic website',
+          tool: $('ft-tool').value.trim(), website: $('ft-site').value.trim(), plan: $('ft-plan').value, task_page: $('ft-task').value.trim(),
+          email: $('ft-email').value.trim(), replyto: $('ft-email').value.trim(), message: $('ft-msg').value.trim(), botcheck: $('ft-honey').checked }) });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || data.success !== true) throw new Error('send failed');
+      form.hidden = true; $('ft-success').hidden = false; $('ft-success').focus();
+    } catch {
+      summary.textContent = 'Sorry, something went wrong sending your application. Please try again, or email hello@humainlogic.com.'; summary.hidden = false;
+    } finally { btn.disabled = false; btn.textContent = 'Send my application'; }
+  });
+</script>
+
+<style>
+.ft h2{margin:var(--space-7,48px) 0 var(--space-3,12px)}
+.ft > h2:first-child{margin-top:0}
+.ft-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ft-plan{display:flex;flex-direction:column;background:#fff;border-radius:16px;box-shadow:0 2px 6px rgba(31,42,55,.06),0 8px 24px rgba(31,42,55,.06);padding:24px}
+.ft-plan h3{margin:0 0 6px}
+.ft-price .amt{font:700 36px/1.1 var(--font-display);color:var(--color-teal)}
+.ft-price .per{color:var(--color-slate);font-size:15px}
+.ft-plan ul{padding-left:20px;margin:8px 0 12px}
+.ft-what{color:var(--color-slate);flex:1}
+.ft-plan .btn{align-self:flex-start}
+.ft-note{color:var(--color-slate);margin-top:16px}
+.ft-list{padding-left:22px;max-width:760px}.ft-list li{margin-bottom:10px;line-height:1.6}
+.ft-apply{background:#fff;border:2px solid var(--color-teal);border-radius:20px;padding:28px;margin-top:48px;max-width:760px}
+.ft-apply h2{margin-top:0}
+.ft-apply .f{margin-bottom:16px}
+.ft-apply label{display:block;font-weight:600;margin-bottom:6px}
+.ft-apply .opt{font-weight:400;color:var(--color-slate)}
+.ft-apply input,.ft-apply select,.ft-apply textarea{width:100%;font:inherit;font-size:17px;padding:12px 14px;border:1.5px solid #9AA5B1;border-radius:10px;min-height:48px;background:#fff}
+.ft-apply [aria-invalid]{border-color:#B42318}
+.ft-apply .err,.ft-summary{color:#B42318;margin:6px 0 0}
+.ft-summary{background:#FEF3F2;border-radius:10px;padding:12px 14px;margin-bottom:16px}
+.ft-apply .hp{position:absolute;left:-9999px}
+.ft-fine{color:var(--color-slate);font-size:15px}
+.ft-faq{max-width:760px}.ft-faq details{border-bottom:1px solid #E4E7EB;padding:14px 0}.ft-faq summary{font-weight:600;cursor:pointer;min-height:24px}
+@media (max-width:820px){.ft-plans{grid-template-columns:1fr}.ft-plan .btn,.ft-apply .btn{width:100%;text-align:center}.ft-apply{padding:20px}}
+</style>
