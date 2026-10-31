@@ -3,7 +3,7 @@ import sharp from 'sharp';
 import { mkdirSync } from 'node:fs';
 const SRC = process.env.SRC || '/workspace/humainlogic-assets/bookstore';
 const OUT = 'public/img/bookstore';
-const names = ['what-is-ai','getting-started-with-ai-chat-assistants','staying-safe-with-ai','ai-for-small-business','ai-and-your-job','complete-bundle'];
+const names = ['what-is-ai','getting-started-with-ai-chat-assistants','staying-safe-with-ai','ai-for-small-business','ai-and-your-job'];
 mkdirSync(OUT, { recursive: true });
 for (const n of names) {
   for (const w of [640, 1024]) {

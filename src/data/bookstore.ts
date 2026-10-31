@@ -22,9 +22,6 @@ export const BOOKS: BookProduct[] = [
   { slug: 'ai-and-your-job-pdf', cover: 'photos/career-plan', coverAlt: 'A job-seeker at a home desk writing in a notebook beside a laptop and coffee', title: 'AI and your job: the career action plan',
     description: 'Turn worry into a plan: a self-check of which tasks in your job are changing, a skills worksheet, and resume and interview tips for an AI-shaped job market.',
     pages: 20, readTime: '20 min read', price: '$2.99', basedOn: '/guides/ai-and-your-job', checkoutUrl: 'https://humainlogic.gumroad.com/l/ladje' },
-  { slug: 'complete-bundle-pdf', cover: 'photos/complete-bundle', coverAlt: 'Five printed guides in teal, sage and apricot laid out on linen with a pencil and eucalyptus', title: 'The complete HumAIn Logic bundle',
-    description: 'All five guides in one download, at a lower price than buying them separately.',
-    pages: 94, readTime: 'About 1.5 hours total', price: '$12.99', checkoutUrl: 'https://humainlogic.gumroad.com/l/blrext', badge: 'Best value' },
   // AI assistant guides ($1.99). Pages from pdfinfo; read time as stated in each PDF. Gumroad checkout.
   { slug: 'chatgpt-guide-pdf', cover: 'photos/guide-chatgpt', coverAlt: "A person writing at a sunny kitchen table beside a laptop and a bowl of apricots", title: "The Practical ChatGPT Guide",
     description: "A plain-English, 30-minute guide to what ChatGPT does well and how to use it for everyday life and small business. It compares the Free, Go, Plus, Pro, Business and Enterprise plans, with prices checked in October 2026. It also includes 70+ copy-ready prompts for writing, marketing, customer service, work, research and home, each in its own box, plus a chapter on privacy and checking answers.",
@@ -47,7 +44,7 @@ export const BOOKS: BookProduct[] = [
   // Income adds: Gumroad titles and prices checked Oct 31, 2026.
   { slug: 'everything-bundle-pdf', cover: 'photos/everything-bundle', coverAlt: 'A laptop, a tablet, a teal notebook with a pen and a cup of coffee on a sunlit wooden desk', title: 'HumAIn Logic Complete Guide Bundle (21 PDFs)',
     description: 'Every HumAIn Logic guide in one download: 21 PDFs of plain-English help with AI, scams, money, work and small business, including the six AI assistant guides.',
-    pages: 'About 560', readTime: '21 PDFs in one ZIP', price: '$9', checkoutUrl: 'https://humainlogic.gumroad.com/l/pdhbwb' },
+    pages: 'About 560', readTime: '21 PDFs in one ZIP', price: '$9', checkoutUrl: 'https://humainlogic.gumroad.com/l/pdhbwb', badge: 'Best value' },
   { slug: 'small-business-prompts-pdf', cover: 'photos/small-business-prompts', coverAlt: 'A laptop with a chat window open on a shop counter beside a coffee cup, a checklist and a card reader, with stocked shelves behind', title: '50 AI Prompts for Small Business',
     description: '50 copy-ready AI prompts that help small-business owners write posts, answer customers, price services and plan the week in minutes.',
     pages: 18, readTime: '50 copy-ready prompts', price: '$2.99', checkoutUrl: 'https://humainlogic.gumroad.com/l/iiebhkd' },
