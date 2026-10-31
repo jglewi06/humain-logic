@@ -1,9 +1,51 @@
 {
- "updated": "2026-10-31T07:10:20.814Z",
+ "updated": "2026-10-31T13:03:48.329Z",
  "failed_feeds": [
   "Google DeepMind Blog"
  ],
  "items": [
+  {
+   "id": "spooky-new-infostealer-malware-uses-ai-to-autodox-victims",
+   "title": "Spooky New Infostealer Malware Uses AI to ‘Autodox’ Victims",
+   "link": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+   "source": "Wired – AI",
+   "date": "2026-10-31T12:00:00.000Z",
+   "summary": "Named “Volta-Autodoxer,” the recently uncovered malware uses AI tools to collect troves of data about victims, from login credentials and credit card numbers to Discord sessions and UberEats receipts.",
+   "category": "research",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "research",
+   "image_url_source": "https://media.wired.com/photos/6ae4e9f503c2c36f4cfc913c/master/pass/KernelPanic_10312026_v1.jpg",
+   "also": []
+  },
+  {
+   "id": "meta-s-muse-could-upend-all-kinds-of-businesses-it-hasn-t-yet",
+   "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
+   "link": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+   "source": "Wired – AI",
+   "date": "2026-10-31T10:30:00.000Z",
+   "summary": "Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat.",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://media.wired.com/photos/6ae513e3393ae92e17e66a04/master/pass/Business_Everyone%E2%80%99s%20Questioning%20Meta%E2%80%99s%20Hype%20About%20Muse%20Meta%20Says%20Muse%20Is%20Already%20a%20Big%20Shopper_v1.jpg",
+   "also": []
+  },
+  {
+   "id": "an-ai-agent-injected-drugs-into-a-live-mouse-s-brain",
+   "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+   "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+   "source": "Wired – AI",
+   "date": "2026-10-31T10:00:00.000Z",
+   "summary": "A biotech startup let an agent choose a gene therapy and successfully inject the treatment, offering a startling glimpse of the future of research labs.",
+   "category": "business",
+   "ai_summary": false,
+   "editor_reviewed": false,
+   "topic": "tools",
+   "image_url_source": "https://media.wired.com/photos/6ae4d6bbd55a0e2bc0a8d990/master/pass/103026-AI%20Mouse%2002.jpg",
+   "also": []
+  },
   {
    "id": "lrmoe-demand-side-load-re-calibration-for-efficient-moe-training-on-me",
    "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
@@ -733,20 +775,6 @@
    "also": []
   },
   {
-   "id": "i-put-a-bunch-of-ai-agents-in-charge-of-a-fantasy-soccer-team-they-re-",
-   "title": "I Put a Bunch of AI Agents in Charge of a Fantasy Soccer Team. They’re Not Better Than Humans—Yet",
-   "link": "https://www.wired.com/story/i-put-ai-agents-in-charge-of-a-fantasy-team/",
-   "source": "Wired – AI",
-   "date": "2026-10-28T18:30:00.000Z",
-   "summary": "To experiment with AI’s predictive skills, I let Codex loose on a fantasy team. It tried to bench Erling Haaland at first, but it soon learned the error of its ways.",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
-   "image_url_source": "https://media.wired.com/photos/6ae108712ec9b10c531020d9/master/pass/business_ai_predict_future.jpg",
-   "also": []
-  },
-  {
    "id": "3-questions-why-infrastructure-is-entering-a-defining-era",
    "title": "3 Questions: Why infrastructure is entering a defining era",
    "link": "https://news.mit.edu/2026/3-questions-why-infrastructure-is-entering-defining-era-1028",
@@ -786,34 +814,6 @@
    "editor_reviewed": false,
    "topic": "research",
    "image_url_source": null,
-   "also": []
-  },
-  {
-   "id": "macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-ass",
-   "title": "Macmillan Staff Say the Publisher Threw a Party for a Workplace AI Assistant That Was Later Killed",
-   "link": "https://www.wired.com/story/macmillan-staff-say-the-publisher-threw-a-party-for-a-workplace-ai-assistant-that-was-later-killed/",
-   "source": "Wired – AI",
-   "date": "2026-10-28T10:15:00.000Z",
-   "summary": "Workers tell WIRED that NOA—or “No Ordinary Assistant”—was unhelpful. Bestselling authors also say AI is ruining their relationships with Big Five publishers.",
-   "category": "jobs-work",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "jobs",
-   "image_url_source": "https://media.wired.com/photos/6ad92ed7649bdf60df6fd555/master/pass/culture_macmillon_failed_ai_project.jpg",
-   "also": []
-  },
-  {
-   "id": "ai-emergency-alerts-are-coming-humans-might-not-be-ready",
-   "title": "AI Emergency Alerts Are Coming. Humans Might Not Be Ready",
-   "link": "https://www.wired.com/story/ai-emergency-alerts-coming-humans-not-ready/",
-   "source": "Wired – AI",
-   "date": "2026-10-28T08:30:00.000Z",
-   "summary": "Human beings struggle with emergency communication. Chatbots can help—if people take them seriously.",
-   "category": "research",
-   "ai_summary": false,
-   "editor_reviewed": false,
-   "topic": "research",
-   "image_url_source": "https://media.wired.com/photos/6ae1120223d445186a16d911/master/pass/ai-weather-alerts-emergency.jpg",
    "also": []
   },
   {
