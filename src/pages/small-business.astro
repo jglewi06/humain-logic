@@ -116,6 +116,14 @@ const desc = "AI help for small businesses, from websites to custom automated so
       </article>
     </div>
   </section>
+  <section class="container smb-compare" aria-labelledby="cmp-h">
+    <h2 id="cmp-h">How our prices compare</h2>
+    <h3>Published vendor prices</h3>
+    <div class="smb-table"><table><thead><tr><th scope="col">Provider</th><th scope="col">Service</th><th scope="col">Published price</th><th scope="col">Link</th></tr></thead><tbody><tr><th scope="row">Bravoya (agency)</th><td>Starter 5-page site</td><td>$500 one-time, then $99/mo</td><td><a href="https://bravoya.com/" rel="noopener nofollow" target="_blank">Source</a></td></tr><tr><th scope="row">Agency Crate</th><td>Starter build; care plan</td><td>From $2,495; from $225/mo</td><td><a href="https://agencycrate.com/resources/small-business-website-cost/" rel="noopener nofollow" target="_blank">Source</a></td></tr><tr><th scope="row">Teqri</th><td>Managed site plans</td><td>$25 to $129/mo</td><td><a href="https://teqri.com/smb" rel="noopener nofollow" target="_blank">Source</a></td></tr><tr><th scope="row">Theo</th><td>Website packages</td><td>$29.99 to $129.99/mo</td><td><a href="https://theo.site/website-design-packages" rel="noopener nofollow" target="_blank">Source</a></td></tr><tr><th scope="row">Portland AI Works</th><td>AI automation build sprint</td><td>$5,000 to $15,000</td><td><a href="https://portlandaiworks.com/what-ai-costs" rel="noopener nofollow" target="_blank">Source</a></td></tr><tr><th scope="row">QuantAIze</th><td>Simple custom automation</td><td>About $5,000 to $15,000</td><td><a href="https://quantaize.ai/guides/what-does-a-custom-ai-project-cost" rel="noopener nofollow" target="_blank">Source</a></td></tr></tbody></table></div>
+    <h3>Industry estimates</h3>
+    <div class="smb-table"><table><thead><tr><th scope="col">Figure</th><th scope="col">Estimate</th><th scope="col">Source</th><th scope="col">Date</th></tr></thead><tbody><tr><th scope="row">Website build: 5-page small-business site (median)</th><td>$3,850</td><td><a href="https://lindo.ai/reports/web-design-agencies-united-states" rel="noopener nofollow" target="_blank">Lindo.ai</a></td><td>Apr 2026</td></tr><tr><th scope="row">Website build: 1-page starter site (median)</th><td>$1,200</td><td><a href="https://lindo.ai/reports/web-design-agencies-united-states" rel="noopener nofollow" target="_blank">Lindo.ai</a></td><td>Apr 2026</td></tr><tr><th scope="row">Maintenance: published plans (median)</th><td>$169/mo</td><td><a href="https://pleasementionme.com/blog/website-maintenance-cost/" rel="noopener nofollow" target="_blank">PleaseMentionMe</a></td><td>Oct 14, 2026</td></tr><tr><th scope="row">Maintenance: agency care plan (median)</th><td>$249/mo</td><td><a href="https://lindo.ai/reports/web-design-agencies-united-states" rel="noopener nofollow" target="_blank">Lindo.ai</a></td><td>Apr 2026</td></tr><tr><th scope="row">Maintenance: small-business site (range)</th><td>$50 to $500/mo</td><td><a href="https://www.networksolutions.com/blog/website-maintenance-cost/" rel="noopener nofollow" target="_blank">Network Solutions</a></td><td>Oct 5, 2026</td></tr><tr><th scope="row">AI: customer-facing chatbot (range)</th><td>$3,000 to $10,000, plus $100 to $500/mo</td><td><a href="https://triggerall.com/blog/ai-implementation-cost-smbs/" rel="noopener nofollow" target="_blank">triggerAll</a></td><td>Apr 26, 2026</td></tr><tr><th scope="row">AI: template chatbot (range)</th><td>$250 to $2,500</td><td><a href="https://upbusinessco.com/blogs/ai-chatbot-development-cost/" rel="noopener nofollow" target="_blank">UpBusinessCo</a></td><td>Oct 29, 2026</td></tr><tr><th scope="row">AI: simple custom automation (range)</th><td>About $5,000 to $15,000</td><td><a href="https://quantaize.ai/guides/what-does-a-custom-ai-project-cost" rel="noopener nofollow" target="_blank">QuantAIze</a></td><td>Sep 14, 2026</td></tr></tbody></table></div>
+    <p class="smb-disclaimer">These are published vendor prices and industry estimates, not official national averages. Most sources sell the services they price, so they are not an independent survey. Figures were checked Oct 31, 2026, and providers may change them.</p>
+  </section>
 </div>
 </Base>
 
@@ -276,7 +284,6 @@ const desc = "AI help for small businesses, from websites to custom automated so
 .smb-aside h3{font:600 20px/1.3 var(--font-heading);margin:0 0 12px}
 .smb-aside ul{margin:0;padding-left:20px;color:var(--color-ink);font-size:16px;line-height:1.6}
 .smb-aside li{margin-bottom:8px}
-.smb-pricing{padding-bottom:80px}
 .smb-pricing h2{font:600 var(--fs-h2)/1.2 var(--font-heading);color:var(--color-ink);margin:0 0 10px}
 .smb-price-note{margin:0 0 24px;color:var(--color-slate);font-size:18px}
 .smb-price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -290,6 +297,18 @@ const desc = "AI help for small businesses, from websites to custom automated so
 .smb-price-cta{align-self:flex-start;background:transparent;color:var(--color-teal);border:2px solid var(--color-teal);border-radius:999px;font:600 16px/1.2 var(--font-body);min-height:48px;padding:12px 20px;cursor:pointer}
 .smb-price-cta:hover{background:var(--color-teal);color:#fff}
 .smb-price-cta:focus-visible{outline:3px solid var(--color-teal);outline-offset:2px}
+.smb-pricing{padding-bottom:40px}
+.smb-compare{padding-bottom:80px}
+.smb-compare h2{font:600 var(--fs-h2)/1.2 var(--font-heading);color:var(--color-ink);margin:0 0 14px}
+.smb-compare h3{font:600 18px/1.3 var(--font-body);color:var(--color-ink);margin:20px 0 8px}
+.smb-table{overflow-x:auto;background:#fff;border-radius:16px;box-shadow:0 2px 6px rgba(31,42,55,.06),0 8px 24px rgba(31,42,55,.06)}
+.smb-table table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.4}
+.smb-table th,.smb-table td{text-align:left;padding:10px 14px;border-bottom:1px solid #E6EAEE;vertical-align:top;color:var(--color-ink)}
+.smb-table thead th{font-weight:600;color:var(--color-slate);background:var(--color-sage)}
+.smb-table tbody th{font-weight:600}
+.smb-table tr:last-child>*{border-bottom:0}
+.smb-table a{color:var(--color-teal)}
+.smb-disclaimer{margin:14px 0 0;color:var(--color-slate);font-size:14px}
 @media (max-width:860px){
   .smb-hero{padding:0 0 40px}
   .smb-hero-art{position:relative;width:100%;height:220px;-webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 100%);mask-image:linear-gradient(to bottom,#000 60%,transparent 100%)}
