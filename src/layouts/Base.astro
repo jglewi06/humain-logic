@@ -13,7 +13,7 @@ const canonical = abs(path);
 const fullTitle = Astro.props.fullTitle ?? (title ? `${title} | HumAIn Logic` : 'HumAIn Logic: AI tools, news & job insights in plain English');
 const isCurrent = (m: string[]) => m.some(p => path === p || path.startsWith(p + '/'));
 const graph = { '@context': 'https://schema.org', '@graph': [
-  { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg`, email: SITE.email, contactPoint: { '@type': 'ContactPoint', email: SITE.email, contactType: 'customer support' } },
+  { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg`, email: SITE.email, contactPoint: { '@type': 'ContactPoint', email: SITE.email, contactType: 'customer support' }, sameAs: ['https://www.facebook.com/profile.php?id=61595810560724'] },
   { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: 'en-US', license: 'https://creativecommons.org/licenses/by/4.0/', publisher: { '@id': `${SITE.url}/#org` },
     potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/search?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
   ...jsonld ] };
@@ -73,6 +73,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [
       <div>
         <Brand />
         <p class="promise">Helping people get things done with AI, and feel calmer about it. Independent. No company pays to be listed.</p>
+        <p class="social"><a class="social-link" href="https://www.facebook.com/profile.php?id=61595810560724" target="_blank" rel="noopener me" aria-label="HumAIn Logic on Facebook"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></svg></a></p>
       </div>
       <div><h2 class="h6">Explore</h2><ul>{NAV.map(n => <li><a href={n.href}>{n.label}</a></li>)}<li><a href="/tools/free">Free AI tools</a></li><li><a href="/alternatives/chatgpt">ChatGPT alternatives</a></li><li><a href="/compare/chatgpt-vs-gemini-vs-claude">ChatGPT vs Gemini vs Claude</a></li><li><a href="/best-ai-for/writing">Best AI for writing</a></li><li><a href="/best-ai-for/coding">Best AI for coding</a></li><li><a href="/will-ai-take-my-job">Will AI take my job?</a></li></ul></div>
       <div><h2 class="h6">About</h2><ul><li><a href="/methodology">How we test</a></li><li><a href="/about#promise">Our promise</a></li><li><a href="/about">About us</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/contact">Contact / report a problem</a></li><li><a href="mailto:hello@humainlogic.com">hello@humainlogic.com</a></li></ul></div>
@@ -83,6 +84,9 @@ const graph = { '@context': 'https://schema.org', '@graph': [
 </footer>
 <style is:global>
 footer h2.h6{margin:0 0 var(--space-3);font:600 var(--fs-caption) var(--font-body);color:var(--color-paper);letter-spacing:var(--tracking-label);text-transform:uppercase}
+footer .social{margin:var(--space-3) 0 0}
+footer .social-link{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:-10px;color:var(--color-mist)}
+footer .social-link:hover{color:var(--color-paper)}
 .motion-toggle{background:none;border:0;color:var(--color-mist);font:inherit;cursor:pointer;text-decoration:underline;min-height:44px;padding:0 4px}
 .motion-toggle:focus-visible{outline:2px solid var(--color-apricot);outline-offset:2px}
 footer a:focus-visible{outline:2px solid var(--color-apricot);outline-offset:3px;border-radius:4px}
