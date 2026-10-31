@@ -1,0 +1,27 @@
+{
+ "send_date": "2026-11-01",
+ "picked_at": "2026-10-31T13:56:22.733Z",
+ "stories": [
+  {
+   "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
+   "link": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+   "source": "Wired – AI",
+   "date": "2026-10-31T10:30:00.000Z",
+   "summary": "Companies have spent the past several weeks trying to reassure investors that Muse and other AI agents pose more of an opportunity than a threat."
+  },
+  {
+   "title": "An AI Agent Injected Drugs Into a Live Mouse’s Brain",
+   "link": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+   "source": "Wired – AI",
+   "date": "2026-10-31T10:00:00.000Z",
+   "summary": "A biotech startup let an agent choose a gene therapy and successfully inject the treatment, offering a startling glimpse of the future of research labs."
+  },
+  {
+   "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+   "link": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+   "source": "TechCrunch – AI",
+   "date": "2026-10-30T22:56:13.000Z",
+   "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week."
+  }
+ ]
+}
