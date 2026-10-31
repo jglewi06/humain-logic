@@ -2,7 +2,7 @@
 
 > Calm, plain-language guide to AI for everyday people and small businesses: a task-based AI tool directory, a sourced AI news feed, an AI Job Safety Tracker, and a weekly newsletter.
 
-Data is rebuilt automatically (news every few hours). Proposed license: CC BY 4.0 for editorial text and tracker data (pending owner sign-off); tool logos and third-party text excluded. Please cite "HumAIn Logic" with a link to https://humainlogic.com.
+Data is rebuilt automatically (news every few hours). License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) for editorial text and tracker data; tool logos and third-party text excluded. Please cite "HumAIn Logic" with a link to https://humainlogic.com.
 
 ## Tools directory
 - [Browse tools](https://humainlogic.com/tools): all tools by category

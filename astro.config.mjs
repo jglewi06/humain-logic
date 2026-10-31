@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { lastmodFor } from './scripts/lastmod.mjs';
 
 // Canonical domain (CEO decision 2026-10-15). Cloudflare Pages serves /tools.html at /tools.
 export default defineConfig({
@@ -9,6 +10,6 @@ export default defineConfig({
   integrations: [sitemap({
     // ux/spec §4.5: exclude search, newsletter confirm/unsubscribe, API
     filter: (page) => !/\/(search|newsletter\/confirmed|newsletter\/confirm|newsletter\/unsubscribe)(\/|$)/.test(page) && !page.includes('/api/'),
-    serialize: (item) => ({ ...item, url: item.url.replace(/\/$/, '') || 'https://humainlogic.com/' }),
+    serialize: (item) => { const url = item.url.replace(/\/$/, '') || 'https://humainlogic.com/'; return { ...item, url, lastmod: lastmodFor(url) }; },
   })],
 });

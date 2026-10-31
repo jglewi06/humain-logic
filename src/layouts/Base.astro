@@ -14,7 +14,7 @@ const fullTitle = Astro.props.fullTitle ?? (title ? `${title} | HumAIn Logic` : 
 const isCurrent = (m: string[]) => m.some(p => path === p || path.startsWith(p + '/'));
 const graph = { '@context': 'https://schema.org', '@graph': [
   { '@type': 'Organization', '@id': `${SITE.url}/#org`, name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/img/logo.svg`, email: SITE.email, contactPoint: { '@type': 'ContactPoint', email: SITE.email, contactType: 'customer support' } },
-  { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: 'en-US', publisher: { '@id': `${SITE.url}/#org` },
+  { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: 'en-US', license: 'https://creativecommons.org/licenses/by/4.0/', publisher: { '@id': `${SITE.url}/#org` },
     potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/search?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
   ...jsonld ] };
 ---
@@ -78,7 +78,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [
       <div><h2 class="h6">About</h2><ul><li><a href="/methodology">How we test</a></li><li><a href="/about#promise">Our promise</a></li><li><a href="/about">About us</a></li><li><a href="/glossary">Glossary</a></li><li><a href="/contact">Contact / report a problem</a></li><li><a href="mailto:hello@humainlogic.com">hello@humainlogic.com</a></li></ul></div>
       <div><h2 class="h6">Stay in touch</h2><ul><li><a href="/newsletter">Newsletter</a></li><li><a href="/contact#suggest">Suggest a tool</a></li><li><a href="/guides#small-business">For small businesses</a></li><li><a href="/llms.txt">For AI agents (llms.txt)</a></li></ul></div>
     </div>
-    <div class="legal"><span>© {new Date().getFullYear()} HumAIn Logic · humainlogic.com</span><span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/accessibility">Accessibility</a> · <button type="button" class="motion-toggle" data-motion-toggle>Reduce motion</button></span></div>
+    <div class="legal"><span>© {new Date().getFullYear()} HumAIn Logic · humainlogic.com · Text and data licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a></span><span><a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/accessibility">Accessibility</a> · <button type="button" class="motion-toggle" data-motion-toggle>Reduce motion</button></span></div>
   </div>
 </footer>
 <style is:global>

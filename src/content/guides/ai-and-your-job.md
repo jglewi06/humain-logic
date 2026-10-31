@@ -4,7 +4,7 @@ title: "AI and your job: how to prepare with confidence"
 summary: "What research really says about AI and jobs, why most roles will change rather than vanish, and practical steps to build skills and stay ready."
 updated: 2026-10-15
 published: 2026-10-15
-author: HumAIn Logic editorial team
+author: Jordan Lewis M.S.
 ---
 
 

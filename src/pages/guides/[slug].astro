@@ -14,8 +14,8 @@ const hero = entry.data.hero;
 const others = meta.filter(g => g.slug !== entry.id).slice(0, 3);
 const updated = entry.data.updated.toISOString().slice(0, 10);
 const published = entry.data.published?.toISOString().slice(0, 10);
-const authorName = entry.data.author ?? 'HumAIn Logic editorial team';
-const authorLd = entry.data.author && !/team|staff|editor/i.test(entry.data.author) ? { '@type': 'Person', name: entry.data.author } : { '@type': 'Organization', name: 'HumAIn Logic editorial team', url: `${SITE.url}/about`, parentOrganization: { '@id': `${SITE.url}/#org` } };
+const authorName = 'Jordan Lewis M.S.';
+const authorLd = { '@type': 'Person', '@id': `${SITE.url}/about#jordan-lewis`, name: authorName, url: `${SITE.url}/about#founder`, jobTitle: 'Founder and editor', worksFor: { '@id': `${SITE.url}/#org` } };
 const SEO_TITLES: Record<string, string> = {
   'what-is-ai': 'What is AI? A guide for beginners',
   'getting-started-with-ai-chat-assistants': 'How to use ChatGPT & AI chat: beginner guide',
@@ -25,7 +25,7 @@ const SEO_TITLES: Record<string, string> = {
 };
 const ogImg = hero?.src ? (/\.(jpe?g|png|webp)$/i.test(hero.src) ? hero.src : `${hero.src}-1024.jpg`) : undefined;
 const ld = [
-  { '@type': 'Article', headline: entry.data.title, description: entry.data.summary, ...(published ? { datePublished: published } : {}), dateModified: updated, author: authorLd, publisher: { '@id': `${SITE.url}/#org` }, mainEntityOfPage: `${SITE.url}/guides/${entry.id}`, ...(ogImg ? { image: `${SITE.url}${ogImg}` } : {}), ...(m?.sources ? { citation: m.sources.map(s => ({ '@type': 'CreativeWork', url: s.url, ...(s.title ? { name: s.title } : {}), ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}) })) } : {}) },
+  { '@type': 'Article', headline: entry.data.title, description: entry.data.summary, ...(published ? { datePublished: published } : {}), dateModified: updated, author: authorLd, license: 'https://creativecommons.org/licenses/by/4.0/', publisher: { '@id': `${SITE.url}/#org` }, mainEntityOfPage: `${SITE.url}/guides/${entry.id}`, ...(ogImg ? { image: `${SITE.url}${ogImg}` } : {}), ...(m?.sources ? { citation: m.sources.map(s => ({ '@type': 'CreativeWork', url: s.url, ...(s.title ? { name: s.title } : {}), ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}) })) } : {}) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` }, { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE.url}/guides` }, { '@type': 'ListItem', position: 3, name: entry.data.title, item: `${SITE.url}/guides/${entry.id}` }] },
 ];
 ---
@@ -35,7 +35,7 @@ const ld = [
   <p class="crumbs"><a href="/">Home</a> › <a href="/guides">Guides</a> › {entry.data.title}</p>
   <span class="eyebrow">Guide</span><h1>{entry.data.title}</h1>
   <p class="lede">{entry.data.summary}</p>
-  <p class="confidence" style="margin-top:var(--space-3)">By {authorName} · {published && <>Published <time datetime={published}>{fmtMonthDay(published)}</time> · </>}Updated <time datetime={updated}>{fmtMonthDay(updated)}</time> · {m?.reading_time}</p>
+  <p class="confidence" style="margin-top:var(--space-3)">By <a href="/about#founder">{authorName}</a> · {published && <>Published <time datetime={published}>{fmtMonthDay(published)}</time> · </>}Updated <time datetime={updated}>{fmtMonthDay(updated)}</time> · {m?.reading_time}</p>
 </div></div></section>
 <div class="container section" style="padding-top:var(--space-6)">
   <article class="prose guide"><Content /></article>

@@ -4,7 +4,7 @@ title: "Getting started with AI chat assistants: prompting basics"
 summary: "How to choose a free AI assistant, write clear requests (prompts) that get useful answers, and avoid common beginner mistakes."
 updated: 2026-10-15
 published: 2026-10-15
-author: HumAIn Logic editorial team
+author: Jordan Lewis M.S.
 hero:
   src: /img/guides/getting-started-with-ai-chat-assistants/start-hero
   alt: "An engineer in a teal work jacket checks a tablet in a bright AI hardware facility, with server racks and a robotic arm assembling circuit boards."

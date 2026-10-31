@@ -4,7 +4,7 @@ title: "AI for small business: practical first steps"
 summary: "Where AI can genuinely save a small business time and money, which affordable tools to try first, and how to start without big risks or big budgets."
 updated: 2026-10-15
 published: 2026-10-15
-author: HumAIn Logic editorial team
+author: Jordan Lewis M.S.
 hero:
   src: /img/guides/ai-for-small-business/smb-hero
   alt: "A smiling florist plans orders on a tablet at her shop counter, surrounded by fresh flowers."

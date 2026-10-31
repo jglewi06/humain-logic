@@ -4,7 +4,7 @@ title: "What is AI? A plain-language introduction"
 summary: "What artificial intelligence actually is, how today's AI chat tools work, what they're good and bad at, and why you don't need to be technical to use them."
 updated: 2026-10-15
 published: 2026-10-15
-author: HumAIn Logic editorial team
+author: Jordan Lewis M.S.
 hero:
   src: /img/guides/what-is-ai/what-is-ai-hero
   alt: "An older man in glasses types a question into a laptop at his sunny kitchen table."

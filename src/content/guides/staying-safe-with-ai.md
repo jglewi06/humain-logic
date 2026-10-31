@@ -4,7 +4,7 @@ title: "Staying safe with AI: privacy, scams, deepfakes and checking answers"
 summary: "Simple habits to protect your privacy, spot AI-powered scams and deepfakes, and double-check what AI tools tell you."
 updated: 2026-10-15
 published: 2026-10-15
-author: HumAIn Logic editorial team
+author: Jordan Lewis M.S.
 hero:
   src: /img/guides/staying-safe-with-ai/safe-hero
   alt: "A software security engineer calmly reviews code at a bright office desk, with a padlock shield on her screen."

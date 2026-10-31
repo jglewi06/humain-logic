@@ -1,0 +1,16 @@
+name: IndexNow on content update
+on:
+  push:
+    branches: [main]
+    paths: ['src/content/**', 'src/pages/**', 'src/data/jobs.json', 'src/data/tools.json', 'public/llms.txt']
+permissions: { contents: read }
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: sleep 150 && node scripts/indexnow.mjs --changed HEAD~1..HEAD || true

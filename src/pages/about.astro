@@ -1,7 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
+const ld = [{ '@type': 'Person', '@id': 'https://humainlogic.com/about#jordan-lewis', name: 'Jordan Lewis M.S.', jobTitle: 'Founder and editor', url: 'https://humainlogic.com/about#founder', worksFor: { '@id': 'https://humainlogic.com/#org' } }];
 ---
-<Base title="About HumAIn Logic" description="HumAIn Logic helps everyday people and small businesses use AI calmly: plain-language tool search, AI news, a Job safety tracker and one weekly email.">
+<Base title="About HumAIn Logic" description="HumAIn Logic helps everyday people and small businesses use AI calmly: plain-language tool search, AI news, a Job safety tracker and one weekly email." jsonld={ld}>
 <section class="page-head"><div class="container"><span class="eyebrow">About</span><h1>About HumAIn Logic</h1></div></section>
 <div class="container section" style="padding-top:var(--space-6)"><div class="prose">
 <p class="lede">HumAIn Logic (say it “human logic”) helps everyday people and small businesses use AI without stress. AI, explained calmly. Find the right tool for the job.</p>
@@ -20,6 +21,8 @@ import Base from '../layouts/Base.astro';
 <p>Some links on the site may be affiliate links, for example through our partner network Impact (used by Coursera). If you sign up or buy through one, we may earn a commission at no extra cost to you. There are no ads and no sponsored listings, and the rules above still apply: payment never changes what we list or how we rank it.</p>
 <h2>Who runs it</h2>
 <p>HumAIn Logic is an independent project, tended slowly and with care. It grew from a simple wish: that the world of AI could feel a little more human, and a lot less daunting. Every page is written in that spirit, unhurried, honest and made for real people.</p>
+<h2 id="founder">Founder and editor</h2>
+<p><strong>Jordan Lewis M.S.</strong> founded HumAIn Logic and edits the site, including its guides. Jordan started it to make AI feel a little more human and a lot less daunting, and every guide is written to that standard: plain language, sources shown, and dates checked.</p>
 <h2>Get in touch</h2>
 <p>Spotted a mistake or a price that changed? Email <a href="mailto:hello@humainlogic.com?subject=Question%20about%20HumAIn%20Logic">hello@humainlogic.com</a> or see <a href="/contact">Contact</a>. To learn how outlooks are set, read <a href="/methodology">How we decide</a>.</p>
 </div></div>
