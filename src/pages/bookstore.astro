@@ -24,7 +24,7 @@ const ld = [
       <li class="book-item" style="display:flex" data-search={`${b.title} ${b.description} ${b.badge ?? ''}`.toLowerCase()}><article class="tool" style="width:100%">
         <picture class="book-cover">
           <source type="image/webp" srcset={`/img/bookstore/${b.cover}-640.webp 640w, /img/bookstore/${b.cover}-1024.webp 1024w`} sizes="(min-width: 900px) 33vw, 100vw" />
-          <img src={`/img/bookstore/${b.cover}.jpg`} alt={`${b.title} cover`} width="1024" height="1365" loading="lazy" decoding="async" />
+          <img src={`/img/bookstore/${b.cover}.jpg`} alt={b.coverAlt ?? `${b.title} cover`} width="1024" height="1365" loading="lazy" decoding="async" />
         </picture>
         {b.badge && <span class="badge">{b.badge}</span>}
         <span class="eyebrow">PDF guide</span>
