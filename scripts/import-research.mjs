@@ -96,6 +96,7 @@ if (fs.existsSync(path.join(R, 'jobs.json'))) {
 
 // ---- Guides: copy Markdown into the site (the repo only contains site/) ----
 const G = readC('guides.json');
+const GUIDE_AUTHOR = 'Jordan Lewis M.S.';
 if (G) {
   const dir = path.resolve('src/content/guides');
   // Guide photos are site-only edits (front-matter `hero:` + <figure class="... guide-photo"> blocks).
@@ -123,7 +124,10 @@ if (G) {
   for (const g of G.guides) {
     const src = path.join(C, g.file);
     if (!fs.existsSync(src)) { mismatch.push(`guide file missing: ${g.file}`); continue; }
-    const md = fs.readFileSync(src, 'utf8');
+    // Guides are authored by the founder (Person, /about#founder); never let an older research copy revert the byline.
+    let md = fs.readFileSync(src, 'utf8');
+    if (/^author:/m.test(md.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '')) md = md.replace(/^(---\n[\s\S]*?)^author:.*$/m, `$1author: ${GUIDE_AUTHOR}`);
+    else md = md.replace(/^(---\n[\s\S]*?\n)---/, `$1author: ${GUIDE_AUTHOR}\n---`);
     const fm = md.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
     const fmSlug = fm.match(/^slug:\s*(.+)$/m)?.[1].trim();
     if (fmSlug !== g.slug) mismatch.push(`guide slug mismatch: guides.json ${g.slug} vs front matter ${fmSlug}`);
