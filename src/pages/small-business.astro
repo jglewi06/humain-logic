@@ -80,6 +80,42 @@ const desc = "AI help for small businesses, from websites to custom automated so
       </aside>
     </div>
   </section>
+  <section class="container smb-pricing" id="pricing" aria-labelledby="price-h">
+    <h2 id="price-h">Pricing for our other services</h2>
+    <p class="smb-price-note">Every project starts with a free consultation. The prices below are for the work that follows, if you decide to go ahead.</p>
+    <div class="smb-price-grid">
+      <article class="smb-price-card">
+        <h3>Custom Website</h3>
+        <p class="smb-price"><span class="amt">$500</span> <span class="per">one-time</span></p>
+        <ul>
+          <li>Custom website development</li>
+          <li>Agentic optimization, so AI search tools can find and understand your site</li>
+          <li>Your own unique domain name</li>
+        </ul>
+        <button type="button" class="smb-price-cta" data-consult>Start with a free consultation</button>
+      </article>
+      <article class="smb-price-card">
+        <h3>Standard Maintenance</h3>
+        <p class="smb-price"><span class="amt">$250</span> <span class="per">per month</span></p>
+        <ul>
+          <li>Troubleshooting and website repair</li>
+          <li>We launch your website and maintain it for you</li>
+          <li>No getting bogged down with maintenance and coding issues</li>
+        </ul>
+        <button type="button" class="smb-price-cta" data-consult>Start with a free consultation</button>
+      </article>
+      <article class="smb-price-card">
+        <h3>Custom Solutions</h3>
+        <p class="smb-price"><span class="amt">$999.99</span> <span class="per">plus $220/month maintenance</span></p>
+        <ul>
+          <li>A custom solution built around your business</li>
+          <li>Ongoing maintenance subscription included at $220 per month</li>
+          <li>No hassle</li>
+        </ul>
+        <button type="button" class="smb-price-cta" data-consult>Start with a free consultation</button>
+      </article>
+    </div>
+  </section>
 </div>
 </Base>
 
@@ -116,6 +152,7 @@ const desc = "AI help for small businesses, from websites to custom automated so
     wrap.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
     (document.getElementById('form-h') as HTMLElement).focus({ preventScroll: true });
   });
+  document.querySelectorAll('[data-consult]').forEach(b => b.addEventListener('click', () => open.click()));
   if (location.hash === '#consult') open.click();
 
   function check(el: HTMLInputElement | HTMLTextAreaElement): string {
@@ -239,11 +276,25 @@ const desc = "AI help for small businesses, from websites to custom automated so
 .smb-aside h3{font:600 20px/1.3 var(--font-heading);margin:0 0 12px}
 .smb-aside ul{margin:0;padding-left:20px;color:var(--color-ink);font-size:16px;line-height:1.6}
 .smb-aside li{margin-bottom:8px}
+.smb-pricing{padding-bottom:80px}
+.smb-pricing h2{font:600 var(--fs-h2)/1.2 var(--font-heading);color:var(--color-ink);margin:0 0 10px}
+.smb-price-note{margin:0 0 24px;color:var(--color-slate);font-size:18px}
+.smb-price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.smb-price-card{display:flex;flex-direction:column;background:#fff;border-radius:16px;box-shadow:0 2px 6px rgba(31,42,55,.06),0 8px 24px rgba(31,42,55,.06);padding:24px}
+.smb-price-card h3{font:600 20px/1.3 var(--font-heading);margin:0 0 8px;color:var(--color-ink)}
+.smb-price{margin:0 0 14px;color:var(--color-slate)}
+.smb-price .amt{font:700 32px/1.1 var(--font-display);color:var(--color-teal)}
+.smb-price .per{font-size:15px}
+.smb-price-card ul{margin:0 0 20px;padding-left:20px;color:var(--color-ink);font-size:16px;line-height:1.55;flex:1}
+.smb-price-card li{margin-bottom:6px}
+.smb-price-cta{align-self:flex-start;background:transparent;color:var(--color-teal);border:2px solid var(--color-teal);border-radius:999px;font:600 16px/1.2 var(--font-body);min-height:48px;padding:12px 20px;cursor:pointer}
+.smb-price-cta:hover{background:var(--color-teal);color:#fff}
+.smb-price-cta:focus-visible{outline:3px solid var(--color-teal);outline-offset:2px}
 @media (max-width:860px){
   .smb-hero{padding:0 0 40px}
   .smb-hero-art{position:relative;width:100%;height:220px;-webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 100%);mask-image:linear-gradient(to bottom,#000 60%,transparent 100%)}
-  .smb-cards,.smb-steps ol,.smb-grid{grid-template-columns:1fr}
+  .smb-cards,.smb-steps ol,.smb-grid,.smb-price-grid{grid-template-columns:1fr}
   .smb-form-card{padding:24px}
-  .smb-submit{width:100%}
+  .smb-submit,.smb-price-cta{width:100%;align-self:stretch}
 }
 </style>
